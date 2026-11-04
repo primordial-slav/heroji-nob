@@ -19,6 +19,7 @@ Designed for extensibility: to add a new brigade, just:
 3. Re-run this script
 """
 
+from safe_write import write_text
 import sys
 import os
 import json
@@ -219,8 +220,7 @@ def main():
                 shutil.copy2(json_file, backup_path)
                 print(f"\n  Backup: {backup_path}")
 
-            with open(json_file, 'w', encoding='utf-8') as f:
-                json.dump(normalized, f, ensure_ascii=False, indent=2)
+            write_text(json_file, json.dumps(normalized, ensure_ascii=False, indent=2))
             print(f"  Written: {json_file}")
 
     # Summary

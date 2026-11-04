@@ -192,9 +192,10 @@ def death_date(s: dict) -> dict | None:
     return {'death_date': new} if new != v else None
 
 
-# ── albanian: the census's word ─────────────────────────────────────────────
+# ── albanian: the census's word, and one word for the Jews (Jevrej 258, Jevrejin 132: the user's decision of
+# 2026-11-04; the regional pairs, Talijan and Italijan, Nemac and Nijemac, stay as each book prints them) ────
 ETHNICITY = {'Šiptar': 'Albanac', 'Šiptarka': 'Albanka', 'šiptar': 'Albanac', 'šiptarka': 'Albanka',
-             'Siptar': 'Albanac', 'Siptarka': 'Albanka'}
+             'Siptar': 'Albanac', 'Siptarka': 'Albanka', 'Jevrejin': 'Jevrej'}
 
 
 def albanian(s: dict) -> dict | None:
@@ -657,6 +658,36 @@ PLACE_READ = {
     'UbliKuči, Podgorica': 'Ubli Kuči, Podgorica', 'PrimoSten, Šibenik': 'Primošten, Šibenik', 'Sedlari.ma': 'Sedlarima', 'Komljinsk, SSSR. Pye': 'Komljinsk, SSSR', 'Široki brijeg m': 'Široki Brijeg', 'Krčedin, InđiJa': 'Krčedin, Inđija', 'Sjeničak l': 'Sjeničak',
     'Podturn pri DoL Toplicah': 'Podturn pri Dol. Toplicah', 'Dolenjske Toylice': 'Dolenjske Toplice', 'Čestelin kodVranja': 'Čestelin kod Vranja', 'pohodu 14. divizije na Štajersko': '', '4 ofanziva': '', '5 ofanziva': '', '7 ofanziva': '', 'U 5 ofanzivi': '', '5.ofanziva': '',
     'U bosni 5.ofanz': 'Bosna', '19div': '', '1dal.bri': '', 'X+': '', 'Crna gora 4.of': 'Crna Gora', 'Unska operat.grupa': '', 'Štajerska (2.UB.)': 'Štajerska', 'Rakovec (13.B.)': 'Rakovec',
+    # the odd values read one by one against their entries (2026-11-04)
+    'sremski front': 'Sremski front', 'štajerska': 'Štajerska', 'centralna bolnica (od Pive do Sutjeske)': 'Centralna bolnica (od Pive do Sutjeske)', 'strijeljana': '',
+    'žiri': 'Žiri', 'delavec': '', 'pog. zadatku': '', 'nestao': '', 'kapelska pruga': 'Kapelska pruga', 'željeznička pruga': '',
+    'kapelska pruga kod Javornika': 'Kapelska pruga kod Javornika', 'boiRudište': 'Rudište', 'Bistrica 21': 'Bistrica', 'iKatanići': 'Katanići',
+    '4.jedinica u borbama': '', 'U 5. ofanzivi': '', 'b.polje': 'Bijelo Polje', 'borije kalinov': 'Borije, Kalinovik', 'osl,bileće': 'Bileća', 'Centarl 3. i 12. kor': '',
+    'idrija-c.vrh': 'Idrija', 'boju 14. divizije': '', 'območju Zg. Vrtače —Borje nad Izlakami': 'Zg. Vrtače — Borje nad Izlakami', 'verjetno na pohodu proti Savi': '',
+    'območju Kolovrata': 'Kolovrat', '/45 pri Dravograđu': 'pri Dravogradu', 'bolnišnici v Celju': 'Celje', '/45, Kot nad Oplotnico': 'Kot nad Oplotnico',
+    '/45 na preboju iz sovražnikove ofenzive v Savinjski dolini': 'Savinjska dolina', 'goreči šoli v Šoštanju': 'Šoštanj',
+    'poti iz bolnišnice Košuta na Pohorju': 'Pohorje', '/45 v okolici Dramelj': 'okolica Dramelj', 'pohodu 14. divizije na Štajerskem': 'Štajerska',
+    '/45, Trojane': 'Trojane', 'območju Paški Kozjak —Pohorje na pohodu 14. divizije': 'Paški Kozjak — Pohorje', '/44; kraj ni ugotovljen': '',
+    'Štajerskem v nemški ofenzivi proti 14. diviziji': 'Štajerska', 'ali 1945 na Štajerskem': 'Štajerska', 'g u kovje pri Slivnici, Šentjur': 'Slivnica, Šentjur',
+    'ali januarja 1944 v Zgornji Savinjski dolini': 'Zgornja Savinjska dolina', '-1945, Kupusine (AOSJ, Beograd)': 'Kupusine',
+    'hrib Srnjak pri Rakeku': 'Srnjak pri Rakeku', 'bolnišnici pri Solčavi': 'Solčava', '/45 na Konjiški gori': 'Konjiška gora', '/45 neznano kje': '',
+    '— 1945 v Savinjski dolini': 'Savinjska dolina', '/45 v Savinjski dolini ali na Pohorju': 'Savinjska dolina',
+    '/45, Zgomje Slemene, Dramlje': 'Zgornje Slemene, Dramlje', 'Nova Štifta 2': 'Nova Štifta', 'Lindek (13.B.)': 'Lindek',
+    'Perkos pri Grahovem (2.UB.)': 'Perkos pri Grahovem', 'Štajerska (13.B.)': 'Štajerska', '2.č.1.bat.5.br.14.d': '',
+    'prema Trebavirejon Gračanice': 'Trebava, Gračanica', 'Jast. 1944': 'Jastrebarsko', 'lvanska': 'Ivanska', 'U 5-oj ofanzivi': '', 'ncznanokjc': '', 'ncznanokje': '',
+    'umro od batina': '', 'j Morinj': 'Morinj', '1944. Italija': 'Italija', 'izgorjela': '', 'mehanik': '', 'dijak': '', '2. k. v': '', 'poginuo': '', 'Poginuo': '',
+    '11onikvice': 'Ponikvice', 'zdravnik': '', 'ustreljen od Nemcev': '', '1 Borča': 'Borča', 'šivilja': '', 'Bosn. b. 4 batebijeljina': 'Bijeljina', '1 Jrevina': '',
+    'bijedići': 'Bijedići', 'ubijena': '', 'š.kula gospić': 'Široka Kula, Gospić', 'istok': 'Istok', '3 kralja klanje': '', 'prelazak preko Zete': 'Zeta',
+    'Zelenika 1': 'Zelenika', 'ist. Bosna': 'Istočna Bosna', 'Strahovi D<': 'Strahov Do', '5. kozarska ofanziva': '', 'pogre šan': '', 'loznica': 'Loznica',
+    'tromeđa S. C. G. B': '', '5ofanziva': '', 'frutak': 'Frutak', 'štatenber ška dolina pri Novem mestu': 'Štatenberška dolina pri Novem mestu',
+    'umro u Buronjima': 'Buronji', 'saveznički brod': '', 'črni vrh': 'Črni Vrh', 'njemački logor': '', 'štatemberg': 'Štatenberg', '1 9 2 0 - 1 9 4 4': '',
+    '5of. na sutjesci 2da': 'Sutjeska', 'aprilski rat': '', '1 9 2 4 - 1 9 4 4': '', 'pozadinski rad': '', 'đule': 'Đule', 'žabja vas': 'Žabja vas', 'koncen. logor': '',
+    'Zuri J1. rijeka': '', '1': '', 'zak. "Crna ruka"': '', 'umro od mučenja': '', '1 9 2 5 - 1 94 5': '', '1 crn.knoj': '',
+    'teško ranjen kod Šarengrada, preminuo u bolnici': 'Šarengrad', 'križišče Mala lažna—Mrzla rupa': 'Mala Lažna — Mrzla Rupa', 'goriški grad': 'Goriški grad',
+    'goriška fronta': 'Goriška fronta', 'goriški fronti': 'Goriška fronta', 'štalcerji, Kočevje': 'Štalcerji, Kočevje', 'sv. Katarina, Reka': 'Sv. Katarina, Rijeka',
+    'žab j ak, Livno': 'Žabljak, Livno', 'črna gora': 'Crna Gora', 'Sutjeska-5.ofan': 'Sutjeska', 'padel RCEV IX. SNOB KOČ': '', 'J5ri kota': '', 'Kao kurir nov': '',
+    'od bombardovanja': '', 'za posledicami ran, dobljenih v boju': '', 'na Pelješc': 'Pelješac', 'na Sremskom frontu. kod Iloka': 'Sremski front, kod Iloka',
+    'Crna gora': 'Crna Gora', 'Crna gora-': 'Crna Gora',
     # the census's place column as its table first wrote it (2026-11-03: a reader's value caught by the joined-parts rule)
     'Žljebova': 'Žljebovi', 'Kopito, Žljebova': 'Kopito, Žljebovi', 'Pljevlje': 'Pljevlja', 'Podromanije Sokolac': 'Podromanija, Sokolac', 'Dubovik, Bos. Kru': 'Dubovik, Bos. Krupa', 'Kamensko, D. Lapa': 'Kamensko, D. Lapac', 'Čadžavica, B. Nov': 'Čadžavica, B. Novi', 'Pirit- u bolnici': 'Pirit', 'Tounj-na Pruzi': 'Tounj', 'Šolta-na brodu': 'Šolta',
     'Nar.bol.pljevlj': 'Pljevlja', 'Nepoz.partizan.jed': '', 'Boln.u zagrebu': 'Zagreb', 'Darča.na.dravi': 'Darda na Dravi', 'Lon.kod kolašin': 'kod Kolašina', 'Okr.g.milanovac': 'G. Milanovac', 'Polja.radulo.kr': '', 'S.grliš.srez za': 'Grliš', 'St.sl.vi.kopriv': '',
@@ -693,6 +724,21 @@ PLACE_READ = {
 
 # for birthplaces only, each read against its entry: a form in a case or a scan's slip that may be a place's own name in a place of death or in another book
 BIRTH_READ = {
+    # the odd values read one by one against their entries (2026-11-04)
+    'diplomirani': 'Subotica', 'građevinski': '', 'Ranjen': '', 'Kao': '', '1926': '', 'Viškovci, Đakovo i<': 'Viškovci, Đakovo',
+    'Majskim Poljanama {Glina': 'Majske Poljane, Glina', 'Plina >točna, Ploče': 'Plina Istočna, Ploče', 'Gradačcu..Musliman': 'Gradačac',
+    'Bijeljini.. Jugos loven': 'Bijeljina', 'Zlato | polje': 'Zlato Polje', 'Pošćanski kraj 1, Žabljak': 'Pošćanski Kraj, Žabljak', 'Belom Potoku}': 'Beli Potok',
+    'đogmilovići, Danilovgrad': 'Bogmilovići, Danilovgrad', 'Plevlja 3, Pljevlja': 'Pljevlja', 'anilovgrad, Danilovgrad': 'Danilovgrad',
+    'zaostro, Bijelo Polje': 'Zaostro, Bijelo Polje', 'uice, Šavnik': 'Šavnik', '1 Parci Lj. nahija, Podgorica': 'Parci, Lješanska nahija, Podgorica',
+    'bijedići, Pljevlja': 'Bijedići, Pljevlja', 'Pl>evlja, Pljevlja': 'Pljevlja', '11ol.ska, Pljevlja': 'Poljska, Pljevlja', 'Ora^, Plužine': 'Orah, Plužine',
+    'Po raspadu jugoslovenske vojske odveden aprila 1941. u zarobljeništvo Nemačku kao rezervni': '', 'I .... Lučanu': '',
+    'Gornje Pole 3, Nikšić': 'Gornje Polje, Nikšić', 'Gornjem 3uiiču': '', 'Priče– Buy= omladinac': '', 'Bučju3': 'Bučje', 'mokra Njiva': 'Mokra Njiva',
+    'Čevo1945. Bar, Šavnik': 'Čevo, Šavnik', 'Lipi Grcka], Cetinje': 'Lipa, Cetinje', 'Kraljevom Selu 1920': 'Kraljevo Selo', 'Bogo]evićima': 'Bogojevići',
+    'Slovensko] mi, Kocevje': 'Kočevje', 'Belanovu[Severovici), Ludbreg': 'Belanovo (Severovići), Ludbreg', 'Ča_ Jetini': 'Čajetina', 'grac, Pljevlja': 'Grac, Pljevlja',
+    'Šetoi>e': 'Šetonje', 'Češd>eva Bara': 'Češljeva Bara', 'črnomelj': 'Črnomelj', '_ Loka pri Žusmu': 'Loka pri Žusmu', 'Struw~': '',
+    'Sela pri Vrbcah, Se>mit': 'Sela pri Vrbcah, Semič', '_ Velike Brusnice': 'Velike Brusnice', 'županje njive pri Stahovici': 'Županje Njive pri Stahovici',
+    'Duplica__pri Kamniku': 'Duplica pri Kamniku', 'črna pri Stahovici': 'Črna pri Stahovici', 'študa pri Domžalah': 'Študa pri Domžalah',
+    'đinovići, Cetinje': 'Đinovići, Cetinje',
     # the birthplaces first read on 2026-11-03 ("iz Briševa", "u Medjeđem Brdu"): a case nothing else reads, or too garbled to read ('')
     'Medjeđem Brdu, Sanica': 'Međeđe Brdo, Sanica', 'Samaričkim Brđanima (Dvor na Uni)': 'Šamarički Brđani (Dvor na Uni)', 'Šamaričkim Brđanima (Dvor na Uni)': 'Šamarički Brđani (Dvor na Uni)',
     'Brdu Vilenskom (Dvor na Uni)': 'Brdo Vilensko (Dvor na Uni)', 'Kuljenovcima, Derventa': 'Kuljenovci, Derventa', 'Donjem Zirovcu (Dvor na Uni)': 'Donji Žirovac (Dvor na Uni)', 'Briševa': 'Briševo', 'Ujevca': 'Ujevac',
@@ -787,6 +833,7 @@ def birth_place_form(value: str) -> str:
     v = BIRTH_READ.get(v, v)
     v = scan_marks(LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], PART_OF.sub('', v)).strip(), birth=True)
     v = PLACE_READ.get(v, v)
+    v = re.sub(r'^s\.\s+(?=[A-ZČĆŽŠĐ])', '', v)
     return BIRTH_READ.get(v, v)
 
 
@@ -794,6 +841,31 @@ def birth_place_forms(s: dict) -> dict | None:
     value = s.get('birth_place')
     new = birth_place_form(value) if value else value
     return {'birth_place': new} if new != value else None
+
+
+OFFENSIVE_IN_PLACE = re.compile(r'[\s,_-]*(?:\b[Uu]\s+(?:toku\s+)?|\b[Zz]a\s+vreme\s+|\bu\s+borbi\s+)?\b\d\s*\.?\s*(?:-oj\s*)?(?:ne(?:pr\w*)?\.?\s*|n\.\s*)?'
+                                r'(?:ofanz|ofenz|ofan|ofa|of\b|oranz)\w*\.?(?:-pog)?')
+SMALL_WORDS = re.compile(r'^(?:u|na|kod|pri|v|pod|nad|med|ispod|iznad|za|oko|kraj|od|s|ali|pred|prema|dolina|bolnica|logor|šuma|pruga|centralna|okolina|selo|zbeg|zbjeg|'
+                         r'ž|žel|kota|brdo|hrib|reka|rijeka|planina|grapa|teško|njemački|nemački|italijanski|talijanski|neprijateljski)\b', re.I)
+
+
+def column_slips(v: str) -> str:
+    """What the census's column and the scans leave beside a place: the offensive ("Zelengora 5 ofa", "U 4 ofanzivi"), a number
+    run on ("Vranje3", "Tržič 1"), the digit for a letter ("Vrp0lje", "2itomislić"), a first letter small ("avala"; 2026-11-04)"""
+    v = re.sub(r'(?<=[a-zčćžšđA-ZČĆŽŠĐ])0(?=[a-zčćžšđ]|\b)', 'o', v)
+    v = re.sub(r'^2(?=[a-zčćžšđ]{4})', 'Ž', v)
+    v = OFFENSIVE_IN_PLACE.sub('', v).strip(' ,.-_')
+    if not re.match(r'(?:[Kk]ota|[Kk]\.)\s', v):
+        v = re.sub(r'(?<=[a-zčćžšđ])\s*\d{1,2}$', '', v)
+    v = re.sub(r'(?<=[a-zčćžšđ])_(?=[a-zčćžšđA-ZČĆŽŠĐ])', ', ', v)
+    if v == 'usa':
+        return 'SAD'
+    # a place named by what it lies near keeps its small letter on the card: "Poginuo: 1943, između Drniša i Knina"
+    if re.match(r'(?:Između|Ispred|Blizu|Iza|Pored|Iz)\s', v):
+        return v[0].lower() + v[1:]
+    if v and v[0].islower() and not re.match(r'(?:između|ispred|blizu|iza|pored|iz)\s', v) and not SMALL_WORDS.match(v):
+        v = v[0].upper() + v[1:]
+    return v
 
 
 def place_form(value: str) -> str | None:
@@ -805,6 +877,9 @@ def place_form(value: str) -> str | None:
     v = PLACE_READ.get(v, v)
     v = CENSUS_FORMS.get(v, v)
     v = PLACE_READ.get(v, v)
+    v = column_slips(v)
+    v = CENSUS_FORMS.get(v, v)
+    v = re.sub(r'^s\.\s+(?=[A-ZČĆŽŠĐ])', '', v)
     if UNKNOWN_PLACE.match(v) or UNIT_COLUMN.match(v) or not v:
         return None
     m = COMMA_GLUED.match(v)

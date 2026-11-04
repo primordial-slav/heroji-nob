@@ -336,6 +336,7 @@
     "death_date": "18.06.1943",
     "rank": "komandir čete",
     "party": "KPJ",
+    "death_place": "Bosna",
     "other_sources": [
       {
         "soldier_id": "9025021206",
@@ -1269,6 +1270,8 @@
         "pdf_y": 351.3,
         "pdf_x_end": 233.9,
         "pdf_y_end": 361.0,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -1787,6 +1790,7 @@
         "pdf_y": 828.4,
         "pdf_x_end": 592.2,
         "pdf_y_end": 838.1,
+        "rank": "kurir",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -1799,6 +1803,7 @@
         "pdf_y": 480.8,
         "pdf_x_end": 212.7,
         "pdf_y_end": 542.8,
+        "rank": "kurir",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],
@@ -2903,6 +2908,8 @@
         "pdf_y": 893.2,
         "pdf_x_end": 595.0,
         "pdf_y_end": 902.9,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -4139,6 +4146,8 @@
         "pdf_y": 509.3,
         "pdf_x_end": 498.6,
         "pdf_y_end": 518.5,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -4226,6 +4235,7 @@
         "pdf_y": 354.9,
         "pdf_x_end": 193.5,
         "pdf_y_end": 406.4,
+        "rank": "borac",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],
@@ -4453,6 +4463,7 @@
         "pdf_y": 641.9,
         "pdf_x_end": 486.3,
         "pdf_y_end": 669.5,
+        "rank": "komandir čete",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -5443,7 +5454,8 @@
     "pdf_x_end": 399.4,
     "pdf_x_left": 40.8,
     "birth_place": "Riđani, Nikšić",
-    "rank": "borac"
+    "rank": "borac",
+    "occupation": "poštanski činovnik"
   },
   {
     "last_name": "Delić",
@@ -5778,6 +5790,9 @@
         "pdf_y": 68.0,
         "pdf_x_end": 391.6,
         "pdf_y_end": 83.2,
+        "unit_detail": "4. bataljon",
+        "rank": "borac",
+        "since": "1944",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -6428,6 +6443,8 @@
         "pdf_y": 362.6,
         "pdf_x_end": 456.1,
         "pdf_y_end": 490.6,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -6712,6 +6729,7 @@
         "pdf_y": 179.1,
         "pdf_x_end": 211.6,
         "pdf_y_end": 231.5,
+        "rank": "puškomitraljezac",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -7031,6 +7049,8 @@
         "pdf_y": 224.2,
         "pdf_x_end": 355.8,
         "pdf_y_end": 241.3,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "5-srpska-soldiers.json"
       }
     ],
@@ -7065,6 +7085,9 @@
     "occupation": "učiteljica",
     "rank": "borac",
     "party": "KPJ",
+    "death_type": "ubijen",
+    "death_date": "02.12.1941",
+    "death_place": "Parmenac",
     "other_sources": [
       {
         "soldier_id": "9025009169",
@@ -7090,14 +7113,8 @@
     ],
     "ethnicity": "Srpkinja",
     "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
-    ],
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Parmenac, Čačak"
+    ]
   },
   {
     "last_name": "Gaborović",
@@ -7474,6 +7491,8 @@
         "pdf_y": 654.9,
         "pdf_x_end": 482.1,
         "pdf_y_end": 707.3,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -7621,6 +7640,8 @@
         "pdf_y": 196.9,
         "pdf_x_end": 460.2,
         "pdf_y_end": 224.6,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "ekonom",
         "unit_file": "uzicki-odred-soldiers.json"
       },
       {
@@ -7633,6 +7654,8 @@
         "pdf_y": 732.0,
         "pdf_x_end": 636.8,
         "pdf_y_end": 741.2,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "ekonom",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -7707,6 +7730,8 @@
         "pdf_y": 444.4,
         "pdf_x_end": 661.6,
         "pdf_y_end": 454.1,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "komandir voda",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -7727,12 +7752,11 @@
     "death_type": "poginuo",
     "death_date": "04.12.1943",
     "rank": "zastavnik",
+    "death_place": "u Pšpepolju",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Sokolica",
     "variants": {
       "born": [
         "1924"
@@ -7886,6 +7910,7 @@
     "death_type": "ubijen",
     "death_date": "24.08.1942",
     "party": "KPJ",
+    "death_place": "Grab",
     "other_sources": [
       {
         "soldier_id": "9016000109",
@@ -8186,6 +8211,8 @@
         "pdf_y": 969.0,
         "pdf_x_end": 226.6,
         "pdf_y_end": 978.7,
+        "unit_detail": "4. bataljon",
+        "rank": "zamenik političkog komesara čete",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -8466,6 +8493,9 @@
     "birth_place": "Bajina Bašta",
     "occupation": "domaćica",
     "rank": "kurir",
+    "death_type": "ubijen",
+    "death_date": "22.05.1944",
+    "death_place": "Baluga, Preljinskoj",
     "other_sources": [
       {
         "soldier_id": "9016001950",
@@ -9393,6 +9423,7 @@
         "pdf_y": 839.2,
         "pdf_x_end": 577.5,
         "pdf_y_end": 848.9,
+        "rank": "desetar",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -9759,6 +9790,8 @@
         "pdf_y": 206.9,
         "pdf_x_end": 302.3,
         "pdf_y_end": 270.1,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -10361,6 +10394,7 @@
     "death_date": "1943",
     "rank": "borac",
     "party": "KPJ 1938",
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "9016002187",
@@ -10459,7 +10493,7 @@
     "fathers_name": "Marko",
     "full_name": "Jakovljević Marka Trivun",
     "additional_info": "zemljoradnik, rođen, 1921. u Kukićima; borac Trnavskog bataljona; poginuo u borbi protiv četnika u Samaili 4. novembra 1941.",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 60,
     "pdf_y": 396.0,
     "pdf_x": 55.5,
@@ -10590,6 +10624,7 @@
         "pdf_y": 239.4,
         "pdf_x_end": 378.0,
         "pdf_y_end": 313.4,
+        "rank": "obaveštajni oficir divizije",
         "unit_file": "2-proleterska-divizija-soldiers.json"
       }
     ],
@@ -10913,6 +10948,8 @@
         "pdf_y": 265.5,
         "pdf_x_end": 486.6,
         "pdf_y_end": 293.2,
+        "unit_detail": "1. račanska četa",
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -11246,6 +11283,9 @@
         "pdf_y": 230.2,
         "pdf_x_end": 354.3,
         "pdf_y_end": 270.4,
+        "unit_detail": "5. bataljon",
+        "rank": "borac",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -11324,6 +11364,9 @@
         "pdf_y": 475.2,
         "pdf_x_end": 354.9,
         "pdf_y_end": 517.6,
+        "unit_detail": "5. bataljon",
+        "rank": "politički komesar čete",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -11374,6 +11417,7 @@
     "death_date": "31.07.1943",
     "rank": "komandant divizije",
     "party": "KPJ",
+    "death_place": "u Šumberku kod Labina u Istri",
     "other_sources": [
       {
         "soldier_id": "9002000431",
@@ -11752,6 +11796,8 @@
         "pdf_y": 507.8,
         "pdf_x_end": 486.5,
         "pdf_y_end": 571.0,
+        "unit_detail": "intendantura",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -11760,6 +11806,7 @@
     "death_date": "22.07.1943",
     "death_place": "kod Omerovih voda na planini Ozren u Bosni",
     "unit_detail": "intendantura",
+    "occupation": "bankarski činovnik",
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
@@ -11868,6 +11915,7 @@
     "death_type": "streljan",
     "death_date": "26.11.1941",
     "party": "SKOJ",
+    "death_place": "Sinoševići",
     "other_sources": [
       {
         "soldier_id": "9025011280",
@@ -11893,10 +11941,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Kalimanić"
+    ]
   },
   {
     "last_name": "Jevtović",
@@ -12047,6 +12093,8 @@
         "pdf_y": 455.2,
         "pdf_x_end": 689.8,
         "pdf_y_end": 464.9,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -12093,6 +12141,7 @@
     "rank": "borac",
     "death_type": "ubijen",
     "death_date": "25.01.1942",
+    "death_place": "Viča",
     "other_sources": [
       {
         "soldier_id": "9016000234",
@@ -12303,6 +12352,7 @@
         "pdf_y": 678.9,
         "pdf_x_end": 401.4,
         "pdf_y_end": 687.9,
+        "unit_detail": "2. požeška četa",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ]
@@ -12554,6 +12604,8 @@
             701.5
           ]
         ],
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -12823,6 +12875,9 @@
         "pdf_y": 398.4,
         "pdf_x_end": 369.1,
         "pdf_y_end": 430.0,
+        "unit_detail": "5. bataljon",
+        "rank": "borac",
+        "since": "1944-11",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -12835,6 +12890,7 @@
         "pdf_y": 495.2,
         "pdf_x_end": 212.2,
         "pdf_y_end": 534.0,
+        "rank": "borac",
         "unit_file": "druga-licka-soldiers.json"
       }
     ],
@@ -13230,6 +13286,8 @@
         "pdf_y": 308.6,
         "pdf_x_end": 474.2,
         "pdf_y_end": 324.5,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "1-bokeljska-soldiers.json"
       },
       {
@@ -13321,6 +13379,8 @@
             581.9
           ]
         ],
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -13978,6 +14038,7 @@
     "rank": "politički komesar",
     "death_place": "Banjica",
     "party": "KPJ",
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "9016001829",
@@ -14124,6 +14185,8 @@
         "pdf_y": 406.6,
         "pdf_x_end": 617.5,
         "pdf_y_end": 415.8,
+        "unit_detail": "2. bataljon",
+        "rank": "kurir",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -14798,6 +14861,8 @@
             426.4
           ]
         ],
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -14877,6 +14942,8 @@
         "pdf_y": 281.6,
         "pdf_x_end": 301.7,
         "pdf_y_end": 346.0,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -15202,6 +15269,9 @@
         "pdf_y": 221.1,
         "pdf_x_end": 357.8,
         "pdf_y_end": 254.6,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "vodnik",
+        "since": "1944-08-18",
         "unit_file": "4-srpska-soldiers.json"
       }
     ],
@@ -15239,6 +15309,7 @@
     "death_type": "streljan",
     "death_date": "30.11.1941",
     "party": "KPJ",
+    "death_place": "Zlatibor",
     "other_sources": [
       {
         "soldier_id": "9025021203",
@@ -15264,10 +15335,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Zlatibor"
+    ]
   },
   {
     "last_name": "Karapuzović",
@@ -16075,6 +16144,7 @@
         "pdf_y": 258.1,
         "pdf_x_end": 460.0,
         "pdf_y_end": 285.7,
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -16292,6 +16362,7 @@
         "name": "Koraksić Budimira Stojan",
         "additional_info": "Joševa (Jadranski srez): r. 1906, Čačak; učitelj, siromašan; rez. oficir BJV; stupio 9. 9. 1941., Loznička četa, vodnik; član KPJ; posle povlačenja Odreda iz Mačve otišao u Čačanoki PO; ubili ga četnici 5. 11. 1941. u Brajićima kod Ravne gore.",
         "source_url": "https://znaci.org/00001/48_102.htm",
+        "rank": "vodnik",
         "unit_file": "macvanski-odred-soldiers.json"
       }
     ],
@@ -16438,6 +16509,8 @@
             967.7
           ]
         ],
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -18511,6 +18584,8 @@
         "pdf_x_end": 380.2,
         "pdf_y_end": 366.7,
         "pdf_x_left": 97.5,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "politički komesar čete",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -18755,6 +18830,8 @@
         "pdf_y": 760.5,
         "pdf_x_end": 410.5,
         "pdf_y_end": 770.2,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -19099,6 +19176,8 @@
         "pdf_y": 760.5,
         "pdf_x_end": 493.6,
         "pdf_y_end": 770.2,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -19728,6 +19807,8 @@
             792.2
           ]
         ],
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -19743,12 +19824,11 @@
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "death_place": "Prijepolje",
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "Prijepolje",
     "variants": {
       "born": [
         "1908"
@@ -19797,6 +19877,8 @@
         "pdf_x_end": 379.4,
         "pdf_y_end": 503.2,
         "pdf_x_left": 97.7,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -20082,6 +20164,8 @@
         "pdf_y": 968.8,
         "pdf_x_end": 700.0,
         "pdf_y_end": 978.5,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -21134,11 +21218,11 @@
     "party": "SKOJ"
   },
   {
-    "last_name": "Manolović",
+    "last_name": "Manojlović",
     "middle_name": "Stevana",
     "first_name": "Gavrilo",
     "fathers_name": "Stevan",
-    "full_name": "Manolović Stevana Gavrilo",
+    "full_name": "Manojlović Stevana Gavrilo",
     "additional_info": "stolar, rođen 1921. u Užičkoj Požegi, živeo u Preljini; borac Ljubićkog bataljona; uhvatili ga četnici i predali Nemcima, koji su ga streljali kod VTZ u Čačku 11. decembra 1941.",
     "birth_year": "1921",
     "pdf_page": 27,
@@ -21344,6 +21428,7 @@
     "death_date": "31.07.1942",
     "rank": "desetar",
     "party": "KPJ",
+    "death_place": "Kupres",
     "other_sources": [
       {
         "soldier_id": "9025008961",
@@ -21369,10 +21454,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Kupres"
+    ]
   },
   {
     "last_name": "Marinković",
@@ -21596,6 +21679,8 @@
         "pdf_y": 302.0,
         "pdf_x_end": 486.4,
         "pdf_y_end": 365.2,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -22237,6 +22322,8 @@
     "birth_place": "Vrnčani",
     "occupation": "krojač",
     "rank": "borac",
+    "death_type": "ubijen",
+    "death_date": "1942",
     "other_sources": [
       {
         "soldier_id": "9016002421",
@@ -23160,6 +23247,7 @@
     "death_date": "16.04.1943",
     "rank": "desetar",
     "party": "KPJ",
+    "death_place": "Humić, Foča",
     "other_sources": [
       {
         "soldier_id": "9002000698",
@@ -23201,10 +23289,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Humići foča"
+    ]
   },
   {
     "last_name": "Matijević-Đokić",
@@ -23337,6 +23423,7 @@
     "rank": "borac",
     "death_type": "ubijen",
     "death_date": "27.09.1941",
+    "death_place": "Ježevica",
     "other_sources": [
       {
         "soldier_id": "9016004080",
@@ -24169,6 +24256,8 @@
         "pdf_y": 349.4,
         "pdf_x_end": 276.5,
         "pdf_y_end": 401.8,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -24479,6 +24568,7 @@
     "death_date": "19.10.1943",
     "rank": "zastavnik",
     "party": "SKOJ",
+    "death_place": "Police, Ivangrad",
     "other_sources": [
       {
         "soldier_id": "9024002091",
@@ -24504,10 +24594,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Berane"
+    ]
   },
   {
     "last_name": "Miletić",
@@ -25436,6 +25524,8 @@
         "pdf_y": 176.3,
         "pdf_x_end": 389.7,
         "pdf_y_end": 185.3,
+        "unit_detail": "2. požeška četa",
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -25861,6 +25951,8 @@
             310.4
           ]
         ],
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -26198,13 +26290,15 @@
       {
         "soldier_id": "0039100656",
         "name": "Milošević Ivka Budimir",
-        "additional_info": "borac 1. čete 2. bataljona, rođen 1909, Prislonica, Čačakj zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo u napadu na Kladanj 28. juna 1943. Kiša stalno lije... Zlokobno štekću nemački „šarci\", a klisura ječi od haubičkih zrna. To nije paljba artiljerije, to je prosto neki strahoviti tresak iz neba, kao da se čitava planina raspadajući svaljuje na zemlju... Nema ništa da se jede. FIladno konjsko meso, a sa njega curi voda. O odmoru i spavanju da se i ne govori. Stalno napadi na Košur, koji neprijatelj uporno brani. To se ne može opisati... (Iz dnevnika Miodraga Milovanovića I .uneta, zamenika komandanta 2. proleterske brigade)",
+        "additional_info": "borac 1. čete 2. bataljona, rođen 1909, Prislonica, Čačakj zemljoradnik, Srbin, u NOB od 1941, član KPJ, poginuo u napadu na Kladanj 28. juna 1943.",
         "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
         "pdf_page": 41,
         "pdf_x": 317.9,
         "pdf_y": 180.4,
         "pdf_x_end": 487.3,
-        "pdf_y_end": 407.5,
+        "pdf_y_end": 231.8,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -26441,6 +26535,8 @@
             518.9
           ]
         ],
+        "unit_detail": "4. bataljon",
+        "rank": "komandir voda",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -26614,6 +26710,8 @@
         "pdf_y": 670.7,
         "pdf_x_end": 485.8,
         "pdf_y_end": 701.5,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "zastavnik, komandir voda",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -27096,6 +27194,7 @@
     "death_date": "09.03.1944",
     "rank": "borac",
     "party": "KPJ",
+    "death_place": "Grabovica, Gornji Milanovac",
     "other_sources": [
       {
         "soldier_id": "9025008976",
@@ -27121,10 +27220,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Grabovica"
+    ]
   },
   {
     "last_name": "Mitrović",
@@ -27660,6 +27757,7 @@
     "death_date": "03.01.1945",
     "rank": "borac",
     "party": "KPJ",
+    "death_place": "u Komletincima na sremskom frontu",
     "other_sources": [
       {
         "soldier_id": "9025021194",
@@ -28693,7 +28791,8 @@
     "death_type": "ubijen",
     "death_date": "04.11.1941",
     "death_place": "Samaila, Kraljevo",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "kamenorezac"
   },
   {
     "last_name": "Nikolić",
@@ -29555,6 +29654,8 @@
         "pdf_y": 564.6,
         "pdf_x_end": 487.3,
         "pdf_y_end": 617.0,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -30230,6 +30331,7 @@
         "pdf_y": 484.7,
         "pdf_x_end": 390.4,
         "pdf_y_end": 502.8,
+        "rank": "borac",
         "unit_file": "4-krajiska-soldiers.json"
       }
     ],
@@ -30528,6 +30630,7 @@
         "pdf_y": 519.7,
         "pdf_x_end": 460.8,
         "pdf_y_end": 547.4,
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -30592,6 +30695,8 @@
         "pdf_x_end": 599.2,
         "pdf_y_end": 707.9,
         "pdf_x_left": 266.1,
+        "unit_detail": "brigadni sanitet",
+        "rank": "referent saniteta",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -30841,6 +30946,9 @@
         "pdf_y": 197.8,
         "pdf_x_end": 371.5,
         "pdf_y_end": 230.3,
+        "unit_detail": "2. bataljon",
+        "rank": "vodnik",
+        "since": "1944-09",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -31319,6 +31427,7 @@
     "death_type": "umro",
     "death_date": "1947",
     "party": "KPJ",
+    "death_place": "u Vapi",
     "other_sources": [
       {
         "soldier_id": "9016003612",
@@ -31562,6 +31671,8 @@
             680.9
           ]
         ],
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "zamenik političkog komesara",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -31743,6 +31854,8 @@
         "pdf_y": 651.5,
         "pdf_x_end": 485.1,
         "pdf_y_end": 668.9,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "politički komesar",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -31813,6 +31926,8 @@
         "pdf_y": 224.8,
         "pdf_x_end": 272.0,
         "pdf_y_end": 234.5,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -32020,6 +32135,8 @@
         "pdf_y": 509.2,
         "pdf_x_end": 660.1,
         "pdf_y_end": 518.9,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "ekonom",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -32086,6 +32203,7 @@
     "death_date": "21.07.1942",
     "rank": "vodnik",
     "death_place": "Guvna, Bugojno",
+    "occupation": "policijski službenik",
     "other_sources": [
       {
         "soldier_id": "9006000084",
@@ -33194,6 +33312,8 @@
         "pdf_x_end": 342.3,
         "pdf_y_end": 156.7,
         "pdf_x_left": 59.5,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -33294,6 +33414,8 @@
         "pdf_x_end": 342.5,
         "pdf_y_end": 209.1,
         "pdf_x_left": 59.3,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -35236,6 +35358,7 @@
     "rank": "zamenik komandanta",
     "party": "KPJ",
     "occupation": "inženjer šumarstva",
+    "death_place": "Ostra",
     "other_sources": [
       {
         "soldier_id": "9025021096",
@@ -35261,10 +35384,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Ostra"
+    ]
   },
   {
     "last_name": "Pravdić",
@@ -35473,7 +35594,8 @@
     "death_type": "ubijen",
     "death_date": "25.11.1941",
     "death_place": "na Vencu u Lisi",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "poštanski činovnik"
   },
   {
     "last_name": "Prodanović",
@@ -35696,6 +35818,10 @@
     "birth_place": "Lipnica",
     "rank": "borac",
     "party": "KPJ",
+    "occupation": "radnica",
+    "death_type": "ubijen",
+    "death_date": "16.09.1943",
+    "death_place": "Čačak",
     "other_sources": [
       {
         "soldier_id": "9016003878",
@@ -36185,6 +36311,8 @@
         "pdf_y": 282.2,
         "pdf_x_end": 274.9,
         "pdf_y_end": 357.6,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "vodnik",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -36763,6 +36891,7 @@
     "death_date": "23.02.1943",
     "death_place": "Donja Gorevnica",
     "party": "KPJ",
+    "occupation": "železnički službenik",
     "other_sources": [
       {
         "soldier_id": "9005001803",
@@ -37146,6 +37275,9 @@
     "pdf_x_end": 402.2,
     "pdf_y_end": 329.4,
     "pdf_x_left": 42.1,
+    "death_type": "ubijen",
+    "death_date": "06.1943",
+    "death_place": "Jančići",
     "other_sources": [
       {
         "soldier_id": "9016004490",
@@ -37587,6 +37719,8 @@
         "pdf_y": 671.2,
         "pdf_x_end": 663.2,
         "pdf_y_end": 680.9,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -37899,6 +38033,7 @@
         "pdf_x_end": 320.4,
         "pdf_y_end": 460.1,
         "pdf_x_left": 37.9,
+        "rank": "komandir voda",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -38612,6 +38747,8 @@
         "pdf_y": 313.6,
         "pdf_x_end": 461.9,
         "pdf_y_end": 378.0,
+        "unit_detail": "2. bataljon",
+        "rank": "komandant bataljona",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -39042,6 +39179,8 @@
             529.7
           ]
         ],
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -39132,6 +39271,8 @@
             881.3
           ]
         ],
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -39258,6 +39399,9 @@
         "pdf_y": 489.8,
         "pdf_x_end": 353.6,
         "pdf_y_end": 531.5,
+        "unit_detail": "5. bataljon",
+        "rank": "zamenik komandira čete",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -39943,6 +40087,9 @@
     "occupation": "stolar",
     "rank": "politički komesar čete",
     "party": "KPJ",
+    "death_type": "ubijen",
+    "death_date": "28.07.1942",
+    "death_place": "Čačak",
     "other_sources": [
       {
         "soldier_id": "9016004497",
@@ -40237,6 +40384,7 @@
     "death_type": "poginuo",
     "death_date": "05.03.1943",
     "rank": "komandir voda",
+    "death_place": "Ostra",
     "other_sources": [
       {
         "soldier_id": "9025021187",
@@ -40262,10 +40410,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Ostra, Mrčajevci"
+    ]
   },
   {
     "last_name": "Savić",
@@ -40540,6 +40686,8 @@
         "pdf_y": 789.9,
         "pdf_x_end": 230.5,
         "pdf_y_end": 799.1,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "komandir voda",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -40931,6 +41079,8 @@
         "pdf_y": 179.3,
         "pdf_x_end": 457.5,
         "pdf_y_end": 232.6,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "komandir čete",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -41408,6 +41558,7 @@
         "pdf_y": 377.2,
         "pdf_x_end": 397.0,
         "pdf_y_end": 404.4,
+        "rank": "vodni delegat",
         "unit_file": "4-krajiska-soldiers.json"
       }
     ],
@@ -43576,6 +43727,8 @@
         "pdf_y": 426.1,
         "pdf_x_end": 484.6,
         "pdf_y_end": 489.3,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "desetar, politički komesar čete",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -43767,6 +43920,7 @@
     "death_date": "26.10.1942",
     "rank": "zamenik političkog komesara čete",
     "party": "KPJ",
+    "death_place": "u Oplenićima kod Bosanskog Grahova",
     "other_sources": [
       {
         "soldier_id": "9025011474",
@@ -43792,10 +43946,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Mrkonjić Grad"
+    ]
   },
   {
     "last_name": "Todorović",
@@ -47003,6 +47155,7 @@
     "death_date": "03.07.1942",
     "rank": "zamenik komandira čete",
     "party": "KPJ",
+    "death_place": "Mrčajevci",
     "other_sources": [
       {
         "soldier_id": "9005001772",
@@ -47456,6 +47609,9 @@
         "pdf_y": 474.0,
         "pdf_x_end": 360.1,
         "pdf_y_end": 514.2,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -47481,6 +47637,7 @@
         "pdf_y": 472.0,
         "pdf_x_end": 209.7,
         "pdf_y_end": 535.2,
+        "rank": "borac",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],
@@ -48029,6 +48186,9 @@
         "pdf_y": 438.2,
         "pdf_x_end": 352.4,
         "pdf_y_end": 479.9,
+        "unit_detail": "5. bataljon",
+        "rank": "desetar",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -48566,6 +48726,8 @@
         "pdf_y": 736.1,
         "pdf_x_end": 306.1,
         "pdf_y_end": 745.3,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -48991,16 +49153,17 @@
         "pdf_y": 670.4,
         "pdf_x_end": 486.9,
         "pdf_y_end": 701.2,
+        "unit_detail": "2. bataljon",
+        "rank": "bolničarka",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
+    "death_place": "Sutjeska",
     "ethnicity": "Srpkinja",
     "borrowed": [
-      "death_place",
       "ethnicity",
       "party"
     ],
-    "death_place": "Zelengora",
     "party": "KPJ"
   },
   {
@@ -49186,6 +49349,7 @@
         "pdf_y": 130.4,
         "pdf_x_end": 481.5,
         "pdf_y_end": 158.5,
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       },
       {
@@ -50756,6 +50920,8 @@
         "pdf_x_end": 383.9,
         "pdf_y_end": 329.6,
         "pdf_x_left": 101.8,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -51408,6 +51574,8 @@
         "pdf_y": 408.9,
         "pdf_x_end": 240.1,
         "pdf_y_end": 418.6,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -52542,6 +52710,7 @@
         "pdf_y": 611.6,
         "pdf_x_end": 461.6,
         "pdf_y_end": 639.8,
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -52726,6 +52895,8 @@
     "birth_place": "Prilep",
     "occupation": "učenik gimnazije",
     "rank": "borac",
+    "death_type": "ubijen",
+    "death_date": "11.09.1942",
     "other_sources": [
       {
         "soldier_id": "9016002613",
@@ -53413,6 +53584,7 @@
         "pdf_y": 262.3,
         "pdf_x_end": 625.6,
         "pdf_y_end": 272.0,
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -53425,6 +53597,8 @@
         "pdf_y": 180.1,
         "pdf_x_end": 210.7,
         "pdf_y_end": 242.6,
+        "unit_detail": "2. četa",
+        "rank": "borac",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ],

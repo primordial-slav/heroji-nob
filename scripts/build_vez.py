@@ -19,6 +19,7 @@ sets:
     python scripts/build_vez.py --write
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import argparse
 import glob
@@ -293,7 +294,7 @@ def main():
         if GEO.exists():
             REGIONS.write_text(json.dumps(reg, ensure_ascii=False, indent=0) + '\n', encoding='utf-8')
         OUT.parent.mkdir(parents=True, exist_ok=True)
-        OUT.write_text(json.dumps(dict(sorted(out.items())), separators=(',', ':')) + '\n', encoding='utf-8')
+        write_text(OUT, json.dumps(dict(sorted(out.items())), separators=(',', ':')) + '\n')
         RAIL.write_text(json.dumps(dict(sorted(rail.items())), separators=(',', ':')) + '\n', encoding='utf-8')
         print(f'wrote {OUT.relative_to(ROOT)} ({OUT.stat().st_size / 1e6:.1f} MB), {RAIL.relative_to(ROOT)}')
 

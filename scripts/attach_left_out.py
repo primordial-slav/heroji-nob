@@ -13,6 +13,7 @@ record of its unit holds this entry.
 Then run apply_corrections.py --apply.
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import json
 import sys
@@ -73,7 +74,7 @@ def main():
                           f"entries); the entry had shown nowhere"} for i, a in enumerate(add)]
         if any(c['id'] in taken for c in new):
             sys.exit(f'--write {start}: ids from there are taken')
-        CORRECTIONS.write_text(json.dumps(corr + new, ensure_ascii=False, indent=2), encoding='utf-8')
+        write_text(CORRECTIONS, json.dumps(corr + new, ensure_ascii=False, indent=2))
         print(f'Appended {len(new)} reference corrections from id {start}')
 
 

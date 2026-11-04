@@ -1226,6 +1226,8 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067000064",
     "pdf_x_end": 179.3,
+    "death_date": "29.06.1944",
+    "death_place": "Pazin",
     "birth_date": "28.08.1921"
   },
   {
@@ -12138,6 +12140,7 @@
         "pdf_y": 393.3,
         "pdf_x_end": 380.1,
         "pdf_y_end": 410.2,
+        "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
         "unit_file": "tomsiceva-soldiers.json"
       }
     ],
@@ -14264,6 +14267,7 @@
         "pdf_y": 341.7,
         "pdf_x_end": 235.2,
         "pdf_y_end": 361.0,
+        "unit_detail": "Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -14565,6 +14569,7 @@
         "pdf_y": 422.0,
         "pdf_x_end": 128.4,
         "pdf_y_end": 435.4,
+        "unit_detail": "2. bataljon",
         "unit_file": "gradnikova-soldiers.json"
       },
       {
@@ -16301,6 +16306,8 @@
     "soldier_id": "0067000809",
     "pdf_x_end": 183.8,
     "pdf_x_left": 57.8,
+    "death_date": "14.07.1944",
+    "death_place": "pri Hrpeljah",
     "birth_date": "10.03.1903"
   },
   {
@@ -18744,6 +18751,7 @@
         "pdf_y": 436.0,
         "pdf_x_end": 147.9,
         "pdf_y_end": 445.0,
+        "unit_detail": "1. divizion",
         "unit_file": "1-slovenska-artilerijska-soldiers.json"
       },
       {
@@ -22362,6 +22370,25 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067001111",
     "pdf_x_end": 167.8,
+    "death_date": "1944",
+    "other_sources": [
+      {
+        "soldier_id": "9021035167",
+        "name": "Valenčić (Ivan) Ivan",
+        "additional_info": "rođen 1922, Studena (Rijeka). Hrvat, poginuo 1944. u NOBu, Turki kupa brod",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1750",
+        "source_page": 1750,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "birth_place": "Studena, Rijeka",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "death_place": "Turki kupa brod",
     "birth_date": "15.04.1922"
   },
   {
@@ -22426,6 +22453,7 @@
       }
     ],
     "death_type": "poginuo",
+    "death_place": "v Rižarni v Trstu",
     "birth_date": "10.04.1923"
   },
   {
@@ -23468,6 +23496,8 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067001166",
     "pdf_x_end": 157.8,
+    "death_date": "29.06.1944",
+    "death_place": "Pazin",
     "birth_date": "05.10.1921"
   },
   {
@@ -23734,6 +23764,8 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067001180",
     "pdf_x_end": 315.8,
+    "death_date": "09.1944",
+    "death_place": "v Rižarni",
     "birth_date": "23.08.1923"
   },
   {
@@ -24176,6 +24208,8 @@
         "pdf_y": 191.8,
         "pdf_x_end": 453.2,
         "pdf_y_end": 227.0,
+        "unit_detail": "2. četa, 5. bataljon",
+        "rank": "borac",
         "unit_file": "11-dalmatinska-soldiers.json"
       }
     ],
@@ -25298,6 +25332,8 @@
     "pdf_file": "istrski-odred.pdf",
     "soldier_id": "0067001259",
     "pdf_x_end": 325.8,
+    "death_date": "20.07.1944",
+    "death_place": "Kozina (terenski obveščevalec)",
     "other_sources": [
       {
         "soldier_id": "9020013097",
@@ -25311,13 +25347,9 @@
     "birth_place": "Kozina, Sežana",
     "borrowed": [
       "birth_place",
-      "death_date",
-      "death_place",
       "ethnicity"
     ],
     "ethnicity": "Slovenac",
-    "death_date": "1944",
-    "death_place": "Kozina",
     "birth_date": "28.10.1913"
   },
   {

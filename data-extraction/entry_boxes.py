@@ -817,6 +817,7 @@ def main():
     args = ap.parse_args()
 
     sys.path.insert(0, str(ROOT / 'scripts'))
+    from safe_write import write_text
     from name_utils import BRIGADE_CONFIGS
     from cleanup_text_fields import live_json_files
 
@@ -837,7 +838,7 @@ def main():
             print(f"      {pdf_file}: {lay['style']}, line pitch {lay['pitch']:.1f}, indent {lay['indent']:+.1f}")
         new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
         if args.apply and new_text != text:
-            path.write_text(new_text, encoding='utf-8')
+            write_text(path, new_text)
             print(f"    Written: {path}")
     cache.save()
     if not args.apply:

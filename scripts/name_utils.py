@@ -1960,7 +1960,7 @@ def extract_birth_info(additional_info):
 
     info = additional_info.strip()
     # Skip a leading alias clause: "zvani Maćo; 1923, ...", "ili Atanas; 3. 5. 1926, ...", "(Nikola); ..."
-    info = re.sub(r'^(?:zvan[ai]?\b|ili\b|rođ\.|u jednom dokumentu|\()[^;]{0,60};\s*', '', info)
+    info = re.sub(r'^(?:zvan[ai]?\b|ili\b|rođ\.|u jednom dokumentu|ud[ao](?:n|t)a\b|\()[^;]{0,60};\s*', '', info)
 
     # Only look before death keywords, as whole words: a list's title is no death ("Poginuli, strijeljani i umrli
     # borci NOR-a ...: rođen 8. oktobra 1921": "umrl" stood inside "umrli", 2026-10-28)
@@ -2017,6 +2017,22 @@ def extract_birth_info(additional_info):
     if match:
         year = match.group(1)
         return year, year
+
+    # The rest as the entries print it (2026-11-04): the word's other slips ("rođei", "roVena", "rđ.", "ro đena", a line's "đen 1894"
+    # whose "ro-" was lost, "r. 1920", "r 4. 4. 1923"), a comma after it ("rođen, 1921."), a maiden name or the village first
+    # ("rođena Curić 1925", "rođen u Boštri 1924"), the year alone ("1925. Poginuo"), a Roman or misread month first ("(26. IX 1926,",
+    # "10. U. 1912,"), a place first ("Koritno, 1912 — padel", "Lopar 1915—1944", "Balainac, 1922"), a duty first ("desetar, 1914. Mikulići")
+    for rx in (r'(?:\b[Rr]ođei|\b[Rr]oVen[a]?|\b[Rr]đ\.|\b[Rr]o\s+đen[a]?|(?<=,\s)đen[a]?|\b[Rr]ođen[a]?\s*,|\b[Rr]\.|\br)\s*(?:\d{1,2}\.\s*(?:[IVX]+|\d{1,2})\.?\s*)?(18\d\d|19[0-3]\d)\b',
+               r'\b[Rr]ođen[a]?\s+[A-ZČĆŽŠĐ][a-zčćžšđ]+\s+(18\d\d|19[0-3]\d)\b',
+               r'\b[Rr]ođen[a]?\s+u\s+[^,.;]{2,30}?\s+(18\d\d|19[0-3]\d)\b',
+               r'^(18\d\d|19[0-3]\d)[.,]?\s*$',
+               r'^\(?\d{1,2}\.\s*(?:[IVX]+|[A-Z])\.?\s*(18\d\d|19[0-3]\d)\b',
+               r'^[A-ZČĆŽŠĐ][^,;:.\d]{1,28},?\s+(18\d\d|19[0-3]\d)\b(?=\s*[—–-]|\s*,|\s*$)',
+               r'^(?:[^:;]{3,60}:\s*)?(?:borac|desetar|vodnik|komandir|bolničar\w*|kurir|delegat|intendant|ekonom)\b[^,;:]{0,24}[.,]\s*(18\d\d|19[0-3]\d)[.,]\s*[A-ZČĆŽŠĐ]'):
+        match = re.search(rx, search_text)
+        if match:
+            year = match.group(1)
+            return year, year
 
     return '', ''
 

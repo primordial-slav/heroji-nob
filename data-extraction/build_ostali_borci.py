@@ -239,11 +239,29 @@ NO_FATHER = re.compile(r'^(?:nema|nepoznat[aoi]?|nn\.?|n\.\s?n\.?)$', re.I)
 # the census's column of the place of death often names his unit, no place ("7 banijska divizija", "18 brigada",
 # "Prešernova brigada", "Kozjanski odred"): the record's sub-unit, its number written "7. " (2026-10-30), shown on the
 # card as "U jedinici"; "Pogrešan od 9.1944" (missing) is neither
-UNIT_IN_COLUMN = re.compile(r'brig|\bdiv\b|\bdiv\.|diviz|odred|bataljon|korpus|'
+UNIT_IN_COLUMN = re.compile(r'(?<![a-zčćžšđ])(?:(?<!Široki )(?<!Široko )(?<!Gornja )(?<!Donja )brig)|\d\s*\.?\s*(?:bri|br\b|br\.|div|ud\b|ud\.|kub|snoub|kr\.|kr\b|peš\.?\s|'
+                            r'koz|brod|osječ|istočn|sr\.|kosov|kosmet|terensk|šumad|nikš|maslov|moslov|srbijan|hercreg|ljublj|krašk|roš|pohor|istar|bačin|btig|biragad|'
+                            r'č\b|č\.|ć\b|ć\.|ba\.|ivizij|grupa|grupe|sjevero)|\bdiv\b|\bdiv\.|diviz|odred|bataljon|batalj\b|korpus|\bčeta\b|^\d\s*Prol|'
                             # a number and his unit's word, no "brigada" ("6 lička", "2.dalmatinska", "17 majevička"; 2026-11-03)
                             r'^\s*\d+\s*\.?\s*(?:prolet|dalm|lič|kraj|kraišk|majev|moslav|slavon|vojv|vovođ|banij|banin|kordun|udarn|'
                             r'primorsk|hercegov|bosan|crnog|sandž|srps|jugosl|goran|makedon|muslim|omlad|virovit|romanij|južnomor|'
                             r'srednjebos|srednjobos|armij|čet|bat\b|bat\.|batalj)', re.I)
+# what the column cut or spelled: its units in one form (2026-11-04)
+UNIT_WORDS = [(r'\bbrigad$|\bbriga$|\bbrig\.?$|\bbr\.$|\bbri\.$', 'brigada'), (r'\bdivizij$|\bdivizi$|\bdiviz\.?$|\bdiv\.?$', 'divizija'),
+              (r'\bbrig\.\s*', 'brigada '), (r'\bdiviz\.\s*', 'divizija '), (r'\bdalmat\.\s*', 'dalmatinska '), (r'\bdalm\.?\s+', 'dalmatinska '),
+              (r'\bvojv(?:o[đd]j?)?\.\s*', 'vojvođanska '), (r'\bprol(?:et)?\.\s*', 'proleterska '), (r'\bherc\.\s*', 'hercegovačka '), (r'\bkraj\.\s*', 'krajiška '),
+              (r'\bslav\.?\s+', 'slavonska '), (r'\bsandž\.\s*', 'sandžačka '), (r'\b[Mm]aslovačk', 'moslavačk'), (r'\b[Mm]oslovačk', 'moslavačk'), (r'\bkraišk', 'krajišk'),
+              (r'\bkrajšk', 'krajišk'), (r'\b[Mm]ajevačk', 'majevičk'), (r'\bCankarev|\bCankarj\b', 'Cankarjev'), (r'\bTomšićev|\bTompićev', 'Tomšičev'), (r'\bTomš\.\s*', 'Tomšičeva '),
+              (r'\bPreš\.', 'Prešernova'), (r'\bPrešernev', 'Prešernov'), (r'\bGupčev', 'Gubčev'), (r'\bPetefijev', 'Petefi'), (r'\b[Pp]roleter\b', 'proleterska'),
+              (r'\bProleterska\b', 'proleterska'), (r'\bbraće radića?\b|\bbraća radić\b', 'Braća Radić'), (r'\bm\.\s?gupca\b|\bmatije gupca\b|\bmatije gubca\b|\bm\.\s?gubca\b|\bmatija gube\b', 'Matija Gubec'),
+              (r'\bivan cankar\b', 'Ivan Cankar'), (r'\bt\.\s?tomšičrva\b', 'Tomšičeva')]
+
+
+def unit_form(v: str) -> str:
+    for rx, to in UNIT_WORDS:
+        v = re.sub(rx, to, v)
+    return re.sub(r'\s+', ' ', v).strip(' ,+')
+
 MISSING_COLUMN = re.compile(r'^pogrešan\b', re.I)
 
 
@@ -253,7 +271,7 @@ def place_or_unit(place: str) -> dict:
         return {}
     if UNIT_IN_COLUMN.search(place):
         unit = re.sub(r'(\d+)\s*\.?\s*(?=[^\W\d_])', r'\1. ', place.strip())     # "7 banijska", "13.divizija"
-        return {'unit_detail': re.sub(r'\s*,\s*', ', ', unit)}
+        return {'unit_detail': unit_form(re.sub(r'\s*,\s*', ', ', unit))}
     return {'death_place': death_column(place)}
 
 

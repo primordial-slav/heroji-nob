@@ -465,6 +465,8 @@
         "pdf_y": 299.3,
         "pdf_x_end": 267.1,
         "pdf_y_end": 307.3,
+        "unit_detail": "štab brigade",
+        "rank": "zamenik komandanta",
         "unit_file": "4-banijska-soldiers.json"
       },
       {
@@ -569,6 +571,8 @@
         "pdf_y": 540.3,
         "pdf_x_end": 374.8,
         "pdf_y_end": 584.4,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -2564,7 +2568,8 @@
     "ethnicity": "Srbin",
     "unit_detail": "1. četa, 1. bataljon",
     "rank": "komandir čete",
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "occupation": "šumski tehničar"
   },
   {
     "last_name": "Bjelanović",
@@ -3297,7 +3302,7 @@
       "death_date",
       "death_place"
     ],
-    "death_place": "Crna gora"
+    "death_place": "Crna Gora"
   },
   {
     "last_name": "Brkić",
@@ -3967,7 +3972,7 @@
       {
         "soldier_id": "0044010140",
         "name": "Carić Samojla Mišo",
-        "additional_info": "rođen 1908, G. Zirovać — Dvor, Srbin, radnik-obućar, u NOVJ od 1942, član KPJ, borac 3. bataljona. Poginuo 1945. u bici na Sutjesci.",
+        "additional_info": "rođen 1908, G. Zirovać — Dvor, Srbin, radnik-obućar, u NOVJ od 1942, član KPJ, borac 3. bataljona. Poginuo 1943. u bici na Sutjesci.",
         "pdf_file": "7-banijska-poginuli.pdf",
         "pdf_page": 10,
         "pdf_x": 62.9,
@@ -3977,15 +3982,7 @@
       }
     ],
     "unit_detail": "3. bataljon",
-    "party": "KPJ",
-    "variants": {
-      "death": [
-        {
-          "date": "1945",
-          "place": "Sutjeska"
-        }
-      ]
-    }
+    "party": "KPJ"
   },
   {
     "last_name": "Carić",
@@ -4617,7 +4614,8 @@
     "death_date": "1944",
     "death_place": "Banija",
     "rank": "borac",
-    "mothers_name": "Sofija"
+    "mothers_name": "Sofija",
+    "fathers_name": "Sofije"
   },
   {
     "last_name": "Dejanović",
@@ -4822,12 +4820,13 @@
         "pdf_y": 554.7,
         "pdf_x_end": 455.1,
         "pdf_y_end": 618.9,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "u kanjonu Pive tokom bitke na Sutjesci"
+    "death_place": "u kanjonu Pive"
   },
   {
     "last_name": "Didulica",
@@ -5260,6 +5259,7 @@
         "pdf_y": 346.6,
         "pdf_x_end": 455.3,
         "pdf_y_end": 399.8,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -6752,22 +6752,15 @@
     "first_name": "Stojša",
     "fathers_name": "Nikola",
     "full_name": "Džaić Nikole Stojša",
-    "additional_info": "borac, rođen 1923, Ljeskovac, Dvor, zemljoradnik, Srbin, u NOB od decembra 1942, poginuo na Zelengori 10. juna 1943. Potok Hrčavku nije bilo teško prijeći. Opet penjanje. Borba se vodi na sve strane... Stalno usponi. Svakome je već došlo do guše. Svijest se bori sa tijelom koje traži odmora. Mara Erakova, natečenih nogu, ne može više da makne. Sjedi i umire... Dr Slavko Borojević",
+    "additional_info": "borac, rođen 1923, Ljeskovac, Dvor, zemljoradnik, Srbin, u NOB od decembra 1942, poginuo na Zelengori 10. juna 1943.",
     "birth_year": "1923",
     "pdf_page": 12,
     "pdf_y": 50.2,
     "pdf_x": 183.6,
-    "pdf_y_end": 204.6,
+    "pdf_y_end": 91.8,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000208",
     "pdf_x_end": 353.5,
-    "birth_place": "Ljeskovac, Dvor",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "10.06.1943",
-    "death_place": "Zelengora",
-    "rank": "borac",
     "other_sources": [
       {
         "soldier_id": "0044010236",
@@ -6780,7 +6773,14 @@
         "pdf_y_end": 486.8,
         "pdf_x_end": 336.6
       }
-    ]
+    ],
+    "birth_place": "Ljeskovac, Dvor",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "10.06.1943",
+    "death_place": "Zelengora",
+    "rank": "borac"
   },
   {
     "last_name": "Džakula",
@@ -7756,7 +7756,7 @@
     "soldier_id": "0044000242",
     "pdf_x_end": 393.4,
     "birth_place": "Gradište, Vinkovci",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "lekar",
     "rank": "referent saniteta brigade"
   },
@@ -8296,6 +8296,8 @@
         "pdf_y": 118.3,
         "pdf_x_end": 206.6,
         "pdf_y_end": 159.2,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -8547,7 +8549,8 @@
     "rank": "desetar",
     "unit_detail": "1. četa, 2. bataljon",
     "party": "SKOJ 1944",
-    "mothers_name": "Mara"
+    "mothers_name": "Mara",
+    "fathers_name": "Mare"
   },
   {
     "last_name": "Hohštetner",
@@ -8565,7 +8568,7 @@
     "soldier_id": "0044000265",
     "pdf_x_end": 209.0,
     "birth_place": "Podgorje, Zaprešić",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "29.03.1944",
     "rank": "zamenik komandanta brigade",
@@ -8583,6 +8586,7 @@
         "pdf_y": 267.6,
         "pdf_x_end": 464.0,
         "pdf_y_end": 286.5,
+        "rank": "zamjenik komandanta brigade",
         "unit_file": "soldiers.json"
       }
     ]
@@ -8884,6 +8888,8 @@
         "pdf_y": 328.0,
         "pdf_x_end": 359.3,
         "pdf_y_end": 336.0,
+        "unit_detail": "štab brigade",
+        "rank": "politički komesar",
         "unit_file": "4-banijska-soldiers.json"
       },
       {
@@ -9849,6 +9855,7 @@
         "additional_info": "borac, rođen 1920. godine u selu Bijele Vode, Glina, zemljoradnik, Srbin, u NOB od 1942. godine, poginuo 1943. godine za vrijeme IV neprijateljske ofanzive.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=228",
         "source_page": 216,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -10096,6 +10103,7 @@
         "pdf_y": 850.0,
         "pdf_x_end": 626.5,
         "pdf_y_end": 859.7,
+        "rank": "bolničarka",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ]
@@ -10625,6 +10633,8 @@
         "pdf_y": 219.5,
         "pdf_x_end": 371.6,
         "pdf_y_end": 258.2,
+        "unit_detail": "2. bataljon",
+        "rank": "zamenik komesara",
         "unit_file": "druga-licka-soldiers.json"
       }
     ]
@@ -10898,21 +10908,21 @@
     "first_name": "Nikola",
     "fathers_name": "Ivan",
     "full_name": "Klobučar Ivana Nikola",
-    "additional_info": "zvani Šnjaco; borac 3. bataljona, rođen 1923, Donje Selište, Glina, radnik, Hrvat, u NOB od maja 1942, član KPJ od oktobra 1943. godine, krajem rata politički komesar čete. Za vrijeme jednog od onih beskrajnih pokreta, oko podneva - odmor, malo duži no obično. Vidim u blizini jednog borca kako sebi priprema ležaj, sporo i naročito pažljivo. Rekoh mu: - Nećemo ovdje da noćimo, druže! - Možda ja baš i hoću. Nisam mu ništa odgovorio. Nisam znao šta je mislio kada je to rekao. Odmarao sam se s ostalima. Ali, kada je stiglo naređenje: „Sprema za pokret!\", onaj drug se više nije odazvao. Bio je već mrtav. Dr Oskar Gingsberger",
+    "additional_info": "zvani Šnjaco; borac 3. bataljona, rođen 1923, Donje Selište, Glina, radnik, Hrvat, u NOB od maja 1942, član KPJ od oktobra 1943. godine, krajem rata politički komesar čete.",
     "birth_year": "1923",
     "pdf_page": 18,
     "pdf_y": 62.7,
     "pdf_x": 2.6,
-    "pdf_y_end": 306.1,
+    "pdf_y_end": 124.7,
     "pdf_file": "borci-sutjeske-7-banijska.pdf",
     "soldier_id": "0044000341",
     "pdf_x_end": 170.9,
+    "party": "KPJ 1943",
     "birth_place": "Donje Selište, Glina",
     "ethnicity": "Hrvat",
     "occupation": "radnik",
     "rank": "borac",
-    "unit_detail": "3. bataljon",
-    "party": "KPJ 1943"
+    "unit_detail": "3. bataljon"
   },
   {
     "last_name": "Knežević",
@@ -11576,6 +11586,8 @@
         "pdf_y": 324.2,
         "pdf_x_end": 367.9,
         "pdf_y_end": 349.5,
+        "rank": "bolničarka",
+        "since": "1943-07",
         "unit_file": "15-majevicka-soldiers.json"
       }
     ]
@@ -11914,6 +11926,7 @@
         "pdf_y": 609.2,
         "pdf_x_end": 456.5,
         "pdf_y_end": 628.3,
+        "rank": "komesar brigade",
         "unit_file": "soldiers.json"
       }
     ],
@@ -11940,7 +11953,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.1943",
-    "rank": "borac"
+    "rank": "borac",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Krupljanin",
@@ -12496,7 +12510,7 @@
       {
         "soldier_id": "0044010442",
         "name": "Lazić Damjana Mirko",
-        "additional_info": "rođen 1923, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1945. u bici na Sutjesci.",
+        "additional_info": "rođen 1923, Hajtić — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u bici na Sutjesci.",
         "pdf_file": "7-banijska-poginuli.pdf",
         "pdf_page": 32,
         "pdf_x": 60.6,
@@ -12505,15 +12519,7 @@
         "pdf_x_end": 341.5
       }
     ],
-    "death_place": "Sutjeska",
-    "variants": {
-      "death": [
-        {
-          "date": "1945",
-          "place": "Sutjeska"
-        }
-      ]
-    }
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Lazić",
@@ -12701,7 +12707,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Livera",
@@ -12912,6 +12919,8 @@
         "pdf_y": 119.5,
         "pdf_x_end": 380.8,
         "pdf_y_end": 168.4,
+        "unit_detail": "1. bataljon",
+        "rank": "stariji vodnik",
         "unit_file": "druga-licka-soldiers.json"
       }
     ]
@@ -12974,27 +12983,29 @@
     "death_date": "1987",
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
-    "other_sources": [
-      {
-        "soldier_id": "0044010476",
-        "name": "Lončar Dragan",
-        "additional_info": "zvani Pitanje; rođen 1922, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1944.",
-        "pdf_file": "7-banijska-poginuli.pdf",
-        "pdf_page": 33,
-        "pdf_x": 53.9,
-        "pdf_y": 351.5,
-        "pdf_y_end": 369.4,
-        "pdf_x_end": 334.7
-      }
-    ],
-    "party": "KPJ 1944",
-    "variants": {
-      "death": [
-        {
-          "date": "1944"
-        }
-      ]
-    }
+    "party": "KPJ 1944"
+  },
+  {
+    "soldier_id": "0044010476",
+    "last_name": "Lončar",
+    "middle_name": "",
+    "first_name": "Dragan",
+    "fathers_name": "",
+    "additional_info": "zvani Pitanje; rođen 1922, M. Poljane — Glina, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1944.",
+    "pdf_file": "7-banijska-poginuli.pdf",
+    "pdf_page": 33,
+    "pdf_x": 53.9,
+    "pdf_y": 351.5,
+    "pdf_x_end": 334.7,
+    "pdf_y_end": 369.4,
+    "birth_year": "1922",
+    "full_name": "Lončar Dragan",
+    "birth_place": "M. Poljane, Glina",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "rank": "borac"
   },
   {
     "last_name": "Lončar",
@@ -13298,7 +13309,8 @@
       }
     ],
     "party": "SKOJ 1942",
-    "mothers_name": "Mara"
+    "mothers_name": "Mara",
+    "fathers_name": "Mare"
   },
   {
     "last_name": "Lončarević",
@@ -13539,6 +13551,7 @@
         "additional_info": "politički delegat voda, rođen 1923. godine u selu Brnjeuška, Glina, krojač, Srbin, u NOB od 1942. godine, član SKOJ-a, poginuo 1943. godine u Bici za ranjenike na Neretvi tokom IV neprijateljske ofanzive.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=232",
         "source_page": 220,
+        "rank": "politički delegat voda",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -15755,6 +15768,7 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
+    "death_place": "Sutjeska",
     "other_sources": [
       {
         "soldier_id": "9021011586",
@@ -15764,10 +15778,6 @@
         "source_page": 485,
         "ref_book": "zrtve-rata-1964-hrv"
       }
-    ],
-    "death_place": "Crna gora",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -16254,7 +16264,7 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "death_place": "kod Šćepan Polja u toku bitke na Sutjesci"
+    "death_place": "Tara, Šćepan Polje"
   },
   {
     "last_name": "Mirilović",
@@ -16776,8 +16786,8 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "kod Rataja na Zelengori u toku bitke na Sutjesci",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "kod Rataja na Zelengori na Sutjesci"
   },
   {
     "last_name": "Mrđenović",
@@ -17671,7 +17681,7 @@
         "pdf_x_end": 341.1
       }
     ],
-    "death_place": "na Vučevu u toku bitke na Sutjesci"
+    "death_place": "Piva"
   },
   {
     "last_name": "Nožinić",
@@ -17839,6 +17849,7 @@
         "additional_info": "komandir čete, rođen 1922. godine u selu Pobrđani, Sisak, zemljoradnik, Srbin, član KPJ, borac od 1942. godine, poginuo 1943. godine za vrijeme IV neprijateljske ofenzive u Bici za ranjenike.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=240",
         "source_page": 228,
+        "rank": "komandir čete",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -18472,6 +18483,7 @@
         "pdf_y": 257.9,
         "pdf_x_end": 291.5,
         "pdf_y_end": 310.1,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -18975,6 +18987,8 @@
         "pdf_y": 614.9,
         "pdf_x_end": 418.5,
         "pdf_y_end": 624.1,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -19519,6 +19533,9 @@
         "pdf_y": 507.6,
         "pdf_x_end": 459.0,
         "pdf_y_end": 531.5,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "zamjenik komandira čete",
+        "since": "1943-09",
         "unit_file": "2-dalmatinska-soldiers.json"
       },
       {
@@ -20746,6 +20763,7 @@
         "pdf_y": 526.6,
         "pdf_x_end": 284.0,
         "pdf_y_end": 588.4,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -20807,6 +20825,7 @@
         "additional_info": "borac, rođen 1921. godine u selu Majske Poljane, Glina, zemljoradnik, Srbin, u NOB od 1942. godine, član SKOJ-a, poginuo aprila 1943. godine u Hercegovini poslije IV neprijateljske ofanzive.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=246",
         "source_page": 234,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -21491,7 +21510,8 @@
     "death_date": "leto 1943",
     "rank": "borac",
     "party": "SKOJ",
-    "mothers_name": "Kata"
+    "mothers_name": "Kata",
+    "fathers_name": "Kate"
   },
   {
     "last_name": "Simić",
@@ -21536,7 +21556,7 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "kod Šćepan Polja u toku bitke na Sutjesci"
+    "death_place": "Tara, Šćepan Polje"
   },
   {
     "last_name": "Simić",
@@ -21605,7 +21625,7 @@
         "pdf_x_end": 341.9
       }
     ],
-    "death_place": "na Ozrenu tokom bitke na Sutjesci"
+    "death_place": "Ozren, Tjentište"
   },
   {
     "last_name": "Simić",
@@ -22801,6 +22821,7 @@
         "additional_info": "borac, rođen 1926. godine u selu Trnovac, Glina, zemljoradnik, Srbin, u NOB od 1942. godine, poginuo aprila 1943. godine u Hercegovini po završetku IV neprijateljske ofanzive.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=254",
         "source_page": 242,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -24931,6 +24952,8 @@
         "additional_info": "borac 3. bataljona, rođen 1903. godine, Slovinci, Sisak, zemljoradnik, Srbin, u NOVJ od 1942. godine, poginuo u bici na Sutjesci na prevoju Pleće iznad Tjentišta 10. juna 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=255",
         "source_page": 243,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -25373,6 +25396,9 @@
         "pdf_y": 412.3,
         "pdf_x_end": 359.9,
         "pdf_y_end": 442.5,
+        "unit_detail": "2. bataljon",
+        "rank": "komandant brigade",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -25516,6 +25542,8 @@
         "pdf_y": 592.2,
         "pdf_x_end": 488.6,
         "pdf_y_end": 609.9,
+        "unit_detail": "1. četa",
+        "rank": "borac",
         "unit_file": "4-proleterska-soldiers.json"
       }
     ]
@@ -25759,6 +25787,8 @@
         "pdf_y": 300.5,
         "pdf_x_end": 270.1,
         "pdf_y_end": 308.5,
+        "unit_detail": "štab brigade",
+        "rank": "komandant bataljona",
         "unit_file": "4-banijska-soldiers.json"
       },
       {
@@ -25938,6 +25968,7 @@
         "additional_info": "borac, rođen 1925. godine u selu Majske Poljane, Glina, zemljoradnik, Srbin, u NOB 1942. godine, član SKOJ-a, poginuo aprila 1943. godine u hercegovini nakon IV neprijateljske ofanzive.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=259",
         "source_page": 247,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -26168,7 +26199,7 @@
       "death_type"
     ],
     "death_date": "1943",
-    "death_place": "Crna gora"
+    "death_place": "Crna Gora"
   },
   {
     "last_name": "Zubenica",
@@ -26247,6 +26278,7 @@
         "additional_info": "borac, rođen 1922. godine, Ljeskovac, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 15. septembra 1942. godine, poginuo u bici za ranjenike na Neretvi februar—mart 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=258",
         "source_page": 246,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -26316,6 +26348,7 @@
         "pdf_y": 219.9,
         "pdf_x_end": 394.4,
         "pdf_y_end": 271.9,
+        "rank": "kurir",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ]
@@ -26987,6 +27020,7 @@
         "pdf_y": 439.1,
         "pdf_x_end": 407.6,
         "pdf_y_end": 457.2,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -28284,6 +28318,8 @@
         "pdf_y": 308.9,
         "pdf_x_end": 471.9,
         "pdf_y_end": 355.8,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
         "unit_file": "7-krajiska-soldiers.json"
       }
     ]
@@ -28960,6 +28996,7 @@
         "pdf_y": 546.6,
         "pdf_x_end": 459.1,
         "pdf_y_end": 608.4,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -28985,7 +29022,7 @@
     "pdf_y_end": 283.8,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010003",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "tokar",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -29021,7 +29058,7 @@
     "pdf_y_end": 304.4,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010004",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "časovničar",
     "rank": "borac",
     "pdf_x_end": 335.9
@@ -29113,6 +29150,7 @@
         "pdf_y": 234.6,
         "pdf_x_end": 446.1,
         "pdf_y_end": 287.8,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -29123,21 +29161,15 @@
     "first_name": "Ilija",
     "fathers_name": "Janko",
     "full_name": "Arbutina Janka Ilija",
-    "additional_info": "rođen 1904, Martinovići — Glina, Srbin, zemljoradnik, u NOVJ od 1943 (3. bataljon). Poginuo 1943. godine u bici na Sutjesci. 1 Od 2.365 evidentnih pripadnika 7. banijske brigade, zbog ograničenog prostora objavljujemo samo poginule i u ratu umrle. Inače, cijeni se da broj 2.365 predstavlja samo nešto više od 1/3 svih onih koji su prošli kroz redove brigade, a za ostale, na žalost, nemamo sigurnih podataka. Podaci su, koliko ih ima, sakupljeni iz: ratnih lista gubitaka, evidencije općinskih odbora SUBNOR-a, evidencije jedinice JNA koja gaji tradicije ratne brigade, iz knjiga Viktora Kučana »Sutjeska — dolina heroja« Beograd — Tjentište 1978. godine, iz ratnih dokumenata, iz sjećanja učesnika NOR-a objavljenih u raznim djelima, iz knjige J. Romana »Rabski jevrejski bataljon«, kao i iz niza drugih izvora. Nepotpunost podataka u svim korišćenim materijalima vidljiva je i u ovom pregledu. Posebno se to odnosi na podatak o partijskoj pripadnosti, članstvu u KPJ ili SKOJ-u, pripadnosti nižoj jedinici i dužnostima itd. Svi pokušaji da se dođe do potpunih podataka, nakon toliko vremena, nisu uspjeli.",
+    "additional_info": "rođen 1904, Martinovići — Glina, Srbin, zemljoradnik, u NOVJ od 1943 (3. bataljon). Poginuo 1943. godine u bici na Sutjesci.",
     "birth_year": "1904",
     "pdf_page": 1,
     "pdf_y": 393.7,
     "pdf_x": 55.4,
-    "pdf_y_end": 531.1,
+    "pdf_y_end": 419.5,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010009",
-    "birth_place": "Martinovići, Glina",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 336.5,
+    "pdf_x_end": 336.3,
     "other_sources": [
       {
         "soldier_id": "9021012465",
@@ -29165,6 +29197,8 @@
         "pdf_y": 527.1,
         "pdf_x_end": 191.8,
         "pdf_y_end": 582.7,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -29181,6 +29215,12 @@
       }
     ],
     "death_place": "Sutjeska",
+    "birth_place": "Martinovići, Glina",
+    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "unit_detail": "3. bataljon",
     "variants": {
       "born": [
         "1906"
@@ -29273,7 +29313,8 @@
     "death_place": "Zelengora",
     "rank": "komesar čete",
     "pdf_x_end": 334.9,
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "radnik"
   },
   {
     "last_name": "Babić",
@@ -29796,6 +29837,7 @@
         "pdf_y": 183.8,
         "pdf_x_end": 353.7,
         "pdf_y_end": 225.4,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -29850,6 +29892,7 @@
         "pdf_y": 227.0,
         "pdf_x_end": 353.9,
         "pdf_y_end": 268.6,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -30057,7 +30100,8 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 339.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Bosna"
   },
   {
     "last_name": "Birač",
@@ -30093,6 +30137,8 @@
         "pdf_y": 547.5,
         "pdf_x_end": 203.1,
         "pdf_y_end": 577.8,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -30170,6 +30216,7 @@
         "pdf_y": 459.9,
         "pdf_x_end": 386.3,
         "pdf_y_end": 501.5,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -30209,6 +30256,7 @@
         "pdf_y": 405.4,
         "pdf_x_end": 176.7,
         "pdf_y_end": 467.4,
+        "rank": "politički delegat voda",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -30327,6 +30375,8 @@
         "pdf_y": 421.1,
         "pdf_x_end": 214.4,
         "pdf_y_end": 485.5,
+        "unit_detail": "3. bataljon",
+        "rank": "zamenik komandira čete",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -30483,7 +30533,7 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "Crna gora",
+    "death_place": "Crna Gora",
     "borrowed": [
       "death_place"
     ]
@@ -30830,7 +30880,6 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 346.5,
-    "death_place": "Bihaća",
     "other_sources": [
       {
         "soldier_id": "9021011388",
@@ -30850,10 +30899,13 @@
         "pdf_y": 506.0,
         "pdf_x_end": 206.0,
         "pdf_y_end": 557.5,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
     "party": "KPJ",
+    "death_place": "Sutjeska",
     "variants": {
       "death": [
         {
@@ -31048,6 +31100,7 @@
         "pdf_y": 309.2,
         "pdf_x_end": 176.1,
         "pdf_y_end": 361.2,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -31186,6 +31239,8 @@
         "pdf_y": 526.2,
         "pdf_x_end": 175.9,
         "pdf_y_end": 577.6,
+        "unit_detail": "2. bataljon",
+        "rank": "zamenik komandira čete",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -31459,6 +31514,7 @@
         "pdf_y": 231.4,
         "pdf_x_end": 395.5,
         "pdf_y_end": 273.7,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -31559,6 +31615,7 @@
         "pdf_y": 322.4,
         "pdf_x_end": 392.3,
         "pdf_y_end": 363.3,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -31639,6 +31696,8 @@
         "pdf_y": 469.2,
         "pdf_x_end": 395.4,
         "pdf_y_end": 523.3,
+        "unit_detail": "1. četa, 3. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -31708,7 +31767,10 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 341.0
+    "pdf_x_end": 341.0,
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Majur"
   },
   {
     "last_name": "Dragić",
@@ -31807,7 +31869,7 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "Crna gora",
+    "death_place": "Crna Gora",
     "borrowed": [
       "death_place"
     ]
@@ -32028,11 +32090,11 @@
     ]
   },
   {
-    "last_name": "Dragića",
+    "last_name": "Dragić",
     "middle_name": "",
     "first_name": "Dušan",
     "fathers_name": "",
-    "full_name": "Dragića Dušan",
+    "full_name": "Dragić Dušan",
     "additional_info": "rođen 1920, Blinja — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Bosni.",
     "birth_year": "1920",
     "pdf_page": 14,
@@ -32048,14 +32110,24 @@
     "death_date": "1943",
     "death_place": "Bosna",
     "rank": "borac",
-    "pdf_x_end": 338.8
+    "pdf_x_end": 338.8,
+    "other_sources": [
+      {
+        "soldier_id": "9021030689",
+        "name": "Dragić (Janko) Dušan",
+        "additional_info": "rođen 1920, Blinja (Petrinja). Srbin, poginuo 1943. u NOBu, Crna gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1560",
+        "source_page": 1560,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ]
   },
   {
-    "last_name": "Dragića",
+    "last_name": "Dragić",
     "middle_name": "",
     "first_name": "Stevo",
     "fathers_name": "",
-    "full_name": "Dragića Stevo",
+    "full_name": "Dragić Stevo",
     "additional_info": "rođen 1922, Blinja — Petrinja, Srbin, zemljoradnik, u NOVJ od 1942, borac. Poginuo 1943. u toku IV ofanzive u Hercegovini.",
     "birth_year": "1922",
     "pdf_page": 14,
@@ -32106,6 +32178,7 @@
         "pdf_y": 319.3,
         "pdf_x_end": 210.6,
         "pdf_y_end": 360.9,
+        "rank": "borac",
         "unit_file": "7-banijska-divizija-soldiers.json"
       }
     ],
@@ -32435,6 +32508,8 @@
         "pdf_y": 469.1,
         "pdf_x_end": 355.2,
         "pdf_y_end": 520.5,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -32606,6 +32681,8 @@
         "pdf_y": 502.7,
         "pdf_x_end": 202.0,
         "pdf_y_end": 545.7,
+        "unit_detail": "intendantura",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -32810,7 +32887,7 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 341.1,
-    "death_place": "u kanjonu Pive tokom bitke na Sutjesci",
+    "death_place": "u kanjonu Pive",
     "other_sources": [
       {
         "soldier_id": "0045000174",
@@ -32822,6 +32899,8 @@
         "pdf_y": 37.6,
         "pdf_x_end": 383.2,
         "pdf_y_end": 89.0,
+        "unit_detail": "3. bataljon",
+        "rank": "bolničarka",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -32912,6 +32991,8 @@
         "pdf_y": 536.8,
         "pdf_x_end": 386.2,
         "pdf_y_end": 579.1,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -32969,6 +33050,8 @@
         "additional_info": "borac 2. bataljona, rođen 1923. godine, Zut, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 10. decembra 1942. godine, član SKOJ—a, poginuo u bici za ranjenike na Neretvi marta 1943.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=224",
         "source_page": 212,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -33371,6 +33454,7 @@
         "pdf_y": 471.6,
         "pdf_x_end": 205.3,
         "pdf_y_end": 523.0,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -33416,6 +33500,7 @@
         "pdf_y": 161.2,
         "pdf_x_end": 353.1,
         "pdf_y_end": 202.8,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -33481,9 +33566,9 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "kod Miljevine u toku bitke na Sutjesci",
     "rank": "borac",
-    "pdf_x_end": 342.8
+    "pdf_x_end": 342.8,
+    "death_place": "kod Miljevine na Sutjesci"
   },
   {
     "last_name": "Ivanić",
@@ -33773,6 +33858,7 @@
         "pdf_y": 641.7,
         "pdf_x_end": 275.6,
         "pdf_y_end": 671.3,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -33785,6 +33871,7 @@
         "pdf_y": 177.3,
         "pdf_x_end": 448.6,
         "pdf_y_end": 228.5,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -34044,9 +34131,9 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "na Makljenu u toku bitke za ranjenike",
     "rank": "borac",
-    "pdf_x_end": 337.5
+    "pdf_x_end": 337.5,
+    "death_place": "na Makljenu"
   },
   {
     "last_name": "Jednak",
@@ -34116,6 +34203,7 @@
         "pdf_y": 548.0,
         "pdf_x_end": 374.1,
         "pdf_y_end": 578.8,
+        "rank": "politički komesar čete",
         "unit_file": "7-banijska-divizija-soldiers.json"
       }
     ]
@@ -34210,6 +34298,7 @@
         "pdf_y": 458.5,
         "pdf_x_end": 207.1,
         "pdf_y_end": 510.9,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -34520,6 +34609,7 @@
         "pdf_x_end": 351.7,
         "pdf_y_end": 371.1,
         "pdf_x_left": 70.9,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -34903,7 +34993,7 @@
     "pdf_y_end": 527.9,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010363",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "radnik",
     "death_type": "umro",
     "rank": "komesar čete",
@@ -34947,7 +35037,7 @@
     "pdf_y_end": 349.7,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010365",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "trgovac",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -35228,6 +35318,8 @@
         "additional_info": "vodnik voda u 2. bataljonu, rođen 1924. godine, Vrpolje, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 1942. godine, član SKOJ —a, poginuo u bici na Sutjesci maj—juni 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=230",
         "source_page": 218,
+        "unit_detail": "2. bataljon",
+        "rank": "vodnik",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -35354,6 +35446,7 @@
         "pdf_y": 456.0,
         "pdf_x_end": 354.8,
         "pdf_y_end": 508.4,
+        "rank": "kurir",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -35436,7 +35529,7 @@
     "pdf_y_end": 344.6,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010390",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "1943",
@@ -35457,7 +35550,7 @@
     "pdf_y_end": 365.0,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010391",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -35701,6 +35794,7 @@
         "additional_info": "borac, rođen 1912. godine, Ljeskovac, Dvor na Uni, zemljoradnik, u NOVJ od 5. jula 1942. gOdine, poginuo u bici za ranjenike na Neretvi februar—mart 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=230",
         "source_page": 218,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -35851,7 +35945,7 @@
     "death_date": "1943",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 337.6,
-    "death_place": "u kanjonu Pive tokom bitke na Sutjesci"
+    "death_place": "u kanjonu Pive"
   },
   {
     "last_name": "Kralj",
@@ -36017,6 +36111,7 @@
         "pdf_y": 259.5,
         "pdf_x_end": 208.2,
         "pdf_y_end": 311.9,
+        "rank": "politički komesar čete",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -36435,7 +36530,7 @@
     "pdf_y_end": 213.8,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010449",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1944",
@@ -36493,12 +36588,13 @@
     "pdf_y_end": 281.3,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010451",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Bačuga",
     "rank": "borac",
     "pdf_x_end": 341.0,
+    "occupation": "radnik",
     "other_sources": [
       {
         "soldier_id": "9022029794",
@@ -36542,7 +36638,7 @@
     "pdf_y_end": 300.8,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010452",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Glina",
@@ -36563,18 +36659,19 @@
     "pdf_y_end": 328.5,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010453",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Vagane — Cazin",
     "rank": "borac",
-    "pdf_x_end": 341.1
+    "pdf_x_end": 341.1,
+    "occupation": "radnik"
   },
   {
     "last_name": "Levi",
     "middle_name": "H.",
     "first_name": "Isak",
-    "fathers_name": "",
+    "fathers_name": "H",
     "full_name": "Levi H. Isak",
     "additional_info": "star 23 godine, Sarajevo, Jevrejin, radnik — bravar, u NOVJ od 1943, borac. Poginuo 1945. kod Bihaća.",
     "birth_year": "",
@@ -36584,12 +36681,13 @@
     "pdf_y_end": 261.9,
     "pdf_file": "7-banijska-poginuli.pdf",
     "soldier_id": "0044010454",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Bihać",
     "rank": "borac",
-    "pdf_x_end": 340.5
+    "pdf_x_end": 340.5,
+    "occupation": "radnik"
   },
   {
     "last_name": "Ljiljak",
@@ -37179,6 +37277,7 @@
         "pdf_y": 411.6,
         "pdf_x_end": 352.6,
         "pdf_y_end": 464.0,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -37359,6 +37458,8 @@
         "pdf_y": 230.3,
         "pdf_x_end": 357.9,
         "pdf_y_end": 272.4,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -37444,6 +37545,8 @@
         "pdf_y": 418.0,
         "pdf_x_end": 358.9,
         "pdf_y_end": 470.4,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "komandir čete",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -38090,10 +38193,10 @@
     "occupation": "student prava",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "kod Rataja na Zelengori u toku bitke na Sutjesci",
     "rank": "komandant brigade",
     "pdf_x_end": 344.4,
-    "party": "KPJ 1939"
+    "party": "KPJ 1939",
+    "death_place": "kod Rataja na Zelengori na Sutjesci"
   },
   {
     "last_name": "Marinković",
@@ -38422,6 +38525,8 @@
         "pdf_y": 213.0,
         "pdf_x_end": 187.9,
         "pdf_y_end": 264.5,
+        "unit_detail": "intendantura",
+        "rank": "borac",
         "unit_file": "7-banijska-divizija-soldiers.json"
       }
     ]
@@ -38459,6 +38564,8 @@
         "pdf_y": 362.0,
         "pdf_x_end": 386.8,
         "pdf_y_end": 414.4,
+        "unit_detail": "2. bataljon",
+        "rank": "komandir voda",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -38669,7 +38776,6 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "kod Prozora u toku bitke na Neretvi",
     "rank": "borac",
     "pdf_x_end": 339.4,
     "other_sources": [
@@ -38691,6 +38797,8 @@
         "pdf_y": 49.8,
         "pdf_x_end": 169.3,
         "pdf_y_end": 102.2,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -38706,6 +38814,7 @@
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
+    "death_place": "kod Prozora na Neretvi",
     "variants": {
       "born": [
         "1923"
@@ -38811,6 +38920,8 @@
         "pdf_y": 367.5,
         "pdf_x_end": 457.0,
         "pdf_y_end": 419.2,
+        "unit_detail": "1. brigada",
+        "rank": "komesar brigade",
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       },
       {
@@ -38882,6 +38993,7 @@
         "pdf_y": 448.5,
         "pdf_x_end": 174.9,
         "pdf_y_end": 501.8,
+        "rank": "politički komesar čete",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -38937,6 +39049,7 @@
         "pdf_y": 543.9,
         "pdf_x_end": 171.0,
         "pdf_y_end": 574.7,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -38993,6 +39106,7 @@
         "pdf_y": 503.7,
         "pdf_x_end": 174.8,
         "pdf_y_end": 546.0,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -39315,6 +39429,7 @@
         "pdf_y": 397.1,
         "pdf_x_end": 205.9,
         "pdf_y_end": 438.0,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -39370,9 +39485,6 @@
     "birth_place": "Bijele Vode, Glina",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Bosna",
     "rank": "borac",
     "pdf_x_end": 343.6,
     "other_sources": [
@@ -39394,45 +39506,15 @@
         "pdf_y": 342.9,
         "pdf_x_end": 205.9,
         "pdf_y_end": 394.3,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "politički delegat voda",
         "unit_file": "8-banijska-soldiers.json"
-      },
-      {
-        "soldier_id": "0045010508",
-        "name": "Metikoš Stanka Đuro",
-        "additional_info": "1925, Bijele Vode, kotar Glina, zemljoradnik, Srbin. Borac od 1941. godine, član SKOJ-a, poginuo decembra 1942. kod Kostajničkog Majura, Kostajnica.",
-        "pdf_file": "8-banijska-poginuli.pdf",
-        "pdf_page": 36,
-        "pdf_x": 282.9,
-        "pdf_y": 593.2,
-        "pdf_y_end": 644.5,
-        "pdf_x_end": 442.2,
-        "unit_file": "8-banijska-soldiers.json"
-      },
-      {
-        "soldier_id": "0128002074",
-        "name": "Metikoš S Đuro",
-        "additional_info": "1914, Bele Vode (Glina), komandir čete",
-        "pdf_file": "18-srpska.pdf",
-        "pdf_page": 55,
-        "pdf_x": 241.6,
-        "pdf_y": 327.5,
-        "pdf_x_end": 391.0,
-        "pdf_y_end": 345.5,
-        "unit_file": "18-srpska-soldiers.json"
       }
     ],
     "party": "SKOJ, KPJ",
-    "variants": {
-      "born": [
-        "1925"
-      ],
-      "death": [
-        {
-          "date": "12.1942",
-          "place": "kod Kostajničkog Majura, Kostajnica"
-        }
-      ]
-    }
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Bosna"
   },
   {
     "last_name": "Mihajlović",
@@ -39453,10 +39535,10 @@
     "occupation": "student",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "na Vučevu u toku bitke na Sutjesci",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 342.9,
     "party": "KPJ 1941",
+    "death_place": "na Vučevu na Sutjesci",
     "other_sources": [
       {
         "soldier_id": "0045000389",
@@ -39468,6 +39550,8 @@
         "pdf_y": 426.1,
         "pdf_x_end": 178.9,
         "pdf_y_end": 510.9,
+        "unit_detail": "1. bataljon",
+        "rank": "politički komesar bataljona",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -40060,6 +40144,8 @@
         "pdf_y": 479.2,
         "pdf_x_end": 454.8,
         "pdf_y_end": 498.8,
+        "unit_detail": "4. banijski bataljon",
+        "rank": "komandant brigade",
         "unit_file": "soldiers.json"
       }
     ],
@@ -40433,7 +40519,7 @@
         "ref_book": "seoske-hronike"
       }
     ],
-    "death_place": "Crna gora",
+    "death_place": "Crna Gora",
     "borrowed": [
       "death_place"
     ]
@@ -40611,11 +40697,11 @@
     ]
   },
   {
-    "last_name": "Nevajdal",
+    "last_name": "Nevajda",
     "middle_name": "",
     "first_name": "Vasilj",
     "fathers_name": "",
-    "full_name": "Nevajdal Vasilj",
+    "full_name": "Nevajda Vasilj",
     "additional_info": "rođen 1913, V. šušnjar — Petrinja, Srbin, zemljoradnik, u NOVJ od 1941, borac. Poginuo 1943. u toku IV ofanzive.",
     "birth_year": "1913",
     "pdf_page": 46,
@@ -40743,7 +40829,6 @@
     "death_date": "1943",
     "rank": "borac",
     "pdf_x_end": 339.3,
-    "death_place": "Banija, Mošćenice",
     "other_sources": [
       {
         "soldier_id": "9021010944",
@@ -40763,10 +40848,15 @@
         "pdf_y": 494.4,
         "pdf_x_end": 362.2,
         "pdf_y_end": 536.0,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
     "party": "SKOJ",
+    "death_place": "Banija, Mošćenice",
+    "borrowed": [
+      "death_place"
+    ],
     "variants": {
       "death": [
         {
@@ -40856,6 +40946,8 @@
         "pdf_y": 162.6,
         "pdf_x_end": 213.1,
         "pdf_y_end": 215.0,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -40978,6 +41070,7 @@
         "additional_info": "zvani Čelik; krojački radnik, iz Požarevca, rođen 1921. U odredu od septembra 1941. Streljan na Banjici 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=294",
         "source_page": 282,
+        "since": "1941-09",
         "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
@@ -41134,6 +41227,8 @@
         "pdf_y": 525.0,
         "pdf_x_end": 213.3,
         "pdf_y_end": 577.4,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -42046,6 +42141,8 @@
         "pdf_y": 560.7,
         "pdf_x_end": 453.8,
         "pdf_y_end": 622.5,
+        "unit_detail": "3. bataljon",
+        "rank": "komandir čete",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -42102,6 +42199,7 @@
         "additional_info": "borac, rođen 1922. godine, Gornje Selište, Glina, zemljoradnik, Srbin, u NOVJ od 1942. godine, član KPJ, poginuo u bici na Sutjesci maj—juni 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=244",
         "source_page": 232,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -42581,6 +42679,7 @@
         "additional_info": "borac, rođen 1913. godine. Sakanlije, Dvor na Uni, zemljoradnik, Srbin, u NOVJ od 1942. godine, poginuo u bici za ranjenike na Neretvi kod Prozora marta 1943. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00003006&pg_seq=244",
         "source_page": 232,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -42835,6 +42934,7 @@
         "pdf_y": 162.3,
         "pdf_x_end": 171.0,
         "pdf_y_end": 203.9,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -42907,6 +43007,7 @@
         "pdf_y": 32.7,
         "pdf_x_end": 170.8,
         "pdf_y_end": 74.3,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -43013,6 +43114,7 @@
         "pdf_y": 271.7,
         "pdf_x_end": 350.5,
         "pdf_y_end": 325.1,
+        "rank": "komandir voda",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -43151,6 +43253,8 @@
         "pdf_y": 283.3,
         "pdf_x_end": 354.7,
         "pdf_y_end": 335.7,
+        "unit_detail": "2. bataljon",
+        "rank": "komandir čete",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -43462,6 +43566,8 @@
         "pdf_y": 96.3,
         "pdf_x_end": 390.6,
         "pdf_y_end": 138.9,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -43566,6 +43672,8 @@
         "pdf_y": 363.7,
         "pdf_x_end": 389.9,
         "pdf_y_end": 428.4,
+        "unit_detail": "1. bataljon",
+        "rank": "omladinski rukovodilac bataljona",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -43785,6 +43893,7 @@
         "pdf_y": 136.9,
         "pdf_x_end": 356.2,
         "pdf_y_end": 190.3,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -44280,6 +44389,8 @@
         "pdf_y": 354.3,
         "pdf_x_end": 171.1,
         "pdf_y_end": 406.7,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -44748,6 +44859,7 @@
         "pdf_y": 548.3,
         "pdf_x_end": 382.7,
         "pdf_y_end": 579.1,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -44805,6 +44917,7 @@
         "pdf_y": 365.6,
         "pdf_x_end": 206.2,
         "pdf_y_end": 407.9,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -44976,6 +45089,8 @@
         "pdf_y": 204.5,
         "pdf_x_end": 352.5,
         "pdf_y_end": 237.1,
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -45025,6 +45140,7 @@
         "pdf_y": 570.8,
         "pdf_x_end": 282.2,
         "pdf_y_end": 632.6,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ]
@@ -45165,7 +45281,7 @@
         "ref_book": "banijski-odredi-kadar"
       }
     ],
-    "death_place": "Crna gora",
+    "death_place": "Crna Gora",
     "borrowed": [
       "death_place"
     ]
@@ -45347,6 +45463,8 @@
         "pdf_y": 266.0,
         "pdf_x_end": 353.8,
         "pdf_y_end": 318.4,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -45420,6 +45538,7 @@
         "pdf_y": 351.8,
         "pdf_x_end": 467.5,
         "pdf_y_end": 403.0,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -46160,6 +46279,7 @@
         "pdf_y": 387.3,
         "pdf_x_end": 463.6,
         "pdf_y_end": 438.8,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -46172,6 +46292,7 @@
         "pdf_y": 187.0,
         "pdf_x_end": 174.4,
         "pdf_y_end": 250.2,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       }
     ],
@@ -46365,7 +46486,7 @@
         "ref_book": "seoske-hronike"
       }
     ],
-    "death_place": "Crna gora",
+    "death_place": "Crna Gora",
     "borrowed": [
       "death_place"
     ]
@@ -46668,6 +46789,7 @@
         "pdf_y": 427.2,
         "pdf_x_end": 170.4,
         "pdf_y_end": 468.8,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       },
       {
@@ -46741,6 +46863,7 @@
         "pdf_y": 398.0,
         "pdf_x_end": 282.3,
         "pdf_y_end": 449.2,
+        "rank": "borac",
         "unit_file": "8-banijska-soldiers.json"
       }
     ],
@@ -46807,6 +46930,7 @@
         "pdf_y": 400.4,
         "pdf_x_end": 376.0,
         "pdf_y_end": 441.3,
+        "rank": "kurir",
         "unit_file": "7-banijska-divizija-soldiers.json"
       }
     ],
@@ -46896,6 +47020,7 @@
         "pdf_y": 315.5,
         "pdf_x_end": 393.0,
         "pdf_y_end": 357.1,
+        "rank": "borac",
         "unit_file": "16-banijska-soldiers.json"
       },
       {
@@ -47229,6 +47354,8 @@
         "pdf_y": 431.0,
         "pdf_x_end": 392.5,
         "pdf_y_end": 483.4,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "7-banijska-divizija-soldiers.json"
       }
     ]

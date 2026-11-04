@@ -112,6 +112,7 @@
     "rank": "kapetan",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 396.2,
+    "death_place": "kod sela Novak-Bapske, Šid",
     "other_sources": [
       {
         "soldier_id": "9014004734",
@@ -201,6 +202,7 @@
         "pdf_y": 344.1,
         "pdf_x_end": 362.6,
         "pdf_y_end": 362.7,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -413,7 +415,8 @@
     "death_type": "poginuo",
     "death_date": "24.08.1943",
     "rank": "ekonom čete",
-    "pdf_x_end": 396.7
+    "pdf_x_end": 396.7,
+    "death_place": "Duboka, Travnik"
   },
   {
     "last_name": "Alajdžić",
@@ -593,6 +596,7 @@
     "death_date": "05.04.1945",
     "rank": "desetar",
     "pdf_x_end": 398.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9013001171",
@@ -629,6 +633,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 397.7,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004739",
@@ -801,7 +806,8 @@
     "death_date": "09.02.1945",
     "unit_detail": "četa za vezu",
     "pdf_x_end": 342.7,
-    "rank": "kurir"
+    "rank": "kurir",
+    "death_place": "kod sela Novak-Bapske, Šid"
   },
   {
     "last_name": "Andrijević",
@@ -996,7 +1002,8 @@
     "death_type": "poginuo",
     "death_date": "27.04.1945",
     "rank": "borac",
-    "pdf_x_end": 344.8
+    "pdf_x_end": 344.8,
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Antić",
@@ -1020,6 +1027,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 345.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9013000854",
@@ -1389,6 +1397,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 398.6,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9013001294",
@@ -1551,6 +1560,7 @@
     "death_date": "13.12.1944",
     "rank": "borac",
     "pdf_x_end": 354.0,
+    "death_place": "Sotin, Srem",
     "other_sources": [
       {
         "soldier_id": "9014004733",
@@ -1681,6 +1691,8 @@
         "pdf_y": 405.6,
         "pdf_x_end": 456.9,
         "pdf_y_end": 430.9,
+        "rank": "borac",
+        "since": "1944-11-20",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -2019,6 +2031,7 @@
     "death_date": "01.01.1945",
     "rank": "vodnik, ekonom čete",
     "pdf_x_end": 347.7,
+    "death_place": "Nijemci, Šid",
     "other_sources": [
       {
         "soldier_id": "9014004757",
@@ -2151,6 +2164,9 @@
         "pdf_y": 254.4,
         "pdf_x_end": 474.6,
         "pdf_y_end": 279.6,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -2256,7 +2272,34 @@
     "death_type": "poginuo",
     "death_date": "17.11.1943",
     "pdf_x_end": 347.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "kod sela Kačeva, Prijepolje",
+    "other_sources": [
+      {
+        "soldier_id": "0013000072",
+        "name": "Bajić Đure Milan",
+        "additional_info": "rođen 1920. godine u Velikom Radiću, Bosanska Krupa. Poginuo 5. decembra 1943. godine u selu Ćela, Prijedor.",
+        "pdf_file": "6-krajiska.pdf",
+        "pdf_page": 64,
+        "pdf_x": 36.0,
+        "pdf_y": 73.9,
+        "pdf_x_end": 348.6,
+        "pdf_y_end": 92.0,
+        "pdf_x_left": 14.1,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1920"
+      ],
+      "death": [
+        {
+          "date": "05.12.1943",
+          "place": "kod sela Kačeva, Prijepolje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bajić",
@@ -2302,7 +2345,8 @@
     "death_date": "20.04.1943",
     "rank": "komandir čete",
     "pdf_x_end": 348.1,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Korićani"
   },
   {
     "last_name": "Bajić",
@@ -2390,6 +2434,7 @@
     "rank": "vodnik",
     "pdf_x_end": 348.5,
     "party": "KPJ",
+    "death_place": "Stojnik, Sopot",
     "other_sources": [
       {
         "soldier_id": "9062000034",
@@ -2600,7 +2645,8 @@
     "death_type": "poginuo",
     "death_date": "20.03.1943",
     "rank": "borac",
-    "pdf_x_end": 393.4
+    "pdf_x_end": 393.4,
+    "death_place": "Orahovljani, Ključ"
   },
   {
     "last_name": "Bajzak",
@@ -2622,7 +2668,8 @@
     "death_type": "poginuo",
     "death_date": "28.04.1945",
     "rank": "borac",
-    "pdf_x_end": 393.6
+    "pdf_x_end": 393.6,
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Bakić",
@@ -3136,6 +3183,7 @@
     "death_date": "17.01.1945",
     "pdf_x_end": 350.8,
     "party": "KPJ",
+    "death_place": "Tompojevci, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001167",
@@ -3193,6 +3241,7 @@
     "rank": "kapetan, komandant bataljona",
     "pdf_x_end": 350.9,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004767",
@@ -3306,6 +3355,8 @@
         "pdf_y": 654.9,
         "pdf_x_end": 465.4,
         "pdf_y_end": 679.7,
+        "rank": "borac",
+        "since": "1944-09-20",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -3437,6 +3488,8 @@
         "pdf_y": 656.9,
         "pdf_x_end": 473.4,
         "pdf_y_end": 681.1,
+        "rank": "kapetan, desetar",
+        "since": "1944-10-18",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -3853,7 +3906,8 @@
     "death_date": "27.11.1942",
     "rank": "komandir voda",
     "pdf_x_end": 389.5,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "na brdu Rujan, kod Dabra"
   },
   {
     "last_name": "Benin",
@@ -4055,7 +4109,8 @@
     "death_date": "16.12.1944",
     "rank": "zastavnik, delegat voda",
     "pdf_x_end": 390.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Bijelić",
@@ -4254,6 +4309,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 384.3,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004822",
@@ -4287,10 +4343,6 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Kod otoka",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -4576,6 +4628,9 @@
         "pdf_y": 415.9,
         "pdf_x_end": 469.6,
         "pdf_y_end": 440.7,
+        "unit_detail": "4. bataljon",
+        "rank": "borac",
+        "since": "1944-09-26",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -4647,6 +4702,7 @@
     "death_date": "20.04.1945",
     "rank": "borac",
     "pdf_x_end": 352.4,
+    "death_place": "Bukovje, Sl. Brod",
     "other_sources": [
       {
         "soldier_id": "9025004031",
@@ -4656,10 +4712,6 @@
         "source_page": 122,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Slavonija",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -4735,6 +4787,7 @@
     "rank": "major, komandant brigade",
     "pdf_x_end": 351.9,
     "party": "KPJ",
+    "death_place": "Tompojevci, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9002000102",
@@ -4900,6 +4953,7 @@
         "pdf_y": 145.5,
         "pdf_x_end": 365.8,
         "pdf_y_end": 183.9,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -5524,7 +5578,8 @@
     "death_type": "nestao",
     "death_date": "24.01.1945",
     "rank": "borac",
-    "pdf_x_end": 389.4
+    "pdf_x_end": 389.4,
+    "death_place": "Bapska, Ilok"
   },
   {
     "last_name": "Bošnjak",
@@ -5580,6 +5635,7 @@
     "death_date": "15.05.1944",
     "rank": "borac",
     "pdf_x_end": 389.7,
+    "death_place": "Močioci, Arilje",
     "other_sources": [
       {
         "soldier_id": "9062000375",
@@ -5732,6 +5788,8 @@
         "pdf_y": 216.7,
         "pdf_x_end": 470.4,
         "pdf_y_end": 241.5,
+        "rank": "borac",
+        "since": "1944-11-18",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -5888,6 +5946,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 350.3,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004790",
@@ -5924,10 +5983,6 @@
         "source_page": 822,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Brezovo Polje",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -5972,6 +6027,9 @@
         "pdf_y": 629.5,
         "pdf_x_end": 470.5,
         "pdf_y_end": 654.3,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1944-10-10",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -6140,6 +6198,8 @@
         "pdf_y": 197.7,
         "pdf_x_end": 455.3,
         "pdf_y_end": 222.5,
+        "rank": "borac",
+        "since": "1944-11-03",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -6850,7 +6910,8 @@
     "rank": "poručnik, komandir čete",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 343.7,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "kod sela Novak-Bapska, Šid"
   },
   {
     "last_name": "Buran",
@@ -7167,7 +7228,8 @@
     "death_date": "28.04.1944",
     "rank": "zamenik političkog komesara čete",
     "pdf_x_end": 386.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Paunovići, Rača"
   },
   {
     "last_name": "Bursan",
@@ -7396,6 +7458,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 349.0,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004802",
@@ -7802,7 +7865,8 @@
     "death_date": "03.07.1943",
     "rank": "zastavnik, komandir čete",
     "pdf_x_end": 339.3,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Mira, Vareš"
   },
   {
     "last_name": "Denić",
@@ -7862,6 +7926,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 340.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004834",
@@ -7942,7 +8007,8 @@
     "death_type": "umro",
     "death_date": "21.03.1944",
     "rank": "borac",
-    "pdf_x_end": 340.3
+    "pdf_x_end": 340.3,
+    "death_place": "kod sela G. i D. Jablanice, Čajetina"
   },
   {
     "last_name": "Despenić",
@@ -8200,6 +8266,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 384.3,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004838",
@@ -8398,6 +8465,7 @@
     "death_date": "26.10.1943",
     "rank": "vodnik",
     "pdf_x_end": 385.0,
+    "death_place": "kod sela Ravanci, Rudo",
     "other_sources": [
       {
         "soldier_id": "9022017018",
@@ -8407,10 +8475,6 @@
         "source_page": 1455,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Zelengora",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -8488,6 +8552,9 @@
         "pdf_y": 370.5,
         "pdf_x_end": 472.2,
         "pdf_y_end": 395.3,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1943-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -9221,6 +9288,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 4. bataljon",
     "pdf_x_end": 345.0,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004821",
@@ -9299,7 +9367,8 @@
     "death_date": "25.10.1943",
     "pdf_x_end": 389.2,
     "rank": "mitraljezac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "kod sela Ravanaca, Rudo"
   },
   {
     "last_name": "Erceg",
@@ -9324,6 +9393,7 @@
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 388.4,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004869",
@@ -9631,6 +9701,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 344.2,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004875",
@@ -9739,6 +9810,7 @@
     "death_date": "17.01.1945",
     "rank": "borac",
     "pdf_x_end": 343.9,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001088",
@@ -10036,6 +10108,7 @@
         "pdf_y": 114.9,
         "pdf_x_end": 350.1,
         "pdf_y_end": 133.0,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -10062,7 +10135,8 @@
     "death_date": "18.03.1944",
     "rank": "poručnik",
     "pdf_x_end": 344.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Knjeginja, Uvac"
   },
   {
     "last_name": "Galić",
@@ -10414,6 +10488,8 @@
         "pdf_y": 136.8,
         "pdf_x_end": 458.0,
         "pdf_y_end": 161.6,
+        "rank": "borac",
+        "since": "1944-12-27",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -11120,7 +11196,8 @@
     "death_type": "poginuo",
     "death_date": "24.10.1943",
     "rank": "borac",
-    "pdf_x_end": 343.3
+    "pdf_x_end": 343.3,
+    "death_place": "kod sela Ravanaca, Rudo"
   },
   {
     "last_name": "Gobeljić",
@@ -11273,11 +11350,11 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "19.07.1945",
-    "death_place": "u Svetozarevu nesrećnim slučajem",
     "rank": "poručnik, politički komesar",
     "unit_detail": "inžinjerijska četa",
     "pdf_x_end": 344.2,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "u Svetozarevu"
   },
   {
     "last_name": "Grabević",
@@ -11335,6 +11412,8 @@
         "pdf_x_end": 311.1,
         "pdf_y_end": 285.1,
         "pdf_x_left": 29.2,
+        "rank": "komesar bataljona",
+        "since": "1942-08-22",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -11962,6 +12041,9 @@
         "pdf_y": 624.7,
         "pdf_x_end": 478.9,
         "pdf_y_end": 649.5,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
+        "since": "1942-08-03",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -12079,6 +12161,9 @@
         "pdf_y": 238.7,
         "pdf_x_end": 450.1,
         "pdf_y_end": 263.3,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -12323,6 +12408,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 339.9,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004907",
@@ -12344,10 +12430,6 @@
         "source_page": 324,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ],
-    "death_place": "Šid",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -12684,6 +12766,9 @@
         "pdf_y": 634.0,
         "pdf_x_end": 451.9,
         "pdf_y_end": 660.5,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1944-10-10",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -12790,6 +12875,7 @@
         "pdf_y": 227.2,
         "pdf_x_end": 369.9,
         "pdf_y_end": 255.6,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -13137,6 +13223,9 @@
         "pdf_y": 270.0,
         "pdf_x_end": 354.9,
         "pdf_y_end": 302.5,
+        "unit_detail": "1. bataljon",
+        "rank": "komandant bataljona",
+        "since": "1943-01-13",
         "unit_file": "4-srpska-soldiers.json"
       },
       {
@@ -13150,6 +13239,8 @@
         "pdf_x_end": 397.1,
         "pdf_y_end": 179.8,
         "pdf_x_left": 40.2,
+        "rank": "komandant bataljona",
+        "since": "1944-10-03",
         "unit_file": "21-srpska-soldiers.json"
       }
     ]
@@ -13695,7 +13786,8 @@
     "death_type": "poginuo",
     "death_date": "10.04.1943",
     "rank": "vodnik",
-    "pdf_x_end": 341.0
+    "pdf_x_end": 341.0,
+    "death_place": "Medeno Polje, Bos. Petrovac"
   },
   {
     "last_name": "Ivetić",
@@ -13912,7 +14004,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 388.1
+    "pdf_x_end": 388.1,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Ivošević",
@@ -14086,7 +14179,8 @@
     "death_type": "poginuo",
     "death_date": "15.12.1943",
     "rank": "vodnik",
-    "pdf_x_end": 388.6
+    "pdf_x_end": 388.6,
+    "death_place": "Sjeversko, Rogatica"
   },
   {
     "last_name": "Jakov",
@@ -14289,6 +14383,7 @@
     "rank": "vodnik",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 390.5,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004924",
@@ -14587,7 +14682,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 342.9
+    "pdf_x_end": 342.9,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Jankovii",
@@ -14825,7 +14921,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 379.7
+    "pdf_x_end": 379.7,
+    "death_place": "Brezovo Polje, Brčko"
   },
   {
     "last_name": "Jančić",
@@ -15235,7 +15332,8 @@
     "death_type": "poginuo",
     "death_date": "24.12.1943",
     "rank": "borac",
-    "pdf_x_end": 380.2
+    "pdf_x_end": 380.2,
+    "death_place": "kod sela Manjin-Vrha, Kladanj"
   },
   {
     "last_name": "Jenej",
@@ -15258,6 +15356,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 380.1,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004940",
@@ -15293,7 +15392,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 380.8
+    "pdf_x_end": 380.8,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Jeremić",
@@ -15631,6 +15731,7 @@
         "pdf_y": 423.7,
         "pdf_x_end": 449.7,
         "pdf_y_end": 452.1,
+        "since": "1944-09-12",
         "unit_file": "22-srpska-soldiers.json"
       }
     ],
@@ -15819,10 +15920,7 @@
     "death_date": "09.05.1945",
     "rank": "borac",
     "pdf_x_end": 346.4,
-    "death_place": "kod Cugovca (Vrbovec)",
-    "borrowed": [
-      "death_place"
-    ],
+    "death_place": "Berislavci, Zagreb",
     "other_sources": [
       {
         "soldier_id": "0123000595",
@@ -15834,6 +15932,8 @@
         "pdf_y": 604.8,
         "pdf_x_end": 458.4,
         "pdf_y_end": 631.5,
+        "rank": "borac",
+        "since": "1944-11-28",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -15867,6 +15967,7 @@
     "death_date": "27.04.1945",
     "rank": "borac",
     "pdf_x_end": 388.7,
+    "death_place": "Hercegovac, Grubišno Pol e",
     "other_sources": [
       {
         "soldier_id": "9025019041",
@@ -15876,10 +15977,6 @@
         "source_page": 778,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Bjelovar",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -16175,6 +16272,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 388.9,
+    "death_place": "kod sela Ogoka, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004952",
@@ -16223,10 +16321,6 @@
         "pdf_y_end": 203.8,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Selo nemci",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -16328,6 +16422,8 @@
         "pdf_x_end": 392.5,
         "pdf_y_end": 120.6,
         "pdf_x_left": 35.4,
+        "rank": "borac",
+        "since": "1944-09-15",
         "unit_file": "21-srpska-soldiers.json"
       }
     ],
@@ -16355,6 +16451,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 389.3,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004955",
@@ -16637,6 +16734,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 346.9,
+    "death_place": "Mikluševci, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014004961",
@@ -16805,6 +16903,7 @@
     "death_type": "umro",
     "rank": "borac",
     "pdf_x_end": 346.9,
+    "death_place": "Mikluševci, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001015",
@@ -16854,6 +16953,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 347.2,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004966",
@@ -16887,10 +16987,6 @@
         "pdf_y_end": 679.7,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Brozovo Polje",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -17394,6 +17490,7 @@
     "rank": "komandir čete",
     "pdf_x_end": 392.1,
     "party": "KPJ",
+    "death_place": "Gora, Kakanj",
     "other_sources": [
       {
         "soldier_id": "9062000350",
@@ -17533,6 +17630,7 @@
         "pdf_y": 357.9,
         "pdf_x_end": 383.5,
         "pdf_y_end": 393.3,
+        "unit_detail": "1. posavski bataljon",
         "unit_file": "posavski-odred-soldiers.json"
       }
     ],
@@ -17570,6 +17668,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 348.5,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004969",
@@ -17661,6 +17760,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 347.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004971",
@@ -17694,10 +17794,6 @@
         "pdf_y_end": 193.2,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Sremski front",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -17965,7 +18061,8 @@
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 391.6
+    "pdf_x_end": 391.6,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Kajtez",
@@ -18085,6 +18182,7 @@
     "rank": "vodnik, komandir čete",
     "pdf_x_end": 353.5,
     "party": "KPJ",
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9013001303",
@@ -18118,10 +18216,6 @@
         "source_page": 1771,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Brčko",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -18300,6 +18394,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 354.1,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004980",
@@ -18412,7 +18507,8 @@
     "death_type": "poginuo",
     "death_date": "15.06.1943",
     "rank": "borac",
-    "pdf_x_end": 386.8
+    "pdf_x_end": 386.8,
+    "death_place": "Vijačani"
   },
   {
     "last_name": "Karanović",
@@ -19004,7 +19100,8 @@
     "death_date": "26.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 346.5
+    "pdf_x_end": 346.5,
+    "death_place": "kod sela Zdenačkog Gaja, Grubišno Polje"
   },
   {
     "last_name": "Kiš",
@@ -19027,6 +19124,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 345.7,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014004985",
@@ -19277,6 +19375,7 @@
     "rank": "vodni delegat",
     "pdf_x_end": 348.1,
     "party": "KPJ",
+    "death_place": "kod sela Novak-Bapska, Šid",
     "other_sources": [
       {
         "soldier_id": "9014004986",
@@ -19706,6 +19805,7 @@
     "unit_detail": "3. bataljon",
     "pdf_x_end": 391.8,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004990",
@@ -19754,10 +19854,6 @@
         "pdf_y_end": 267.1,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Sremski front",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -20296,13 +20392,13 @@
     "pdf_y_end": 497.2,
     "pdf_file": "4-krajiska.pdf",
     "soldier_id": "0011000593",
-    "death_type": "poginuo",
-    "death_date": "1943",
     "pdf_x_end": 352.8,
     "party": "KPJ",
     "birth_place": "V. Cvijetnić, Drvar",
     "ethnicity": "Srbin",
     "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_date": "1943",
     "rank": "desetar"
   },
   {
@@ -20435,6 +20531,9 @@
         "pdf_y": 504.5,
         "pdf_x_end": 475.3,
         "pdf_y_end": 541.0,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1944-10-25",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -20577,7 +20676,8 @@
     "rank": "poručnik",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 376.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Kozomara",
@@ -20809,7 +20909,10 @@
     "ethnicity": "Srbin",
     "party": "KPJ",
     "pdf_x_end": 352.0,
-    "pdf_y_end": 242.1
+    "pdf_y_end": 242.1,
+    "death_type": "poginuo",
+    "death_date": "03.01.1944",
+    "death_place": "Vozuća, Žedni Vrh"
   },
   {
     "last_name": "Kralj",
@@ -20887,7 +20990,8 @@
     "death_type": "poginuo",
     "death_date": "20.05.1943",
     "pdf_x_end": 340.4,
-    "rank": "kurir"
+    "rank": "kurir",
+    "death_place": "kod sela Pribnića, Teslić"
   },
   {
     "last_name": "Kračić",
@@ -21309,7 +21413,8 @@
     "rank": "delegat voda",
     "unit_detail": "prateća četa",
     "pdf_x_end": 378.8,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Mikluševci, Vukovar"
   },
   {
     "last_name": "Krčmar",
@@ -21422,7 +21527,8 @@
     "death_date": "29.09.1944",
     "rank": "potporučnik, politički komesar čete",
     "pdf_x_end": 341.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Orašac, Aranćelovac"
   },
   {
     "last_name": "Kubić",
@@ -21742,7 +21848,8 @@
     "death_type": "poginuo",
     "death_date": "14.05.1944",
     "rank": "borac",
-    "pdf_x_end": 378.1
+    "pdf_x_end": 378.1,
+    "death_place": "Močioci, Arilje"
   },
   {
     "last_name": "Kunovac",
@@ -21848,6 +21955,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 379.9,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005003",
@@ -21881,10 +21989,6 @@
         "source_page": 820,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Brezo Polje",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -21930,6 +22034,9 @@
         "pdf_y": 520.8,
         "pdf_x_end": 450.2,
         "pdf_y_end": 547.5,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "komandir čete",
+        "since": "1943-02-13",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -22539,6 +22646,7 @@
         "pdf_y": 172.9,
         "pdf_x_end": 181.0,
         "pdf_y_end": 210.1,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -22664,7 +22772,8 @@
     "death_type": "poginuo",
     "death_date": "28.04.1945",
     "rank": "borac",
-    "pdf_x_end": 394.8
+    "pdf_x_end": 394.8,
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Lazarević",
@@ -22687,6 +22796,7 @@
     "death_date": "17.01.1945",
     "rank": "borac",
     "pdf_x_end": 395.8,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014005016",
@@ -22798,6 +22908,8 @@
         "pdf_y": 558.6,
         "pdf_x_end": 480.8,
         "pdf_y_end": 575.5,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "druga-licka-soldiers.json"
       }
     ]
@@ -22891,6 +23003,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 395.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005019",
@@ -22972,6 +23085,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 341.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005025",
@@ -23597,6 +23711,7 @@
     "pdf_x_end": 385.8,
     "pdf_y_end": 112.7,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005029",
@@ -23678,7 +23793,8 @@
     "death_type": "poginuo",
     "death_date": "27.04.1945",
     "rank": "borac",
-    "pdf_x_end": 385.8
+    "pdf_x_end": 385.8,
+    "death_place": "Hercegovac, Grubišino Polje"
   },
   {
     "last_name": "Maksimović",
@@ -24000,7 +24116,8 @@
     "death_type": "umro",
     "death_date": "15.07.1944",
     "rank": "borac",
-    "pdf_x_end": 384.6
+    "pdf_x_end": 384.6,
+    "death_place": "u Kolašinskom polju"
   },
   {
     "last_name": "Maljković",
@@ -24060,7 +24177,8 @@
     "death_date": "04.08.1944",
     "rank": "borac",
     "pdf_x_end": 335.6,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_place": "Slatina, Ibar"
   },
   {
     "last_name": "Mandić",
@@ -24083,6 +24201,7 @@
     "death_date": "14.12.1944",
     "rank": "vodnik",
     "pdf_x_end": 384.6,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001042",
@@ -24419,6 +24538,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 387.4,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005042",
@@ -24600,6 +24720,7 @@
     "rank": "delegat voda",
     "pdf_x_end": 386.2,
     "party": "KPJ",
+    "death_place": "Leposavić, Ibar",
     "other_sources": [
       {
         "soldier_id": "9022037254",
@@ -24609,10 +24730,6 @@
         "source_page": 1046,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Srbija",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -24682,6 +24799,9 @@
         "pdf_y": 250.6,
         "pdf_x_end": 470.7,
         "pdf_y_end": 275.4,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1942-10-15",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -24846,6 +24966,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 387.7,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014005039",
@@ -24867,10 +24988,6 @@
         "source_page": 1309,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "U bliz.vinkovac",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -24925,7 +25042,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 387.5
+    "pdf_x_end": 387.5,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Marjanović",
@@ -25167,6 +25285,7 @@
     "death_date": "18.01.1945",
     "rank": "borac",
     "pdf_x_end": 333.9,
+    "death_place": "Bapska, Šid",
     "other_sources": [
       {
         "soldier_id": "9014005044",
@@ -25316,6 +25435,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 334.2,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005048",
@@ -25352,10 +25472,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Kod otoka"
+    ]
   },
   {
     "last_name": "Marković",
@@ -25415,6 +25533,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 334.0,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005050",
@@ -25478,10 +25597,6 @@
         ],
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "S. Otok vinkovci",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -25839,6 +25954,8 @@
         "pdf_y": 624.7,
         "pdf_x_end": 458.4,
         "pdf_y_end": 651.4,
+        "rank": "borac",
+        "since": "1944-10-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -25889,7 +26006,8 @@
     "death_type": "poginuo",
     "death_date": "08.05.1945",
     "rank": "borac",
-    "pdf_x_end": 389.3
+    "pdf_x_end": 389.3,
+    "death_place": "Berislavci, Zagreb"
   },
   {
     "last_name": "Marton",
@@ -26034,6 +26152,9 @@
         "pdf_y": 512.0,
         "pdf_x_end": 461.2,
         "pdf_y_end": 536.8,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -26098,6 +26219,7 @@
         "pdf_y": 538.9,
         "pdf_x_end": 437.1,
         "pdf_y_end": 644.8,
+        "rank": "zamjenik komandanta",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -26301,6 +26423,8 @@
         "pdf_x_end": 367.1,
         "pdf_y_end": 422.3,
         "pdf_x_left": 10.2,
+        "rank": "borac",
+        "since": "1944-09-24",
         "unit_file": "21-srpska-soldiers.json"
       }
     ],
@@ -26754,6 +26878,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 336.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005063",
@@ -27053,6 +27178,8 @@
         "pdf_y": 425.5,
         "pdf_x_end": 453.4,
         "pdf_y_end": 450.3,
+        "rank": "borac",
+        "since": "1942-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -27078,7 +27205,8 @@
     "death_date": "23.12.1944",
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon",
-    "pdf_x_end": 384.2
+    "pdf_x_end": 384.2,
+    "death_place": "kod sela Ogoka, Županja"
   },
   {
     "last_name": "Mihajlović",
@@ -27190,6 +27318,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 384.8,
+    "death_place": "Hercegovac, Grubišno Polje",
     "other_sources": [
       {
         "soldier_id": "9027006706",
@@ -27199,10 +27328,6 @@
         "source_page": 338,
         "ref_book": "zrtve-rata-1964-voj"
       }
-    ],
-    "death_place": "Kreshelovac",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -27369,6 +27494,8 @@
         "pdf_y": 668.6,
         "pdf_x_end": 475.6,
         "pdf_y_end": 684.5,
+        "rank": "borac",
+        "since": "1944-08-04",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -27376,10 +27503,7 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "desetar",
-    "death_place": "kod Opatovca (Vukovar)",
-    "borrowed": [
-      "death_place"
-    ],
+    "death_place": "Sotin, Vukovar",
     "variants": {
       "born": [
         "1923"
@@ -27431,6 +27555,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 384.7,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005072",
@@ -27573,6 +27698,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 345.7,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005075",
@@ -27639,7 +27765,8 @@
     "death_type": "nestao",
     "death_date": "07.05.1944",
     "rank": "borac",
-    "pdf_x_end": 346.0
+    "pdf_x_end": 346.0,
+    "death_place": "kod sela Kalućerske Bare"
   },
   {
     "last_name": "Milijević",
@@ -27716,7 +27843,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 346.1
+    "pdf_x_end": 346.1,
+    "death_place": "Brezovo Polje, Brčko"
   },
   {
     "last_name": "Milikević",
@@ -27814,6 +27942,9 @@
         "pdf_y": 597.1,
         "pdf_x_end": 446.1,
         "pdf_y_end": 621.9,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1944-08-25",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -28302,6 +28433,8 @@
         "pdf_y": 194.9,
         "pdf_x_end": 469.6,
         "pdf_y_end": 219.6,
+        "rank": "borac",
+        "since": "1944-09-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -28691,6 +28824,7 @@
     "death_date": "17.01.1945",
     "rank": "borac",
     "pdf_x_end": 385.5,
+    "death_place": "Opatovac, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013000366",
@@ -28773,7 +28907,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 358.6
+    "pdf_x_end": 358.6,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Milošević",
@@ -28795,7 +28930,8 @@
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 384.6
+    "pdf_x_end": 384.6,
+    "death_place": "Tompojevci, Vukovar"
   },
   {
     "last_name": "Milošević",
@@ -28940,6 +29076,8 @@
         "pdf_y": 437.3,
         "pdf_x_end": 470.0,
         "pdf_y_end": 462.0,
+        "rank": "delegat voda",
+        "since": "1944-08-27",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -29138,6 +29276,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 359.1,
+    "death_place": "kod sela Posavskph Podgajaca, Županja",
     "other_sources": [
       {
         "soldier_id": "9005001710",
@@ -29179,10 +29318,6 @@
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Podgojci, šuma",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -29445,7 +29580,8 @@
     "death_date": "23.12.1944",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 375.4,
-    "rank": "kurir"
+    "rank": "kurir",
+    "death_place": "Otok, Županja"
   },
   {
     "last_name": "Mitić",
@@ -29761,7 +29897,10 @@
     "birth_place": "Vrčenovića, V, Šiljegovac",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "death_type": "nestao",
+    "death_date": "17.01.1945",
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Mladenović",
@@ -29835,6 +29974,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 376.3,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005105",
@@ -29883,10 +30023,6 @@
         "pdf_y_end": 182.9,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Brzo Polje brčk",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -29909,6 +30045,7 @@
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "pdf_x_end": 375.6,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014005106",
@@ -30141,6 +30278,7 @@
     "death_date": "24.12.1943",
     "rank": "borac",
     "pdf_x_end": 348.3,
+    "death_place": "kod sela Manjin-Vrha, Kladanj",
     "other_sources": [
       {
         "soldier_id": "9022007038",
@@ -30153,10 +30291,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Drina"
+    ]
   },
   {
     "last_name": "Naumović",
@@ -30229,6 +30365,7 @@
     "death_date": "04.04.1945",
     "rank": "borac",
     "pdf_x_end": 347.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005107",
@@ -30278,6 +30415,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 348.4,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005108",
@@ -30326,6 +30464,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 348.3,
+    "death_place": "Gradište, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005110",
@@ -30406,6 +30545,7 @@
     "death_date": "04.04.1945",
     "rank": "borac",
     "pdf_x_end": 348.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005111",
@@ -31043,7 +31183,8 @@
     "death_date": "27.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 376.9
+    "pdf_x_end": 376.9,
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Nikolić",
@@ -31119,6 +31260,8 @@
         "pdf_y": 459.9,
         "pdf_x_end": 446.1,
         "pdf_y_end": 484.7,
+        "rank": "borac",
+        "since": "1944-10-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -31442,6 +31585,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 377.4,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005121",
@@ -31524,7 +31668,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 345.8
+    "pdf_x_end": 345.8,
+    "death_place": "Brezovo Polje, Brčko"
   },
   {
     "last_name": "Ninković",
@@ -31604,6 +31749,7 @@
     "rank": "zastavnik, komandir čete",
     "pdf_x_end": 345.5,
     "party": "KPJ",
+    "death_place": "Lovas, Šid",
     "other_sources": [
       {
         "soldier_id": "9013001164",
@@ -31637,10 +31783,6 @@
         "source_page": 1444,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Vukovar",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -31739,7 +31881,9 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 383.8
+    "pdf_x_end": 383.8,
+    "occupation": "zemljoradnik",
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Ćirković",
@@ -31761,6 +31905,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 384.3,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004823",
@@ -31851,6 +31996,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 388.9,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014005130",
@@ -31936,7 +32082,8 @@
     "death_date": "09.02.1944",
     "rank": "politički komesar čete",
     "pdf_x_end": 389.9,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Jabuka, Goražde"
   },
   {
     "last_name": "Novaković",
@@ -32022,6 +32169,7 @@
     "rank": "delegat voda",
     "pdf_x_end": 389.8,
     "party": "KPJ",
+    "death_place": "kod sela Novak-Bapske, Šid",
     "other_sources": [
       {
         "soldier_id": "9014005133",
@@ -32221,7 +32369,8 @@
     "death_type": "poginuo",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 390.4
+    "pdf_x_end": 390.4,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Omerbegović",
@@ -32281,6 +32430,7 @@
         "pdf_y": 318.7,
         "pdf_x_end": 289.2,
         "pdf_y_end": 365.6,
+        "rank": "borac",
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
@@ -32359,6 +32509,7 @@
         "pdf_y": 226.3,
         "pdf_x_end": 200.2,
         "pdf_y_end": 274.8,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -32496,6 +32647,7 @@
         "pdf_x_end": 399.6,
         "pdf_y_end": 501.9,
         "pdf_x_left": 40.4,
+        "rank": "borac",
         "unit_file": "cacanski-odred-soldiers.json"
       }
     ],
@@ -32667,7 +32819,8 @@
     "death_type": "poginuo",
     "death_date": "28.04.1945",
     "rank": "borac",
-    "pdf_x_end": 349.4
+    "pdf_x_end": 349.4,
+    "death_place": "Hercegovac, Grubišno Polje"
   },
   {
     "last_name": "Ovuka",
@@ -32724,6 +32877,8 @@
         "pdf_y": 368.7,
         "pdf_x_end": 485.9,
         "pdf_y_end": 386.4,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "druga-licka-soldiers.json"
       },
       {
@@ -32816,6 +32971,7 @@
     "rank": "borac",
     "pdf_x_end": 349.8,
     "pdf_y_end": 308.9,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005144",
@@ -32849,10 +33005,6 @@
         "pdf_y_end": 256.8,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Brezovo Polje",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -33005,6 +33157,8 @@
         "pdf_y": 515.2,
         "pdf_x_end": 373.2,
         "pdf_y_end": 579.6,
+        "unit_detail": "intendantura",
+        "rank": "borac",
         "unit_file": "2-proleterska-divizija-soldiers.json"
       }
     ]
@@ -33111,6 +33265,7 @@
     "rank": "desetar",
     "pdf_x_end": 383.5,
     "occupation": "krečar",
+    "death_place": "Trnovitica, Grubišno Polje",
     "other_sources": [
       {
         "soldier_id": "9005001711",
@@ -33128,10 +33283,6 @@
         "source_page": 1252,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Zagreb",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -33152,7 +33303,8 @@
     "death_type": "poginuo",
     "death_date": "25.10.1943",
     "rank": "borac",
-    "pdf_x_end": 384.2
+    "pdf_x_end": 384.2,
+    "death_place": "kod sela Ravanaca, Rudo"
   },
   {
     "last_name": "Panović",
@@ -33522,6 +33674,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 384.6,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005155",
@@ -33755,6 +33908,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 340.2,
+    "death_place": "Brezovo Polje",
     "other_sources": [
       {
         "soldier_id": "9014005158",
@@ -33801,10 +33955,6 @@
         "pdf_y_end": 246.2,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Brezovo Polje",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -33922,6 +34072,9 @@
         "pdf_y": 423.8,
         "pdf_x_end": 448.3,
         "pdf_y_end": 449.6,
+        "unit_detail": "1. bataljon",
+        "rank": "vodnik",
+        "since": "1944-08-03",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -34083,7 +34236,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 339.9
+    "pdf_x_end": 339.9,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Pavlović",
@@ -34172,6 +34326,9 @@
         "pdf_y": 624.5,
         "pdf_x_end": 449.3,
         "pdf_y_end": 652.1,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
+        "since": "1944-10-13",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -34217,6 +34374,9 @@
         "pdf_y": 218.2,
         "pdf_x_end": 369.6,
         "pdf_y_end": 259.9,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
+        "since": "1944-11",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -34250,7 +34410,8 @@
     "death_date": "20.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 340.0
+    "pdf_x_end": 340.0,
+    "death_place": "Bukovje, Sl. Brod"
   },
   {
     "last_name": "Pavlović",
@@ -35183,6 +35344,7 @@
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 347.1,
     "pdf_y_end": 503.0,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9013000275",
@@ -35374,6 +35536,7 @@
     "rank": "zastavnik, delegat voda",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 385.6,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9013000943",
@@ -35447,7 +35610,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 384.8
+    "pdf_x_end": 384.8,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Petrović",
@@ -35705,6 +35869,7 @@
     "rank": "bolničar",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 385.6,
+    "death_place": "Hercegovac, Grubišno Polje",
     "other_sources": [
       {
         "soldier_id": "9025031908",
@@ -35714,10 +35879,6 @@
         "source_page": 1211,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Slavonija",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -35998,6 +36159,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 395.3,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9013001308",
@@ -36300,7 +36462,8 @@
     "death_type": "poginuo",
     "death_date": "04.05.1945",
     "rank": "borac",
-    "pdf_x_end": 341.1
+    "pdf_x_end": 341.1,
+    "death_place": "kod sela B. Trnovitice, Grubišno Polje"
   },
   {
     "last_name": "Plavšić",
@@ -36372,7 +36535,8 @@
     "death_date": "15.12.1943",
     "rank": "ekonom čete",
     "pdf_x_end": 341.7,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Sjeversko, Rogatica"
   },
   {
     "last_name": "Pokrajac",
@@ -36418,6 +36582,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 342.2,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005193",
@@ -36564,7 +36729,8 @@
     "death_type": "poginuo",
     "death_date": "09.05.1945",
     "rank": "borac",
-    "pdf_x_end": 380.0
+    "pdf_x_end": 380.0,
+    "death_place": "Berislavci, Zagreb"
   },
   {
     "last_name": "Popović",
@@ -36735,6 +36901,8 @@
         "pdf_y": 211.0,
         "pdf_x_end": 384.2,
         "pdf_y_end": 261.0,
+        "unit_detail": "2. bataljon",
+        "rank": "poručnik",
         "unit_file": "23-srpska-soldiers.json"
       }
     ],
@@ -37115,7 +37283,8 @@
     "death_type": "nestao",
     "death_date": "15.12.1943",
     "rank": "borac",
-    "pdf_x_end": 379.9
+    "pdf_x_end": 379.9,
+    "death_place": "Sjeversko, Rogatica"
   },
   {
     "last_name": "Predojević",
@@ -37300,7 +37469,8 @@
     "death_type": "poginuo",
     "death_date": "03.03.1944",
     "rank": "borac",
-    "pdf_x_end": 341.3
+    "pdf_x_end": 341.3,
+    "death_place": "kod sela Radosave, Pljevlja"
   },
   {
     "last_name": "Prodanović",
@@ -37434,6 +37604,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 342.7,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005206",
@@ -37522,7 +37693,8 @@
     "death_date": "12.12.1944",
     "rank": "komesar čete",
     "pdf_x_end": 342.4,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "death_place": "kod sela Halilovpća, Podgrmeč"
   },
   {
     "last_name": "Prpa",
@@ -37786,7 +37958,8 @@
     "death_type": "poginuo",
     "death_date": "10.04.1944",
     "rank": "bolničarka",
-    "pdf_x_end": 343.7
+    "pdf_x_end": 343.7,
+    "death_place": "kod sela Perišići, Ušće"
   },
   {
     "last_name": "Putniković",
@@ -37860,6 +38033,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 390.3,
+    "death_place": "kod sela Zdenačkog Gaja, Grubišno Polje",
     "other_sources": [
       {
         "soldier_id": "9025011816",
@@ -37869,10 +38043,6 @@
         "source_page": 444,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Hercegovac",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -37895,7 +38065,8 @@
     "death_type": "poginuo",
     "death_date": "08.05.1945",
     "rank": "borac",
-    "pdf_x_end": 390.2
+    "pdf_x_end": 390.2,
+    "death_place": "Berislavci, Zagreb"
   },
   {
     "last_name": "Puškar",
@@ -38266,6 +38437,7 @@
     "death_date": "24.12.1943",
     "rank": "vodnik",
     "pdf_x_end": 389.6,
+    "death_place": "kod sela Manjin-Vrha, Kladanj",
     "other_sources": [
       {
         "soldier_id": "9040001273",
@@ -38642,6 +38814,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
+    "death_place": "kod sela Vrezovog Polja, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005214",
@@ -38835,7 +39008,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "zamenik komandanta bataljona",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "na brdu Rujan, Sanski Most"
   },
   {
     "last_name": "Radlović",
@@ -39291,6 +39465,9 @@
         "pdf_y": 623.4,
         "pdf_x_end": 450.0,
         "pdf_y_end": 650.8,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
+        "since": "1944-09-19",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -39568,6 +39745,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 355.7,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005228",
@@ -39777,6 +39955,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 356.0,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001066",
@@ -40067,6 +40246,7 @@
     "rank": "desetar",
     "unit_detail": "1. četa, 4. bataljon",
     "pdf_x_end": 376.7,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005234",
@@ -40159,6 +40339,7 @@
     "rank": "vodnik, zamenik komandira čete",
     "pdf_x_end": 377.0,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005235",
@@ -40195,10 +40376,6 @@
         "source_page": 1293,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Bosut, Srem",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -40541,6 +40718,7 @@
         "pdf_y": 380.5,
         "pdf_x_end": 428.0,
         "pdf_y_end": 469.0,
+        "rank": "zamjenik komandira čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -40909,7 +41087,8 @@
     "death_type": "poginuo",
     "death_date": "04.1943",
     "pdf_x_end": 377.2,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "death_place": "Medeno Polje, Bos. Petrovac"
   },
   {
     "last_name": "Rađenović",
@@ -40928,43 +41107,12 @@
     "birth_place": "Bos. Osredci, Župa, Drvar",
     "ethnicity": "Srbin",
     "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "04.1943",
-    "death_place": "Glamoč",
     "rank": "komandir voda",
     "pdf_x_end": 377.9,
     "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "0001301527",
-        "name": "Rađenović Dana Dušan",
-        "additional_info": "Vozač, rođen 1920, Osreci, Drvar. U NOB od 15. 8. 1944. Danas penzioner.",
-        "pdf_file": "beogradski-bataljon.pdf",
-        "pdf_page": 35,
-        "pdf_x": 37.4,
-        "pdf_y": 647.2,
-        "pdf_x_end": 190.8,
-        "pdf_y_end": 683.4,
-        "unit_file": "prva-proleterska-soldiers.json"
-      },
-      {
-        "soldier_id": "0001700068",
-        "name": "Rađenović Dane Dušan",
-        "additional_info": "1920, Osreci, Drvar, BiH, Srbin, vozač, u brigadi od 15. VIII 1944.",
-        "pdf_file": "prva-proleterska-dopunski.pdf",
-        "pdf_page": 6,
-        "pdf_x": 59.5,
-        "pdf_y": 140.2,
-        "pdf_y_end": 161.4,
-        "pdf_x_end": 366.5,
-        "unit_file": "prva-proleterska-soldiers.json"
-      }
-    ],
-    "variants": {
-      "born": [
-        "1920"
-      ]
-    }
+    "death_type": "poginuo",
+    "death_date": "04.1943",
+    "death_place": "Glamoč"
   },
   {
     "last_name": "Rađenović",
@@ -40998,6 +41146,7 @@
         "pdf_y": 620.5,
         "pdf_x_end": 404.8,
         "pdf_y_end": 630.0,
+        "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       },
       {
@@ -41011,6 +41160,7 @@
         "pdf_x_end": 348.8,
         "pdf_y_end": 389.7,
         "pdf_x_left": 66.9,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -41109,15 +41259,13 @@
         "pdf_y": 5.3,
         "pdf_x_end": 365.2,
         "pdf_y_end": 51.9,
+        "rank": "komesar čete",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
     "occupation": "radnik",
     "party": "KPJ",
-    "death_place": "Manin vrh",
-    "borrowed": [
-      "death_place"
-    ],
+    "death_place": "kod sela Manjin-Vrha, Kladanj",
     "variants": {
       "born": [
         "1921"
@@ -41250,7 +41398,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "pdf_x_end": 390.7
+    "pdf_x_end": 390.7,
+    "death_place": "Medeno Polje, Bos. Petrovac"
   },
   {
     "last_name": "Reljić",
@@ -41306,6 +41455,7 @@
     "unit_detail": "1. četa, 1. bataljon",
     "pdf_x_end": 390.9,
     "party": "KPJ",
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001068",
@@ -41521,6 +41671,7 @@
     "death_date": "04.04.1945",
     "rank": "borac",
     "pdf_x_end": 392.0,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9013004517",
@@ -41824,6 +41975,7 @@
     "rank": "borac",
     "pdf_x_end": 339.4,
     "party": "SKOJ",
+    "death_place": "Ramići, Ključ",
     "other_sources": [
       {
         "soldier_id": "9022015906",
@@ -41833,10 +41985,6 @@
         "source_page": 1304,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Romići, Ključ",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -42054,6 +42202,7 @@
         "pdf_y": 181.4,
         "pdf_x_end": 198.0,
         "pdf_y_end": 218.4,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -42083,6 +42232,7 @@
     "death_date": "17.11.1943",
     "rank": "zastavnik",
     "pdf_x_end": 340.5,
+    "death_place": "kod sela Kačeva, Prijepolje",
     "other_sources": [
       {
         "soldier_id": "9022015796",
@@ -42095,10 +42245,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Titovo Užice"
+    ]
   },
   {
     "last_name": "Rodić",
@@ -42173,6 +42321,7 @@
     "death_date": "24.12.1943",
     "rank": "vodnik",
     "pdf_x_end": 392.5,
+    "death_place": "kod sela Manjin-Vrha, Kladanj",
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity",
@@ -42190,6 +42339,8 @@
         "pdf_y": 317.6,
         "pdf_x_end": 210.4,
         "pdf_y_end": 359.2,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -42272,6 +42423,9 @@
         "pdf_y": 280.3,
         "pdf_x_end": 185.1,
         "pdf_y_end": 326.6,
+        "unit_detail": "2. četa, 4. bataljon",
+        "rank": "borac",
+        "since": "1942-08-22",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -42367,6 +42521,9 @@
         "pdf_y": 395.2,
         "pdf_x_end": 439.0,
         "pdf_y_end": 429.9,
+        "unit_detail": "3. bataljon",
+        "rank": "potporučnik, pomoćnik komesara čete",
+        "since": "1942-08-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -42648,7 +42805,8 @@
     "death_date": "1942",
     "rank": "borac",
     "pdf_x_end": 398.0,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Čaplja, Sanski Most"
   },
   {
     "last_name": "Runić",
@@ -42793,6 +42951,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 396.5,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005262",
@@ -43472,6 +43631,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 392.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005273",
@@ -43590,7 +43750,8 @@
     "death_date": "18.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 393.7
+    "pdf_x_end": 393.7,
+    "death_place": "Andrijevci, Sl. Brod"
   },
   {
     "last_name": "Sekulić",
@@ -43975,6 +44136,8 @@
         "pdf_y": 185.5,
         "pdf_x_end": 470.7,
         "pdf_y_end": 211.3,
+        "rank": "borac",
+        "since": "1944-08-28",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -44188,7 +44351,8 @@
     "death_date": "26.10.1942",
     "rank": "vodnik",
     "pdf_x_end": 341.3,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Golubić, Bihać"
   },
   {
     "last_name": "Skakić",
@@ -44588,7 +44752,8 @@
     "death_date": "21.03.1943",
     "rank": "vodnik",
     "pdf_x_end": 341.3,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Oskoruša, Priboj"
   },
   {
     "last_name": "Smiljović",
@@ -44611,7 +44776,8 @@
     "death_date": "17.04.1945",
     "rank": "borac",
     "unit_detail": "3. četa, 2. bataljon",
-    "pdf_x_end": 341.9
+    "pdf_x_end": 341.9,
+    "death_place": "Topolje, Sl. Brod"
   },
   {
     "last_name": "Solaji",
@@ -44846,6 +45012,7 @@
     "death_date": "22.12.1944",
     "rank": "vodnik",
     "pdf_x_end": 395.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9022015269",
@@ -44855,10 +45022,6 @@
         "source_page": 1287,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Sremski front",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -45117,6 +45280,7 @@
         "pdf_x_end": 402.5,
         "pdf_y_end": 554.7,
         "pdf_x_left": 43.8,
+        "rank": "vodni delegat",
         "unit_file": "cacanski-odred-soldiers.json"
       }
     ],
@@ -45190,6 +45354,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 397.7,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005295",
@@ -45364,6 +45529,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 348.2,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9013000963",
@@ -45397,10 +45563,6 @@
         "source_page": 1323,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "death_place": "Kod otoka",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -45729,6 +45891,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 348.7,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005302",
@@ -45970,6 +46133,9 @@
         "pdf_y": 298.3,
         "pdf_x_end": 453.2,
         "pdf_y_end": 324.1,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1944-10-13",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -46172,6 +46338,7 @@
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 391.9,
     "birth_place": "Taor, Ražana",
+    "death_place": "Tompojevci, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9014005310",
@@ -46220,10 +46387,6 @@
         ],
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Srem",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -46317,6 +46480,7 @@
         "pdf_x_end": 317.9,
         "pdf_y_end": 344.7,
         "pdf_x_left": 36.9,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -46403,6 +46567,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 392.3,
+    "death_place": "Brezovo Polje",
     "other_sources": [
       {
         "soldier_id": "9038001258",
@@ -46411,6 +46576,30 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00002204&pg_seq=262",
         "source_page": 259,
         "ref_book": "knjazevac-pomenik"
+      },
+      {
+        "soldier_id": "9013001274",
+        "name": "Stefanović Radomir",
+        "additional_info": "Četvrta krajiška udarna brigada, Brezovo Polje: Radomir Stefanović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 295.4,
+        "pdf_y": 289.3,
+        "pdf_x_end": 389.1,
+        "pdf_y_end": 299.0,
+        "ref_book": "u-rovovima-srema-poginuli"
+      },
+      {
+        "soldier_id": "9014005313",
+        "name": "Stefanović Radomir",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 581. Stefanović Radomir.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 38,
+        "pdf_x": 429.5,
+        "pdf_y": 785.3,
+        "pdf_x_end": 523.2,
+        "pdf_y_end": 794.8,
+        "ref_book": "sremski-front-poginuli"
       }
     ]
   },
@@ -46457,6 +46646,7 @@
     "death_date": "17.01.1945",
     "rank": "borac",
     "pdf_x_end": 391.9,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001075",
@@ -46985,7 +47175,8 @@
     "birth_place": "Crnoljevica, Svrljig",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "death_place": "kod sela Novak-Bapske, Šid"
   },
   {
     "last_name": "Stojanović",
@@ -47098,6 +47289,8 @@
         "pdf_y": 365.5,
         "pdf_x_end": 362.8,
         "pdf_y_end": 386.5,
+        "unit_detail": "3. bataljon",
+        "since": "1945-03",
         "unit_file": "4-srpska-soldiers.json"
       },
       {
@@ -47110,6 +47303,7 @@
         "pdf_y": 404.3,
         "pdf_x_end": 421.8,
         "pdf_y_end": 432.6,
+        "rank": "borac",
         "unit_file": "22-srpska-soldiers.json"
       }
     ],
@@ -47140,6 +47334,7 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 352.9,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014005323",
@@ -47414,7 +47609,8 @@
     "death_type": "poginuo",
     "death_date": "06.08.1943",
     "rank": "bolničar",
-    "pdf_x_end": 386.5
+    "pdf_x_end": 386.5,
+    "death_place": "kod sela Nišića, Okruglica, Olovo"
   },
   {
     "last_name": "Stupar",
@@ -47590,6 +47786,7 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 374.1,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9014012304",
@@ -47746,7 +47943,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 375.6
+    "pdf_x_end": 375.6,
+    "death_place": "Brezovo Polje, Brčko"
   },
   {
     "last_name": "Tanasković",
@@ -47768,7 +47966,8 @@
     "death_type": "poginuo",
     "death_date": "25.12.1944",
     "rank": "vodnik",
-    "pdf_x_end": 375.8
+    "pdf_x_end": 375.8,
+    "death_place": "Otok, Županja"
   },
   {
     "last_name": "Tanić",
@@ -47810,6 +48009,7 @@
     "death_date": "17.01.1945",
     "rank": "borac",
     "pdf_x_end": 377.1,
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001082",
@@ -47990,6 +48190,7 @@
         "pdf_y": 68.4,
         "pdf_x_end": 333.6,
         "pdf_y_end": 87.2,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -48525,7 +48726,8 @@
     "death_type": "umro",
     "death_date": "05.02.1944",
     "rank": "borac",
-    "pdf_x_end": 344.5
+    "pdf_x_end": 344.5,
+    "death_place": "Kruščica, Foča"
   },
   {
     "last_name": "Tomić",
@@ -48611,7 +48813,8 @@
     "death_type": "poginuo",
     "death_date": "27.04.1945",
     "pdf_x_end": 392.0,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Hercegovac, Bjelovar"
   },
   {
     "last_name": "Tomić",
@@ -49014,6 +49217,9 @@
         "pdf_y": 271.6,
         "pdf_x_end": 361.7,
         "pdf_y_end": 304.1,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
+        "since": "1945-03",
         "unit_file": "4-srpska-soldiers.json"
       }
     ]
@@ -49349,6 +49555,7 @@
         "pdf_y": 359.0,
         "pdf_x_end": 353.1,
         "pdf_y_end": 384.8,
+        "rank": "desetar",
         "unit_file": "4-proleterska-soldiers.json"
       },
       {
@@ -49361,6 +49568,7 @@
         "pdf_y": 30.4,
         "pdf_x_end": 398.2,
         "pdf_y_end": 73.3,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -49514,6 +49722,7 @@
     "rank": "vodnik, komandir čete",
     "pdf_x_end": 349.1,
     "party": "KPJ",
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001084",
@@ -49645,6 +49854,7 @@
     "rank": "kapetan, politički komesar bataljona",
     "pdf_x_end": 348.5,
     "party": "KPJ",
+    "death_place": "Sotin, Vukovar",
     "other_sources": [
       {
         "soldier_id": "9013001083",
@@ -49693,10 +49903,6 @@
         "pdf_y_end": 428.3,
         "ref_book": "sremski-front-poginuli"
       }
-    ],
-    "death_place": "Opatovac, Srem",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -49768,7 +49974,8 @@
     "death_date": "17.12.1944",
     "rank": "poručnik, komandir čete",
     "pdf_x_end": 392.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Ubović",
@@ -49847,7 +50054,8 @@
     "death_date": "16.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 392.9
+    "pdf_x_end": 392.9,
+    "death_place": "kod sela V. Kopaonice, Županja"
   },
   {
     "last_name": "Umičević",
@@ -49894,6 +50102,9 @@
         "pdf_y": 423.1,
         "pdf_x_end": 476.7,
         "pdf_y_end": 449.1,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1944-10-27",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -49916,7 +50127,8 @@
     "death_type": "nestao",
     "death_date": "08.05.1944",
     "rank": "borac",
-    "pdf_x_end": 392.1
+    "pdf_x_end": 392.1,
+    "death_place": "Šljivovica, Mokra Gora"
   },
   {
     "last_name": "Urošević",
@@ -50116,6 +50328,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 392.5,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9013001296",
@@ -50241,6 +50454,7 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 353.1,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9025030353",
@@ -50292,10 +50506,8 @@
     ],
     "birth_place": "Slatina, Sopot",
     "borrowed": [
-      "birth_place",
-      "death_place"
-    ],
-    "death_place": "Brezopolje"
+      "birth_place"
+    ]
   },
   {
     "last_name": "Vasiljević",
@@ -50453,7 +50665,8 @@
     "death_type": "poginuo",
     "death_date": "04.01.1944",
     "rank": "borac",
-    "pdf_x_end": 392.1
+    "pdf_x_end": 392.1,
+    "death_place": "Bare, Goražde"
   },
   {
     "last_name": "Vasić",
@@ -51142,7 +51355,8 @@
     "death_date": "22.12.1944",
     "rank": "vodnik",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 390.2
+    "pdf_x_end": 390.2,
+    "death_place": "Otok, Županja"
   },
   {
     "last_name": "Vidojević",
@@ -51166,6 +51380,7 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 389.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9025036129",
@@ -51214,10 +51429,6 @@
         "pdf_y_end": 661.7,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Kod otoka",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -51286,7 +51497,8 @@
     "death_date": "27.04.1945",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 390.8
+    "pdf_x_end": 390.8,
+    "death_place": "kod sela Zdenačkog Gaja, Grubišno Polje"
   },
   {
     "last_name": "Vinevac",
@@ -51884,6 +52096,7 @@
     "rank": "vodnik",
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 351.2,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014012357",
@@ -51942,6 +52155,7 @@
     "death_date": "21.01.1945",
     "rank": "potporučnik, pomoćnik političkog komesara čete",
     "pdf_x_end": 351.1,
+    "death_place": "Berkasovo, Šid",
     "other_sources": [
       {
         "soldier_id": "9013001135",
@@ -52152,7 +52366,8 @@
     "death_type": "poginuo",
     "death_date": "12.07.1943",
     "rank": "vodnik",
-    "pdf_x_end": 390.9
+    "pdf_x_end": 390.9,
+    "death_place": "kod sela Nišića, Ivančići, Sarajevo"
   },
   {
     "last_name": "Vukadinović",
@@ -52265,6 +52480,7 @@
         "pdf_y": 275.0,
         "pdf_x_end": 317.9,
         "pdf_y_end": 374.2,
+        "rank": "komesar čete, komesar bataljona",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -52325,6 +52541,7 @@
     "rank": "kapetan, načelnik štaba brigade",
     "pdf_x_end": 391.6,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014012363",
@@ -52724,7 +52941,8 @@
     "death_type": "nestao",
     "death_date": "14.09.1943",
     "rank": "borac",
-    "pdf_x_end": 346.6
+    "pdf_x_end": 346.6,
+    "death_place": "Pazarić, Sarajevo"
   },
   {
     "last_name": "Vulinović",
@@ -53361,7 +53579,8 @@
     "death_type": "poginuo",
     "death_date": "24.10.1943",
     "rank": "borac",
-    "pdf_x_end": 390.6
+    "pdf_x_end": 390.6,
+    "death_place": "kod sela Ravanaca, Rudo"
   },
   {
     "last_name": "Zrilić",
@@ -53383,6 +53602,7 @@
     "death_date": "24.12.1943",
     "rank": "zastavnik",
     "pdf_x_end": 390.6,
+    "death_place": "kod sela Manjin-Vrha, Kladanj",
     "other_sources": [
       {
         "soldier_id": "9022015544",
@@ -53392,10 +53612,6 @@
         "source_page": 1295,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Sutjeska",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -53498,6 +53714,7 @@
     "death_date": "19.03.1944",
     "rank": "borac",
     "pdf_x_end": 347.8,
+    "death_place": "Knjeginja, Uvac",
     "other_sources": [
       {
         "soldier_id": "9022035821",
@@ -53510,10 +53727,8 @@
     ],
     "ethnicity": "Musliman",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Uvac -priboj"
+    ]
   },
   {
     "last_name": "Čama",
@@ -53760,7 +53975,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 391.1
+    "pdf_x_end": 391.1,
+    "death_place": "Brezovo Polje, Brčko"
   },
   {
     "last_name": "Čeko",
@@ -53877,6 +54093,7 @@
     "death_date": "12.04.1945",
     "rank": "borac",
     "pdf_x_end": 390.8,
+    "death_place": "Posavski Podgajci, Županja",
     "other_sources": [
       {
         "soldier_id": "9014004809",
@@ -54203,7 +54420,8 @@
     "death_type": "nestao",
     "death_date": "17.01.1945",
     "rank": "borac",
-    "pdf_x_end": 343.4
+    "pdf_x_end": 343.4,
+    "death_place": "Sotin, Vukovar"
   },
   {
     "last_name": "Čolić",
@@ -54302,6 +54520,7 @@
         "pdf_y": 539.7,
         "pdf_x_end": 374.8,
         "pdf_y_end": 549.2,
+        "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       }
     ]
@@ -54602,6 +54821,8 @@
         "pdf_y": 328.1,
         "pdf_x_end": 454.7,
         "pdf_y_end": 352.9,
+        "rank": "bolničarka",
+        "since": "1944-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -55443,6 +55664,7 @@
     "unit_detail": "1. četa, 2. bataljon",
     "pdf_x_end": 356.5,
     "party": "KPJ",
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014005332",
@@ -55653,7 +55875,8 @@
     "death_type": "poginuo",
     "death_date": "25.10.1943",
     "rank": "borac",
-    "pdf_x_end": 358.0
+    "pdf_x_end": 358.0,
+    "death_place": "kod sela Ravanaca, Rudo"
   },
   {
     "last_name": "Ševo",
@@ -55676,7 +55899,8 @@
     "death_date": "10.02.1943",
     "rank": "komandir voda",
     "pdf_x_end": 358.5,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "kod sela Otokovci, Glamoč"
   },
   {
     "last_name": "Ševo",
@@ -56176,6 +56400,8 @@
         "pdf_y": 240.5,
         "pdf_x_end": 369.5,
         "pdf_y_end": 271.6,
+        "rank": "borac",
+        "since": "1942-08",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -56188,6 +56414,8 @@
         "pdf_y": 602.4,
         "pdf_x_end": 635.6,
         "pdf_y_end": 611.6,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       },
       {
@@ -56277,6 +56505,7 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 374.4,
     "party": "KPJ",
+    "death_place": "Hercegovac, Grubišno Polje",
     "other_sources": [
       {
         "soldier_id": "9022017062",
@@ -56286,10 +56515,6 @@
         "source_page": 1459,
         "ref_book": "zrtve-rata-1964-bih"
       }
-    ],
-    "death_place": "Hercegovac, Gračanica",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -57059,6 +57284,7 @@
     "death_date": "06.04.1945",
     "rank": "borac",
     "pdf_x_end": 391.7,
+    "death_place": "Brezovo Polje, Brčko",
     "other_sources": [
       {
         "soldier_id": "9025000131",
@@ -57107,10 +57333,6 @@
         ],
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "Vinkovci",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -57135,6 +57357,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 391.3,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9014012377",
@@ -57257,6 +57480,7 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 350.9,
+    "death_place": "Otok, Županja",
     "other_sources": [
       {
         "soldier_id": "9025035591",
@@ -57290,10 +57514,6 @@
         "pdf_y_end": 182.7,
         "ref_book": "u-rovovima-srema-poginuli"
       }
-    ],
-    "death_place": "S. Nemci vinkovc",
-    "borrowed": [
-      "death_place"
     ]
   },
   {
@@ -57711,6 +57931,8 @@
         "pdf_y": 168.9,
         "pdf_x_end": 472.5,
         "pdf_y_end": 194.7,
+        "rank": "borac",
+        "since": "1944-09-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],

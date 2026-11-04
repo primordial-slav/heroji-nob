@@ -342,6 +342,9 @@
         "pdf_x_end": 351.2,
         "pdf_y_end": 430.5,
         "pdf_x_left": 68.6,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
+        "since": "1943",
         "unit_file": "1-sumadijska-soldiers.json"
       }
     ],
@@ -1230,6 +1233,8 @@
         "pdf_y": 375.0,
         "pdf_x_end": 212.5,
         "pdf_y_end": 426.4,
+        "unit_detail": "3. četa",
+        "rank": "politički komesar",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ]
@@ -2251,7 +2256,10 @@
     "additional_info": "Drenovac (Mačvanski srez): r. u ok. Pirota; stupio avgusta 1941, uhvaćen u Drenovcu, obešen 20. 11. 1941. na Banjici.",
     "birth_year": "",
     "source_url": "https://znaci.org/00001/48_102.htm",
-    "soldier_id": "0109000140"
+    "soldier_id": "0109000140",
+    "death_type": "ubijen",
+    "death_date": "20.11.1941",
+    "death_place": "Banjica"
   },
   {
     "last_name": "Božić",
@@ -3504,7 +3512,10 @@
     "birth_year": "1908",
     "occupation": "zemljoradnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
-    "soldier_id": "0109000221"
+    "soldier_id": "0109000221",
+    "death_type": "ubijen",
+    "death_date": "02.1942",
+    "death_place": "Šabac"
   },
   {
     "last_name": "Dobrivojević",
@@ -4627,6 +4638,9 @@
     "ethnicity": "Hrvat",
     "rank": "politički komesar odreda, komandant bataljona",
     "party": "KPJ",
+    "death_type": "ubijen",
+    "death_date": "22.05.1942",
+    "death_place": "Valjevo",
     "other_sources": [
       {
         "soldier_id": "9001000291",
@@ -4698,7 +4712,8 @@
     "soldier_id": "0109000296",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac"
+    "rank": "borac",
+    "death_place": "Erdevik"
   },
   {
     "last_name": "Gagić",
@@ -5969,7 +5984,9 @@
     "birth_year": "1922",
     "occupation": "zemljoradnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
-    "soldier_id": "0109000379"
+    "soldier_id": "0109000379",
+    "death_type": "ubijen",
+    "death_place": "Šabac"
   },
   {
     "last_name": "Iličić",
@@ -7241,6 +7258,8 @@
         "pdf_y": 240.8,
         "pdf_x_end": 462.8,
         "pdf_y_end": 268.4,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -7984,7 +8003,7 @@
     "birth_place": "Bijeljina",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000504",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "06.10.1941",
     "death_place": "Novo Selo",
@@ -8016,7 +8035,7 @@
     "birth_place": "Bijeljina",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000505",
-    "ethnicity": "Jevrejin",
+    "ethnicity": "Jevrej",
     "death_type": "poginuo",
     "death_date": "1942"
   },
@@ -8713,6 +8732,7 @@
         "pdf_x_end": 396.4,
         "pdf_y_end": 516.9,
         "pdf_x_left": 37.3,
+        "rank": "vodnik",
         "unit_file": "cacanski-odred-soldiers.json"
       }
     ]
@@ -10700,6 +10720,8 @@
     "occupation": "krojački radnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000692",
+    "death_type": "ubijen",
+    "death_date": "16.03.1942",
     "other_sources": [
       {
         "soldier_id": "9025018529",
@@ -10713,14 +10735,10 @@
     "birth_place": "Lešnica, Loznica",
     "borrowed": [
       "birth_place",
-      "death_date",
       "death_place",
-      "death_type",
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Šabac"
   },
   {
@@ -11649,6 +11667,7 @@
         "pdf_y": 266.8,
         "pdf_x_end": 458.3,
         "pdf_y_end": 331.2,
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -12242,6 +12261,8 @@
         "pdf_y": 157.7,
         "pdf_x_end": 464.2,
         "pdf_y_end": 185.3,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "borac",
         "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
@@ -12531,7 +12552,8 @@
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000809",
     "rank": "politički komesar",
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_type": "ubijen"
   },
   {
     "last_name": "Milošević",
@@ -13386,11 +13408,12 @@
     "fathers_name": "",
     "full_name": "Nastić Čedomir",
     "additional_info": "Noćajski Salaš (Mačvanski srez): r. 31. 8. 1925, Belotić, osnovna škola, bez zanimanja; porodica: roditelji, sestra i brat, otac delovođa u opštini, 1 ha; stupio 28. 8. 1941, četa M. Radovanovića, kurir; 11. oktobra 1941. vraćen sa Cera u Mačvu...",
-    "birth_year": "",
+    "birth_year": "1925",
     "birth_place": "Belotić",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000866",
-    "rank": "kurir"
+    "rank": "kurir",
+    "birth_date": "31.08.1925"
   },
   {
     "last_name": "Nedeljković",
@@ -13837,6 +13860,8 @@
         "pdf_x_end": 225.6,
         "pdf_y_end": 284.1,
         "pdf_x_left": 70.7,
+        "rank": "borac",
+        "since": "1942-01",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -13993,14 +14018,36 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=144",
         "source_page": 144,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0026000728",
+        "name": "Obradović Živomir",
+        "additional_info": "borac, radnik, rođen 1924. godine u Mačvanskoj Mitrovici kod Šapca, a živio u Užicu, poginuo kao kurir Štaba 4. bataljona 2. proleterske brigade na Pidrišu, kod Prozora, 5. marta 1943.",
+        "pdf_file": "uzicki-odred.pdf",
+        "pdf_page": 54,
+        "pdf_x": 129.6,
+        "pdf_y": 168.2,
+        "pdf_x_end": 484.7,
+        "pdf_y_end": 195.8,
+        "unit_detail": "4. bataljon",
+        "rank": "kurir",
+        "unit_file": "uzicki-odred-soldiers.json"
       }
     ],
-    "birth_place": "Mačvanska Mitrovica, Kula",
+    "birth_place": "Mačvanska Mitrovica, Šapca",
     "borrowed": [
       "birth_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin"
+    "ethnicity": "Srbin",
+    "variants": {
+      "death": [
+        {
+          "date": "05.03.1943",
+          "place": "na Pidrišu kod Prozora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Obrenčević",
@@ -15526,6 +15573,7 @@
         "pdf_y": 84.9,
         "pdf_x_end": 358.1,
         "pdf_y_end": 100.0,
+        "rank": "desetar",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
@@ -15902,6 +15950,8 @@
         "pdf_y": 115.3,
         "pdf_x_end": 185.7,
         "pdf_y_end": 179.0,
+        "unit_detail": "1. bataljon",
+        "rank": "zamenik političkog komesara",
         "unit_file": "15-majevicka-soldiers.json"
       },
       {
@@ -16122,6 +16172,9 @@
         "pdf_y": 56.9,
         "pdf_x_end": 368.1,
         "pdf_y_end": 77.2,
+        "unit_detail": "4. bataljon",
+        "rank": "borac",
+        "since": "1942-05",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -16584,7 +16637,9 @@
     "birth_year": "1920",
     "occupation": "radnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
-    "soldier_id": "0109001058"
+    "soldier_id": "0109001058",
+    "death_type": "ubijen",
+    "death_place": "Šabac"
   },
   {
     "last_name": "Prljić",
@@ -16870,6 +16925,8 @@
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109001078",
     "rank": "zamenik političkog komesara odreda",
+    "death_type": "ubijen",
+    "death_date": "04.1942",
     "other_sources": [
       {
         "soldier_id": "9001000889",
@@ -18269,6 +18326,8 @@
         "pdf_y": 415.9,
         "pdf_x_end": 194.4,
         "pdf_y_end": 490.6,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "načelnik štaba",
         "unit_file": "7-krajiska-soldiers.json"
       },
       {
@@ -21392,6 +21451,9 @@
         "pdf_y": 117.9,
         "pdf_x_end": 366.4,
         "pdf_y_end": 148.1,
+        "unit_detail": "6. bataljon",
+        "rank": "komandir čete",
+        "since": "1942-06",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -21438,6 +21500,9 @@
         "pdf_y": 153.7,
         "pdf_x_end": 366.3,
         "pdf_y_end": 184.3,
+        "unit_detail": "6. bataljon",
+        "rank": "vodnik",
+        "since": "1942-01",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -22198,6 +22263,8 @@
         "pdf_y": 278.8,
         "pdf_x_end": 301.9,
         "pdf_y_end": 319.6,
+        "unit_detail": "4. bataljon",
+        "rank": "borac",
         "unit_file": "druga-proleterska-soldiers.json"
       }
     ],
@@ -22464,6 +22531,9 @@
     "occupation": "zemljoradnik",
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109001441",
+    "death_type": "ubijen",
+    "death_date": "10.10.1941",
+    "death_place": "Šabac",
     "other_sources": [
       {
         "soldier_id": "9025007083",
@@ -22477,15 +22547,9 @@
     "birth_place": "Badovinci, Bogatić",
     "borrowed": [
       "birth_place",
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
-    "death_type": "ubijen",
-    "death_date": "1941",
-    "death_place": "Šabac"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Vračarić",
@@ -23353,6 +23417,8 @@
         "pdf_y": 147.7,
         "pdf_x_end": 465.8,
         "pdf_y_end": 176.4,
+        "unit_detail": "1. bataljon",
+        "rank": "desetar",
         "unit_file": "soldiers.json"
       }
     ],
@@ -23585,6 +23651,7 @@
         "pdf_y": 30.3,
         "pdf_x_end": 369.2,
         "pdf_y_end": 87.7,
+        "rank": "vodnik",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {

@@ -826,6 +826,9 @@
     "pdf_x_end": 358.1,
     "rank": "borac",
     "birth_place": "Novi Sad",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "na Sremskom frontu I",
     "other_sources": [
       {
         "soldier_id": "9027003654",
@@ -834,20 +837,41 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=171",
         "source_page": 171,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0022001621",
+        "name": "Letić Vasa",
+        "additional_info": "1913, Novi Sad, borac, pog. 26.01.1945, Adoifovac.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 73,
+        "pdf_x": 71.7,
+        "pdf_y": 141.4,
+        "pdf_x_end": 354.3,
+        "pdf_y_end": 160.8,
+        "rank": "borac",
+        "unit_file": "7-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0111010781",
+        "name": "Letić Vasa",
+        "additional_info": "1913, Novi Sad, borac, poginuo 26. 1. 1945. godine u s. Adolfovac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 12,
+        "pdf_x": 70.6,
+        "pdf_y": 444.3,
+        "pdf_x_end": 351.2,
+        "pdf_y_end": 461.9,
+        "unit_detail": "7. vojvođanska brigada",
+        "rank": "borac",
+        "unit_file": "51-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "birth_year": "1913",
     "borrowed": [
       "birth_year",
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Srem. front",
-    "birth_year": "1913"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Lugomerski",
@@ -1106,6 +1130,7 @@
         "pdf_y": 273.6,
         "pdf_x_end": 346.3,
         "pdf_y_end": 283.6,
+        "rank": "borac",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -1225,6 +1250,7 @@
         "pdf_y": 255.6,
         "pdf_x_end": 273.6,
         "pdf_y_end": 265.6,
+        "rank": "borac",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]

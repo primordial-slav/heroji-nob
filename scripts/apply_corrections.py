@@ -65,6 +65,7 @@ from name_utils import BRIGADE_CONFIGS, extract_birth_info
 from soldier_id_utils import generate_soldier_id, parse_soldier_id
 import extract_structured_fields as structured
 import resolved_places
+from safe_write import write_text
 import standardize_fields
 import feminine_alias
 import entry_boxes
@@ -408,11 +409,18 @@ def apply_links(links, units):
                 unit_file = BRIGADE_CONFIGS[other_code]['json_file']
                 entry = {'soldier_id': o['soldier_id'], 'name': o.get('full_name', ''), 'additional_info': o.get('additional_info', '')}
                 entry.update({k: o[k] for k in SOURCE_FIELDS if o.get(k) not in (None, '')})
+                # the card's line for that unit: his sub-unit and duty there, and when he came, where it is printed
+                entry.update({k: o[k] for k in ('unit_detail', 'rank') if o.get(k)})
+                since = record_sources.since_in_unit(o)
+                if since:
+                    entry['since'] = since
                 linked.append({**entry, 'unit_file': unit_file})
                 linked += [{**e, 'unit_file': unit_file} for e in o.get('other_sources', ())
                            if not e.get('unit_file') and not e.get('ref_book')]   # a book across units: its own match
                 lent = record_sources.borrowed(o)
                 for k in LINK_FILL:
+                    if k == 'death_place' and structured.another_year(s.get('death_date'), o.get('death_date')):
+                        continue                # that record's place goes with its own death
                     if not s.get(k) and o.get(k) and k not in lent:
                         record_sources.borrow(s, k, o[k])
                 for k in LINK_FATHER:
@@ -574,8 +582,7 @@ def update_units_ts(units_ts_path, count_updates):
             content = re.sub(pattern, rf"\g<1>{new_count}\g<3>", content)
 
     if changed:
-        with open(units_ts_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+        write_text(units_ts_path, content)
     return changed
 
 

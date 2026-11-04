@@ -2966,6 +2966,9 @@
         "pdf_y": 58.0,
         "pdf_x_end": 353.4,
         "pdf_y_end": 88.1,
+        "unit_detail": "2. bataljon",
+        "rank": "politički komesar divizije",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -2991,6 +2994,7 @@
         "pdf_y": 170.0,
         "pdf_x_end": 187.6,
         "pdf_y_end": 244.5,
+        "rank": "politički komesar",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -4170,6 +4174,8 @@
         "pdf_y": 283.6,
         "pdf_x_end": 466.9,
         "pdf_y_end": 312.7,
+        "unit_detail": "1. bataljon",
+        "rank": "mitraljezac, komandir voda",
         "unit_file": "soldiers.json"
       },
       {
@@ -4196,6 +4202,8 @@
             238.8
           ]
         ],
+        "unit_detail": "štab brigade",
+        "rank": "komandant brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ],
@@ -4254,6 +4262,8 @@
         "pdf_y": 448.9,
         "pdf_x_end": 381.0,
         "pdf_y_end": 458.4,
+        "unit_detail": "3. bataljon",
+        "rank": "komandir voda",
         "unit_file": "soldiers.json"
       }
     ],
@@ -4266,8 +4276,7 @@
     "variants": {
       "death": [
         {
-          "date": "krajem 1943",
-          "place": "Velebit"
+          "date": "krajem 1943"
         }
       ]
     }
@@ -4379,6 +4388,7 @@
         "pdf_y": 448.1,
         "pdf_x_end": 199.5,
         "pdf_y_end": 474.9,
+        "unit_detail": "štab 3. bataljona",
         "unit_file": "6-dalmatinska-soldiers.json"
       },
       {
@@ -12003,12 +12013,11 @@
   },
   {
     "last_name": "Krivić",
-    "middle_name": "F.",
+    "middle_name": "F",
     "first_name": "Filip",
-    "fathers_name": "F.",
-    "full_name": "Krivić F. Filip",
+    "fathers_name": "F",
+    "full_name": "Krivić F Filip",
     "additional_info": "iz Biograda, u borbi na Komu, 9. XI 1944.",
-    "birth_year": "",
     "death_type": "poginuo",
     "death_date": "09.11.1944",
     "pdf_page": 21,
@@ -12019,11 +12028,15 @@
     "soldier_id": "0079000533",
     "birth_place": "Biograd",
     "pdf_x_end": 463.0,
-    "death_place": "Palanka",
-    "borrowed": [
-      "death_place"
-    ],
     "other_sources": [
+      {
+        "soldier_id": "9021001094",
+        "name": "Krivić (Frane) Filip",
+        "additional_info": "rođen 1922, Kraj (Biograd). Hrvat, poginuo 1944. u NOBu, Knin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=29",
+        "source_page": 29,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
       {
         "soldier_id": "0103009005",
         "name": "Krivić F. Filip",
@@ -12037,6 +12050,14 @@
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ],
+    "death_place": "Palanka",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Hrvat",
+    "birth_year": "1922",
     "variants": {
       "death": [
         {
@@ -15056,6 +15077,7 @@
         "pdf_y": 461.4,
         "pdf_x_end": 459.6,
         "pdf_y_end": 491.1,
+        "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       }
     ]
@@ -16053,6 +16075,7 @@
         "pdf_y": 231.2,
         "pdf_x_end": 350.1,
         "pdf_y_end": 259.0,
+        "rank": "komandir čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       },
       {
@@ -16163,6 +16186,7 @@
         "pdf_y": 569.0,
         "pdf_x_end": 526.0,
         "pdf_y_end": 587.8,
+        "rank": "borac",
         "unit_file": "51-divizija-soldiers.json"
       }
     ],
@@ -16452,10 +16476,8 @@
     "ethnicity": "Hrvat",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "death_place": "2.č.1.bat.5.br.14.d",
     "birth_year": "1910"
   },
   {
@@ -18402,6 +18424,8 @@
         "pdf_y": 537.2,
         "pdf_x_end": 454.1,
         "pdf_y_end": 566.4,
+        "unit_detail": "1. bataljon",
+        "rank": "komandir voda",
         "unit_file": "soldiers.json"
       }
     ],
@@ -18818,6 +18842,9 @@
         "pdf_y": 323.0,
         "pdf_x_end": 350.0,
         "pdf_y_end": 354.6,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943-06",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -28010,6 +28037,8 @@
         "pdf_y": 227.5,
         "pdf_x_end": 460.1,
         "pdf_y_end": 243.3,
+        "unit_detail": "4. bataljon",
+        "rank": "borac",
         "unit_file": "2-dalmatinska-soldiers.json"
       },
       {
@@ -31483,6 +31512,7 @@
         "pdf_y": 240.0,
         "pdf_x_end": 468.1,
         "pdf_y_end": 260.1,
+        "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       }
     ],
@@ -32559,6 +32589,8 @@
         "pdf_y": 371.6,
         "pdf_x_end": 468.1,
         "pdf_y_end": 391.2,
+        "unit_detail": "1. bataljon",
+        "rank": "komesar čete, pomoćnik političkog komesara, politički komesar",
         "unit_file": "soldiers.json"
       },
       {
@@ -32571,6 +32603,7 @@
         "pdf_y": 307.8,
         "pdf_x_end": 388.4,
         "pdf_y_end": 356.6,
+        "rank": "komesar brigade",
         "unit_file": "druga-licka-soldiers.json"
       },
       {
@@ -32579,6 +32612,7 @@
         "additional_info": "zvani Pera; narodni heroj; Rođen je 1. novembra 1919. godine u selu Lički Tiškovac, opština Donji Lapac. Po zanimanju mašinski bravar. Pre rata je pripadao naprednom sindikalnom pokretu u Drvaru. Član KPJ od 17. januara 1942. godine. U narodnooslobodilačku borbu stupio je 27. jula 1941. godine. Danas je general—major JNA. Za narodnog heroja proglašen je 1953. godine. Kao politički delegat voda i komesar čete u bataljonu »Marko Orešković« ispoljio je veliku hrabrost u borbi i umešnost u političkom radu. Posle toga bio je pomoćnik političkog komesara 3. partizanskog odreda, pa politički komesar 2. brigade. U 3. ličkoj brigadi bio je na dužnosti pomoćnika političkog komesara brigade od februara do maja 1943. godine. Posle toga se nalazio na raznim političkim funkcijama do kraja rata.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=415",
         "source_page": 410,
+        "rank": "politički delegat voda, komesar čete, pomoćnik političkog komesara",
         "unit_file": "3-licka-soldiers.json"
       }
     ],
@@ -32685,6 +32719,8 @@
         "pdf_y": 282.6,
         "pdf_x_end": 198.9,
         "pdf_y_end": 291.1,
+        "unit_detail": "štab brigade",
+        "rank": "komandant brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -32753,6 +32789,8 @@
         "pdf_y": 513.7,
         "pdf_x_end": 465.4,
         "pdf_y_end": 543.3,
+        "unit_detail": "1. bataljon",
+        "rank": "zamjenik komandanta divizije",
         "unit_file": "soldiers.json"
       },
       {
@@ -32791,6 +32829,8 @@
             247.9
           ]
         ],
+        "unit_detail": "štab brigade",
+        "rank": "zamenik komandanta brigade, general-major",
         "unit_file": "druga-licka-soldiers.json"
       },
       {
@@ -32803,6 +32843,8 @@
         "pdf_y": 221.9,
         "pdf_x_end": 124.5,
         "pdf_y_end": 230.4,
+        "unit_detail": "štab brigade",
+        "rank": "zamjenik komandanta divizije",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ],
@@ -32888,6 +32930,8 @@
         "pdf_y": 255.5,
         "pdf_x_end": 126.4,
         "pdf_y_end": 264.0,
+        "unit_detail": "štab brigade",
+        "rank": "politički komesar",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -32920,6 +32964,8 @@
         "pdf_y": 213.5,
         "pdf_x_end": 125.4,
         "pdf_y_end": 222.0,
+        "unit_detail": "štab brigade",
+        "rank": "komandant brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33019,6 +33065,7 @@
         "additional_info": "narodni heroj; Rođen je 7. oktobra 1911. godine u Metku, opština Gospić. Po zanimanju je činovnik. Član KPJ je postao novembra 1941. godi— ne. Sada je general-pukovnik JNA. Za narodnog heroja proglašen je 23. jula 1953. godine. Gimnaziju je završio u Gospiću, a kasnije je bio činovnik u Čazmi i Virovitici. Posle kapitulacije stare Jugoslavije vratio se u Liku. Učestvovao je u prvim borbama u ustanku svoga kraja kao rukovodilac i organizator ustanka. Bio je prvi komandant 1. ličkog NOP odreda »Velebit«. Ranjen je u borbi sa Italijanima krajem 1941. godine na Šijanovom klancu. Postavljen je za prvog komandanta 9. brigade 1942. godine i uspešno je njome rukovodio sve do aprila 1943. godine, kada je premešten u štab l. korpusa NOVH, za načelnika štaba. Posle toga, do kraja rata„ nalazio se na raznim odgovornim dužnostima u jedinicama NOVJ.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009287&pg_seq=416",
         "source_page": 411,
+        "rank": "komandant divizije",
         "unit_file": "3-licka-soldiers.json"
       }
     ],
@@ -33053,6 +33100,8 @@
         "pdf_y": 255.5,
         "pdf_x_end": 156.7,
         "pdf_y_end": 264.0,
+        "unit_detail": "štab brigade",
+        "rank": "politički komesar",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33102,6 +33151,7 @@
         "pdf_y": 497.4,
         "pdf_x_end": 147.5,
         "pdf_y_end": 505.9,
+        "unit_detail": "štab brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33133,6 +33183,7 @@
         "pdf_y": 489.0,
         "pdf_x_end": 198.4,
         "pdf_y_end": 497.5,
+        "unit_detail": "štab brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33183,6 +33234,8 @@
         "pdf_y": 263.9,
         "pdf_x_end": 112.7,
         "pdf_y_end": 272.4,
+        "unit_detail": "štab brigade",
+        "rank": "politički komesar",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33255,6 +33308,9 @@
         "pdf_y": 184.9,
         "pdf_x_end": 442.7,
         "pdf_y_end": 216.7,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "komandir čete",
+        "since": "1942-10-03",
         "unit_file": "2-dalmatinska-soldiers.json"
       },
       {
@@ -33329,6 +33385,8 @@
         "pdf_y": 165.7,
         "pdf_x_end": 470.3,
         "pdf_y_end": 185.0,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "obaveštajni oficir brigade",
         "unit_file": "soldiers.json"
       },
       {
@@ -33342,6 +33400,7 @@
         "pdf_x_end": 381.0,
         "pdf_y_end": 567.1,
         "pdf_x_left": 21.7,
+        "rank": "zamjenik komandanta brigade",
         "unit_file": "1-dalmatinska-soldiers.json"
       },
       {
@@ -33366,6 +33425,7 @@
         "pdf_y": 29.1,
         "pdf_x_end": 171.3,
         "pdf_y_end": 101.7,
+        "rank": "obaveštajni oficir brigade",
         "unit_file": "3-dalmatinska-soldiers.json"
       }
     ],
@@ -33419,6 +33479,8 @@
         "pdf_y": 462.3,
         "pdf_x_end": 193.5,
         "pdf_y_end": 511.1,
+        "unit_detail": "1. bataljon",
+        "rank": "general-potpukovnik",
         "unit_file": "druga-licka-soldiers.json"
       },
       {
@@ -33501,6 +33563,8 @@
         "pdf_y": 525.2,
         "pdf_x_end": 472.0,
         "pdf_y_end": 554.9,
+        "unit_detail": "1. bataljon",
+        "rank": "obavještajni oficir brigade",
         "unit_file": "soldiers.json"
       }
     ],
@@ -33552,6 +33616,8 @@
         "pdf_y": 176.2,
         "pdf_x_end": 366.5,
         "pdf_y_end": 227.0,
+        "unit_detail": "1. bataljon",
+        "rank": "komandant bataljona, pukovnik",
         "unit_file": "druga-licka-soldiers.json"
       },
       {
@@ -33564,6 +33630,8 @@
         "pdf_y": 230.3,
         "pdf_x_end": 129.6,
         "pdf_y_end": 247.2,
+        "unit_detail": "štab brigade",
+        "rank": "komandant bataljona, pukovnik",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33598,6 +33666,8 @@
         "pdf_y": 172.7,
         "pdf_x_end": 463.4,
         "pdf_y_end": 192.0,
+        "unit_detail": "2. bataljon",
+        "rank": "politički komesar",
         "unit_file": "soldiers.json"
       }
     ]
@@ -33647,6 +33717,7 @@
         "pdf_y": 489.0,
         "pdf_x_end": 135.3,
         "pdf_y_end": 497.5,
+        "unit_detail": "štab brigade",
         "unit_file": "6-dalmatinska-soldiers.json"
       }
     ]
@@ -33699,6 +33770,8 @@
         "pdf_y": 373.0,
         "pdf_x_end": 189.1,
         "pdf_y_end": 431.9,
+        "unit_detail": "štab brigade",
+        "rank": "komandant brigade",
         "unit_file": "druga-licka-soldiers.json"
       },
       {

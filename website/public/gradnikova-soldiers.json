@@ -4508,6 +4508,12 @@
       }
     ],
     "death_type": "streljan",
+    "death_date": "23.04.1944",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Trst",
     "birth_date": "13.04.1923"
   },
   {
@@ -8426,7 +8432,7 @@
       "ethnicity"
     ],
     "death_date": "1944",
-    "death_place": "idrija-c.vrh"
+    "death_place": "Idrija"
   },
   {
     "last_name": "Cingerle",
@@ -10496,6 +10502,7 @@
         "pdf_y": 607.4,
         "pdf_x_end": 286.0,
         "pdf_y_end": 627.0,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -34313,6 +34320,7 @@
         "pdf_y": 155.6,
         "pdf_x_end": 301.8,
         "pdf_y_end": 172.0,
+        "unit_detail": "štab odreda",
         "unit_file": "istrski-odred-soldiers.json"
       },
       {
@@ -36012,7 +36020,7 @@
     "fathers_name": "",
     "full_name": "Miklavčič Avgust",
     "additional_info": "Aleksander 1925, Brdice, Gor. Brda",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 27,
     "pdf_y": 99.4,
     "pdf_x": 39.8,
@@ -39507,6 +39515,7 @@
         "pdf_y": 549.6,
         "pdf_x_end": 377.4,
         "pdf_y_end": 558.6,
+        "unit_detail": "Proletarska udarna četa",
         "unit_file": "tomsiceva-soldiers.json"
       }
     ],
@@ -43152,7 +43161,7 @@
     "fathers_name": "",
     "full_name": "Peršič",
     "additional_info": "Ladislav 1906, Trnovo",
-    "birth_year": "",
+    "birth_year": "1906",
     "pdf_page": 29,
     "pdf_y": 176.4,
     "pdf_x": 238.6,
@@ -46179,6 +46188,7 @@
         "pdf_y": 300.0,
         "pdf_x_end": 262.9,
         "pdf_y_end": 319.3,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -46380,6 +46390,9 @@
         "pdf_y": 306.0,
         "pdf_x_end": 365.9,
         "pdf_y_end": 337.6,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943-09",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
@@ -48711,6 +48724,7 @@
         "pdf_y": 213.3,
         "pdf_x_end": 402.7,
         "pdf_y_end": 230.4,
+        "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
         "unit_file": "tomsiceva-soldiers.json"
       }
     ]
@@ -50781,11 +50795,11 @@
     "pdf_x_end": 80.8
   },
   {
-    "last_name": "Sajovič",
+    "last_name": "Sajovic",
     "middle_name": "",
     "first_name": "Alojz",
     "fathers_name": "",
-    "full_name": "Sajovič Alojz",
+    "full_name": "Sajovic Alojz",
     "additional_info": "zvani Kokra; 1908, Kranj",
     "birth_year": "1908",
     "death_type": "poginuo",
@@ -51414,6 +51428,7 @@
         "pdf_y": 573.8,
         "pdf_x_end": 442.1,
         "pdf_y_end": 593.4,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -55623,6 +55638,8 @@
         "pdf_y": 284.2,
         "pdf_x_end": 364.0,
         "pdf_y_end": 323.4,
+        "unit_detail": "1. eskadrila NOVJ (352. skvadron)",
+        "rank": "stariji vodnik",
         "unit_file": "eskadrile-novj-soldiers.json"
       }
     ],
@@ -61052,6 +61069,7 @@
         "pdf_y": 116.4,
         "pdf_x_end": 353.2,
         "pdf_y_end": 142.2,
+        "rank": "zamjenik komandira čete, komandant bataljona",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -64971,6 +64989,8 @@
         "pdf_y": 188.0,
         "pdf_x_end": 354.2,
         "pdf_y_end": 204.7,
+        "unit_detail": "1. bataljon",
+        "rank": "komandir čete",
         "unit_file": "4-proleterska-soldiers.json"
       },
       {

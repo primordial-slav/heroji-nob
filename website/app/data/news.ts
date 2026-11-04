@@ -17,6 +17,24 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-11-04',
     text: {
+      sr: 'Razdvojili smo oko 35 imenjaka koje smo greškom vodili kao istog čoveka. Neki borci koji su preživeli rat zato više ne stoje kao poginuli.',
+      sl: 'Razdružili smo okoli 35 soimenjakov, ki smo jih pomotoma vodili kot isto osebo. Nekateri borci, ki so vojno preživeli, zato niso več navedeni kot padli.',
+      mk: 'Раздвоивме околу 35 имењаци што по грешка ги водевме како ист човек. Затоа некои борци што ја преживеаја војната повеќе не стојат како загинати.',
+      en: 'We have separated about 35 namesakes we had wrongly taken for the same man. Some fighters who survived the war are therefore no longer listed as fallen.',
+    },
+  },
+  {
+    date: '2026-11-04',
+    text: {
+      sr: 'Kod još oko 2.000 boraca sada piše gde su poginuli, a kod oko 800 i kada. Knjige su to navodile, ali ranije nismo pročitali.',
+      sl: 'Pri še okoli 2.000 borcih zdaj piše, kje so padli, pri okoli 800 pa tudi kdaj. Knjige so to navajale, a tega prej nismo prebrali.',
+      mk: 'Кај уште околу 2.000 борци сега пишува каде загинале, а кај околу 800 и кога. Книгите го наведуваа тоа, но порано не го прочитавме.',
+      en: 'For about 2,000 more fighters, the record now says where they fell, and for about 800 also when. The books gave it, but we had not read it before.',
+    },
+  },
+  {
+    date: '2026-11-04',
+    text: {
       sr: 'Kod još oko 12.000 boraca sada piše i mesto rođenja. Knjige su ga navodile, ali ga ranije nismo pročitali.',
       sl: 'Pri še okoli 12.000 borcih zdaj piše tudi kraj rojstva. Knjige so ga navajale, a ga prej nismo prebrali.',
       mk: 'Кај уште околу 12.000 борци сега пишува и местото на раѓање. Книгите го наведуваа, но порано не го прочитавме.',

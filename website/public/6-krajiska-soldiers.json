@@ -128,6 +128,7 @@
         "pdf_y": 166.7,
         "pdf_x_end": 353.5,
         "pdf_y_end": 186.7,
+        "rank": "borac",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ]
@@ -337,6 +338,7 @@
         "pdf_y": 79.3,
         "pdf_x_end": 395.8,
         "pdf_y_end": 105.6,
+        "rank": "borac",
         "unit_file": "4-krajiska-soldiers.json"
       }
     ],
@@ -862,6 +864,9 @@
         "pdf_y": 138.9,
         "pdf_x_end": 472.0,
         "pdf_y_end": 163.7,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -904,6 +909,7 @@
         "pdf_y": 378.3,
         "pdf_x_end": 183.1,
         "pdf_y_end": 424.5,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -1226,6 +1232,7 @@
         "pdf_y": 279.7,
         "pdf_x_end": 266.8,
         "pdf_y_end": 376.9,
+        "rank": "desetar, komandir voda, komandant bataljona",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -1647,6 +1654,8 @@
         "pdf_y": 208.5,
         "pdf_x_end": 362.2,
         "pdf_y_end": 230.9,
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -2094,7 +2103,40 @@
     "death_date": "05.12.1943",
     "death_place": "Ćela, Prijedor",
     "pdf_x_end": 348.6,
-    "pdf_x_left": 14.1
+    "pdf_x_left": 14.1,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "occupation": "sezonski radnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0011000065",
+        "name": "Bajić Đure Milan",
+        "additional_info": "pol. kom. čete, rođen 1921, Resanovci, Bos. Grahovo, Srbin, sez. radnik, u NOB od 27. VII 1941, član KPJ, poginuo 17. XI 1943. kod sela Kačeva, Prijepolje.",
+        "pdf_file": "4-krajiska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 64.8,
+        "pdf_y": 284.7,
+        "pdf_x_end": 347.6,
+        "pdf_y_end": 311.5,
+        "unit_file": "4-krajiska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1921"
+      ],
+      "death": [
+        {
+          "date": "17.11.1943",
+          "place": "Ćela, Prijedor"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bajić",
@@ -2292,6 +2334,9 @@
         "pdf_y": 175.9,
         "pdf_x_end": 397.2,
         "pdf_y_end": 198.7,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -2606,6 +2651,7 @@
         "pdf_y": 286.0,
         "pdf_x_end": 397.9,
         "pdf_y_end": 301.2,
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -3184,6 +3230,7 @@
         "pdf_y": 280.1,
         "pdf_x_end": 354.1,
         "pdf_y_end": 298.9,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ]
@@ -3378,6 +3425,9 @@
         "pdf_y": 466.6,
         "pdf_x_end": 462.8,
         "pdf_y_end": 491.8,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "komandir voda",
+        "since": "1942-06-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -3587,6 +3637,7 @@
         "pdf_y": 413.1,
         "pdf_x_end": 348.4,
         "pdf_y_end": 430.2,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -4629,6 +4680,7 @@
         "pdf_y": 279.8,
         "pdf_x_end": 402.8,
         "pdf_y_end": 321.9,
+        "rank": "vodnik",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -4696,6 +4748,9 @@
         "pdf_y": 440.9,
         "pdf_x_end": 454.7,
         "pdf_y_end": 474.6,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "vodnik",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -5515,6 +5570,7 @@
         "pdf_y": 491.6,
         "pdf_x_end": 351.5,
         "pdf_y_end": 510.1,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ]
@@ -6107,6 +6163,7 @@
         "pdf_y": 449.4,
         "pdf_x_end": 180.7,
         "pdf_y_end": 495.1,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -6487,6 +6544,7 @@
         "pdf_y": 156.9,
         "pdf_x_end": 397.5,
         "pdf_y_end": 179.8,
+        "since": "1942-11",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -7119,6 +7177,8 @@
         "pdf_y": 251.2,
         "pdf_x_end": 394.1,
         "pdf_y_end": 274.6,
+        "unit_detail": "2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -7393,6 +7453,9 @@
         "pdf_y": 487.4,
         "pdf_x_end": 394.1,
         "pdf_y_end": 502.8,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -7448,6 +7511,7 @@
         "pdf_y": 257.2,
         "pdf_x_end": 370.4,
         "pdf_y_end": 300.0,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -7884,6 +7948,9 @@
         "pdf_y": 60.5,
         "pdf_x_end": 357.5,
         "pdf_y_end": 83.8,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -8126,6 +8193,9 @@
         "pdf_y": 409.5,
         "pdf_x_end": 357.9,
         "pdf_y_end": 424.9,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -9076,6 +9146,7 @@
         "pdf_y": 380.2,
         "pdf_x_end": 356.8,
         "pdf_y_end": 411.0,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -9086,8 +9157,7 @@
     "variants": {
       "death": [
         {
-          "date": "1944",
-          "place": "u Andrijevcu, Slavonija"
+          "date": "1944"
         },
         {
           "date": "21.04.1945",
@@ -9130,6 +9200,8 @@
         "pdf_y": 542.3,
         "pdf_x_end": 487.6,
         "pdf_y_end": 605.5,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "4-proleterska-soldiers.json"
       }
     ]
@@ -9241,6 +9313,8 @@
         "pdf_y": 130.4,
         "pdf_x_end": 392.3,
         "pdf_y_end": 153.2,
+        "unit_detail": "prateća četa",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -9932,6 +10006,7 @@
         "pdf_y": 232.6,
         "pdf_x_end": 392.1,
         "pdf_y_end": 247.8,
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -10053,6 +10128,8 @@
         "pdf_y": 348.5,
         "pdf_x_end": 369.0,
         "pdf_y_end": 409.5,
+        "rank": "borac",
+        "since": "1943-11",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ]
@@ -10132,6 +10209,9 @@
         "pdf_y": 272.4,
         "pdf_x_end": 392.6,
         "pdf_y_end": 295.3,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -11113,6 +11193,7 @@
         "pdf_y": 349.6,
         "pdf_x_end": 375.7,
         "pdf_y_end": 377.8,
+        "rank": "poručnik, politički komesar čete",
         "unit_file": "4-krajiska-soldiers.json"
       }
     ],
@@ -11448,6 +11529,8 @@
         "pdf_y": 392.4,
         "pdf_x_end": 359.3,
         "pdf_y_end": 415.7,
+        "unit_detail": "1. četa, 2. bataljon",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -11845,6 +11928,8 @@
         "pdf_y": 147.8,
         "pdf_x_end": 392.7,
         "pdf_y_end": 170.7,
+        "unit_detail": "2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -12001,8 +12086,7 @@
     "variants": {
       "death": [
         {
-          "date": "1943",
-          "place": "Cazin"
+          "date": "1943"
         }
       ]
     }
@@ -12173,6 +12257,7 @@
         "pdf_y": 77.7,
         "pdf_x_end": 358.4,
         "pdf_y_end": 126.2,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -12382,6 +12467,7 @@
         "pdf_y": 261.1,
         "pdf_x_end": 371.0,
         "pdf_y_end": 278.2,
+        "rank": "komandir čete",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -12492,6 +12578,9 @@
         "pdf_y": 353.5,
         "pdf_x_end": 451.8,
         "pdf_y_end": 377.8,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1943-02-10",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -12588,10 +12677,11 @@
         "pdf_y": 109.0,
         "pdf_x_end": 350.5,
         "pdf_y_end": 137.7,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
-    "death_place": "Bunara, Bosanski Petrovac",
+    "death_place": "Bravsko",
     "variants": {
       "born": [
         "1926"
@@ -12643,6 +12733,9 @@
         "pdf_y": 250.1,
         "pdf_x_end": 392.7,
         "pdf_y_end": 272.9,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -12939,11 +13032,11 @@
     ]
   },
   {
-    "last_name": "Grujćič",
+    "last_name": "Grujčić",
     "middle_name": "Mile",
     "first_name": "Uroš",
     "fathers_name": "Mile",
-    "full_name": "Grujćič Mile Uroš",
+    "full_name": "Grujčić Mile Uroš",
     "additional_info": "borac, rođen 1924. godine u Rasavcima, Prijedor. Poginuo 20. oktobra 1944. godine u Travniku.",
     "birth_year": "1924",
     "pdf_page": 19,
@@ -13099,6 +13192,7 @@
         "pdf_y": 358.7,
         "pdf_x_end": 342.9,
         "pdf_y_end": 384.9,
+        "rank": "delegat voda",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -13153,6 +13247,7 @@
         "pdf_y": 390.1,
         "pdf_x_end": 343.0,
         "pdf_y_end": 416.3,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -13177,6 +13272,7 @@
         "pdf_y": 421.5,
         "pdf_x_end": 342.2,
         "pdf_y_end": 439.4,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       }
     ],
@@ -13627,6 +13723,7 @@
         "pdf_y": 494.7,
         "pdf_x_end": 332.5,
         "pdf_y_end": 511.9,
+        "rank": "borac",
         "unit_file": "treca-proleterska-soldiers.json"
       }
     ],
@@ -13723,6 +13820,9 @@
         "pdf_y": 664.3,
         "pdf_x_end": 451.0,
         "pdf_y_end": 690.7,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1943-07",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -13821,6 +13921,8 @@
         "pdf_y": 132.8,
         "pdf_x_end": 369.7,
         "pdf_y_end": 162.5,
+        "rank": "borac",
+        "since": "1943-10",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -13954,6 +14056,9 @@
         "pdf_y": 135.1,
         "pdf_x_end": 390.2,
         "pdf_y_end": 150.3,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -14315,6 +14420,7 @@
         "pdf_y": 401.0,
         "pdf_x_end": 221.1,
         "pdf_y_end": 443.1,
+        "rank": "bolničarka",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -14513,11 +14619,11 @@
     ]
   },
   {
-    "last_name": "Jajćanin",
+    "last_name": "Jajčanin",
     "middle_name": "",
     "first_name": "Đorđo",
     "fathers_name": "",
-    "full_name": "Jajćanin Đorđo",
+    "full_name": "Jajčanin Đorđo",
     "additional_info": "borac, rođen u selu Umićevića-Rijeka, Mala Krupska Rujiška, Bosanska Krupa. Poginuo kao puškomitraljezac 1942. godine.",
     "birth_year": "",
     "pdf_page": 23,
@@ -15197,6 +15303,8 @@
         "pdf_y": 498.9,
         "pdf_x_end": 358.1,
         "pdf_y_end": 546.4,
+        "rank": "borac",
+        "since": "1942-08-22",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -15267,6 +15375,8 @@
         "pdf_y": 31.9,
         "pdf_x_end": 394.1,
         "pdf_y_end": 47.1,
+        "unit_detail": "2. četa, 2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -15454,6 +15564,9 @@
         "pdf_y": 195.7,
         "pdf_x_end": 455.1,
         "pdf_y_end": 220.4,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-06",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -15539,6 +15652,7 @@
         "pdf_y": 645.0,
         "pdf_x_end": 464.4,
         "pdf_y_end": 654.5,
+        "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       }
     ],
@@ -15747,6 +15861,7 @@
         "pdf_y": 267.9,
         "pdf_x_end": 358.0,
         "pdf_y_end": 286.9,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -15856,6 +15971,7 @@
         "pdf_y": 316.4,
         "pdf_x_end": 358.4,
         "pdf_y_end": 334.9,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -16133,6 +16249,8 @@
         "pdf_y": 432.0,
         "pdf_x_end": 394.6,
         "pdf_y_end": 447.2,
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -16477,6 +16595,7 @@
         "pdf_y": 82.3,
         "pdf_x_end": 375.2,
         "pdf_y_end": 124.4,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -16559,11 +16678,11 @@
     "pdf_x_end": 411.9
   },
   {
-    "last_name": "Jovćić",
+    "last_name": "Jovčić",
     "middle_name": "Alekse",
     "first_name": "Stanoja",
     "fathers_name": "Aleksa",
-    "full_name": "Jovćić Alekse Stanoja",
+    "full_name": "Jovčić Alekse Stanoja",
     "additional_info": "borac, rođen 1926. godine u Marićkoj, Prijedor. Poginuo 20. avgusta 1944. godine kod Ćarakova, Prijedor.",
     "birth_year": "1926",
     "pdf_page": 23,
@@ -16737,6 +16856,7 @@
         "pdf_y": 39.8,
         "pdf_x_end": 367.1,
         "pdf_y_end": 54.8,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -16938,6 +17058,8 @@
         "pdf_y": 78.4,
         "pdf_x_end": 366.9,
         "pdf_y_end": 93.6,
+        "unit_detail": "2. bataljon",
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -17306,6 +17428,7 @@
         "pdf_y": 347.7,
         "pdf_x_end": 367.4,
         "pdf_y_end": 362.9,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -18144,6 +18267,7 @@
         "pdf_y": 390.4,
         "pdf_x_end": 268.4,
         "pdf_y_end": 470.5,
+        "rank": "komandir čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -18229,6 +18353,8 @@
         "pdf_y": 463.6,
         "pdf_x_end": 272.7,
         "pdf_y_end": 516.0,
+        "unit_detail": "5. bataljon",
+        "rank": "borac",
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
@@ -19150,6 +19276,8 @@
         "pdf_y": 478.4,
         "pdf_x_end": 394.0,
         "pdf_y_end": 501.7,
+        "unit_detail": "2. bataljon",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -19715,6 +19843,7 @@
         "pdf_y": 396.1,
         "pdf_x_end": 347.7,
         "pdf_y_end": 413.0,
+        "rank": "desetar",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -19773,6 +19902,7 @@
         "pdf_y": 235.7,
         "pdf_x_end": 373.7,
         "pdf_y_end": 252.6,
+        "rank": "desetar",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -20097,6 +20227,7 @@
         "pdf_y": 372.9,
         "pdf_x_end": 347.8,
         "pdf_y_end": 390.0,
+        "rank": "komandir voda",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -20300,6 +20431,9 @@
     "death_place": "Travnik",
     "rank": "borac",
     "pdf_x_end": 344.7,
+    "ethnicity": "Srbin",
+    "occupation": "radnik",
+    "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
         "soldier_id": "9042000027",
@@ -20312,52 +20446,8 @@
         "pdf_x_end": 434.1,
         "pdf_y_end": 699.4,
         "ref_book": "sanski-most-borci"
-      },
-      {
-        "soldier_id": "0048000389",
-        "name": "Kovačević Blaže Stevo",
-        "additional_info": "borac 2. čete 3. bataljona, rođen 1922, Kapljuh, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član SKOJ-a od aprila 1942, član KPJ od maja 1943. godine, krajem rata politički komesar artiljerijske baterije.",
-        "pdf_file": "borci-sutjeske-7-krajiska.pdf",
-        "pdf_page": 25,
-        "pdf_x": 43.3,
-        "pdf_y": 114.9,
-        "pdf_x_end": 214.9,
-        "pdf_y_end": 188.0,
-        "unit_file": "7-krajiska-soldiers.json"
-      },
-      {
-        "soldier_id": "0048011648",
-        "name": "Kovačević Blaže Stevo",
-        "additional_info": "roćen 1922. Kapljuv, Bosanski Petrovac, Srbin, radnik. U NOB-i od 1941. Član KPJ od januara 1943. Borac 2. čete 3. bataljona. Učesnik bitke na Neretvi i Sutjesci. U ratu komesar 2. baterije art. diviziona.",
-        "pdf_file": "7-krajiska-spisak.pdf",
-        "pdf_page": 101,
-        "pdf_x": 311.2,
-        "pdf_y": 607.0,
-        "pdf_x_end": 479.1,
-        "pdf_y_end": 673.6,
-        "unit_file": "7-krajiska-soldiers.json"
-      },
-      {
-        "soldier_id": "0163000118",
-        "name": "Kovačević Blaže Stevo",
-        "additional_info": "rođen 1922. g. Kapljuh, Bosanski Petrovac, Srbin, šumarski radnik, u NOB-u 1941. g. U Grmečku proletersku četu stupio 27. 2. 1942. g. Komesar čete i nosilac partizanske Spomenice 1941. g. Pukovnik u penziji.",
-        "pdf_file": "proleterski-bataljon-bk.pdf",
-        "pdf_page": 48,
-        "pdf_x": 138.6,
-        "pdf_y": 294.9,
-        "pdf_x_end": 268.5,
-        "pdf_y_end": 375.4,
-        "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
-    ],
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "party": "SKOJ 1942, KPJ 1943",
-    "variants": {
-      "born": [
-        "1922"
-      ]
-    }
+    ]
   },
   {
     "last_name": "Kovaćević",
@@ -20419,6 +20509,7 @@
         "pdf_y": 179.4,
         "pdf_x_end": 344.8,
         "pdf_y_end": 197.5,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -20573,6 +20664,7 @@
         "pdf_y": 439.7,
         "pdf_x_end": 374.2,
         "pdf_y_end": 465.5,
+        "rank": "zamenik komandira čete",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -20597,6 +20689,7 @@
         "pdf_y": 377.4,
         "pdf_x_end": 433.2,
         "pdf_y_end": 500.8,
+        "rank": "komandir čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -20846,6 +20939,7 @@
         "pdf_y": 70.4,
         "pdf_x_end": 356.0,
         "pdf_y_end": 89.2,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -21497,6 +21591,9 @@
         "pdf_y": 104.1,
         "pdf_x_end": 390.7,
         "pdf_y_end": 127.0,
+        "unit_detail": "2. bataljon",
+        "rank": "bolničarka",
+        "since": "1942-10",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -21751,6 +21848,7 @@
         "pdf_y": 129.8,
         "pdf_x_end": 352.4,
         "pdf_y_end": 148.7,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -21793,6 +21891,9 @@
         "pdf_y": 518.9,
         "pdf_x_end": 453.6,
         "pdf_y_end": 551.8,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -21975,6 +22076,9 @@
         "pdf_y": 300.7,
         "pdf_x_end": 391.6,
         "pdf_y_end": 315.9,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943-01",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -22112,6 +22216,7 @@
         "pdf_y": 91.4,
         "pdf_x_end": 400.4,
         "pdf_y_end": 133.6,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -22899,6 +23004,8 @@
         "pdf_y": 291.1,
         "pdf_x_end": 354.4,
         "pdf_y_end": 313.9,
+        "unit_detail": "1. četa, 2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -23900,6 +24007,7 @@
         "pdf_y": 195.1,
         "pdf_x_end": 355.0,
         "pdf_y_end": 210.3,
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -23908,8 +24016,7 @@
     "variants": {
       "death": [
         {
-          "date": "početkom 1943",
-          "place": "Podgradci"
+          "date": "početkom 1943"
         }
       ]
     }
@@ -24102,6 +24209,7 @@
         "pdf_y": 57.2,
         "pdf_x_end": 344.8,
         "pdf_y_end": 74.1,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -24248,6 +24356,7 @@
         "pdf_y": 35.1,
         "pdf_x_end": 361.6,
         "pdf_y_end": 73.0,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -24817,6 +24926,7 @@
         "pdf_y": 519.1,
         "pdf_x_end": 190.8,
         "pdf_y_end": 546.5,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -25031,6 +25141,9 @@
         "pdf_y": 28.0,
         "pdf_x_end": 391.6,
         "pdf_y_end": 50.9,
+        "unit_detail": "4. bataljon",
+        "rank": "politički komesar bataljona",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -25209,6 +25322,7 @@
         "pdf_y": 178.4,
         "pdf_x_end": 356.1,
         "pdf_y_end": 206.8,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -26006,6 +26120,8 @@
         "pdf_y": 325.6,
         "pdf_x_end": 391.1,
         "pdf_y_end": 340.8,
+        "unit_detail": "2. četa, 2. bataljon",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -26236,6 +26352,9 @@
         "pdf_y": 663.1,
         "pdf_x_end": 474.4,
         "pdf_y_end": 687.9,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-06-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -26397,6 +26516,7 @@
         "pdf_y": 460.4,
         "pdf_x_end": 355.3,
         "pdf_y_end": 479.2,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ]
@@ -26739,6 +26859,7 @@
         "pdf_y": 135.1,
         "pdf_x_end": 360.5,
         "pdf_y_end": 158.0,
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -27264,6 +27385,9 @@
         "pdf_y": 259.4,
         "pdf_x_end": 458.1,
         "pdf_y_end": 284.2,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-12",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -27824,6 +27948,8 @@
         "pdf_y": 504.9,
         "pdf_x_end": 391.4,
         "pdf_y_end": 520.4,
+        "unit_detail": "1. četa, 2. bataljon",
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -27836,8 +27962,7 @@
     "variants": {
       "death": [
         {
-          "date": "1943",
-          "place": "Marićka, Prijedor"
+          "date": "1943"
         }
       ]
     }
@@ -27988,6 +28113,7 @@
         "pdf_y": 540.5,
         "pdf_x_end": 391.4,
         "pdf_y_end": 556.1,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       },
       {
@@ -28000,6 +28126,7 @@
         "pdf_y": 317.4,
         "pdf_x_end": 373.7,
         "pdf_y_end": 370.8,
+        "rank": "komandir voda",
         "unit_file": "3-udarna-divizija-soldiers.json"
       }
     ],
@@ -28260,6 +28387,7 @@
         "pdf_y": 440.9,
         "pdf_x_end": 392.2,
         "pdf_y_end": 456.1,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -28326,6 +28454,8 @@
         "pdf_y": 106.9,
         "pdf_x_end": 358.1,
         "pdf_y_end": 165.5,
+        "rank": "vodnik",
+        "since": "1943-08",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -28344,8 +28474,11 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
-    "death_place": "Pleternica",
     "party": "KPJ 1944",
+    "death_place": "Pleternica",
+    "borrowed": [
+      "death_place"
+    ],
     "variants": {
       "born": [
         "1924"
@@ -29817,6 +29950,8 @@
         "pdf_y": 283.2,
         "pdf_x_end": 485.6,
         "pdf_y_end": 325.5,
+        "unit_detail": "5. bataljon",
+        "rank": "borac",
         "unit_file": "4-proleterska-soldiers.json"
       }
     ]
@@ -29887,6 +30022,9 @@
         "pdf_y": 129.8,
         "pdf_x_end": 354.4,
         "pdf_y_end": 180.2,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
+        "since": "1943-09",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -30060,6 +30198,8 @@
         "pdf_y": 6.5,
         "pdf_x_end": 190.3,
         "pdf_y_end": 54.0,
+        "rank": "borac",
+        "since": "1943-08",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -31346,6 +31486,8 @@
         "pdf_y": 95.0,
         "pdf_x_end": 363.6,
         "pdf_y_end": 117.8,
+        "unit_detail": "2. četa, 2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -31651,6 +31793,7 @@
         "pdf_y": 245.2,
         "pdf_x_end": 363.9,
         "pdf_y_end": 260.4,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -32222,6 +32365,9 @@
         "pdf_y": 273.6,
         "pdf_x_end": 447.6,
         "pdf_y_end": 298.4,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943-02-12",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -32343,6 +32489,8 @@
         "pdf_y": 327.4,
         "pdf_x_end": 447.8,
         "pdf_y_end": 352.1,
+        "rank": "komandir voda",
+        "since": "1943-01-22",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -32734,6 +32882,7 @@
         "pdf_y": 201.7,
         "pdf_x_end": 409.3,
         "pdf_y_end": 219.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -33064,6 +33213,7 @@
         "pdf_y": 205.6,
         "pdf_x_end": 391.9,
         "pdf_y_end": 228.5,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       },
       {
@@ -33076,6 +33226,9 @@
         "pdf_y": 650.2,
         "pdf_x_end": 448.8,
         "pdf_y_end": 676.9,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "politički delegat voda",
+        "since": "1942-11-18",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -33541,6 +33694,7 @@
         "pdf_y": 340.1,
         "pdf_x_end": 392.1,
         "pdf_y_end": 363.1,
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -33802,6 +33956,8 @@
         "pdf_y": 489.1,
         "pdf_x_end": 392.3,
         "pdf_y_end": 504.5,
+        "unit_detail": "2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -34645,6 +34801,9 @@
         "pdf_y": 176.6,
         "pdf_x_end": 371.6,
         "pdf_y_end": 235.2,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "borac",
+        "since": "1942-08",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -34723,6 +34882,8 @@
         "pdf_y": 247.4,
         "pdf_x_end": 371.6,
         "pdf_y_end": 295.9,
+        "rank": "borac",
+        "since": "1943-08",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -36158,6 +36319,7 @@
         "pdf_y": 296.7,
         "pdf_x_end": 386.8,
         "pdf_y_end": 314.1,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -36170,6 +36332,7 @@
         "pdf_y": 387.9,
         "pdf_x_end": 263.0,
         "pdf_y_end": 459.2,
+        "rank": "desetar",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -36219,6 +36382,7 @@
         "pdf_y": 471.2,
         "pdf_x_end": 322.6,
         "pdf_y_end": 490.3,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -36745,6 +36909,7 @@
         "pdf_y": 314.7,
         "pdf_x_end": 356.1,
         "pdf_y_end": 341.9,
+        "rank": "zamjenik komandanta bataljona",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -37056,6 +37221,7 @@
         "pdf_y": 126.0,
         "pdf_x_end": 393.8,
         "pdf_y_end": 148.8,
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -37063,7 +37229,7 @@
       "death": [
         {
           "date": "1942",
-          "place": "Grmeč"
+          "place": "Sanski Most"
         }
       ]
     }
@@ -37111,6 +37277,9 @@
         "pdf_y": 102.7,
         "pdf_x_end": 394.6,
         "pdf_y_end": 125.5,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "zamenik komandira čete",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -37592,6 +37761,7 @@
         "pdf_y": 532.7,
         "pdf_x_end": 182.0,
         "pdf_y_end": 550.7,
+        "rank": "komandir čete",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -37818,6 +37988,8 @@
         "pdf_y": 282.9,
         "pdf_x_end": 394.3,
         "pdf_y_end": 305.8,
+        "unit_detail": "2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -39377,6 +39549,7 @@
         "pdf_y": 85.1,
         "pdf_x_end": 346.5,
         "pdf_y_end": 102.2,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -39920,6 +40093,7 @@
         "pdf_y": 218.0,
         "pdf_x_end": 346.1,
         "pdf_y_end": 235.1,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -40843,6 +41017,9 @@
         "pdf_y": 489.6,
         "pdf_x_end": 360.6,
         "pdf_y_end": 506.2,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -40958,6 +41135,7 @@
         "pdf_y": 127.2,
         "pdf_x_end": 391.3,
         "pdf_y_end": 142.7,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -41124,6 +41302,9 @@
         "pdf_y": 291.4,
         "pdf_x_end": 391.6,
         "pdf_y_end": 315.2,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "pomoćnik političkog komesara čete",
+        "since": "1942-09",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -41634,6 +41815,7 @@
         "pdf_y": 288.6,
         "pdf_x_end": 359.0,
         "pdf_y_end": 316.8,
+        "rank": "zamjenik komandira čete",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -41709,6 +41891,7 @@
         "pdf_y": 143.9,
         "pdf_x_end": 376.9,
         "pdf_y_end": 161.0,
+        "rank": "puškomitraljezac",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -42756,6 +42939,8 @@
         "pdf_y": 600.9,
         "pdf_x_end": 452.4,
         "pdf_y_end": 618.7,
+        "rank": "borac",
+        "since": "1942-07-20",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -43273,6 +43458,9 @@
         "pdf_y": 456.9,
         "pdf_x_end": 360.3,
         "pdf_y_end": 480.2,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -43759,6 +43947,8 @@
         "pdf_y": 363.1,
         "pdf_x_end": 457.2,
         "pdf_y_end": 388.9,
+        "rank": "borac",
+        "since": "1942-07",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ]
@@ -45203,6 +45393,8 @@
         "pdf_y": 76.5,
         "pdf_x_end": 391.4,
         "pdf_y_end": 91.7,
+        "rank": "borac",
+        "since": "1943-01",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -45420,6 +45612,9 @@
         "pdf_y": 57.4,
         "pdf_x_end": 366.3,
         "pdf_y_end": 89.7,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1943-09",
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
@@ -45507,6 +45702,8 @@
         "pdf_y": 194.1,
         "pdf_x_end": 391.3,
         "pdf_y_end": 209.5,
+        "rank": "borac",
+        "since": "1942-09-19",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -45833,6 +46030,7 @@
         "pdf_y": 128.3,
         "pdf_x_end": 353.9,
         "pdf_y_end": 146.4,
+        "rank": "bolničarka",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -45845,6 +46043,9 @@
         "pdf_y": 297.3,
         "pdf_x_end": 382.7,
         "pdf_y_end": 320.1,
+        "unit_detail": "4. bataljon",
+        "rank": "bolničarka",
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -45909,6 +46110,7 @@
         "pdf_y": 475.8,
         "pdf_x_end": 352.6,
         "pdf_y_end": 493.7,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -45921,6 +46123,9 @@
         "pdf_y": 297.3,
         "pdf_x_end": 382.7,
         "pdf_y_end": 320.1,
+        "unit_detail": "4. bataljon",
+        "rank": "bolničarka",
+        "since": "1943",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -46038,6 +46243,8 @@
         "pdf_y": 336.6,
         "pdf_x_end": 390.0,
         "pdf_y_end": 359.5,
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -47815,6 +48022,7 @@
         "pdf_y": 407.8,
         "pdf_x_end": 193.5,
         "pdf_y_end": 449.9,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -48026,6 +48234,9 @@
         "pdf_y": 276.9,
         "pdf_x_end": 457.9,
         "pdf_y_end": 311.5,
+        "unit_detail": "1. četa, 2. bataljon",
+        "rank": "komandir čete",
+        "since": "1942-06-01",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -48367,9 +48578,9 @@
   {
     "last_name": "Vejnović",
     "middle_name": "Rade",
-    "first_name": "Ka Ja",
+    "first_name": "Kaja",
     "fathers_name": "Rade",
-    "full_name": "Vejnović Rade Ka Ja",
+    "full_name": "Vejnović Rade Kaja",
     "additional_info": "borac, rođena 1918. godine u Podvidači. Sanski Most. Poginula 1943. godine u Paninom polju.",
     "birth_year": "1918",
     "pdf_page": 59,
@@ -48383,7 +48594,21 @@
     "death_date": "1943",
     "death_place": "u Paninom polju",
     "rank": "borac",
-    "pdf_x_end": 408.6
+    "pdf_x_end": 408.6,
+    "other_sources": [
+      {
+        "soldier_id": "9042005097",
+        "name": "Vejnović Kaja",
+        "additional_info": "Borci poginuli u NOB, Podovi: VEJNOVIĆ Rade KAJA, rođena 1918, zemljoradnik, samouka, stupila u NOB 1942, poginula 1943. godine u Paninom Polju",
+        "pdf_file": "sanski-most-borci.pdf",
+        "pdf_page": 237,
+        "pdf_x": 103.5,
+        "pdf_y": 652.8,
+        "pdf_x_end": 442.1,
+        "pdf_y_end": 672.1,
+        "ref_book": "sanski-most-borci"
+      }
+    ]
   },
   {
     "last_name": "Vejnović",
@@ -48787,6 +49012,8 @@
         "pdf_y": 442.8,
         "pdf_x_end": 395.1,
         "pdf_y_end": 494.3,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ]
@@ -48880,6 +49107,8 @@
         "pdf_y": 290.9,
         "pdf_x_end": 185.4,
         "pdf_y_end": 348.3,
+        "rank": "delegat voda",
+        "since": "1943-03",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ],
@@ -48926,6 +49155,7 @@
         "pdf_y": 37.3,
         "pdf_x_end": 385.5,
         "pdf_y_end": 54.5,
+        "rank": "zamjenik komandira čete",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -49203,6 +49433,7 @@
         "pdf_y": 505.0,
         "pdf_x_end": 376.1,
         "pdf_y_end": 558.1,
+        "rank": "borac",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -50081,6 +50312,8 @@
         "pdf_y": 193.4,
         "pdf_x_end": 188.4,
         "pdf_y_end": 240.0,
+        "rank": "delegat voda",
+        "since": "1943-03",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -50633,6 +50866,7 @@
         "pdf_y": 263.7,
         "pdf_x_end": 261.9,
         "pdf_y_end": 367.2,
+        "rank": "desetar",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -50748,6 +50982,8 @@
         "pdf_y": 171.2,
         "pdf_x_end": 368.8,
         "pdf_y_end": 245.2,
+        "unit_detail": "3. bataljon, omladinska četa",
+        "rank": "puškomitraljezac, politički komesar bataljona",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -50760,6 +50996,7 @@
         "pdf_y": 551.9,
         "pdf_x_end": 262.7,
         "pdf_y_end": 639.1,
+        "rank": "komesar bataljona",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ]
@@ -51037,6 +51274,7 @@
         "pdf_y": 249.6,
         "pdf_x_end": 393.6,
         "pdf_y_end": 264.8,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -51117,6 +51355,8 @@
         "pdf_y": 239.2,
         "pdf_x_end": 374.1,
         "pdf_y_end": 280.8,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
         "unit_file": "7-krajiska-soldiers.json"
       },
       {
@@ -51348,6 +51588,8 @@
         "pdf_y": 6.7,
         "pdf_x_end": 356.3,
         "pdf_y_end": 54.3,
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -51373,6 +51615,9 @@
         "pdf_y": 503.9,
         "pdf_x_end": 474.0,
         "pdf_y_end": 531.6,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "borac",
+        "since": "1943-08",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -51700,6 +51945,7 @@
         "pdf_y": 385.4,
         "pdf_x_end": 371.3,
         "pdf_y_end": 403.0,
+        "rank": "desetar",
         "unit_file": "5-kozaracka-soldiers.json"
       }
     ],
@@ -52153,6 +52399,7 @@
         "pdf_y": 420.3,
         "pdf_x_end": 353.3,
         "pdf_y_end": 438.1,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -52177,6 +52424,7 @@
         "pdf_y": 388.7,
         "pdf_x_end": 259.5,
         "pdf_y_end": 460.0,
+        "rank": "komandir čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -52315,6 +52563,7 @@
         "pdf_y": 138.6,
         "pdf_x_end": 358.5,
         "pdf_y_end": 153.8,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -53007,6 +53256,8 @@
         "pdf_y": 360.2,
         "pdf_x_end": 397.5,
         "pdf_y_end": 375.6,
+        "rank": "borac",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -53316,6 +53567,8 @@
         "pdf_y": 436.2,
         "pdf_x_end": 355.0,
         "pdf_y_end": 451.4,
+        "unit_detail": "2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -54336,6 +54589,9 @@
         "pdf_y": 216.7,
         "pdf_x_end": 476.2,
         "pdf_y_end": 241.5,
+        "unit_detail": "1. četa, 4. bataljon",
+        "rank": "borac",
+        "since": "1943-01-22",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -54422,6 +54678,8 @@
         "pdf_y": 27.6,
         "pdf_x_end": 178.6,
         "pdf_y_end": 69.2,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "7-banijska-soldiers.json"
       },
       {
@@ -54534,6 +54792,9 @@
         "pdf_y": 378.5,
         "pdf_x_end": 475.4,
         "pdf_y_end": 403.2,
+        "unit_detail": "1. četa, 3. bataljon",
+        "rank": "borac",
+        "since": "1942-08-03",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -54643,6 +54904,8 @@
         "pdf_y": 469.0,
         "pdf_x_end": 480.3,
         "pdf_y_end": 516.8,
+        "unit_detail": "1. četa, 3. bataljon",
+        "rank": "borac",
         "unit_file": "7-krajiska-soldiers.json"
       }
     ]
@@ -55185,6 +55448,7 @@
         "pdf_y": 62.5,
         "pdf_x_end": 192.0,
         "pdf_y_end": 111.0,
+        "rank": "vodnik",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -55526,6 +55790,7 @@
         "pdf_y": 416.2,
         "pdf_x_end": 350.2,
         "pdf_y_end": 444.4,
+        "rank": "borac",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ]
@@ -55808,6 +56073,9 @@
         "pdf_y": 375.1,
         "pdf_x_end": 391.4,
         "pdf_y_end": 398.4,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1942-08",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -55891,6 +56159,8 @@
         "pdf_y": 311.3,
         "pdf_x_end": 359.6,
         "pdf_y_end": 349.7,
+        "unit_detail": "2. četa, 3. bataljon",
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -56261,6 +56531,8 @@
         "pdf_y": 541.6,
         "pdf_x_end": 390.6,
         "pdf_y_end": 557.0,
+        "unit_detail": "3. četa, 2. bataljon",
+        "since": "1942-08-02",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -56381,6 +56653,8 @@
         "pdf_y": 85.5,
         "pdf_x_end": 352.9,
         "pdf_y_end": 118.0,
+        "rank": "borac",
+        "since": "1943-10",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -56505,6 +56779,7 @@
         "pdf_y": 247.7,
         "pdf_x_end": 347.0,
         "pdf_y_end": 264.6,
+        "rank": "borac",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -57851,6 +58126,7 @@
         "pdf_y": 384.6,
         "pdf_x_end": 359.6,
         "pdf_y_end": 400.1,
+        "since": "1942",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -58233,6 +58509,8 @@
         "pdf_y": 508.0,
         "pdf_x_end": 377.3,
         "pdf_y_end": 563.5,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ]
@@ -58377,6 +58655,8 @@
         "pdf_y": 17.4,
         "pdf_x_end": 386.7,
         "pdf_y_end": 56.1,
+        "unit_detail": "1. bataljon",
+        "rank": "desetar",
         "unit_file": "druga-licka-soldiers.json"
       }
     ]
@@ -60404,6 +60684,7 @@
         "pdf_y": 285.2,
         "pdf_x_end": 440.6,
         "pdf_y_end": 373.8,
+        "rank": "ekonom, zamjenik komesara čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -61310,6 +61591,7 @@
         "pdf_y": 536.7,
         "pdf_x_end": 467.6,
         "pdf_y_end": 613.1,
+        "rank": "zamenik komandanta",
         "unit_file": "7-krajiska-soldiers.json"
       }
     ],
@@ -82213,6 +82495,7 @@
         "pdf_y": 539.0,
         "pdf_x_end": 427.3,
         "pdf_y_end": 642.1,
+        "rank": "komandant bataljona, kapetan, pukovnik",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ]

@@ -7,6 +7,7 @@ bolničarka, ...) than masculine ones; a bio that says neither, or as much of bo
 the names the other bios show to be women's or men's, else a rare name ending in -a is a woman's.
 """
 import re
+from safe_write import write_text
 from collections import Counter
 
 FEM = re.compile(
@@ -136,7 +137,7 @@ def write_site(names: tuple[set, set], root) -> bool:
     text = json.dumps(data, ensure_ascii=False, indent=0) + '\n'
     if path.exists() and path.read_text(encoding='utf-8') == text:
         return False
-    path.write_text(text, encoding='utf-8')
+    write_text(path, text)
     return True
 
 

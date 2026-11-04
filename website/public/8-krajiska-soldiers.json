@@ -173,19 +173,15 @@
     "first_name": "Petar",
     "fathers_name": "S",
     "full_name": "Adamović S Petar",
-    "additional_info": "rođen 1915, s. Vojevac, Bosanska Krupa, poginuo krajem 1944. Gorjevac (Bihać) 715/ Rad na prikupljanju podataka poginulih i umrlih u ratu iz 8. krajiške brigade, koji traje već dosta dugo, organizovala je sekcija boraca ove brigade u Beogradu - preko opštinskih odbora SUBNOR-a i bivših boraca brigade. U ovom dugotrajnom radu učestvovale su i sekcije odnosno borci 8. krajiške brigade, koji žive u Sarajevu i Kikindi. Za to im se svima toplo zahvaljujem. Koristio sam i Arhivu Vojnoistorijskog instituta u Beogradu gde je u dokumentima evidentirano svega oko jedna četvrtina poginulih i umrlih iz 8. krajške brigade. U ovom spisku ima 1.167 drugova i drugarica koji su u ratu dali svoje živote za slobodu. No, ovo nisu svi i potpuni podaci pa će se nastaviti , ; sa njihovim prikupljanjem i obradom. U spisku su i drugarice i drugovi koji su pali u sastavu 3. bataljona, 6. krajiške brigade prije formiranja 8. brigade, kao i oni koji su duže vrijeme bili u 8. brigadi, ali .. su kasnije - po potrebi službe - premješteni i poginuli u drugim našim jedinicama. Nije isključeno da i oni nisu potpuni. Na kraju, moguće je da su, prema izvještajima opštinskih odbora SUBNOR-a, uneseni i oni koji nisu bili u 8. krajiškoj brigadi, već u drugim našim jedinicama. Ali, ovo u osnovi ne umanjuje trud i obim posla koji je u prikupljanju pod-. ataka uložen. Svi oni koji su radili na prikupljanju ovih podataka, kao i autor ove monografije, izvinjavaju se rodbini i prijateljima onih drugarica i drugova koji su u ratu poginuli ili umrli, a eventualno u ovaj spisak nisu uneseni.",
+    "additional_info": "rođen 1915, s. Vojevac, Bosanska Krupa, poginuo krajem 1944. Gorjevac (Bihać)",
     "birth_year": "1915",
     "pdf_page": 1,
     "pdf_y": 264.5,
     "pdf_x": 63.2,
-    "pdf_y_end": 472.7,
+    "pdf_y_end": 281.9,
     "pdf_file": "8-krajiska.pdf",
     "soldier_id": "0014000005",
-    "birth_place": "Vojevac, Bosanska Krupa",
-    "death_type": "poginuo",
-    "death_date": "krajem 1944",
-    "unit_detail": "3. bataljon",
-    "pdf_x_end": 344.6,
+    "pdf_x_end": 343.6,
     "other_sources": [
       {
         "soldier_id": "0014010005",
@@ -198,7 +194,10 @@
         "pdf_x_end": 790.6,
         "pdf_y_end": 355.9
       }
-    ]
+    ],
+    "birth_place": "Vojevac, Bosanska Krupa",
+    "death_type": "poginuo",
+    "death_date": "krajem 1944"
   },
   {
     "last_name": "Adamović",
@@ -442,13 +441,13 @@
       {
         "soldier_id": "0014010012",
         "name": "Alagić A Ibro",
-        "additional_info": "rođen 1924, s. Zagrad, Velika Kladuša, poginuo marta 1943. u logoru Zemun. * Naknadnim istraživanjem otkriven je novi broj poginulih boraca i rukovodilaca brigade koji nisu bili obuhvaćeni spiskom poginulih u monografiji. Zbog toga, Redakcija je odlučila da ga objavi u cjelini u ovom zborniku. Istovremeno biće otklonjene i neke greške načinjene u prethodnom spisku. 44 VIII krajiška brigada 689",
+        "additional_info": "rođen 1924, s. Zagrad, Velika Kladuša, poginuo marta 1943. u logoru Zemun.",
         "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
         "pdf_page": 1,
         "pdf_x": 510.8,
         "pdf_y": 486.6,
-        "pdf_y_end": 562.2,
-        "pdf_x_end": 791.5
+        "pdf_y_end": 503.6,
+        "pdf_x_end": 791.2
       }
     ]
   },
@@ -1367,7 +1366,8 @@
         "source_page": 644,
         "ref_book": "bosansko-grahovo"
       }
-    ]
+    ],
+    "death_place": "Prijedor"
   },
   {
     "last_name": "Bajić",
@@ -3467,6 +3467,9 @@
         "pdf_y": 444.7,
         "pdf_x_end": 469.6,
         "pdf_y_end": 469.5,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "politički komesar čete",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -5415,6 +5418,7 @@
         "pdf_y": 191.7,
         "pdf_x_end": 406.0,
         "pdf_y_end": 210.2,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -5643,7 +5647,8 @@
         "pdf_y_end": 428.9,
         "pdf_x_end": 781.9
       }
-    ]
+    ],
+    "death_place": "Karlovac"
   },
   {
     "last_name": "Delić",
@@ -5719,6 +5724,7 @@
         "pdf_y": 479.0,
         "pdf_x_end": 406.3,
         "pdf_y_end": 497.1,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -5794,6 +5800,8 @@
         "pdf_y": 352.6,
         "pdf_x_end": 270.6,
         "pdf_y_end": 394.7,
+        "unit_detail": "Muslimanska brigada",
+        "rank": "politički komesar",
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       },
       {
@@ -6403,6 +6411,9 @@
     "death_date": "1944",
     "pdf_x_end": 364.4,
     "death_place": "u Andrijevcu, Slavonija",
+    "borrowed": [
+      "death_place"
+    ],
     "other_sources": [
       {
         "soldier_id": "0013000289",
@@ -6426,6 +6437,7 @@
         "pdf_y": 380.2,
         "pdf_x_end": 356.8,
         "pdf_y_end": 411.0,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -6514,6 +6526,9 @@
         "pdf_y": 559.9,
         "pdf_x_end": 473.8,
         "pdf_y_end": 584.7,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "komandir čete",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -6901,6 +6916,7 @@
     "death_type": "poginuo",
     "death_date": "25.02.1943",
     "pdf_x_end": 349.4,
+    "death_place": "Grmeč",
     "other_sources": [
       {
         "soldier_id": "9040002805",
@@ -7765,7 +7781,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Crna gora"
+    "death_place": "Crna Gora"
   },
   {
     "last_name": "Gaković",
@@ -7809,7 +7825,8 @@
         "pdf_y_end": 670.2,
         "ref_book": "cazinska-krajina-pali-borci"
       }
-    ]
+    ],
+    "death_place": "Celje, Slovenija"
   },
   {
     "last_name": "Gaković",
@@ -8749,6 +8766,7 @@
         "pdf_y": 334.5,
         "pdf_x_end": 404.0,
         "pdf_y_end": 352.6,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -9165,6 +9183,7 @@
         "pdf_y": 297.6,
         "pdf_x_end": 393.3,
         "pdf_y_end": 312.8,
+        "since": "1944-10-20",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ]
@@ -9727,6 +9746,7 @@
         "pdf_y": 421.5,
         "pdf_x_end": 342.2,
         "pdf_y_end": 439.4,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       }
     ],
@@ -9782,6 +9802,7 @@
         "pdf_y": 390.1,
         "pdf_x_end": 343.0,
         "pdf_y_end": 416.3,
+        "rank": "vodnik",
         "unit_file": "8-krajiska-soldiers.json"
       },
       {
@@ -10097,7 +10118,8 @@
         "pdf_y_end": 525.3,
         "pdf_x_end": 780.7
       }
-    ]
+    ],
+    "death_place": "u Borskom rudniku"
   },
   {
     "last_name": "Hafurić",
@@ -10456,7 +10478,8 @@
         "pdf_y_end": 278.6,
         "pdf_x_end": 413.7
       }
-    ]
+    ],
+    "death_place": "Bosanska Gradiška"
   },
   {
     "last_name": "Hodžić",
@@ -11128,6 +11151,7 @@
         "pdf_y": 521.9,
         "pdf_x_end": 348.2,
         "pdf_y_end": 539.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -11201,14 +11225,13 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
+    "death_place": "Beograd",
     "birth_year": "1922",
     "ethnicity": "Musliman",
     "borrowed": [
       "birth_year",
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Beograd"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -11781,7 +11804,8 @@
         "pdf_x_end": 783.4,
         "pdf_y_end": 523.5
       }
-    ]
+    ],
+    "death_place": "Prijedor"
   },
   {
     "last_name": "Japundžić",
@@ -12244,6 +12268,7 @@
         "pdf_y": 208.3,
         "pdf_x_end": 351.3,
         "pdf_y_end": 260.7,
+        "rank": "komandir voda",
         "unit_file": "7-banijska-soldiers.json"
       },
       {
@@ -12517,6 +12542,7 @@
         "pdf_y": 83.2,
         "pdf_x_end": 412.6,
         "pdf_y_end": 100.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -12529,6 +12555,7 @@
         "pdf_y": 316.4,
         "pdf_x_end": 358.4,
         "pdf_y_end": 334.9,
+        "rank": "vodnik",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ]
@@ -15640,6 +15667,7 @@
         "pdf_y": 336.7,
         "pdf_x_end": 351.5,
         "pdf_y_end": 363.7,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -15743,7 +15771,20 @@
     "soldier_id": "0014000431",
     "birth_place": "Rujnica, Cazin",
     "death_type": "poginuo",
-    "pdf_x_end": 348.5
+    "pdf_x_end": 348.5,
+    "other_sources": [
+      {
+        "soldier_id": "0014010398",
+        "name": "Konćar Milan",
+        "additional_info": "rođen, 1924, s. Rujnica, Cazin, poginuo (nepoznati podaci o mjestu i vremenu).",
+        "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
+        "pdf_page": 11,
+        "pdf_x": 125.6,
+        "pdf_y": 195.2,
+        "pdf_x_end": 407.8,
+        "pdf_y_end": 212.3
+      }
+    ]
   },
   {
     "last_name": "Končar",
@@ -17328,6 +17369,7 @@
         "pdf_y": 179.4,
         "pdf_x_end": 344.8,
         "pdf_y_end": 197.5,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -17649,6 +17691,7 @@
         "pdf_y": 377.4,
         "pdf_x_end": 433.2,
         "pdf_y_end": 500.8,
+        "rank": "komandir čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -20054,6 +20097,7 @@
         "pdf_y": 54.6,
         "pdf_x_end": 405.9,
         "pdf_y_end": 81.6,
+        "rank": "politički delegat voda",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -20361,6 +20405,7 @@
         "pdf_y": 154.0,
         "pdf_x_end": 404.2,
         "pdf_y_end": 171.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -21232,6 +21277,7 @@
         "pdf_y": 501.0,
         "pdf_x_end": 344.3,
         "pdf_y_end": 518.4,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ]
@@ -21909,6 +21955,7 @@
         "pdf_y": 442.4,
         "pdf_x_end": 344.8,
         "pdf_y_end": 460.3,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -24101,6 +24148,7 @@
         "pdf_y": 201.7,
         "pdf_x_end": 409.3,
         "pdf_y_end": 219.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -24499,6 +24547,7 @@
         "pdf_y": 381.2,
         "pdf_x_end": 408.1,
         "pdf_y_end": 399.6,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ]
@@ -26979,6 +27028,7 @@
         "pdf_y": 515.0,
         "pdf_x_end": 409.6,
         "pdf_y_end": 533.1,
+        "rank": "komandir voda",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -26991,6 +27041,7 @@
         "pdf_y": 387.9,
         "pdf_x_end": 263.0,
         "pdf_y_end": 459.2,
+        "rank": "desetar",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -27534,6 +27585,7 @@
         "pdf_y": 413.7,
         "pdf_x_end": 347.6,
         "pdf_y_end": 431.8,
+        "rank": "komandir čete",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -28147,6 +28199,7 @@
         "pdf_y": 518.6,
         "pdf_x_end": 346.3,
         "pdf_y_end": 536.0,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -29141,6 +29194,7 @@
         "pdf_y": 184.2,
         "pdf_x_end": 350.2,
         "pdf_y_end": 202.3,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -30089,6 +30143,7 @@
         "pdf_y": 275.9,
         "pdf_x_end": 410.1,
         "pdf_y_end": 294.0,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -30429,6 +30484,7 @@
         "pdf_y": 76.7,
         "pdf_x_end": 354.1,
         "pdf_y_end": 94.6,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ]
@@ -30608,6 +30664,9 @@
         "pdf_y": 126.8,
         "pdf_x_end": 367.8,
         "pdf_y_end": 174.4,
+        "unit_detail": "prateći vod, 4. bataljon",
+        "rank": "desetar",
+        "since": "1942-08-22",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       },
       {
@@ -30929,6 +30988,8 @@
         "pdf_y": 544.2,
         "pdf_x_end": 270.9,
         "pdf_y_end": 578.4,
+        "unit_detail": "2. brigada",
+        "rank": "borac",
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
     ],
@@ -30986,6 +31047,8 @@
         "pdf_y": 610.9,
         "pdf_x_end": 270.9,
         "pdf_y_end": 644.4,
+        "unit_detail": "2. brigada",
+        "rank": "borac",
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       }
     ],
@@ -31439,6 +31502,7 @@
         "pdf_y": 490.0,
         "pdf_x_end": 352.5,
         "pdf_y_end": 507.4,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -32537,6 +32601,8 @@
         "pdf_y": 593.3,
         "pdf_x_end": 259.3,
         "pdf_y_end": 627.5,
+        "unit_detail": "Muslimanska brigada",
+        "rank": "pomoćnik komesara",
         "unit_file": "8-kordunaska-divizija-soldiers.json"
       },
       {
@@ -32705,6 +32771,7 @@
         "pdf_y": 315.4,
         "pdf_x_end": 218.8,
         "pdf_y_end": 368.4,
+        "rank": "bolničarka",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -32770,6 +32837,7 @@
         "pdf_y": 288.6,
         "pdf_x_end": 359.0,
         "pdf_y_end": 316.8,
+        "rank": "zamjenik komandira čete",
         "unit_file": "12-krajiska-soldiers.json"
       }
     ],
@@ -33142,6 +33210,9 @@
         "pdf_y": 28.6,
         "pdf_x_end": 393.0,
         "pdf_y_end": 51.4,
+        "unit_detail": "3. četa, 4. bataljon",
+        "rank": "borac",
+        "since": "1942-12",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -33376,6 +33447,7 @@
         "pdf_y": 258.2,
         "pdf_x_end": 347.4,
         "pdf_y_end": 276.1,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -33558,7 +33630,8 @@
         "pdf_y_end": 407.3,
         "pdf_x_end": 405.3
       }
-    ]
+    ],
+    "death_place": "Karlovac"
   },
   {
     "last_name": "Smailović",
@@ -34930,7 +35003,8 @@
         "pdf_y_end": 407.5,
         "pdf_x_end": 781.4
       }
-    ]
+    ],
+    "death_place": "u Unskoj op. grupi"
   },
   {
     "last_name": "Taranović",
@@ -35327,6 +35401,9 @@
         "pdf_y": 315.1,
         "pdf_x_end": 476.6,
         "pdf_y_end": 341.1,
+        "unit_detail": "2. četa, 2. bataljon",
+        "rank": "borac",
+        "since": "1942-05-21",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -36096,6 +36173,7 @@
         "pdf_y": 481.1,
         "pdf_x_end": 406.6,
         "pdf_y_end": 499.4,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -36855,7 +36933,8 @@
         "pdf_y_end": 502.6,
         "pdf_x_end": 783.8
       }
-    ]
+    ],
+    "death_place": "Ljubija"
   },
   {
     "last_name": "Vujaković",
@@ -38786,6 +38865,7 @@
         "pdf_y": 307.6,
         "pdf_x_end": 402.9,
         "pdf_y_end": 325.9,
+        "rank": "komandant bataljona",
         "unit_file": "6-krajiska-soldiers.json"
       },
       {
@@ -38798,6 +38878,7 @@
         "pdf_y": 388.7,
         "pdf_x_end": 259.5,
         "pdf_y_end": 460.0,
+        "rank": "komandir čete",
         "unit_file": "proleterski-bataljon-bk-soldiers.json"
       }
     ],
@@ -40301,6 +40382,7 @@
         "pdf_y": 179.7,
         "pdf_x_end": 342.9,
         "pdf_y_end": 198.1,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -40891,6 +40973,7 @@
         "pdf_y": 564.8,
         "pdf_x_end": 407.8,
         "pdf_y_end": 582.7,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ]
@@ -41260,10 +41343,6 @@
     "pdf_y_end": 209.8,
     "pdf_file": "8-krajiska.pdf",
     "soldier_id": "0014001118",
-    "birth_place": "Bugar, Bihać",
-    "death_type": "poginuo",
-    "death_date": "06.1944",
-    "rank": "bolničarka",
     "pdf_x_end": 355.0,
     "other_sources": [
       {
@@ -41276,17 +41355,6 @@
         "pdf_y": 514.5,
         "pdf_y_end": 531.7,
         "pdf_x_end": 790.2
-      },
-      {
-        "soldier_id": "0014011052",
-        "name": "Čubrilo R Smilja",
-        "additional_info": "rođena 1925, s. Rujnica, Cazin, poginula maja 1943. Sutjeska.",
-        "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
-        "pdf_page": 5,
-        "pdf_x": 117.1,
-        "pdf_y": 107.0,
-        "pdf_y_end": 124.1,
-        "pdf_x_end": 397.9
       },
       {
         "soldier_id": "9022001203",
@@ -41309,22 +41377,16 @@
         "ref_book": "cazinska-krajina-pali-borci"
       }
     ],
+    "birth_place": "Bugar, Bihać",
+    "death_type": "poginuo",
+    "death_date": "06.1944",
+    "rank": "bolničarka",
     "ethnicity": "Srpkinja",
     "borrowed": [
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Zvornik",
-    "variants": {
-      "born": [
-        "1925"
-      ],
-      "death": [
-        {
-          "date": "05.1943"
-        }
-      ]
-    }
+    "death_place": "Zvornik"
   },
   {
     "last_name": "Čubrilo",
@@ -41343,7 +41405,20 @@
     "birth_place": "Rujnica, Cazin",
     "death_type": "poginuo",
     "death_date": "05.1943",
-    "pdf_x_end": 355.0
+    "pdf_x_end": 355.0,
+    "other_sources": [
+      {
+        "soldier_id": "0014011052",
+        "name": "Čubrilo R Smilja",
+        "additional_info": "rođena 1925, s. Rujnica, Cazin, poginula maja 1943. Sutjeska.",
+        "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
+        "pdf_page": 5,
+        "pdf_x": 117.1,
+        "pdf_y": 107.0,
+        "pdf_x_end": 397.9,
+        "pdf_y_end": 124.1
+      }
+    ]
   },
   {
     "last_name": "Čukić",
@@ -41770,8 +41845,14 @@
         "pdf_y": 290.6,
         "pdf_x_end": 450.1,
         "pdf_y_end": 315.4,
+        "rank": "borac",
+        "since": "1943-02-07",
         "unit_file": "1-krajiska-soldiers.json"
       }
+    ],
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
     ],
     "variants": {
       "death": [
@@ -42275,6 +42356,8 @@
         "pdf_y": 85.5,
         "pdf_x_end": 352.9,
         "pdf_y_end": 118.0,
+        "rank": "borac",
+        "since": "1943-10",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -42621,6 +42704,8 @@
         "pdf_y": 109.2,
         "pdf_x_end": 369.6,
         "pdf_y_end": 132.0,
+        "unit_detail": "3. četa, 1. bataljon",
+        "rank": "politički delegat voda",
         "unit_file": "2-krajiska-soldiers.json"
       }
     ],
@@ -42694,6 +42779,7 @@
         "pdf_y": 290.3,
         "pdf_x_end": 414.4,
         "pdf_y_end": 308.5,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -43145,6 +43231,7 @@
         "pdf_y": 375.2,
         "pdf_x_end": 401.1,
         "pdf_y_end": 393.8,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
@@ -43691,14 +43778,16 @@
         "pdf_y": 119.0,
         "pdf_x_end": 404.4,
         "pdf_y_end": 136.9,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],
     "death_place": "Cazin",
-    "ethnicity": "Srbin",
     "borrowed": [
+      "death_place",
       "ethnicity"
     ],
+    "ethnicity": "Srbin",
     "variants": {
       "death": [
         {
@@ -43824,23 +43913,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "pdf_x_end": 783.1
-  },
-  {
-    "last_name": "Konćar",
-    "middle_name": "",
-    "first_name": "Milan",
-    "fathers_name": "",
-    "full_name": "Konćar Milan",
-    "additional_info": "rođen, 1924, s. Rujnica, Cazin, poginuo (nepoznati podaci o mjestu i vremenu).",
-    "birth_year": "",
-    "pdf_page": 11,
-    "pdf_y": 195.2,
-    "pdf_x": 125.6,
-    "pdf_y_end": 212.3,
-    "pdf_file": "8-krajiska-sjecanja-poginuli.pdf",
-    "soldier_id": "0014010398",
-    "death_type": "poginuo",
-    "pdf_x_end": 407.8
   },
   {
     "last_name": "Kovačević",
@@ -44201,6 +44273,7 @@
         "pdf_y": 449.7,
         "pdf_x_end": 346.0,
         "pdf_y_end": 467.6,
+        "rank": "borac",
         "unit_file": "6-krajiska-soldiers.json"
       }
     ],

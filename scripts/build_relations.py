@@ -18,6 +18,7 @@ Usage:
     python scripts/build_relations.py --write
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import argparse
 import json
@@ -365,7 +366,7 @@ def main():
                         sorted(linked[k], key=lambda m: m[1])] for k in order],
         }
         OUT.parent.mkdir(parents=True, exist_ok=True)
-        OUT.write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+        write_text(OUT, json.dumps(doc, ensure_ascii=False, separators=(',', ':')))
         print(f'\nwrote {OUT.relative_to(ROOT)} ({OUT.stat().st_size / 1e6:.1f} MB)')
 
 

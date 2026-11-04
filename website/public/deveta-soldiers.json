@@ -607,7 +607,6 @@
     "full_name": "Andoljšek Anton",
     "additional_info": "",
     "birth_year": "",
-    "death_place": "padel RCEV IX. SNOB KOČ",
     "pdf_page": 1,
     "pdf_y": 478.8,
     "pdf_x": 38.1,
@@ -3984,6 +3983,7 @@
         "pdf_y": 582.4,
         "pdf_x_end": 295.8,
         "pdf_y_end": 588.9,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -11440,9 +11440,9 @@
   {
     "last_name": "Ivanušič",
     "middle_name": "",
-    "first_name": "Matia",
+    "first_name": "Matija",
     "fathers_name": "",
-    "full_name": "Ivanušič Matia",
+    "full_name": "Ivanušič Matija",
     "additional_info": "1902, Gorenjci",
     "birth_year": "1902",
     "pdf_page": 6,
@@ -15016,6 +15016,7 @@
         "pdf_y": 369.8,
         "pdf_x_end": 295.3,
         "pdf_y_end": 376.4,
+        "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -18470,7 +18471,7 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000942",
     "pdf_x_end": 198.4,
-    "birth_place": "Struw~"
+    "birth_place": ""
   },
   {
     "last_name": "Kraševec",
@@ -19006,7 +19007,7 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000966",
     "pdf_x_end": 310.7,
-    "birth_place": "Sela pri Vrbcah, Se>mit"
+    "birth_place": "Sela pri Vrbcah, Semič"
   },
   {
     "last_name": "Križman",
@@ -19063,11 +19064,11 @@
     "birth_place": "Rapljevo pri Strugah"
   },
   {
-    "last_name": "Križmun",
+    "last_name": "Križman",
     "middle_name": "",
     "first_name": "Milan",
     "fathers_name": "",
-    "full_name": "Križmun Milan",
+    "full_name": "Križman Milan",
     "additional_info": "zvani Nucc; 1908, Ljubljana",
     "birth_year": "1908",
     "pdf_page": 9,
@@ -19077,7 +19078,27 @@
     "pdf_file": "deveta.pdf",
     "soldier_id": "0167000970",
     "pdf_x_end": 312.2,
-    "birth_place": "Ljubljana"
+    "birth_place": "Ljubljana",
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_type"
+    ],
+    "death_date": "1989",
+    "other_sources": [
+      {
+        "soldier_id": "0004001407",
+        "name": "Križman Milan",
+        "additional_info": "1908, Ljubljana, umrl 1989",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 418,
+        "pdf_x": 310.5,
+        "pdf_y": 385.9,
+        "pdf_x_end": 438.6,
+        "pdf_y_end": 401.9,
+        "unit_file": "ljubljanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Križnik",
@@ -20899,7 +20920,7 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Kočevje",
-    "birth_place": "_ Velike Brusnice",
+    "birth_place": "Velike Brusnice",
     "pdf_page": 21,
     "pdf_y": 152.7,
     "pdf_x": 39.3,
@@ -21077,9 +21098,9 @@
   {
     "last_name": "Lisac",
     "middle_name": "",
-    "first_name": "Jožep",
+    "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Lisac Jožep",
+    "full_name": "Lisac Jože",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 10,
@@ -22679,6 +22700,7 @@
         "pdf_y": 372.1,
         "pdf_x_end": 269.4,
         "pdf_y_end": 378.6,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -23649,6 +23671,7 @@
         "pdf_y": 450.1,
         "pdf_x_end": 345.3,
         "pdf_y_end": 458.1,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       }
     ]
@@ -35393,6 +35416,7 @@
         "pdf_y": 316.4,
         "pdf_x_end": 312.1,
         "pdf_y_end": 333.3,
+        "unit_detail": "4. bataljon 9. in 18. brigade, 1. četa",
         "unit_file": "istrski-odred-soldiers.json"
       },
       {
@@ -38916,6 +38940,7 @@
         "pdf_y": 422.2,
         "pdf_x_end": 287.2,
         "pdf_y_end": 438.6,
+        "unit_detail": "1. bataljon",
         "unit_file": "istrski-odred-soldiers.json"
       },
       {
@@ -40866,6 +40891,7 @@
         "pdf_y": 326.4,
         "pdf_x_end": 280.4,
         "pdf_y_end": 345.4,
+        "unit_detail": "baza 21, baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -41726,6 +41752,7 @@
         "pdf_y": 101.1,
         "pdf_x_end": 465.8,
         "pdf_y_end": 120.6,
+        "rank": "vodnik",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -42045,6 +42072,7 @@
         "pdf_y": 585.3,
         "pdf_x_end": 420.4,
         "pdf_y_end": 604.4,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {

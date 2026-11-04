@@ -26,6 +26,7 @@ Usage:
     python scripts/extract_life_events.py --write [--brigade N] # write website/data/life-events/
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import argparse
 import json
@@ -485,7 +486,7 @@ def write_events(brigades: dict) -> dict[str, int]:
             continue
         text = json.dumps(events, ensure_ascii=False, separators=(',', ':'))
         if not path.exists() or path.read_text(encoding='utf-8') != text:
-            path.write_text(text, encoding='utf-8')
+            write_text(path, text)
         written[fname] = len(events)
     return written
 

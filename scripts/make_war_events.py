@@ -12,6 +12,7 @@ soldier_id -> [WarEvent, ...] in the order they happened, which scripts/prepare-
                                                 # it also writes those units' life events again (each event a step)
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import json
 import sys
@@ -57,7 +58,7 @@ def main():
         had = path.exists()
         if events:
             OUT.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(events, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+            write_text(path, json.dumps(events, ensure_ascii=False, separators=(',', ':')) + '\n')
             written.add(path.name)
         elif had:
             path.unlink()

@@ -35,6 +35,7 @@ Usage:
     python scripts/resolved_places.py --apply      # write them (outside apply_corrections.py)
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import argparse
 import json
@@ -129,7 +130,7 @@ def remember() -> int:
                         'files anew, and the gazetteer keys only what the files hold when it runs, so the forms are '
                         'kept here (scripts/resolved_places.py remember(), run by apply_corrections.py).',
                'units': {u: {f: dict(sorted(m.items())) for f, m in sorted(fs.items())} for u, fs in sorted(units.items())}}
-        KEPT.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding='utf-8')
+        write_text(KEPT, json.dumps(doc, ensure_ascii=False, indent=1))
         kept.cache_clear()
     return added
 
@@ -243,7 +244,7 @@ def main():
         if args.apply:
             new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
             if new_text != text:
-                path.write_text(new_text, encoding='utf-8')
+                write_text(path, new_text)
     print(f'total {dict(total)}' + ('' if args.apply else ' (dry run)'))
 
 

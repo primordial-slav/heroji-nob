@@ -13,6 +13,7 @@ apply_corrections.py runs the checks on every unit it writes.
     python scripts/check_fields.py --check unit_numbers --kind other_number
 """
 from __future__ import annotations
+from safe_write import write_text
 
 import argparse
 import collections
@@ -385,8 +386,8 @@ def write_report(found: dict, units: dict | None = None) -> None:
                     row['twin'] = {'soldier_id': twin.group(1), **entry_of(by_id[twin.group(1)])}
                 rows.append(row)
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps({'problems': sorted(rows, key=lambda r: (r['check'], r['kind'], r['soldier_id']))},
-                                 ensure_ascii=False, indent=1), encoding='utf-8')
+    write_text(REPORT, json.dumps({'problems': sorted(rows, key=lambda r: (r['check'], r['kind'], r['soldier_id']))},
+                                 ensure_ascii=False, indent=1))
 
 
 def main():

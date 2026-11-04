@@ -409,6 +409,10 @@ def same_man(a: dict, b: dict) -> str | None:
         return None
     full, father, born, village, dead, place = f['father'] == 'full', f['father'], f['born'], f['village'], f['dead'], f['place']
     close = born is not None and born <= 1
+    # two villages and two places, on a day many fell: two men of a common name and father (Jovanović Stanka Dragoljub,
+    # Surdulica and the Srem front, Boljevac and Doboj, both 12 April 1945: the rule below had linked them, 2026-11-04)
+    if f['day'] and village is False and place is False and not f['nick']:
+        return None
     # on a day many fell (12 April 1945 on the Srem front) a name and the day aren't enough: two villages need the father
     # or the birth year, and without a village the place of death tells nothing unless the name is rare
     if f['day'] and (full or close or (village is not False and (father or born == 2 or village or bearers(a) <= 5))):

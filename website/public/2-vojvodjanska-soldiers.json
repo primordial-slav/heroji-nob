@@ -1006,6 +1006,7 @@
         "pdf_y": 347.2,
         "pdf_x_end": 352.9,
         "pdf_y_end": 375.2,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -1816,7 +1817,8 @@
     "rank": "borac",
     "pdf_x_end": 365.4,
     "pdf_x_left": 85.7,
-    "death_place": "Istočna Bosna"
+    "death_place": "Istočna Bosna",
+    "occupation": "službenik"
   },
   {
     "last_name": "Banjeglav",
@@ -3454,6 +3456,7 @@
         "pdf_y": 317.3,
         "pdf_x_end": 348.0,
         "pdf_y_end": 336.2,
+        "unit_detail": "4. bataljon",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -3884,6 +3887,7 @@
         "pdf_y": 422.4,
         "pdf_x_end": 363.6,
         "pdf_y_end": 437.2,
+        "rank": "borac",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -4469,6 +4473,7 @@
         "pdf_y": 355.3,
         "pdf_x_end": 376.6,
         "pdf_y_end": 374.0,
+        "rank": "komandir čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -4816,6 +4821,7 @@
         "pdf_y": 241.7,
         "pdf_x_end": 347.1,
         "pdf_y_end": 260.3,
+        "rank": "zamenik komesara čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -5043,7 +5049,8 @@
     "soldier_id": "0018000222",
     "pdf_x_end": 357.6,
     "pdf_x_left": 99.3,
-    "rank": "vodnik"
+    "rank": "vodnik",
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Bulat",
@@ -5211,6 +5218,7 @@
         "pdf_y": 551.1,
         "pdf_x_end": 181.3,
         "pdf_y_end": 581.9,
+        "rank": "komandir čete",
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ],
@@ -5546,9 +5554,6 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "borrowed": [
-      "occupation"
-    ],
     "variants": {
       "born": [
         "1925"
@@ -6483,6 +6488,7 @@
         "pdf_y": 266.0,
         "pdf_x_end": 338.4,
         "pdf_y_end": 284.0,
+        "rank": "borac",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ]
@@ -6756,7 +6762,8 @@
     "pdf_x_end": 368.3,
     "pdf_x_left": 87.5,
     "ethnicity": "Srbin",
-    "rank": "vodnik"
+    "rank": "vodnik",
+    "occupation": "pekarski pomoćnik"
   },
   {
     "last_name": "Divljak",
@@ -7428,6 +7435,7 @@
         "pdf_y": 103.8,
         "pdf_x_end": 216.2,
         "pdf_y_end": 146.0,
+        "rank": "politički delegat voda",
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ]
@@ -9484,6 +9492,7 @@
         "pdf_y": 161.6,
         "pdf_x_end": 330.0,
         "pdf_y_end": 188.1,
+        "rank": "zamenik komandanta bataljona",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ],
@@ -9527,6 +9536,7 @@
         "pdf_y": 544.0,
         "pdf_x_end": 213.5,
         "pdf_y_end": 575.2,
+        "rank": "borac",
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ]
@@ -9933,6 +9943,7 @@
         "pdf_y": 145.5,
         "pdf_x_end": 303.9,
         "pdf_y_end": 155.5,
+        "rank": "borac",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -10654,6 +10665,7 @@
         "pdf_y": 261.5,
         "pdf_x_end": 364.6,
         "pdf_y_end": 271.4,
+        "rank": "desetar",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -10851,6 +10863,7 @@
         "pdf_y": 268.7,
         "pdf_x_end": 325.0,
         "pdf_y_end": 278.7,
+        "rank": "komandir čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -11374,6 +11387,7 @@
         "pdf_y": 382.9,
         "pdf_x_end": 365.6,
         "pdf_y_end": 401.7,
+        "rank": "komandant bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ],
@@ -11787,7 +11801,8 @@
     "birth_place": "Ilandža, Srbing",
     "rank": "borac",
     "pdf_x_end": 370.0,
-    "pdf_x_left": 89.1
+    "pdf_x_left": 89.1,
+    "occupation": "šegrt"
   },
   {
     "last_name": "Jovanov",
@@ -12132,6 +12147,8 @@
         "pdf_y": 287.4,
         "pdf_x_end": 212.0,
         "pdf_y_end": 339.8,
+        "unit_detail": "2. četa, 1. bataljon",
+        "rank": "borac",
         "unit_file": "6-istocnobosanska-soldiers.json"
       }
     ]
@@ -12882,11 +12899,11 @@
     "pdf_x_left": 107.8
   },
   {
-    "last_name": "Jovanoviđ",
+    "last_name": "Jovanović",
     "middle_name": "Đoke",
     "first_name": "Toša",
     "fathers_name": "Đoka",
-    "full_name": "Jovanoviđ Đoke Toša",
+    "full_name": "Jovanović Đoke Toša",
     "additional_info": "rođen 1906, Neštin — B. Palanka, Srbin, zemljoradnik, stupio u NOVJ 1944, borac.",
     "birth_year": "1906",
     "pdf_page": 49,
@@ -13699,7 +13716,8 @@
     "death_place": "Srebrenik",
     "rank": "komandir voda",
     "pdf_x_end": 364.3,
-    "pdf_x_left": 83.3
+    "pdf_x_left": 83.3,
+    "occupation": "nadničar"
   },
   {
     "last_name": "Keser",
@@ -14661,7 +14679,8 @@
     "death_place": "Bosna",
     "rank": "komandir čete",
     "pdf_x_end": 369.8,
-    "pdf_x_left": 89.0
+    "pdf_x_left": 89.0,
+    "occupation": "radnik"
   },
   {
     "last_name": "Korica",
@@ -15628,7 +15647,8 @@
     "ethnicity": "Srbin",
     "rank": "zamenik komandira čete",
     "pdf_x_end": 392.8,
-    "pdf_x_left": 112.0
+    "pdf_x_left": 112.0,
+    "occupation": "tršvački pomoćnik"
   },
   {
     "last_name": "Kovrević",
@@ -16205,7 +16225,7 @@
     "last_name": "Krstić",
     "middle_name": "L.",
     "first_name": "Đorđe",
-    "fathers_name": "",
+    "fathers_name": "L",
     "full_name": "Krstić L. Đorđe",
     "additional_info": "rođen 1923, Divoš, Srbin, stupio u NOVJ 1943 (nema drugih podataka).",
     "birth_year": "1923",
@@ -16313,6 +16333,7 @@
         "pdf_y": 285.5,
         "pdf_x_end": 354.1,
         "pdf_y_end": 304.5,
+        "rank": "komandant bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
       },
       {
@@ -16325,6 +16346,7 @@
         "pdf_y": 236.2,
         "pdf_x_end": 384.5,
         "pdf_y_end": 255.3,
+        "rank": "komandant bataljona",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -16689,7 +16711,8 @@
     "death_place": "u Bosii",
     "rank": "borac",
     "pdf_x_end": 373.4,
-    "pdf_x_left": 93.1
+    "pdf_x_left": 93.1,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Kuzmančević",
@@ -17248,6 +17271,7 @@
         "pdf_y": 201.5,
         "pdf_x_end": 191.0,
         "pdf_y_end": 238.1,
+        "rank": "borac",
         "unit_file": "prva-vojvodjanska-soldiers.json"
       }
     ],
@@ -18269,7 +18293,8 @@
     "birth_place": "Irig, Jušsloven",
     "rank": "borac",
     "pdf_x_end": 390.2,
-    "pdf_x_left": 109.3
+    "pdf_x_left": 109.3,
+    "occupation": "obućarski pomoćnik"
   },
   {
     "last_name": "Maksimović",
@@ -18364,6 +18389,7 @@
         "pdf_y": 234.0,
         "pdf_x_end": 354.1,
         "pdf_y_end": 252.4,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -19502,6 +19528,9 @@
         "pdf_y": 138.5,
         "pdf_x_end": 368.3,
         "pdf_y_end": 168.7,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
+        "since": "1942",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -19699,6 +19728,7 @@
         "pdf_y": 350.8,
         "pdf_x_end": 351.3,
         "pdf_y_end": 360.8,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -20209,6 +20239,7 @@
         "pdf_y": 409.2,
         "pdf_x_end": 377.3,
         "pdf_y_end": 428.1,
+        "rank": "pomoćnik komesara čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -20957,11 +20988,11 @@
     "pdf_x_left": 97.8
   },
   {
-    "last_name": "Mihajloviđ",
+    "last_name": "Mihajlović",
     "middle_name": "",
     "first_name": "Velimir",
     "fathers_name": "",
-    "full_name": "Mihajloviđ Velimir",
+    "full_name": "Mihajlović Velimir",
     "additional_info": "rođen 1917, stupio u NOVJ 1943. (nema drugih podataka).",
     "birth_year": "1917",
     "pdf_page": 79,
@@ -21165,6 +21196,7 @@
         "pdf_y": 325.0,
         "pdf_x_end": 363.9,
         "pdf_y_end": 339.8,
+        "rank": "vodnik",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -21653,6 +21685,7 @@
         "pdf_y": 52.6,
         "pdf_x_end": 345.8,
         "pdf_y_end": 84.7,
+        "rank": "komandant brigade",
         "unit_file": "4-vojvodjanska-soldiers.json"
       },
       {
@@ -21665,6 +21698,7 @@
         "pdf_y": 319.8,
         "pdf_x_end": 371.0,
         "pdf_y_end": 417.8,
+        "rank": "komandant brigade",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
@@ -23334,7 +23368,8 @@
     "birth_place": "Uljma, Srbing",
     "rank": "borac",
     "pdf_x_end": 374.4,
-    "pdf_x_left": 93.6
+    "pdf_x_left": 93.6,
+    "occupation": "kovač"
   },
   {
     "last_name": "Mirković",
@@ -23754,6 +23789,8 @@
         "pdf_y": 55.2,
         "pdf_x_end": 398.4,
         "pdf_y_end": 118.4,
+        "unit_detail": "3. bataljon",
+        "rank": "bolničarka",
         "unit_file": "16-banijska-soldiers.json"
       }
     ]
@@ -24952,7 +24989,8 @@
     "ethnicity": "Srbin",
     "rank": "borac",
     "pdf_x_end": 392.9,
-    "pdf_x_left": 110.9
+    "pdf_x_left": 110.9,
+    "occupation": "učenik"
   },
   {
     "last_name": "Neškov",
@@ -25153,7 +25191,8 @@
     "birth_place": "Uljma, Srbing",
     "rank": "borac",
     "pdf_x_end": 369.3,
-    "pdf_x_left": 87.8
+    "pdf_x_left": 87.8,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Nikolin",
@@ -26331,6 +26370,7 @@
         "pdf_y": 53.7,
         "pdf_x_end": 347.9,
         "pdf_y_end": 72.4,
+        "rank": "pomoćnik komesara čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -26573,6 +26613,7 @@
         "pdf_y": 157.7,
         "pdf_x_end": 378.8,
         "pdf_y_end": 176.3,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -26600,7 +26641,8 @@
     "ethnicity": "Srbin",
     "rank": "borac",
     "pdf_x_end": 386.4,
-    "pdf_x_left": 104.6
+    "pdf_x_left": 104.6,
+    "occupation": "opštinski službenik"
   },
   {
     "last_name": "Obradović",
@@ -26725,6 +26767,7 @@
         "pdf_y": 279.9,
         "pdf_x_end": 347.7,
         "pdf_y_end": 303.4,
+        "rank": "vodni delegat",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -26851,6 +26894,9 @@
         "pdf_y": 213.4,
         "pdf_x_end": 350.4,
         "pdf_y_end": 253.6,
+        "unit_detail": "1. bataljon",
+        "rank": "komandant brigade",
+        "since": "1942-03",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -26878,8 +26924,11 @@
         "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
-    "death_place": "kod Našica . u čišćenju terena od ostataka ustaških jedinica",
     "party": "SKOJ 1941, KPJ 1942",
+    "death_place": "kod Našica",
+    "borrowed": [
+      "death_place"
+    ],
     "birth_date": "08.05.1923",
     "variants": {
       "born": [
@@ -27391,6 +27440,7 @@
         "pdf_y": 501.4,
         "pdf_x_end": 329.0,
         "pdf_y_end": 519.6,
+        "rank": "zamenik političkog komesara brigade",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ]
@@ -27579,6 +27629,8 @@
         "pdf_y": 86.2,
         "pdf_x_end": 187.4,
         "pdf_y_end": 116.1,
+        "unit_detail": "prištapske jedinice",
+        "rank": "borac",
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ]
@@ -27681,7 +27733,8 @@
     "soldier_id": "0018001213",
     "rank": "borac",
     "pdf_x_end": 390.9,
-    "pdf_x_left": 109.8
+    "pdf_x_left": 109.8,
+    "occupation": "domaćica"
   },
   {
     "last_name": "Panić",
@@ -28356,6 +28409,7 @@
         "pdf_y": 458.4,
         "pdf_x_end": 359.2,
         "pdf_y_end": 485.7,
+        "rank": "komesar čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -28567,6 +28621,7 @@
         "pdf_y": 110.8,
         "pdf_x_end": 358.5,
         "pdf_y_end": 129.4,
+        "rank": "komandir čete",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -28762,7 +28817,8 @@
     "death_date": "1944",
     "pdf_x_end": 392.5,
     "pdf_x_left": 111.5,
-    "death_place": "Bosna"
+    "death_place": "Bosna",
+    "occupation": "radnik"
   },
   {
     "last_name": "Petrić",
@@ -29162,6 +29218,7 @@
         "pdf_y": 297.5,
         "pdf_x_end": 351.8,
         "pdf_y_end": 316.4,
+        "rank": "komesar bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -30884,6 +30941,7 @@
         "pdf_y": 460.0,
         "pdf_x_end": 338.1,
         "pdf_y_end": 486.5,
+        "rank": "kurir",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ],
@@ -31316,7 +31374,8 @@
     "birth_place": "Lika, Srbing",
     "rank": "borac",
     "pdf_x_end": 370.3,
-    "pdf_x_left": 89.0
+    "pdf_x_left": 89.0,
+    "occupation": "kovač"
   },
   {
     "last_name": "Radanović",
@@ -31334,7 +31393,8 @@
     "soldier_id": "0018001372",
     "birth_place": "Brda, Srbing",
     "pdf_x_end": 370.8,
-    "pdf_x_left": 88.8
+    "pdf_x_left": 88.8,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Radekić",
@@ -31641,6 +31701,7 @@
         "pdf_y": 52.4,
         "pdf_x_end": 342.2,
         "pdf_y_end": 70.7,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -32900,6 +32961,7 @@
         "pdf_y": 302.0,
         "pdf_x_end": 366.5,
         "pdf_y_end": 354.4,
+        "rank": "omladinski rukovodilac brigade",
         "unit_file": "5-proleterska-soldiers.json"
       }
     ]
@@ -33338,7 +33400,8 @@
     "birth_place": "Kupinovo",
     "rank": "bolničarka",
     "pdf_x_end": 371.8,
-    "pdf_x_left": 90.2
+    "pdf_x_left": 90.2,
+    "occupation": "domaćica"
   },
   {
     "last_name": "Ranitović",
@@ -35010,6 +35073,7 @@
         "pdf_y": 284.1,
         "pdf_x_end": 343.1,
         "pdf_y_end": 302.8,
+        "rank": "borac",
         "unit_file": "7-vojvodjanska-soldiers.json"
       },
       {
@@ -35022,6 +35086,8 @@
         "pdf_y": 617.1,
         "pdf_x_end": 575.5,
         "pdf_y_end": 635.9,
+        "unit_detail": "7. vojvođanska brigada",
+        "rank": "borac",
         "unit_file": "51-divizija-soldiers.json"
       },
       {
@@ -35696,6 +35762,7 @@
         "pdf_y": 472.9,
         "pdf_x_end": 341.9,
         "pdf_y_end": 487.7,
+        "rank": "borac",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -36227,6 +36294,8 @@
         "pdf_y": 330.0,
         "pdf_x_end": 177.8,
         "pdf_y_end": 371.6,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
         "unit_file": "6-istocnobosanska-soldiers.json"
       },
       {
@@ -36239,6 +36308,7 @@
         "pdf_y": 211.4,
         "pdf_x_end": 383.7,
         "pdf_y_end": 230.0,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -36345,6 +36415,7 @@
         "pdf_y": 80.0,
         "pdf_x_end": 349.0,
         "pdf_y_end": 94.8,
+        "rank": "bolničarka",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
@@ -36385,6 +36456,7 @@
         "pdf_y": 324.9,
         "pdf_x_end": 383.1,
         "pdf_y_end": 343.5,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]
@@ -37060,6 +37132,7 @@
         "pdf_y": 311.6,
         "pdf_x_end": 339.5,
         "pdf_y_end": 330.1,
+        "rank": "pomoćnik komesara brigade",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ]
@@ -39612,7 +39685,8 @@
     "death_place": "Bosna",
     "rank": "borac",
     "pdf_x_end": 392.1,
-    "pdf_x_left": 110.5
+    "pdf_x_left": 110.5,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Teodorović",
@@ -39749,6 +39823,7 @@
         "pdf_y": 367.1,
         "pdf_x_end": 342.3,
         "pdf_y_end": 386.2,
+        "rank": "zamenik političkog komesara brigade",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ]
@@ -39901,6 +39976,7 @@
         "pdf_y": 492.7,
         "pdf_x_end": 343.1,
         "pdf_y_end": 511.0,
+        "rank": "borac",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ]
@@ -41375,6 +41451,7 @@
     "pdf_x_end": 358.7,
     "pdf_x_left": 77.5,
     "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Istočna Bosna",
@@ -42599,6 +42676,9 @@
         "pdf_y": 145.7,
         "pdf_x_end": 353.5,
         "pdf_y_end": 177.8,
+        "unit_detail": "1. bataljon",
+        "rank": "zamenik komandanta brigade",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -42636,6 +42716,7 @@
         "pdf_y": 358.7,
         "pdf_x_end": 349.4,
         "pdf_y_end": 368.7,
+        "rank": "komesar brigade",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -42763,6 +42844,7 @@
         "pdf_y": 254.3,
         "pdf_x_end": 367.5,
         "pdf_y_end": 272.9,
+        "rank": "ekonom bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ]
@@ -42787,7 +42869,8 @@
     "death_place": "kod Trnova u istočnoj Bosni",
     "rank": "borac",
     "pdf_x_end": 384.4,
-    "pdf_x_left": 104.0
+    "pdf_x_left": 104.0,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Vozarević",
@@ -43341,6 +43424,9 @@
         "pdf_y": 420.5,
         "pdf_x_end": 349.8,
         "pdf_y_end": 462.2,
+        "unit_detail": "2. bataljon",
+        "rank": "politički komesar divizije",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -43378,6 +43464,7 @@
         "pdf_y": 355.2,
         "pdf_x_end": 369.5,
         "pdf_y_end": 378.7,
+        "rank": "zamenik komesara brigade",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
@@ -43882,6 +43969,7 @@
         "pdf_y": 390.6,
         "pdf_x_end": 381.0,
         "pdf_y_end": 409.3,
+        "rank": "borac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ],
@@ -44014,7 +44102,7 @@
     "rank": "borac",
     "pdf_x_end": 386.9,
     "pdf_x_left": 105.7,
-    "death_place": "Bijeljina",
+    "death_place": "Istočna Bosna",
     "other_sources": [
       {
         "soldier_id": "0057003741",
@@ -44026,6 +44114,7 @@
         "pdf_y": 483.5,
         "pdf_x_end": 334.5,
         "pdf_y_end": 501.7,
+        "rank": "borac",
         "unit_file": "3-vojvodjanska-soldiers.json"
       }
     ],
@@ -44875,7 +44964,8 @@
     "birth_place": "Radojevo, Srbing",
     "rank": "borac",
     "pdf_x_end": 370.4,
-    "pdf_x_left": 90.0
+    "pdf_x_left": 90.0,
+    "occupation": "krojač"
   },
   {
     "last_name": "Ćirić",
@@ -44935,6 +45025,7 @@
         "pdf_y": 232.3,
         "pdf_x_end": 360.1,
         "pdf_y_end": 255.8,
+        "rank": "vodni delegat",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ],
@@ -45287,6 +45378,7 @@
         "pdf_y": 354.5,
         "pdf_x_end": 359.2,
         "pdf_y_end": 360.7,
+        "rank": "borac",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -45534,7 +45626,8 @@
     "death_date": "1944",
     "death_place": "Bosna",
     "pdf_x_end": 381.8,
-    "pdf_x_left": 99.8
+    "pdf_x_left": 99.8,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Čemerlić",
@@ -45819,7 +45912,8 @@
     "death_place": "Skela",
     "rank": "borac",
     "pdf_x_end": 382.1,
-    "pdf_x_left": 100.0
+    "pdf_x_left": 100.0,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Čobanović",
@@ -45963,7 +46057,8 @@
     "birth_place": "Grabovci, Uljma",
     "rank": "kurir",
     "pdf_x_end": 349.9,
-    "pdf_x_left": 85.2
+    "pdf_x_left": 85.2,
+    "occupation": "radnik"
   },
   {
     "last_name": "Čompajlo",
@@ -47435,6 +47530,7 @@
         "pdf_y": 82.8,
         "pdf_x_end": 370.2,
         "pdf_y_end": 97.7,
+        "rank": "borac",
         "unit_file": "4-vojvodjanska-soldiers.json"
       }
     ]
@@ -47478,7 +47574,8 @@
     "ethnicity": "Srbin",
     "rank": "obaveštajac",
     "pdf_x_end": 384.9,
-    "pdf_x_left": 103.8
+    "pdf_x_left": 103.8,
+    "occupation": "kovač"
   },
   {
     "last_name": "Šević",
@@ -47511,6 +47608,7 @@
         "pdf_y": 284.5,
         "pdf_x_end": 358.8,
         "pdf_y_end": 303.2,
+        "rank": "zamenik komesara čete",
         "unit_file": "7-vojvodjanska-soldiers.json"
       }
     ],
@@ -47582,6 +47680,7 @@
     "rank": "komandir čete",
     "pdf_x_end": 364.6,
     "pdf_x_left": 83.4,
+    "occupation": "zemljoradnik",
     "other_sources": [
       {
         "soldier_id": "0057002815",
@@ -47651,7 +47750,8 @@
     "soldier_id": "0018002070",
     "rank": "borac",
     "pdf_x_end": 364.6,
-    "pdf_x_left": 83.3
+    "pdf_x_left": 83.3,
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Šimunovački",
@@ -47771,6 +47871,7 @@
         "pdf_y": 230.1,
         "pdf_x_end": 381.6,
         "pdf_y_end": 248.8,
+        "rank": "puškomitraljezac",
         "unit_file": "5-vojvodjanska-soldiers.json"
       }
     ]

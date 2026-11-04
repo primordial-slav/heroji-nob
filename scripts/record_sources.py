@@ -20,7 +20,7 @@ import re
 import unicodedata
 
 import extract_structured_fields as structured
-from extract_life_events import birth_day, born_phrase
+from extract_life_events import birth_day, born_phrase, read_entry
 from name_utils import OSTALI_CODES, extract_birth_info
 from standardize_fields import date_form, standard
 
@@ -155,6 +155,21 @@ def dates_differ(a, b) -> bool:
     return bool(a[2] and b[2] and (a[2][1] < b[2][0] or b[2][1] < a[2][0]))
 
 
+def since_in_unit(s: dict) -> str:
+    """When a record's entries say he came to the unit ("u brigadi od juna 1943": "1943-06"), for the card's order of his units"""
+    entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
+    for e in entries:
+        for step in read_entry(e.get('additional_info') or ''):
+            if step.get('k') == 'unit' and step.get('d'):
+                return step['d']
+    return ''
+
+
+def misprinted_year(a, b) -> bool:
+    """The same day and month, one in the war and the other long after it: the misprint "poginuo 4. 6. 1963", no other death"""
+    return bool(a and b and a[1:] == b[1:] and a[2] and min(a[0], b[0]) <= 1945 and max(a[0], b[0]) > 1950)
+
+
 def death_place_of(v: str) -> str:
     if not v:
         return ''
@@ -220,7 +235,8 @@ def sources(s: dict, by_id: dict, ex) -> list[dict]:
 
 def plausible_birth(year: int, s: dict) -> bool:
     died = date_parts(s.get('death_date') or '')
-    return 1850 <= year <= 1945 and not (died and year >= died[0])
+    # 1936: the youngest the entries print (a child with her family in the 5. proleterska); "u NOB od ;1941" read as a birth is none
+    return 1850 <= year <= 1936 and not (died and year >= died[0])
 
 
 def variants(s: dict, by_id: dict, ex) -> dict:
@@ -243,6 +259,8 @@ def variants(s: dict, by_id: dict, ex) -> dict:
     for f in facts:
         theirs = date_parts(f.get('death_date') or '')
         if not dates_differ(mine, theirs):
+            continue
+        if misprinted_year(mine, theirs):
             continue
         d = {'date': f['death_date']}
         place = f.get('death_place') or ''

@@ -1206,7 +1206,6 @@
     "birth_place": "Pudob, Cerknica",
     "death_type": "poginuo",
     "death_date": "20.02.1944",
-    "death_place": "boju 14. divizije",
     "pdf_page": 2,
     "pdf_y": 391.4,
     "pdf_x": 250.9,
@@ -1893,6 +1892,7 @@
         "pdf_y": 607.1,
         "pdf_x_end": 291.6,
         "pdf_y_end": 613.6,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -2161,6 +2161,7 @@
         "pdf_y": 297.8,
         "pdf_x_end": 204.4,
         "pdf_y_end": 309.9,
+        "unit_detail": "štab brigade",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -3969,6 +3970,7 @@
         "pdf_y": 37.6,
         "pdf_x_end": 529.1,
         "pdf_y_end": 57.0,
+        "rank": "borec",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -4536,6 +4538,7 @@
         "pdf_y": 544.3,
         "pdf_x_end": 285.3,
         "pdf_y_end": 560.2,
+        "unit_detail": "štab brigade",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -4574,6 +4577,7 @@
         "pdf_y": 470.1,
         "pdf_x_end": 376.9,
         "pdf_y_end": 486.4,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -4728,6 +4732,7 @@
         "pdf_y": 599.4,
         "pdf_x_end": 381.8,
         "pdf_y_end": 615.8,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -6390,6 +6395,8 @@
         "pdf_y": 109.9,
         "pdf_x_end": 498.4,
         "pdf_y_end": 130.0,
+        "unit_detail": "3. četa, 2. bataljon",
+        "rank": "desetar",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -6853,6 +6860,7 @@
         "pdf_y": 212.9,
         "pdf_x_end": 473.9,
         "pdf_y_end": 242.6,
+        "unit_detail": "1. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -7069,7 +7077,8 @@
     "pdf_y_end": 529.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000324",
-    "pdf_x_end": 519.4
+    "pdf_x_end": 519.4,
+    "death_date": "24.04.1945"
   },
   {
     "last_name": "Fluhar",
@@ -8316,7 +8325,7 @@
     "birth_place": "Cundrovec, Brežice",
     "death_type": "poginuo",
     "death_date": "03.03.1945",
-    "death_place": "območju Zg. Vrtače —Borje nad Izlakami",
+    "death_place": "Zg. Vrtače — Borje nad Izlakami",
     "pdf_page": 5,
     "pdf_y": 653.7,
     "pdf_x": 285.9,
@@ -8744,7 +8753,6 @@
     "birth_place": "Brezje, Senovo",
     "death_type": "poginuo",
     "death_date": "27.02.1945",
-    "death_place": "verjetno na pohodu proti Savi",
     "pdf_page": 5,
     "pdf_y": 707.2,
     "pdf_x": 285.9,
@@ -8753,6 +8761,10 @@
     "soldier_id": "0069000409",
     "pdf_x_end": 513.7,
     "occupation": "kmet",
+    "death_place": "Zgornji Savinjski dolini",
+    "borrowed": [
+      "death_place"
+    ],
     "other_sources": [
       {
         "soldier_id": "0164000742",
@@ -9582,6 +9594,7 @@
         "pdf_y": 111.4,
         "pdf_x_end": 501.3,
         "pdf_y_end": 131.4,
+        "unit_detail": "3. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -10299,7 +10312,7 @@
     "birth_place": "Ratanska vas, Rogaška Slatina",
     "death_type": "poginuo",
     "death_date": "03.03.1945",
-    "death_place": "območju Kolovrata",
+    "death_place": "Kolovrat",
     "pdf_page": 6,
     "pdf_y": 506.6,
     "pdf_x": 256.1,
@@ -10407,6 +10420,8 @@
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah pri Frankolovem",
     "birth_date": "29.06.1908"
   },
   {
@@ -11170,7 +11185,7 @@
     "birth_place": "Dobrišna vas, Šmarje pri Jelšah",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45 pri Dravograđu",
+    "death_place": "pri Dravogradu",
     "pdf_page": 7,
     "pdf_y": 347.6,
     "pdf_x": 300.5,
@@ -11335,7 +11350,7 @@
     "birth_place": "Hrastnik",
     "death_type": "poginuo",
     "death_date": "01.03.1945",
-    "death_place": "bolnišnici v Celju",
+    "death_place": "Celje",
     "pdf_page": 7,
     "pdf_y": 391.0,
     "pdf_x": 300.5,
@@ -11631,6 +11646,7 @@
         "pdf_y": 284.0,
         "pdf_x_end": 465.3,
         "pdf_y_end": 303.6,
+        "unit_detail": "2. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -12190,6 +12206,7 @@
         "pdf_y": 310.7,
         "pdf_x_end": 235.7,
         "pdf_y_end": 317.2,
+        "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -12556,7 +12573,7 @@
     "birth_place": "Babno Polje, Cerknica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45, Kot nad Oplotnico",
+    "death_place": "Kot nad Oplotnico",
     "pdf_page": 7,
     "pdf_y": 743.3,
     "pdf_x": 297.8,
@@ -13724,7 +13741,7 @@
     "birth_place": "Tomaž nad Vojnikom",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45 na preboju iz sovražnikove ofenzive v Savinjski dolini",
+    "death_place": "Savinjska dolina",
     "pdf_page": 8,
     "pdf_y": 455.9,
     "pdf_x": 259.6,
@@ -13881,7 +13898,7 @@
     "additional_info": "iz Savinjske doline; † 27. 4. 1944 v goreči šoli v Šoštanju",
     "death_type": "poginuo",
     "death_date": "27.04.1944",
-    "death_place": "goreči šoli v Šoštanju",
+    "death_place": "Šoštanj",
     "pdf_page": 8,
     "pdf_y": 477.0,
     "pdf_x": 259.4,
@@ -16269,6 +16286,7 @@
         "pdf_y": 741.9,
         "pdf_x_end": 376.8,
         "pdf_y_end": 749.4,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -16569,6 +16587,7 @@
         "pdf_y": 567.7,
         "pdf_x_end": 283.1,
         "pdf_y_end": 574.2,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -16888,7 +16907,9 @@
     "pdf_y_end": 648.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000795",
-    "pdf_x_end": 511.1
+    "pdf_x_end": 511.1,
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah"
   },
   {
     "last_name": "Kos",
@@ -18124,6 +18145,8 @@
     "soldier_id": "0069000857",
     "pdf_x_end": 487.1,
     "occupation": "delavec",
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah pri Frankolovem",
     "other_sources": [
       {
         "soldier_id": "0164001424",
@@ -18562,6 +18585,7 @@
         "pdf_y": 290.2,
         "pdf_x_end": 522.9,
         "pdf_y_end": 309.3,
+        "rank": "borec",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -19479,6 +19503,8 @@
         "pdf_y": 140.7,
         "pdf_x_end": 518.0,
         "pdf_y_end": 178.8,
+        "unit_detail": "3. bataljon",
+        "rank": "vodnik",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -19678,6 +19704,7 @@
         "pdf_y": 148.6,
         "pdf_x_end": 506.6,
         "pdf_y_end": 168.4,
+        "unit_detail": "2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -19695,7 +19722,7 @@
     "birth_place": "Šoštanj",
     "death_type": "poginuo",
     "death_date": "16.11.1944",
-    "death_place": "poti iz bolnišnice Košuta na Pohorju",
+    "death_place": "Pohorje",
     "pdf_page": 11,
     "pdf_y": 465.8,
     "pdf_x": 279.3,
@@ -19761,7 +19788,9 @@
     "pdf_y_end": 505.9,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069000934",
-    "pdf_x_end": 501.1
+    "pdf_x_end": 501.1,
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah"
   },
   {
     "last_name": "Kumer",
@@ -20172,7 +20201,7 @@
     "birth_place": "Arto, Sevnica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45 v okolici Dramelj",
+    "death_place": "Okolica Dramelj",
     "pdf_page": 11,
     "pdf_y": 635.2,
     "pdf_x": 278.4,
@@ -21598,7 +21627,7 @@
     "additional_info": "* Slovensko primorje; † 15. 2. 1944 na pohodu 14. divizije na Štajerskem",
     "birth_year": "",
     "birth_place": "Slovensko primorje",
-    "death_place": "pohodu 14. divizije na Štajerskem",
+    "death_place": "Štajerska",
     "pdf_page": 12,
     "pdf_y": 397.8,
     "pdf_x": 254.3,
@@ -21812,7 +21841,7 @@
     "birth_place": "Irje, Rogaška Slatina",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45, Trojane",
+    "death_place": "Trojane",
     "pdf_page": 12,
     "pdf_y": 430.0,
     "pdf_x": 254.3,
@@ -22182,7 +22211,7 @@
     "birth_place": "Požirje, Sežana",
     "death_type": "poginuo",
     "death_date": "18.02.1944",
-    "death_place": "območju Paški Kozjak —Pohorje na pohodu 14. divizije",
+    "death_place": "Paški Kozjak — Pohorje",
     "pdf_page": 12,
     "pdf_y": 535.4,
     "pdf_x": 254.1,
@@ -22479,6 +22508,8 @@
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069001066",
     "pdf_x_end": 491.9,
+    "death_date": "01.1945",
+    "death_place": "v Zgornji Savinjski dolini",
     "other_sources": [
       {
         "soldier_id": "9020017033",
@@ -22491,10 +22522,8 @@
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
-      "death_date",
       "ethnicity"
-    ],
-    "death_date": "1944"
+    ]
   },
   {
     "last_name": "Marguč",
@@ -22596,6 +22625,7 @@
         "pdf_x_end": 514.8,
         "pdf_y_end": 301.8,
         "pdf_x_left": 50.0,
+        "unit_detail": "3. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -22864,7 +22894,6 @@
     "additional_info": "* Grajšovka, Cerknica; † 1943/44; kraj ni ugotovljen",
     "birth_year": "",
     "birth_place": "Grajšovka, Cerknica",
-    "death_place": "/44; kraj ni ugotovljen",
     "pdf_page": 12,
     "pdf_y": 729.0,
     "pdf_x": 253.6,
@@ -22921,6 +22950,7 @@
         "pdf_y": 136.0,
         "pdf_x_end": 517.0,
         "pdf_y_end": 155.9,
+        "unit_detail": "1. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -23034,6 +23064,7 @@
         "pdf_y": 319.2,
         "pdf_x_end": 342.4,
         "pdf_y_end": 325.7,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -25202,6 +25233,7 @@
         "pdf_y": 211.5,
         "pdf_x_end": 499.9,
         "pdf_y_end": 230.8,
+        "unit_detail": "1. četa, 1. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -26407,7 +26439,7 @@
     "birth_year": "",
     "death_type": "poginuo",
     "death_date": "02.1944",
-    "death_place": "Štajerskem v nemški ofenzivi proti 14. diviziji",
+    "death_place": "Štajerska",
     "pdf_page": 14,
     "pdf_y": 511.1,
     "pdf_x": 255.1,
@@ -26754,6 +26786,7 @@
         "pdf_y": 149.3,
         "pdf_x_end": 505.0,
         "pdf_y_end": 178.2,
+        "rank": "bolničar",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -27534,7 +27567,7 @@
     "birth_place": "Pudob, Cerknica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "ali 1945 na Štajerskem",
+    "death_place": "Štajerska",
     "pdf_page": 14,
     "pdf_y": 787.4,
     "pdf_x": 254.6,
@@ -27584,7 +27617,7 @@
     "full_name": "Panošuk Andrej",
     "additional_info": "* v SZ; komisar ruske čete; † 28. 1. 1945 g u kovje pri Slivnici, Šentjur",
     "birth_year": "",
-    "death_place": "g u kovje pri Slivnici, Šentjur",
+    "death_place": "Slivnica, Šentjur",
     "pdf_page": 15,
     "pdf_y": 371.0,
     "pdf_x": 284.4,
@@ -28761,7 +28794,7 @@
     "birth_place": "Straža pri Dramljah",
     "death_type": "poginuo",
     "death_date": "12.1943",
-    "death_place": "ali januarja 1944 v Zgornji Savinjski dolini",
+    "death_place": "Zgornja Savinjska dolina",
     "pdf_page": 15,
     "pdf_y": 479.9,
     "pdf_x": 283.9,
@@ -31359,6 +31392,8 @@
         "pdf_y": 158.2,
         "pdf_x_end": 517.9,
         "pdf_y_end": 178.0,
+        "unit_detail": "1. desetina, 2. vod, 3. četa, 2. bataljon",
+        "rank": "desetar",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -31769,6 +31804,8 @@
     "soldier_id": "0069001512",
     "pdf_x_end": 535.5,
     "occupation": "mlinarski pomočnik",
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah pri Frankolovem",
     "other_sources": [
       {
         "soldier_id": "0164002363",
@@ -31836,6 +31873,7 @@
         "pdf_y": 259.5,
         "pdf_x_end": 465.7,
         "pdf_y_end": 279.1,
+        "unit_detail": "3. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -33037,6 +33075,7 @@
         "pdf_y": 182.2,
         "pdf_x_end": 514.2,
         "pdf_y_end": 202.0,
+        "rank": "borec",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -34660,6 +34699,7 @@
         "pdf_y": 51.6,
         "pdf_x_end": 461.4,
         "pdf_y_end": 70.7,
+        "rank": "kurir",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -34873,6 +34913,7 @@
         "pdf_y": 101.3,
         "pdf_x_end": 515.8,
         "pdf_y_end": 120.9,
+        "unit_detail": "3. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -35662,8 +35703,7 @@
     "full_name": "Sokić Mijo",
     "additional_info": "V. Gradiška; † 1944-1945, Kupusine (AOSJ, Beograd)",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "-1945, Kupusine (AOSJ, Beograd)",
+    "death_place": "Kupusine",
     "pdf_page": 18,
     "pdf_y": 589.1,
     "pdf_x": 260.0,
@@ -35685,8 +35725,10 @@
     "ethnicity": "Hrvat",
     "borrowed": [
       "birth_year",
+      "death_date",
       "ethnicity"
     ],
+    "death_date": "1944",
     "birth_year": "1920"
   },
   {
@@ -35829,6 +35871,7 @@
         "pdf_y": 130.3,
         "pdf_x_end": 468.3,
         "pdf_y_end": 149.6,
+        "unit_detail": "3. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -35877,7 +35920,7 @@
     "additional_info": "Nadlesk, Cerknica; † 25.9. 1943, hrib Srnjak pri Rakeku",
     "death_type": "poginuo",
     "death_date": "25.09.1943",
-    "death_place": "hrib Srnjak pri Rakeku",
+    "death_place": "Srnjak pri Rakeku",
     "pdf_page": 18,
     "pdf_y": 653.2,
     "pdf_x": 260.2,
@@ -35986,7 +36029,7 @@
     "birth_place": "Dobrunje, Ljubljana",
     "death_type": "poginuo",
     "death_date": "20.11.1944",
-    "death_place": "bolnišnici pri Solčavi",
+    "death_place": "Solčava",
     "pdf_page": 18,
     "pdf_y": 696.2,
     "pdf_x": 260.2,
@@ -38276,7 +38319,7 @@
     "additional_info": "* Lož, Cerknica; † 1944/45 na Konjiški gori",
     "birth_year": "",
     "birth_place": "Lož, Cerknica",
-    "death_place": "/45 na Konjiški gori",
+    "death_place": "Konjiška gora",
     "pdf_page": 21,
     "pdf_y": 506.7,
     "pdf_x": 287.1,
@@ -38996,6 +39039,7 @@
         "pdf_y": 233.3,
         "pdf_x_end": 445.6,
         "pdf_y_end": 252.6,
+        "unit_detail": "2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -40766,7 +40810,6 @@
     "birth_place": "Gabrke pri Šoštanju",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "/45 neznano kje",
     "pdf_page": 22,
     "pdf_y": 689.5,
     "pdf_x": 253.2,
@@ -40806,6 +40849,7 @@
         "pdf_y": 438.1,
         "pdf_x_end": 271.1,
         "pdf_y_end": 444.6,
+        "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
         "unit_file": "tomsiceva-soldiers.json"
       },
       {
@@ -42186,7 +42230,9 @@
     "pdf_y_end": 776.0,
     "pdf_file": "braciceva.pdf",
     "soldier_id": "0069002007",
-    "pdf_x_end": 518.1
+    "pdf_x_end": 518.1,
+    "death_date": "12.02.1945",
+    "death_place": "na Stranicah pri Frankolovem"
   },
   {
     "last_name": "Čebulj",
@@ -42908,6 +42954,7 @@
         "pdf_y": 187.9,
         "pdf_x_end": 507.3,
         "pdf_y_end": 207.9,
+        "unit_detail": "1. četa, 2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -43153,6 +43200,7 @@
         "pdf_y": 116.4,
         "pdf_x_end": 525.5,
         "pdf_y_end": 146.3,
+        "unit_detail": "2. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -43980,8 +44028,7 @@
     "birth_year": "1926",
     "birth_place": "Pernica pri Pesnici",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "— 1945 v Savinjski dolini",
+    "death_place": "Savinjska dolina",
     "pdf_page": 19,
     "pdf_y": 664.4,
     "pdf_x": 280.4,
@@ -44002,8 +44049,10 @@
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
+      "death_date",
       "ethnicity"
-    ]
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Šmigoc",
@@ -44931,7 +44980,7 @@
     "additional_info": "* Laporje, Slovenska Bistrica; † 1944/45 v Savinjski dolini ali na Pohorju",
     "birth_year": "",
     "birth_place": "Laporje, Slovenska Bistrica",
-    "death_place": "/45 v Savinjski dolini ali na Pohorju",
+    "death_place": "Savinjska dolina",
     "pdf_page": 20,
     "pdf_y": 469.4,
     "pdf_x": 261.6,
@@ -45654,7 +45703,7 @@
     "additional_info": "* Žusem, Šmarje pri Jelšah; † 1944/45, Zgomje Slemene, Dramlje",
     "birth_year": "",
     "birth_place": "Žusem, Šmarje pri Jelšah",
-    "death_place": "/45, Zgomje Slemene, Dramlje",
+    "death_place": "Zgornje Slemene, Dramlje",
     "pdf_page": 23,
     "pdf_y": 601.4,
     "pdf_x": 297.0,
@@ -46398,6 +46447,7 @@
         "pdf_y": 180.0,
         "pdf_x_end": 503.8,
         "pdf_y_end": 209.2,
+        "rank": "kurir",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],

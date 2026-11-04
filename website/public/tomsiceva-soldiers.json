@@ -333,6 +333,7 @@
         "pdf_y": 375.4,
         "pdf_x_end": 112.7,
         "pdf_y_end": 387.6,
+        "unit_detail": "2. bataljon",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -769,6 +770,7 @@
         "pdf_y": 522.0,
         "pdf_x_end": 277.5,
         "pdf_y_end": 541.3,
+        "unit_detail": "baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -1075,6 +1077,7 @@
         "pdf_y": 274.6,
         "pdf_x_end": 216.1,
         "pdf_y_end": 288.1,
+        "unit_detail": "štab brigade",
         "unit_file": "gradnikova-soldiers.json"
       },
       {
@@ -3008,6 +3011,7 @@
         "pdf_y": 200.6,
         "pdf_x_end": 204.9,
         "pdf_y_end": 212.7,
+        "unit_detail": "1. bataljon",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -3363,6 +3367,7 @@
         "pdf_y": 297.8,
         "pdf_x_end": 204.4,
         "pdf_y_end": 309.9,
+        "unit_detail": "štab brigade",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -3423,6 +3428,7 @@
         "pdf_y": 328.1,
         "pdf_x_end": 279.0,
         "pdf_y_end": 347.4,
+        "unit_detail": "Zaščitna patrola",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -4212,6 +4218,9 @@
         "pdf_y": 509.6,
         "pdf_x_end": 371.8,
         "pdf_y_end": 551.5,
+        "unit_detail": "2. bataljon",
+        "rank": "vodnik",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -4237,6 +4246,7 @@
         "pdf_y": 575.4,
         "pdf_x_end": 263.5,
         "pdf_y_end": 591.5,
+        "unit_detail": "štab brigade",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -4894,7 +4904,6 @@
     "birth_year": "1924",
     "birth_place": "Jelševnik",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 4,
     "pdf_y": 188.0,
     "pdf_x": 132.4,
@@ -5606,14 +5615,7 @@
         "pdf_x_end": 287.8
       }
     ],
-    "pdf_x_end": 302.1,
-    "variants": {
-      "death": [
-        {
-          "date": "1942"
-        }
-      ]
-    }
+    "pdf_x_end": 302.1
   },
   {
     "last_name": "Curk",
@@ -5625,7 +5627,6 @@
     "birth_year": "1924",
     "birth_place": "Hrušica",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Šmarje Sap",
     "pdf_page": 4,
     "pdf_y": 403.4,
@@ -5715,6 +5716,7 @@
         "pdf_y": 599.4,
         "pdf_x_end": 381.8,
         "pdf_y_end": 615.8,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -6424,6 +6426,7 @@
         "pdf_y": 425.0,
         "pdf_x_end": 285.3,
         "pdf_y_end": 455.1,
+        "unit_detail": "Novi breg, Podlipoglav",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -6995,6 +6998,9 @@
         "pdf_y": 334.5,
         "pdf_x_end": 472.3,
         "pdf_y_end": 368.2,
+        "unit_detail": "5. bataljon",
+        "rank": "zamjenik komandanta",
+        "since": "1944-12",
         "unit_file": "1-krajiska-soldiers.json"
       }
     ],
@@ -7317,7 +7323,6 @@
     "birth_year": "1922",
     "birth_place": "Svržaki",
     "death_type": "poginuo",
-    "death_date": "1943",
     "death_place": "Jugorje",
     "pdf_page": 5,
     "pdf_y": 590.2,
@@ -9559,14 +9564,27 @@
     "birth_year": "1924",
     "birth_place": "Šentrupert",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 7,
     "pdf_y": 332.4,
     "pdf_x": 138.8,
     "pdf_y_end": 340.4,
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000297",
-    "pdf_x_end": 320.6
+    "pdf_x_end": 320.6,
+    "other_sources": [
+      {
+        "soldier_id": "0070100927",
+        "name": "Golob Jože",
+        "additional_info": "zvani Rudi; * 1924 Šentrupert 19 † 1944",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 10,
+        "pdf_x": 142.5,
+        "pdf_y": 589.6,
+        "pdf_x_end": 320.1,
+        "pdf_y_end": 597.6
+      }
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Golobič",
@@ -10058,6 +10076,7 @@
         "pdf_y": 297.6,
         "pdf_x_end": 270.7,
         "pdf_y_end": 316.9,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -10143,6 +10162,7 @@
         "pdf_y": 342.2,
         "pdf_x_end": 438.3,
         "pdf_y_end": 371.1,
+        "unit_detail": "Tisovec, Novi breg, Podlipoglav, Dolomiti, baza 21",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -11020,6 +11040,7 @@
         "pdf_y": 190.8,
         "pdf_x_end": 303.6,
         "pdf_y_end": 203.1,
+        "unit_detail": "2. bataljon",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -12062,6 +12083,7 @@
         "pdf_y": 204.0,
         "pdf_x_end": 450.9,
         "pdf_y_end": 234.1,
+        "unit_detail": "baza 21, baza 20, baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -12562,7 +12584,6 @@
     "birth_year": "1913",
     "birth_place": "Gabrje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Trebnje",
     "pdf_page": 9,
     "pdf_y": 228.4,
@@ -12584,14 +12605,7 @@
       }
     ],
     "pdf_x_end": 315.9,
-    "variants": {
-      "death": [
-        {
-          "date": "1944",
-          "place": "Trebnje"
-        }
-      ]
-    }
+    "death_date": "1944"
   },
   {
     "last_name": "Ivančič",
@@ -12840,6 +12854,7 @@
         "pdf_y": 380.4,
         "pdf_x_end": 450.5,
         "pdf_y_end": 410.2,
+        "unit_detail": "Podlipoglav, Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -13327,7 +13342,6 @@
     "birth_year": "1925",
     "birth_place": "Cerkvišče",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Štajerska",
     "pdf_page": 9,
     "pdf_y": 412.7,
@@ -13335,7 +13349,21 @@
     "pdf_y_end": 420.7,
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000413",
-    "pdf_x_end": 338.3
+    "pdf_x_end": 338.3,
+    "other_sources": [
+      {
+        "soldier_id": "0070101347",
+        "name": "Jakofčič Miha",
+        "additional_info": "* 1923 Crkvišče † 1943",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 14,
+        "pdf_x": 149.0,
+        "pdf_y": 559.0,
+        "pdf_x_end": 295.9,
+        "pdf_y_end": 567.0
+      }
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Jakofčič",
@@ -13716,6 +13744,7 @@
         "pdf_y": 493.4,
         "pdf_x_end": 448.3,
         "pdf_y_end": 512.5,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -14915,7 +14944,6 @@
     "birth_year": "1922",
     "birth_place": "Podbočje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Novo mesto",
     "pdf_page": 10,
     "pdf_y": 439.3,
@@ -14971,7 +14999,6 @@
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000469",
     "pdf_x_end": 269.4,
-    "death_date": "1942",
     "death_type": "poginuo"
   },
   {
@@ -15158,7 +15185,6 @@
     "birth_year": "1925",
     "birth_place": "Ljubljana",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 10,
     "pdf_y": 506.7,
     "pdf_x": 136.8,
@@ -16097,6 +16123,7 @@
         "pdf_y": 563.1,
         "pdf_x_end": 541.3,
         "pdf_y_end": 579.5,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -18396,6 +18423,7 @@
         "pdf_y": 366.5,
         "pdf_x_end": 434.0,
         "pdf_y_end": 385.8,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -18734,6 +18762,7 @@
         "pdf_y": 390.0,
         "pdf_x_end": 441.7,
         "pdf_y_end": 409.3,
+        "unit_detail": "Novi breg, baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -19541,6 +19570,7 @@
         "pdf_y": 567.8,
         "pdf_x_end": 429.8,
         "pdf_y_end": 587.1,
+        "unit_detail": "Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -19991,6 +20021,7 @@
         "pdf_y": 190.1,
         "pdf_x_end": 281.5,
         "pdf_y_end": 198.6,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -20819,7 +20850,6 @@
     "birth_year": "1910",
     "birth_place": "Celje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 13,
     "pdf_y": 615.4,
     "pdf_x": 136.8,
@@ -20840,13 +20870,7 @@
       }
     ],
     "pdf_x_end": 293.2,
-    "variants": {
-      "death": [
-        {
-          "date": "1944"
-        }
-      ]
-    }
+    "death_date": "1944"
   },
   {
     "last_name": "Kramarič",
@@ -23446,6 +23470,7 @@
         "pdf_y": 285.7,
         "pdf_x_end": 266.1,
         "pdf_y_end": 302.2,
+        "unit_detail": "2. bataljon",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -23472,7 +23497,6 @@
     "birth_year": "1925",
     "birth_place": "Dolenjci Adlešiči",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 15,
     "pdf_y": 423.0,
     "pdf_x": 144.9,
@@ -23493,13 +23517,7 @@
       }
     ],
     "pdf_x_end": 344.7,
-    "variants": {
-      "death": [
-        {
-          "date": "1944"
-        }
-      ]
-    }
+    "death_date": "1944"
   },
   {
     "last_name": "Lotrič",
@@ -23924,7 +23942,6 @@
     "birth_year": "1923",
     "birth_place": "Jugorje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Jelenov žleb",
     "pdf_page": 15,
     "pdf_y": 545.2,
@@ -24686,7 +24703,6 @@
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000778",
     "pdf_x_end": 251.2,
-    "death_date": "1942",
     "death_type": "poginuo"
   },
   {
@@ -25021,6 +25037,7 @@
         "pdf_y": 341.7,
         "pdf_x_end": 235.2,
         "pdf_y_end": 361.0,
+        "unit_detail": "Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -26170,6 +26187,7 @@
         "pdf_y": 504.9,
         "pdf_x_end": 242.6,
         "pdf_y_end": 524.2,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -27261,6 +27279,7 @@
         "pdf_y": 260.6,
         "pdf_x_end": 416.4,
         "pdf_y_end": 279.7,
+        "unit_detail": "Zaščitna patrola",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -27276,7 +27295,6 @@
     "additional_info": "† 1942—1945",
     "birth_year": "",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 17,
     "pdf_y": 544.6,
     "pdf_x": 142.1,
@@ -27721,6 +27739,7 @@
         "pdf_y": 461.8,
         "pdf_x_end": 125.1,
         "pdf_y_end": 478.2,
+        "unit_detail": "2. bataljon",
         "unit_file": "istrski-odred-soldiers.json"
       },
       {
@@ -28145,6 +28164,7 @@
         "pdf_y": 402.0,
         "pdf_x_end": 420.0,
         "pdf_y_end": 421.0,
+        "unit_detail": "baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -28283,6 +28303,7 @@
         "pdf_y": 561.0,
         "pdf_x_end": 430.9,
         "pdf_y_end": 576.7,
+        "unit_detail": "štab brigade",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -28307,6 +28328,7 @@
         "pdf_y": 119.4,
         "pdf_x_end": 153.7,
         "pdf_y_end": 136.8,
+        "unit_detail": "štab brigade",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -28402,7 +28424,6 @@
     "additional_info": "* 1930 † 1942 — 1945 Karteljevo",
     "birth_year": "1930",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Karteljevo",
     "pdf_page": 18,
     "pdf_y": 361.7,
@@ -28715,6 +28736,7 @@
         "pdf_y": 386.5,
         "pdf_x_end": 152.8,
         "pdf_y_end": 404.4,
+        "unit_detail": "3. bataljon",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -28820,6 +28842,7 @@
         "pdf_y": 377.0,
         "pdf_x_end": 278.8,
         "pdf_y_end": 396.6,
+        "unit_detail": "Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
@@ -28998,7 +29021,6 @@
     "birth_year": "1919",
     "birth_place": "Kitni vrh",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Podturn",
     "pdf_page": 18,
     "pdf_y": 554.5,
@@ -29020,14 +29042,7 @@
       }
     ],
     "pdf_x_end": 297.3,
-    "variants": {
-      "death": [
-        {
-          "date": "1943",
-          "place": "Podturn"
-        }
-      ]
-    }
+    "death_date": "1943"
   },
   {
     "last_name": "Mušič",
@@ -29039,7 +29054,6 @@
     "birth_year": "1916",
     "birth_place": "Krasinec",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 18,
     "pdf_y": 562.0,
     "pdf_x": 139.8,
@@ -29725,6 +29739,7 @@
         "pdf_y": 399.6,
         "pdf_x_end": 282.7,
         "pdf_y_end": 418.6,
+        "unit_detail": "baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -29805,6 +29820,7 @@
         "pdf_y": 452.6,
         "pdf_x_end": 275.6,
         "pdf_y_end": 471.9,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -29991,7 +30007,6 @@
     "birth_year": "1922",
     "birth_place": "Boh. Bistrica",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 19,
     "pdf_y": 322.3,
     "pdf_x": 133.6,
@@ -30013,14 +30028,7 @@
     ],
     "death_place": "Rakov Škocjan",
     "pdf_x_end": 307.2,
-    "variants": {
-      "death": [
-        {
-          "date": "1943",
-          "place": "Rakov Škocjan"
-        }
-      ]
-    }
+    "death_date": "1943"
   },
   {
     "last_name": "Ogulin",
@@ -30272,6 +30280,7 @@
         "pdf_y": 339.5,
         "pdf_x_end": 103.7,
         "pdf_y_end": 351.9,
+        "unit_detail": "1. bataljon",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -31436,6 +31445,7 @@
         "pdf_y": 426.7,
         "pdf_x_end": 429.9,
         "pdf_y_end": 446.0,
+        "unit_detail": "baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -31581,6 +31591,7 @@
         "pdf_y": 26.9,
         "pdf_x_end": 148.7,
         "pdf_y_end": 40.4,
+        "unit_detail": "štab brigade",
         "unit_file": "gradnikova-soldiers.json"
       },
       {
@@ -32430,6 +32441,9 @@
         "pdf_y": 94.2,
         "pdf_x_end": 355.1,
         "pdf_y_end": 126.2,
+        "unit_detail": "5. bataljon",
+        "rank": "borac",
+        "since": "1941-12",
         "unit_file": "prva-proleterska-soldiers.json"
       },
       {
@@ -33727,7 +33741,6 @@
     "birth_year": "1914",
     "birth_place": "Dol. Jezero",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Zavrh pri Borovnici",
     "pdf_page": 21,
     "pdf_y": 459.4,
@@ -33761,14 +33774,10 @@
       }
     ],
     "pdf_x_end": 395.9,
-    "variants": {
-      "death": [
-        {
-          "date": "10.1943",
-          "place": "Zavrh pri Borovnici"
-        }
-      ]
-    }
+    "death_date": "10.1943",
+    "borrowed": [
+      "death_date"
+    ]
   },
   {
     "last_name": "Popek",
@@ -34490,7 +34499,7 @@
     "additional_info": "zvani Slobodan; * 1918 Dol. Nemška vas † 1943 Srednja vas pri Črmošnjicah",
     "birth_year": "1918",
     "birth_place": "Dol. Nemška vas",
-    "death_place": "Srednja vas pri Črmo-",
+    "death_place": "Srednja vas pri Črmo",
     "pdf_page": 22,
     "pdf_y": 218.2,
     "pdf_x": 138.3,
@@ -34511,6 +34520,7 @@
         "pdf_y": 367.6,
         "pdf_x_end": 131.0,
         "pdf_y_end": 384.7,
+        "unit_detail": "1. bataljon",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -34800,6 +34810,7 @@
         "pdf_y": 454.3,
         "pdf_x_end": 264.0,
         "pdf_y_end": 473.6,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -34897,6 +34908,7 @@
         "pdf_y": 490.5,
         "pdf_x_end": 247.2,
         "pdf_y_end": 509.8,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
@@ -35592,7 +35604,6 @@
     "birth_year": "1922",
     "birth_place": "Gabrje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Popovski hrib",
     "pdf_page": 22,
     "pdf_y": 531.9,
@@ -37252,6 +37263,7 @@
         "pdf_y": 439.7,
         "pdf_x_end": 435.0,
         "pdf_y_end": 459.0,
+        "unit_detail": "baza 15A",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -38791,6 +38803,7 @@
         "pdf_y": 272.6,
         "pdf_x_end": 284.8,
         "pdf_y_end": 291.7,
+        "unit_detail": "baza 15A",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -38951,7 +38964,6 @@
     "birth_year": "1925",
     "birth_place": "Velike Lašče",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 24,
     "pdf_y": 480.0,
     "pdf_x": 143.8,
@@ -39888,7 +39900,6 @@
     "birth_year": "1922",
     "birth_place": "Cerkvišče",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 25,
     "pdf_y": 284.9,
     "pdf_x": 136.2,
@@ -39906,18 +39917,23 @@
         "pdf_y": 297.9,
         "pdf_y_end": 305.9,
         "pdf_x_end": 334.9
+      },
+      {
+        "soldier_id": "9020001259",
+        "name": "Starešinič (Janez) Alojz",
+        "additional_info": "rođen 1922, Cerkvišče (Črnomelj). Slovenac, poginuo 1943. u NOBu, Cerknica-nobran",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=58",
+        "source_page": 58,
+        "ref_book": "zrtve-rata-1964-slo"
       }
     ],
     "death_place": "Cerknica",
     "pdf_x_end": 310.0,
-    "variants": {
-      "death": [
-        {
-          "date": "1943",
-          "place": "Cerknica"
-        }
-      ]
-    }
+    "death_date": "1943",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Starešinič",
@@ -40083,7 +40099,6 @@
     "birth_year": "1912",
     "birth_place": "Krasinec",
     "death_type": "poginuo",
-    "death_date": "1943",
     "pdf_page": 25,
     "pdf_y": 336.7,
     "pdf_x": 136.7,
@@ -41379,6 +41394,7 @@
         "pdf_y": 211.7,
         "pdf_x_end": 278.9,
         "pdf_y_end": 220.2,
+        "unit_detail": "baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -41514,6 +41530,8 @@
         "pdf_y": 223.2,
         "pdf_x_end": 302.3,
         "pdf_y_end": 237.0,
+        "unit_detail": "štab brigade",
+        "rank": "komandant korpusa",
         "unit_file": "gradnikova-soldiers.json"
       },
       {
@@ -41881,7 +41899,6 @@
     "birth_year": "1921",
     "birth_place": "Boštanj pri Sevnici",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 28,
     "pdf_y": 333.5,
     "pdf_x": 132.9,
@@ -42837,6 +42854,7 @@
         "pdf_y": 466.5,
         "pdf_x_end": 277.9,
         "pdf_y_end": 485.6,
+        "unit_detail": "baza 15A",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -42997,7 +43015,6 @@
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070001362",
     "pdf_x_end": 261.5,
-    "death_date": "1943",
     "death_type": "poginuo",
     "other_sources": [
       {
@@ -43012,9 +43029,11 @@
     "ethnicity": "Slovenac",
     "borrowed": [
       "birth_year",
+      "death_date",
       "death_place",
       "ethnicity"
     ],
+    "death_date": "1943",
     "death_place": "Cerknica",
     "birth_year": "1924"
   },
@@ -44771,6 +44790,7 @@
         "pdf_y": 113.2,
         "pdf_x_end": 131.6,
         "pdf_y_end": 130.6,
+        "unit_detail": "2. bataljon",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -44896,6 +44916,7 @@
         "pdf_y": 415.9,
         "pdf_x_end": 447.1,
         "pdf_y_end": 435.2,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -45912,6 +45933,7 @@
         "pdf_y": 302.9,
         "pdf_x_end": 289.1,
         "pdf_y_end": 321.9,
+        "unit_detail": "baza 21, baza 20",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -45963,6 +45985,7 @@
         "pdf_y": 326.4,
         "pdf_x_end": 280.4,
         "pdf_y_end": 345.4,
+        "unit_detail": "baza 21, baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -46360,6 +46383,7 @@
         "pdf_y": 301.6,
         "pdf_x_end": 280.7,
         "pdf_y_end": 309.6,
+        "unit_detail": "4. bataljon",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -46480,6 +46504,7 @@
         "pdf_y": 281.4,
         "pdf_x_end": 261.6,
         "pdf_y_end": 297.3,
+        "unit_detail": "4. bataljon",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -46934,7 +46959,6 @@
     "birth_year": "1912",
     "birth_place": "Dobrava Dobrnič",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 31,
     "pdf_y": 325.6,
     "pdf_x": 138.3,
@@ -47157,6 +47181,7 @@
         "pdf_y": 480.0,
         "pdf_x_end": 449.0,
         "pdf_y_end": 510.1,
+        "unit_detail": "baza 20, Avstrijska baza, Dolomiti",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -47373,6 +47398,7 @@
         "pdf_y": 585.3,
         "pdf_x_end": 420.4,
         "pdf_y_end": 604.4,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -47608,7 +47634,6 @@
     "birth_year": "1923",
     "birth_place": "Boginja vas",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 4,
     "pdf_y": 615.1,
     "pdf_x": 130.0,
@@ -47629,13 +47654,7 @@
       }
     ],
     "pdf_x_end": 299.0,
-    "variants": {
-      "death": [
-        {
-          "date": "1944"
-        }
-      ]
-    }
+    "death_date": "1944"
   },
   {
     "last_name": "Črnič",
@@ -47750,7 +47769,6 @@
     "birth_year": "1912",
     "birth_place": "Laško Udmat",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 26,
     "pdf_y": 224.7,
     "pdf_x": 141.8,
@@ -47771,13 +47789,7 @@
       }
     ],
     "pdf_x_end": 370.2,
-    "variants": {
-      "death": [
-        {
-          "date": "1944"
-        }
-      ]
-    }
+    "death_date": "1944"
   },
   {
     "last_name": "Šavli",
@@ -49538,7 +49550,7 @@
     "fathers_name": "",
     "full_name": "Špehar Ludvik",
     "additional_info": "* Kot ob Kolpi † 1943—1945",
-    "birth_year": "",
+    "birth_year": "1926",
     "birth_place": "Kot ob Kolpi",
     "pdf_page": 27,
     "pdf_y": 224.7,
@@ -49547,8 +49559,21 @@
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070001567",
     "pdf_x_end": 305.1,
-    "death_date": "1943",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "other_sources": [
+      {
+        "soldier_id": "0070104989",
+        "name": "Špehar Ludvik",
+        "additional_info": "* 1926 Kot ob Kolpi † 1944",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 41,
+        "pdf_x": 131.8,
+        "pdf_y": 248.7,
+        "pdf_x_end": 295.4,
+        "pdf_y_end": 256.6
+      }
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Špehar",
@@ -49956,7 +49981,6 @@
     "birth_year": "1922",
     "birth_place": "Dobliče",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Sredgora",
     "pdf_page": 27,
     "pdf_y": 348.7,
@@ -49964,7 +49988,23 @@
     "pdf_y_end": 355.2,
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070001581",
-    "pdf_x_end": 307.6
+    "pdf_x_end": 307.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020001350",
+        "name": "Šterk (Janez) Jože",
+        "additional_info": "rođen 1922, Dobliče (Črnomelj). Slovenac, poginuo 1944. u NOBu, Predgora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=60",
+        "source_page": 60,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Štimac",
@@ -49976,7 +50016,6 @@
     "birth_year": "1921",
     "birth_place": "Mirtoviči",
     "death_type": "poginuo",
-    "death_date": "1943",
     "pdf_page": 27,
     "pdf_y": 356.2,
     "pdf_x": 144.8,
@@ -50349,6 +50388,7 @@
         "pdf_y": 321.5,
         "pdf_x_end": 118.4,
         "pdf_y_end": 338.9,
+        "unit_detail": "štab brigade",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -50709,6 +50749,7 @@
         "pdf_y": 340.3,
         "pdf_x_end": 172.5,
         "pdf_y_end": 347.3,
+        "unit_detail": "1. bataljon",
         "unit_file": "dvanajsta-soldiers.json"
       },
       {
@@ -50958,7 +50999,6 @@
     "birth_year": "",
     "birth_place": "Vranoviči",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 27,
     "pdf_y": 633.6,
     "pdf_x": 144.3,
@@ -51107,7 +51147,6 @@
     "birth_year": "1914",
     "birth_place": "Banjšice",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Loški potok",
     "pdf_page": 31,
     "pdf_y": 413.4,
@@ -51690,6 +51729,7 @@
         "pdf_y": 347.0,
         "pdf_x_end": 446.1,
         "pdf_y_end": 366.1,
+        "unit_detail": "baza 25",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -52257,8 +52297,7 @@
     "pdf_file": "tomsiceva-3.pdf",
     "soldier_id": "0070010002",
     "pdf_x_end": 458.8,
-    "death_type": "poginuo",
-    "death_date": "1944"
+    "death_type": "poginuo"
   },
   {
     "last_name": "Bajuk",
@@ -53657,6 +53696,7 @@
         "pdf_y": 433.4,
         "pdf_x_end": 211.5,
         "pdf_y_end": 445.8,
+        "unit_detail": "2. bataljon",
         "unit_file": "deveta-soldiers.json"
       },
       {
@@ -53740,6 +53780,7 @@
         "pdf_y": 602.9,
         "pdf_x_end": 448.3,
         "pdf_y_end": 621.7,
+        "unit_detail": "baza 21, baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -53803,6 +53844,7 @@
         "pdf_y": 510.7,
         "pdf_x_end": 439.5,
         "pdf_y_end": 529.5,
+        "unit_detail": "Podlipoglav",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ]
@@ -54983,6 +55025,7 @@
         "pdf_y": 354.9,
         "pdf_x_end": 419.2,
         "pdf_y_end": 374.0,
+        "unit_detail": "baza 21",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -56010,6 +56053,7 @@
         "pdf_y": 84.6,
         "pdf_x_end": 128.9,
         "pdf_y_end": 103.4,
+        "unit_detail": "2. divizion",
         "unit_file": "1-slovenska-artilerijska-soldiers.json"
       },
       {
@@ -57229,6 +57273,7 @@
         "pdf_y": 590.1,
         "pdf_x_end": 442.9,
         "pdf_y_end": 609.7,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -57609,7 +57654,6 @@
     "birth_year": "1926",
     "birth_place": "Topolšica",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 49,
     "pdf_y": 405.2,
     "pdf_x": 132.6,
@@ -57680,7 +57724,6 @@
     "birth_year": "1927",
     "birth_place": "Muretinci",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 49,
     "pdf_y": 432.8,
     "pdf_x": 132.2,
@@ -57707,15 +57750,19 @@
         "pdf_y": 77.8,
         "pdf_x_end": 512.0,
         "pdf_y_end": 96.9,
+        "unit_detail": "3. četa",
+        "rank": "borec",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
     "occupation": "kmečki sin",
     "death_place": "Pohorje",
-    "ethnicity": "Slovenac",
+    "death_date": "leta 1944",
     "borrowed": [
+      "death_date",
       "ethnicity"
     ],
+    "ethnicity": "Slovenac",
     "birth_date": "15.04.1927"
   },
   {
@@ -58248,7 +58295,6 @@
     "birth_year": "1911",
     "birth_place": "Središče ob Dravi",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 49,
     "pdf_y": 561.7,
     "pdf_x": 132.1,
@@ -59071,7 +59117,6 @@
     "birth_year": "1919",
     "birth_place": "Zavrh pri Galiciji",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 50,
     "pdf_y": 290.9,
     "pdf_x": 138.7,
@@ -59245,6 +59290,7 @@
         "pdf_y": 546.1,
         "pdf_x_end": 288.6,
         "pdf_y_end": 562.9,
+        "unit_detail": "3. bataljon",
         "unit_file": "cankarjeva-soldiers.json"
       },
       {
@@ -60898,7 +60944,6 @@
     "birth_year": "1910",
     "birth_place": "Žabjek",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 51,
     "pdf_y": 319.0,
     "pdf_x": 134.8,
@@ -61180,7 +61225,6 @@
     "birth_year": "1903",
     "birth_place": "Sreska vas pri Laškem",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 51,
     "pdf_y": 429.7,
     "pdf_x": 134.0,
@@ -61720,14 +61764,14 @@
     "birth_year": "",
     "birth_place": "Stare Slemene",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 51,
     "pdf_y": 622.9,
     "pdf_x": 133.6,
     "pdf_y_end": 630.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100297",
-    "pdf_x_end": 295.2
+    "pdf_x_end": 295.2,
+    "death_date": "1945"
   },
   {
     "last_name": "Boh",
@@ -63410,7 +63454,6 @@
     "birth_year": "1903",
     "birth_place": "Andraž nad Polzelo",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 53,
     "pdf_y": 396.1,
     "pdf_x": 132.8,
@@ -65251,8 +65294,7 @@
     "additional_info": "† 1944-1945 Nova Štifta 2",
     "birth_year": "",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Nova Štifta 2",
+    "death_place": "Nova Štifta",
     "pdf_page": 54,
     "pdf_y": 507.9,
     "pdf_x": 130.3,
@@ -71095,7 +71137,6 @@
     "birth_year": "1926",
     "birth_place": "Podvolovljek",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 59,
     "pdf_y": 586.1,
     "pdf_x": 132.1,
@@ -71115,9 +71156,11 @@
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
+      "death_date",
       "death_place",
       "ethnicity"
     ],
+    "death_date": "1944",
     "death_place": "Štab tomšičeve br"
   },
   {
@@ -71233,6 +71276,7 @@
         "pdf_y": 583.9,
         "pdf_x_end": 435.4,
         "pdf_y_end": 603.4,
+        "unit_detail": "Novi breg",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -71276,25 +71320,6 @@
       "ethnicity"
     ],
     "death_place": "Cerklje"
-  },
-  {
-    "last_name": "Golob",
-    "middle_name": "",
-    "first_name": "Jože",
-    "fathers_name": "",
-    "full_name": "Golob Jože",
-    "additional_info": "zvani Rudi; * 1924 Šentrupert 19 † 1944",
-    "birth_year": "1924",
-    "birth_place": "Šentrupert",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_page": 10,
-    "pdf_y": 589.6,
-    "pdf_x": 142.5,
-    "pdf_y_end": 597.6,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070100927",
-    "pdf_x_end": 320.1
   },
   {
     "last_name": "Golob",
@@ -73944,8 +73969,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101090",
     "pdf_x_end": 398.5,
-    "death_type": "poginuo",
-    "death_date": "1944"
+    "death_type": "poginuo"
   },
   {
     "last_name": "Gruden",
@@ -74354,7 +74378,6 @@
     "birth_year": "1925",
     "birth_place": "Loče pri Poljčanah",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 62,
     "pdf_y": 252.1,
     "pdf_x": 148.7,
@@ -74443,8 +74466,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101128",
     "pdf_x_end": 338.6,
-    "death_type": "poginuo",
-    "death_date": "1944"
+    "death_type": "poginuo"
   },
   {
     "last_name": "Halužan",
@@ -74973,7 +74995,6 @@
     "birth_year": "1917",
     "birth_place": "Vinagora, Pregrada",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Ostri vrh",
     "pdf_page": 62,
     "pdf_y": 482.3,
@@ -77550,7 +77571,6 @@
     "birth_year": "1907",
     "birth_place": "Trbonje",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 64,
     "pdf_y": 383.6,
     "pdf_x": 148.3,
@@ -77592,25 +77612,6 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101338",
     "pdf_x_end": 281.6
-  },
-  {
-    "last_name": "Jakofčič",
-    "middle_name": "",
-    "first_name": "Miha",
-    "fathers_name": "",
-    "full_name": "Jakofčič Miha",
-    "additional_info": "* 1923 Crkvišče † 1943",
-    "birth_year": "1923",
-    "birth_place": "Crkvišče",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "pdf_page": 14,
-    "pdf_y": 559.0,
-    "pdf_x": 149.0,
-    "pdf_y_end": 567.0,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070101347",
-    "pdf_x_end": 295.9
   },
   {
     "last_name": "Jakop",
@@ -78169,7 +78170,6 @@
     "birth_year": "1904",
     "birth_place": "Škale",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Zg. Savinjska dolina",
     "pdf_page": 64,
     "pdf_y": 604.6,
@@ -78190,8 +78190,10 @@
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
+      "death_date",
       "ethnicity"
-    ]
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Janež",
@@ -79176,7 +79178,7 @@
     "birth_place": "Kastav",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Lindek (13.B.)",
+    "death_place": "Lindek",
     "pdf_page": 15,
     "pdf_y": 550.6,
     "pdf_x": 132.1,
@@ -79553,6 +79555,7 @@
         "pdf_y": 122.4,
         "pdf_x_end": 485.0,
         "pdf_y_end": 141.5,
+        "rank": "komandant odreda",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -79848,7 +79851,6 @@
     "birth_year": "1905",
     "birth_place": "Kamna Gora",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Otiško Selo",
     "pdf_page": 66,
     "pdf_y": 234.2,
@@ -80404,6 +80406,7 @@
         "pdf_y": 228.5,
         "pdf_x_end": 277.6,
         "pdf_y_end": 247.8,
+        "unit_detail": "Tisovec, Podlipoglav",
         "unit_file": "zascitna-enota-soldiers.json"
       },
       {
@@ -81975,7 +81978,6 @@
     "birth_year": "1911",
     "birth_place": "Zavodnje",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Savinjska dolina",
     "pdf_page": 67,
     "pdf_y": 447.9,
@@ -83108,6 +83110,7 @@
         "pdf_y": 47.8,
         "pdf_x_end": 528.2,
         "pdf_y_end": 68.3,
+        "rank": "kurir, intendant",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -84791,7 +84794,6 @@
     "birth_year": "1922",
     "birth_place": "Završe",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Št. Ilj pod Tutjakom",
     "pdf_page": 69,
     "pdf_y": 485.7,
@@ -86983,7 +86985,6 @@
     "birth_year": "1913",
     "birth_place": "Kraberk",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 71,
     "pdf_y": 535.0,
     "pdf_x": 132.1,
@@ -88751,7 +88752,6 @@
     "birth_year": "1908",
     "birth_place": "Celje",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 72,
     "pdf_y": 594.8,
     "pdf_x": 138.2,
@@ -88931,7 +88931,6 @@
     "birth_year": "1917",
     "birth_place": "Zavodnje",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 73,
     "pdf_y": 199.5,
     "pdf_x": 130.8,
@@ -89970,7 +89969,6 @@
     "birth_year": "1911",
     "birth_place": "Solčava",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 73,
     "pdf_y": 540.5,
     "pdf_x": 129.0,
@@ -90303,7 +90301,6 @@
     "birth_year": "1903",
     "birth_place": "Mislinja",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 74,
     "pdf_y": 190.4,
     "pdf_x": 144.9,
@@ -90431,7 +90428,6 @@
     "birth_year": "1920",
     "birth_place": "Gorica pri Moravčah",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 74,
     "pdf_y": 291.9,
     "pdf_x": 144.9,
@@ -90750,7 +90746,6 @@
     "birth_year": "1909",
     "birth_place": "Škofja vas",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 74,
     "pdf_y": 439.5,
     "pdf_x": 144.4,
@@ -90804,6 +90799,7 @@
         "pdf_y": 114.5,
         "pdf_x_end": 531.3,
         "pdf_y_end": 143.2,
+        "unit_detail": "1. četa, 1. bataljon",
         "unit_file": "kozjanski-odred-soldiers.json"
       }
     ],
@@ -92543,7 +92539,6 @@
     "birth_year": "1901",
     "birth_place": "Ljutomer",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 75,
     "pdf_y": 571.5,
     "pdf_x": 132.4,
@@ -94096,7 +94091,6 @@
     "birth_year": "1923",
     "birth_place": "Šempeter",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Bela Krajina",
     "pdf_page": 76,
     "pdf_y": 452.0,
@@ -94117,8 +94111,10 @@
     ],
     "ethnicity": "Slovenac",
     "borrowed": [
+      "death_date",
       "ethnicity"
-    ]
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Ločnikar",
@@ -95663,7 +95659,6 @@
     "additional_info": "* 1917 † 1942-1945",
     "birth_year": "1917",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 77,
     "pdf_y": 531.7,
     "pdf_x": 127.8,
@@ -96086,7 +96081,7 @@
     "birth_place": "Cerknica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Perkos pri Grahovem (2.UB.)",
+    "death_place": "Perkos pri Grahovem",
     "pdf_page": 25,
     "pdf_y": 375.2,
     "pdf_x": 130.2,
@@ -96704,7 +96699,6 @@
     "additional_info": "† 1944-1945",
     "birth_year": "",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 78,
     "pdf_y": 344.5,
     "pdf_x": 139.4,
@@ -97747,7 +97741,6 @@
     "birth_year": "1913",
     "birth_place": "Janški Vrh",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Bela Krajina",
     "pdf_page": 79,
     "pdf_y": 208.2,
@@ -99131,7 +99124,6 @@
     "birth_year": "1905",
     "birth_place": "Podvolovljek",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 80,
     "pdf_y": 202.9,
     "pdf_x": 148.1,
@@ -101741,7 +101733,6 @@
     "birth_year": "1909",
     "birth_place": "Gorenja vas",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Begunje",
     "pdf_page": 29,
     "pdf_y": 202.2,
@@ -102019,7 +102010,6 @@
     "birth_year": "1924",
     "birth_place": "Ribnica",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Topolšica",
     "pdf_page": 29,
     "pdf_y": 331.0,
@@ -102375,7 +102365,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102964",
     "pdf_x_end": 363.3,
-    "death_place": "Ribnici na Dol."
+    "death_place": "Ribnici na Dol"
   },
   {
     "last_name": "Oblonšek",
@@ -102701,7 +102691,6 @@
     "birth_year": "1911",
     "birth_place": "Stražica",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 82,
     "pdf_y": 456.8,
     "pdf_x": 143.0,
@@ -103029,7 +103018,6 @@
     "birth_year": "1913",
     "birth_place": "Strmec",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Strmec",
     "pdf_page": 82,
     "pdf_y": 585.7,
@@ -103931,6 +103919,7 @@
         "pdf_y": 360.1,
         "pdf_x_end": 541.8,
         "pdf_y_end": 376.2,
+        "unit_detail": "štab brigade",
         "unit_file": "zidanskova-soldiers.json"
       },
       {
@@ -104749,7 +104738,6 @@
     "birth_year": "1922",
     "birth_place": "Vrhnika",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 30,
     "pdf_y": 444.3,
     "pdf_x": 143.5,
@@ -106832,7 +106820,6 @@
     "birth_year": "1925",
     "birth_place": "Ravne",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Žužemberk",
     "pdf_page": 84,
     "pdf_y": 572.2,
@@ -106863,10 +106850,12 @@
         "unit_file": "gubceva-soldiers.json"
       }
     ],
-    "ethnicity": "Slovenac",
+    "death_date": "1944",
     "borrowed": [
+      "death_date",
       "ethnicity"
-    ]
+    ],
+    "ethnicity": "Slovenac"
   },
   {
     "last_name": "Pečovnik",
@@ -107000,7 +106989,6 @@
     "birth_year": "1910",
     "birth_place": "Št. Primož na Koroškem",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 85,
     "pdf_y": 501.9,
     "pdf_x": 139.7,
@@ -108163,7 +108151,6 @@
     "birth_year": "1912",
     "birth_place": "Solčava",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Koroška",
     "pdf_page": 86,
     "pdf_y": 479.1,
@@ -109001,14 +108988,14 @@
     "birth_year": "",
     "birth_place": "Galicija",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 87,
     "pdf_y": 360.5,
     "pdf_x": 148.5,
     "pdf_y_end": 368.5,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103375",
-    "pdf_x_end": 296.9
+    "pdf_x_end": 296.9,
+    "death_date": "1945"
   },
   {
     "last_name": "Podojstršek",
@@ -109784,14 +109771,14 @@
     "birth_year": "",
     "birth_place": "Erzelj",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 32,
     "pdf_y": 599.8,
     "pdf_x": 143.9,
     "pdf_y_end": 607.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103421",
-    "pdf_x_end": 272.4
+    "pdf_x_end": 272.4,
+    "death_date": "1945"
   },
   {
     "last_name": "Poljšek",
@@ -109802,7 +109789,6 @@
     "additional_info": "† 1944-1945",
     "birth_year": "",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 88,
     "pdf_y": 238.2,
     "pdf_x": 142.0,
@@ -109908,7 +109894,7 @@
     "birth_place": "Gor. Jezero",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Štajerska (13.B.)",
+    "death_place": "Štajerska",
     "pdf_page": 33,
     "pdf_y": 207.6,
     "pdf_x": 134.8,
@@ -110566,7 +110552,6 @@
     "birth_year": "",
     "birth_place": "Smijene",
     "death_type": "poginuo",
-    "death_date": "1942",
     "death_place": "Dolenjska",
     "pdf_page": 32,
     "pdf_y": 461.8,
@@ -110988,7 +110973,7 @@
     "birth_place": "Hrovača",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Mirna na Dol.",
+    "death_place": "Mirna na Dol",
     "pdf_page": 33,
     "pdf_y": 391.5,
     "pdf_x": 133.8,
@@ -112016,7 +112001,6 @@
     "birth_year": "1910",
     "birth_place": "Ribnica",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 34,
     "pdf_y": 255.5,
     "pdf_x": 136.5,
@@ -115972,14 +115956,14 @@
     "birth_year": "",
     "birth_place": "Boldraž",
     "death_type": "poginuo",
-    "death_date": "1942",
     "pdf_page": 35,
     "pdf_y": 455.8,
     "pdf_x": 150.9,
     "pdf_y_end": 463.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103804",
-    "pdf_x_end": 288.2
+    "pdf_x_end": 288.2,
+    "death_date": "1945"
   },
   {
     "last_name": "Ročnik",
@@ -119144,6 +119128,8 @@
         "pdf_y": 344.3,
         "pdf_x_end": 235.7,
         "pdf_y_end": 361.1,
+        "unit_detail": "1. bataljon",
+        "rank": "kurir",
         "unit_file": "kokrski-odred-soldiers.json"
       }
     ]
@@ -119642,6 +119628,7 @@
         "pdf_y": 235.4,
         "pdf_x_end": 279.5,
         "pdf_y_end": 265.5,
+        "unit_detail": "Zaščitna patrola",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -120567,6 +120554,8 @@
         "pdf_y": 528.2,
         "pdf_x_end": 372.5,
         "pdf_y_end": 537.7,
+        "unit_detail": "štab IV POS-a",
+        "rank": "načelnik štaba",
         "unit_file": "4-pomorski-sektor-soldiers.json"
       },
       {
@@ -122139,7 +122128,6 @@
     "additional_info": "* 1907 † 1944-1945",
     "birth_year": "1907",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 99,
     "pdf_y": 502.4,
     "pdf_x": 132.2,
@@ -126096,7 +126084,6 @@
     "birth_year": "1905",
     "birth_place": "Skomarje",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 102,
     "pdf_y": 589.0,
     "pdf_x": 146.9,
@@ -127142,7 +127129,6 @@
     "additional_info": "† 1944-1945",
     "birth_year": "",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 103,
     "pdf_y": 581.3,
     "pdf_x": 129.5,
@@ -130042,7 +130028,6 @@
     "birth_year": "1927",
     "birth_place": "Križe pri Tržiču",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Maribor",
     "pdf_page": 105,
     "pdf_y": 615.7,
@@ -130292,7 +130277,6 @@
     "birth_year": "1901",
     "birth_place": "Plešivec",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 55,
     "pdf_y": 204.6,
     "pdf_x": 130.8,
@@ -130300,6 +130284,10 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104727",
     "pdf_x_end": 282.9,
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
+    ],
     "other_sources": [
       {
         "soldier_id": "0065001077",
@@ -130901,7 +130889,6 @@
     "birth_year": "",
     "birth_place": "Bočna",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 55,
     "pdf_y": 407.3,
     "pdf_x": 129.8,
@@ -131351,7 +131338,6 @@
     "birth_year": "1926",
     "birth_place": "Krčevina pri Ptuju",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Pohoije",
     "pdf_page": 55,
     "pdf_y": 554.7,
@@ -133445,7 +133431,6 @@
     "birth_year": "1922",
     "birth_place": "Lovrenc na Pohorju",
     "death_type": "poginuo",
-    "death_date": "1944",
     "pdf_page": 95,
     "pdf_y": 468.5,
     "pdf_x": 132.9,
@@ -134136,7 +134121,6 @@
     "birth_year": "1912",
     "birth_place": "Gabrke",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "Brezovica na Dolenjskem",
     "pdf_page": 96,
     "pdf_y": 256.9,
@@ -134144,7 +134128,23 @@
     "pdf_y_end": 264.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104985",
-    "pdf_x_end": 408.7
+    "pdf_x_end": 408.7,
+    "other_sources": [
+      {
+        "soldier_id": "9020016105",
+        "name": "Špeh (Jakob) Rudolf",
+        "additional_info": "rođen 1912, Gabrke (Velenje). Slovenac, poginuo 1945. u NOBu, Crnomelj,dolenj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=558",
+        "source_page": 558,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Špeh",
@@ -134181,25 +134181,6 @@
     "pdf_x_end": 304.7,
     "death_type": "umro",
     "death_after_war": true
-  },
-  {
-    "last_name": "Špehar",
-    "middle_name": "",
-    "first_name": "Ludvik",
-    "fathers_name": "",
-    "full_name": "Špehar Ludvik",
-    "additional_info": "* 1926 Kot ob Kolpi † 1944",
-    "birth_year": "1926",
-    "birth_place": "Kot ob Kolpi",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "pdf_page": 41,
-    "pdf_y": 248.7,
-    "pdf_x": 131.8,
-    "pdf_y_end": 256.6,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070104989",
-    "pdf_x_end": 295.4
   },
   {
     "last_name": "Špehar",
@@ -137938,6 +137919,7 @@
         "pdf_y": 394.1,
         "pdf_x_end": 446.8,
         "pdf_y_end": 413.4,
+        "unit_detail": "baza 24",
         "unit_file": "zascitna-enota-soldiers.json"
       }
     ],
@@ -138046,6 +138028,7 @@
         "pdf_y": 274.7,
         "pdf_x_end": 289.8,
         "pdf_y_end": 291.8,
+        "unit_detail": "štab brigade",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -138070,6 +138053,7 @@
         "pdf_y": 416.3,
         "pdf_x_end": 325.7,
         "pdf_y_end": 433.6,
+        "unit_detail": "1. bataljon",
         "unit_file": "kokrski-odred-soldiers.json"
       }
     ],
@@ -138523,6 +138507,7 @@
         "pdf_y": 418.7,
         "pdf_x_end": 137.8,
         "pdf_y_end": 436.1,
+        "unit_detail": "1. bataljon",
         "unit_file": "gubceva-soldiers.json"
       },
       {
@@ -138992,6 +138977,7 @@
         "pdf_y": 365.6,
         "pdf_x_end": 316.9,
         "pdf_y_end": 381.7,
+        "unit_detail": "3. bataljon",
         "unit_file": "istrski-odred-soldiers.json"
       },
       {

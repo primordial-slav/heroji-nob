@@ -244,7 +244,8 @@
     "death_type": "poginuo",
     "death_date": "27.11.1943",
     "unit_detail": "3. bataljon",
-    "rank": "komesar bataljona"
+    "rank": "komesar bataljona",
+    "death_place": "Vrbovec"
   },
   {
     "last_name": "Bakulin",
@@ -282,6 +283,7 @@
         "pdf_y": 539.6,
         "pdf_x_end": 453.5,
         "pdf_y_end": 564.9,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -322,6 +324,7 @@
         "pdf_y": 183.5,
         "pdf_x_end": 257.4,
         "pdf_y_end": 209.7,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -430,10 +433,10 @@
   },
   {
     "last_name": "Ban",
-    "middle_name": "",
+    "middle_name": "Ivana",
     "first_name": "Stjepan",
-    "fathers_name": "",
-    "full_name": "Ban Stjepan",
+    "fathers_name": "Ivan",
+    "full_name": "Ban Ivana Stjepan",
     "additional_info": "Oborovo, Dugo Selo, poginuo 1944. kod Čazme",
     "pdf_page": 1,
     "pdf_y": 1050.2220000000002,
@@ -454,14 +457,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=414",
         "source_page": 414,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0035113511",
+        "name": "Ban Ivana Stjepan",
+        "additional_info": "r. 1922, s. Oborovo, Dugo Selo, Hrvat, poljopriv., čl. SKOJ-a, NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 90,
+        "pdf_x": 106.0,
+        "pdf_y": 270.6,
+        "pdf_x_end": 256.8,
+        "pdf_y_end": 296.8,
+        "unit_detail": "brigada Matija Gubec",
+        "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "ethnicity": "Hrvat",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year",
-      "ethnicity"
+      "ethnicity",
+      "occupation",
+      "party"
     ],
-    "birth_year": "1923"
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik",
+    "party": "SKOJ"
   },
   {
     "last_name": "Ban",
@@ -742,6 +762,7 @@
         "pdf_y": 606.1,
         "pdf_x_end": 263.2,
         "pdf_y_end": 631.5,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -845,6 +866,7 @@
         "pdf_y": 663.7,
         "pdf_x_end": 263.2,
         "pdf_y_end": 689.1,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -918,7 +940,9 @@
     "pdf_x_end": 856.1,
     "birth_place": "Vrapče, Zagreb",
     "unit_detail": "2. bataljon",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "death_type": "ubijen",
+    "death_date": "1944"
   },
   {
     "last_name": "Beluhan",
@@ -1095,6 +1119,7 @@
         "pdf_y": 228.0,
         "pdf_x_end": 281.7,
         "pdf_y_end": 244.4,
+        "unit_detail": "prištapske jedinice",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -1302,6 +1327,7 @@
         "pdf_y": 417.6,
         "pdf_x_end": 271.9,
         "pdf_y_end": 443.3,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -1342,6 +1368,8 @@
         "pdf_y": 445.6,
         "pdf_x_end": 271.8,
         "pdf_y_end": 470.9,
+        "unit_detail": "brigada Matija Gubec",
+        "rank": "referent saniteta",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -1419,6 +1447,8 @@
         "pdf_y": 235.6,
         "pdf_x_end": 218.4,
         "pdf_y_end": 277.7,
+        "unit_detail": "intendantura",
+        "rank": "intendant",
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ]
@@ -1454,7 +1484,9 @@
     "pdf_y_end": 1129.5,
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000066",
-    "pdf_x_end": 799.5
+    "pdf_x_end": 799.5,
+    "death_type": "ubijen",
+    "death_date": "1944"
   },
   {
     "last_name": "Blažinović",
@@ -1490,6 +1522,7 @@
         "pdf_y": 568.7,
         "pdf_x_end": 452.9,
         "pdf_y_end": 594.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -1530,7 +1563,8 @@
     "pdf_x_end": 851.0,
     "death_date": "1944",
     "birth_place": "Dugo Selo",
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "death_place": "Oborovo"
   },
   {
     "last_name": "Bobić",
@@ -2111,6 +2145,8 @@
         "pdf_y": 658.9,
         "pdf_x_end": 269.9,
         "pdf_y_end": 684.6,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "politički komesar čete",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -2226,6 +2262,7 @@
         "pdf_y": 189.2,
         "pdf_x_end": 449.8,
         "pdf_y_end": 215.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -2300,6 +2337,7 @@
         "pdf_y": 342.1,
         "pdf_x_end": 449.0,
         "pdf_y_end": 367.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -2410,6 +2448,9 @@
     "soldier_id": "0147000111",
     "pdf_x_end": 543.1,
     "birth_place": "Kraljev Vrh, Donja Stubica",
+    "death_type": "ubijen",
+    "death_date": "1945",
+    "death_place": "Jakovlje",
     "other_sources": [
       {
         "soldier_id": "9036000138",
@@ -2480,6 +2521,7 @@
         "pdf_y": 360.5,
         "pdf_x_end": 264.3,
         "pdf_y_end": 386.7,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -2569,6 +2611,7 @@
         "pdf_y": 662.4,
         "pdf_x_end": 255.9,
         "pdf_y_end": 688.1,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -2703,6 +2746,7 @@
         "pdf_y": 546.2,
         "pdf_x_end": 266.1,
         "pdf_y_end": 562.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -2794,6 +2838,7 @@
         "pdf_y": 565.4,
         "pdf_x_end": 266.4,
         "pdf_y_end": 582.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -2834,6 +2879,7 @@
         "pdf_y": 584.6,
         "pdf_x_end": 266.1,
         "pdf_y_end": 610.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -3271,6 +3317,7 @@
         "pdf_y": 633.4,
         "pdf_x_end": 278.3,
         "pdf_y_end": 649.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -3311,6 +3358,7 @@
         "pdf_y": 157.0,
         "pdf_x_end": 458.8,
         "pdf_y_end": 182.7,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -3385,6 +3433,7 @@
         "pdf_y": 298.6,
         "pdf_x_end": 273.0,
         "pdf_y_end": 324.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -3523,6 +3572,7 @@
         "pdf_y": 346.6,
         "pdf_x_end": 272.8,
         "pdf_y_end": 372.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -3728,6 +3778,7 @@
         "pdf_y": 203.7,
         "pdf_x_end": 443.1,
         "pdf_y_end": 220.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -3826,6 +3877,7 @@
         "pdf_y": 324.1,
         "pdf_x_end": 453.1,
         "pdf_y_end": 349.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -3973,6 +4025,7 @@
         "pdf_y": 476.8,
         "pdf_x_end": 447.9,
         "pdf_y_end": 493.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -4197,6 +4250,8 @@
         "pdf_y": 648.0,
         "pdf_x_end": 467.7,
         "pdf_y_end": 687.2,
+        "rank": "borac",
+        "since": "1943",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
@@ -4277,6 +4332,7 @@
     "death_type": "poginuo",
     "death_date": "21.12.1944",
     "rank": "komandant brigade",
+    "death_place": "Kloštar Podravski",
     "other_sources": [
       {
         "soldier_id": "9021031326",
@@ -4291,11 +4347,9 @@
     "borrowed": [
       "birth_place",
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_place": "Podravina",
     "birth_year": "1919"
   },
   {
@@ -4509,6 +4563,7 @@
         "pdf_y": 219.1,
         "pdf_x_end": 444.9,
         "pdf_y_end": 245.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -4968,6 +5023,7 @@
         "pdf_y": 511.5,
         "pdf_x_end": 273.8,
         "pdf_y_end": 537.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -5019,6 +5075,7 @@
         "pdf_y": 162.8,
         "pdf_x_end": 448.3,
         "pdf_y_end": 189.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -5172,6 +5229,7 @@
         "pdf_y": 269.9,
         "pdf_x_end": 279.0,
         "pdf_y_end": 296.1,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -5194,7 +5252,8 @@
     "birth_place": "Krašina, Omiš",
     "death_type": "poginuo",
     "death_date": "25.04.1944",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "death_place": "Podravina"
   },
   {
     "last_name": "Freyjermuth",
@@ -5332,6 +5391,7 @@
         "pdf_y": 502.2,
         "pdf_x_end": 278.8,
         "pdf_y_end": 518.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -5746,6 +5806,7 @@
         "pdf_y": 204.7,
         "pdf_x_end": 260.2,
         "pdf_y_end": 230.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -5808,6 +5869,7 @@
         "pdf_y": 262.3,
         "pdf_x_end": 259.6,
         "pdf_y_end": 288.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -5962,6 +6024,8 @@
         "pdf_y": 377.5,
         "pdf_x_end": 258.5,
         "pdf_y_end": 393.8,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "komesar bataljona",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -6075,6 +6139,7 @@
         "pdf_y": 156.2,
         "pdf_x_end": 456.9,
         "pdf_y_end": 172.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -6234,6 +6299,7 @@
         "pdf_y": 429.2,
         "pdf_x_end": 445.9,
         "pdf_y_end": 445.6,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -6325,6 +6391,8 @@
         "pdf_y": 364.5,
         "pdf_x_end": 436.4,
         "pdf_y_end": 380.9,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "komandant bataljona",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -6623,6 +6691,7 @@
         "pdf_y": 507.1,
         "pdf_x_end": 271.9,
         "pdf_y_end": 523.7,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -6899,6 +6968,7 @@
         "pdf_y": 231.6,
         "pdf_x_end": 451.7,
         "pdf_y_end": 248.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -7005,6 +7075,7 @@
         "pdf_y": 622.5,
         "pdf_x_end": 268.5,
         "pdf_y_end": 648.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -7221,6 +7292,7 @@
         "pdf_y": 206.4,
         "pdf_x_end": 257.3,
         "pdf_y_end": 232.1,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -7562,7 +7634,9 @@
     "pdf_y_end": 1113.0,
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000328",
-    "pdf_x_end": 831.3
+    "pdf_x_end": 831.3,
+    "death_type": "ubijen",
+    "death_date": "1944"
   },
   {
     "last_name": "Hasan",
@@ -7668,7 +7742,9 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000334",
     "pdf_x_end": 827.1,
-    "birth_place": "Dugo Selo"
+    "birth_place": "Dugo Selo",
+    "death_type": "ubijen",
+    "death_date": "1944"
   },
   {
     "last_name": "Herak",
@@ -7846,6 +7922,7 @@
         "pdf_y": 256.5,
         "pdf_x_end": 447.3,
         "pdf_y_end": 282.7,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -7946,6 +8023,7 @@
         "pdf_y": 201.4,
         "pdf_x_end": 259.7,
         "pdf_y_end": 227.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8031,6 +8109,7 @@
         "pdf_y": 499.1,
         "pdf_x_end": 446.4,
         "pdf_y_end": 524.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8069,6 +8148,7 @@
         "pdf_y": 467.4,
         "pdf_x_end": 258.3,
         "pdf_y_end": 493.1,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8139,6 +8219,7 @@
         "pdf_y": 679.3,
         "pdf_x_end": 257.0,
         "pdf_y_end": 686.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8315,6 +8396,7 @@
         "pdf_y": 371.7,
         "pdf_x_end": 281.9,
         "pdf_y_end": 397.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -8389,6 +8471,7 @@
         "pdf_y": 517.0,
         "pdf_x_end": 452.0,
         "pdf_y_end": 542.8,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8545,6 +8628,7 @@
         "pdf_y": 133.1,
         "pdf_x_end": 460.5,
         "pdf_y_end": 158.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8602,6 +8686,7 @@
         "pdf_y": 454.6,
         "pdf_x_end": 265.1,
         "pdf_y_end": 480.3,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8703,7 +8788,10 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000381",
     "pdf_x_end": 556.6,
-    "birth_place": "Planina, Sesvete"
+    "birth_place": "Planina, Sesvete",
+    "death_type": "ubijen",
+    "death_date": "23.04.1944",
+    "death_place": "Kašina"
   },
   {
     "last_name": "Ilić",
@@ -8826,6 +8914,7 @@
         "pdf_y": 173.6,
         "pdf_x_end": 448.6,
         "pdf_y_end": 199.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -8998,6 +9087,7 @@
         "pdf_y": 318.6,
         "pdf_x_end": 442.1,
         "pdf_y_end": 344.3,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9053,6 +9143,7 @@
         "pdf_y": 402.8,
         "pdf_x_end": 441.8,
         "pdf_y_end": 428.6,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9108,6 +9199,7 @@
         "pdf_y": 180.7,
         "pdf_x_end": 264.0,
         "pdf_y_end": 206.9,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9184,6 +9276,7 @@
         "pdf_y": 192.9,
         "pdf_x_end": 439.0,
         "pdf_y_end": 218.7,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9380,6 +9473,7 @@
         "pdf_y": 174.6,
         "pdf_x_end": 266.4,
         "pdf_y_end": 200.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -9582,12 +9676,11 @@
   },
   {
     "last_name": "Kapusta",
-    "middle_name": "",
+    "middle_name": "Augusta",
     "first_name": "August",
-    "fathers_name": "",
-    "full_name": "Kapusta August",
+    "fathers_name": "August",
+    "full_name": "Kapusta Augusta August",
     "additional_info": "Strmec, Donja Stubica, zarobljen na zasjedi kod Zeline 15. 10. 1944. i obješen u 11. mj. 1944.",
-    "birth_year": "",
     "pdf_page": 5,
     "pdf_y": 780.3369999999998,
     "pdf_x": 614.0,
@@ -9595,7 +9688,54 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000424",
     "pdf_x_end": 858.3,
-    "birth_place": "Strmec, Donja Stubica"
+    "birth_place": "Strmec, Donja Stubica",
+    "death_type": "ubijen",
+    "death_date": "1944",
+    "other_sources": [
+      {
+        "soldier_id": "9036000663",
+        "name": "Kapusta (Augusta) August",
+        "additional_info": "rođen 1919. u Strmcu—Stubica. obješen 1944. u Zagrebu kao zarobljeni borac Zagrebačkog odreda.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 30,
+        "pdf_x": 11.0,
+        "pdf_y": 346.8,
+        "pdf_x_end": 365.3,
+        "pdf_y_end": 364.4,
+        "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021006372",
+        "name": "Kapusta (August) August",
+        "additional_info": "rođen 1919, Strmec Stubički (Donja Stubica). Hrvat, poginuo 1944. u NOBu, Zagreb",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=288",
+        "source_page": 288,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0035104630",
+        "name": "Kapusta Augusta August",
+        "additional_info": "r. 1919, s. Strmec-Stubica, Zaprešić, Hrvat, poljopriv., NOV 1943, poginuo 1944.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 108,
+        "pdf_x": 119.5,
+        "pdf_y": 386.6,
+        "pdf_x_end": 271.0,
+        "pdf_y_end": 412.3,
+        "unit_detail": "brigada Matija Gubec",
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_year",
+      "death_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Hrvat",
+    "occupation": "poljoprivrednik",
+    "death_place": "Zagreb"
   },
   {
     "last_name": "Kapusta",
@@ -9767,6 +9907,7 @@
         "pdf_y": 252.2,
         "pdf_x_end": 448.8,
         "pdf_y_end": 268.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9859,6 +10000,7 @@
         "pdf_y": 678.6,
         "pdf_x_end": 261.8,
         "pdf_y_end": 695.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -9913,6 +10055,8 @@
         "pdf_y": 142.0,
         "pdf_x_end": 440.7,
         "pdf_y_end": 167.7,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "zamjenik političkog komesara",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -10126,6 +10270,7 @@
         "pdf_y": 132.3,
         "pdf_x_end": 270.2,
         "pdf_y_end": 148.6,
+        "unit_detail": "prištapske jedinice",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -10353,6 +10498,7 @@
         "pdf_y": 392.3,
         "pdf_x_end": 440.0,
         "pdf_y_end": 408.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -10393,6 +10539,7 @@
         "pdf_y": 411.5,
         "pdf_x_end": 440.0,
         "pdf_y_end": 437.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -10506,6 +10653,7 @@
         "pdf_y": 545.4,
         "pdf_x_end": 439.7,
         "pdf_y_end": 571.1,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -10556,6 +10704,7 @@
         "pdf_y": 287.5,
         "pdf_x_end": 247.3,
         "pdf_y_end": 294.5,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11081,6 +11230,7 @@
         "pdf_y": 294.1,
         "pdf_x_end": 270.9,
         "pdf_y_end": 320.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11119,6 +11269,7 @@
         "pdf_y": 139.1,
         "pdf_x_end": 271.0,
         "pdf_y_end": 165.3,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11196,6 +11347,7 @@
         "pdf_y": 500.0,
         "pdf_x_end": 268.8,
         "pdf_y_end": 525.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11446,6 +11598,7 @@
         "pdf_y": 366.8,
         "pdf_x_end": 456.1,
         "pdf_y_end": 392.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11726,6 +11879,7 @@
         "pdf_y": 663.2,
         "pdf_x_end": 455.6,
         "pdf_y_end": 689.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -11754,7 +11908,24 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000519",
     "pdf_x_end": 831.6,
-    "birth_place": "Sesvete, Đurđekovec"
+    "birth_place": "Sesvete, Đurđekovec",
+    "death_type": "ubijen",
+    "death_date": "23.04.1944",
+    "death_place": "Kašina",
+    "other_sources": [
+      {
+        "soldier_id": "9015000056",
+        "name": "Kovačić Vinko",
+        "additional_info": "Pali u bici kod Oborova 29. III 1944: 56. Kovačić Vinko",
+        "pdf_file": "bitka-kod-oborova-poginuli.pdf",
+        "pdf_page": 2,
+        "pdf_x": 84.6,
+        "pdf_y": 373.7,
+        "pdf_x_end": 161.0,
+        "pdf_y_end": 382.7,
+        "ref_book": "bitka-kod-oborova-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Kovačić",
@@ -11774,7 +11945,6 @@
     "death_type": "poginuo",
     "death_date": "15.03.1945",
     "death_place": "Našice",
-    "birth_year": "1928",
     "other_sources": [
       {
         "soldier_id": "9021059690",
@@ -11783,13 +11953,35 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2997",
         "source_page": 2997,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0129000164",
+        "name": "Kovačič Mije Đuro",
+        "additional_info": "2. četa, 4. bataljon; rođen 6. VII 1929.; poginuo 23. III 1945.",
+        "pdf_file": "4-brigada-slavonije.pdf",
+        "pdf_page": 7,
+        "pdf_x": 74.0,
+        "pdf_y": 353.434,
+        "pdf_x_end": 461.3,
+        "pdf_y_end": 370.6,
+        "unit_detail": "2. četa, 4. bataljon",
+        "unit_file": "4-brigada-slavonije-soldiers.json"
       }
     ],
-    "ethnicity": "Hrvat",
+    "birth_year": "1929",
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "ethnicity": "Hrvat",
+    "birth_date": "06.07.1929",
+    "variants": {
+      "death": [
+        {
+          "date": "23.03.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kozarec",
@@ -11888,6 +12080,7 @@
         "pdf_y": 682.9,
         "pdf_x_end": 445.8,
         "pdf_y_end": 689.9,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -11963,6 +12156,7 @@
         "pdf_y": 661.1,
         "pdf_x_end": 449.3,
         "pdf_y_end": 670.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -12153,6 +12347,7 @@
         "pdf_y": 633.5,
         "pdf_x_end": 267.5,
         "pdf_y_end": 658.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -12318,6 +12513,7 @@
         "pdf_y": 290.5,
         "pdf_x_end": 270.7,
         "pdf_y_end": 316.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -12358,6 +12554,7 @@
         "pdf_y": 405.5,
         "pdf_x_end": 270.0,
         "pdf_y_end": 431.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -12514,6 +12711,7 @@
         "pdf_y": 146.8,
         "pdf_x_end": 450.1,
         "pdf_y_end": 163.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -12658,6 +12856,7 @@
         "pdf_y": 185.2,
         "pdf_x_end": 449.9,
         "pdf_y_end": 211.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -12808,6 +13007,7 @@
         "pdf_y": 213.2,
         "pdf_x_end": 282.6,
         "pdf_y_end": 239.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -12854,6 +13054,8 @@
         "pdf_y": 443.9,
         "pdf_x_end": 282.1,
         "pdf_y_end": 469.6,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "politički komesar",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -12890,6 +13092,7 @@
         "pdf_y": 635.3,
         "pdf_x_end": 468.0,
         "pdf_y_end": 664.0,
+        "since": "1943",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]
@@ -13065,6 +13268,7 @@
         "pdf_y": 251.3,
         "pdf_x_end": 289.1,
         "pdf_y_end": 279.9,
+        "rank": "borac",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
@@ -13300,6 +13504,7 @@
         "pdf_y": 212.8,
         "pdf_x_end": 435.4,
         "pdf_y_end": 238.5,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -13338,6 +13543,7 @@
         "pdf_y": 240.8,
         "pdf_x_end": 435.2,
         "pdf_y_end": 259.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -13493,6 +13699,7 @@
         "pdf_y": 572.8,
         "pdf_x_end": 444.6,
         "pdf_y_end": 599.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -14129,6 +14336,7 @@
         "pdf_y": 238.4,
         "pdf_x_end": 258.5,
         "pdf_y_end": 255.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -14244,6 +14452,7 @@
         "pdf_y": 607.8,
         "pdf_x_end": 452.8,
         "pdf_y_end": 633.5,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -14450,6 +14659,7 @@
         "pdf_y": 290.3,
         "pdf_x_end": 437.0,
         "pdf_y_end": 316.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -14512,6 +14722,7 @@
         "pdf_y": 590.6,
         "pdf_x_end": 266.8,
         "pdf_y_end": 607.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -14577,6 +14788,7 @@
         "pdf_y": 133.9,
         "pdf_x_end": 466.3,
         "pdf_y_end": 162.6,
+        "since": "1943-09",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]
@@ -14648,7 +14860,8 @@
     "pdf_y_end": 664.5,
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000651",
-    "pdf_x_end": 859.3
+    "pdf_x_end": 859.3,
+    "death_type": "ubijen"
   },
   {
     "last_name": "Mihaljek",
@@ -15015,6 +15228,7 @@
         "pdf_y": 176.0,
         "pdf_x_end": 448.7,
         "pdf_y_end": 192.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -15261,6 +15475,7 @@
         "pdf_y": 555.3,
         "pdf_x_end": 448.6,
         "pdf_y_end": 580.6,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -15443,6 +15658,7 @@
         "pdf_y": 209.2,
         "pdf_x_end": 275.9,
         "pdf_y_end": 235.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -15483,6 +15699,7 @@
         "pdf_y": 214.0,
         "pdf_x_end": 264.1,
         "pdf_y_end": 240.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -15746,6 +15963,7 @@
         "pdf_y": 520.7,
         "pdf_x_end": 440.5,
         "pdf_y_end": 537.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -16142,6 +16360,7 @@
         "pdf_y": 342.0,
         "pdf_x_end": 269.1,
         "pdf_y_end": 367.7,
+        "unit_detail": "brigada Mihovil Pavlek Miškina",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -16381,6 +16600,7 @@
         "pdf_y": 484.4,
         "pdf_x_end": 451.3,
         "pdf_y_end": 510.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -16452,6 +16672,7 @@
         "pdf_y": 580.2,
         "pdf_x_end": 451.0,
         "pdf_y_end": 605.9,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -16578,7 +16799,9 @@
     "pdf_y_end": 1160.9,
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000740",
-    "pdf_x_end": 523.4
+    "pdf_x_end": 523.4,
+    "death_type": "ubijen",
+    "death_date": "1944"
   },
   {
     "last_name": "Ostović",
@@ -16713,7 +16936,10 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000746",
     "pdf_x_end": 839.4,
-    "birth_place": "Vugrovec, Sesvete"
+    "birth_place": "Vugrovec, Sesvete",
+    "death_type": "ubijen",
+    "death_date": "1944",
+    "death_place": "Gornja Stubica"
   },
   {
     "last_name": "Ožbolt",
@@ -16730,7 +16956,10 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147000747",
     "pdf_x_end": 847.1,
-    "birth_place": "Vugrovec"
+    "birth_place": "Vugrovec",
+    "death_type": "ubijen",
+    "death_date": "1944",
+    "death_place": "Gornja Stubica"
   },
   {
     "last_name": "Pajač",
@@ -16765,6 +16994,8 @@
         "pdf_y": 388.9,
         "pdf_x_end": 280.4,
         "pdf_y_end": 414.6,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "zamjenik političkog komesara",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -16891,6 +17122,7 @@
         "pdf_y": 242.0,
         "pdf_x_end": 439.8,
         "pdf_y_end": 267.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -17192,6 +17424,7 @@
         "pdf_y": 331.6,
         "pdf_x_end": 272.0,
         "pdf_y_end": 357.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -17572,6 +17805,7 @@
         "pdf_y": 456.8,
         "pdf_x_end": 450.6,
         "pdf_y_end": 482.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -17615,6 +17849,7 @@
         "pdf_y": 458.5,
         "pdf_x_end": 273.0,
         "pdf_y_end": 484.2,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -18106,6 +18341,7 @@
         "pdf_y": 569.6,
         "pdf_x_end": 269.6,
         "pdf_y_end": 586.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -18139,6 +18375,7 @@
         "pdf_y": 233.4,
         "pdf_x_end": 449.3,
         "pdf_y_end": 259.1,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -18342,6 +18579,7 @@
         "pdf_y": 252.8,
         "pdf_x_end": 445.6,
         "pdf_y_end": 269.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -18395,6 +18633,7 @@
         "pdf_y": 541.1,
         "pdf_x_end": 448.3,
         "pdf_y_end": 566.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -18587,6 +18826,7 @@
         "pdf_y": 290.2,
         "pdf_x_end": 265.0,
         "pdf_y_end": 309.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -18975,6 +19215,7 @@
         "pdf_y": 454.6,
         "pdf_x_end": 443.2,
         "pdf_y_end": 471.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19266,6 +19507,7 @@
         "pdf_y": 509.2,
         "pdf_x_end": 255.6,
         "pdf_y_end": 534.9,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19421,6 +19663,7 @@
         "pdf_y": 558.1,
         "pdf_x_end": 255.5,
         "pdf_y_end": 583.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19508,6 +19751,7 @@
         "pdf_y": 586.2,
         "pdf_x_end": 255.4,
         "pdf_y_end": 611.9,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19582,6 +19826,7 @@
         "pdf_y": 453.0,
         "pdf_x_end": 255.9,
         "pdf_y_end": 478.7,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -19718,6 +19963,7 @@
         "pdf_y": 689.9,
         "pdf_x_end": 255.0,
         "pdf_y_end": 696.9,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -19854,6 +20100,7 @@
         "pdf_y": 156.7,
         "pdf_x_end": 452.5,
         "pdf_y_end": 182.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19912,6 +20159,7 @@
         "pdf_y": 434.9,
         "pdf_x_end": 269.7,
         "pdf_y_end": 460.6,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -19950,6 +20198,7 @@
         "pdf_y": 291.1,
         "pdf_x_end": 452.4,
         "pdf_y_end": 307.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -19962,6 +20211,7 @@
         "pdf_y": 490.3,
         "pdf_x_end": 458.7,
         "pdf_y_end": 519.0,
+        "since": "1943-10",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]
@@ -20180,6 +20430,7 @@
         "pdf_y": 328.8,
         "pdf_x_end": 270.1,
         "pdf_y_end": 354.5,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -20971,6 +21222,7 @@
         "pdf_y": 396.4,
         "pdf_x_end": 275.9,
         "pdf_y_end": 412.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -21039,6 +21291,7 @@
         "pdf_y": 303.6,
         "pdf_x_end": 264.2,
         "pdf_y_end": 329.3,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -21107,6 +21360,7 @@
         "pdf_y": 454.7,
         "pdf_x_end": 275.3,
         "pdf_y_end": 480.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -21174,6 +21428,7 @@
         "pdf_y": 492.9,
         "pdf_x_end": 274.9,
         "pdf_y_end": 518.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -21479,6 +21734,7 @@
         "pdf_y": 255.6,
         "pdf_x_end": 442.5,
         "pdf_y_end": 281.3,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -21792,6 +22048,7 @@
         "pdf_y": 600.0,
         "pdf_x_end": 269.0,
         "pdf_y_end": 625.7,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -22018,6 +22275,7 @@
         "pdf_y": 167.6,
         "pdf_x_end": 279.8,
         "pdf_y_end": 193.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -22067,6 +22325,7 @@
         "pdf_y": 283.1,
         "pdf_x_end": 279.5,
         "pdf_y_end": 299.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -22121,6 +22380,7 @@
         "pdf_y": 301.8,
         "pdf_x_end": 279.5,
         "pdf_y_end": 318.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -22213,6 +22473,8 @@
         "pdf_y": 616.9,
         "pdf_x_end": 279.0,
         "pdf_y_end": 642.6,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "načelnik štaba",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -22376,6 +22638,7 @@
         "pdf_y": 678.4,
         "pdf_x_end": 437.2,
         "pdf_y_end": 685.4,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -22410,6 +22673,8 @@
         "pdf_y": 623.5,
         "pdf_x_end": 265.6,
         "pdf_y_end": 640.1,
+        "unit_detail": "brigada Matija Gubec",
+        "rank": "intendant",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -22479,6 +22744,7 @@
         "pdf_y": 207.0,
         "pdf_x_end": 457.1,
         "pdf_y_end": 223.6,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -22788,6 +23054,8 @@
         "pdf_y": 390.3,
         "pdf_x_end": 401.1,
         "pdf_y_end": 399.8,
+        "unit_detail": "udarna brigada Braća Radić",
+        "rank": "komandant bataljona",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -22824,6 +23092,9 @@
         "pdf_y": 210.5,
         "pdf_x_end": 290.2,
         "pdf_y_end": 268.7,
+        "unit_detail": "1. bataljon",
+        "rank": "komandant bataljona",
+        "since": "1943-02",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
@@ -23036,6 +23307,7 @@
         "pdf_y": 246.1,
         "pdf_x_end": 280.4,
         "pdf_y_end": 271.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23102,6 +23374,7 @@
         "pdf_y": 251.6,
         "pdf_x_end": 444.1,
         "pdf_y_end": 268.0,
+        "unit_detail": "prištapske jedinice",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23156,6 +23429,7 @@
         "pdf_y": 276.6,
         "pdf_x_end": 280.6,
         "pdf_y_end": 293.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23329,6 +23603,7 @@
         "pdf_y": 410.5,
         "pdf_x_end": 280.5,
         "pdf_y_end": 437.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23462,6 +23737,7 @@
         "pdf_y": 505.3,
         "pdf_x_end": 280.1,
         "pdf_y_end": 531.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -23497,6 +23773,7 @@
         "pdf_y": 477.2,
         "pdf_x_end": 280.5,
         "pdf_y_end": 503.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23793,6 +24070,7 @@
         "pdf_y": 148.2,
         "pdf_x_end": 270.7,
         "pdf_y_end": 164.5,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -23987,6 +24265,7 @@
         "pdf_y": 368.2,
         "pdf_x_end": 438.6,
         "pdf_y_end": 384.8,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -24106,6 +24385,7 @@
         "pdf_y": 574.7,
         "pdf_x_end": 265.4,
         "pdf_y_end": 600.9,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -24369,6 +24649,7 @@
         "pdf_y": 224.0,
         "pdf_x_end": 444.3,
         "pdf_y_end": 250.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -24478,6 +24759,7 @@
         "pdf_y": 469.3,
         "pdf_x_end": 443.0,
         "pdf_y_end": 495.5,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -24844,6 +25126,7 @@
         "pdf_y": 175.3,
         "pdf_x_end": 443.2,
         "pdf_y_end": 192.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -25247,6 +25530,7 @@
         "pdf_y": 262.8,
         "pdf_x_end": 435.2,
         "pdf_y_end": 289.0,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -25345,6 +25629,7 @@
         "pdf_y": 509.0,
         "pdf_x_end": 451.1,
         "pdf_y_end": 534.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -25473,6 +25758,7 @@
         "pdf_y": 549.5,
         "pdf_x_end": 452.6,
         "pdf_y_end": 574.8,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -25721,6 +26007,7 @@
         "pdf_y": 258.9,
         "pdf_x_end": 270.2,
         "pdf_y_end": 285.1,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -25831,6 +26118,8 @@
         "pdf_y": 553.4,
         "pdf_x_end": 443.9,
         "pdf_y_end": 579.2,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "referent saniteta",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -25912,6 +26201,7 @@
         "pdf_y": 381.2,
         "pdf_x_end": 452.9,
         "pdf_y_end": 407.4,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -25952,6 +26242,7 @@
         "pdf_y": 477.5,
         "pdf_x_end": 452.3,
         "pdf_y_end": 503.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -25989,6 +26280,7 @@
         "pdf_y": 601.4,
         "pdf_x_end": 444.0,
         "pdf_y_end": 627.2,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -26097,6 +26389,7 @@
         "pdf_y": 667.7,
         "pdf_x_end": 444.3,
         "pdf_y_end": 693.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -26576,6 +26869,7 @@
         "pdf_y": 301.8,
         "pdf_x_end": 267.8,
         "pdf_y_end": 318.2,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -26604,7 +26898,6 @@
     "fathers_name": "",
     "full_name": "Šikuten Tomo",
     "additional_info": "Šija Vrh, Sesvete, obješen u Kašini 23. 4. 1944.",
-    "birth_year": "",
     "pdf_page": 10,
     "pdf_y": 1159.522,
     "pdf_x": 598.7,
@@ -26612,7 +26905,38 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147001186",
     "pdf_x_end": 832.1,
-    "birth_place": "Šija Vrh, Sesvete"
+    "birth_place": "Šija Vrh, Sesvete",
+    "death_type": "ubijen",
+    "death_date": "23.04.1944",
+    "death_place": "Kašina",
+    "other_sources": [
+      {
+        "soldier_id": "9015000109",
+        "name": "Sikuten Tomo — Salama",
+        "additional_info": "Pali u bici kod Oborova 29. III 1944: 109. Sikuten Tomo — »Salama «",
+        "pdf_file": "bitka-kod-oborova-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 84.2,
+        "pdf_y": 127.6,
+        "pdf_x_end": 175.1,
+        "pdf_y_end": 147.1,
+        "ref_book": "bitka-kod-oborova-poginuli"
+      },
+      {
+        "soldier_id": "9021035834",
+        "name": "Šikuten (Mate) Tomo",
+        "additional_info": "rođen 1909, Šašinovec (Sesvete). Hrvat, poginuo 1944. u NOBu, Kašina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1778",
+        "source_page": 1778,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "birth_year": "1909"
   },
   {
     "last_name": "Šiltić",
@@ -26750,6 +27074,7 @@
         "pdf_y": 608.3,
         "pdf_x_end": 267.2,
         "pdf_y_end": 634.0,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -26822,6 +27147,7 @@
         "pdf_y": 177.0,
         "pdf_x_end": 445.5,
         "pdf_y_end": 193.6,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -26897,6 +27223,7 @@
         "pdf_y": 600.2,
         "pdf_x_end": 439.9,
         "pdf_y_end": 635.1,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -26960,6 +27287,7 @@
         "pdf_y": 644.8,
         "pdf_x_end": 436.8,
         "pdf_y_end": 671.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -27093,6 +27421,7 @@
         "pdf_y": 398.0,
         "pdf_x_end": 272.5,
         "pdf_y_end": 414.4,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -27360,6 +27689,7 @@
         "pdf_y": 168.9,
         "pdf_x_end": 450.8,
         "pdf_y_end": 194.6,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -27451,6 +27781,7 @@
         "pdf_y": 193.1,
         "pdf_x_end": 260.2,
         "pdf_y_end": 218.8,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -27524,6 +27855,7 @@
         "pdf_y": 384.6,
         "pdf_x_end": 258.4,
         "pdf_y_end": 410.3,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -27578,6 +27910,7 @@
         "pdf_y": 651.2,
         "pdf_x_end": 256.0,
         "pdf_y_end": 677.0,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -27696,6 +28029,7 @@
         "pdf_y": 582.1,
         "pdf_x_end": 279.1,
         "pdf_y_end": 607.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -27810,6 +28144,7 @@
         "pdf_y": 526.0,
         "pdf_x_end": 443.6,
         "pdf_y_end": 552.2,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
@@ -28018,7 +28353,9 @@
     "pdf_file": "zagrebacki-odred.pdf",
     "soldier_id": "0147001245",
     "pdf_x_end": 568.9,
-    "birth_place": "Zagreb"
+    "birth_place": "Zagreb",
+    "death_type": "ubijen",
+    "death_place": "u Krušljevom selu"
   },
   {
     "last_name": "Ščurić",
@@ -28054,6 +28391,7 @@
         "pdf_y": 255.8,
         "pdf_x_end": 263.9,
         "pdf_y_end": 281.6,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -28078,6 +28416,7 @@
         "pdf_y": 602.6,
         "pdf_x_end": 467.2,
         "pdf_y_end": 631.3,
+        "since": "1943",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]
@@ -28118,6 +28457,7 @@
         "pdf_y": 587.7,
         "pdf_x_end": 258.7,
         "pdf_y_end": 613.9,
+        "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -28257,6 +28597,8 @@
     "soldier_id": "0147001255",
     "pdf_x_end": 840.5,
     "birth_place": "Kalinje, Zelina",
+    "death_type": "ubijen",
+    "death_place": "Čučerje",
     "other_sources": [
       {
         "soldier_id": "9015000125",
@@ -28404,6 +28746,7 @@
         "pdf_y": 163.5,
         "pdf_x_end": 265.1,
         "pdf_y_end": 179.7,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]
@@ -28580,6 +28923,7 @@
         "pdf_y": 376.1,
         "pdf_x_end": 265.0,
         "pdf_y_end": 401.6,
+        "unit_detail": "udarna brigada Braća Radić",
         "unit_file": "32-divizija-soldiers.json"
       },
       {
@@ -28650,6 +28994,7 @@
         "pdf_y": 498.7,
         "pdf_x_end": 458.6,
         "pdf_y_end": 517.8,
+        "since": "1943",
         "unit_file": "kalnicki-odred-soldiers.json"
       }
     ]
@@ -28684,6 +29029,7 @@
         "pdf_y": 372.3,
         "pdf_x_end": 264.1,
         "pdf_y_end": 399.8,
+        "unit_detail": "brigada Matija Gubec",
         "unit_file": "32-divizija-soldiers.json"
       }
     ]

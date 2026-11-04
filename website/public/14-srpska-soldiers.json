@@ -37,7 +37,8 @@
     "soldier_id": "0027000002",
     "death_type": "poginuo",
     "pdf_x_end": 346.7,
-    "birth_place": "Sokobanja"
+    "birth_place": "Sokobanja",
+    "death_place": "Dugo Polje"
   },
   {
     "last_name": "Adamović",
@@ -333,6 +334,7 @@
         "pdf_y": 88.8,
         "pdf_x_end": 318.8,
         "pdf_y_end": 105.7,
+        "rank": "borac",
         "unit_file": "7-srpska-soldiers.json"
       }
     ]
@@ -783,7 +785,7 @@
     "fathers_name": "Dane",
     "full_name": "Batinica Dane Milan",
     "additional_info": "(22. XII 1919, Srb — D. Lapac, Hrvatska, student). U NOVJ od 14. VIII 1944, poginuo 11. II 1945. kod sela Miričine, Tuzla, kao politički komesar 1/2. bataljona.",
-    "birth_year": "",
+    "birth_year": "1919",
     "pdf_page": 4,
     "pdf_y": 114.8,
     "pdf_x": 69.2,
@@ -794,7 +796,9 @@
     "death_date": "11.02.1945",
     "rank": "politički komesar",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 350.7
+    "pdf_x_end": 350.7,
+    "death_place": "Miričina, Tuzla",
+    "birth_date": "22.12.1919"
   },
   {
     "last_name": "Begić",
@@ -1180,7 +1184,8 @@
     "death_type": "poginuo",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 343.0
+    "pdf_x_end": 343.0,
+    "death_place": "Toponica, Niš"
   },
   {
     "last_name": "Bogdanović",
@@ -1705,7 +1710,8 @@
     "rank": "borac",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 348.8,
-    "birth_place": "Bobovište, Aleksinac"
+    "birth_place": "Bobovište, Aleksinac",
+    "death_place": "Gornjane, Zaječar"
   },
   {
     "last_name": "Brlanović",
@@ -2267,7 +2273,8 @@
     "death_date": "03.1945",
     "rank": "borac",
     "pdf_x_end": 353.6,
-    "birth_place": "Kamenica, Niš"
+    "birth_place": "Kamenica, Niš",
+    "death_place": "Bosna"
   },
   {
     "last_name": "Devetak",
@@ -2390,6 +2397,7 @@
     "pdf_x_end": 346.1,
     "party": "KPJ",
     "birth_place": "Jošanica, Sokobanja",
+    "death_place": "Špionici, Gradačac",
     "other_sources": [
       {
         "soldier_id": "9025029812",
@@ -2403,11 +2411,9 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "death_date",
-      "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
-    "death_place": "Gračanica, Bosna"
+    "death_date": "1945"
   },
   {
     "last_name": "Dinić",
@@ -3280,7 +3286,7 @@
     "fathers_name": "",
     "full_name": "Gulijelino Anadeta",
     "additional_info": "(3. IV 1920, Kostisko, Firenca — Italija). U NOVJ od 24. IX 1944, nestao 6. I 1945. kod Gračanice kao borac Čete pratećih oruća 3. bataljona.",
-    "birth_year": "",
+    "birth_year": "1920",
     "pdf_page": 11,
     "pdf_y": 189.0,
     "pdf_x": 70.6,
@@ -3292,7 +3298,8 @@
     "death_place": "Gračanica",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 352.4
+    "pdf_x_end": 352.4,
+    "birth_date": "03.04.1920"
   },
   {
     "last_name": "Gvozdenović",
@@ -4694,7 +4701,8 @@
     "rank": "referent saniteta",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 352.2,
-    "birth_place": "Šavnik"
+    "birth_place": "Šavnik",
+    "death_place": "Gornjane, Zaječar"
   },
   {
     "last_name": "Jakovljević",
@@ -5085,7 +5093,7 @@
     "fathers_name": "",
     "full_name": "Janković Petar",
     "additional_info": "(11. VI 1923, Šurići — Vraćenovica, Zaječar). U NOVJ od 6. IX 1944, poginuo decembra iste godine kod Ljubovije, kao desetar 2/1. bataljona.",
-    "birth_year": "",
+    "birth_year": "1923",
     "pdf_page": 25,
     "pdf_y": 298.0,
     "pdf_x": 64.6,
@@ -5096,7 +5104,8 @@
     "rank": "desetar",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 346.3,
-    "death_place": "Ljubovija"
+    "death_place": "Ljubovija",
+    "birth_date": "11.06.1923"
   },
   {
     "last_name": "Janković",
@@ -5643,6 +5652,7 @@
     "rank": "borac",
     "pdf_x_end": 341.7,
     "birth_place": "Rsovci, Pirot",
+    "death_place": "Bukovik, Sokobanja",
     "other_sources": [
       {
         "soldier_id": "9025025060",
@@ -5657,11 +5667,9 @@
     "borrowed": [
       "birth_year",
       "death_date",
-      "death_place",
       "ethnicity"
     ],
     "death_date": "1944",
-    "death_place": "Bukovik",
     "birth_year": "1905"
   },
   {
@@ -6581,7 +6589,8 @@
     "death_type": "poginuo",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 347.5,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "na Varničkom vrhu kod Knjaževca"
   },
   {
     "last_name": "Jovanović",
@@ -8765,7 +8774,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 353.4,
-    "birth_place": "Vranovo"
+    "birth_place": "Vranovo",
+    "death_place": "Huskići, Gračanica"
   },
   {
     "last_name": "Marić",
@@ -9028,6 +9038,7 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 352.6,
     "birth_place": "Sokobanja",
+    "death_place": "Tojšići, Tuzla",
     "other_sources": [
       {
         "soldier_id": "9025029921",
@@ -9052,10 +9063,8 @@
     ],
     "ethnicity": "Crnogorac",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Zvornik"
+    ]
   },
   {
     "last_name": "Marković",
@@ -9177,6 +9186,7 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 352.2,
     "birth_place": "Jošanica, Soko Banja",
+    "death_place": "Vranići, Čačak",
     "other_sources": [
       {
         "soldier_id": "9025029813",
@@ -9189,10 +9199,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "G. Garnjijevica"
+    ]
   },
   {
     "last_name": "Marković",
@@ -9480,7 +9488,8 @@
     "rank": "politički komesar",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 350.4,
-    "birth_place": "Manojlica, Svrljig"
+    "birth_place": "Manojlica, Svrljig",
+    "death_place": "Tojšići, Tuzla"
   },
   {
     "last_name": "Marković",
@@ -9580,7 +9589,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 340.6,
-    "birth_place": "Gračanica"
+    "birth_place": "Gračanica",
+    "death_place": "Radići, Gradačac"
   },
   {
     "last_name": "Matanović",
@@ -9867,6 +9877,7 @@
     "death_type": "poginuo",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 346.9,
+    "death_place": "Bukovik, Sokobanja",
     "birth_year": "1926",
     "other_sources": [
       {
@@ -9883,12 +9894,10 @@
       "birth_place",
       "birth_year",
       "death_date",
-      "death_place",
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_date": "1944",
-    "death_place": "Bunovik"
+    "death_date": "1944"
   },
   {
     "last_name": "Mačukić",
@@ -10160,7 +10169,7 @@
     "fathers_name": "M",
     "full_name": "Mijović M Mihailo",
     "additional_info": "(27. XI 1914, Skoplje). U NOVJ od 9. X 1944, nestao 6. I 1945. kod Gračanice kao politički delegat voda čete pratećih oruća 3. bataljona.",
-    "birth_year": "",
+    "birth_year": "1914",
     "pdf_page": 41,
     "pdf_y": 359.6,
     "pdf_x": 62.8,
@@ -10172,7 +10181,8 @@
     "death_place": "Gračanica",
     "rank": "politički delegat voda",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 344.5
+    "pdf_x_end": 344.5,
+    "birth_date": "27.11.1914"
   },
   {
     "last_name": "Mikuljević",
@@ -13967,6 +13977,7 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 350.0,
     "birth_place": "Gabrovnica",
+    "death_place": "kod sela Kojići, Gračanica",
     "other_sources": [
       {
         "soldier_id": "9038000433",
@@ -14356,6 +14367,7 @@
         "pdf_x_end": 349.4,
         "pdf_y_end": 379.3,
         "pdf_x_left": 66.7,
+        "rank": "borac",
         "unit_file": "3-krajiska-proleterska-soldiers.json"
       }
     ]
@@ -14652,7 +14664,8 @@
     "soldier_id": "0027000583",
     "death_type": "poginuo",
     "rank": "borac",
-    "pdf_x_end": 350.1
+    "pdf_x_end": 350.1,
+    "death_place": "Bukovik, Sokobanja"
   },
   {
     "last_name": "Nirić",
@@ -14817,7 +14830,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 347.6,
-    "birth_place": "Popadić, Mionica, Valjevo"
+    "birth_place": "Popadić, Mionica, Valjevo",
+    "death_place": "Zdenčina, Jastrebarsko, Hrvatska"
   },
   {
     "last_name": "Obradović",
@@ -16094,6 +16108,8 @@
         "pdf_y": 220.4,
         "pdf_x_end": 363.9,
         "pdf_y_end": 247.6,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
         "unit_file": "23-srpska-soldiers.json"
       }
     ],
@@ -16369,7 +16385,8 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 343.2,
-    "birth_place": "Velešinovac"
+    "birth_place": "Velešinovac",
+    "death_place": "Sladna, Gračanica"
   },
   {
     "last_name": "Petrović",
@@ -16479,6 +16496,8 @@
         "pdf_y": 460.0,
         "pdf_x_end": 487.1,
         "pdf_y_end": 513.3,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "borac",
         "unit_file": "4-proleterska-soldiers.json"
       },
       {
@@ -16491,6 +16510,7 @@
         "pdf_y": 285.3,
         "pdf_x_end": 348.3,
         "pdf_y_end": 311.1,
+        "rank": "politički komesar baterije",
         "unit_file": "4-proleterska-soldiers.json"
       }
     ],
@@ -16548,6 +16568,7 @@
         "pdf_y": 350.7,
         "pdf_x_end": 349.1,
         "pdf_y_end": 368.6,
+        "rank": "borac",
         "unit_file": "5-kozaracka-soldiers.json"
       }
     ],
@@ -16637,6 +16658,7 @@
         "pdf_y": 74.5,
         "pdf_x_end": 354.5,
         "pdf_y_end": 92.1,
+        "unit_detail": "3. četa, 2. bataljon",
         "unit_file": "25-brodska-soldiers.json"
       },
       {
@@ -16649,6 +16671,8 @@
         "pdf_y": 271.2,
         "pdf_x_end": 313.4,
         "pdf_y_end": 288.8,
+        "unit_detail": "3. bataljon",
+        "rank": "borac",
         "unit_file": "21-slavonska-soldiers.json"
       }
     ],
@@ -16779,7 +16803,7 @@
     "fathers_name": "",
     "full_name": "Plavšić Sava",
     "additional_info": "(18. IV 1918, Kruševac). U NOVJ od 7. IX 1944, poginuo 18. X iste godine u Vrčinu kod Avale — Beograd, kao borac 3. bataljona.",
-    "birth_year": "",
+    "birth_year": "1918",
     "pdf_page": 61,
     "pdf_y": 355.3,
     "pdf_x": 67.5,
@@ -16790,7 +16814,8 @@
     "rank": "borac",
     "unit_detail": "3. bataljon",
     "pdf_x_end": 348.6,
-    "death_place": "Vrčin, Avala, Beograd"
+    "death_place": "Vrčin, Avala, Beograd",
+    "birth_date": "18.04.1918"
   },
   {
     "last_name": "Plazmić",
@@ -17169,6 +17194,7 @@
         "additional_info": "zvani Funda; zemljorad. iz Brežana, rođen 1925. u Brežanu. U odredu od septembra do decembra 1941. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=299",
         "source_page": 287,
+        "since": "1941-09",
         "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
@@ -17284,7 +17310,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 351.6,
-    "birth_place": "Vrbovac, Gradačac"
+    "birth_place": "Vrbovac, Gradačac",
+    "death_place": "Zdenčina, Hrvatska"
   },
   {
     "last_name": "Radaković",
@@ -17762,6 +17789,7 @@
     "rank": "politički komesar",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 342.2,
+    "death_place": "Pisarovina, Karlovac, Hrvatska",
     "birth_year": "1915",
     "other_sources": [
       {
@@ -17777,11 +17805,9 @@
     "borrowed": [
       "birth_place",
       "birth_year",
-      "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
-    "death_place": "Šid"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Radovanović",
@@ -18149,7 +18175,8 @@
     "death_type": "poginuo",
     "rank": "borac",
     "pdf_x_end": 343.1,
-    "birth_place": "Bobovište, Aleksinac"
+    "birth_place": "Bobovište, Aleksinac",
+    "death_place": "Ripanj, Beograd"
   },
   {
     "last_name": "Ranković",
@@ -19037,7 +19064,8 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 341.8,
     "party": "KPJ",
-    "birth_place": "Ljubinje"
+    "birth_place": "Ljubinje",
+    "death_place": "Gorijevnice, Čačak"
   },
   {
     "last_name": "Slanković",
@@ -19609,7 +19637,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 345.3,
-    "birth_place": "Pečanica"
+    "birth_place": "Pečanica",
+    "death_place": "Rašljeva, Gračanica"
   },
   {
     "last_name": "Stanković",
@@ -21880,6 +21909,7 @@
         "additional_info": "zemljorad, iz Dubnice, rođen 1922. u Dubnici. U odredu od novembra 1941. do januara 1942. godine.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=314",
         "source_page": 302,
+        "since": "1941-11",
         "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
@@ -22745,6 +22775,7 @@
     "pdf_x_end": 349.4,
     "party": "KPJ",
     "birth_place": "Knin",
+    "death_place": "Trgovište, Sokobanja",
     "other_sources": [
       {
         "soldier_id": "9021018633",
@@ -22757,10 +22788,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Pančevo"
+    ]
   },
   {
     "last_name": "Vuletić",
@@ -23075,6 +23104,7 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 355.4,
     "birth_place": "Kriva Reka, Užice",
+    "death_place": "Huskići, Tuzla",
     "other_sources": [
       {
         "soldier_id": "9025032819",
@@ -23095,10 +23125,8 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_place",
       "ethnicity"
-    ],
-    "death_place": "Gračanica"
+    ]
   },
   {
     "last_name": "Zolja",
@@ -23447,7 +23475,8 @@
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 347.4,
     "rank": "komandir čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "occupation": "mehaničar"
   },
   {
     "last_name": "Đorđević",
@@ -24094,7 +24123,7 @@
     "fathers_name": "Milan",
     "full_name": "Đorđević Milana Vladimir",
     "additional_info": "(8. II 1925, Beograd). U NOVJ od 26. X 1944, poginuo krajem marta 1945. kod Špionice, Gradačac, kao politički delegat voda u 2. bataljonu.",
-    "birth_year": "",
+    "birth_year": "1925",
     "pdf_page": 14,
     "pdf_y": 253.8,
     "pdf_x": 68.3,
@@ -24106,7 +24135,8 @@
     "death_place": "Špionici, Gradačac",
     "rank": "politički delegat voda",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 349.5
+    "pdf_x_end": 349.5,
+    "birth_date": "08.02.1925"
   },
   {
     "last_name": "Đorđević",
@@ -25156,7 +25186,7 @@
     "fathers_name": "",
     "full_name": "Žunac Stevan",
     "additional_info": "(26. IX 1926, Boka — odselio u Jaša Tomić — Banat). U NOVJ od juna 1944, poginuo 10. januara 1945. u Dobošnici, Tuzla, kao borac 3. bataljona.",
-    "birth_year": "",
+    "birth_year": "1926",
     "pdf_page": 19,
     "pdf_y": 220.0,
     "pdf_x": 61.9,
@@ -25168,7 +25198,8 @@
     "death_place": "Dobošnica, Tuzla",
     "rank": "borac",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 344.1
+    "pdf_x_end": 344.1,
+    "birth_date": "26.09.1926"
   },
   {
     "last_name": "Žunić",
@@ -25210,7 +25241,8 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 343.7,
-    "birth_place": "Poturice, Doboj"
+    "birth_place": "Poturice, Doboj",
+    "death_place": "kod Gornje Svodne, Bosanski Novi"
   },
   {
     "last_name": "Žunić",
