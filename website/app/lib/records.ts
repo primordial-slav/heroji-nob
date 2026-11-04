@@ -4,15 +4,17 @@ import { units } from '@/app/data/units'
 import { localePath, type Lang } from '@/app/i18n/config'
 import { isWoman } from './standIn'
 
-// A record's own address: /units/<unit>?borac=<soldier id>, in a language /en/units/<unit>?borac=<soldier id>
+// The older address of a record, /units/<unit>?borac=<soldier id>, which old links still use, and the memorial card's
 export const RECORD_PARAM = 'borac'
 
 export function unitByName(name?: string): Unit | undefined {
   return name ? units.find((u) => u.name === name) : undefined
 }
 
-export function recordPath(unit: Unit, soldierId: string, lang: Lang): string {
-  return localePath(lang, `/units/${unit.id}?${RECORD_PARAM}=${encodeURIComponent(soldierId)}`)
+/** A record's own address, /borac/<soldier id>, in a language /en/borac/<soldier id> (lib/recordAnswer.ts answers it). Link
+ * to it with a plain <a>, never next/link, whose prefetching would run that route for every record in sight. */
+export function recordPath(soldierId: string, lang: Lang): string {
+  return localePath(lang, `/borac/${encodeURIComponent(soldierId)}`)
 }
 
 export function cardPath(unit: Unit, soldierId: string, lang: Lang): string {

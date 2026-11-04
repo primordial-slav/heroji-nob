@@ -22,7 +22,7 @@ export default function RecordActions({ soldier, unit }: { soldier: Soldier; uni
 
   if (!unit) return null
 
-  const link = typeof window === 'undefined' ? '' : new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString()
+  const link = typeof window === 'undefined' ? '' : new URL(recordPath(soldier.soldier_id, lang), window.location.origin).toString()
   const quote = `${citation(soldier, lang, t)} ${link}`
 
   const share = async () => {

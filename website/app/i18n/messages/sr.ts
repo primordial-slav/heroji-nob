@@ -20,7 +20,7 @@ export const sr = {
     name: 'Knjiga boraca',
     description: 'Spiskovi boraca partizanskih jedinica, pretraživi po imenu, sa stranom iz knjige uz svaki zapis.',
   },
-  nav: { label: 'Glavna navigacija', home: 'Početna', units: 'Jedinice', gallery: 'Galerija', sources: 'Izvori' },
+  nav: { label: 'Glavna navigacija', home: 'Početna', units: 'Jedinice', gallery: 'Fotografije boraca', sources: 'Izvori' },
   theme: { label: 'Tema', light: 'Svetla tema', dark: 'Tamna tema', system: 'Sistemska tema' },
   language: { label: 'Jezik' },
   /** The foot of every page: where to write (the sources are named on Izvori alone) */
@@ -61,9 +61,9 @@ export const sr = {
       booksText: 'Knjige i spiskovi iz kojih su imena, sa skeniranim stranama.',
       booksCount: (x: number) => `${n(x)} ${plural('sr', x, { one: 'izvor', other: 'izvora' })}`,
     },
-    /** "Šta je novo" under the doors: the site's recent changes (data/news.ts) */
+    /** "Dopune" under the doors: the site's recent changes (data/news.ts) */
     news: {
-      title: 'Šta je novo',
+      title: 'Dopune',
       date: (d: number, m: number, y: number) => `${d}. ${m}. ${y}.`,
     },
     otherUnits: 'Ostale jedinice',
@@ -168,8 +168,6 @@ export const sr = {
     day: (d: number, m: number) => dateNumbers(d, m),
     month: (m: number) => MONTHS[m - 1],
     /** where a fact leads, with its count */
-    neighbours: (x: number) => `još ${n(x)} iz tog mesta`,
-    comrades: (x: number) => borci(x),
     sameDay: (x: number) => `istog dana još ${n(x)}`,
     sameDayShort: 'istog dana',
     /** a death the record gives without a date or a place */
@@ -203,6 +201,12 @@ export const sr = {
     /** A book whose scan is not on the site: its title and page */
     noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, strana ${page}` : ''}.`,
     steps: 'Susedni zapisi u spisku',
+    /** Going through a search's results: the same bar, and where the record is among them */
+    stepsFound: 'Susedni rezultati pretrage',
+    wholePage: 'Cela strana izvora',
+    /** the printed entry opened whole, where its cut-out shows only the start */
+    wholeEntry: 'Ceo zapis',
+    stepOf: (at: number, total: number) => `${n(at)} od ${n(total)}`,
     previous: 'Prethodni',
     next: 'Sledeći',
     fields: {
@@ -211,6 +215,10 @@ export const sr = {
       mother: 'Majka',
       ethnicity: 'Narodnost',
       occupation: 'Zanimanje',
+      /** what he was in the unit, apart from the sub-unit: "Dužnost: komandant brigade" */
+      duty: 'Dužnost',
+      /** a man of several units: one row of them */
+      units: 'Jedinice',
       /** SKOJ, the party or both, with the years: "Partija: SKOJ od 1941, KPJ od 1944" */
       party: 'Partija',
     },
@@ -383,7 +391,7 @@ export const sr = {
     noneChosenText: 'Uklonite neki filter ili izaberite drugu godinu.',
   },
   gallery: {
-    title: 'Galerija',
+    title: 'Fotografije boraca',
     description: 'Fotografije boraca: lica iz knjiga jedinica i iz fotogalerije znaci.org.',
     label: (x: number) => `Fotografije boraca (${n(x)})`,
   },

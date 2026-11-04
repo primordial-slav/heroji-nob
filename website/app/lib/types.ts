@@ -15,6 +15,9 @@ export interface SoldierSource {
   source_url?: string
   source_page?: number    // the book's page, for a source without a scan on the site (the Poreklo library's books)
   unit_file?: string      // set when the entry is another unit's: that unit's data file (the soldier served in both)
+  unit_detail?: string    // on another unit's record: his sub-unit there
+  rank?: string           // on another unit's record: his duty there
+  since?: string          // on another unit's record: when he came to it, where it is printed ("1943-06")
   ref_book?: string       // set when the entry is a book across units' (a hero book, a regional list): its id
 }
 

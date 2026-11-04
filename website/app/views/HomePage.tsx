@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { units } from '@/app/data/units'
 import { useServerSearch } from '@/app/lib/useServerSearch'
+import { useBackClosesRecord } from '@/app/lib/useBackClosesRecord'
+import { useRecordWalk } from '@/app/lib/useRecordWalk'
 import { PAGE_SIZES, fullRecord, loadPortraitPeople, loadedPortraitPeople } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
@@ -32,6 +34,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
+  useBackClosesRecord(selectedSoldier?.soldier_id, () => setSelectedSoldier(null))
 
   // Which page of the results is shown: a new search starts on its first
   const searchKey = JSON.stringify([searchTerm.trim(), filters])
@@ -91,6 +94,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
   // Filters narrow the search; a place, year, unit or fate alone also lists everyone who matches it
   const filtering = narrows(filters)
   const filtersSet = filterCount(filters) > 0
+  const walk = useRecordWalk({ searching: hasQuery || filtering, query: searchTerm, filters, found: server.result, soldierId: selectedSoldier?.soldier_id })
 
   // What the results say
   const found = server.result
@@ -101,7 +105,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
   return (
     <div>
       <section className="masthead" aria-labelledby="finder-title">
-        <div className="container finder">
+        <div className={hasQuery || filtering ? 'container finder is-searching' : 'container finder'}>
           <h1 id="finder-title">{t.home.title}</h1>
           <div className="finder-field">
             <label htmlFor="search" className="visually-hidden">{t.home.fieldLabel}</label>
@@ -197,6 +201,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
         <SoldierModal
           key={selectedSoldier.soldier_id}
           soldier={selectedSoldier}
+          walk={walk}
           onOpen={openSoldier}
           onClose={() => setSelectedSoldier(null)}
         />

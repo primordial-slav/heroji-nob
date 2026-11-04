@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
 import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
@@ -75,20 +74,20 @@ export default function MemorialCard() {
   const ready = settledCrops >= pages.length
   const years = lifeYears(soldier)
   // the same rows as the record dialog's (lib/recordFacts.ts), without its links
-  const details = recordFacts(soldier, t, unit.name)
+  const details = recordFacts(soldier, t, unit.name, unitText.shortName)
   const events = eventLines(soldier, t)
   const honours = honoursLine(soldier, t)
   const hasPhoto = !unit.image.includes('/pdf-thumbs/')
-  const link = new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString()
+  const link = new URL(recordPath(soldier.soldier_id, lang), window.location.origin).toString()
   // The soldier's photograph (from the family, a book or the gallery); without one, a stand-in outline
   const portrait = portraitFor(soldier)
 
   return (
     <div className="container card-page">
       <div className="card-toolbar">
-        <Link href={recordPath(unit, soldier.soldier_id, lang)} className="back-link">
+        <a href={recordPath(soldier.soldier_id, lang)} className="back-link">
           <ArrowLeftIcon size={16} /> {t.card.back}
-        </Link>
+        </a>
         <button type="button" className="btn btn-primary" onClick={() => window.print()} disabled={!ready}>
           <PrintIcon size={16} /> {ready ? t.card.print : t.card.preparing}
         </button>
@@ -115,10 +114,14 @@ export default function MemorialCard() {
 
           {details.length > 0 && (
             <dl className="memorial-details">
-              {details.map((f) => (
-                <div key={f.key}>
+              {details.map((f, i) => (
+                <div key={`${f.key}${i}`}>
                   <dt>{f.label}</dt>
-                  <dd>{f.value}</dd>
+                  <dd>
+                    {f.lines
+                      ? f.lines.map((line) => <span key={line.text} className="memorial-line">{line.text}{line.rest}</span>)
+                      : f.value}
+                  </dd>
                 </div>
               ))}
             </dl>

@@ -4,8 +4,13 @@ import { useEffect, useRef, useState } from 'react'
 import { units } from '@/app/data/units'
 import type { Soldier } from '@/app/lib/types'
 import { recordsPath } from '@/app/lib/searchIndex'
+import { recordPath } from '@/app/lib/records'
+import { useBackClosesRecord } from '@/app/lib/useBackClosesRecord'
+import { isPlainClick } from '@/app/components/RecordLink'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
-import { useT } from '@/app/i18n/LangContext'
+import { useLang, useT } from '@/app/i18n/LangContext'
+
+const UNIT_BY_ID = new Map(units.map((unit) => [unit.id, unit]))
 
 export interface GalleryItem {
   id: string
@@ -28,6 +33,7 @@ function shuffled<T>(items: T[]): T[] {
 export default function GalleryClient({ items }: { items: GalleryItem[] }) {
   usePreloadSoldierModal()
   const t = useT().gallery
+  const lang = useLang()
   // shuffled in the browser only: the page is built once, and the server's order would show for a moment
   const [order, setOrder] = useState<GalleryItem[] | null>(null)
   const [selected, setSelected] = useState<Soldier | null>(null)
@@ -35,9 +41,12 @@ export default function GalleryClient({ items }: { items: GalleryItem[] }) {
 
   useEffect(() => setOrder(shuffled(items)), [items])
 
+  const close = () => { opening.current = null; setSelected(null) }
+  useBackClosesRecord(selected?.soldier_id, close)
+
   const open = async (item: GalleryItem) => {
     opening.current = item.id
-    const unit = units.find((u) => u.id === item.unit)
+    const unit = UNIT_BY_ID.get(item.unit)
     try {
       const response = await fetch(recordsPath(item.unit, item.part))
       const records: Soldier[] = response.ok ? await response.json() : []
@@ -51,21 +60,33 @@ export default function GalleryClient({ items }: { items: GalleryItem[] }) {
   return (
     <>
       <ul className="gallery-grid" aria-label={t.label(items.length)}>
-        {(order ?? []).map((item) => (
-          <li key={item.id}>
-            <button type="button" className="gallery-tile" onClick={() => open(item)} title={item.name}>
-              <img src={`/portreti/${item.file}`} alt={item.name} loading="lazy" />
-              <span className="gallery-name">{item.name}</span>
-            </button>
-          </li>
-        ))}
+        {(order ?? []).map((item) => {
+          const unit = UNIT_BY_ID.get(item.unit)
+          return (
+            <li key={item.id}>
+              <a
+                href={recordPath(item.id, lang)}
+                className="gallery-tile"
+                title={item.name}
+                onClick={(e) => {
+                  if (!isPlainClick(e)) return
+                  e.preventDefault()
+                  open(item)
+                }}
+              >
+                <img src={`/portreti/${item.file}`} alt={item.name} loading="lazy" />
+                <span className="gallery-name">{item.name}</span>
+              </a>
+            </li>
+          )
+        })}
       </ul>
 
       {selected && (
         <SoldierModal
           key={selected.soldier_id}
           soldier={selected}
-          onClose={() => { opening.current = null; setSelected(null) }}
+          onClose={close}
         />
       )}
     </>

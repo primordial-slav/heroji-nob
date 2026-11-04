@@ -3,15 +3,17 @@
 import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
-import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
 import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, unitByName } from '@/app/lib/records'
 import { sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
 import { eventLines } from '@/app/lib/warEvents'
 import { loadKin, type Kin } from '@/app/lib/searchIndex'
+import type { RecordWalk } from '@/app/lib/useRecordWalk'
 import { units } from '@/app/data/units'
 import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
+import EntryStrip from './EntryStrip'
 import { SoldierMedals, honoursLine } from './Medal'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
@@ -57,10 +59,12 @@ interface SoldierModalProps {
   unitName?: string
   // Opens another record in this dialog: the one before or after this one in the unit's list, a name in the trees
   onOpen?: (soldier: Soldier) => void
+  /** Opened from a search: its results, in place of the unit's list, for the record before and after this one */
+  walk?: RecordWalk
   onClose: () => void
 }
 
-export default function SoldierModal({ soldier, unitName, onOpen, onClose }: SoldierModalProps) {
+export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose }: SoldierModalProps) {
   const lang = useLang()
   const unitText = useUnitText()
   const t = useT()
@@ -84,6 +88,9 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
   // The record's own entry stays open; its other books fold under it
   const [moreOpen, setMoreOpen] = useState(false)
   const moreId = useId()
+  // With the printed lines shown, the page they come from folds, as the comrades do, till it is asked for
+  const foldPage = pages.length > 0
+  const [pageOpen, setPageOpen] = useState(false)
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
@@ -100,8 +107,9 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
     if (at < 0) return
     setShownPage(at)
     setFlash((f) => f + 1)
+    setPageOpen(true)
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    pageRef.current?.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
+    pageRef.current?.scrollIntoView({ block: foldPage ? 'start' : 'nearest', behavior: reduce ? 'auto' : 'smooth' })
   }
   // An entry's line: the other unit, the book, its page, the name as printed there. A list published as a web
   // page links to it; a book whose scan is not on the site, or a family's archive, is only named.
@@ -129,6 +137,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
     setShownPage(0)
     setFlash(0)
     setMoreOpen(false)
+    setPageOpen(false)
     setKinRequest(null)
     // the counts are not cleared here: on a first opening the folds may have counted him before this runs
   }, [soldier.soldier_id])
@@ -142,8 +151,8 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
     loadKin(unitRecord, soldier.soldier_id).then((found) => live && setKin(found)).catch(() => {})
     return () => { live = false }
   }, [unitRecord, soldier.soldier_id])
-  const previous = onOpen ? kin?.previous : undefined
-  const next = onOpen ? kin?.next : undefined
+  const previous = onOpen ? (walk ? walk.previous : kin?.previous) : undefined
+  const next = onOpen ? (walk ? walk.next : kin?.next) : undefined
   const stepRef = useRef({ previous, next, onOpen })
   stepRef.current = { previous, next, onOpen }
 
@@ -198,18 +207,103 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
 
   const honours = honoursLine(soldier, t)
 
-  // The record's facts (lib/recordFacts.ts, the memorial card's too); the birth, the unit and the death link to the
-  // people they share with others. Only the counts made for this soldier; the last one's until the folds have counted his
-  const counted = (c: KinCounts): KinCounts => (c.of === soldier.soldier_id ? c : {})
-  const comrades = counted(counts.comrades)
-  const neighbours = counted(counts.neighbours)
+  // The record's facts (lib/recordFacts.ts, the memorial card's too); the death links to those who fell the same day.
+  // Only the count made for this soldier; the last one's until the fold has counted his
+  const comrades: KinCounts = counts.comrades.of === soldier.soldier_id ? counts.comrades : {}
   const links: Partial<Record<FactKey, Fact['link']>> = {
-    born: neighbours.place ? { text: t.life.neighbours(neighbours.place.others), open: () => openKin('neighbours', 'place') } : undefined,
-    unit: comrades.unit ? { text: t.life.comrades(comrades.unit.size), open: () => openKin('comrades', 'unit') } : undefined,
     death: comrades.sameDay ? { text: t.life.sameDay(comrades.sameDay), open: () => openKin('comrades', 'day') } : undefined,
   }
-  const facts: Fact[] = recordFacts(soldier, t, unitRecord?.name ?? unit).map((f) => ({ ...f, link: links[f.key] }))
+  const facts: Fact[] = recordFacts(soldier, t, unitRecord?.name ?? unit, unitText.shortName).map((f) => ({ ...f, link: links[f.key] }))
   const events = eventLines(soldier, t)
+
+  // The entries as text and the page they stand on
+  const sourceBody = (
+    <>
+      {entries.length === 1 && soldier.additional_info && (
+        <p className="modal-entry">{soldier.additional_info}</p>
+      )}
+
+      {entries.length > 1 && (
+        <div className="record-entries">
+          <p className="modal-source-label">{entryLabel(entries[0])}</p>
+          {entries[0].additional_info && <p className="modal-entry">{entries[0].additional_info}</p>}
+          <div className="entries-more">
+            <button type="button" className="entries-more-button" aria-expanded={moreOpen} aria-controls={moreId}
+              onClick={() => setMoreOpen((open) => !open)}>
+              <ChevronRightIcon size={16} />
+              <span>{t.record.moreEntries(entries.length - 1)}</span>
+            </button>
+            {moreOpen ? (
+              <ol className="modal-sources entries-more-list" id={moreId} aria-label={t.record.entries}>
+                {entries.slice(1).map((e, k) => (
+                  <li key={k} className="modal-source-entry">
+                    <p className="modal-source-label">{entryLabel(e)}</p>
+                    {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
+                    {hasPage(e) && (
+                      <button type="button" className="entry-show-page" onClick={() => showEntry(k + 1)}>
+                        {t.record.showPage}
+                      </button>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              // the books it holds, each named once
+              <p className="entries-more-books">
+                {entries.slice(1).map((e) => sourceTitle(e).split(' — ')[0])
+                  .filter((b, i, list) => list.indexOf(b) === i).join(' · ')}
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Over the viewer, outside it, so the menu keeps its focus while the other book's page loads: the book
+          shown, and with more than one, a menu of the others (the select lies unseen over the name) */}
+      {page && (
+        <div className="pdf-book-bar">
+          {pages.length > 1 ? (
+            <label className="pdf-book">
+              <span className="pdf-book-name" aria-hidden="true">{bookLabel(page)}</span>
+              <ChevronRightIcon size={14} />
+              <select aria-label={t.record.book} value={pages.indexOf(page)} onChange={(ev) => setShownPage(Number(ev.target.value))}>
+                {pages.map((e, i) => <option key={i} value={i}>{bookLabel(e)}</option>)}
+              </select>
+            </label>
+          ) : (
+            <span className="pdf-book-name">{bookLabel(page)}</span>
+          )}
+        </div>
+      )}
+      {page && (
+        <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
+          <PdfViewer
+            key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
+            pdfFile={`/pdfs/${page.pdf_file}`}
+            pageNumber={page.pdf_page!}
+            yPosition={page.pdf_y ?? 0}
+            yPositionEnd={page.pdf_y_end}
+            xPosition={page.pdf_x ?? 0}
+            xPositionLeft={page.pdf_x_left}
+            xPositionEnd={page.pdf_x_end}
+            rects={page.pdf_rects}
+            sourceHref={sourceHref}
+            flash={flash}
+          />
+        </Suspense>
+      )}
+
+      {!page && soldier.source_url && (
+        <p className="modal-source-note">
+          {/* a book whose scan is not on the site is named with its page, not linked; so is a family's archive */}
+          {isPoreklo(soldier.source_url) || isFamily(soldier.source_url)
+            ? t.record.noScanBook(bookTitle(soldier, lang), soldier.source_page ?? null)
+            : <RichText text={isMuseum(soldier.source_url) ? t.record.noScanMuseum(bookTitle(soldier, lang)) : t.record.noScan}
+                render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}
+        </p>
+      )}
+    </>
+  )
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -254,11 +348,17 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
             <div className="record-facts-area">
               {facts.length > 0 && (
                 <dl className="record-facts">
-                  {facts.map((f) => (
-                    <div key={f.key} style={{ display: 'contents' }}>
+                  {facts.map((f, i) => (
+                    <div key={`${f.key}${i}`} style={{ display: 'contents' }}>
                       <dt>{f.label}</dt>
                       <dd>
-                        <span>{f.value}</span>
+                        {f.lines ? f.lines.map((line) => (
+                          <span key={line.text} className="record-fact-line">
+                            {/* in a new tab: the record stays open */}
+                            <a href={to(`/units/${line.unit.id}`)} target="_blank" rel="noopener noreferrer">{line.text}</a>
+                            {line.rest}
+                          </span>
+                        )) : <span>{f.value}</span>}
                         {f.link && (
                           <button type="button" className="record-fact-link" onClick={f.link.open}>
                             {f.link.text}<ChevronRightIcon size={14} />
@@ -280,107 +380,45 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
             </aside>
           )}
 
-          <section className="record-page" ref={pageRef}>
-            <div className="modal-source-head">
-              <h3>{page || !soldier.source_url ? t.record.references : t.record.source}</h3>
-            </div>
-
-            {entries.length === 1 && soldier.additional_info && (
-              <p className="modal-entry">{soldier.additional_info}</p>
-            )}
-
-            {entries.length > 1 && (
-              <div className="record-entries">
-                <p className="modal-source-label">{entryLabel(entries[0])}</p>
-                {entries[0].additional_info && <p className="modal-entry">{entries[0].additional_info}</p>}
-                <div className="entries-more">
-                  <button type="button" className="entries-more-button" aria-expanded={moreOpen} aria-controls={moreId}
-                    onClick={() => setMoreOpen((open) => !open)}>
-                    <ChevronRightIcon size={16} />
-                    <span>{t.record.moreEntries(entries.length - 1)}</span>
-                  </button>
-                  {moreOpen ? (
-                    <ol className="modal-sources entries-more-list" id={moreId} aria-label={t.record.entries}>
-                      {entries.slice(1).map((e, k) => (
-                        <li key={k} className="modal-source-entry">
-                          <p className="modal-source-label">{entryLabel(e)}</p>
-                          {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
-                          {hasPage(e) && (
-                            <button type="button" className="entry-show-page" onClick={() => showEntry(k + 1)}>
-                              {t.record.showPage}
-                            </button>
-                          )}
-                        </li>
-                      ))}
-                    </ol>
-                  ) : (
-                    // the books it holds, each named once
-                    <p className="entries-more-books">
-                      {entries.slice(1).map((e) => sourceTitle(e).split(' — ')[0])
-                        .filter((b, i, list) => list.indexOf(b) === i).join(' · ')}
-                    </p>
-                  )}
-                </div>
+          {!foldPage && (
+            <section className="record-page" ref={pageRef}>
+              <div className="modal-source-head">
+                <h3>{page || !soldier.source_url ? t.record.references : t.record.source}</h3>
               </div>
-            )}
-
-            {/* Over the viewer, outside it, so the menu keeps its focus while the other book's page loads: the book
-                shown, and with more than one, a menu of the others (the select lies unseen over the name) */}
-            {page && (
-              <div className="pdf-book-bar">
-                {pages.length > 1 ? (
-                  <label className="pdf-book">
-                    <span className="pdf-book-name" aria-hidden="true">{bookLabel(page)}</span>
-                    <ChevronRightIcon size={14} />
-                    <select aria-label={t.record.book} value={pages.indexOf(page)} onChange={(ev) => setShownPage(Number(ev.target.value))}>
-                      {pages.map((e, i) => <option key={i} value={i}>{bookLabel(e)}</option>)}
-                    </select>
-                  </label>
-                ) : (
-                  <span className="pdf-book-name">{bookLabel(page)}</span>
-                )}
-              </div>
-            )}
-            {page && (
-              <Suspense fallback={<div className="pdf-viewer-loading">{t.record.loadingPage}</div>}>
-                <PdfViewer
-                  key={`${page.pdf_file}#${page.pdf_page}#${page.pdf_y}`}
-                  pdfFile={`/pdfs/${page.pdf_file}`}
-                  pageNumber={page.pdf_page!}
-                  yPosition={page.pdf_y ?? 0}
-                  yPositionEnd={page.pdf_y_end}
-                  xPosition={page.pdf_x ?? 0}
-                  xPositionLeft={page.pdf_x_left}
-                  xPositionEnd={page.pdf_x_end}
-                  rects={page.pdf_rects}
-                  sourceHref={sourceHref}
-                  flash={flash}
-                />
-              </Suspense>
-            )}
-
-            {!page && soldier.source_url && (
-              <p className="modal-source-note">
-                {/* a book whose scan is not on the site is named with its page, not linked; so is a family's archive */}
-                {isPoreklo(soldier.source_url) || isFamily(soldier.source_url)
-                  ? t.record.noScanBook(bookTitle(soldier, lang), soldier.source_page ?? null)
-                  : <RichText text={isMuseum(soldier.source_url) ? t.record.noScanMuseum(bookTitle(soldier, lang)) : t.record.noScan}
-                      render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}
-              </p>
-            )}
-          </section>
+              {sourceBody}
+            </section>
+          )}
         </div>
 
-        {unitRecord && (
+        {pages.length > 0 && (
+          <EntryStrip key={soldier.soldier_id} entries={pages} label={bookLabel} onWholePage={(e) => showEntry(entries.indexOf(e))} />
+        )}
+        <RecordActions soldier={soldier} unit={unitRecord} />
+
+        {(unitRecord || foldPage) && (
           <div className="record-folds">
-            <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
-              request={kinRequest} onCounts={onCounts} />
-            <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
-              request={kinRequest} onCounts={onCounts} />
+            {foldPage && (
+              <section ref={pageRef} className={`record-fold record-fold-page${pageOpen ? ' is-open' : ''}`} aria-label={t.record.wholePage}>
+                <button type="button" className="record-fold-row" aria-expanded={pageOpen} onClick={() => setPageOpen((open) => !open)}>
+                  <span className="record-fold-text">
+                    <span className="record-fold-title">{t.record.wholePage}</span>
+                    {page && <span className="record-fold-summary">{bookLabel(page)}</span>}
+                  </span>
+                  <ChevronDownIcon size={18} />
+                </button>
+                {pageOpen && sourceBody}
+              </section>
+            )}
+            {unitRecord && (
+              <>
+                <RelationsTree part="comrades" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
+                  request={kinRequest} onCounts={onCounts} />
+                <RelationsTree part="neighbours" soldier={soldier} unit={unitRecord} kin={kin} onOpen={onOpen}
+                  request={kinRequest} onCounts={onCounts} />
+              </>
+            )}
           </div>
         )}
-
-        <RecordActions soldier={soldier} unit={unitRecord} />
 
         <KnowSoldierForm soldier={soldier} unit={unitRecord} />
 
@@ -434,19 +472,20 @@ export default function SoldierModal({ soldier, unitName, onOpen, onClose }: Sol
         )}
 
         {(previous || next) && (
-          <nav className="record-steps" aria-label={t.record.steps}>
+          <nav className="record-steps" aria-label={walk ? t.record.stepsFound : t.record.steps}>
             {previous ? (
               <button type="button" className="record-step" onClick={() => onOpen!(previous)}>
                 <span className="record-step-label"><ChevronLeftIcon size={16} /> {t.record.previous}</span>
                 <span className="record-step-name">{previous.full_name}</span>
               </button>
             ) : <span />}
-            {next && (
+            {walk && <span className="record-step-at">{t.record.stepOf(walk.at, walk.total)}</span>}
+            {next ? (
               <button type="button" className="record-step record-step-next" onClick={() => onOpen!(next)}>
                 <span className="record-step-label">{t.record.next} <ChevronRightIcon size={16} /></span>
                 <span className="record-step-name">{next.full_name}</span>
               </button>
-            )}
+            ) : <span />}
           </nav>
         )}
       </div>

@@ -1,0 +1,21 @@
+# A shared link's preview may read a record's own address; other crawlers are kept off the half a million of them for
+# now, and every crawler off the search. To let search engines in, take the /borac/ lines out of the second group.
+
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+User-agent: Slackbot-LinkExpanding
+User-agent: Discordbot
+User-agent: TelegramBot
+User-agent: WhatsApp
+User-agent: Viber
+Disallow: /api/
+
+User-agent: *
+Disallow: /api/
+Disallow: /borac
+Disallow: /sr-cyrl/borac
+Disallow: /sl/borac
+Disallow: /mk/borac
+Disallow: /en/borac

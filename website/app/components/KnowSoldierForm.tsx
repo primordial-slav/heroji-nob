@@ -54,7 +54,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const send = async () => {
     if (!canSend) return
     setStatus('sending')
-    const link = unit ? new URL(recordPath(unit, soldier.soldier_id, lang), window.location.origin).toString() : ''
+    const link = new URL(recordPath(soldier.soldier_id, lang), window.location.origin).toString()
     const fields: Record<string, string> = {
       _subject: `Znam ovog borca: ${soldier.full_name} (${soldier.soldier_id})`,
       _template: 'table',

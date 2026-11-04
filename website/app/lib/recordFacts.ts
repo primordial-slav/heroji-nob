@@ -1,5 +1,6 @@
-import type { Soldier } from './types'
+import type { Soldier, SoldierSource } from './types'
 import type { Messages } from '@/app/i18n'
+import { units, type Unit } from '@/app/data/units'
 import { partyOf } from './records'
 import { isWoman } from './standIn'
 
@@ -7,13 +8,49 @@ import { isWoman } from './standIn'
 // same rows in the same order, the dialog adding its links beside the ones it links (the place, the comrades, the
 // same day). A row is left out where the record gives nothing for it.
 
-export type FactKey = 'father' | 'mother' | 'born' | 'ethnicity' | 'occupation' | 'unit' | 'party' | 'death'
+export type FactKey = 'father' | 'mother' | 'born' | 'ethnicity' | 'occupation' | 'unit' | 'duty' | 'party' | 'death'
+
+/** A line of the row of a man's units: "Prva proleterska" and ", 6. bataljon · komandant brigade" */
+export interface FactLine {
+  text: string
+  rest?: string
+  /** The unit, which its name links to */
+  unit: Unit
+}
 
 export interface Fact {
   key: FactKey
   label: string
   value: string
+  lines?: FactLine[]
 }
+
+export interface LinkedRecord {
+  unit: Unit
+  entry: SoldierSource & { soldier_id: string }
+}
+
+/**
+ * The same man's records in other units: one for each unit, the first entry that unit's record gave (its own entry, its
+ * books' after it). By the day he came to each where every one of them prints it, else as they stand: an order the books
+ * don't give would read as a career no one printed (the user's choice of 2026-11-04).
+ */
+export function linkedRecords(soldier: Soldier): LinkedRecord[] {
+  const seen = new Set<string>()
+  const out: LinkedRecord[] = []
+  for (const e of soldier.other_sources ?? []) {
+    if (!e.unit_file || !e.soldier_id || seen.has(e.unit_file)) continue
+    seen.add(e.unit_file)
+    const unit = units.find((u) => u.dataFile === `/${e.unit_file}`)
+    if (unit) out.push({ unit, entry: e as LinkedRecord['entry'] })
+  }
+  return out.every((r) => r.entry.since)
+    ? out.sort((a, b) => a.entry.since!.localeCompare(b.entry.since!))
+    : out
+}
+
+// A unit's name in a man's list of them, without the words every brigade's name has: "Prva proleterska", "4. splitska"
+const NAME_FILLER = /\s*(?:narodnooslobodilačk\p{L}+|народноослободилачк\p{L}+|народноослободителн\p{L}+|narodnoosvobodiln\p{L}+|people’s liberation|udarn\p{L}+|ударн\p{L}+|assault|brigad\p{L}+|бригад\p{L}+)(?!\p{L})/giu
 
 /** A unit as its name says it is: "brigade", "division", "detachment" (odred), "battalion", "company", or "unit" */
 export function unitKind(name?: string): string {
@@ -31,10 +68,12 @@ export function unitKind(name?: string): string {
 const FULL_NAME = /^\p{Lu}\p{Ll}{2,}(?:-\p{Lu}\p{Ll}+)?$/u
 
 /**
- * Otac (or Majka), Rođen, Narodnost, Zanimanje, U brigadi, Partija and the fate, in the page's language; the values as
- * the books give them (scripts/standardize_fields.py gives the dates one form)
+ * Otac (or Majka), Rođen, Narodnost, Zanimanje, U brigadi, Dužnost, Partija and the fate, in the page's language; the
+ * values as the books give them (scripts/standardize_fields.py gives the dates one form). A man of several units has one
+ * row, "Jedinice", in place of U brigadi and Dužnost: a line for each unit, the record opened first, "Prva proleterska,
+ * 6. bataljon · komandant brigade" (shortName: how the page names a unit; the user's choice of 2026-11-04).
  */
-export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): Fact[] {
+export function recordFacts(soldier: Soldier, t: Messages, unitName?: string, shortName?: (unit: Unit) => string): Fact[] {
   const woman = isWoman(soldier)
   const facts: Fact[] = []
   const add = (key: FactKey, label: string, value: string | undefined) => {
@@ -51,9 +90,26 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string): F
   // the census's "ostalo" (another nationality) says nothing on its own
   add('ethnicity', f.ethnicity, soldier.ethnicity === 'ostalo' ? '' : soldier.ethnicity)
   add('occupation', f.occupation, soldier.occupation)
-  // the sub-unit, then the duty after a dot: "1. četa, 2. bataljon · komandir voda, komandir čete" (the user's choice of
-  // 2026-10-30: a comma between them hid where the unit ends)
-  add('unit', t.life.unit(unitKind(unitName)), [soldier.unit_detail, soldier.rank].filter(Boolean).join(' · '))
+  // the sub-unit and the duty, each its own row: "U brigadi: 6. bataljon", "Dužnost: komandant brigade" (the user's choice
+  // of 2026-11-04: on one line they read as if he commanded the brigade from the battalion; a list prints the battalion he
+  // came to and the highest duty he held)
+  const linked = shortName ? linkedRecords(soldier) : []
+  if (linked.length === 0) {
+    add('unit', t.life.unit(unitKind(unitName)), soldier.unit_detail)
+    add('duty', f.duty, soldier.rank)
+  } else {
+    const own = units.find((u) => u.name === unitName)
+    const served = [
+      ...(own ? [{ unit: own, detail: soldier.unit_detail, duty: soldier.rank }] : []),
+      ...linked.map(({ unit, entry }) => ({ unit, detail: entry.unit_detail, duty: entry.rank })),
+    ]
+    const lines = served.map(({ unit, detail, duty }) => ({
+      text: shortName!(unit).replace(NAME_FILLER, '').trim(),
+      rest: `${detail ? `, ${detail}` : ''}${duty ? ` · ${duty}` : ''}`,
+      unit,
+    }))
+    facts.push({ key: 'unit', label: f.units, value: lines.map((l) => `${l.text}${l.rest}`).join('; '), lines })
+  }
   // "Partija: SKOJ od 1941, KPJ od 1944"
   const party = partyOf(soldier)
   if (party.length) add('party', f.party, t.life.party(party))

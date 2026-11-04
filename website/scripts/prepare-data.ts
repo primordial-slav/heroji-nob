@@ -5,8 +5,9 @@ import { units, type Unit } from '@/app/data/units'
 import portraitIndex from '@/app/data/portrait-index.json'
 import { WARTIME_PORTRAITS } from '@/app/data/wartimePortraits'
 import {
-  DATA_DIR, PORTRAIT_PEOPLE_PATH, RECORDS_PER_PART, onThisDayPath, placesChunkPath, placesOfPath, recordsPath,
+  DATA_DIR, PORTRAIT_PEOPLE_PATH, RECORDS_PER_PART, onThisDayPath, placesChunkPath, placesOfPath, recordsPath, wherePath,
 } from '@/app/lib/dataFiles'
+import type { WhereShard } from '@/app/lib/recordAddress'
 import { wartimeDeath } from '@/app/lib/deathDay'
 import { GENERATED_DIR, PAGES_FILE, type GeneratedPages } from '@/app/lib/generated'
 import { PLACES_FILE, VEZ_FILE, placeSplit } from '@/app/lib/placeFiles'
@@ -31,7 +32,7 @@ const MANIFEST = path.join(root, GENERATED_DIR, 'manifest.json')
 const LOCK = path.join(root, GENERATED_DIR, 'prepare-data.lock')
 const SEARCH_DIR = path.join(root, 'search-data')
 // The form of the records' and places' files: a change to it writes them all again
-const RECORDS_FORM = `${RECORDS_PER_PART}:1`
+const RECORDS_FORM = `${RECORDS_PER_PART}:2`
 const PLACES_FORM = `${PLACE_CHUNK_BYTES}:1`
 
 interface Manifest {
@@ -120,6 +121,34 @@ function readUnit(unit: Unit): Soldier[] {
 
 // ── The outputs ──
 
+// Where each of a unit's records is, for its own address (lib/recordAddress.ts): its own id, and an id merged into it,
+// which old links may still use
+function writeWhere(unit: Unit, soldiers: Soldier[]) {
+  const shards = new Map<string, WhereShard>()
+  const put = (id: string, at: number | [number, string]) => {
+    const key = id.slice(0, 7)
+    let shard = shards.get(key)
+    if (!shard) shards.set(key, (shard = { u: unit.id, p: {} }))
+    if (shard.p[id.slice(7)] === undefined) shard.p[id.slice(7)] = at
+  }
+  soldiers.forEach((s, i) => put(s.soldier_id, Math.floor(i / RECORDS_PER_PART)))
+  soldiers.forEach((s, i) => {
+    for (const o of s.other_sources ?? []) {
+      if (o.soldier_id && !o.unit_file && !o.ref_book && o.soldier_id.slice(0, 4) === s.soldier_id.slice(0, 4)) {
+        put(o.soldier_id, [Math.floor(i / RECORDS_PER_PART), s.soldier_id])
+      }
+    }
+  })
+  // a thousand ids of which none is left leave no file behind
+  const dir = path.dirname(publicFile(wherePath('0000000')))
+  fs.mkdirSync(dir, { recursive: true })
+  const codes = new Set(soldiers.map((s) => s.soldier_id.slice(0, 4)))
+  for (const name of fs.readdirSync(dir)) {
+    if (codes.has(name.slice(0, 4)) && !shards.has(name.slice(0, 7))) fs.rmSync(path.join(dir, name))
+  }
+  for (const [key, shard] of shards) writeJson(publicFile(wherePath(key)), shard)
+}
+
 function writeRecords(unit: Unit, soldiers: Soldier[]) {
   const file = path.join(root, eventsFile(unit))
   const events: Record<string, LifeEvent[]> = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {}
@@ -140,6 +169,7 @@ function writeRecords(unit: Unit, soldiers: Soldier[]) {
     const part = parseInt(name, 10)
     if (!(part < parts)) fs.rmSync(path.join(dir, name))
   }
+  writeWhere(unit, soldiers)
 }
 
 const DAYS_IN_MONTH = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]

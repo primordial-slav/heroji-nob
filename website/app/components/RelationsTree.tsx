@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import Link from 'next/link'
 import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { units } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
-import type { Kin } from '@/app/lib/searchIndex'
+import { linkedRecords } from '@/app/lib/recordFacts'
+import { loadKin, type Kin } from '@/app/lib/searchIndex'
 import {
   dayParts, deathDay, lifeSpan, placeOf, subunitPath, type Level, type Place, type PlaceMember,
 } from '@/app/lib/relations'
@@ -163,7 +163,37 @@ export default function RelationsTree({ soldier, unit, kin, onOpen, part, reques
       })
   }, [place, neighbours, unit, soldier.soldier_id, collator, path, levels, unitText, t])
 
-  const showUnitTree = part === 'comrades' && (unitGroups.length > 0 || dayGroup !== null)
+  // The same man in other units: a branch for each, his sub-unit there, its men read when the fold opens (the user's
+  // wish of 2026-11-04: he served with them too, not only with the unit the record was opened from)
+  const linked = useMemo(() => (part === 'comrades' ? linkedRecords(soldier) : []), [part, soldier])
+  const [otherKin, setOtherKin] = useState<Record<string, Kin | null>>({})
+  useEffect(() => {
+    if (folded || linked.length === 0) return
+    let live = true
+    for (const { unit: other, entry } of linked) {
+      loadKin(other, entry.soldier_id)
+        .then((found) => { if (live) setOtherKin((old) => ({ ...old, [entry.soldier_id]: found })) })
+        .catch(() => {})
+    }
+    return () => { live = false }
+  }, [folded, linked])
+  const otherBranches = linked.map(({ unit: other, entry }) => {
+    const otherPath = subunitPath(entry.unit_detail)
+    const found = otherKin[entry.soldier_id]
+    const otherLevels = found && found.levels.length === otherPath.length ? found.levels : []
+    const groups: Group[] = otherLevels.map((list, depth) => ({
+      key: `o:${entry.soldier_id}:${otherPath[depth].key}`,
+      label: levelLabel(otherPath[depth], t),
+      size: list.length,
+      leaves: list
+        .filter((s) => s.soldier_id !== entry.soldier_id)
+        .map((s): Leaf => ({ id: s.soldier_id, name: s.full_name, years: lifeSpan(s), unit: other, tags: [] }))
+        .sort((a, b) => collator.compare(a.name, b.name)),
+    }))
+    return { other, id: entry.soldier_id, groups }
+  })
+
+  const showUnitTree = part === 'comrades' && (unitGroups.length > 0 || dayGroup !== null || linked.length > 0)
   const showPlaceTree = part === 'neighbours' && place !== null && placeGroups.length > 0
   const deepest = unitGroups[unitGroups.length - 1]
   const others = Math.max(0, neighbours.length - 1)
@@ -211,7 +241,7 @@ export default function RelationsTree({ soldier, unit, kin, onOpen, part, reques
                 <LeafBody leaf={leaf} />
               </button>
             ) : leaf.unit ? (
-              <Link href={recordPath(leaf.unit, leaf.id, lang)}><LeafBody leaf={leaf} /></Link>
+              <a href={recordPath(leaf.id, lang)}><LeafBody leaf={leaf} /></a>
             ) : (
               <span><LeafBody leaf={leaf} /></span>
             )}
@@ -287,6 +317,20 @@ export default function RelationsTree({ soldier, unit, kin, onOpen, part, reques
               </ul>
             ) : null}
           </li>
+          {otherBranches.map(({ other, id, groups }) => {
+            const nestOther = (depth: number): React.ReactNode => depth === groups.length ? null : (
+              <ul>{renderGroup(groups[depth], true, nestOther(depth + 1))}</ul>
+            )
+            return (
+              <li key={id} className="kin-node kin-root is-path">
+                <span className="kin-row">
+                  <span className="kin-kicker">{t.unit}</span>
+                  <span className="kin-label"><a href={recordPath(id, lang)}>{unitText.shortName(other)}</a></span>
+                </span>
+                {nestOther(0)}
+              </li>
+            )
+          })}
         </ul>
       )}
 

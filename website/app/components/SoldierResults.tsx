@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState, type ReactNode } from 'react'
 import type { Soldier } from '@/app/lib/types'
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { SoldierMedals } from './Medal'
+import RecordLink from './RecordLink'
 import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import { formatNumber } from '@/app/i18n/format'
 import { unitByName } from '@/app/lib/records'
@@ -69,9 +70,10 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
     <div>
       <div className="results-bar">
         <p className="results-count" aria-live="polite">
-          {firstNear < 0 ? t.found(count) : firstNear === 0 ? t.results.noExact : t.found(firstNear)}
-          {firstNear >= 0 && <span> · {t.results.similar(count - firstNear, firstNear > 0)}</span>}
-          {totalPages > 1 && <span> · {t.results.pageOf(page, totalPages)}</span>}
+          {/* the count and its word stay together on a narrow screen */}
+          {(firstNear < 0 ? t.found(count) : firstNear === 0 ? t.results.noExact : t.found(firstNear)).replace(/ /g, '\u00a0')}
+          {firstNear >= 0 && <> <span>· {t.results.similar(count - firstNear, firstNear > 0)}</span></>}
+          {totalPages > 1 && <> <span>· {t.results.pageOf(page, totalPages)}</span></>}
         </p>
         <div className="results-tools">
           {actions}
@@ -105,21 +107,21 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
             </li>
           )}
           <li className="result">
-            <button type="button" className="result-button" onClick={() => onSelect(soldier)}>
+            <RecordLink soldier={soldier} onOpen={onSelect} className="result-button">
               <span className="result-text">
                 <span className="result-name"><SoldierName soldier={soldier} /></span>
                 {soldier.additional_info && <span className="result-info">{soldier.additional_info}</span>}
                 {showUnit && soldier.unit && (
                   <span className="result-unit">
                     {[soldier.unit, ...(soldier.also_units ?? [])].map((name) => {
-                      const unit = unitByName(name)
-                      return unit ? unitText.name(unit) : name
+                      const named = unitByName(name)
+                      return named ? unitText.name(named) : name
                     }).join(' · ')}
                   </span>
                 )}
               </span>
               <SoldierMedals soldier={soldier} look="gravira" />
-            </button>
+            </RecordLink>
           </li>
           </Fragment>
         ))}

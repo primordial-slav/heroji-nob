@@ -9,6 +9,9 @@ export const DATA_DIR = 'data'
 export const RECORDS_PER_PART = 250
 export const recordsPath = (unitId: string, part: number) => `/${DATA_DIR}/records/${unitId}/${part}.json`
 
+/** Where the records are, for a record's own address (lib/recordAddress.ts): by the first 7 digits of the id */
+export const wherePath = (id: string) => `/${DATA_DIR}/where/${id.slice(0, 7)}.json`
+
 /** "Na današnji dan": those who fell, died or went missing on a day of the war, "10-28" */
 export const onThisDayPath = (day: string) => `/${DATA_DIR}/on-this-day/${day}.json`
 

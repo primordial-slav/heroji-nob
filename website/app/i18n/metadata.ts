@@ -49,6 +49,12 @@ export function pageMetadata(lang: Lang, path: string, page: { title?: string; d
   }
 }
 
+/**
+ * The one page behind every record's own address (lib/recordAnswer.ts, which writes each record's title, description
+ * and preview into its head): nothing of its own in those places, so the page doesn't put them back as it loads
+ */
+export const RECORD_SHELL_METADATA: Metadata = { title: { absolute: '' }, description: null, openGraph: null, twitter: null }
+
 /** The printable memorial card (/kartica): not for search engines */
 export function cardMetadata(lang: Lang): Metadata {
   const t = messagesFor(lang).card

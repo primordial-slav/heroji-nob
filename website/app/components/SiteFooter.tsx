@@ -1,17 +1,22 @@
 import { messagesFor } from '../i18n'
 import type { Lang } from '../i18n/config'
+import ThemeToggle from './ThemeToggle'
 
 // The site's address for mail: the one the forms send to (website/.env)
 const EMAIL = process.env.NEXT_PUBLIC_REPORT_EMAIL
 
-// The foot of every page: the site's name and where to write. The sources are named on Izvori alone.
+// The foot of every page: the site's name and where to write. The sources are named on Izvori alone. On a phone the
+// theme switch is here, not at the top of the screen (globals.css).
 export default function SiteFooter({ lang }: { lang: Lang }) {
   const t = messagesFor(lang)
   const f = t.footer
   return (
     <footer className="site-footer">
       <div className="container site-footer-inner">
-        <p className="site-footer-name">{t.site.name}</p>
+        <div>
+          <p className="site-footer-name">{t.site.name}</p>
+          <div className="site-footer-theme"><ThemeToggle /></div>
+        </div>
         {EMAIL && (
           <div className="site-footer-contact">
             <p className="site-footer-label">{f.contact}</p>

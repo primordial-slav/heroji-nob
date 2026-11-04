@@ -34,6 +34,13 @@ function withPage(search: string, page: number, perPage: number): string {
   return params.toString()
 }
 
+/** Another page of a search, for going through its results in the record (useRecordWalk) */
+export function searchPage(query: string, filters: SearchFilters, unit: string | undefined, page: number, perPage: number): Promise<SearchResultPage> {
+  const search = searchParams(query, filters, unit)
+  if (search === null) return Promise.reject(new Error('nothing to search for'))
+  return searchOnServer(new URLSearchParams(withPage(search, page, perPage)))
+}
+
 interface ServerSearchOptions {
   query: string
   filters: SearchFilters

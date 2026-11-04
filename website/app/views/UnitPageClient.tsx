@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Unit } from '@/app/data/units'
 import { useServerSearch } from '@/app/lib/useServerSearch'
+import { useBackClosesRecord } from '@/app/lib/useBackClosesRecord'
+import { useRecordWalk } from '@/app/lib/useRecordWalk'
 import { PAGE_SIZES, fullRecord, loadKin } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
@@ -41,6 +43,8 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
+  // Before the address follows the record below: the record's address goes on the step this adds
+  useBackClosesRecord(selectedSoldier?.soldier_id, () => setSelectedSoldier(null))
   const filtersSet = filterCount(filters, false) > 0
 
   // Which page of the list is shown: a new search starts on its first
@@ -103,18 +107,10 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [unit])
 
-  // The address bar follows the open record, so copying it gives that record's link
-  useEffect(() => {
-    if (!linkHandled.current) return
-    const url = new URL(window.location.href)
-    if (selectedSoldier) url.searchParams.set(RECORD_PARAM, selectedSoldier.soldier_id)
-    else url.searchParams.delete(RECORD_PARAM)
-    window.history.replaceState(window.history.state, '', url)
-  }, [selectedSoldier])
-
   // What the list says
   const found = server.result
   const searching = searchTerm.trim().length > 0
+  const walk = useRecordWalk({ searching: searching || filtersSet, query: searchTerm, filters, unit: unit.id, found, soldierId: selectedSoldier?.soldier_id })
   const count = found?.count ?? 0
   const unfiltered = found?.unfiltered ?? 0
   // The page's own first page shows unless the address asks for a search
@@ -218,6 +214,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
       {selectedSoldier && (
         <SoldierModal
           key={selectedSoldier.soldier_id}
+          walk={walk}
           soldier={selectedSoldier}
           unitName={unit.name}
           onOpen={openSoldier}

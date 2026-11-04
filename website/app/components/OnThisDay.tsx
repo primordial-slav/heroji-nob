@@ -10,6 +10,7 @@ import type { Messages } from '@/app/i18n'
 import { SoldierName } from './SoldierResults'
 import { SoldierMedals } from './Medal'
 import { CandleIcon } from './Icons'
+import RecordLink from './RecordLink'
 
 const SHOWN = 6
 
@@ -138,14 +139,14 @@ export default function OnThisDay({ onSelect }: OnThisDayProps) {
           <ul className={showAll ? 'on-this-day-list is-all' : 'on-this-day-list'}>
             {shown.map((fallen) => { const { soldier } = fallen; return (
               <li key={soldier.soldier_id}>
-                <button type="button" className="on-this-day-item" onClick={() => onSelect(soldier)}>
+                <RecordLink soldier={soldier} onOpen={onSelect} className="on-this-day-item">
                   <span className="on-this-day-text">
                     <span className="on-this-day-name"><SoldierName soldier={soldier} /></span>
                     <DeathLine {...fallen} />
                     {soldier.unit && <span className="on-this-day-unit">{shownUnit(soldier.unit)}</span>}
                   </span>
                   <SoldierMedals soldier={soldier} look="gravira" />
-                </button>
+                </RecordLink>
               </li>
             ) })}
           </ul>

@@ -4,17 +4,8 @@ import { useEffect, useRef } from 'react'
 import { CloseIcon } from './Icons'
 import { useT } from '@/app/i18n/LangContext'
 
-// A soldier's photograph opened over the page: as large as the screen allows but never past twice its own size
-// (a book's small print gets no bigger than that), with his name and where the photo comes from. Escape, the
-// close button or a click beside the photo closes it, and only it: the record under it stays open.
-export default function PhotoLightbox({ src, name, credit, href, onClose }: {
-  src: string
-  name: string
-  credit: string
-  href?: string
-  onClose: () => void
-}) {
-  const t = useT().record
+/** Something opened over the record: focus on its close button, and Escape closes it and only it. Returns that button's ref. */
+export function useLightboxKeys(onClose: () => void) {
   const closeRef = useRef<HTMLButtonElement>(null)
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
@@ -36,6 +27,21 @@ export default function PhotoLightbox({ src, name, credit, href, onClose }: {
       previous?.focus()
     }
   }, [])
+  return closeRef
+}
+
+// A soldier's photograph opened over the page: as large as the screen allows but never past twice its own size
+// (a book's small print gets no bigger than that), with his name and where the photo comes from. Escape, the
+// close button or a click beside the photo closes it, and only it: the record under it stays open.
+export default function PhotoLightbox({ src, name, credit, href, onClose }: {
+  src: string
+  name: string
+  credit: string
+  href?: string
+  onClose: () => void
+}) {
+  const t = useT().record
+  const closeRef = useLightboxKeys(onClose)
 
   // fixed over the whole window (no ancestor of the record transforms it)
   return (
