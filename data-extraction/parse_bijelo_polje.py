@@ -168,6 +168,16 @@ def split_head(head: str, kind: str) -> tuple[str, str, str, str]:
     return ' '.join(words), '', '', nick
 
 
+def unglue(first: str) -> tuple[str, str]:
+    """a given name and its nickname the OCR ran together, the dash lost ("Петарперо" for Petar-Pero): the head and a
+    tail that starts with its letter and is itself a given name the site knows"""
+    for i in range(len(first) - 3, 2, -1):
+        a, b = first[:i], first[i:]
+        if len(b) >= 3 and len(b) <= len(a) and a[0].lower() == b[0].lower()                 and V.T._given[a.upper()] >= 20 and V.T._given[b.upper()] >= 20:
+            return a, b.capitalize()
+    return first, ''
+
+
 def joined(part: str) -> str:
     """a name the OCR spaced out ("АЛИ ЧКОВИБ", "Т ОД OP") as one word"""
     return part.replace(' ', '')
@@ -198,6 +208,8 @@ def main():
         first = word(joined(given), given=True)
         fath = V.father(father_read(fath)) if fath else ''
         nick = V.read_cyr(nick) if nick else ''
+        if not nick and first:
+            first, nick = unglue(first)
         if (r['kind'], r['no']) in NAMES:
             last, fath, first = NAMES[(r['kind'], r['no'])]
         info = re.sub(r'^[,.\s]+', '', V.read_cyr(rest))
