@@ -6,6 +6,7 @@ import type { Unit } from '@/app/data/units'
 import { unitHref } from '@/app/data/unitPages'
 import { useLang, useLocalePath, useT, useUnitText } from '@/app/i18n/LangContext'
 import { unitImageProps } from '@/app/lib/unitImage'
+import BandPosters from '@/app/components/BandPosters'
 
 // Soldiers of the 2. krajiška brigade walking away through snow: the figures sit on the right,
 // the snow on the left stays nearly flat red, so the heading and the search field read cleanly.
@@ -15,7 +16,7 @@ const BAND_UNIT_ID = '2-krajiska-brigada'
 // is drawn about 480px wide to cover it
 const BAND_SIZES = '(max-width: 480px) 480px, 100vw'
 
-export default function BandPhoto({ units }: { units: Unit[] }) {
+export default function BandPhoto({ units, posters = true }: { units: Unit[]; posters?: boolean }) {
   const t = useT()
   const lang = useLang()
   const unitText = useUnitText()
@@ -45,6 +46,7 @@ export default function BandPhoto({ units }: { units: Unit[] }) {
     <>
       <div ref={ref} className="band-photo" data-ready={ready ? '' : undefined}>
         <img {...unitImageProps(unit.image, BAND_SIZES)} alt="" />
+        {posters && <BandPosters />}
       </div>
       <p className="band-credit">
         {t.home.bandCredit} <Link href={to(unitHref(unit.id, lang))}>{unitText.name(unit)}</Link>

@@ -1,0 +1,40 @@
+/* In the margins beside the column, their pale paper showing faintly over the band, and only where the margins can hold
+   a poster: below that they load nothing */
+.margin {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc((100% - var(--page)) / 2 + 0.5rem);
+  overflow: hidden;
+  opacity: 0.15;
+}
+
+@media (min-width: 1400px) {
+  .margin {
+    display: block;
+  }
+}
+
+/* Fading towards the column, so that nothing crowds the search */
+.left {
+  left: 0;
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 7rem);
+  mask-image: linear-gradient(to left, transparent 0, #000 7rem);
+}
+
+.right {
+  right: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7rem);
+  mask-image: linear-gradient(to right, transparent 0, #000 7rem);
+}
+
+/* Two classes, to stand over .band-photo img, which is for the photograph */
+.margin .poster {
+  position: absolute;
+  object-fit: fill;
+  opacity: 1;
+  filter: contrast(1.1);
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}

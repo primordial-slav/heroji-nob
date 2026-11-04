@@ -100,7 +100,7 @@ components:
 
 Knjiga boraca is where a family member types a remembered name and finds one person in the printed rosters of Partisan units. The design keeps that job in front: a solid Partisan red band holds the search, the brigades' own black-and-white photographs carry the feeling, and every record ends with the scanned line from the book. Everything else stays quiet: neutral ground, ink text, 1px rules, square corners, small restrained type.
 
-The photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. On wide screens the soldiers' own wartime portraits drift slowly up the margins beside the home page column. There is no decoration beyond them.
+The photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. On wide screens the soldiers' own wartime portraits drift slowly up the margins beside the home page column, and the margins of the home band hold the Partisans' own wartime posters, very faint, tilted and overlapping like a pasted wall. There is no decoration beyond them.
 
 **Key Characteristics:**
 - A solid red band (header, and on the home page the search) with one brigade photograph multiplied into it.
