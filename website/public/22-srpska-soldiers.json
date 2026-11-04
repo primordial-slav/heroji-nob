@@ -9760,12 +9760,11 @@
     "soldier_id": "0074000393",
     "occupation": "radnik",
     "pdf_x_end": 453.1,
+    "birth_place": "Markovac, Velika Plana",
     "birth_year": "1927",
     "borrowed": [
-      "birth_place",
       "birth_year"
     ],
-    "birth_place": "Markovac, Velika Plana",
     "other_sources": [
       {
         "soldier_id": "0021001779",
@@ -10053,6 +10052,14 @@
         "pdf_y_end": 355.9,
         "pdf_x_left": 32.7,
         "unit_file": "21-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0119000431",
+        "name": "Kostić Čedomira Svetislav",
+        "additional_info": "zvani Ceka; zemljoradnik, iz Lipa, rođen 1909. u Lipama U kosmajskom odredu od juna 1943. U odredu od septembra 1944. godine. Bio zamenik komandanta odreda 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=278",
+        "source_page": 266,
+        "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
     "birth_date": "28.06.1909"
@@ -13690,6 +13697,10 @@
         "ref_book": "hak-20-gospic-perusic"
       }
     ],
+    "birth_place": "Divoselo, Gospić",
+    "borrowed": [
+      "birth_place"
+    ],
     "birth_date": "25.12.1924"
   },
   {
@@ -15247,6 +15258,10 @@
     "soldier_id": "0074000618",
     "pdf_x_end": 422.5,
     "occupation": "zemljoradnik",
+    "birth_place": "Mala Ivanča",
+    "borrowed": [
+      "birth_place"
+    ],
     "other_sources": [
       {
         "soldier_id": "0021003054",
@@ -18364,6 +18379,14 @@
         "pdf_y_end": 324.2,
         "pdf_x_left": 12.5,
         "unit_file": "21-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0119000754",
+        "name": "Pantić Andrije Živan",
+        "additional_info": "zemljoradnik iz Lipa, rođen 1926. g. u Lipu. U odredu od septembra 1944. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=295",
+        "source_page": 283,
+        "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
     "birth_date": "16.05.1926"
@@ -24810,7 +24833,22 @@
     "pdf_y_end": 647.5,
     "pdf_file": "22-srpska.pdf",
     "soldier_id": "0074000989",
-    "pdf_x_end": 362.9
+    "pdf_x_end": 362.9,
+    "birth_place": "Lipovo, Vrnjačka Banja",
+    "other_sources": [
+      {
+        "soldier_id": "0021004978",
+        "name": "Stevanović Dragić",
+        "additional_info": "Lipova. Vrnjačka Banja. zemljoradšk. U Brigadi od 9. marta 1945. (iz Kosmajske brigade).",
+        "pdf_file": "4-srpska.pdf",
+        "pdf_page": 361,
+        "pdf_x": 58.7,
+        "pdf_y": 434.8,
+        "pdf_x_end": 361.7,
+        "pdf_y_end": 455.9,
+        "unit_file": "4-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stevanović",

@@ -876,7 +876,8 @@
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000021",
     "pdf_x_end": 492.1,
-    "occupation": "krojač"
+    "occupation": "krojač",
+    "birth_place": "Sombor"
   },
   {
     "last_name": "Baranj",
@@ -1866,7 +1867,22 @@
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000048",
     "pdf_x_end": 524.6,
-    "occupation": "zemljoradnik"
+    "occupation": "zemljoradnik",
+    "birth_place": "Sombor",
+    "other_sources": [
+      {
+        "soldier_id": "0075000187",
+        "name": "Blesić Štipan",
+        "additional_info": "iz Sombora, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 167.2,
+        "pdf_y": 255.2,
+        "pdf_x_end": 382.8,
+        "pdf_y_end": 263.7,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bobić",
@@ -13905,7 +13921,34 @@
     "pdf_y_end": 520.6,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000400",
-    "pdf_x_end": 520.1
+    "pdf_x_end": 520.1,
+    "birth_place": "Sombor",
+    "other_sources": [
+      {
+        "soldier_id": "0075001601",
+        "name": "Pejić Marinko",
+        "additional_info": "Sombor",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 258.8,
+        "pdf_y": 234.6,
+        "pdf_x_end": 323.6,
+        "pdf_y_end": 243.1,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0075001602",
+        "name": "Pejić Marinko",
+        "additional_info": "iz Sombora, poginuo kod Batine.",
+        "pdf_file": "12-vojvodjanska.pdf",
+        "pdf_page": 46,
+        "pdf_x": 122.8,
+        "pdf_y": 560.7,
+        "pdf_x_end": 327.7,
+        "pdf_y_end": 569.2,
+        "unit_file": "12-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pejić",
@@ -14724,7 +14767,8 @@
     "pdf_y_end": 648.8,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000425",
-    "pdf_x_end": 570.3
+    "pdf_x_end": 570.3,
+    "birth_place": "Deliblato (Kovin)"
   },
   {
     "last_name": "Popović",
@@ -14802,7 +14846,8 @@
     "pdf_y_end": 715.3,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000427",
-    "pdf_x_end": 570.2
+    "pdf_x_end": 570.2,
+    "birth_place": "Klenak"
   },
   {
     "last_name": "Popović",
@@ -14975,7 +15020,8 @@
     "pdf_y_end": 737.4,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000432",
-    "pdf_x_end": 569.3
+    "pdf_x_end": 569.3,
+    "birth_place": "Građani (Cetinje)"
   },
   {
     "last_name": "Poznić",
@@ -15303,7 +15349,8 @@
     "pdf_y_end": 442.6,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000440",
-    "pdf_x_end": 522.8
+    "pdf_x_end": 522.8,
+    "birth_place": "St. Sivac (Sombor)"
   },
   {
     "last_name": "Puskarev",
@@ -15368,7 +15415,8 @@
     "pdf_y_end": 849.0,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000442",
-    "pdf_x_end": 569.9
+    "pdf_x_end": 569.9,
+    "birth_place": "Aranđelovac"
   },
   {
     "last_name": "Pušin",
@@ -18441,7 +18489,8 @@
     "pdf_y_end": 542.2,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000532",
-    "pdf_x_end": 574.3
+    "pdf_x_end": 574.3,
+    "birth_place": "Sombor"
   },
   {
     "last_name": "Tot",
@@ -27757,6 +27806,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=547",
         "source_page": 547,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0078000125",
+        "name": "Budanović Mije Stipan",
+        "additional_info": "rođ. 1919, Subotica, poginuo kod Crnca 21. I 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 55.6,
+        "pdf_y": 273.1,
+        "pdf_x_end": 347.7,
+        "pdf_y_end": 292.2,
+        "unit_file": "8-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -52202,6 +52263,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=177",
         "source_page": 177,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0078000673",
+        "name": "Pantelić Nebojša",
+        "additional_info": "rođ. 1921, Ledinci, Sremski Karlovci, komandir čete, poginuo u Novom Bezdanu 7. III 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 46.2,
+        "pdf_y": 245.7,
+        "pdf_x_end": 338.8,
+        "pdf_y_end": 264.8,
+        "unit_file": "8-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",

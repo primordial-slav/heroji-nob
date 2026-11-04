@@ -4607,7 +4607,7 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Zvornik",
+    "birth_place": "Dubrave, Brčko",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -4636,6 +4636,10 @@
         "source_page": 222,
         "ref_book": "zbornik-heroja-1957"
       }
+    ],
+    "birth_place": "Opuzen, Merković",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -5117,6 +5121,10 @@
         "source_page": 259,
         "ref_book": "narodni-heroji-1982"
       }
+    ],
+    "birth_place": "Priboj, Tuzla",
+    "borrowed": [
+      "birth_place"
     ],
     "birth_date": "11.11.1918"
   },
@@ -10077,6 +10085,10 @@
         "ref_book": "narodni-heroji-1982"
       }
     ],
+    "birth_place": "Kralje, Andrijevica, Ivangracl",
+    "borrowed": [
+      "birth_place"
+    ],
     "birth_date": "23.06.1913"
   },
   {
@@ -11234,9 +11246,9 @@
   {
     "last_name": "Marković",
     "middle_name": "",
-    "first_name": "Alekeandar",
+    "first_name": "Aleksandar",
     "fathers_name": "",
-    "full_name": "Marković Alekeandar",
+    "full_name": "Marković Aleksandar",
     "additional_info": "Zasavica (Mačvanski srez): Karika, r. 1921, oenovna škola, nadničar; porodica: majka; stupio septembra 1941, četa pri Štabu Odreda, Bombaška, Acomira Ivaća i Steve Kolubarca; član KPJ; posle borbe na Stolicama, 8. 12. 1941, A.M. je „negde nestao\"; uhvaćen, streljan u š. logoru.",
     "birth_year": "1921",
     "occupation": "nadničar",
@@ -13167,11 +13179,11 @@
     "death_place": "Šabac"
   },
   {
-    "last_name": "Mnhailović",
+    "last_name": "Mihailović",
     "middle_name": "",
     "first_name": "Momčilo",
     "fathers_name": "",
-    "full_name": "Mnhailović Momčilo",
+    "full_name": "Mihailović Momčilo",
     "additional_info": "Šabac (Pocerski srez): r. 1902, filozofski fakultet, profesor, srednjeg imovnog stanja; porodica: žena, sin i kćerka; otac i mati učitelji; stupio avgusta 1941, Kulturno-propagandni odbor u Petkovici i na Stolicama, Jovovićeva četa; član KPJ; uhvaćen 26. 12. 1941. u P. Metkoviću; iz š. logora oproveden 30. 3. 1942. u lotor na Banjici, streljan 3. 8. 1942.",
     "birth_year": "1902",
     "occupation": "profesor",
@@ -13179,7 +13191,25 @@
     "soldier_id": "0109000853",
     "death_type": "streljan",
     "death_date": "03.08.1942",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "9025028450",
+        "name": "Mihailović (Milan) Momčilo",
+        "additional_info": "rođen 1901, Šabac. Srbin, ubijen 1942. kao zarobljenik prip. NOV i POJ, Banjica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1104",
+        "source_page": 1104,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "birth_place": "Šabac",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Srbin",
+    "death_place": "Banjica"
   },
   {
     "last_name": "Mnlinkovnć",
@@ -13432,6 +13462,10 @@
         "source_page": 23,
         "ref_book": "narodni-heroji-1982"
       }
+    ],
+    "birth_place": "Broćanac, Nikšić",
+    "borrowed": [
+      "birth_place"
     ],
     "birth_date": "23.09.1921"
   },
@@ -18871,7 +18905,7 @@
         "ref_book": "zbornik-heroja-1957"
       }
     ],
-    "birth_place": "Beograd",
+    "birth_place": "Draginje, Šabac",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -19187,6 +19221,7 @@
     "rank": "podnarednik, komandir čete, politički komesar bataljona",
     "death_place": "Bela Reka",
     "party": "KPJ",
+    "birth_place": "Ravnje, Mačvanska Mitrovica",
     "other_sources": [
       {
         "soldier_id": "9001000979",
@@ -19213,12 +19248,10 @@
         "ref_book": "zrtve-rata-1964-voj"
       }
     ],
-    "birth_place": "Ravnje, Mačvanska Mitrovica",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_date": "12.08.1907"
   },
   {

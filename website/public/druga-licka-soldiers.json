@@ -7653,7 +7653,7 @@
     ],
     "occupation": "zemljoradnik",
     "death_place": "u Belim Potocima",
-    "birth_place": "Donji Srb, Donji Lapac",
+    "birth_place": "Donji Srb, Srb",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -7712,6 +7712,10 @@
         "pdf_y_end": 523.5,
         "ref_book": "hak-14-donji-lapac"
       }
+    ],
+    "birth_place": "Donji Srb, Srb",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -12223,6 +12227,10 @@
         "pdf_y_end": 485.6,
         "ref_book": "sremski-front-poginuli"
       }
+    ],
+    "birth_place": "Tuk, Bjelopolje",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -13052,6 +13060,10 @@
         "pdf_y_end": 297.6,
         "ref_book": "hak-10-korenica-udbina"
       }
+    ],
+    "birth_place": "Pecani, Bunić",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -15705,6 +15717,17 @@
     "unit_detail": "4. bataljon",
     "pdf_x_end": 488.7,
     "other_sources": [
+      {
+        "soldier_id": "0003022657",
+        "name": "Đerić Milana Nikola",
+        "additional_info": "rođen 1919. u s. Mihaljevac - T. Korenica. U NOB-1942. Borac 4. bataljona. Poginuo u napadu na Gračac 15. 01. 1943. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 29,
+        "pdf_x": 205.4,
+        "pdf_y": 113.9,
+        "pdf_x_end": 367.3,
+        "pdf_y_end": 162.7
+      },
       {
         "soldier_id": "9008000513",
         "name": "Đerić Milana Nikola",
@@ -20992,7 +21015,7 @@
     "pdf_file": "druga-licka-spisak.pdf",
     "birth_place": "Beli Potok, Vračar",
     "death_type": "poginuo",
-    "death_date": "65. 04. 1945",
+    "death_date": "04.1945",
     "rank": "borac",
     "unit_detail": "2. četa, 1. bataljon",
     "pdf_x_end": 482.3,
@@ -23198,7 +23221,8 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "birth_year": "1926",
-    "pdf_x_end": 477.1
+    "pdf_x_end": 477.1,
+    "birth_place": "Gajine, D. Lapac"
   },
   {
     "soldier_id": "0003000493",
@@ -29300,7 +29324,47 @@
     "death_place": "kod S. Tomašice - Srem",
     "rank": "borac",
     "unit_detail": "3. četa, 1. bataljon",
-    "pdf_x_end": 475.5
+    "pdf_x_end": 475.5,
+    "other_sources": [
+      {
+        "soldier_id": "0003020989",
+        "name": "Lekić M Miodrag",
+        "additional_info": "rođen 1927. u s. Bučje - Trstenik. U NOB-1944. Borac 3. ćete 1. bataljona. Poginuo kod S. Tomašice - Srem 26. 04. 1945. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 54,
+        "pdf_x": 224.2,
+        "pdf_y": 159.9,
+        "pdf_x_end": 385.4,
+        "pdf_y_end": 200.1
+      },
+      {
+        "soldier_id": "9014007123",
+        "name": "Lekić Miodrag",
+        "additional_info": "Poginuli borci Druge ličke proleterske narodnooslobodilačke udarne brigade: 230. Lekić Miodrag.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 52,
+        "pdf_x": 575.7,
+        "pdf_y": 361.2,
+        "pdf_x_end": 600.8,
+        "pdf_y_end": 380.3,
+        "pdf_x_left": 242.7,
+        "pdf_rects": [
+          [
+            575.7,
+            361.2,
+            600.8,
+            370.7
+          ],
+          [
+            242.7,
+            370.8,
+            281.1,
+            380.3
+          ]
+        ],
+        "ref_book": "sremski-front-poginuli"
+      }
+    ]
   },
   {
     "soldier_id": "0003000621",
@@ -99674,7 +99738,8 @@
     "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
     "soldier_id": "0003011406",
     "rank": "borac",
-    "pdf_x_end": 188.9
+    "pdf_x_end": 188.9,
+    "birth_place": "Trlić"
   },
   {
     "last_name": "Kolajčević",
@@ -100894,7 +100959,8 @@
     "death_place": "u Mlutovcu",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 188.4
+    "pdf_x_end": 188.4,
+    "birth_place": "Milutovac, Trstenik"
   },
   {
     "last_name": "Kotić",
@@ -100948,7 +101014,8 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 189.1,
-    "pdf_x_left": 32.1
+    "pdf_x_left": 32.1,
+    "birth_place": "Mesarci, Vladimirci"
   },
   {
     "last_name": "Kotić",
@@ -101454,7 +101521,8 @@
     "soldier_id": "0003011493",
     "rank": "pukovnik",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 211.2
+    "pdf_x_end": 211.2,
+    "birth_place": "Široka Kula, Gospić"
   },
   {
     "last_name": "Kovaćević",
@@ -112838,7 +112906,7 @@
     "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
     "soldier_id": "0003012042",
     "pdf_x_end": 385.1,
-    "birth_place": "Pinosavi, Beograd",
+    "birth_place": "Pinosava, Beograd",
     "death_type": "umro",
     "death_place": "u Pinosavi",
     "rank": "borac",
@@ -112992,9 +113060,9 @@
   {
     "last_name": "Miletić",
     "middle_name": "Branka",
-    "first_name": "Miuojko",
+    "first_name": "Milojko",
     "fathers_name": "Branko",
-    "full_name": "Miletić Branka Miuojko",
+    "full_name": "Miletić Branka Milojko",
     "additional_info": "rođen 1916. u Laćisledu - Aleksandrovac. U NOB-1944. Komandir odelenja minobacača u brigadi. Živi u Laćisledu.",
     "birth_year": "1916",
     "pdf_page": 95,
@@ -118627,11 +118695,11 @@
     "pdf_x_end": 376.8
   },
   {
-    "last_name": "Miuojković",
+    "last_name": "Milojković",
     "middle_name": "Miloša",
     "first_name": "Radisav",
     "fathers_name": "Miloš",
-    "full_name": "Miuojković Miloša Radisav",
+    "full_name": "Milojković Miloša Radisav",
     "additional_info": "rođen 1922. u Krčmiru - V. Krčmir. U NOB-1944. Borac brigade.",
     "birth_year": "1922",
     "pdf_page": 102,
@@ -118645,11 +118713,11 @@
     "pdf_x_end": 384.0
   },
   {
-    "last_name": "Miuojković",
+    "last_name": "Milojković",
     "middle_name": "Radmila",
     "first_name": "Sreten",
     "fathers_name": "Radmilo",
-    "full_name": "Miuojković Radmila Sreten",
+    "full_name": "Milojković Radmila Sreten",
     "additional_info": "rođen 1923. u Bučju - Trstenik. U NOB-1944. Borac brigade.",
     "birth_year": "1923",
     "pdf_page": 103,
@@ -119382,7 +119450,7 @@
         ]
       }
     ],
-    "birth_place": "Birovači",
+    "birth_place": "Birovača",
     "occupation": "obućarski radnik",
     "unit_detail": "štab brigade"
   },
@@ -121603,7 +121671,8 @@
     "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
     "soldier_id": "0003012475",
     "rank": "vodni delegat",
-    "pdf_x_end": 369.8
+    "pdf_x_end": 369.8,
+    "birth_place": "Beloparica"
   },
   {
     "last_name": "Nikolić",
@@ -166010,7 +166079,8 @@
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 377.7,
-    "pdf_y_end": 560.2
+    "pdf_y_end": 560.2,
+    "birth_place": "Istra"
   },
   {
     "last_name": "Banjac",
@@ -167595,9 +167665,9 @@
   {
     "last_name": "Božović",
     "middle_name": "Vlajka",
-    "first_name": "Miroliub",
+    "first_name": "Miroljub",
     "fathers_name": "Vlajko",
-    "full_name": "Božović Vlajka Miroliub",
+    "full_name": "Božović Vlajka Miroljub",
     "additional_info": "roden 1922. u Lukovu Svrljig. Ranjen i umro u Vrbanji 07. 04. 1945. godine.",
     "birth_year": "1922",
     "pdf_page": 12,
@@ -169195,6 +169265,10 @@
         "pdf_x_left": 97.2,
         "ref_book": "hak-10-korenica-udbina"
       }
+    ],
+    "birth_place": "Visuć, Udbina",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -169458,9 +169532,9 @@
   {
     "last_name": "Damnjanović",
     "middle_name": "B",
-    "first_name": "Liubinko",
+    "first_name": "Ljubinko",
     "fathers_name": "B",
-    "full_name": "Damnjanović B Liubinko",
+    "full_name": "Damnjanović B Ljubinko",
     "additional_info": "borac 3. čete 1. balaljona. poginuo i sahranjen u Semeljci 17. 04. 1945. godine.",
     "birth_year": "",
     "pdf_page": 21,
@@ -170263,6 +170337,7 @@
     "death_place": "u M. Vašici (Srem)",
     "rank": "borac",
     "pdf_x_end": 374.6,
+    "birth_place": "Hercegovina",
     "other_sources": [
       {
         "soldier_id": "9013003610",
@@ -173277,7 +173352,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "T. užice"
+    "death_place": "T. Užice"
   },
   {
     "last_name": "Glušica",
@@ -178468,7 +178543,8 @@
     "death_date": "15.01.1943",
     "death_place": "Gračac",
     "rank": "zamenik komandira",
-    "pdf_x_end": 388.1
+    "pdf_x_end": 388.1,
+    "birth_place": "Udbina"
   },
   {
     "last_name": "Kordić",
@@ -179683,7 +179759,8 @@
     "death_date": "28.04.1945",
     "death_place": "u Kajgani",
     "rank": "borac",
-    "pdf_x_end": 209.5
+    "pdf_x_end": 209.5,
+    "birth_place": "Lisović"
   },
   {
     "last_name": "Kozlića",
@@ -180472,28 +180549,6 @@
     "death_place": "Gračac",
     "rank": "borac",
     "pdf_x_end": 384.8
-  },
-  {
-    "last_name": "Lekić",
-    "middle_name": "M",
-    "first_name": "Muodrag",
-    "fathers_name": "M",
-    "full_name": "Lekić M Muodrag",
-    "additional_info": "rođen 1927. u s. Bučje - Trstenik. U NOB-1944. Borac 3. ćete 1. bataljona. Poginuo kod S. Tomašice - Srem 26. 04. 1945. godine.",
-    "birth_year": "1927",
-    "pdf_page": 54,
-    "pdf_y": 159.9,
-    "pdf_x": 224.2,
-    "pdf_y_end": 200.1,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003020989",
-    "birth_place": "Bučje, Trstenik",
-    "death_type": "poginuo",
-    "death_date": "26.04.1945",
-    "death_place": "kod S. Tomašice - Srem",
-    "rank": "borac",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 385.4
   },
   {
     "last_name": "Lekić",
@@ -183771,7 +183826,7 @@
     "birth_place": "Dobroselo, D. Lapac",
     "death_type": "poginuo",
     "death_date": "05.05.1945",
-    "death_place": "u Ča/mi",
+    "death_place": "u Čazmi",
     "rank": "komandir voda",
     "pdf_x_end": 201.6,
     "other_sources": [
@@ -183819,7 +183874,7 @@
       "death": [
         {
           "date": "09.05.1945",
-          "place": "u Ča/mi"
+          "place": "u Čazmi"
         }
       ]
     }
@@ -185850,6 +185905,7 @@
     "death_date": "23.01.1945",
     "rank": "borac",
     "pdf_x_end": 371.4,
+    "birth_place": "Niška Banja, Niš",
     "other_sources": [
       {
         "soldier_id": "9013003656",
@@ -185907,13 +185963,11 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
-    "birth_place": "Niška Banja, Niš",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1927"
   },
   {
@@ -206563,7 +206617,8 @@
     "death_date": "23.04.1943",
     "death_place": "Gospić",
     "rank": "borac",
-    "pdf_x_end": 196.1
+    "pdf_x_end": 196.1,
+    "birth_place": "Rab"
   },
   {
     "last_name": "Čudić",
@@ -206832,28 +206887,6 @@
     "death_place": "Gračac",
     "rank": "borac",
     "pdf_x_end": 193.3
-  },
-  {
-    "last_name": "Đerjć",
-    "middle_name": "Milana",
-    "first_name": "Nikola",
-    "fathers_name": "Milan",
-    "full_name": "Đerjć Milana Nikola",
-    "additional_info": "rođen 1919. u s. Mihaljevac - T. Korenica. U NOB-1942. Borac 4. bataljona. Poginuo u napadu na Gračac 15. 01. 1943. godine.",
-    "birth_year": "1919",
-    "pdf_page": 29,
-    "pdf_y": 113.9,
-    "pdf_x": 205.4,
-    "pdf_y_end": 162.7,
-    "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
-    "soldier_id": "0003022657",
-    "birth_place": "Mihaljevac, T. Korenica",
-    "death_type": "poginuo",
-    "death_date": "15.01.1943",
-    "death_place": "Gračac",
-    "rank": "borac",
-    "unit_detail": "4. bataljon",
-    "pdf_x_end": 367.3
   },
   {
     "last_name": "Đilas",
@@ -209165,7 +209198,8 @@
       ]
     ],
     "soldier_id": "0003030020",
-    "rank": "komandant bataljona, pukovnik, politički komesar bataljona"
+    "rank": "komandant bataljona, pukovnik, politički komesar bataljona",
+    "birth_place": "Frkašić"
   },
   {
     "last_name": "Dopuđa",
@@ -209238,6 +209272,10 @@
         "pdf_y_end": 283.5,
         "ref_book": "hak-10-korenica-udbina"
       }
+    ],
+    "birth_place": "Ćojluk, Udbina",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -209895,7 +209933,8 @@
       ]
     ],
     "soldier_id": "0003030091",
-    "rank": "obaveštajni oficir brigade"
+    "rank": "obaveštajni oficir brigade",
+    "birth_place": "Perušić"
   },
   {
     "last_name": "Uzelac",
@@ -209951,6 +209990,10 @@
         "source_page": 823,
         "ref_book": "zbornik-heroja-1957"
       }
+    ],
+    "birth_place": "Crna Vlast, Otočac",
+    "borrowed": [
+      "birth_place"
     ],
     "birth_date": "01.12.1913"
   },
@@ -210020,7 +210063,8 @@
       ]
     ],
     "soldier_id": "0003030102",
-    "rank": "komandant bataljona, pukovnik, politički komesar bataljona"
+    "rank": "komandant bataljona, pukovnik, politički komesar bataljona",
+    "birth_place": "Frkašić"
   },
   {
     "last_name": "Ćurčić",

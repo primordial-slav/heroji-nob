@@ -10273,6 +10273,7 @@
     "death_place": "Rujiška",
     "rank": "borac",
     "pdf_x_end": 347.2,
+    "birth_place": "V. Rujiška, Bosanski Novi",
     "other_sources": [
       {
         "soldier_id": "9022009469",
@@ -10283,13 +10284,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Velika Rujiška, Bosanski Novi",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1925"
   },
   {
@@ -10593,6 +10592,7 @@
     "death_place": "Viševica, Kotor-Varoš",
     "rank": "borac",
     "pdf_x_end": 347.4,
+    "birth_place": "Bastaji, Skender-Vakuf",
     "other_sources": [
       {
         "soldier_id": "9021048496",
@@ -10611,13 +10611,11 @@
         "ref_book": "kotor-varos"
       }
     ],
-    "birth_place": "Srednja Gora, Titova Korenica",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1921"
   },
   {
@@ -11965,6 +11963,7 @@
     "death_place": "Skender-Vakuf",
     "rank": "borac",
     "pdf_x_end": 351.9,
+    "birth_place": "Podgradci, Bosanska Gradiška",
     "other_sources": [
       {
         "soldier_id": "9022005584",
@@ -11975,13 +11974,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Gornji Podgradci, Bosanska Gradiška",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1908"
   },
   {
@@ -14317,6 +14314,7 @@
     "rank": "borac",
     "pdf_x_end": 349.7,
     "death_place": "na r. Ugru, kod Skender-Vakufa",
+    "birth_place": "Dubovik, Bosanska Krupa",
     "other_sources": [
       {
         "soldier_id": "9022007673",
@@ -14327,13 +14325,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Srednji Dubovik, Bosanska Krupa",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1924"
   },
   {
@@ -16740,10 +16736,10 @@
   },
   {
     "last_name": "Ivetić",
-    "middle_name": "",
+    "middle_name": "Marka",
     "first_name": "Jovo",
-    "fathers_name": "",
-    "full_name": "Ivetić Jovo",
+    "fathers_name": "Marko",
+    "full_name": "Ivetić Marka Jovo",
     "additional_info": "vodnik voda, rođen 1919'. u s. Kazanci, Bosansko Grahovo, poginuo 17. 1. 1945. kod s. Lovas, Srem",
     "birth_year": "1919",
     "pdf_page": 12,
@@ -16757,6 +16753,7 @@
     "death_place": "Lovas, Srem",
     "rank": "vodnik",
     "pdf_x_end": 357.0,
+    "birth_place": "Kazanci, Bosansko Grahovo",
     "other_sources": [
       {
         "soldier_id": "9014008479",
@@ -16769,8 +16766,26 @@
         "pdf_x_end": 487.2,
         "pdf_y_end": 768.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0040000405",
+        "name": "Ivetić Marka Jovo",
+        "additional_info": "borac 5. bataljona, rođen 1919, Kazanci, Bosansko Grahovo, zemljoradnik, Srbin, u NOB od 1941, član ŠKOJ-a od aprila 1943.",
+        "pdf_file": "borci-sutjeske-4-proleterska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 98.3,
+        "pdf_y": 406.4,
+        "pdf_x_end": 268.9,
+        "pdf_y_end": 448.0,
+        "unit_file": "4-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Ivić",
@@ -18923,7 +18938,8 @@
     "death_date": "27.04.1945",
     "death_place": "Velika Barna, Slavonija",
     "rank": "borac",
-    "pdf_x_end": 357.9
+    "pdf_x_end": 357.9,
+    "birth_place": "Bošnjaci, Županja"
   },
   {
     "last_name": "Jemčić",
@@ -33967,6 +33983,10 @@
         "pdf_y_end": 238.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -36474,10 +36494,10 @@
   },
   {
     "last_name": "Memić",
-    "middle_name": "",
+    "middle_name": "A",
     "first_name": "Ale",
-    "fathers_name": "",
-    "full_name": "Memić Ale",
+    "fathers_name": "A",
+    "full_name": "Memić A Ale",
     "additional_info": "1927, Skender-Vakuf",
     "birth_year": "1927",
     "pdf_page": 38,
@@ -36487,7 +36507,21 @@
     "pdf_file": "12-krajiska-prezivjeli.pdf",
     "soldier_id": "0054001714",
     "birth_place": "Skender-Vakuf",
-    "pdf_x_end": 230.5
+    "pdf_x_end": 230.5,
+    "other_sources": [
+      {
+        "soldier_id": "0056001231",
+        "name": "Memić A Ale",
+        "additional_info": "Skender-Vakuf (opština Skender Vakuf)",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 54,
+        "pdf_x": 128.6,
+        "pdf_y": 520.2,
+        "pdf_x_end": 295.5,
+        "pdf_y_end": 529.9,
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Memić",
@@ -40977,11 +41011,11 @@
     ]
   },
   {
-    "last_name": "Mitrovpć",
+    "last_name": "Mitrović",
     "middle_name": "T",
     "first_name": "Radovan",
     "fathers_name": "T",
-    "full_name": "Mitrovpć T Radovan",
+    "full_name": "Mitrović T Radovan",
     "additional_info": "borac, rođen 1925. u s. Korenita, Loznica, poginuo 16. 4. 1945. kod s. Cerna, Slavonija",
     "birth_year": "1925",
     "pdf_page": 23,
@@ -40995,7 +41029,45 @@
     "death_date": "16.04.1945",
     "death_place": "Cerna, Slavonija",
     "rank": "borac",
-    "pdf_x_end": 338.4
+    "pdf_x_end": 338.4,
+    "other_sources": [
+      {
+        "soldier_id": "9014008576",
+        "name": "Mitrović Radovan",
+        "additional_info": "Poginuli borci Dvanaeste krajiške narodnooslobodilačke udarne brigade: 169. Mitrović Radovan.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 63,
+        "pdf_x": 353.1,
+        "pdf_y": 515.7,
+        "pdf_x_end": 438.5,
+        "pdf_y_end": 525.2,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025018482",
+        "name": "Mitrović (Tešan) Radovan",
+        "additional_info": "rođen 1924, Korenita (Loznica). Srbin, poginuo 1945. u NOBu, Sovljani srem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=750",
+        "source_page": 750,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9013002127",
+        "name": "Mitrović Radovan",
+        "additional_info": "Dvanaesta krajiška udarna brigada, Đurići: Radovan Mitrović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 15,
+        "pdf_x": 181.7,
+        "pdf_y": 623.0,
+        "pdf_x_end": 263.9,
+        "pdf_y_end": 632.7,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Mićanović",
@@ -45388,7 +45460,8 @@
     "death_date": "01.02.1945",
     "death_place": "Tovarnik, Srem",
     "rank": "borac",
-    "pdf_x_end": 357.0
+    "pdf_x_end": 357.0,
+    "birth_place": "Piskavica, Banja Luka"
   },
   {
     "last_name": "Ožegović",
@@ -46729,7 +46802,6 @@
     "fathers_name": "Ž",
     "full_name": "Pantelić Ž Zdravko",
     "additional_info": "borac, rođen 19'15. u s. Krnule, Vladimirci, utopio se u r. Kupi maja 1945.",
-    "birth_year": "",
     "pdf_page": 27,
     "pdf_y": 212.5,
     "pdf_x": 65.7,
@@ -46737,7 +46809,30 @@
     "pdf_file": "12-krajiska-poginuli.pdf",
     "soldier_id": "0054002217",
     "rank": "borac",
-    "pdf_x_end": 317.6
+    "pdf_x_end": 317.6,
+    "birth_place": "Krnule, Vladimirci",
+    "other_sources": [
+      {
+        "soldier_id": "9025036849",
+        "name": "Pantelić (Živko) Zdravko",
+        "additional_info": "rođen 1920, Krnule (Vladimirci). Srbin, poginuo 1945. u NOBu, Mala moštanica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1344",
+        "source_page": 1344,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Mala Moštanica",
+    "birth_year": "1920"
   },
   {
     "last_name": "Pantelić",
@@ -50933,11 +51028,11 @@
     "pdf_x_end": 275.9
   },
   {
-    "last_name": "Petrovkć",
+    "last_name": "Petrović",
     "middle_name": "N",
     "first_name": "Nenad",
     "fathers_name": "N",
-    "full_name": "Petrovkć N Nenad",
+    "full_name": "Petrović N Nenad",
     "additional_info": "1910, Lipolist, Šabac",
     "birth_year": "1910",
     "pdf_page": 51,
@@ -50967,11 +51062,11 @@
     "pdf_x_end": 266.3
   },
   {
-    "last_name": "Petrovpć",
+    "last_name": "Petrović",
     "middle_name": "T",
     "first_name": "Milivoje",
     "fathers_name": "T",
-    "full_name": "Petrovpć T Milivoje",
+    "full_name": "Petrović T Milivoje",
     "additional_info": "1927, Baćevac, Barajevo",
     "birth_year": "1927",
     "pdf_page": 51,
@@ -51054,7 +51149,8 @@
     "death_date": "19.07.1944",
     "death_place": "Kotor-Varoš",
     "rank": "borac",
-    "pdf_x_end": 360.8
+    "pdf_x_end": 360.8,
+    "birth_place": "Prisjeka, Ključ"
   },
   {
     "last_name": "Pećanac",
@@ -56427,7 +56523,8 @@
     "death_date": "08.05.1945",
     "death_place": "kod s. Ploščice, Bjelovar",
     "rank": "borac",
-    "pdf_x_end": 346.1
+    "pdf_x_end": 346.1,
+    "birth_place": "Slatnik, Slavonski Brod"
   },
   {
     "last_name": "Reljanović",
@@ -63759,7 +63856,7 @@
         "ref_book": "doboj3"
       }
     ],
-    "birth_place": "Brusnica, Gornji Milanovac",
+    "birth_place": "Brusnice",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -64665,11 +64762,11 @@
     ]
   },
   {
-    "last_name": "Subotpć",
+    "last_name": "Subotić",
     "middle_name": "V",
     "first_name": "Stojan",
     "fathers_name": "V",
-    "full_name": "Subotpć V Stojan",
+    "full_name": "Subotić V Stojan",
     "additional_info": "1919, Bosanska Gradiška",
     "birth_year": "1919",
     "pdf_page": 63,
@@ -64842,11 +64939,11 @@
     "pdf_x_end": 250.2
   },
   {
-    "last_name": "Sušpć",
+    "last_name": "Sušić",
     "middle_name": "C",
     "first_name": "Drago",
     "fathers_name": "C",
-    "full_name": "Sušpć C Drago",
+    "full_name": "Sušić C Drago",
     "additional_info": "1922, Piskavica, Banja Luka",
     "birth_year": "1922",
     "pdf_page": 63,
@@ -66809,9 +66906,9 @@
   {
     "last_name": "Tomić",
     "middle_name": "",
-    "first_name": "Slobgdan",
+    "first_name": "Slobodan",
     "fathers_name": "",
-    "full_name": "Tomić Slobgdan",
+    "full_name": "Tomić Slobodan",
     "additional_info": "1924, Kržava, Krupanj",
     "birth_year": "1924",
     "pdf_page": 65,
@@ -70722,6 +70819,7 @@
     "death_place": "Banovići, Tuzla",
     "rank": "bolničarka",
     "pdf_x_end": 352.6,
+    "birth_place": "Koprivna, Modriča",
     "other_sources": [
       {
         "soldier_id": "9111000564",
@@ -72053,7 +72151,8 @@
     "death_date": "18.04.1945",
     "death_place": "kod s. Jakačina, Slavonski Brod",
     "rank": "desetar",
-    "pdf_x_end": 348.2
+    "pdf_x_end": 348.2,
+    "birth_place": "Badovinci, Bogatić"
   },
   {
     "last_name": "Vračević",
@@ -75588,7 +75687,8 @@
     "death_date": "05.1943",
     "death_place": "Grmeč",
     "rank": "borac",
-    "pdf_x_end": 351.9
+    "pdf_x_end": 351.9,
+    "birth_place": "Podgrmeč"
   },
   {
     "last_name": "Ćulibrk",
@@ -75608,11 +75708,11 @@
     "pdf_x_end": 315.1
   },
   {
-    "last_name": "Ćulpbrk",
+    "last_name": "Ćulibrk",
     "middle_name": "J",
     "first_name": "Vid",
     "fathers_name": "J",
-    "full_name": "Ćulpbrk J Vid",
+    "full_name": "Ćulibrk J Vid",
     "additional_info": "1912, Bravsko, Bosanski Petrovac",
     "birth_year": "1912",
     "pdf_page": 66,

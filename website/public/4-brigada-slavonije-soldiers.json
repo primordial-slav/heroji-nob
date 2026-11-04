@@ -1637,7 +1637,8 @@
         "pdf_y_end": 388.2
       }
     ],
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "birth_place": "Oljasi"
   },
   {
     "last_name": "Gejza",
@@ -3974,7 +3975,8 @@
       }
     ],
     "rank": "politički komesar",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "birth_place": "Osijek"
   },
   {
     "last_name": "Krga",
@@ -4947,7 +4949,8 @@
         "pdf_y_end": 235.8
       }
     ],
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "birth_place": "Novi Slankamen"
   },
   {
     "last_name": "Marajević",
@@ -5571,7 +5574,8 @@
       }
     ],
     "rank": "komandant bataljona",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_place": "Grabarje kod Sl. Broda"
   },
   {
     "last_name": "Molečič",
@@ -6217,7 +6221,8 @@
       }
     ],
     "rank": "pomoćnik političkog komesara čete, politički delegat",
-    "unit_detail": "1. četa, 2. bataljon"
+    "unit_detail": "1. četa, 2. bataljon",
+    "birth_place": "Hrastovac"
   },
   {
     "last_name": "Petrović",
@@ -6350,9 +6355,9 @@
   {
     "last_name": "Plamcak",
     "middle_name": "Simeona",
-    "first_name": "Damiel",
+    "first_name": "Daniel",
     "fathers_name": "Simeon",
-    "full_name": "Plamcak Simeona Damiel",
+    "full_name": "Plamcak Simeona Daniel",
     "additional_info": "1. četa, 1. bataljon; rođen 1920. Petrovci, Vukovar; poginuo 28. I 1945. Končanica.",
     "birth_year": "1920",
     "pdf_page": 10,
@@ -7409,7 +7414,8 @@
       }
     ],
     "rank": "pomoćnik političkog komesara čete",
-    "unit_detail": "2. bataljon"
+    "unit_detail": "2. bataljon",
+    "birth_place": "Sl. Požega"
   },
   {
     "last_name": "Snozarević",
@@ -9404,7 +9410,8 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 425.0,
     "soldier_id": "0129010002",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "birth_place": "Sremska Kamenica"
   },
   {
     "last_name": "Agotić",
@@ -9474,12 +9481,11 @@
   },
   {
     "last_name": "Atanacković",
-    "middle_name": "",
+    "middle_name": "Milivoja",
     "first_name": "Tomo",
-    "fathers_name": "",
-    "full_name": "Atanacković Tomo",
+    "fathers_name": "Milivoje",
+    "full_name": "Atanacković Milivoja Tomo",
     "additional_info": "Pregled rukovodilaca na raznim dužnostima u 4. brigadi: intendant brigade, iz s. Trpinje kod Vukovara.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 343.5,
     "pdf_x": 235.8,
@@ -9488,7 +9494,28 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 315.8,
     "soldier_id": "0129010006",
-    "rank": "intendant brigade"
+    "rank": "intendant brigade",
+    "birth_place": "Trpinja kod Vukovara",
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year",
+      "death_type"
+    ],
+    "death_type": "umro",
+    "other_sources": [
+      {
+        "soldier_id": "0104000045",
+        "name": "Atanacković Milivoja Tomo",
+        "additional_info": "rođen 1920. u s. Trpinja (umro poslije rata).",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 40,
+        "pdf_x": 183.9,
+        "pdf_y": 310.3,
+        "pdf_x_end": 464.2,
+        "pdf_y_end": 328.2,
+        "unit_file": "osjecka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Azapović",
@@ -9829,7 +9856,8 @@
       ]
     ],
     "soldier_id": "0129010024",
-    "rank": "načelnik štaba brigade"
+    "rank": "načelnik štaba brigade",
+    "birth_place": "Mostar"
   },
   {
     "last_name": "Božar",
@@ -10308,7 +10336,8 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 343.9,
     "soldier_id": "0129010048",
-    "rank": "politički komesar čete"
+    "rank": "politički komesar čete",
+    "birth_place": "Podvinje, Sl. Brod"
   },
   {
     "last_name": "Devetak",
@@ -10376,7 +10405,8 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 326.1,
     "soldier_id": "0129010052",
-    "rank": "komandant brigade, načelnik štaba"
+    "rank": "komandant brigade, načelnik štaba",
+    "birth_place": "Seovica, Pakrac"
   },
   {
     "last_name": "Dorinić",
@@ -10758,7 +10788,8 @@
       ]
     ],
     "soldier_id": "0129010073",
-    "rank": "komandir čete"
+    "rank": "komandir čete",
+    "birth_place": "Malino kod Sl. Broda"
   },
   {
     "last_name": "Grandić",
@@ -11423,7 +11454,8 @@
     "pdf_file": "4-brigada-slavonije-rukovodioci.pdf",
     "unit_detail": "štab brigade",
     "pdf_x_end": 392.8,
-    "soldier_id": "0129010111"
+    "soldier_id": "0129010111",
+    "birth_place": "Slavonska Požega"
   },
   {
     "last_name": "Kojadinović",
@@ -11511,7 +11543,8 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 339.0,
     "soldier_id": "0129010118",
-    "rank": "pomoćnik političkog komesara čete"
+    "rank": "pomoćnik političkog komesara čete",
+    "birth_place": "Bos. Brod"
   },
   {
     "last_name": "Kovačević",
@@ -11645,7 +11678,8 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 401.2,
     "soldier_id": "0129010125",
-    "rank": "omladinski rukovodilac brigade"
+    "rank": "omladinski rukovodilac brigade",
+    "birth_place": "Podvinje, Slavonski Brod"
   },
   {
     "last_name": "Krajnović",
@@ -11747,7 +11781,8 @@
     "pdf_file": "4-brigada-slavonije-rukovodioci.pdf",
     "unit_detail": "1. bataljon",
     "pdf_x_end": 345.1,
-    "soldier_id": "0129010131"
+    "soldier_id": "0129010131",
+    "birth_place": "Borova"
   },
   {
     "last_name": "Krstonošić",
@@ -11756,7 +11791,6 @@
     "fathers_name": "",
     "full_name": "Krstonošić Slavko",
     "additional_info": "Pregled rukovodilaca na raznim dužnostima u 4. brigadi: politički komesar pomoćnih jedinica brigade, iz Borova; politički komesar čete 1. bataljona.",
-    "birth_year": "",
     "pdf_page": 2,
     "pdf_y": 499.0,
     "pdf_x": 350.1,
@@ -11765,7 +11799,38 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 430.3,
     "soldier_id": "0129010132",
-    "rank": "politički komesar čete"
+    "rank": "politički komesar čete",
+    "birth_place": "Borovo",
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0104000760",
+        "name": "Krstonošić Slavko",
+        "additional_info": "rođen 1927. u s. Borovo.",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 13,
+        "pdf_x": 120.0,
+        "pdf_y": 446.7,
+        "pdf_x_end": 337.6,
+        "pdf_y_end": 455.2,
+        "unit_file": "osjecka-soldiers.json"
+      },
+      {
+        "soldier_id": "0104020067",
+        "name": "Krstonošić Slavko",
+        "additional_info": "Spisak rukovodilaca Osječke brigade: komandiri i politički komesari četa",
+        "pdf_file": "osjecka-rukovodioci.pdf",
+        "pdf_page": 3,
+        "pdf_x": 119.3,
+        "pdf_y": 420.7,
+        "pdf_x_end": 222.9,
+        "pdf_y_end": 429.2,
+        "unit_file": "osjecka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kršić",
@@ -11821,7 +11886,8 @@
       ]
     ],
     "soldier_id": "0129010134",
-    "rank": "načelnik štaba brigade, zamjenik komandanta brigade"
+    "rank": "načelnik štaba brigade, zamjenik komandanta brigade",
+    "birth_place": "Darda, Osijek"
   },
   {
     "last_name": "Kus",
@@ -11839,7 +11905,8 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 370.1,
     "soldier_id": "0129010135",
-    "rank": "omladinski rukovodilac brigade"
+    "rank": "omladinski rukovodilac brigade",
+    "birth_place": "Stari Andrijevci"
   },
   {
     "last_name": "Kuštar",
@@ -11995,7 +12062,8 @@
     "unit_detail": "3. bataljon",
     "pdf_x_end": 271.0,
     "soldier_id": "0129010147",
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "birth_place": "Ražljevo, Brčko"
   },
   {
     "last_name": "Madžar",
@@ -12084,7 +12152,8 @@
     "unit_detail": "4. bataljon",
     "pdf_x_end": 392.2,
     "soldier_id": "0129010155",
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "birth_place": "Trpinja, Vukovar"
   },
   {
     "last_name": "Mandić",
@@ -12242,7 +12311,8 @@
     "soldier_id": "0129010164",
     "death_type": "umro",
     "death_date": "1980",
-    "rank": "politički komesar brigade"
+    "rank": "politički komesar brigade",
+    "birth_place": "Okučani"
   },
   {
     "last_name": "Milić",
@@ -12534,7 +12604,8 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 398.3,
     "soldier_id": "0129010184",
-    "rank": "pomoćnik političkog komesara brigade, politički komesar"
+    "rank": "pomoćnik političkog komesara brigade, politički komesar",
+    "birth_place": "Lipovac, Podravska Slatina"
   },
   {
     "last_name": "Opačić",
@@ -12586,7 +12657,8 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 318.9,
     "soldier_id": "0129010187",
-    "rank": "politički delegat"
+    "rank": "politički delegat",
+    "birth_place": "Ostrvo (kod Vinkovaca)"
   },
   {
     "last_name": "Pavelić",
@@ -12639,7 +12711,8 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 386.9,
     "soldier_id": "0129010190",
-    "rank": "politički delegat"
+    "rank": "politički delegat",
+    "birth_place": "Bršadin, Vukovar"
   },
   {
     "last_name": "Penić",
@@ -12972,12 +13045,11 @@
   },
   {
     "last_name": "Prodanović",
-    "middle_name": "",
+    "middle_name": "Pavla",
     "first_name": "Jovica",
-    "fathers_name": "",
-    "full_name": "Prodanović Jovica",
+    "fathers_name": "Pavle",
+    "full_name": "Prodanović Pavla Jovica",
     "additional_info": "zvani Boj; Pregled rukovodilaca na raznim dužnostima u 4. brigadi: načelnik štaba brigade, iz Seovice kod Pakraca. Borac od 1941. godine. U brigadi bio od formiranja do konca decembra 1944. godine.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 501.7,
     "pdf_x": 285.6,
@@ -12986,7 +13058,38 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 385.6,
     "soldier_id": "0129010213",
-    "rank": "načelnik štaba brigade"
+    "rank": "načelnik štaba brigade",
+    "birth_place": "Seovica, Pakrac",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0104001278",
+        "name": "Prodanović Pavla Jovica",
+        "additional_info": "rođen 1925. u s. Seovica, Pakrac.",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 14,
+        "pdf_x": 162.4,
+        "pdf_y": 220.8,
+        "pdf_x_end": 442.0,
+        "pdf_y_end": 229.3,
+        "unit_file": "osjecka-soldiers.json"
+      },
+      {
+        "soldier_id": "0104020106",
+        "name": "Prodanović Jovica",
+        "additional_info": "zvani Boj; Spisak rukovodilaca Osječke brigade: načelnici štaba brigade",
+        "pdf_file": "osjecka-rukovodioci.pdf",
+        "pdf_page": 1,
+        "pdf_x": 116.6,
+        "pdf_y": 475.5,
+        "pdf_x_end": 235.2,
+        "pdf_y_end": 483.7,
+        "unit_file": "osjecka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Puhnjak",
@@ -13178,7 +13281,8 @@
     "pdf_file": "4-brigada-slavonije-rukovodioci.pdf",
     "unit_detail": "štab brigade",
     "pdf_x_end": 375.4,
-    "soldier_id": "0129010226"
+    "soldier_id": "0129010226",
+    "birth_place": "Gradište, Kutjevo"
   },
   {
     "last_name": "Rončević",
@@ -13228,7 +13332,8 @@
     "unit_detail": "četa za vezu",
     "pdf_x_end": 388.5,
     "soldier_id": "0129010228",
-    "rank": "komandir voda"
+    "rank": "komandir voda",
+    "birth_place": "Vrbovljani"
   },
   {
     "last_name": "Rukavina",
@@ -13264,7 +13369,8 @@
     "unit_detail": "3. bataljon",
     "pdf_x_end": 386.0,
     "soldier_id": "0129010230",
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "birth_place": "Plavno kod Knina"
   },
   {
     "last_name": "Rutić",
@@ -13372,7 +13478,8 @@
     "unit_detail": "četa za vezu",
     "pdf_x_end": 246.0,
     "soldier_id": "0129010237",
-    "rank": "komandir voda"
+    "rank": "komandir voda",
+    "birth_place": "Slavonski Brod"
   },
   {
     "last_name": "Sknac",
@@ -13496,7 +13603,8 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 267.7,
     "soldier_id": "0129010246",
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "birth_place": "Novo Topolje (Sl. Brod)"
   },
   {
     "last_name": "Starčević",
@@ -13840,7 +13948,8 @@
     "pdf_file": "4-brigada-slavonije-rukovodioci.pdf",
     "unit_detail": "radni vod",
     "pdf_x_end": 359.0,
-    "soldier_id": "0129010270"
+    "soldier_id": "0129010270",
+    "birth_place": "Sesvete"
   },
   {
     "last_name": "Vorkapić",
@@ -14025,7 +14134,8 @@
       ]
     ],
     "soldier_id": "0129010281",
-    "rank": "komandir čete, politički komesar"
+    "rank": "komandir čete, politički komesar",
+    "birth_place": "Bord"
   },
   {
     "last_name": "Vukošić",
@@ -14132,7 +14242,8 @@
     "unit_detail": "1. bataljon",
     "pdf_x_end": 424.4,
     "soldier_id": "0129010287",
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "birth_place": "Osijek"
   },
   {
     "last_name": "Ćirić",
@@ -14181,7 +14292,8 @@
       ]
     ],
     "soldier_id": "0129010289",
-    "rank": "pomoćnik političkog komesara"
+    "rank": "pomoćnik političkog komesara",
+    "birth_place": "Gaboš kod Vinkovaca"
   },
   {
     "last_name": "Ćoralić",
@@ -14199,7 +14311,8 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 341.3,
     "soldier_id": "0129010290",
-    "rank": "referent saniteta brigade"
+    "rank": "referent saniteta brigade",
+    "birth_place": "Slavonski Brod"
   },
   {
     "last_name": "Čavčić",
@@ -14323,12 +14436,11 @@
   },
   {
     "last_name": "Šljivarić",
-    "middle_name": "",
+    "middle_name": "Antuna",
     "first_name": "Franjo",
-    "fathers_name": "",
-    "full_name": "Šljivarić Franjo",
+    "fathers_name": "Antun",
+    "full_name": "Šljivarić Antuna Franjo",
     "additional_info": "Pregled rukovodilaca na raznim dužnostima u 4. brigadi: načelnik štaba brigade, komandant 2. bataljona, rodom iz Lužana (Malino) kod Sl. Broda. U brigadi je bio od 2. januara do 3. marta 1945. kada je postavljen za komandanta Čehoslovačke brigade; komandant 2. bataljona, do 1. I 1945. kada je postavljen za načelnika štaba brigade.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 518.5,
     "pdf_x": 368.3,
@@ -14337,7 +14449,38 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 436.9,
     "soldier_id": "0129010299",
-    "rank": "načelnik štaba brigade"
+    "rank": "načelnik štaba brigade",
+    "birth_place": "Lužani (Malino), Sl. Brod",
+    "birth_year": "1918",
+    "borrowed": [
+      "birth_year"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0104001840",
+        "name": "Šljivarić Antuna Franjo",
+        "additional_info": "rođen 1918. u s. Lužanima (živi u SI. Požegi).",
+        "pdf_file": "osjecka.pdf",
+        "pdf_page": 36,
+        "pdf_x": 175.0,
+        "pdf_y": 339.8,
+        "pdf_x_end": 455.1,
+        "pdf_y_end": 356.7,
+        "unit_file": "osjecka-soldiers.json"
+      },
+      {
+        "soldier_id": "0104020152",
+        "name": "Šljivarić Franjo",
+        "additional_info": "Spisak rukovodilaca Osječke brigade: komandanti brigade; komandanti bataljona",
+        "pdf_file": "osjecka-rukovodioci.pdf",
+        "pdf_page": 1,
+        "pdf_x": 115.8,
+        "pdf_y": 354.5,
+        "pdf_x_end": 206.8,
+        "pdf_y_end": 362.7,
+        "unit_file": "osjecka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Šprajser",
@@ -14391,7 +14534,8 @@
     "unit_detail": "3. bataljon",
     "pdf_x_end": 369.2,
     "soldier_id": "0129010304",
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "birth_place": "Brodski Varoš"
   },
   {
     "last_name": "Žunec",

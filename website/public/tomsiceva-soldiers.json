@@ -1404,7 +1404,21 @@
     "pdf_y_end": 239.4,
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000037",
-    "pdf_x_end": 275.4
+    "pdf_x_end": 275.4,
+    "other_sources": [
+      {
+        "soldier_id": "0061000063",
+        "name": "Bahor Janez",
+        "additional_info": "Belčji vrh 1 1920—1943",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 33,
+        "pdf_x": 193.1,
+        "pdf_y": 561.2,
+        "pdf_x_end": 285.8,
+        "pdf_y_end": 578.1,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bajt",
@@ -8290,6 +8304,7 @@
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000253",
     "pdf_x_end": 356.1,
+    "birth_place": "Grm pri Podzemlju, Metlika",
     "other_sources": [
       {
         "soldier_id": "9020008463",
@@ -8300,12 +8315,10 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Grm pri Podzemlju, Metlika",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Slovenac"
+    ]
   },
   {
     "last_name": "Fine",
@@ -14320,7 +14333,7 @@
     "birth_place": "Ljubljana",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Rakovec (13.B.)",
+    "death_place": "Rakovec",
     "pdf_x_end": 210.6,
     "occupation": "mizar"
   },
@@ -16362,6 +16375,18 @@
         "pdf_y": 472.1,
         "pdf_y_end": 480.6,
         "pdf_x_end": 335.6
+      },
+      {
+        "soldier_id": "0167000768",
+        "name": "Klančar Alojz",
+        "additional_info": "19022, Visoko pri Ljubljani",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 7,
+        "pdf_x": 235.7,
+        "pdf_y": 462.3,
+        "pdf_x_end": 292.4,
+        "pdf_y_end": 474.3,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
     "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
@@ -27788,7 +27813,7 @@
         "pdf_x_end": 348.5
       }
     ],
-    "death_place": "Štajerska (2.UB.)",
+    "death_place": "Štajerska",
     "pdf_x_end": 299.4
   },
   {
@@ -30386,7 +30411,20 @@
     "pdf_y_end": 449.5,
     "pdf_file": "tomsiceva-2.pdf",
     "soldier_id": "0070000957",
-    "pdf_x_end": 258.4
+    "pdf_x_end": 258.4,
+    "other_sources": [
+      {
+        "soldier_id": "0070103029",
+        "name": "Osredkar Tone",
+        "additional_info": "Preska 54, Medvode",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 29,
+        "pdf_x": 132.9,
+        "pdf_y": 606.8,
+        "pdf_x_end": 274.8,
+        "pdf_y_end": 614.8
+      }
+    ]
   },
   {
     "last_name": "Osterman",
@@ -54349,6 +54387,17 @@
     "pdf_x_end": 434.7,
     "other_sources": [
       {
+        "soldier_id": "0070102130",
+        "name": "Krašovec Jakob",
+        "additional_info": "* 1910 Hrastnik † 1943 Podraga pri Vipavi",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 21,
+        "pdf_x": 116.3,
+        "pdf_y": 366.8,
+        "pdf_x_end": 344.9,
+        "pdf_y_end": 374.8
+      },
+      {
         "soldier_id": "9020000145",
         "name": "Krašovec (Jakob) Jakob",
         "additional_info": "rođen 1910, Gradišče pri Vipavi (Ajdovščina). Slovenac, poginuo 1943. u NOBu, Podraga",
@@ -54357,16 +54406,13 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "ethnicity": "Slovenac",
-    "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
-      "ethnicity"
-    ],
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Podraga"
+    "death_place": "Podraga pri Vipavi",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Kržin",
@@ -57537,6 +57583,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100018",
     "pdf_x_end": 332.3,
+    "birth_place": "Račeva, Žiri",
     "other_sources": [
       {
         "soldier_id": "9020007753",
@@ -57547,12 +57594,10 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Račeva, Logatec",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Slovenac"
+    ]
   },
   {
     "last_name": "Albreht",
@@ -59165,7 +59210,7 @@
     "birth_place": "Rosalnice",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Štajerska (2.UB.)",
+    "death_place": "Štajerska",
     "pdf_page": 2,
     "pdf_y": 482.9,
     "pdf_x": 150.0,
@@ -60294,7 +60339,8 @@
     "pdf_y_end": 562.0,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100198",
-    "pdf_x_end": 248.9
+    "pdf_x_end": 248.9,
+    "birth_place": "Trnac"
   },
   {
     "last_name": "Benčina",
@@ -62283,7 +62329,8 @@
     "pdf_y_end": 417.2,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100345",
-    "pdf_x_end": 333.6
+    "pdf_x_end": 333.6,
+    "birth_place": "Zadobrova, Škofja vas"
   },
   {
     "last_name": "Bratina",
@@ -64750,7 +64797,8 @@
     "pdf_y_end": 316.4,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100495",
-    "pdf_x_end": 362.8
+    "pdf_x_end": 362.8,
+    "birth_place": "Brežec pri Divaći"
   },
   {
     "last_name": "Cerne",
@@ -68522,7 +68570,8 @@
         "pdf_x_end": 278.0
       }
     ],
-    "pdf_x_end": 282.3
+    "pdf_x_end": 282.3,
+    "birth_place": "Dol, Gornji Grad"
   },
   {
     "last_name": "Fanik",
@@ -69635,7 +69684,8 @@
     "pdf_y_end": 228.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100825",
-    "pdf_x_end": 286.0
+    "pdf_x_end": 286.0,
+    "birth_place": "Prhci, Čabar"
   },
   {
     "last_name": "Frece",
@@ -71209,6 +71259,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070100924",
     "pdf_x_end": 359.6,
+    "birth_place": "Gozd pri Kamniku",
     "other_sources": [
       {
         "soldier_id": "9020008929",
@@ -71219,13 +71270,11 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Volog, Mozirje",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Slovenac",
     "death_place": "Cerklje"
   },
   {
@@ -72856,6 +72905,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101029",
     "pdf_x_end": 425.3,
+    "birth_place": "Brdo pri Ihanu",
     "other_sources": [
       {
         "soldier_id": "9020001687",
@@ -72866,12 +72916,10 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Brdo, Domžale",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Slovenac"
+    ]
   },
   {
     "last_name": "Gregorin",
@@ -73843,7 +73891,8 @@
     "soldier_id": "0070101087",
     "pdf_x_end": 360.4,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Ilovica pri Vojniku"
   },
   {
     "last_name": "Grubar",
@@ -76822,11 +76871,11 @@
     "pdf_x_end": 266.9
   },
   {
-    "last_name": "Intlhar",
+    "last_name": "Intihar",
     "middle_name": "",
     "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Intlhar Jože",
+    "full_name": "Intihar Jože",
     "additional_info": "* 1905 Rakek",
     "birth_year": "1905",
     "birth_place": "Rakek",
@@ -77736,7 +77785,8 @@
     "pdf_y_end": 254.1,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101366",
-    "pdf_x_end": 283.3
+    "pdf_x_end": 283.3,
+    "birth_place": "Brstovec, Semič"
   },
   {
     "last_name": "Jakša",
@@ -78790,7 +78840,8 @@
     "pdf_y_end": 323.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101429",
-    "pdf_x_end": 293.0
+    "pdf_x_end": 293.0,
+    "birth_place": "Kale, Gor. Ponikva"
   },
   {
     "last_name": "Jelen",
@@ -80162,7 +80213,22 @@
     "pdf_y_end": 323.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101511",
-    "pdf_x_end": 283.0
+    "pdf_x_end": 283.0,
+    "birth_place": "Rožanec, Črnomelj",
+    "other_sources": [
+      {
+        "soldier_id": "0061000855",
+        "name": "Joh Ivan",
+        "additional_info": "zvani Joh; 1919, Rožanec",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 10,
+        "pdf_x": 319.6,
+        "pdf_y": 484.5,
+        "pdf_x_end": 425.1,
+        "pdf_y_end": 492.4,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jordan",
@@ -83110,7 +83176,8 @@
     "pdf_y_end": 376.2,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101709",
-    "pdf_x_end": 324.6
+    "pdf_x_end": 324.6,
+    "birth_place": "Vrhpolje, Tuhinj"
   },
   {
     "last_name": "Klopčar",
@@ -83374,7 +83441,8 @@
     "pdf_y_end": 392.7,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101722",
-    "pdf_x_end": 265.7
+    "pdf_x_end": 265.7,
+    "birth_place": "Ribnica"
   },
   {
     "last_name": "Klun",
@@ -83889,7 +83957,8 @@
     "pdf_y_end": 531.0,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101758",
-    "pdf_x_end": 356.8
+    "pdf_x_end": 356.8,
+    "birth_place": "Maline, Štrekljevec"
   },
   {
     "last_name": "Kobše",
@@ -84372,7 +84441,8 @@
     "pdf_y_end": 327.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101796",
-    "pdf_x_end": 298.3
+    "pdf_x_end": 298.3,
+    "birth_place": "Potok pri Mozirju"
   },
   {
     "last_name": "Kolander",
@@ -85165,6 +85235,7 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101855",
     "pdf_x_end": 383.9,
+    "birth_place": "Primož pri Ljubnem, Mozirje",
     "other_sources": [
       {
         "soldier_id": "9020008818",
@@ -85175,12 +85246,10 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Primož pri Ljubnem, Mozirje",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Slovenac"
+    ]
   },
   {
     "last_name": "Korad",
@@ -85847,7 +85916,8 @@
     "soldier_id": "0070101889",
     "pdf_x_end": 384.3,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Lepence, Bohinj"
   },
   {
     "last_name": "Korošec",
@@ -86326,7 +86396,8 @@
     "pdf_y_end": 255.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101916",
-    "pdf_x_end": 289.6
+    "pdf_x_end": 289.6,
+    "birth_place": "Retje, Loški Potok"
   },
   {
     "last_name": "Kosmač",
@@ -87391,7 +87462,8 @@
     "pdf_y_end": 298.6,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101992",
-    "pdf_x_end": 282.1
+    "pdf_x_end": 282.1,
+    "birth_place": "Selo pri Ihanu"
   },
   {
     "last_name": "Kovše",
@@ -87428,7 +87500,8 @@
     "pdf_y_end": 551.4,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070101994",
-    "pdf_x_end": 288.5
+    "pdf_x_end": 288.5,
+    "birth_place": "Sušje, Ribnica"
   },
   {
     "last_name": "Kozina",
@@ -89476,26 +89549,6 @@
     "pdf_x_end": 241.8
   },
   {
-    "last_name": "Krašovee",
-    "middle_name": "",
-    "first_name": "Jakob",
-    "fathers_name": "",
-    "full_name": "Krašovee Jakob",
-    "additional_info": "* 1910 Hrastnik † 1943 Podraga pri Vipavi",
-    "birth_year": "1910",
-    "birth_place": "Hrastnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Podraga pri Vipavi",
-    "pdf_page": 21,
-    "pdf_y": 366.8,
-    "pdf_x": 116.3,
-    "pdf_y_end": 374.8,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070102130",
-    "pdf_x_end": 344.9
-  },
-  {
     "last_name": "Krašovic",
     "middle_name": "",
     "first_name": "Anton",
@@ -89961,11 +90014,11 @@
     "pdf_x_end": 179.7
   },
   {
-    "last_name": "Krivee",
+    "last_name": "Krivec",
     "middle_name": "",
     "first_name": "Bernard",
     "fathers_name": "",
-    "full_name": "Krivee Bernard",
+    "full_name": "Krivec Bernard",
     "additional_info": "* 1906 Solčava",
     "birth_year": "1906",
     "birth_place": "Solčava",
@@ -92176,7 +92229,8 @@
     "pdf_y_end": 578.7,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102300",
-    "pdf_x_end": 366.7
+    "pdf_x_end": 366.7,
+    "birth_place": "Sušje, Ribnica"
   },
   {
     "last_name": "Lesar",
@@ -95129,7 +95183,8 @@
     "pdf_y_end": 510.2,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102482",
-    "pdf_x_end": 375.0
+    "pdf_x_end": 375.0,
+    "birth_place": "Maline, Semič"
   },
   {
     "last_name": "Maleš",
@@ -95633,7 +95688,8 @@
     "soldier_id": "0070102520",
     "pdf_x_end": 339.2,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Kamnje, Bohinj"
   },
   {
     "last_name": "Markevič",
@@ -98106,7 +98162,8 @@
     "pdf_y_end": 550.3,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102682",
-    "pdf_x_end": 288.4
+    "pdf_x_end": 288.4,
+    "birth_place": "Kot, Ribnica"
   },
   {
     "last_name": "Mihelič",
@@ -98221,7 +98278,8 @@
     "pdf_y_end": 428.1,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102696",
-    "pdf_x_end": 292.7
+    "pdf_x_end": 292.7,
+    "birth_place": "Brezje pri Moziiju"
   },
   {
     "last_name": "Miklavc",
@@ -100475,7 +100533,8 @@
     "pdf_y_end": 371.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102845",
-    "pdf_x_end": 280.3
+    "pdf_x_end": 280.3,
+    "birth_place": "Otok, Cerknica"
   },
   {
     "last_name": "Mulej",
@@ -101669,7 +101728,8 @@
     "pdf_y_end": 200.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070102918",
-    "pdf_x_end": 355.1
+    "pdf_x_end": 355.1,
+    "birth_place": "Gorica vas, Ribnica"
   },
   {
     "last_name": "Nosan",
@@ -102260,7 +102320,8 @@
     ],
     "pdf_x_end": 332.2,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Reka, Cerkno"
   },
   {
     "last_name": "Oblak",
@@ -102996,11 +103057,11 @@
     "pdf_x_end": 294.2
   },
   {
-    "last_name": "Omaheh",
+    "last_name": "Omahen",
     "middle_name": "",
     "first_name": "Vladimir",
     "fathers_name": "",
-    "full_name": "Omaheh Vladimir",
+    "full_name": "Omahen Vladimir",
     "additional_info": "zvani Borut; * 1925 Ljubljana † po osvoboditvi",
     "birth_year": "1925",
     "birth_place": "Ljubljana",
@@ -103387,22 +103448,6 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103028",
     "pdf_x_end": 325.0
-  },
-  {
-    "last_name": "Osredkar",
-    "middle_name": "",
-    "first_name": "Tone",
-    "fathers_name": "",
-    "full_name": "Osredkar Tone",
-    "additional_info": "Preska 54, Medvode",
-    "birth_year": "",
-    "pdf_page": 29,
-    "pdf_y": 606.8,
-    "pdf_x": 132.9,
-    "pdf_y_end": 614.8,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070103029",
-    "pdf_x_end": 274.8
   },
   {
     "last_name": "Ostrovršnik",
@@ -104765,11 +104810,11 @@
     "pdf_x_end": 315.4
   },
   {
-    "last_name": "Pavllč",
+    "last_name": "Pavlič",
     "middle_name": "",
     "first_name": "Franc",
     "fathers_name": "",
-    "full_name": "Pavllč Franc",
+    "full_name": "Pavlič Franc",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 30,
@@ -107328,11 +107373,11 @@
     "pdf_x_end": 282.1
   },
   {
-    "last_name": "Piree",
+    "last_name": "Pirec",
     "middle_name": "",
     "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Piree Jože",
+    "full_name": "Pirec Jože",
     "additional_info": "* 1909 Vojščica",
     "birth_year": "1909",
     "birth_place": "Vojščica",
@@ -108105,7 +108150,8 @@
     "pdf_y_end": 477.9,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103327",
-    "pdf_x_end": 341.0
+    "pdf_x_end": 341.0,
+    "birth_place": "Ravne pri Šoštanju"
   },
   {
     "last_name": "Plešnik",
@@ -108595,7 +108641,8 @@
     "pdf_y_end": 414.4,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103352",
-    "pdf_x_end": 345.1
+    "pdf_x_end": 345.1,
+    "birth_place": "Velike Lašče"
   },
   {
     "last_name": "Pocajt",
@@ -110061,7 +110108,8 @@
     "pdf_y_end": 329.1,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103442",
-    "pdf_x_end": 293.3
+    "pdf_x_end": 293.3,
+    "birth_place": "Kočno, Ložnica"
   },
   {
     "last_name": "Potočan",
@@ -110162,25 +110210,6 @@
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103447",
     "pdf_x_end": 302.1
-  },
-  {
-    "last_name": "Potočnik",
-    "middle_name": "",
-    "first_name": "Ivan",
-    "fathers_name": "",
-    "full_name": "Potočnik Ivan",
-    "additional_info": "* 1916 Florjan pri Gor. Gradu † 1945",
-    "birth_year": "1916",
-    "birth_place": "Florjan pri Gor. Gradu",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "pdf_page": 88,
-    "pdf_y": 376.4,
-    "pdf_x": 141.8,
-    "pdf_y_end": 384.4,
-    "pdf_file": "tomsiceva-4.pdf",
-    "soldier_id": "0070103448",
-    "pdf_x_end": 341.8
   },
   {
     "last_name": "Potočnik",
@@ -110324,11 +110353,11 @@
     "death_after_war": true
   },
   {
-    "last_name": "Potočnlk",
+    "last_name": "Potočnik",
     "middle_name": "",
     "first_name": "Ivan",
     "fathers_name": "",
-    "full_name": "Potočnlk Ivan",
+    "full_name": "Potočnik Ivan",
     "additional_info": "* 1916 Florjan pri Gornjem Gradu † 1945",
     "birth_year": "1916",
     "birth_place": "Florjan pri Gornjem Gradu",
@@ -110340,7 +110369,20 @@
     "pdf_y_end": 279.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103458",
-    "pdf_x_end": 351.8
+    "pdf_x_end": 351.8,
+    "other_sources": [
+      {
+        "soldier_id": "0070103448",
+        "name": "Potočnik Ivan",
+        "additional_info": "* 1916 Florjan pri Gor. Gradu † 1945",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 88,
+        "pdf_x": 141.8,
+        "pdf_y": 376.4,
+        "pdf_x_end": 341.8,
+        "pdf_y_end": 384.4
+      }
+    ]
   },
   {
     "last_name": "Potušek",
@@ -112574,11 +112616,11 @@
     "pdf_x_end": 340.5
   },
   {
-    "last_name": "Pušnlk",
+    "last_name": "Pušnik",
     "middle_name": "",
     "first_name": "Bernard",
     "fathers_name": "",
-    "full_name": "Pušnlk Bernard",
+    "full_name": "Pušnik Bernard",
     "additional_info": "* 1927 Kozjak",
     "birth_year": "1927",
     "birth_place": "Kozjak",
@@ -114231,7 +114273,8 @@
         "pdf_x_end": 330.5
       }
     ],
-    "pdf_x_end": 302.6
+    "pdf_x_end": 302.6,
+    "birth_place": "Šmiklavž, Moziije"
   },
   {
     "last_name": "Repenšek",
@@ -114576,7 +114619,8 @@
     "soldier_id": "0070103720",
     "pdf_x_end": 393.3,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Kovača vas, Stari trg ob Kolpi"
   },
   {
     "last_name": "Režek",
@@ -114720,7 +114764,8 @@
     "pdf_y_end": 215.2,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103733",
-    "pdf_x_end": 272.3
+    "pdf_x_end": 272.3,
+    "birth_place": "Praproče, Semič"
   },
   {
     "last_name": "Rihar",
@@ -116529,7 +116574,8 @@
     "pdf_y_end": 190.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103840",
-    "pdf_x_end": 294.2
+    "pdf_x_end": 294.2,
+    "birth_place": "Dol, Šentvid"
   },
   {
     "last_name": "Rustl",
@@ -117966,7 +118012,22 @@
     "pdf_y_end": 287.6,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103962",
-    "pdf_x_end": 317.1
+    "pdf_x_end": 317.1,
+    "birth_place": "Češnjica, Bohinj",
+    "other_sources": [
+      {
+        "soldier_id": "0004002509",
+        "name": "Stare Franc",
+        "additional_info": "1915, Češnjica, Boh. Bistrica",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 436,
+        "pdf_x": 135.7,
+        "pdf_y": 476.3,
+        "pdf_x_end": 268.2,
+        "pdf_y_end": 492.7,
+        "unit_file": "ljubljanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Stare",
@@ -118019,7 +118080,8 @@
     "pdf_y_end": 361.2,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070103971",
-    "pdf_x_end": 285.1
+    "pdf_x_end": 285.1,
+    "birth_place": "Osojnik, Semič"
   },
   {
     "last_name": "Staudohar",
@@ -118659,7 +118721,8 @@
     "pdf_y_end": 631.0,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104024",
-    "pdf_x_end": 339.8
+    "pdf_x_end": 339.8,
+    "birth_place": "Dol pri Gornjem Gradu"
   },
   {
     "last_name": "Suhovršnik",
@@ -119030,7 +119093,8 @@
     "pdf_y_end": 258.4,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104047",
-    "pdf_x_end": 311.8
+    "pdf_x_end": 311.8,
+    "birth_place": "Bizovik"
   },
   {
     "last_name": "Svetelj",
@@ -119206,7 +119270,8 @@
     "pdf_y_end": 530.5,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104058",
-    "pdf_x_end": 274.1
+    "pdf_x_end": 274.1,
+    "birth_place": "Ravne pri Šoštanju"
   },
   {
     "last_name": "Tajnik",
@@ -119481,6 +119546,7 @@
     "soldier_id": "0070104073",
     "pdf_x_end": 378.8,
     "death_place": "Ljubljana",
+    "birth_place": "Goriča vas, Ribnica",
     "other_sources": [
       {
         "soldier_id": "9020006265",
@@ -119491,12 +119557,10 @@
         "ref_book": "zrtve-rata-1964-slo"
       }
     ],
-    "birth_place": "Ljubljana Del, Ljubljana-Center",
+    "ethnicity": "Slovenac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Slovenac"
+    ]
   },
   {
     "last_name": "Tančman",
@@ -120816,7 +120880,8 @@
         "pdf_x_end": 339.1
       }
     ],
-    "pdf_x_end": 329.6
+    "pdf_x_end": 329.6,
+    "birth_place": "Dolenja vas pri Senožečah"
   },
   {
     "last_name": "Tovšak",
@@ -121023,7 +121088,8 @@
         "pdf_x_end": 324.5
       }
     ],
-    "pdf_x_end": 293.6
+    "pdf_x_end": 293.6,
+    "birth_place": "Dol, Gornji Grad"
   },
   {
     "last_name": "Tratnik",
@@ -123635,7 +123701,8 @@
     "soldier_id": "0070104323",
     "pdf_x_end": 420.8,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Preserje pri Radomljah"
   },
   {
     "last_name": "Vaš",
@@ -124545,7 +124612,8 @@
     "pdf_y_end": 504.4,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104376",
-    "pdf_x_end": 297.0
+    "pdf_x_end": 297.0,
+    "birth_place": "Vrhovci, Adlešiči"
   },
   {
     "last_name": "Veselj",
@@ -129441,7 +129509,8 @@
     "pdf_y_end": 283.1,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104677",
-    "pdf_x_end": 336.6
+    "pdf_x_end": 336.6,
+    "birth_place": "Sušje, Ribnica"
   },
   {
     "last_name": "Zidar",
@@ -131833,7 +131902,8 @@
     "soldier_id": "0070104828",
     "pdf_x_end": 359.3,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Hrast pri Jugorju"
   },
   {
     "last_name": "Šavora",
@@ -133102,7 +133172,8 @@
     "soldier_id": "0070104920",
     "pdf_x_end": 384.5,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Kot pri Oplotnici"
   },
   {
     "last_name": "Škrjanc",
@@ -133967,7 +134038,8 @@
     "pdf_y_end": 227.8,
     "pdf_file": "tomsiceva-4.pdf",
     "soldier_id": "0070104981",
-    "pdf_x_end": 294.3
+    "pdf_x_end": 294.3,
+    "birth_place": "Lipje, Kozjak"
   },
   {
     "last_name": "Špegu",
@@ -136623,7 +136695,8 @@
     "soldier_id": "0070105155",
     "pdf_x_end": 384.8,
     "death_type": "umro",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Dol pri Gor. Gradu"
   },
   {
     "last_name": "Žerovnik",
@@ -136652,7 +136725,8 @@
         "pdf_x_end": 322.4
       }
     ],
-    "pdf_x_end": 308.2
+    "pdf_x_end": 308.2,
+    "birth_place": "Dol, Gornji Grad"
   },
   {
     "last_name": "Žetjav",
@@ -139609,7 +139683,8 @@
     "pdf_file": "tomsiceva-1.pdf",
     "unit_detail": "udarna grupa 3. bataljona Ljuba Šercerja, Dakijeva leteča in Proletarska udarna patrulja",
     "soldier_id": "0070200201",
-    "pdf_x_end": 361.5
+    "pdf_x_end": 361.5,
+    "birth_place": "Kočevski rudnik"
   },
   {
     "last_name": "Prebil",
@@ -140299,7 +140374,8 @@
     "pdf_file": "tomsiceva-1.pdf",
     "unit_detail": "1. slovenski proletarski udarni bataljon Toneta Tomšiča",
     "soldier_id": "0070200284",
-    "pdf_x_end": 292.8
+    "pdf_x_end": 292.8,
+    "birth_place": "Vranovičev"
   },
   {
     "last_name": "Čampa",

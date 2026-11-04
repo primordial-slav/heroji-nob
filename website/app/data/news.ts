@@ -15,6 +15,15 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-11-04',
+    text: {
+      sr: 'Kod još oko 12.000 boraca sada piše i mesto rođenja. Knjige su ga navodile, ali ga ranije nismo pročitali.',
+      sl: 'Pri še okoli 12.000 borcih zdaj piše tudi kraj rojstva. Knjige so ga navajale, a ga prej nismo prebrali.',
+      mk: 'Кај уште околу 12.000 борци сега пишува и местото на раѓање. Книгите го наведуваа, но порано не го прочитавме.',
+      en: 'For about 12,000 more fighters, the place of birth now shows. The books gave it, but we had not read it before.',
+    },
+  },
+  {
     date: '2026-10-28',
     text: {
       sr: 'Dodali smo još sedam knjiga o krajevima i selima, među njima o Doboju i Mileševskom kraju, sa oko 1.700 boraca i nosilaca Partizanske spomenice 1941. Oko 190 njih već je bilo na sajtu, pa sada u njihovom zapisu stoji još jedna knjiga. Ostali su novi i nalaze se među Borcima drugih jedinica.',

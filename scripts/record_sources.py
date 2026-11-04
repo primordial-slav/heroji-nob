@@ -82,7 +82,14 @@ def reference_fields(book: str, e: dict) -> dict:
 def fill_from(s: dict, book: str, e: dict) -> list[str]:
     """Fill s's empty fields from a reference of a census or column book; the fields filled"""
     if not (book.startswith(CENSUS_BOOK) or book in fill_books()):
-        return []
+        # any other book: only where he is from, as its parser read it (2026-11-03)
+        if s.get('birth_place') or not e.get('born_in'):
+            return []
+        place = structured.born_in_form(e['born_in'], e.get('additional_info') or '')
+        if not place:
+            return []
+        borrow(s, 'birth_place', place)
+        return ['birth_place']
     import find_source_duplicates as fsd
     vals = reference_fields(book, e)
     # the census's column of the place of death often holds his unit, no place ("Cankarjeva brigada", "1 brigada 1

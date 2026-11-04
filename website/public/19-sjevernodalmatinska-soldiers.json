@@ -77,7 +77,7 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "birth_place": "Duboki Dol, Gračac",
+    "birth_place": "Gračac",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -446,7 +446,7 @@
     "pdf_y_end": 556.6,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000021",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 460.9
   },
   {
@@ -466,7 +466,7 @@
     "death_place": "Glogovo",
     "soldier_id": "0079000022",
     "pdf_x_end": 460.3,
-    "birth_place": "Đevrsaka"
+    "birth_place": "Đevrske"
   },
   {
     "last_name": "Ardalić",
@@ -485,7 +485,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Vodice",
     "soldier_id": "0079000023",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 460.1
   },
   {
@@ -563,7 +563,8 @@
     "pdf_y_end": 306.8,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000027",
-    "pdf_x_end": 264.1
+    "pdf_x_end": 264.1,
+    "birth_place": "Medak (ne zna se mjesto pogibije)"
   },
   {
     "last_name": "Babin",
@@ -1926,7 +1927,7 @@
     "pdf_y_end": 181.3,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000090",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 253.1
   },
   {
@@ -1946,10 +1947,12 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000091",
     "pdf_x_end": 252.0,
-    "death_place": "Prevjes",
+    "birth_place": "Poličnik",
     "borrowed": [
+      "birth_place",
       "death_place"
     ],
+    "death_place": "Prevjes",
     "other_sources": [
       {
         "soldier_id": "0103000025",
@@ -1999,6 +2002,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000093",
     "pdf_x_end": 252.6,
+    "birth_place": "Nin",
     "birth_year": "1897",
     "other_sources": [
       {
@@ -2010,15 +2014,13 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "birth_place": "Poljica, Zadar",
+    "ethnicity": "Hrvat",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Hrvat",
     "death_date": "1944",
     "death_place": "Rijeka, Katarina"
   },
@@ -2097,7 +2099,8 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Crna Vlast",
     "soldier_id": "0079000097",
-    "pdf_x_end": 252.0
+    "pdf_x_end": 252.0,
+    "birth_place": "Raslina (Šibenik)"
   },
   {
     "last_name": "Berović",
@@ -4123,7 +4126,8 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Plitvički Leskovac",
     "soldier_id": "0079000181",
-    "pdf_x_end": 451.7
+    "pdf_x_end": 451.7,
+    "birth_place": "Mirkovci (Knin)"
   },
   {
     "last_name": "Bursać",
@@ -4978,7 +4982,8 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Mostar",
     "soldier_id": "0079000215",
-    "pdf_x_end": 460.8
+    "pdf_x_end": 460.8,
+    "birth_place": "Italija"
   },
   {
     "last_name": "Didić",
@@ -5464,7 +5469,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000237",
     "pdf_x_end": 430.2,
-    "birth_place": "Đevrsaka"
+    "birth_place": "Đevrske"
   },
   {
     "last_name": "Dragaš",
@@ -11357,7 +11362,7 @@
     "pdf_y_end": 513.4,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000501",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 440.4
   },
   {
@@ -11998,10 +12003,10 @@
   },
   {
     "last_name": "Krivić",
-    "middle_name": "",
+    "middle_name": "F.",
     "first_name": "Filip",
-    "fathers_name": "",
-    "full_name": "Krivić Filip",
+    "fathers_name": "F.",
+    "full_name": "Krivić F. Filip",
     "additional_info": "iz Biograda, u borbi na Komu, 9. XI 1944.",
     "birth_year": "",
     "death_type": "poginuo",
@@ -12013,7 +12018,33 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000533",
     "birth_place": "Biograd",
-    "pdf_x_end": 463.0
+    "pdf_x_end": 463.0,
+    "death_place": "Palanka",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0103009005",
+        "name": "Krivić F. Filip",
+        "additional_info": "iz Biograda, poginuo u borbi kod Palanke 6. XI 1944. god.",
+        "pdf_file": "6-dalmatinska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 74.2,
+        "pdf_y": 65.4,
+        "pdf_x_end": 200.7,
+        "pdf_y_end": 92.2,
+        "unit_file": "6-dalmatinska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.11.1944",
+          "place": "Palanka"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krička",
@@ -13243,7 +13274,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Varda",
     "soldier_id": "0079000584",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 293.0
   },
   {
@@ -14369,7 +14400,7 @@
     "pdf_y_end": 257.1,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079000631",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 275.6
   },
   {
@@ -15932,7 +15963,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Oćestovo",
     "soldier_id": "0079000698",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 442.0
   },
   {
@@ -25080,13 +25111,12 @@
     "pdf_x_end": 469.3
   },
   {
-    "last_name": "Subottć",
+    "last_name": "Subotić",
     "middle_name": "Bože",
     "first_name": "Luka",
     "fathers_name": "Božo",
-    "full_name": "Subottć Bože Luka",
+    "full_name": "Subotić Bože Luka",
     "additional_info": "iz Ervenika, u borbi na Zečevu, 20. VII 1944.",
-    "birth_year": "",
     "death_type": "poginuo",
     "pdf_page": 39,
     "pdf_y": 222.9,
@@ -25096,7 +25126,25 @@
     "death_place": "Zečevo",
     "soldier_id": "0079001096",
     "pdf_x_end": 468.7,
-    "birth_place": "Ervenik"
+    "birth_place": "Ervenik",
+    "birth_year": "1913",
+    "other_sources": [
+      {
+        "soldier_id": "9021018359",
+        "name": "Subotić (Božo) Luka",
+        "additional_info": "rođen 1913, Gornji ervenik (Knin). Srbin, poginuo 1944. u NOBu, Đevrske",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=888",
+        "source_page": 888,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1944"
   },
   {
     "last_name": "Surić",
@@ -25934,7 +25982,7 @@
     "pdf_y_end": 562.7,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079001134",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 445.2,
     "other_sources": [
       {
@@ -31350,15 +31398,27 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=1791",
         "source_page": 1791,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0103000354",
+        "name": "Škorić Marko",
+        "additional_info": "iz Dubravka, poginuo u borbi za Prevjes 3. XII 1944. god.",
+        "pdf_file": "6-dalmatinska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 71.3,
+        "pdf_y": 92.3,
+        "pdf_x_end": 197.7,
+        "pdf_y_end": 119.0,
+        "unit_file": "6-dalmatinska-soldiers.json"
       }
     ],
-    "ethnicity": "Hrvat",
+    "death_place": "Prevjes",
     "borrowed": [
       "birth_year",
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Strmica",
+    "ethnicity": "Hrvat",
     "birth_year": "1918"
   },
   {
@@ -32168,7 +32228,7 @@
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "death_place": "Oćestovo",
     "soldier_id": "0079001406",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 293.9
   },
   {
@@ -32187,7 +32247,7 @@
     "pdf_y_end": 513.5,
     "pdf_file": "19-sjevernodalmatinska.pdf",
     "soldier_id": "0079001407",
-    "birth_place": "Đevrsaka",
+    "birth_place": "Đevrske",
     "pdf_x_end": 293.6
   },
   {

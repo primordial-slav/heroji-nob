@@ -2051,6 +2051,7 @@
     "pdf_x_left": 94.7,
     "death_place": "u selu Srnicama kod Gradačca (istočna Bosna)",
     "unit_detail": "4. bataljon, 19. srpska brigada",
+    "birth_place": "Tresibaba, Knjaževac",
     "other_sources": [
       {
         "soldier_id": "0073000230",
@@ -11026,6 +11027,10 @@
         "pdf_x_left": 60.5,
         "ref_book": "cacanski-kraj-pali"
       }
+    ],
+    "birth_place": "Brusnice",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -14111,6 +14116,37 @@
     "pdf_x_left": 88.7,
     "unit_detail": "3. bataljon, 19. srpska brigada",
     "death_date": "20.09.1944",
+    "birth_place": "Velika Drenova, Trstenik",
+    "death_place": "na Deli-Jovanu",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001654",
+        "name": "Milovanović Nenad",
+        "additional_info": "borac 3. bataljona, rođen 22. septembra 1919. u selu Velika Drenova kod Trstenika (ili Veliki Drenovac kod Aleksinca), ranjen 19. septembra 1944. na Popadiji kod Klokočevca u borbi protiv Nemaca, a 20. septembra 1944. podlegao ranama, sahranjen u selu Crnajka kod Majdanpeka.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 28,
+        "pdf_x": 88.4,
+        "pdf_y": 109.9,
+        "pdf_x_end": 394.4,
+        "pdf_y_end": 153.1,
+        "unit_file": "19-srpska-soldiers.json"
+      },
+      {
+        "soldier_id": "0128002452",
+        "name": "Milovanović Nenad",
+        "additional_info": "1919, Velika Drenova. Poginuo septembra 1944. na Deli-Jovanu",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 60,
+        "pdf_x": 213.2,
+        "pdf_y": 361.4,
+        "pdf_x_end": 363.4,
+        "pdf_y_end": 388.6,
+        "unit_file": "18-srpska-soldiers.json"
+      }
+    ],
     "birth_date": "22.09.1919"
   },
   {
@@ -16600,7 +16636,25 @@
     "rank": "borac",
     "pdf_x_end": 374.6,
     "pdf_x_left": 93.1,
-    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada"
+    "unit_detail": "2. četa, 3. bataljon, 19. srpska brigada",
+    "death_place": "Borik, Vranovići, Gračanica",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0073001930",
+        "name": "Ničić Dimitrije",
+        "additional_info": "borac 2. čete 3. bataljona, rođen 1925. u selu Duboka kod Kučeva, poginuo 30. marta 1945. na brdu Borik kod sela Vranovići blizu Gračanice (ili u selu Bijeli zaselak Branovac kod Gradačca) u borbi protiv ustaša, sahranjen na Boriku.",
+        "pdf_file": "19-srpska.pdf",
+        "pdf_page": 29,
+        "pdf_x": 61.0,
+        "pdf_y": 184.7,
+        "pdf_x_end": 367.1,
+        "pdf_y_end": 219.7,
+        "unit_file": "19-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Novaković",
@@ -19394,7 +19448,8 @@
     "rank": "borac",
     "pdf_x_end": 340.1,
     "pdf_x_left": 60.3,
-    "unit_detail": "2. bataljon, 19. srpska brigada"
+    "unit_detail": "2. bataljon, 19. srpska brigada",
+    "birth_place": "Kula (Malo Crniće), Požarevac"
   },
   {
     "last_name": "Polak",
@@ -20819,7 +20874,8 @@
     "pdf_x_end": 376.0,
     "pdf_x_left": 95.6,
     "death_place": "Donji Dušnik, Gadžin Han, Niš",
-    "unit_detail": "3. bataljon, 16. srpska brigada"
+    "unit_detail": "3. bataljon, 16. srpska brigada",
+    "birth_place": ""
   },
   {
     "last_name": "Rajčić",
@@ -21596,7 +21652,8 @@
     "rank": "borac",
     "pdf_x_end": 331.0,
     "pdf_x_left": 50.6,
-    "unit_detail": "1. bataljon, 16. srpska brigada"
+    "unit_detail": "1. bataljon, 16. srpska brigada",
+    "birth_place": "Kalna kod Pirota"
   },
   {
     "last_name": "Savić",
@@ -22638,7 +22695,26 @@
     "rank": "borac",
     "pdf_x_end": 373.3,
     "pdf_x_left": 92.5,
-    "unit_detail": "3. bataljon, 18. srpska brigada"
+    "unit_detail": "3. bataljon, 18. srpska brigada",
+    "birth_place": "Beli Potok (kod Leskovca)",
+    "death_place": "kod Šatre",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0128003868",
+        "name": "Spasić Borivoje",
+        "additional_info": "1920, Beli Potok (Leskovac). Poginuo jula 1944. kod Šatre",
+        "pdf_file": "18-srpska.pdf",
+        "pdf_page": 94,
+        "pdf_x": 212.8,
+        "pdf_y": 370.4,
+        "pdf_x_end": 361.9,
+        "pdf_y_end": 398.1,
+        "unit_file": "18-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Spasić",

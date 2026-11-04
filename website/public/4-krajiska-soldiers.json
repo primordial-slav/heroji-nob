@@ -3651,11 +3651,11 @@
     "pdf_x_end": 349.9
   },
   {
-    "last_name": "Beeirović",
+    "last_name": "Bećirović",
     "middle_name": "Rahmana",
     "first_name": "Nezir",
     "fathers_name": "Rahman",
-    "full_name": "Beeirović Rahmana Nezir",
+    "full_name": "Bećirović Rahmana Nezir",
     "additional_info": "borac, rođen 1915, Ljubovište, Dragaš, Srbin, poslastičar, u NOB od 28. XI 1944, poginuo 13. I 1945. kod sela Sotina, Vukovar.",
     "birth_year": "1915",
     "pdf_page": 8,
@@ -3671,7 +3671,33 @@
     "death_date": "13.01.1945",
     "rank": "borac",
     "pdf_x_end": 349.9,
-    "death_place": "Sotin, Vukovar"
+    "death_place": "Sotin, Vukovar",
+    "other_sources": [
+      {
+        "soldier_id": "9014004770",
+        "name": "Bećirović Nezir",
+        "additional_info": "Poginuli borci Četvrte krajiške narodnooslobodilačke udarne brigade: 38. Bećirović Nezir.",
+        "pdf_file": "sremski-front-poginuli.pdf",
+        "pdf_page": 35,
+        "pdf_x": 392.8,
+        "pdf_y": 822.4,
+        "pdf_x_end": 467.5,
+        "pdf_y_end": 831.9,
+        "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9013000390",
+        "name": "Bećirović Nezir",
+        "additional_info": "Prva krajiška udarna brigada, Sotin: Nezir Bećirović.",
+        "pdf_file": "u-rovovima-srema-poginuli.pdf",
+        "pdf_page": 4,
+        "pdf_x": 197.0,
+        "pdf_y": 530.8,
+        "pdf_x_end": 272.1,
+        "pdf_y_end": 540.5,
+        "ref_book": "u-rovovima-srema-poginuli"
+      }
+    ]
   },
   {
     "last_name": "Beganović",
@@ -8722,7 +8748,8 @@
     "death_date": "20.10.1944",
     "death_place": "Beograd",
     "rank": "borac",
-    "pdf_x_end": 338.7
+    "pdf_x_end": 338.7,
+    "birth_place": "Popovpć, Sopot"
   },
   {
     "last_name": "Dunić",
@@ -12590,6 +12617,7 @@
     "death_place": "u selu Vlaškn, Mladenovac",
     "rank": "borac",
     "pdf_x_end": 376.5,
+    "birth_place": "Ručići, Gornji Milanovac",
     "other_sources": [
       {
         "soldier_id": "9016003295",
@@ -12613,12 +12641,10 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
-    "birth_place": "Ručići, Gornji Milanovac",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Ilić",
@@ -13808,7 +13834,8 @@
     "death_date": "11.1942",
     "death_place": "Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 388.1
+    "pdf_x_end": 388.1,
+    "birth_place": "Sajkovići, Livno"
   },
   {
     "last_name": "Ivetić",
@@ -21531,6 +21558,10 @@
         "source_page": 664,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "birth_place": "Maleševci, Bosansko Grahovo",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -24009,11 +24040,11 @@
     ]
   },
   {
-    "last_name": "Mandii",
+    "last_name": "Mandić",
     "middle_name": "Jefte",
     "first_name": "Žarko",
     "fathers_name": "Jefto",
-    "full_name": "Mandii Jefte Žarko",
+    "full_name": "Mandić Jefte Žarko",
     "additional_info": "borac, rođen 1921, Podići, Drvar, Srbin, zemljoradnik, u NOB od 15. VIII 1942, član SKOJ-a, poginuo 4. VIII 1944. kod sela Slatine, na Ibru.",
     "birth_year": "1921",
     "pdf_page": 50,
@@ -27661,7 +27692,8 @@
     "death_date": "20.09.1944",
     "death_place": "Mladenovac",
     "rank": "borac",
-    "pdf_x_end": 346.4
+    "pdf_x_end": 346.4,
+    "birth_place": "Dragobraća, Gruža, Kragujevac"
   },
   {
     "last_name": "Milikević",
@@ -48751,6 +48783,7 @@
     "unit_detail": "3. četa, 1. bataljon",
     "pdf_x_end": 392.6,
     "death_place": "Sotin, Vukovar",
+    "birth_place": "Inđija, Ruma",
     "other_sources": [
       {
         "soldier_id": "9014012321",
@@ -51803,6 +51836,10 @@
         "source_page": 659,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "birth_place": "Tiškovac, Bosansko Grahovo",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -52364,6 +52401,10 @@
         "source_page": 657,
         "ref_book": "bosansko-grahovo"
       }
+    ],
+    "birth_place": "Tiškovac, Bosansko Grahovo",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -54215,7 +54256,7 @@
     "occupation": "stolar",
     "death_type": "umro",
     "death_date": "28.02.1945",
-    "death_place": "u selu JBubi, Ilok",
+    "death_place": "u selu Ljubi, Ilok",
     "rank": "borac",
     "pdf_x_end": 344.0,
     "other_sources": [
@@ -54752,6 +54793,7 @@
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 390.8,
+    "birth_place": "Petrovčić, Zemun",
     "other_sources": [
       {
         "soldier_id": "9013001004",
@@ -56078,9 +56120,9 @@
   {
     "last_name": "Šop",
     "middle_name": "",
-    "first_name": "Mcjat",
+    "first_name": "Mijat",
     "fathers_name": "",
-    "full_name": "Šop Mcjat",
+    "full_name": "Šop Mijat",
     "additional_info": "borac, mehaničar, umro od tifusa 1.1 1944. kod, Foče.",
     "birth_year": "",
     "pdf_page": 91,

@@ -849,7 +849,8 @@
     "death_date": "krajem 1944",
     "death_place": "između Sida i Tovarnika",
     "rank": "borac",
-    "pdf_x_end": 182.6
+    "pdf_x_end": 182.6,
+    "birth_place": "Kruševac"
   },
   {
     "last_name": "Antić",
@@ -20247,7 +20248,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "pdf_x_end": 184.5
+    "pdf_x_end": 184.5,
+    "birth_place": "Bosanski Petrovac"
   },
   {
     "last_name": "Grbić",
@@ -61563,6 +61565,10 @@
         "source_page": 413,
         "ref_book": "otocac-brinje"
       }
+    ],
+    "birth_place": "Vojvoduša, Gornji Kraj",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -94420,6 +94426,7 @@
     "death_place": "u Drvaru prilikom vazdušnog desanta na Drvar",
     "rank": "borac",
     "pdf_x_end": 179.9,
+    "birth_place": "Dalmacija",
     "other_sources": [
       {
         "soldier_id": "9021000732",
@@ -94430,13 +94437,11 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "birth_place": "Polača, Benkovac",
+    "ethnicity": "Hrvat",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Hrvat",
     "birth_year": "1910"
   },
   {
@@ -125276,7 +125281,7 @@
     "pdf_y_end": 476.8,
     "pdf_file": "borci-sutjeske-3-krajiska.pdf",
     "soldier_id": "0010100570",
-    "birth_place": "Babici, Šipovo",
+    "birth_place": "Babići, Šipovo",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "rank": "borac",
@@ -158472,7 +158477,8 @@
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010200690",
     "rank": "borac",
-    "pdf_x_end": 194.7
+    "pdf_x_end": 194.7,
+    "birth_place": "Vojvodina"
   },
   {
     "last_name": "Ciprijević",
@@ -159092,7 +159098,8 @@
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010200731",
     "rank": "borac",
-    "pdf_x_end": 201.7
+    "pdf_x_end": 201.7,
+    "birth_place": "Vojvodina"
   },
   {
     "last_name": "Cukareli",
@@ -168470,9 +168477,9 @@
   {
     "last_name": "Ilić",
     "middle_name": "Milenka",
-    "first_name": "Bggoljub",
+    "first_name": "Bogoljub",
     "fathers_name": "Milenko",
-    "full_name": "Ilić Milenka Bggoljub",
+    "full_name": "Ilić Milenka Bogoljub",
     "additional_info": "rođ. 1913, Užička Požega, Srbin, u NOB i brigadi od 1944, borac.",
     "birth_year": "1913",
     "pdf_page": 130,
@@ -189057,7 +189064,8 @@
     "death_date": "05.04.1945",
     "rank": "borac",
     "pdf_x_end": 345.9,
-    "pdf_x_left": 65.5
+    "pdf_x_left": 65.5,
+    "birth_place": "Banija"
   },
   {
     "last_name": "Milanović",
@@ -195148,7 +195156,8 @@
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010203344",
     "rank": "borac",
-    "pdf_x_end": 238.4
+    "pdf_x_end": 238.4,
+    "birth_place": "Vojvodina"
   },
   {
     "last_name": "Nazor",
@@ -206258,9 +206267,9 @@
   {
     "last_name": "Radovanović",
     "middle_name": "Živorada",
-    "first_name": "Milqje",
+    "first_name": "Miloje",
     "fathers_name": "Živorad",
-    "full_name": "Radovanović Živorada Milqje",
+    "full_name": "Radovanović Živorada Miloje",
     "additional_info": "rod. 1920, Bogovađa, Lajkovac, zemljoradnik, Srbin, u NOB i brigadi od 20. 9. 1944, borac.",
     "birth_year": "1920",
     "pdf_page": 343,
@@ -213169,7 +213178,8 @@
     "pdf_y_end": 313.7,
     "pdf_file": "3-krajiska-spisak-boraca.pdf",
     "soldier_id": "0010204623",
-    "pdf_x_end": 197.2
+    "pdf_x_end": 197.2,
+    "birth_place": "Dalmacija"
   },
   {
     "last_name": "Slavić",
@@ -214752,7 +214762,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 321.2,
-    "pdf_x_left": 38.6
+    "pdf_x_left": 38.6,
+    "birth_place": "Mladenovac"
   },
   {
     "last_name": "Stankić",
@@ -218623,7 +218634,8 @@
     "death_date": "06.05.1945",
     "rank": "borac",
     "pdf_x_end": 318.8,
-    "pdf_x_left": 36.5
+    "pdf_x_left": 36.5,
+    "birth_place": "Osijek"
   },
   {
     "last_name": "Tabul",
@@ -219422,11 +219434,11 @@
     "pdf_x_left": 63.0
   },
   {
-    "last_name": "Taoić",
+    "last_name": "Tadić",
     "middle_name": "Živana",
     "first_name": "Milan",
     "fathers_name": "Živan",
-    "full_name": "Taoić Živana Milan",
+    "full_name": "Tadić Živana Milan",
     "additional_info": "rođ. 1924, Resnik, Beograd, zemljoradnik, Srbin, u NOB i brigadi oktobra 1944, do kraja rata, borac.",
     "birth_year": "1924",
     "pdf_page": 419,
@@ -223738,7 +223750,8 @@
     "ethnicity": "Hrvat",
     "rank": "komandir voda",
     "pdf_x_end": 344.4,
-    "pdf_x_left": 63.6
+    "pdf_x_left": 63.6,
+    "birth_place": "Dalmacija"
   },
   {
     "last_name": "Vignjević",
@@ -226078,9 +226091,9 @@
   {
     "last_name": "Zagorac",
     "middle_name": "Naste",
-    "first_name": "Bqro",
+    "first_name": "Boro",
     "fathers_name": "Naste",
-    "full_name": "Zagorac Naste Bqro",
+    "full_name": "Zagorac Naste Boro",
     "additional_info": "rod. 1924, Doljan, Donji Vakuf, zemljoradnik, Jugosloven, u NOB od 1. 2. 1942, u brigadi od 1. 7. 1943, član KPJ od 1945, delegat voda.",
     "birth_year": "1924",
     "pdf_page": 462,
@@ -231874,7 +231887,8 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "pdf_x_end": 299.6,
-    "pdf_x_left": 17.9
+    "pdf_x_left": 17.9,
+    "birth_place": "Mladenovac"
   },
   {
     "last_name": "Đurđević",
@@ -236515,7 +236529,8 @@
     "death_date": "1943",
     "death_place": "kod Jabuke na Banderi",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Bosanski Osredci, Drvar"
   },
   {
     "last_name": "Radenović",

@@ -9694,7 +9694,8 @@
     "pdf_x_left": 249.2,
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Krušvar, Sinj"
   },
   {
     "last_name": "Blajić",
@@ -14547,9 +14548,9 @@
   {
     "last_name": "Burić",
     "middle_name": "Bartula",
-    "first_name": "Kärlo",
+    "first_name": "Karlo",
     "fathers_name": "Bartul",
-    "full_name": "Burić Bartula Kärlo",
+    "full_name": "Burić Bartula Karlo",
     "additional_info": "borac Letećeg mosorskog voda. Rođen 4. 11. 1926. u Splitu, đak, Hrvat, član SKOJ-a. U Mosorski vod došao kolovoza 1942. U sastavu 12. dalmatinske brigade bio je 1944. godine. Ranjen 1944, u borbi na Vidovoj gori, Brač.",
     "birth_year": "1926",
     "pdf_page": 31,
@@ -24330,6 +24331,31 @@
     "birth_place": "Klis, Split",
     "rank": "borac",
     "unit_detail": "2. vod, 3. četa, 2. bataljon",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_type"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0036000584",
+        "name": "Gizdić Marka Vitomir",
+        "additional_info": "rođen na Klisu — Split, borac 1 bat, poginuo u IV ofanziv.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010636",
+        "name": "Gizdić Vitomir",
+        "additional_info": "rođen na Klisu — Split, borac 1 bat., poginuo u IV ofanziv",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 61,
+        "pdf_x": 79.6,
+        "pdf_y": 497.21000000000004,
+        "pdf_y_end": 505.2,
+        "pdf_x_end": 411.9,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ],
     "birth_date": "03.07.1927"
   },
   {
@@ -26656,7 +26682,8 @@
     "death_place": "Dubci, Omiš",
     "rank": "borac",
     "unit_detail": "1. četa, 2. bataljon",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Vis"
   },
   {
     "last_name": "Ivica",
@@ -35025,9 +35052,9 @@
   {
     "last_name": "Katalinić",
     "middle_name": "Bruna",
-    "first_name": "Döra",
+    "first_name": "Dora",
     "fathers_name": "Bruno",
-    "full_name": "Katalinić Bruna Döra",
+    "full_name": "Katalinić Bruna Dora",
     "additional_info": "borac 3. čete 2. bataljona Mosorskog PO. Rođena 28. 9. 1924. u Splitu, đak, Hrvatica. U Mosorski PO stupila 9. rujna 1943. U toku 6. ofenzive ranjena na Mosoru i U. listopada 1943. upućena u bolnicu na Vis. Umrla 1967.",
     "birth_year": "1924",
     "pdf_page": 78,
@@ -39710,16 +39737,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2218",
         "source_page": 2218,
         "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "0046000515",
+        "name": "Kovačić Marka Bartul",
+        "additional_info": "borac, rođen 1925, Žrnovnica, Split, zemljoradnik, Hrvat, u NOB od 1942, član SKOJ-a od 1942, poginuo na pruzi Sarajevo-Višegrad 17. juna 1943. u sastavu 4. proleterske brigade.",
+        "pdf_file": "borci-sutjeske-3-dalmatinska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 185.0,
+        "pdf_y": 226.2,
+        "pdf_x_end": 355.1,
+        "pdf_y_end": 288.2,
+        "unit_file": "3-dalmatinska-soldiers.json"
       }
     ],
-    "birth_place": "Split",
+    "birth_year": "1925",
     "borrowed": [
       "birth_place",
       "birth_year",
       "death_place"
     ],
-    "death_place": "Sutjeska",
-    "birth_year": "1922"
+    "birth_place": "Žrnovnica, Split",
+    "death_place": "Sutjeska"
   },
   {
     "last_name": "Kovačić",
@@ -47893,9 +47932,9 @@
   {
     "last_name": "Malenica",
     "middle_name": "Ante",
-    "first_name": "Makko",
+    "first_name": "Marko",
     "fathers_name": "Ante",
-    "full_name": "Malenica Ante Makko",
+    "full_name": "Malenica Ante Marko",
     "additional_info": "borac Mosorskog bataljona. Rođen 1920, Ostrvica, Omiš, zemljoradnik, Hrvat. U Mosorski PO došao početkom veljače 1943, a zatim upućen u 5. dalmatinsku brigadu. Poginuo 1943. u 4. ofenzivi kao borac 3. dalmatinske brigade.",
     "birth_year": "1920",
     "pdf_page": 103,
@@ -63500,6 +63539,18 @@
     "rank": "borac",
     "other_sources": [
       {
+        "soldier_id": "0007003951",
+        "name": "Pavić Jakova Vitko",
+        "additional_info": "2. 3. 1925. Ercegovci, Sinj. Hrvat, zemljoradnik. U NOV od 25. 7. 1942. U 2. dalm. brigadi od 3. 10. 1942. Nosilac »Partizanske spomenice 1941«.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 133,
+        "pdf_x": 136.0,
+        "pdf_y": 336.1,
+        "pdf_x_end": 461.5,
+        "pdf_y_end": 352.1,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
         "soldier_id": "0007101018",
         "name": "Pavić Jakova Cvitko",
         "additional_info": "borac 1. bataljona, rođen 1925, Ercegovci, Sinj, zemljoradnik, Hrvat, u NOB od 1941.",
@@ -69773,7 +69824,8 @@
     "death_date": "26.03.1944",
     "death_place": "Rošci, Omiš",
     "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon"
+    "unit_detail": "3. četa, 2. bataljon",
+    "birth_place": "Sicilija"
   },
   {
     "last_name": "Pionić",
@@ -70526,7 +70578,8 @@
         "pdf_x_end": 521.4,
         "pdf_y_end": 472.3
       }
-    ]
+    ],
+    "birth_place": "Brač"
   },
   {
     "last_name": "Plavša",
@@ -73308,7 +73361,8 @@
     "pdf_x_left": 257.9,
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "birth_place": "Brač"
   },
   {
     "last_name": "Radelja",

@@ -7232,12 +7232,22 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=413",
         "source_page": 413,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0119000101",
+        "name": "Bogosavljević Dragoljub",
+        "additional_info": "zemljoradnik, iz Braničeva, rođen 1926. g. u Braničevu. U odredu od septembra 1941. g. do decembra 1941. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006203&pg_seq=254",
+        "source_page": 242,
+        "unit_file": "pozarevacki-odred-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Bogosavljević",
@@ -10247,7 +10257,8 @@
     "pdf_y_end": 82.7,
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128000523",
-    "pdf_x_end": 365.3
+    "pdf_x_end": 365.3,
+    "birth_place": "Rasina"
   },
   {
     "last_name": "Cvetković",
@@ -12298,7 +12309,8 @@
     "death_date": "01.1945",
     "death_place": "Vlasenica",
     "rank": "kurir",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_place": "Toplica"
   },
   {
     "last_name": "Dobrivojević",
@@ -14070,7 +14082,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128000721",
     "pdf_x_end": 389.4,
-    "birth_place": "LJubičevac"
+    "birth_place": "Ljubičevac"
   },
   {
     "last_name": "Florž",
@@ -15760,7 +15772,8 @@
     "pdf_x_end": 221.3,
     "death_type": "poginuo",
     "death_date": "10.1944",
-    "death_place": "na Deli-Jovanu"
+    "death_place": "na Deli-Jovanu",
+    "birth_place": "Toplica"
   },
   {
     "last_name": "Grasilović",
@@ -25551,7 +25564,8 @@
     "death_type": "poginuo",
     "death_date": "07.1944",
     "death_place": "kod Šatre",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_place": "Bakus"
   },
   {
     "last_name": "Jovanović",
@@ -33865,7 +33879,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128001721",
     "pdf_x_end": 387.1,
-    "birth_place": "LJutež (Vladičin Han)"
+    "birth_place": "Ljutež (Vladičin Han)"
   },
   {
     "last_name": "Lazarević",
@@ -34093,9 +34107,9 @@
   {
     "last_name": "Lazarević",
     "middle_name": "",
-    "first_name": "Vujicl",
+    "first_name": "Vujica",
     "fathers_name": "",
-    "full_name": "Lazarević Vujicl",
+    "full_name": "Lazarević Vujica",
     "additional_info": "1924, Bukovska. Ranjen januara 1945. kod Drinjače",
     "birth_year": "1924",
     "pdf_page": 47,
@@ -42190,9 +42204,9 @@
   {
     "last_name": "Mijajlović",
     "middle_name": "",
-    "first_name": "Ltubomir",
+    "first_name": "Ljubomir",
     "fathers_name": "",
-    "full_name": "Mijajlović Ltubomir",
+    "full_name": "Mijajlović Ljubomir",
     "additional_info": "1924, Aonja Bresnica. Ranjen jula 1944. kod Šatre",
     "birth_year": "1924",
     "pdf_page": 56,
@@ -48917,6 +48931,19 @@
     "death_place": "na Deli-Jovanu",
     "other_sources": [
       {
+        "soldier_id": "0019000411",
+        "name": "Milovanović Nenad",
+        "additional_info": "borac 3. bataljona 19. srpske brigade, rođen 22. septembra 1919. god. u selu Velikoj Drenovi kod Trstenika (ili Velikom Drenovcu kod Aleksinca —j prim. red.), ranjen 19. septembra 1944. god. na Popadiji kod sela Klokočevca u borbi protiv Nemaca, a 20. septembra 1944. podlegao ranama; sahranjen u selu Crnajki jugoistočno od Majdanpeka.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 7,
+        "pdf_x": 110.8,
+        "pdf_y": 306.1,
+        "pdf_x_end": 369.3,
+        "pdf_y_end": 366.5,
+        "pdf_x_left": 88.7,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      },
+      {
         "soldier_id": "0073001654",
         "name": "Milovanović Nenad",
         "additional_info": "borac 3. bataljona, rođen 22. septembra 1919. u selu Velika Drenova kod Trstenika (ili Veliki Drenovac kod Aleksinca), ranjen 19. septembra 1944. na Popadiji kod Klokočevca u borbi protiv Nemaca, a 20. septembra 1944. podlegao ranama, sahranjen u selu Crnajka kod Majdanpeka.",
@@ -49560,9 +49587,9 @@
   {
     "last_name": "Milošević",
     "middle_name": "",
-    "first_name": "Dragčtin",
+    "first_name": "Dragutin",
     "fathers_name": "",
-    "full_name": "Milošević Dragčtin",
+    "full_name": "Milošević Dragutin",
     "additional_info": "1915, Radenka. Nestao u jednoj borbi brigade",
     "birth_year": "1915",
     "pdf_page": 64,
@@ -54915,7 +54942,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128002758",
     "pdf_x_end": 201.7,
-    "birth_place": "LJubičevac"
+    "birth_place": "Ljubičevac"
   },
   {
     "last_name": "Nikić",
@@ -65964,7 +65991,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003315",
     "pdf_x_end": 378.1,
-    "birth_place": "LJubičevac"
+    "birth_place": "Ljubičevac"
   },
   {
     "last_name": "Petrović",
@@ -66066,7 +66093,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003321",
     "pdf_x_end": 378.8,
-    "birth_place": "Donji LJubeš",
+    "birth_place": "Donji Ljubeš",
     "rank": "komandir čete"
   },
   {
@@ -66084,7 +66111,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003322",
     "pdf_x_end": 379.5,
-    "birth_place": "Donji LJubeš",
+    "birth_place": "Donji Ljubeš",
     "rank": "komandir čete"
   },
   {
@@ -66538,9 +66565,9 @@
   {
     "last_name": "Petrović",
     "middle_name": "",
-    "first_name": "Vošslav",
+    "first_name": "Voislav",
     "fathers_name": "",
-    "full_name": "Petrović Vošslav",
+    "full_name": "Petrović Voislav",
     "additional_info": "1925, Vuković. Poginuo aprila 1945. u rejonu Odžaka",
     "birth_year": "1925",
     "pdf_page": 82,
@@ -66553,7 +66580,21 @@
     "birth_place": "Vuković",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "death_place": "u rejonu Odžaka"
+    "death_place": "u rejonu Odžaka",
+    "other_sources": [
+      {
+        "soldier_id": "9025016422",
+        "name": "Petrović (Vićentije) Voislav",
+        "additional_info": "rođen 1925, Vuković (Kučevo). Srbin, poginuo 1945. u NOBu, Gornj.svilajnac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=666",
+        "source_page": 666,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Petrović",
@@ -67222,6 +67263,10 @@
         "pdf_x_left": 171.6,
         "ref_book": "lovcenski-odred-pali-borci"
       }
+    ],
+    "birth_place": "Boljevići",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73135,7 +73180,8 @@
     "death_type": "poginuo",
     "death_date": "04.1945",
     "death_place": "Vlaška Mala",
-    "rank": "omladinski rukovodilac bataljona"
+    "rank": "omladinski rukovodilac bataljona",
+    "birth_place": "Kruševac"
   },
   {
     "last_name": "Rašinski",
@@ -74292,7 +74338,8 @@
     "pdf_y_end": 290.7,
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128003747",
-    "pdf_x_end": 129.9
+    "pdf_x_end": 129.9,
+    "birth_place": "Modriča"
   },
   {
     "last_name": "Ružan",
@@ -76061,7 +76108,8 @@
     "pdf_x_end": 198.6,
     "death_type": "streljan",
     "death_place": "Klenje",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "birth_place": "Toplica"
   },
   {
     "last_name": "Simić",
@@ -76871,7 +76919,22 @@
     "birth_place": "Beli Potok (Leskovac)",
     "death_type": "poginuo",
     "death_date": "07.1944",
-    "death_place": "kod Šatre"
+    "death_place": "kod Šatre",
+    "other_sources": [
+      {
+        "soldier_id": "0019000660",
+        "name": "Spasić Borivoje",
+        "additional_info": "borac 3. bataljona 18. srpske brigade, rođen 1920. god. u selu Belom Potoku (verovatno kod Leskovca), poginuo 22. jula 1944. god. (moguće 20. jula 1944. god. — prim. red.) u selu Šatri kod Kuršumlije u borbi protiv četnika.",
+        "pdf_file": "25-srpska-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 113.8,
+        "pdf_y": 273.2,
+        "pdf_x_end": 373.3,
+        "pdf_y_end": 317.2,
+        "pdf_x_left": 92.5,
+        "unit_file": "25-srpska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Spasić",
@@ -87218,7 +87281,8 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004397",
     "pdf_x_end": 367.6,
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_place": "Korman"
   },
   {
     "last_name": "Timotijević",
@@ -87518,9 +87582,9 @@
   {
     "last_name": "Todorović",
     "middle_name": "",
-    "first_name": "Milčtin",
+    "first_name": "Milutin",
     "fathers_name": "",
-    "full_name": "Todorović Milčtin",
+    "full_name": "Todorović Milutin",
     "additional_info": "1921, Brodice. Poginuo u jednoj od borbi brigade u Bosni",
     "birth_year": "1921",
     "pdf_page": 106,
@@ -90771,7 +90835,8 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004577",
     "pdf_x_end": 223.6,
-    "death_type": "poginuo"
+    "death_type": "poginuo",
+    "birth_place": "Toplica"
   },
   {
     "last_name": "Vermešanović",
@@ -92329,7 +92394,7 @@
     "pdf_file": "18-srpska.pdf",
     "soldier_id": "0128004654",
     "pdf_x_end": 234.4,
-    "birth_place": "LJubovo (Berane)",
+    "birth_place": "Ljubovo (Berane)",
     "rank": "zamenik komandanta bataljona",
     "other_sources": [
       {
@@ -93767,7 +93832,8 @@
     "pdf_x_end": 224.8,
     "death_type": "poginuo",
     "death_date": "12.1944",
-    "death_place": "Požega"
+    "death_place": "Požega",
+    "birth_place": "Majdanpek"
   },
   {
     "last_name": "Čelić",
@@ -99073,9 +99139,9 @@
   {
     "last_name": "Živković",
     "middle_name": "",
-    "first_name": "Vnlibor",
+    "first_name": "Velibor",
     "fathers_name": "",
-    "full_name": "Živković Vnlibor",
+    "full_name": "Živković Velibor",
     "additional_info": "1924, Tabanovac",
     "birth_year": "1924",
     "pdf_page": 26,

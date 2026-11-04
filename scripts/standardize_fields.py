@@ -173,11 +173,22 @@ def date_form(value: str) -> str:
     return value
 
 
+# a date with a word stuck to it or a slip of the scan, read so (2026-11-03): a day or a month no calendar has goes, the rest of the date stays
+DATE_READ = {
+    'poginuo 27. 3. 1945': '27.03.1945', 'poginuo 24. 10. 1944': '24.10.1944', 'poginuo 6. 4. 1945': '06.04.1945', 'poginuo 24. 3. 1945': '24.03.1945',
+    'podlegao zadobijenim ranama 3. 4. 1945': '03.04.1945', 'Plana (Bileća) 1. 11. 1944': '01.11.1944', 'zarobljen od četnika jula 1944': '07.1944', '3. VIII 1944. |': '03.08.1944',
+    '6. :XII 1944': '06.12.1944', '5. :XII 1944': '05.12.1944', '22. juliia 1944': '22.07.1944', '11. aiprila 1944': '11.04.1944', '3. oitotobra 1944': '03.10.1944',
+    '95. 04. 1945': '04.1945', '65. 04. 1945': '04.1945', '93 juna 1943': '06.1943', '65 septembra 1943': '09.1943', '38 novembra 1944': '11.1944', '70. decembra 1941': '12.1941', '38. XII 1943': '12.1943', '9. mj. 1943': '09.1943',
+    '00. 00. 1942': '1942', '15. 98. 1941': '1941', '3. 45. 1945': '1945', '31. 21. 1944': '1944', '24. 13. 1944': '1944', '22. 17. 1941': '1941', '4. XIII 1943': '1943', '8. XIII 1944': '1944',
+    'Proljeće 1944': 'proljeće 1944', 'Proljeće 1943': 'proljeće 1943',
+}
+
+
 def death_date(s: dict) -> dict | None:
     v = s.get('death_date')
     if not v:
         return None
-    new = date_form(v)
+    new = date_form(DATE_READ.get(v, v))
     return {'death_date': new} if new != v else None
 
 
@@ -640,6 +651,21 @@ PLACE_READ = {
     'LJupten': 'Ljupten', 'LSSOVAC': 'Lasovac, Bjelovar', 'Tppnipp': '', 'StjApana': 'Kozarevac, Nova Rača, Bjelovar', 'X3ahec,Travarsko': 'Kravarsko', 'Oratje-Krap': 'Oratje, Krapinske Toplice, Zabok',
     'Ldska-Kotlenice, Split': 'Kotlenice, Split', 'Prisloici': 'Prislonica', 'Ljuiću': 'Ljubić', 'Berčinovcu. zešoradnik': 'Berčinovac', 'Šipćonu, Rijeka Crpojsvića, Eta': 'Šipčanik, Rijeka Crnojevića',
     'Prvoj Čađavici, Bosanski Novi, Bosna iHercegovina': 'Prva Čađavica, Bosanski Novi', 'I vanji grad': 'Ivanji grad', 'I van j i grad': 'Ivanji grad',
+    # places of birth and of death the scans garbled, read from the entry (2026-11-03)
+    'OrjaLuka, Danilovgrad': 'Orja Luka, Danilovgrad', 'PoJBa, Mojkovac': 'Polja, Mojkovac', 'u selu JBubi, Ilok': 'u selu Ljubi, Ilok', 'kod JTipovca, Sremski front': 'kod Lipovca, Sremski front', 'u JTivnu': 'u Livnu',
+    'Brančić, JBig': 'Brančić, Ljig', 'Liplje, JBig': 'Liplje, Ljig', 'Adaševci, JPid': 'Adaševci, Šid', 'u Ča/mi': 'u Čazmi', 'G. VranjiSka': 'G. Vranjska', 'Bijeljiii': 'Bijeljina', 'Đurđevik, Živiiice': 'Đurđevik, Živinice',
+    'UbliKuči, Podgorica': 'Ubli Kuči, Podgorica', 'PrimoSten, Šibenik': 'Primošten, Šibenik', 'Sedlari.ma': 'Sedlarima', 'Komljinsk, SSSR. Pye': 'Komljinsk, SSSR', 'Široki brijeg m': 'Široki Brijeg', 'Krčedin, InđiJa': 'Krčedin, Inđija', 'Sjeničak l': 'Sjeničak',
+    'Podturn pri DoL Toplicah': 'Podturn pri Dol. Toplicah', 'Dolenjske Toylice': 'Dolenjske Toplice', 'Čestelin kodVranja': 'Čestelin kod Vranja', 'pohodu 14. divizije na Štajersko': '', '4 ofanziva': '', '5 ofanziva': '', '7 ofanziva': '', 'U 5 ofanzivi': '', '5.ofanziva': '',
+    'U bosni 5.ofanz': 'Bosna', '19div': '', '1dal.bri': '', 'X+': '', 'Crna gora 4.of': 'Crna Gora', 'Unska operat.grupa': '', 'Štajerska (2.UB.)': 'Štajerska', 'Rakovec (13.B.)': 'Rakovec',
+    # the census's place column as its table first wrote it (2026-11-03: a reader's value caught by the joined-parts rule)
+    'Žljebova': 'Žljebovi', 'Kopito, Žljebova': 'Kopito, Žljebovi', 'Pljevlje': 'Pljevlja', 'Podromanije Sokolac': 'Podromanija, Sokolac', 'Dubovik, Bos. Kru': 'Dubovik, Bos. Krupa', 'Kamensko, D. Lapa': 'Kamensko, D. Lapac', 'Čadžavica, B. Nov': 'Čadžavica, B. Novi', 'Pirit- u bolnici': 'Pirit', 'Tounj-na Pruzi': 'Tounj', 'Šolta-na brodu': 'Šolta',
+    'Nar.bol.pljevlj': 'Pljevlja', 'Nepoz.partizan.jed': '', 'Boln.u zagrebu': 'Zagreb', 'Darča.na.dravi': 'Darda na Dravi', 'Lon.kod kolašin': 'kod Kolašina', 'Okr.g.milanovac': 'G. Milanovac', 'Polja.radulo.kr': '', 'S.grliš.srez za': 'Grliš', 'St.sl.vi.kopriv': '',
+    'Brdce, Ilir, Ska Bistrica': 'Brdce, Ilirska Bistrica', 'Dubrovčak, Ivanić, grad': 'Dubrovčak, Ivanić-Grad', 'Ovčarevo, Mlinište, Mrkonjić, grad': 'Ovčarevo, Mlinište, Mrkonjić-Grad', 'Beli Potok, širi rejon Knjaževca, Protiv bugarskih fašista': 'Beli Potok, širi rejon Knjaževca',
+    'Doborovci, okolina Gračanice, Protiv Nemaca': 'Doborovci, okolina Gračanice', 'Drljača, Na pravcu prema Rogačici': 'Drljača', 'Topalovićiširi rejon Gračanice, Protiv četnika': 'Topalovići, širi rejon Gračanice', 'Boln. U zagrebu': 'Zagreb', 'Br. Braće radića': '', 'Darča. Na.dravi': 'Darda na Dravi', 'Kom. Mesta bihać': 'Bihać',
+    'Lon. Kod kolašin': 'kod Kolašina', 'Nar. Bol.pljevlj': 'Pljevlja', 'Nepoz. Partizan.jed': '', 'Okol. Trsta istr': 'okolina Trsta, Istra', 'Okr. G.milanovac': 'G. Milanovac', 'Polja. Radulo.kr': '', 'S. Grliš.srez za': 'Grliš', 'St. Sl.vi.kopriv': '', 'Crkvice, Crna gora': 'Crkvice, Crna Gora', 'C. Gora sutjeska': 'Crna Gora, Sutjeska',
+    'Kolov, Venecija italija': 'Kolov, Venecija, Italija', 'Trnovo Sarajevo': 'Trnovo, Sarajevo', 'Ckara. Mojkovac': 'Ckara, Mojkovac', 'Zag. Danilovgrad': 'Zagarač, Danilovgrad', 'Š. Polje no.mest': 'Š. Polje, Novo Mesto', 'Drljača-na pravcu prema Rogačici': 'Drljača',
+    'Beli Potok, širi rejon Knjaževca-protiv bugarskih fašista': 'Beli Potok, širi rejon Knjaževca', 'Doborovci, okolina Gračanice-protiv Nemaca': 'Doborovci, okolina Gračanice', 'Topalovićiširi rejon Gračanice-protiv četnika': 'Topalovići, širi rejon Gračanice', 'Brdce, Ilir-ska Bistrica': 'Brdce, Ilirska Bistrica',
+    'Dubrovčak, Ivanić-grad': 'Dubrovčak, Ivanić-Grad', 'Ovčarevo, Mlinište, Mrkonjić-grad': 'Ovčarevo, Mlinište, Mrkonjić-Grad',
     # death
     'Obješen u, Desinec': 'Desinec', 'u Istoku (?)': 'Istok (?)', 'u Badovincima (?)': 'Badovinci (?)', 'na -drumu (?)': 'na drumu (?)', 'Zelen gord': 'Zelengora',
     'u Zi vaji kod Sunje': 'u Živaji kod Sunje', 'u Zi va j i kod Sunje': 'u Živaji kod Sunje', 'kod Ko, Sovske Mitrovice': 'kod Kosovske Mitrovice', 'kod Jas, Trepca, Vlasotince': 'kod Jastrepca, Vlasotince', 'kod Li, Povca na Sremskom frontu': 'kod Lipovca na Sremskom frontu',
@@ -665,15 +691,103 @@ PLACE_READ = {
 }
 
 
+# for birthplaces only, each read against its entry: a form in a case or a scan's slip that may be a place's own name in a place of death or in another book
+BIRTH_READ = {
+    # the birthplaces first read on 2026-11-03 ("iz Briševa", "u Medjeđem Brdu"): a case nothing else reads, or too garbled to read ('')
+    'Medjeđem Brdu, Sanica': 'Međeđe Brdo, Sanica', 'Samaričkim Brđanima (Dvor na Uni)': 'Šamarički Brđani (Dvor na Uni)', 'Šamaričkim Brđanima (Dvor na Uni)': 'Šamarički Brđani (Dvor na Uni)',
+    'Brdu Vilenskom (Dvor na Uni)': 'Brdo Vilensko (Dvor na Uni)', 'Kuljenovcima, Derventa': 'Kuljenovci, Derventa', 'Donjem Zirovcu (Dvor na Uni)': 'Donji Žirovac (Dvor na Uni)', 'Briševa': 'Briševo', 'Ujevca': 'Ujevac',
+    'Parževića, Sokolac': 'Parževići, Sokolac', 'Parževića': 'Parževići', 'Sara jeva': 'Sarajevo', 'Saraieva': 'Sarajevo', 'Donjem Javorju (Dvor na Uni)': 'Donje Javorje (Dvor na Uni)', 'Donjem Javomju (Dvor na Uni)': 'Donje Javorje (Dvor na Uni)',
+    'Gornjim Petrovićima, Bosanska Krupa': 'Gornji Petrovići, Bosanska Krupa', 'Kumanima, Veliko Gradište': 'Kumani, Veliko Gradište', 'Donjim Lukavicama, Živinice': 'Donje Lukavice, Živinice', 'Gornjim Lukavicama, Valjevo': 'Gornje Lukavice, Valjevo',
+    'Zapreščića': 'Zaprešić', 'Grčkog Islama': 'Grčki Islam', 'Gornjeg Islama': 'Gornji Islam', 'Nadića, Sokolac': 'Nadići, Sokolac', 'Pobrataca, Sokolac': 'Pobratci, Sokolac', 'Remšeniku, Železna Kapla': 'Remšenik, Železna Kapla',
+    'Šmartnem, Slovenj Gradec': 'Šmartno, Slovenj Gradec', 'Smartnem, Slovenj Gradec': 'Šmartno, Slovenj Gradec', 'Suhaca, Sanski Most': 'Suhača, Sanski Most', 'Crnogorcima, Kamenmost': 'Crnogorci, Kamenmost', 'Rasovcu, Dživar, Trebinje': 'Rasovac, Dživar, Trebinje',
+    'Beloparici': 'Beloparica', 'Ribarici, Tutin': 'Ribariće, Tutin', 'Gomjoj Stupnici (Dvor na Uni)': 'Gornja Stupnica (Dvor na Uni)', 'Majskim Poljanama ili Roviškoj (Glina)': 'Majske Poljane ili Roviška (Glina)', 'Brdu Plavšića (Dvor na Uni)': 'Brdo Plavšića (Dvor na Uni)',
+    'Velikom Dvorištu, Bosanska Dubiea': 'Veliko Dvorište, Bosanska Dubica', 'Smoluču, Lukavac': 'Smoluća, Lukavac', 'Donjim Garevcima, Prijedor': 'Donji Garevci, Prijedor', 'Donjim Garevcima': 'Donji Garevci', 'Prnjavoru Velikom, Doboj': 'Prnjavor Veliki, Doboj',
+    'Gornjim Štrpcima, Prnjavor': 'Gornji Štrpci, Prnjavor', 'Bašisovcima, Živinice': 'Bašigovci, Živinice', 'Molunama, Tuzla': 'Moluhe, Tuzla', 'Sumama, Topola': 'Šume, Topola', 'Gornjoj Gorjevnici, Čačak': 'Gornja Gorevnica, Čačak', 'Trebeškom Polju, Goražde': 'Trebeško Polje, Goražde',
+    'Beranama (sada Ivangrad) u Crnoj Gori': 'Berane (sada Ivangrad)', 'Radiljeva': 'Radiljevo', 'Djelekovca': 'Đelekovec', 'Plitvičkim Jezerima': 'Plitvička Jezera', 'Miolića, Karlovac': 'Miolići, Karlovac', 'Sinđelića': 'Sinđelić', 'Vračevca': 'Vračevac',
+    'Maričića, Kuršumlija': 'Maričići, Kuršumlija', 'Markovića, Kuršumlija': 'Markovići, Kuršumlija', 'Velkih Radinaca, Sremska Mitrovica': 'Veliki Radinci, Sremska Mitrovica', 'Pudinaca (Srem)': 'Putinci (Srem)', 'Vlasini': 'Vlasina', 'Ljubošini, Gomirje': 'Ljubošina, Gomirje',
+    'Tulima': 'Tuli', 'Tulima, Zubci, Trebinje': 'Tuli, Zubci, Trebinje', 'Kraquievcu': 'Kragujevac', 'Kragu]evca': 'Kragujevac', 'Endrića, Sokolac': 'Endrići, Sokolac', 'Žvabeku, Pliberk': 'Žvabek, Pliberk', 'Donjem Pazarištu': 'Donje Pazarište', 'Medojevića, Sokolac': 'Medojevići, Sokolac',
+    'Kanalski dolini': 'Kanalska dolina', 'Sočavi': 'Sočava', 'Šempolaju, Nabrežina': 'Šempolaj, Nabrežina', 'Sevastopolu': 'Sevastopolj', 'Vrabaca, Sokolac': 'Vrapci, Sokolac', 'Ivazovića, Sokolac': 'Ivazovići, Sokolac', 'Zavodnjah nad Šoštanjem': 'Zavodnje nad Šoštanjem',
+    'Jastrepcima, Kog, Ljutomer': 'Jastrebci, Kog, Ljutomer', 'Kremenčaku': 'Kremenčak', "Koturic'u, Pakrac": 'Koturić, Pakrac', 'Ettendorfa v Labotski dolini': 'Ettendorf v Labotski dolini', 'Lesnom Brdu': 'Lesno Brdo', 'Goselni vasi na Koroškem': 'Goselna vas na Koroškem',
+    'Slovenjem Plajberku': 'Slovenji Plajberk', 'Frkovcima (Vinkovci)': 'Frkovci (Vinkovci)', 'Padovića, Sokolac': 'Padovići, Sokolac', 'Padeškem vrhu na Pohorju': 'Padeški vrh na Pohorju', 'Han Krama (Vlasenica)': 'Han Kram (Vlasenica)', 'Haniću, Mačkovac': 'Hanić, Mačkovac',
+    'Zlatoličju, Ptuj': 'Zlatoličje, Ptuj', 'Kostanjenici': 'Kostanjenica', 'Lieškom Polju, Titograd (Podgorica)': 'Lješkopolje, Podgorica', 'Trnjavcima, Ub, Srbije': 'Trnjavci, Ub', 'Kaca': 'Kać', 'Strassburgu na Koroškem': 'Strassburg na Koroškem', 'Pribiniču, Teslić, Doboj': 'Pribinić, Teslić, Doboj',
+    'Pribiniču, Teslič': 'Pribinić, Teslić', 'Jarušicama': 'Jarušice', 'Obirskem, Železna Kapla': 'Obirsko, Železna Kapla', 'Obirskem': 'Obirsko', 'Legnu, Slovenj Gradec': 'Legen, Slovenj Gradec', 'Bohorini, Slovenskih Konjicah': 'Bohorina, Slovenske Konjice', 'Širijevića, Sokolac': 'Širijevići, Sokolac',
+    'Nikiforovu, Gostivar': 'Nikiforovo, Gostivar', 'Knežaku na Notranjskem': 'Knežak na Notranjskem', 'Budanici (Virovitica)': 'Budanica (Virovitica)', 'Crnomlju': 'Črnomelj', 'Novi Cerkvi': 'Nova Cerkev', 'K umanovu': 'Kumanovo', 'Rojanu': 'Rojan', 'Plaznici, Beljak': 'Plaznica, Beljak',
+    'Sovici, Jablanica': 'Sovići, Jablanica', 'Matavuza kod Sarajeva': 'Matavuz kod Sarajeva', 'Hrastovca': 'Hrastovac', 'Starih Andrijevaca': 'Stari Andrijevci', 'Ražljeva, Brčko': 'Ražljevo, Brčko', 'Zburga pri Kopru': 'Zburg pri Kopru', 'L. Lešću, Ličko Lešce': 'Ličko Lešće', 'D. Dolu, Dugi Do': 'Dugi Do',
+    'Kostet Bregu, Pregrada': 'Kostel Breg, Pregrada', 'Velikoj Hrvatskoj': 'Velika Hrvatska', 'Donjem Milagaovcu': 'Donji Milanovac', 'Donjem Porvanu, Banja Luka': 'Donji Porvan, Banja Luka', 'Donjem Obodniku, Kotor-Varoš': 'Donji Obodnik, Kotor-Varoš', 'Kukici, Gornje Dubrave': 'Kukača, Gornje Dubrave',
+    'Stipanu, Vrginmosl': 'Stipan, Vrginmost', 'Priboiu, T uzla': 'Priboj, Tuzla', 'malom istarskorrr selu Zarečju (Pazin)': 'Zarečje (Pazin)', 'Žalaberu (Češka)': 'Žalaber (Češka)', 'D. Lupljanici, Derventa': 'D. Lupljanica, Derventa', 'Nemcima, Sokolac': 'Nemci, Sokolac', 'Mjestu Vilusima, Nikšić': 'Vilusi, Nikšić',
+    'Lokvi-Rogoznici, Omiš': 'Lokva Rogoznica, Omiš', 'Martiničima, Danilovgrad': 'Martinići, Danilovgrad', 'Ferdinandoveu': 'Ferdinandovac', 'Omeragićima, Derventa': 'Omeragići, Derventa', 'Skopliu': 'Skoplje', 'Martiš Vasu, Pregrada, Krapina': 'Martiša Ves, Pregrada, Krapina', "' Trbovlju": 'Trbovlje',
+    'Ssddarima, Popovo polje, Trebinje': 'Sedlari, Popovo polje, Trebinje', 'Višnjiku, Derventa': 'Višnjik, Derventa', 'V. Sočnaici, Derventa': 'V. Sočanica, Derventa', 'Ssdu Veličanima, Popovo polje, Trebinje': 'Veličani, Popovo polje, Trebinje', 'Babici, Šipovo': 'Babići, Šipovo',
+    'Gunjevcima, Bosanka Dubica': 'Gunjevci, Bosanska Dubica', 'radničkoj porodici, na Grbinu kod Litije': 'Grbin kod Litije', 'Potočanima, Derventa': 'Potočani, Derventa', 'crnoj Travi, Vlasotinci': 'Crna Trava, Vlasotince', 'Bihovima, Dživar, Trebinje': 'Bihovo, Dživar, Trebinje', 'N. Lužanima, Derventa': 'N. Lužani, Derventa',
+    'Suljetovićima, Kreka, Tuzla': 'Suljetovići, Kreka, Tuzla', 'Samaričkoj Dragi (Dvor na Uni)': 'Šamarička Draga (Dvor na Uni)', 'Smaričkoj Dragi (Dvor na Uni)': 'Šamarička Draga (Dvor na Uni)', 'Timočkog kraja': 'Timočki kraj', 'Valjevskog kraja': 'Valjevski kraj', 'Trsteničkog kraja': 'Trstenički kraj',
+    'Gornjoj Slabinji, Bosanski Novi': 'Gornja Slabinja, Bosanski Novi', 'Vražićima Lopare': 'Vražići, Lopare', 'Gornjoj Maikić Japri, Sanski Most': 'Gornja Majkić-Japra, Sanski Most', 'Busnovima Prijedor': 'Busnovi, Prijedor', 'Rom iz Sokobanje': 'Sokobanja', 'Rodom iz sela Zavala (Piperi)': 'Zavala (Piperi)',
+    'Ćrnoj Gori': 'Crna Gora', 'Novog Beograda': 'Novi Beograd', 'Novog Beogoada': 'Novi Beograd', 'Novog Grahova': 'Novo Grahovo', 'Novog Karlovia, Inćija': 'Novi Karlovci, Inđija', 'Velikih Lašč': 'Velike Lašče', 'Velikih Laščah': 'Velike Lašče', 'Velikog Iža': 'Veli Iž', 'Biovčevog Sela': 'Biovičino Selo',
+    'Bačkog Petrovog sela': 'Bačko Petrovo Selo', 'Novog sela': 'Novo Selo', 'Ljubnem ob Savinji': 'Ljubno ob Savinji', 'Novog Sela Sokolac': 'Novo Selo, Sokolac', 'Novog Sa da': 'Novi Sad', 'Bugoj na': 'Bugojno', 'Ravnog sela': 'Ravno Selo', 'Bilećkog sreza': 'Bileća', 'Novoj Vasi': 'Nova Vas',
+    'Mul-skom Središća, Čakovec': 'Mursko Središće, Čakovec', 'Dugom Polju kod': 'Dugo Polje', 'Velika Drenova, Trstenik (ili Velikom Drenovcu kod Aleksinca —j prim. red.)': 'Velika Drenova, Trstenik', 'Bačka Topola (nema drugih podataka)': 'Bačka Topola', 'Beli Potok (verovatno kod Leskovca)': 'Beli Potok (kod Leskovca)',
+    'Ljubina (ili Grabovici) (Dvor na Uni)': 'Ljubina (Dvor na Uni)', 'Sarajevo (otac mu bio konzul u Sarajevu)': 'Sarajevo', 'Dobrotić (zaselak Selište), Prokuplje, Srbija': 'Dobrotić (zaselak Selište), Prokuplje', 'Sv. Rozaliji, Sv. Jurij, Celje (Šentjur)': 'Sv. Rozalija, Sv. Jurij, Celje (Šentjur)',
+    'Dobji vasi, Guštanj (Ravne na Koroškem)': 'Dobja vas, Guštanj (Ravne na Koroškem)', 'Marina, Prijedor Bosna i Hercegovina': 'Marina, Prijedor', 'Orahovac, T rebinie, Bosna i Hercegovina': 'Orahovac, Trebinje', 'Bosansko Grahovo i Matočići, Bosansko Grahovo': 'Bosansko Grahovo i Matočići',
+    'Podhajcu': '', 'Tivacima (nije pronađeno gde se to selo nalazi)': '', 'Lovca': '', 'Slovenije u Segovinu, Ludbreg': '', 'Vrujovaca': '', 'Labočaca': '', 'Sotomišića': '', 'Vikinića': '', 'Dobroseljaca': '', 'Primčića': '', 'Brajakovića': '', 'Piržaju': '', 'Dragosavi': '', 'Lušču': '', 'Ćesici': '', 'Guslanju': '', 'Božiću': '',
+    'Budovcu': '', 'climnici': '', 'Vladu': '', 'rusnici, Pregrada': '', 'thrbovu, Trebinje': '', 'Straže vici, Pakrac': '', 'Donjoj': '', 'Botiču': '', 'Kunonu': '', 'Krasnosmolenskog kraja (SSSR)': '', 'Srpkinja„': '', 'Tp«pnipp': '', 'Pešnika (ne zna se mjesto pogibije)': '', 'Radnici drvarske livnice (Vojnotehnička radionica VŠ)': '',
+    # the birthplaces the second look read and the record's other books print clean, or still in a case, read one by one (2026-11-04)
+    'Bašigovci, Zivinice': 'Bašigovci, Živinice', 'Binoveu, Smederevo': 'Binovac, Smederevo', 'Bobovo, Pljevlje': 'Bobovo, Pljevlja', 'Brezičanima, Priiedor': 'Brezičani, Prijedor', 'Donja Lukavica, Zivinice': 'Donja Lukavica, Živinice', 'Donja Trepča, Cačak': 'Donja Trepča, Čačak',
+    'Donjim Palačkovcima, Prnjavor': 'Donji Palačkovci, Prnjavor', 'podinarskom selu Biteliču': 'Bitelić, Sinj', 'G.Komren, Niš': 'G. Komren, Niš', 'Dubnice': 'Dubnica', 'Ervenlka': 'Ervenik',
+    'Požeravca': 'Požarevac', 'Brvenika': 'Brvenik', 'Kamenice': 'Kamenica', 'Krimovicama': 'Krimovice', 'Blljana': 'Gornje Biljane, Benkovac',
+    'Raljana': 'Gornje Biljane, Benkovac', 'Gornjim Stranjanima, Prijepolje': 'Gornji Stranjani, Prijepolje', 'Gornji Zirovac (Dvor na Uni)': 'Gornji Žirovac (Dvor na Uni)', 'Gornjoj Kusonji': 'Gornja Kusonja', 'Gradac, Pljevl': 'Gradac, Pljevlja', 'Goli Rid. Leskovac': 'Goli Rid, Leskovac',
+    'Kosanica, Pl.evlja': 'Kosanica, Pljevlja', 'Jasikovo, Krepoljii, Žagubica': 'Jasikovo, Krepoljin, Žagubica', 'Lazovika': 'Lozovik', 'JVubotinju': 'Ljubotinj', 'Maoče, Pljemlja': 'Maoče, Pljevlja', 'Pušanski Do, Plevlja': 'Pušanski Do, Pljevlja',
+    'Mašnica (An-drijevica)': 'Mašnica (Andrijevica)', 'Miljakov cima, Prijedor': 'Miljakovci, Prijedor', 'Mojsinje, Cačak': 'Mojsinje, Čačak', 'Mrćajevci, Cačak': 'Mrčajevci, Čačak', 'Mulu': 'Muo, Kotor', 'Notranja': 'Notranje Gorice, Ljubljana',
+    'Ovsištu Topola': 'Ovsište, Topola', "Takoštam'ma. Makarska": 'Pakoštane, Zadar', "Perna, Vrgz'n Most": 'Perna, Vrginmost', 'Počitclja': 'Počitelj', 'Pušanjskom Dolu': 'Pušanjski Do', 'Rogozu': 'Rogolji, Bosanska Gradiška',
+    'Samaričkim Brđanima. (Dvor na Uni)': 'Šamarički Brđani (Dvor na Uni)', 'Stupiice': 'Stupnica, Leskovac', 'Straosten, Despotovac, Svetozarevo': 'Strmosten, Despotovac, Svetozarevo', 'T rniniča Brijegu': 'Trninić-Brijeg, Drvar', 'Toplounja, Knina': 'Tepljuh, Drniš',
+    'Ublnma': 'Ubli', 'Velika Plaia': 'Velika Plana', 'Vilsnica, Dečinu, Čehoslovačka': 'Vilsnica, Dečin, Čehoslovačka', 'Vodice, Šibeiik': 'Vodice, Šibenik', 'Vrhpoliu, Gorica': 'Vrhpolje, Gorica', 'Vrhovo, Raydeče, Krško': 'Vrhovo, Radeče, Krško',
+    'Vrmca, Sokobanja': 'Vrmdža, Sokobanja', 'Brmdža, Sokobanja': 'Vrmdža, Sokobanja', 'Vrulja, Plevlja': 'Vrulja, Pljevlja', 'Devđeliii': 'Đevđelija', 'Đevrsaka': 'Đevrske', 'Šetonii': 'Šetonje',
+    'Lozovića': 'Lozovići', 'Rodoljice': 'Rodaljice', 'Dobropo-Ija': 'Dobropoljci', 'Koiečera': 'Ljubač, Dubrovnik', 'Batovac, Požarevap': 'Batovac, Požarevac', 'Grljai': 'Grljan',
+    'Reovci, Pirot': 'Rsovci, Pirot', 'Rsavci, Pirot': 'Rsovci, Pirot', 'Araga, Tutin': 'Draga, Tutin', 'Lađevac Okućani Nova Gradiška': 'Lađevac, Okučani, Nova Gradiška', 'Preićani, Pljevlja': 'Prenćani, Pljevlja', 'Prenćane, Pljevlja': 'Prenćani, Pljevlja',
+    'Burćevića Tara, Pljevlja': 'Đurđevića Tara, Pljevlja', 'Srćevac, Bijelo Polje': 'Srđevac, Bijelo Polje', 'Sokolac, Ša hovići, Bijelo Polje': 'Sokolac, Šahovići, Bijelo Polje', 'Nošar, Pirot': 'Nišor, Pirot', 'Malče, Niš': 'Malča, Niš',
+    'Dikla, Zadar': 'Diklo, Zadar', 'Hruševac (Zagreb)': 'Hruševec (Zagreb)', 'Igalo (Mađarska)': 'Igal (Mađarska)', 'Kamenica (Kragujevačkoj)': 'Kamenica (Kragujevac)', 'Zastupa, Prijepolje': 'Zastup, Prijepolje', 'Zastupa': 'Zastup',
+    'Sedobra, Prijepolje': 'Sedobro, Prijepolje', 'Brezovi': 'Brezova, Ivanjica', 'Jelašinovac': 'Jelašinovci, Lušci Palanka', 'Nin (ne zna se mjesto pogibije)': 'Nin', 'Suvaje': 'Suvaja', 
+    'G. Mikuljana': 'G. Mikuljane', 'G. Mikuljana, Kuršumlija': 'G. Mikuljane, Kuršumlija', 'Pažmana': 'Pašman', 'Jasika, Sokolac': 'Jasik, Sokolac', 'Medvede': 'Medviđa', 'Uskoka': 'Uskoci',
+    'Alinca': 'Alinci', 'Azanje, Mladenovac': 'Azanja, Mladenovac', 'Bal-štita Odžaka, Sokolac': 'Bandin Odžak, Sokolac', 'Bandini Odžaka, Sokolac': 'Bandin Odžak, Sokolac', 'Bandnna Odžaka': 'Bandin Odžak, Sokolac', 'Begluka': 'Begluk',
+    'Belune, Italija': 'Beluno, Italija', 'Beogiada': 'Beograd', 'Bešeiova, Sremska Mitrovica': 'Bešenovo, Sremska Mitrovica', 'Bitulja': 'Bitolj', 'Btiolja': 'Bitolj', 'Boropca Kaljina, Sokolac': 'Kaljina, Sokolac',
+    'Brejakovt-tća, Sokolac': 'Brajakovići, Sokolac', 'Bridže, Sokobanja': 'Vrmdža, Sokobanja', 'Vridža, Sokobanja': 'Vrmdža, Sokobanja', 'Cara, Korčula': 'Čara, Korčula', 'Ceranja': 'Ceranje', 'Ciste Ma': 'Cista Mala',
+    'Dalmacije': 'Dalmacija', 'Dikla': 'Diklo', 'Dmiža': 'Drniš', 'Donjeg Jelenja': 'Donje Jelenje', 'Donjega, Hrušica': 'Donja Hrušica',
+    'Dubrovpika': 'Dubrovnik', 'Gazivoda, Sokolac': 'Gazivode, Sokolac', 'Grabarja kod Sl. Broda': 'Grabarje kod Sl. Broda', 'Inđše': 'Inđija', 'Kalne kod Pirota': 'Kalna kod Pirota', 'Kolana (Rab)': 'Kolan (Rab)',
+    'Kočevskega rudnika': 'Kočevski rudnik', 'Krajišta': 'Krajište', 'Krapinej električar iz Zagreba': 'Krapina', 'Kuklica': 'Kukljica', 'Kučkova (kod Skoplja)': 'Kučkovo (kod Skoplja)', 'L ike': 'Lika',
+    'Ljuljaka': 'Ljuljaci', 'Lobnika, Žel. Kapli': 'Lobnik, Železna Kapla', 'Lužana (Malino), Sl. Brod': 'Lužani (Malino), Sl. Brod', 'Maglenca': 'Meglenci', 'Meglenca': 'Meglenci', 'Marije Snežne (Slovenija)': 'Marija Snežna (Slovenija)',
+    'Medoševca kraj Niša': 'Medoševac kod Niša', 'Međimurja': 'Međimurje', 'NOVOG Sada': 'Novi Sad', 'Nivičana': 'Nivičani', 'Ohia, SAD': 'Ohio, SAD', 'Opašca': 'Opašac',
+    'Ozerkovnća, Sokolac': 'Ozerkovići, Sokolac', 'Paučja': 'Paučje', 'Pestiža, Prokuplje': 'Pestiš, Prokuplje', 'Petrovgra da (Zrenjanin)': 'Petrovgrad (Zrenjanin)', 'Podvirja, Sl. Brod': 'Podvinje, Sl. Brod', 'Privluke': 'Privlaka',
+    'Ra va': 'Rava', 'Rudara, Kuršumlija': 'Rudare, Kuršumlija', 'SSSR-a': 'SSSR', 'Saraje va': 'Sarajevo', 'Sarajera': 'Sarajevo', 'Senokosa': 'Senokos',
+    'Senteša (Mađarska)': 'Senteš (Mađarska)', 'Senteša (Szentes u Mađarskoj)': 'Senteš (Mađarska)', 'Slavonije': 'Slavonija', 'Sremeke Mitrovice': 'Sremska Mitrovica', 'Su botice': 'Subotica', 'Teherua': 'Teheran',
+    'Tolminskega loma': 'Tolminski Lom', 'Toptice': 'Toplica', 'Trnca': 'Trnac', 'Trpaje, Vukovar': 'Trpinja, Vukovar', 'Trpinje kod Vukovara': 'Trpinja kod Vukovara', 'Trpnja sa Pelješca': 'Trpanj, Pelješac',
+    'Virovitce': 'Virovitica', 'Viroviti ce': 'Virovitica', 'Višega': 'Višegrad', 'Vrbovljana': 'Vrbovljani', 'Zagerba': 'Zagreb', 'Zagieba': 'Zagreb',
+    'Zenize': 'Zenica', 'Zlariua': 'Zlarin', 'Škobrnje': 'Škabrnja', 'Žednika kod Užica': 'Žednik kod Užica', 'Železne Kaple': 'Železna Kapla', 'Žitorađa, Vladičin Han': 'Žitorađe, Vladičin Han',
+    'Žljebova, Sokolac': 'Žljebovi, Sokolac', 'Batuznice': '', 'Crveike, Sokolac': '', 'Dudve (Crna Gora)': '', 'Hermaža': '', 'Krivane': '',
+    'Lalovođa': '', 'Mokrolače': '', 'Negrizije': '', 'Staveća': '', 'Svetišnice': '', 'TPuljma': '',
+    'Zuvka': '', 'Življa': '', 'Borovljah': 'Borovlje', 'Jesenicah': 'Jesenice', 'Lučah ob Savinji': 'Luče ob Savinji', 'Podurljai': 'Podurljaj',
+    'Trbovljah': 'Trbovlje', 'Tresibabi, Knjaževac': 'Tresibaba, Knjaževac', 'Brdicah, Nova Gorica': 'Brdice, Nova Gorica', 'Brdinjah, Guštanj (Ravnah)': 'Brdinje, Guštanj (Ravne)', 'Broćancti, Split': 'Broćanac, Split', 'Cadevici kod Biieljine': 'Čađavica kod Bijeljine',
+    'Celiću Lopare': 'Čelić, Lopare', 'Donje Koniuvce': 'Donje Konjuvce', 'Fanovcu, Sl. Bistrica': 'Fanovec, Sl. Bistrica', 'Gage blizu Smoluče, Lukavac': 'Gage kod Smoluće, Lukavac', 'Gaine-D. Lapac': 'Gajine, D. Lapac', 'Gotovljah, Žalec': 'Gotovlje, Žalec',
+    'Guč': 'Guča', 'Holovlja, Škoija Loka': 'Hotovlja, Škofja Loka', 'Idriii': 'Idrija', 'Ivanjgadi': 'Ivangrad', 'Ivanskoi, Bjelovar': 'Ivanska, Bjelovar', 'Kozarjah': 'Kozarje',
+    "Kruščic'i. Bela Crkva": 'Kruščica, Bela Crkva', 'Lešah na Prevaljah': 'Leše na Prevaljah', 'Libučah, Pliberk': 'Libuče, Pliberk', 'Liiešani, Kolašin': 'Liješani, Kolašin', 'Lokvah, Trst': 'Lokve, Trst', 'Lomu nad Mežico': 'Lom nad Mežico',
+    'Makolah, Maribor': 'Makole, Maribor', 'Nišu_ Maturirao': 'Niš', 'Opatiii': 'Opatija', "Oreovc'u. Prilep": 'Oreovec, Prilep', 'Orlovski oblasti': 'Orlovska oblast', 'Osoju blizu Dragunje, Tuzla': 'Osoje kod Dragunje, Tuzla',
+    'Pišecah': 'Pišece', 'Podbrdn': 'Podbrdo', 'Predosljah (Grosuplje)': 'Predoslje (Grosuplje)', 'Radečah, Zidani most': 'Radeče, Zidani Most', 'Rosalnicah, Metlika': 'Rosalnice, Metlika', 'Rušah, Maribor': 'Ruše, Maribor',
+    'Slivnicah, Rakek': 'Slivnica, Rakek', 'Stipovači, Kutina': 'Stipovača, Kutina', 'Sv. Jederri': 'Sv. Jedert', 'Svečah': 'Sveče', 'Topoli Topola': 'Topola', 'Veličanah': 'Veličani',
+    'Vlaškovcima, Bosanska Dubica': 'Vlaškovci, Bosanska Dubica', 'Vrhah, Slovenj Gradec': 'Vrhe, Slovenj Gradec', 'Zagrebu Hrvatska': 'Zagreb', 'Zdolah': 'Zdole', 'Zg. Gorjah, Bled': 'Zg. Gorje, Bled', 'Šibeniku Hrvatska': 'Šibenik',
+    'Štipn': 'Štip', 'Žigmanicah, Sodražica': 'Žigmarice, Sodražica', 'Beloševen': '', 'Budovcu': '', 'Celin': '', 'Trari, St': '',
+}
+
+
 # the census's place column in one form ("Doboj-tuzla" Doboj, Tuzla; "Banja luka" Banja Luka; "D.lapac" D. Lapac; a value cut at its 15 characters): make_census_forms.py
 _forms_path = Path(__file__).resolve().parent.parent / 'data-extraction' / 'places' / 'census_forms.json'
 CENSUS_FORMS = json.loads(_forms_path.read_text(encoding='utf-8')) if _forms_path.exists() else {}
 
 
+# a capital pair at a word's start: "LJubija, Prijedor", "kod LJubovije"
+LJ_CAPS = re.compile(r'\b(L|N)J(?=[a-zčćžšđ])')
+
+
 def birth_place_form(value: str) -> str:
-    v = PLACE_READ.get(value.strip(), value)
+    v = LJ_CAPS.sub(lambda m: m.group(1) + 'j', PLACE_READ.get(value.strip(), value))
+    v = BIRTH_READ.get(v, v)
     v = scan_marks(LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], PART_OF.sub('', v)).strip(), birth=True)
-    return PLACE_READ.get(v, v)
+    v = PLACE_READ.get(v, v)
+    return BIRTH_READ.get(v, v)
 
 
 def birth_place_forms(s: dict) -> dict | None:
@@ -684,12 +798,13 @@ def birth_place_forms(s: dict) -> dict | None:
 
 def place_form(value: str) -> str | None:
     v = re.sub('­\\s*', '', value).strip()
-    v = PLACE_READ.get(v, v)
+    v = LJ_CAPS.sub(lambda m: m.group(1) + 'j', PLACE_READ.get(v, v))
     v = LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], v)
     v = YEAR_WORD_TAIL.sub('', v).strip(' ,.')
     v = scan_marks(v)
     v = PLACE_READ.get(v, v)
     v = CENSUS_FORMS.get(v, v)
+    v = PLACE_READ.get(v, v)
     if UNKNOWN_PLACE.match(v) or UNIT_COLUMN.match(v) or not v:
         return None
     m = COMMA_GLUED.match(v)
@@ -769,7 +884,14 @@ def parents(s: dict) -> dict | None:
 # a duty the reader took with its case or the scan's slip ("politički komesara čete", "bortac", "komandirvoda"), 2026-11-03
 DUTY_SLIPS = [(re.compile(r'\b(zamjenik|zamenik|pomoćnik) politički komesara?\b'), r'\1 političkog komesara'),
               (re.compile(r'\bpolitički komesara\b'), 'politički komesar'), (re.compile(r'\b(?:bortac|borace)\b'), 'borac'),
-              (re.compile(r'\bkomandirvoda\b'), 'komandir voda'), (re.compile(r'\bstriji vodnik\b'), 'stariji vodnik')]
+              (re.compile(r'\bkomandirvoda\b'), 'komandir voda'), (re.compile(r'\bstriji vodnik\b'), 'stariji vodnik'),
+              (re.compile(r'\bzam\. polit\. komesara\b'), 'zamjenik političkog komesara'), (re.compile(r'\bpomoćnik polit\. komesara\b'), 'pomoćnik političkog komesara'),
+              (re.compile(r'\bzamjenik polit\. kom\.?(?=,|$)'), 'zamjenik političkog komesara'), (re.compile(r'\bpolit\. komesar\b'), 'politički komesar'),
+              (re.compile(r'\bzam\. kom\. čete\b'), 'zamjenik komesara čete'), (re.compile(r'\bzam\. komandanta\b'), 'zamjenik komandanta'),
+              (re.compile(r'\bvod\. delegat\b'), 'vodni delegat'), (re.compile(r'\bvod\. voda\b'), 'vodnik voda'), (re.compile(r'\bzastavnr\b'), 'zastavnik'),
+              (re.compile(r'\bkapet(?=,|$)'), 'kapetan'), (re.compile(r'\bborac--(?=[a-zčćžšđ])'), 'borac, '), (re.compile(r'\bint\. bat\.'), 'intendant bataljona')]
+# no duties: a title, a trade or the words of the sentence the reader took along
+NOT_DUTY = {'heroj', 'mesar', 'janjač', 'mlađi brat Milidragović G. Koste', 'pomočnik OC', 'pomočnik Vidic', 'pomočnik do', 'pomočnik in', 'pomočnik četnega'}
 
 
 def duty_slips(s: dict) -> dict | None:
@@ -779,6 +901,8 @@ def duty_slips(s: dict) -> dict | None:
     new = value
     for pattern, right in DUTY_SLIPS:
         new = pattern.sub(right, new)
+    if any(d in NOT_DUTY for d in new.split(', ')):
+        new = ', '.join(d for d in new.split(', ') if d not in NOT_DUTY)
     return {'rank': new} if new != value else None
 
 

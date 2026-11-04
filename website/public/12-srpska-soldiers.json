@@ -3194,7 +3194,7 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "12.04.1945",
-    "death_place": "kod JTipovca, Sremski front",
+    "death_place": "kod Lipovca, Sremski front",
     "rank": "borac"
   },
   {
@@ -4345,7 +4345,7 @@
     "soldier_id": "0090000110",
     "occupation": "zemljoradnik",
     "death_date": "12.04.1945",
-    "death_place": "kod JTipovca, Sremski front",
+    "death_place": "kod Lipovca, Sremski front",
     "rank": "borac",
     "pdf_x_end": 340.3
   },
@@ -4443,7 +4443,15 @@
         "pdf_y_end": 167.6,
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "06.12.1944",
+          "place": "Duga Poljana"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -8070,7 +8078,7 @@
     "soldier_id": "0090000197",
     "occupation": "zemljoradnik",
     "death_date": "12.04.1945",
-    "death_place": "kod JTipovca, Sremski front",
+    "death_place": "kod Lipovca, Sremski front",
     "rank": "borac",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 348.7,
@@ -10349,7 +10357,25 @@
     "occupation": "građevinski radnik",
     "death_date": "26.06.1944",
     "rank": "borac",
-    "pdf_x_end": 343.4
+    "pdf_x_end": 343.4,
+    "death_place": "Oruglica",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0096000602",
+        "name": "Petrunović R Vojislav",
+        "additional_info": "Crna Trava, 26. VI 1944, Oruglica",
+        "pdf_file": "22-divizija.pdf",
+        "pdf_page": 30,
+        "pdf_x": 63.6,
+        "pdf_y": 116.507,
+        "pdf_x_end": 334.5,
+        "pdf_y_end": 134.6,
+        "unit_file": "22-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pešić",

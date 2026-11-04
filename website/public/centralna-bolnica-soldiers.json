@@ -1117,11 +1117,11 @@
     "death_place": "Sutjeska"
   },
   {
-    "last_name": "Batjnović",
+    "last_name": "Batinović",
     "middle_name": "Ante",
     "first_name": "Božo",
     "fathers_name": "Ante",
-    "full_name": "Batjnović Ante Božo",
+    "full_name": "Batinović Ante Božo",
     "additional_info": "borac-tifusar, rođen 1922, Plina Istočna, Ploče, zemljoradnik, Hrvat, u NOB od 1942. godine. Umro posle rata.",
     "birth_year": "1922",
     "pdf_page": 3,
@@ -2578,7 +2578,8 @@
     "death_type": "poginuo",
     "rank": "borac",
     "pdf_x_end": 187.7,
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Božović",
@@ -3854,6 +3855,10 @@
         "source_page": 310,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Srb",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -5038,7 +5043,29 @@
     "rank": "borac",
     "pdf_x_end": 395.8,
     "death_place": "Sutjeska",
-    "party": "KPJ"
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0036000583",
+        "name": "Gizdić F Stjepan",
+        "additional_info": "rođen na Klisu — Split, borac 1 bat, poginuo u ofanzivi.",
+        "source_url": "https://znaci.org/00001/32_1.htm",
+        "unit_file": "1-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0036010635",
+        "name": "Gizdić F Stjepan",
+        "additional_info": "rođen na Klisu — Split, borac I bat., poginuo u 1 ofanzivi.",
+        "pdf_file": "1-dalmatinska-monografija.pdf",
+        "pdf_page": 61,
+        "pdf_x": 79.4,
+        "pdf_y": 478.01,
+        "pdf_y_end": 494.6,
+        "pdf_x_end": 411.6,
+        "pdf_x_left": 57.8,
+        "unit_file": "1-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Glavina",
@@ -5905,7 +5932,21 @@
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 221.4
+    "pdf_x_end": 221.4,
+    "other_sources": [
+      {
+        "soldier_id": "0112010022",
+        "name": "Islamović Muse Husnija",
+        "additional_info": "Radnici Vojnotehničke radionice VŠ u Grmeču: bravar, iz Ljubije",
+        "pdf_file": "vtr-grmec.pdf",
+        "pdf_page": 1,
+        "pdf_x": 151.2,
+        "pdf_y": 436.5,
+        "pdf_x_end": 304.8,
+        "pdf_y_end": 444.5,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivanić",
@@ -6009,7 +6050,8 @@
     "ethnicity": "Crnogorka",
     "pdf_x_end": 222.2,
     "party": "KPJ",
-    "occupation": "studentkinja medicine"
+    "occupation": "studentkinja medicine",
+    "birth_place": "Podgorica"
   },
   {
     "last_name": "Ivančević-Stojadinović",
@@ -6696,7 +6738,8 @@
     "occupation": "domaćica",
     "rank": "politički komesar",
     "pdf_x_end": 374.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Danilovgrad"
   },
   {
     "last_name": "Jovanović",
@@ -6876,6 +6919,18 @@
         "pdf_x_end": 351.9,
         "pdf_y_end": 489.3,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020305",
+        "name": "Jovović-Zeković Miloša Milica",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Brigadni Sanitet I Bolnica: medicinski radnik, Cetinje, 1915, ljekarski pomoćnik, član KPJ",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 3,
+        "pdf_x": 174.1,
+        "pdf_y": 353.4,
+        "pdf_x_end": 452.5,
+        "pdf_y_end": 371.0,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ]
   },
@@ -8257,7 +8312,8 @@
     "occupation": "radnica",
     "rank": "politički komesar",
     "pdf_x_end": 392.4,
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Banija"
   },
   {
     "last_name": "Koprivica",
@@ -13153,6 +13209,18 @@
         "pdf_x_end": 363.6,
         "pdf_y_end": 128.7,
         "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0040020584",
+        "name": "Pekić Jovova Sofija",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Virpazar",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 73,
+        "pdf_x": 166.7,
+        "pdf_y": 483.8,
+        "pdf_x_end": 454.4,
+        "pdf_y_end": 492.8,
+        "unit_file": "4-proleterska-soldiers.json"
       }
     ],
     "variants": {
@@ -15478,7 +15546,8 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "pdf_x_end": 406.7,
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Donji Lapac"
   },
   {
     "last_name": "Redžić-Perera",
@@ -16980,6 +17049,10 @@
         "pdf_y_end": 851.3,
         "ref_book": "imotska-krajina-pali-borci"
       }
+    ],
+    "birth_place": "Crnogorci, Kamenmost",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -17545,7 +17618,8 @@
     "death_date": "06.1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "pdf_x_end": 192.6
+    "pdf_x_end": 192.6,
+    "birth_place": "Brač"
   },
   {
     "last_name": "Ljubišić-Krnić",
@@ -18505,7 +18579,8 @@
     "death_place": "Kolašin",
     "rank": "politički komesar",
     "pdf_x_end": 404.5,
-    "party": "KPJ 1933"
+    "party": "KPJ 1933",
+    "birth_place": "Kosovo"
   },
   {
     "last_name": "Vuković",

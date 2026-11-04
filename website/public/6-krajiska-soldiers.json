@@ -2281,8 +2281,34 @@
         "pdf_x_end": 420.6,
         "pdf_y_end": 174.1,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0024000067",
+        "name": "Balać Bože Marko",
+        "additional_info": "rođen 1904., u Donjem Lipniku, Sanski Most, Srbin, zemljoradnik, u NOB od 1941., u brigadi od 2. 08. 1942., 2. četa, 2. bataljon, borac, poginuo januara 1943. kod Bosanske Gradiške (Bosanska Gradiška);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 5,
+        "pdf_x": 40.3,
+        "pdf_y": 175.9,
+        "pdf_x_end": 397.2,
+        "pdf_y_end": 198.7,
+        "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "death": [
+        {
+          "date": "01.1943",
+          "place": "kod Bosanske Gradiške (Bosanska Gradiška)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Bandić",
@@ -7082,12 +7108,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=728",
         "source_page": 728,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0024000190",
+        "name": "Damjanović Miće Bogdan",
+        "additional_info": "rođen 1919., u Hašanima, Bosanska Krupa, Srbin, zemljoradnik, u NOB od 1941., u brigadi od 2. 08. 1942., 2. bataljon, umro krajem 1942. u bolnici u Grmeču od posledica ranjavanja;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 35.5,
+        "pdf_y": 251.2,
+        "pdf_x_end": 394.1,
+        "pdf_y_end": 274.6,
+        "unit_file": "2-krajiska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Damjanović",
@@ -7337,8 +7382,26 @@
         "pdf_x_end": 420.5,
         "pdf_y_end": 335.2,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0024000201",
+        "name": "Davidović Alekse Dušan",
+        "additional_info": "rođen 1924., u Gornjem Lipniku, Sanski Most, Srbin, zemljoradnik, u NOB od 1942., u brigadi od 1942., 2. bataljon, borac, poginuo februara 1943. u Grmeču;",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 11,
+        "pdf_x": 35.5,
+        "pdf_y": 487.4,
+        "pdf_x_end": 394.1,
+        "pdf_y_end": 502.8,
+        "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik"
   },
   {
     "last_name": "Davidović",
@@ -8923,11 +8986,11 @@
     "pdf_x_left": 13.2
   },
   {
-    "last_name": "Dođen",
+    "last_name": "Došen",
     "middle_name": "N",
     "first_name": "Veso",
     "fathers_name": "N",
-    "full_name": "Dođen N Veso",
+    "full_name": "Došen N Veso",
     "additional_info": "borac, rođen 1912. godine u Srednjem Duboviku, Bosanska krupa. Poginuo novembra 1942. godine na Novskoj planini, Bosanski Novi.",
     "birth_year": "1912",
     "pdf_page": 14,
@@ -12032,7 +12095,8 @@
     "death_date": "02.05.1945",
     "death_place": "Perjasica, Karlovac",
     "rank": "politički delegat voda",
-    "pdf_x_end": 404.4
+    "pdf_x_end": 404.4,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Grbić",
@@ -14152,7 +14216,8 @@
     "death_date": "05.03.1944",
     "death_place": "Hambarine, Prijedor",
     "rank": "politički komesar čete",
-    "pdf_x_end": 409.8
+    "pdf_x_end": 409.8,
+    "birth_place": "Korjenovo, Sanica"
   },
   {
     "last_name": "Inđić",
@@ -15061,7 +15126,8 @@
     "death_date": "05.1943",
     "death_place": "Kozina, Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 352.2
+    "pdf_x_end": 352.2,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Jelaća",
@@ -15082,6 +15148,7 @@
     "death_place": "Fajtovci, Sanski Most",
     "rank": "borac",
     "pdf_x_end": 352.2,
+    "birth_place": "Benakovac, Bosanska Krupa",
     "other_sources": [
       {
         "soldier_id": "9022006482",
@@ -15092,12 +15159,10 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Benakovac, Bosanska Krupa",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Jelaća",
@@ -18021,7 +18086,8 @@
     "death_date": "05.05.1945",
     "death_place": "Vinica, Karlovac",
     "rank": "stariji vodnik",
-    "pdf_x_end": 411.0
+    "pdf_x_end": 411.0,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Klićković",
@@ -18041,7 +18107,8 @@
     "death_date": "04.05.1945",
     "death_place": "Vinica, Karlovac",
     "rank": "borac",
-    "pdf_x_end": 410.8
+    "pdf_x_end": 410.8,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Klićković",
@@ -18104,7 +18171,8 @@
     "death_date": "02.1943",
     "death_place": "u Donjem Kamengraau kod Sanskog Mosta",
     "rank": "borac",
-    "pdf_x_end": 410.8
+    "pdf_x_end": 410.8,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Klićković",
@@ -18124,7 +18192,8 @@
     "death_date": "01.01.1944",
     "death_place": "Banja Luka",
     "rank": "vodnik",
-    "pdf_x_end": 410.8
+    "pdf_x_end": 410.8,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Kljajić",
@@ -20430,6 +20499,7 @@
     "death_place": "Sanski Most",
     "rank": "borac",
     "pdf_x_end": 408.1,
+    "birth_place": "Zavolje, Sanica",
     "other_sources": [
       {
         "soldier_id": "9022019744",
@@ -20440,12 +20510,10 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Sanica Gornja, Ključ",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Kovaćević",
@@ -25078,7 +25146,8 @@
     "death_date": "02.1943",
     "death_place": "Grmeč",
     "rank": "borac",
-    "pdf_x_end": 343.6
+    "pdf_x_end": 343.6,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Majkić",
@@ -26840,6 +26909,7 @@
     "death_place": "Ključ",
     "rank": "borac",
     "pdf_x_end": 410.2,
+    "birth_place": "Hrgar, Bihać",
     "other_sources": [
       {
         "soldier_id": "9022001526",
@@ -26850,12 +26920,10 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Hrgar, Bihać",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Marjanović",
@@ -28913,7 +28981,8 @@
     "death_date": "04.05.1945",
     "death_place": "Karlovac",
     "rank": "borac",
-    "pdf_x_end": 406.2
+    "pdf_x_end": 406.2,
+    "birth_place": "Ozren"
   },
   {
     "last_name": "Mihajlijica",
@@ -35657,6 +35726,7 @@
     "death_place": "Dabar, Sanski Most",
     "rank": "borac",
     "pdf_x_end": 409.6,
+    "birth_place": "Korjenovo, Sanica",
     "other_sources": [
       {
         "soldier_id": "9022019588",
@@ -35667,12 +35737,10 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Korjenovo, Ključ",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Paripović",
@@ -37134,7 +37202,8 @@
     "death_date": "04.1943",
     "death_place": "Benakovac",
     "rank": "borac",
-    "pdf_x_end": 408.2
+    "pdf_x_end": 408.2,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Popović",
@@ -42548,7 +42617,8 @@
     "death_date": "21.02.1943",
     "death_place": "Lipnik, Sanski Most",
     "rank": "komandir čete",
-    "pdf_x_end": 346.9
+    "pdf_x_end": 346.9,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Srdić",
@@ -43448,11 +43518,11 @@
     "pdf_x_end": 403.1
   },
   {
-    "last_name": "Stoajković",
+    "last_name": "Stojković",
     "middle_name": "P",
     "first_name": "Gojko",
     "fathers_name": "P",
-    "full_name": "Stoajković P Gojko",
+    "full_name": "Stojković P Gojko",
     "additional_info": "borac, rođen 1921. godine u Vojevcu, Bosanska Krupa. Poginuo decembra 1942. godine kod Bosanskog Novog.",
     "birth_year": "1921",
     "pdf_page": 52,
@@ -43469,11 +43539,11 @@
     "pdf_x_end": 348.4
   },
   {
-    "last_name": "Stoajković",
+    "last_name": "Stojković",
     "middle_name": "P",
     "first_name": "Trivo",
     "fathers_name": "P",
-    "full_name": "Stoajković P Trivo",
+    "full_name": "Stojković P Trivo",
     "additional_info": "borac, rođen 1921. godine u Vojevcu, Bosanska Krupa. Poginuo u rejonu Volar kod Bosanskog Novog.",
     "birth_year": "1921",
     "pdf_page": 52,
@@ -44452,7 +44522,8 @@
     "death_date": "22.06.1944",
     "death_place": "na Medenom polju kod Bosanskog Petrovca",
     "rank": "bolničarka",
-    "pdf_x_end": 348.5
+    "pdf_x_end": 348.5,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Stupar",
@@ -47919,7 +47990,8 @@
     "death_date": "04.1943",
     "death_place": "u Suvajskom Međugorju, Bosanska Krupa",
     "rank": "borac",
-    "pdf_x_end": 407.2
+    "pdf_x_end": 407.2,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Vejinović",
@@ -47981,7 +48053,8 @@
     "death_date": "12.1943",
     "death_place": "Stara Rijeka, Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 409.1
+    "pdf_x_end": 409.1,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Vejinović",
@@ -48072,7 +48145,8 @@
     "death_date": "04.1944",
     "death_place": "Suvaja, Bosanska Krupa",
     "rank": "borac",
-    "pdf_x_end": 407.8
+    "pdf_x_end": 407.8,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Vejinović",
@@ -48114,6 +48188,7 @@
     "death_place": "Bosanski Petrovac",
     "rank": "obavještajni oficir bataljona",
     "pdf_x_end": 408.9,
+    "birth_place": "Benakovac, Bosanska Krupa",
     "other_sources": [
       {
         "soldier_id": "9022006507",
@@ -48124,12 +48199,10 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Benakovac, Bosanska Krupa",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Vejinović",
@@ -48149,7 +48222,8 @@
     "death_date": "02.1943",
     "death_place": "Fajtovci, Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 407.2
+    "pdf_x_end": 407.2,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Vejinović",
@@ -48190,7 +48264,8 @@
     "death_date": "11.1942",
     "death_place": "Ljubija",
     "rank": "borac",
-    "pdf_x_end": 407.2
+    "pdf_x_end": 407.2,
+    "birth_place": "Benakovac, Bosanska Krupa"
   },
   {
     "last_name": "Vejnović",
@@ -50292,7 +50367,8 @@
     "death_date": "početkom maja 1943",
     "death_place": "Donji Kamengrad, Sanski Most",
     "rank": "borac",
-    "pdf_x_end": 403.6
+    "pdf_x_end": 403.6,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Vukojević",
@@ -50467,7 +50543,7 @@
     "pdf_y_end": 317.1,
     "pdf_file": "6-krajiska.pdf",
     "soldier_id": "0013001596",
-    "birth_place": "Slatini",
+    "birth_place": "Slatina",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
@@ -50501,7 +50577,7 @@
     "pdf_y_end": 299.1,
     "pdf_file": "6-krajiska.pdf",
     "soldier_id": "0013001597",
-    "birth_place": "Slatini",
+    "birth_place": "Slatina",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
@@ -50583,7 +50659,7 @@
     "pdf_y_end": 380.2,
     "pdf_file": "6-krajiska.pdf",
     "soldier_id": "0013001599",
-    "birth_place": "Slatini",
+    "birth_place": "Slatina",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
@@ -53229,8 +53305,34 @@
         "pdf_x_end": 504.7,
         "pdf_y_end": 263.9,
         "ref_book": "sanski-most-borci"
+      },
+      {
+        "soldier_id": "0024001449",
+        "name": "Ćopić Miće Svetko",
+        "additional_info": "rođen 1924., u Slatini, Sanski Most, Srbin, zemljoradnik, u NOB od 1941., u brigadi od 2.08. 1942., 2. bataljon, poginuo polovinom novembra 1942. kod Ljubije (Prijedor);",
+        "pdf_file": "2-krajiska.pdf",
+        "pdf_page": 10,
+        "pdf_x": 8.2,
+        "pdf_y": 436.2,
+        "pdf_x_end": 355.0,
+        "pdf_y_end": 451.4,
+        "unit_file": "2-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zemljoradnik",
+    "variants": {
+      "death": [
+        {
+          "date": "polovinom novembra 1942",
+          "place": "kod Mijske Glave, Ljubija"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ćopić",
@@ -53246,7 +53348,7 @@
     "pdf_y_end": 551.4,
     "pdf_file": "6-krajiska.pdf",
     "soldier_id": "0013001676",
-    "birth_place": "Slatini",
+    "birth_place": "Slatina",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
@@ -55920,7 +56022,8 @@
     "death_date": "01.01.1944",
     "death_place": "Banja Luka",
     "rank": "borac",
-    "pdf_x_end": 347.3
+    "pdf_x_end": 347.3,
+    "birth_place": "Međeđe Brdo, Sanica"
   },
   {
     "last_name": "Šipka",
@@ -57931,6 +58034,10 @@
         "source_page": 253,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Brdari, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -58022,6 +58129,10 @@
         "pdf_y_end": 608.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -58450,6 +58561,10 @@
         "pdf_y_end": 387.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -58528,6 +58643,10 @@
         "pdf_y_end": 676.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -58782,6 +58901,10 @@
         "pdf_y_end": 218.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -58892,6 +59015,10 @@
         "pdf_y_end": 175.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -59580,6 +59707,10 @@
         "pdf_y_end": 411.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -59637,6 +59768,10 @@
         "pdf_y_end": 504.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Naprelje, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -60050,6 +60185,10 @@
         "source_page": 259,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -61705,6 +61844,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Usorci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -61858,6 +62001,10 @@
         "pdf_y_end": 196.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -61911,9 +62058,9 @@
   {
     "last_name": "Crnomarković",
     "middle_name": "",
-    "first_name": "Mikd",
+    "first_name": "Mika",
     "fathers_name": "",
-    "full_name": "Crnomarković Mikd",
+    "full_name": "Crnomarković Mika",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 15,
@@ -61970,6 +62117,10 @@
         "pdf_y_end": 494.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62000,6 +62151,10 @@
         "pdf_y_end": 679.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62041,6 +62196,10 @@
         "pdf_y_end": 176.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62167,6 +62326,10 @@
         "pdf_y_end": 408.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62306,6 +62469,10 @@
         "pdf_y_end": 413.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Predojevića Glavica, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62593,6 +62760,10 @@
         "pdf_y_end": 307.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62690,6 +62861,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Koprivna, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62761,6 +62936,10 @@
         "pdf_y_end": 567.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62787,6 +62966,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62863,6 +63046,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62893,6 +63080,10 @@
         "pdf_y_end": 560.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62923,6 +63114,10 @@
         "pdf_y_end": 602.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62969,6 +63164,10 @@
         "pdf_y_end": 608.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Gornji Lipnik, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -62995,6 +63194,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63025,6 +63228,10 @@
         "pdf_y_end": 413.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63055,6 +63262,10 @@
         "pdf_y_end": 603.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63085,6 +63296,10 @@
         "pdf_y_end": 649.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63237,6 +63452,10 @@
         "pdf_y_end": 597.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kozin, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63347,6 +63566,10 @@
         "pdf_y_end": 455.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63377,6 +63600,10 @@
         "pdf_y_end": 519.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63519,6 +63746,10 @@
         "pdf_y_end": 260.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63568,6 +63799,10 @@
         "source_page": 265,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Husimovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63598,6 +63833,10 @@
         "pdf_y_end": 430.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -63766,6 +64005,10 @@
         "pdf_y_end": 367.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -64607,6 +64850,10 @@
         "pdf_y_end": 679.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65158,6 +65405,10 @@
         "source_page": 138,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65184,6 +65435,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65312,6 +65567,10 @@
         "pdf_y_end": 455.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Slatina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65342,6 +65601,10 @@
         "pdf_y_end": 264.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Slatina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65372,6 +65635,10 @@
         "pdf_y_end": 414.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Slatina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65636,6 +65903,10 @@
         "pdf_y_end": 560.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Praštali, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65919,6 +66190,10 @@
         "pdf_y_end": 454.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Koprivna, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -65949,6 +66224,10 @@
         "pdf_y_end": 540.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Koprivna, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -66052,6 +66331,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Usorci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -66628,6 +66911,10 @@
         "pdf_y_end": 388.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -66658,6 +66945,10 @@
         "pdf_y_end": 346.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -66720,6 +67011,10 @@
         "pdf_y_end": 516.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -66818,6 +67113,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Brdari, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -67362,6 +67661,10 @@
         "pdf_y_end": 218.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -67642,6 +67945,10 @@
         "pdf_y_end": 674.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Miljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -68373,6 +68680,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Oštra Luka, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -68875,6 +69186,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Koprivna, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -69551,6 +69866,10 @@
         "pdf_y_end": 414.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -69826,11 +70145,11 @@
     "pdf_x_end": 204.7
   },
   {
-    "last_name": "Keeić",
+    "last_name": "Kesić",
     "middle_name": "",
     "first_name": "Mirko",
     "fathers_name": "",
-    "full_name": "Keeić Mirko",
+    "full_name": "Kesić Mirko",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 7,
@@ -69885,6 +70204,10 @@
         "pdf_y_end": 195.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70091,6 +70414,10 @@
         "pdf_y_end": 282.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70121,6 +70448,10 @@
         "pdf_y_end": 303.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70244,6 +70575,10 @@
         "pdf_y_end": 431.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70531,6 +70866,10 @@
         "pdf_y_end": 516.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70609,6 +70948,10 @@
         "pdf_y_end": 484.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -70656,6 +70999,10 @@
         "pdf_y_end": 237.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71018,6 +71365,10 @@
         "pdf_y_end": 435.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71597,6 +71948,10 @@
         "pdf_y_end": 389.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71896,6 +72251,10 @@
         "pdf_y_end": 432.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71926,6 +72285,10 @@
         "pdf_y_end": 453.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71956,6 +72319,10 @@
         "pdf_y_end": 474.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -71986,6 +72353,10 @@
         "pdf_y_end": 517.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -72016,6 +72387,10 @@
         "pdf_y_end": 325.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -72292,6 +72667,10 @@
         "pdf_y_end": 329.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -72429,6 +72808,10 @@
         "pdf_y_end": 484.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -72459,6 +72842,10 @@
         "pdf_y_end": 536.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -72637,9 +73024,9 @@
   {
     "last_name": "Lapo",
     "middle_name": "",
-    "first_name": "Haean",
+    "first_name": "Hasan",
     "fathers_name": "",
-    "full_name": "Lapo Haean",
+    "full_name": "Lapo Hasan",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 8,
@@ -73117,6 +73504,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Oštra Luka, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73195,6 +73586,10 @@
         "pdf_y_end": 535.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73225,6 +73620,10 @@
         "pdf_y_end": 569.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73335,6 +73734,10 @@
         "pdf_y_end": 418.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73442,6 +73845,10 @@
         "pdf_y_end": 497.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Gornja Majkić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73597,6 +74004,10 @@
         "pdf_y_end": 539.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73675,6 +74086,10 @@
         "pdf_y_end": 260.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73721,6 +74136,10 @@
         "pdf_y_end": 672.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -73963,6 +74382,10 @@
         "pdf_y_end": 214.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74178,6 +74601,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74297,6 +74724,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74630,6 +75061,10 @@
         "source_page": 265,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Brdari, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74692,6 +75127,10 @@
         "pdf_y_end": 410.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74754,6 +75193,10 @@
         "pdf_y_end": 387.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74800,6 +75243,10 @@
         "pdf_y_end": 652.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74858,6 +75305,10 @@
         "pdf_y_end": 697.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74932,6 +75383,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74962,6 +75417,10 @@
         "pdf_y_end": 583.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -74992,6 +75451,10 @@
         "pdf_y_end": 606.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -75746,6 +76209,10 @@
         "source_page": 262,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Suhača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -75776,6 +76243,10 @@
         "pdf_y_end": 617.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Mrkalji, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -75919,6 +76390,10 @@
         "pdf_y_end": 482.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -75965,6 +76440,10 @@
         "pdf_y_end": 259.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76192,6 +76671,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podlug, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76347,6 +76830,10 @@
         "pdf_y_end": 302.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76473,6 +76960,10 @@
         "pdf_y_end": 175.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76548,6 +77039,10 @@
         "pdf_y_end": 673.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76658,6 +77153,10 @@
         "pdf_y_end": 477.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Skucani Vakuf, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76736,6 +77235,10 @@
         "pdf_y_end": 193.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76846,6 +77349,10 @@
         "pdf_y_end": 258.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Predojevića Glavica, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -76908,6 +77415,10 @@
         "pdf_y_end": 389.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donji Lipnik, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77015,6 +77526,10 @@
         "pdf_y_end": 237.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77077,6 +77592,10 @@
         "pdf_y_end": 364.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77238,6 +77757,10 @@
         "source_page": 248,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Husimovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77748,6 +78271,10 @@
         "pdf_y_end": 569.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77778,6 +78305,10 @@
         "pdf_y_end": 697.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -77819,6 +78350,10 @@
         "pdf_y_end": 590.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78080,6 +78615,10 @@
         "pdf_y_end": 389.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Miljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78223,6 +78762,10 @@
         "pdf_y_end": 470.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78423,6 +78966,10 @@
         "pdf_y_end": 519.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78453,6 +79000,10 @@
         "pdf_y_end": 540.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78483,6 +79034,10 @@
         "pdf_y_end": 585.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -78830,6 +79385,10 @@
         "pdf_y_end": 494.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79004,6 +79563,10 @@
         "pdf_y_end": 713.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79098,6 +79661,10 @@
         "pdf_y_end": 365.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79144,6 +79711,10 @@
         "pdf_y_end": 281.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Mrkalji, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79419,6 +79990,10 @@
         "source_page": 259,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79474,6 +80049,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79529,6 +80108,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Stari Majdan, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79584,6 +80167,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Stari Majdan, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79695,6 +80282,10 @@
         "pdf_y_end": 516.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Gornji Lipnik, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -79978,6 +80569,10 @@
         "pdf_y_end": 176.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Praštali, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80008,6 +80603,10 @@
         "pdf_y_end": 407.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Praštali, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80038,6 +80637,10 @@
         "pdf_y_end": 369.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Praštali, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80084,6 +80687,10 @@
         "pdf_y_end": 676.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donji Lipnik, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80146,6 +80753,10 @@
         "pdf_y_end": 625.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Predojevića Glavica, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80176,6 +80787,10 @@
         "pdf_y_end": 196.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Praštali, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80311,6 +80926,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Brdari, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80389,6 +81008,10 @@
         "pdf_y_end": 214.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80446,6 +81069,10 @@
         "pdf_y_end": 302.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80492,6 +81119,10 @@
         "pdf_y_end": 407.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Zdena, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -80554,6 +81185,10 @@
         "pdf_y_end": 409.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Mrkalji, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81035,6 +81670,10 @@
         "pdf_y_end": 294.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81065,6 +81704,10 @@
         "pdf_y_end": 318.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81169,6 +81812,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81208,6 +81855,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81247,6 +81898,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81302,6 +81957,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podovi, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81446,6 +82105,10 @@
         "role": "activist",
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -81509,6 +82172,10 @@
         "role": "activist",
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Otiš, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -82888,6 +83555,10 @@
         "pdf_y_end": 196.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -82934,6 +83605,10 @@
         "pdf_y_end": 553.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -82964,6 +83639,10 @@
         "pdf_y_end": 186.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Lukavice, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -83792,6 +84471,10 @@
         "pdf_y_end": 323.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -83838,6 +84521,10 @@
         "pdf_y_end": 334.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -84105,6 +84792,10 @@
         "pdf_y_end": 451.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Grdanovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -84259,6 +84950,10 @@
         "pdf_y_end": 355.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -84657,6 +85352,10 @@
         "pdf_y_end": 460.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -84687,6 +85386,10 @@
         "pdf_y_end": 454.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85319,6 +86022,10 @@
         "pdf_y_end": 302.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85397,6 +86104,10 @@
         "pdf_y_end": 455.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85484,6 +86195,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Dževar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85530,6 +86245,10 @@
         "pdf_y_end": 632.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dževar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85571,6 +86290,10 @@
         "pdf_y_end": 615.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Koprivna, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85601,6 +86324,10 @@
         "pdf_y_end": 572.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Trnova, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85743,6 +86470,10 @@
         "pdf_y_end": 207.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85885,6 +86616,10 @@
         "pdf_y_end": 630.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85915,6 +86650,10 @@
         "pdf_y_end": 587.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -85953,6 +86692,10 @@
         "source_page": 138,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -86205,6 +86948,10 @@
         "pdf_y_end": 195.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -86262,6 +87009,10 @@
         "pdf_y_end": 387.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Kljevci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -86365,9 +87116,9 @@
   {
     "last_name": "Varda",
     "middle_name": "Mumina",
-    "first_name": "Oshman",
+    "first_name": "Osman",
     "fathers_name": "Mumin",
-    "full_name": "Varda Mumina Oshman",
+    "full_name": "Varda Mumina Osman",
     "additional_info": "",
     "birth_year": "",
     "pdf_page": 2,
@@ -86801,6 +87552,10 @@
         "pdf_y_end": 176.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87038,6 +87793,10 @@
         "pdf_y_end": 217.9,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87233,6 +87992,10 @@
         "pdf_y_end": 496.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donji Lipnik, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87279,6 +88042,10 @@
         "pdf_y_end": 616.1,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Trnova, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87309,6 +88076,10 @@
         "pdf_y_end": 626.8,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Trnova, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87339,6 +88110,10 @@
         "pdf_y_end": 282.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Trnova, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87488,6 +88263,10 @@
         "pdf_y_end": 652.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dedovača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87582,6 +88361,10 @@
         "pdf_y_end": 310.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Jelašinovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87872,6 +88655,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Batkovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87927,6 +88714,10 @@
         "role": "participant",
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podlug, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -87997,6 +88788,10 @@
         "source_page": 261,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Podlug, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88171,6 +88966,10 @@
         "pdf_y_end": 268.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Slatina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88217,6 +89016,10 @@
         "pdf_y_end": 434.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Garevica, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88263,6 +89066,10 @@
         "pdf_y_end": 283.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Slatina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88612,6 +89419,10 @@
         "pdf_y_end": 419.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Dabar, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88873,6 +89684,10 @@
         "pdf_y_end": 675.7,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -88966,6 +89781,10 @@
         "pdf_y_end": 499.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Donja Majkić Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -89700,6 +90519,10 @@
         "source_page": 139,
         "ref_book": "seoske-hronike"
       }
+    ],
+    "birth_place": "Hašani, Bosanska Krupa",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -89821,6 +90644,10 @@
         "pdf_y_end": 450.0,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bošnjaci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -89851,6 +90678,10 @@
         "pdf_y_end": 264.6,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -90042,6 +90873,10 @@
         "pdf_y_end": 299.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Naprelje, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -90306,6 +91141,10 @@
         "pdf_y_end": 458.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Tomina, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -90913,6 +91752,10 @@
         "pdf_y_end": 327.4,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Bosanski Milanovac, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -91397,6 +92240,10 @@
         "pdf_y_end": 447.5,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Halilovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -91696,6 +92543,10 @@
         "pdf_y_end": 584.2,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Budimlić-Japra, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -91857,6 +92708,10 @@
         "source_page": 265,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Husimovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -91895,6 +92750,10 @@
         "source_page": 262,
         "ref_book": "staromajdansko"
       }
+    ],
+    "birth_place": "Suhača, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -92283,6 +93142,10 @@
         "pdf_y_end": 239.3,
         "ref_book": "sanski-most-borci"
       }
+    ],
+    "birth_place": "Halilovci, Sanski Most",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {

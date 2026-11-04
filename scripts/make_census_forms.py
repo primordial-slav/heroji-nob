@@ -31,7 +31,7 @@ UP = 'A-ZČĆŽŠĐ'
 NOUNS = {'stalag', 'bolnica', 'zbeg', 'logor', 'šuma', 'pruga', 'selo', 'grad', 'most', 'groblje', 'zarobljeništvo', 'zatvor', 'stan', 'kuća', 'boln', 'bolnic'}
 # the column's abbreviations and what its width left of the commonest names
 PARTS = {
-    'c.gora': 'Crna Gora', 'c.g': 'Crna Gora', 'c. go': 'Crna Gora', 'c. gora': 'Crna Gora', 'cr.gora': 'Crna Gora', 'sk.c.gor': 'Skopska Crna Gora', 'sl.brod': 'Sl. Brod', 'sl.br': 'Sl. Brod', 'b.luka': 'Banja Luka', 'bo.luka': 'Banja Luka',
+    'crna gora': 'Crna Gora', 'c.gora': 'Crna Gora', 'c.g': 'Crna Gora', 'c. go': 'Crna Gora', 'c. gora': 'Crna Gora', 'cr.gora': 'Crna Gora', 'sk.c.gor': 'Skopska Crna Gora', 'sl.brod': 'Sl. Brod', 'sl.br': 'Sl. Brod', 'b.luka': 'Banja Luka', 'bo.luka': 'Banja Luka',
     's.most': 'Sanski Most', 'sl.požega': 'Sl. Požega', 'sl.pože': 'Sl. Požega', 's.pož': 'Sl. Požega', 's.po': 'Sl. Požega', 'd.la': 'D. Lapac', 'd.lap': 'D. Lapac', 'd.l': 'D. Lapac', 'd.lapac': 'D. Lapac', 'p.slat': 'P. Slatina',
     'bos.grahov': 'Bos. Grahovo', 'sr.mitrovic': 'Sr. Mitrovica', 't.už': 'T. Užice', 'k.var': 'K. Varoš', 'g. kotar': 'Gorski Kotar', 'g.kotar': 'Gorski Kotar',
     'slavon': 'Slavonija', 'slav': 'Slavonija', 'slavonij': 'Slavonija', 'bosn': 'Bosna', 'bos': 'Bosna', 'lik': 'Lika', 'bjelov': 'Bjelovar', 'bjelova': 'Bjelovar', 'bjelovar': 'Bjelovar', 'bijeljin': 'Bijeljina', 'bijelj': 'Bijeljina', 'bjeljina': 'Bijeljina', 'bjeljin': 'Bijeljina',
@@ -122,7 +122,8 @@ def form(v, places):
         return WHOLE[v], 'whole'
     if NOT_A_PLACE.search(v):
         return '', 'no place'
-    m = TWO_PARTS.match(v)
+    # a reader's value, or the words of a clause after a hyphen, are no joined parts
+    m = TWO_PARTS.match(v) if ', ' not in v and not re.search(r'-\s*(?:na|u|kod|protiv|prema|za)\s', v) else None
     if m:
         a, sep, b = m.group(1).strip(), m.group(2).strip(), m.group(3).strip()
         cut = len(v) >= 14
@@ -156,7 +157,8 @@ def form(v, places):
         c = places.complete(v2)
         if c:
             return c, 'cut'
-    n = ABBR.sub(lambda x: f'{x.group(1)}. {x.group(2).upper()}', v2)
+    # one abbreviation before one name; "Boln.u zagrebu", "Nar.bol.pljevlj" are no such thing
+    n = v2 if re.search(rf'^[^.]*\.[{LOW}]*\.|^[^.]*\.(?:u|na|kod|pri|za)\s', v2) else ABBR.sub(lambda x: f'{x.group(1)}. {x.group(2).upper()}', v2)
     if re.search(rf'\s[{LOW}]', n) and not KEEP_SMALL.search(n):
         c = places.exact(n, 5)
         if c and c != n and c.lower() == n.lower():

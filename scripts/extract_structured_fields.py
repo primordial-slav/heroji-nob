@@ -636,6 +636,17 @@ JUNK = re.compile(r'[/{}|<>\[\]=+#@$%&~]')
 # lists whose heading names the area they cover, not a village (the Montenegrin Spomenica's municipality, its
 # birthplace a column the builder of Ostali borci sets; the holders of the spomenica in Moste-Polje): no birthplace
 AREA_HEADINGS = {'spomenica-crnogorskim-antifasistima.pdf', 'moste-polje-spomenica-1941.pdf'}
+# what Extractor.second_look doesn't read: lists whose text names where he lived after the war or tells namesakes apart
+NO_SECOND_LOOK = {75, 84}
+# lists that print the duty first, then where he is from (the Treća proleterska's fallen, the 11. dalmatinska, the 4. proleterska at formation)
+DUTY_FIRST_BIO = {5, 40, 53}
+# the units whose rolls print a Slovene address, a house number after the village
+SLOVENE_ROLLS = {4, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 141, 142, 150, 164, 167, 170, 171}
+NOT_VILLAGE = {'Padel', 'Padla', 'Bil', 'Bila', 'Ranjen', 'Ranjena', 'Umrl', 'Umrla', 'Ujet', 'Ujeta', 'Ubit', 'Ubita', 'Rojen', 'Rojena', 'Izginil', 'Izgubil'}
+# a republic after a place in a book's born_in
+REPUBLIC_PART = re.compile(r'Hrvatska|Srbija|Slovenija|Bosna i Hercegovina|BiH|Crna Gora|Makedonija|Vojvodina|Kosovo')
+# a verb before "iz": he came from there, it says nothing of where he is from
+FROM_VERB = re.compile(r'(?:doš[ao]|doš[lL]a|stig|pobeg|pobjeg|prebeg|prebjeg|vrati|otiš|preš|izaš|izbeg|izbjeg|premešt|premješt|prekomand|prebač|upuć|pušten|odveden|proteran|protjeran|uhvać|krenu|interniran)\w*')
 
 
 def list_colons(s: str, at_end: bool = False) -> list[int]:
@@ -813,7 +824,9 @@ class Extractor:
         return bool(s in ETHNIC or looks_ethnic(s) or self.is_occupation(s) or RANK_RE.fullmatch(s) or UNIT_RE.search(s)
                     or UNIT_WORD_RE.search(s)
                     or any(rx.search(s) for rx, _ in SPECIAL_UNITS)
-                    or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s) or len(s) > 40 or len(s.split()) > 4
+                    or STOP_PLACE.match(s) or DEATH_RE.search(s) or re.search(r'\d', s)
+                    # the bracket after a village names its municipality ("Gornjem Zirovcu (Dvor na Uni)"): not counted
+                    or len(re.sub(r'\s*\([^()]*\)', '', s)) > 40 or len(re.sub(r'\s*\([^()]*\)', '', s).split()) > 4
                     or not re.match(rf'^(?:[{U}]|\((?=[{U}])|(?:s|sv|st)\.\s[{U}])', s))
 
     def village_like(self, s: str) -> bool:
@@ -1031,9 +1044,104 @@ class Extractor:
                           for t in [self.trade_of(w)] if t), None)
             if trade:
                 out['occupation'] = trade
+        if 'birth_place' not in out and code not in NO_SECOND_LOOK:
+            place = re.sub(r'\s*\((?:nema|nije|ili|ne zna|otac|sin|žena|sada|verovatno)[^()]*\)', '', self.second_look(text, code))
+            if plausible_place(place):
+                out['birth_place'] = place
+                out.pop('_heading', None)
         if head:
             out['_head'] = head
         return out
+
+    def read_place(self, raw: str, inflected: bool = True) -> str:
+        """The place at the start of raw, up to the first word that is none, its first part in the nominative"""
+        raw = re.sub(r'\s[—–-]\s', ', ', raw)
+        place = []
+        for s in re.split(r',|;', sentences(raw)[0] if raw else ''):
+            s = clean_segment(s)
+            if not s or is_placeholder(s) or self.no_place(s) or ADMIN.search(s) or NOTE_RE.match(s):
+                break
+            place.append(s)
+            if len(place) == 3:
+                break
+        if not place:
+            return ''
+        if inflected:
+            place = [self.nominative(p, keep=True, locative=i == 0) for i, p in enumerate(place)]
+        while len(place) > 1 and REPUBLIC_PART.fullmatch(place[-1]):
+            place.pop()
+        return ', '.join(dict.fromkeys(place))
+
+    def second_look(self, text: str, code: int) -> str:
+        """The birthplace of an entry the reading above found none in, where a list says it in its own way (each way read
+        from the site's entries that had none, 2026-11-03). Only what the entry itself prints; "iz" and "rodom od" say
+        where he came from, which the lists print in the birthplace's stead."""
+        t = re.sub(r'\bROđen', 'Rođen', text)
+        t = re.sub(r'\b([Rr])(?:ođe[ipa]|sfen|ođel)\b', r'\1ođen', t)            # the scans' "rođei", "rođep", "rsfen"
+        t = re.sub(r'\b([Rr])ađen(?=\s+1[89]\d\d)', r'\1ođen', t)
+        t = re.sub(r'\b[Rr]oj(?:en[a]?|\.)\s*(?=(?:\d{1,2}\.\s*){0,2}1[89]\d\d)', 'rođen ', t)    # "rojen 10. februarja 1927 v Križu"
+        body = re.sub(r'^[^:]{3,140}:\s*(?=\S)', '', t) if ':' in t[:141] else t       # after a list's heading
+        body = re.sub(r'^\d{1,4}[.)]\s*', '', body)
+        # "(1920, Dušanovac, Negotin). U NOVJ od ...", "Italijan; (1925, Italija)": the 14. srpska's birth in brackets
+        m = re.match(rf'^(?:[^;(]{{1,40}};\s*)?\(1[89]\d\d[.,]\s*([{U}][^()]*)\)', body)
+        if m:
+            return self.read_place(m.group(1), inflected=False)
+        # the birth itself, where the date is set off by a comma ("rođen 1925., u Brestovu, Doboj"), after "r." or in the
+        # Slovene "v" ("r. 1927, Stenjak, Teslić"; "rođen 1. 1. 1927 v Križu"), or where a garbled year stands
+        m = re.search(rf'(?:\b[Rr]ođen[a]?(?:\s+je)?|(?:^|(?<=[:;,]\s))r\.)\s*(?P<date>\d{{1,2}}-[IVXL]+-1[89]\d\d|{DATE})?(?:\s+\S{{2,6}}\.)?[.,]?\s*(?P<prep>u\s+selu|u\s+s\.|u|v|s\.|selo)?\s*(?=[{U}])', t)
+        if m and (m.group('date') or m.group('prep')):
+            place = self.read_place(t[m.end():], inflected=bool(m.group('prep')) and not re.search(r's\.|selo|selu', m.group('prep')))
+            if place:
+                return place
+        # born near a place, or in its surroundings: "rođen 1923. kod T. Korenice", "rođen u okolini Han Pijeska"
+        m = re.search(rf'\b[Rr]ođen[a]?\s+(?:{DATE}[.,]?\s*,?\s*)?(?:kod|blizu|nedaleko\s+od|u\s+okolini|iz\s+okoline)\s+(?P<place>[{U}][^,;.]*(?:\.\s*[{U}][^,;.]*)?)', t)
+        if m and not self.no_place(clean_segment(m.group('place'))):
+            return 'kod ' + clean_segment(m.group('place'))
+        m = re.search(rf'\b[Rr]ođen[a]?\s+(?:{DATE}[.,]?\s*,?\s*)?na\s+(?=[{U}])', t)         # "rođen na Brdu Plavšića"
+        if m:
+            place = self.read_place(t[m.end():])
+            if place:
+                return place
+        # "rodom od Bosanskog Novog", "rodom iz Rudne Glave", the Kalnički odred's "r. 1908; od Novog Marofa;"
+        m = re.search(rf'\b[Rr]odom\s+(?:iz|od|sa)\s+(?=[{U}])|(?<=;\s)od\s+(?=[{U}])', t)
+        if m:
+            place = self.read_place(t[m.end():])
+            if place:
+                return place
+        # a list's "iz X": first in the entry ("iz Novog Sada.", "iz sela Marinovac, srez timočki"), or after the name and
+        # the trade in its first sentence ("Horvatić Miro, veterinar iz Zagreba, rođen 1913", "(1892) iz Kanostrevaca"),
+        # where no verb stands before it ("došao iz", "izbegao iz", "prebačen iz")
+        first = sentences(body)[0] if body else ''
+        m = re.search(rf'(?:^|(?<=[\s(]))iz\s+(?P<selo>sela\s+|s\.\s*)?(?=[{U}])', first)
+        if m and not FROM_VERB.search(first[:m.start()]):
+            place = self.read_place(body[m.end():], inflected=not m.group('selo'))
+            if place:
+                return place
+        # the duty first: "borac 3. bat., 1905, Skokuće, Prijepolje, zemljoradnik"; "borac 1. bat., r. Vertemilje";
+        # "desetar, Krasovina, Danilovgrad, 1921"
+        if code in DUTY_FIRST_BIO:
+            parts = re.split(r',\s*', body, maxsplit=1)
+            rest = parts[1] if len(parts) > 1 and self.no_place(clean_segment(parts[0])) else body
+            rest = re.sub(rf'^(?:r\.\s*)?(?:{DATE}[.,]?\s*)?', '', rest)
+            if re.match(rf'[{U}]', rest):
+                return self.read_place(rest, inflected=False)
+        # the Slovene rolls' address: "* 1917 Potok 29 pri Mozirju", "Zabiče 26, Ilirska Bistrica", "Osojnik 8 Semič", "por. Jarh, * 1925, Presladol"
+        if code in SLOVENE_ROLLS:
+            body2 = re.sub(rf'^(?:por|roj)\.\s+[{U}][\w-]+,\s*', '', body)
+            m = re.match(rf'^(?:\*\s*1[89]\d\d[,\s]+)?(?P<village>[{U}][{L}]+(?:\s+[{U}]?[{L}]{{2,}})?)\s+\d{{1,3}}[a-z]?(?=[\s,;]|$)\s*,?\s*(?P<rest>[^†;\d]*)', body2)
+            if m and m.group('village') not in NOT_VILLAGE:
+                rest = m.group('rest').strip()
+                if rest.startswith('pri '):
+                    return self.read_place(m.group('village') + ' ' + rest, inflected=False)
+                return self.read_place(m.group('village') + (', ' + rest if re.match(rf'[{U}]', rest) else ''), inflected=False)
+            m = re.match(rf'^\*\s*1[89]\d\d[,\s]+(?=[{U}])', body2)
+            if m and body2 != body:
+                return self.read_place(body2[m.end():], inflected=False)
+        # the year misread: "19211, Progar, zemljoradnik", "191:9, Belegiš"
+        m = re.match(rf'^(?:\d{{5}}|\d{{3}}:\d)\s*,\s*(?=[{U}])', body)
+        if m:
+            return self.read_place(body[m.end():], inflected=False)
+        return ''
 
     # ── death ────────────────────────────────────────────────
     # The Slovene books mark a death with a dagger: "† 1944 Pohorje" in the war (the parsers read those), and in the
@@ -1356,6 +1464,9 @@ class Extractor:
         """'na Sutjesci' -> 'Sutjeska'; 'u selu Grabovo kod Vukovara' -> 'Grabovo, Vukovar'; unknown -> as printed
         (keep=True: unknown parts stay as they are, the known ones are still converted; locative=True: the clause
         followed "u", its first part is in the locative)."""
+        bracket = re.match(r'^(.*\S)\s*(\([^()]*\))$', clause)
+        if bracket:                                                       # "Gornjem Zirovcu (Dvor na Uni)": its municipality stays
+            return f'{self.nominative(bracket.group(1), keep, locative)} {bracket.group(2)}'
         parts = [p for p in re.split(r',\s*|\s+-\s+|\s+(?=kod\s|pri\s)', clause) if p.strip()]
         names, bare = [], []
         for p in parts:
@@ -1799,6 +1910,11 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
                 got.setdefault('unit_detail', head.group(1).strip())
     if village and not got.get('birth_place'):
         got['birth_place'] = village
+    if s.get('born_in') and not got.get('birth_place'):
+        # Borci drugih jedinica: what its book's parser read (build_ostali_borci.py)
+        got['birth_place'] = born_in_form(s['born_in'], ' '.join(e.get('additional_info', '') for e in entries))
+        if not got['birth_place']:
+            del got['birth_place']
     if orgs:
         got['party'] = party_value(orgs)
     if got.get('death_place'):
@@ -1810,6 +1926,37 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     return got
 
 
+def plausible_place(v: str) -> bool:
+    """A value that reads as a place: no sentence of the bio, the scan's marks or a capital inside a word"""
+    if not v or len(v) > 48 or re.search(r"[^\w ,.()'’-]|\d|[Ѐ-ӿ]", v) or re.search(rf'[{L}][{U}]|\.\s+[{L}]|\s[{L}]$', v):
+        return False
+    if re.search(r'\b(?:Kao|Zbog|Radnik|Zemljoradnik|Radnici|Stenta)\b', v) or len(v.split(',')[0].split(' (')[0]) < 3:
+        return False
+    return all(len(re.sub(r'\([^()]*\)', '', part).split()) <= 4 for part in v.split(','))
+
+
+def born_in_form(value: str, text: str = '') -> str:
+    """A book's born_in as a record's birthplace: its parser kept it for the matcher, as the entry prints it, so in a case
+    where it follows a preposition there ("rođen 1913. u Jablanici", "u selu Crna Vlast, Otočac, Hrvatska"), and as
+    printed where it is a heading's or a column's ("Žitorađe, Vladičin Han", "Dolovi, Zagora")"""
+    v = re.sub(r'\s+', ' ', value or '').strip(' ,.')
+    selo = re.match(r'^(?:u\s+)?(?:selu|mestu|mjestu|s\.)\s+(?=[A-ZČĆŽŠĐ])', v)
+    v = v[selo.end():] if selo else v
+    if re.search(r'srezu?\b|opštin|općin', v):
+        return ''
+    parts = [p.strip() for p in v.split(',')]
+    if not selo and re.search(rf'\b(?:u|na|iz|u\s+selu|u\s+s\.|selu)\s+{re.escape(parts[0])}', text or ''):
+        parts[0] = get_extractor().nominative(parts[0], keep=True, locative=True)
+    out = []
+    for p in parts:
+        if p and p not in out and not REPUBLIC_PART.fullmatch(p):
+            out.append(p)
+    v = re.sub(r'\s*\((?:nema|nije|ili|ne zna|otac|sin|žena|sada|verovatno)[^()]*\)', '', ', '.join(out))
+    from standardize_fields import birth_place_form                  # the table of places read by hand; standardize runs before a lent value
+    v = birth_place_form(v) if plausible_place(v) else ''
+    return v or ''
+
+
 BLANKED: dict[str, set] = {}    # soldier_id -> fields a review answer left empty on purpose (apply_corrections.py)
 
 
@@ -1819,6 +1966,7 @@ def fill(soldiers: list[dict]) -> int:
     for s in soldiers:
         new = {k: v for k, v in read_all(ex, s, brigade_of(s)).items()
                if not s.get(k) and k not in BLANKED.get(s.get('soldier_id'), ())}
+        s.pop('born_in', None)
         if new:
             s.update(new)
             n += 1
@@ -1847,6 +1995,8 @@ def main():
             cols = set(s.get('from_columns') or ())
             new = {k: v for k, v in got.items() if not s.get(k) or (k in cols and v != s[k] and (
                 k != 'death_date' or len(re.findall(r'\d+|[a-zčćžšđ]{3,}', v)) >= len(re.findall(r'\d+|[a-zčćžšđ]{3,}', s[k]))))}
+            if args.apply:
+                s.pop('born_in', None)
             if new:
                 touched += 1
                 filled.update(new.keys())

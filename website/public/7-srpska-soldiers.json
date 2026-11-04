@@ -4253,25 +4253,6 @@
   {
     "last_name": "Glišić",
     "middle_name": "",
-    "first_name": "Milorad",
-    "fathers_name": "",
-    "full_name": "Glišić Milorad",
-    "additional_info": "(rođen na Vlasini) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
-    "birth_year": "",
-    "pdf_page": 16,
-    "pdf_y": 353.0,
-    "pdf_x": 66.6,
-    "pdf_y_end": 369.6,
-    "pdf_file": "7-srpska.pdf",
-    "pdf_x_end": 341.3,
-    "soldier_id": "0085000198",
-    "death_place": "na Rnjosu u borbama",
-    "death_type": "poginuo",
-    "death_date": "23.04.1944"
-  },
-  {
-    "last_name": "Glišić",
-    "middle_name": "",
     "first_name": "Miloral",
     "fathers_name": "",
     "full_name": "Glišić Miloral",
@@ -4284,7 +4265,23 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Vlasina",
     "pdf_x_end": 97.9,
-    "soldier_id": "0085000199"
+    "soldier_id": "0085000199",
+    "other_sources": [
+      {
+        "soldier_id": "0085000198",
+        "name": "Glišić Milorad",
+        "additional_info": "(rođen na Vlasini) poginuo 23. 4. 1944. na Rnjosu u borbama protiv bugarskih fašista.",
+        "pdf_file": "7-srpska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 66.6,
+        "pdf_y": 353.0,
+        "pdf_x_end": 341.3,
+        "pdf_y_end": 369.6
+      }
+    ],
+    "death_place": "na Rnjosu u borbama",
+    "death_type": "poginuo",
+    "death_date": "23.04.1944"
   },
   {
     "last_name": "Glogović",
@@ -5698,7 +5695,7 @@
     "pdf_x_end": 360.5,
     "soldier_id": "0085000272",
     "death_date": "12.12.1944",
-    "death_place": "Drljača, Na pravcu prema Rogačici",
+    "death_place": "Drljača",
     "rank": "borac",
     "other_sources": [
       {
@@ -6950,11 +6947,11 @@
     "soldier_id": "0085000330"
   },
   {
-    "last_name": "Jovlnović",
+    "last_name": "Jovanović",
     "middle_name": "V",
     "first_name": "Dragoljub",
     "fathers_name": "V",
-    "full_name": "Jovlnović V Dragoljub",
+    "full_name": "Jovanović V Dragoljub",
     "additional_info": "(1922. s. Kiseljevo kod Požarevca), borac od 27. 10. 1944, u 3/2. bataljonu, poginuo 6. 2. 1945, kod s. Žabareširi rejon Brčkog.",
     "birth_year": "1922",
     "death_type": "poginuo",
@@ -8009,13 +8006,12 @@
     "birth_date": "04.02.1910"
   },
   {
-    "last_name": "Leiojević",
+    "last_name": "Lepojević",
     "middle_name": "",
     "first_name": "Bogomir",
     "fathers_name": "",
-    "full_name": "Leiojević Bogomir",
+    "full_name": "Lepojević Bogomir",
     "additional_info": "iz Brod, Crna Trava",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 219.9,
     "pdf_x": 19.4,
@@ -8023,7 +8019,29 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Brod, Crna Trava",
     "pdf_x_end": 106.5,
-    "soldier_id": "0085000385"
+    "soldier_id": "0085000385",
+    "other_sources": [
+      {
+        "soldier_id": "9025009510",
+        "name": "Lepojević (Sima) Bogomir",
+        "additional_info": "rođen 1919, Brod (Crna Trava). Srbin, poginuo 1944. u NOBu, Suva Plana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=380",
+        "source_page": 380,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Suva Plana",
+    "birth_year": "1919"
   },
   {
     "last_name": "Lekić",
@@ -11534,7 +11552,7 @@
       }
     ],
     "death_date": "30.06.1944",
-    "death_place": "Beli Potok, širi rejon Knjaževca, Protiv bugarskih fašista"
+    "death_place": "Beli Potok, širi rejon Knjaževca"
   },
   {
     "last_name": "Milutinović",
@@ -14193,6 +14211,10 @@
         "pdf_x_left": 19.7,
         "ref_book": "cacanski-kraj-pali"
       }
+    ],
+    "birth_place": "Donja Vrbava",
+    "borrowed": [
+      "birth_place"
     ]
   },
   {
@@ -15023,7 +15045,7 @@
     "pdf_x_end": 365.1,
     "soldier_id": "0085000712",
     "death_date": "31.03.1945",
-    "death_place": "Doborovci, okolina Gračanice, Protiv Nemaca",
+    "death_place": "Doborovci, okolina Gračanice",
     "rank": "borac",
     "unit_detail": "1. bataljon",
     "other_sources": [
@@ -19985,11 +20007,11 @@
     "death_place": "za Bandru kod Gračanice"
   },
   {
-    "last_name": "Stjičić",
+    "last_name": "Stojičić",
     "middle_name": "J",
     "first_name": "Simka",
     "fathers_name": "J",
-    "full_name": "Stjičić J Simka",
+    "full_name": "Stojičić J Simka",
     "additional_info": "iz Crna Trava",
     "birth_year": "",
     "pdf_page": 11,
@@ -20002,11 +20024,11 @@
     "soldier_id": "0085000966"
   },
   {
-    "last_name": "Stlnojlović",
+    "last_name": "Stanojlović",
     "middle_name": "M",
     "first_name": "Živojin",
     "fathers_name": "M",
-    "full_name": "Stlnojlović M Živojin",
+    "full_name": "Stanojlović M Živojin",
     "additional_info": "(1924, s. M.Laole - Mlava), poginuo 30. 4. 1945. u borbi protiv Nemaca i ustaša na reci Uni.",
     "birth_year": "1924",
     "death_type": "poginuo",
@@ -21662,11 +21684,11 @@
     "unit_detail": "3. bataljon"
   },
   {
-    "last_name": "Tlsić",
+    "last_name": "Tasić",
     "middle_name": "S",
     "first_name": "Čedomir",
     "fathers_name": "S",
-    "full_name": "Tlsić S Čedomir",
+    "full_name": "Tasić S Čedomir",
     "additional_info": "(1919, Vranje) poginuo 24. 7. 1944. na Bukoviku u borbi protiv četnika. Istakao se izuzetnom hrabrošću.",
     "birth_year": "1919",
     "death_type": "poginuo",
@@ -22988,11 +23010,11 @@
     "unit_detail": "1. bataljon"
   },
   {
-    "last_name": "Vlsiljević",
+    "last_name": "Vasiljević",
     "middle_name": "M",
     "first_name": "Gvozden",
     "fathers_name": "M",
-    "full_name": "Vlsiljević M Gvozden",
+    "full_name": "Vasiljević M Gvozden",
     "additional_info": "(1916, s. Lozovik - kod Svetozareva), borac od 1. 11. 1944, u 3/3. bataljonu, izvršio samoubistvo iz nepoznatih razloga.",
     "birth_year": "1916",
     "death_type": "umro",
@@ -23005,7 +23027,25 @@
     "pdf_x_end": 306.6,
     "soldier_id": "0085001119",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9025031266",
+        "name": "Vasiljević (Miladin) Gvozden",
+        "additional_info": "rođen 1917, Lozovik (Svetozarevo). Srbin, poginuo 1945. u NOBu, Selo skakovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1195",
+        "source_page": 1195,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Selo skakovo"
   },
   {
     "last_name": "Vojinović",
@@ -25489,7 +25529,7 @@
     "pdf_x_end": 316.4,
     "soldier_id": "0085001242",
     "death_date": "27.02.1945",
-    "death_place": "Topalovićiširi rejon Gračanice, Protiv četnika",
+    "death_place": "Topalovići, širi rejon Gračanice",
     "rank": "borac",
     "unit_detail": "2. bataljon"
   },

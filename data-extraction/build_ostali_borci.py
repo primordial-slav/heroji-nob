@@ -257,6 +257,10 @@ def place_or_unit(place: str) -> dict:
     return {'death_place': death_column(place)}
 
 
+# a book whose born_in is the area of the list, not the man's
+BORN_IN_NOT_HIS = {'moste-polje-spomenica-1941'}
+
+
 def column_fields(e: dict) -> dict:
     # a list of officers names who fell and who lived (the XXXI. divizija's staffs): no death for one who lived
     if e.get('survived') and not e.get('death_date'):
@@ -844,6 +848,12 @@ def main():
                     if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):
                         rec[k] = v                           # the Spomenica's columns
                         filled.append(k)
+            if not rec.get('birth_place'):
+                # what the book's parser read of where he is from (often in a case): extract_structured_fields.read_all
+                # takes it where no entry's text names a place, and the reader leaves no trace of it on the record
+                seen = next((m['born_in'] for m in g if m.get('born_in') and m['_book'] not in BORN_IN_NOT_HIS), '')
+                if seen:
+                    rec['born_in'] = seen
             death_cols = [k for k in ('death_type', 'death_date') if k in filled]
             if death_cols and any(m['_book'] not in COLUMN_BOOKS and not m['_book'].startswith('zrtve-rata-1964')
                                   for m in g):

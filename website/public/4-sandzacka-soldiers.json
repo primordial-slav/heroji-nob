@@ -4220,10 +4220,12 @@
     "pdf_x_end": 399.2,
     "birth_year": "1920",
     "borrowed": [
+      "birth_place",
       "birth_year",
       "death_type",
       "occupation"
     ],
+    "birth_place": "Vojnici, Babušnica",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "other_sources": [
@@ -9887,7 +9889,7 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Nikšić, Pljevlja",
+    "birth_place": "Zagrad, Nikšić",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -10017,7 +10019,7 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "birth_place": "Pušanjski Do, Pljevlja",
+    "birth_place": "Pušanjski Do",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -11715,7 +11717,8 @@
     "death_date": "06.07.1944",
     "death_place": "Rutoši, Nova Varoš",
     "rank": "borac",
-    "pdf_x_end": 395.6
+    "pdf_x_end": 395.6,
+    "birth_place": "Beograd"
   },
   {
     "last_name": "Radović",
@@ -12542,12 +12545,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1032",
         "source_page": 1032,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0005010981",
+        "name": "Rovčanin Milete Janko",
+        "additional_info": "komandir voda, 1924, Slatina, Prijepolje, zemljoradnik, član KPJ. U NOB od 1941, borac 3. brigade od novembra 1943. Ranjen 28. avgusta 1944, u borbi protiv Bugara na Zlatiboru, prebačen na liječenje u Italiju, gdje je i umro.",
+        "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
+        "pdf_page": 78,
+        "pdf_x": 76.5,
+        "pdf_y": 398.9,
+        "pdf_x_end": 358.3,
+        "pdf_y_end": 434.5,
+        "unit_file": "treca-proleterska-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "occupation": "zemljoradnik",
     "borrowed": [
-      "ethnicity"
-    ]
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "party": "KPJ",
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Rovčanin",
@@ -13323,7 +13342,36 @@
     "death_date": "21.02.1945",
     "death_place": "na Mišjaku kod Goražda",
     "rank": "borac",
-    "pdf_x_end": 394.6
+    "pdf_x_end": 394.6,
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0005011030",
+        "name": "Stanišić Đure Dušan",
+        "additional_info": "borac 4. bat„ 1925, Radosin, Babušnica, zemljoradnik. U NOB od 15. novembra 1944, borac 3. brigade od 27. decembra 1944. Poginuo u borbi protiv Nijemaca, januara 1945, na Goraždu, sahranjen u Goraždu.",
+        "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
+        "pdf_page": 108,
+        "pdf_x": 79.2,
+        "pdf_y": 99.1,
+        "pdf_x_end": 360.0,
+        "pdf_y_end": 134.5,
+        "unit_file": "treca-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ],
+      "death": [
+        {
+          "date": "01.1945",
+          "place": "na Mišjaku kod Goražda"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",

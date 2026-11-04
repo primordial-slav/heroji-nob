@@ -208,6 +208,7 @@
     "pdf_file": "12-hercegovacka.pdf",
     "soldier_id": "0101000007",
     "pdf_x_end": 355.7,
+    "birth_place": "Trnovica, Bileća",
     "other_sources": [
       {
         "soldier_id": "9022003634",
@@ -218,13 +219,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "birth_place": "Trnovica, Bileća",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
     "birth_year": "1925"
   },
   {
@@ -3037,7 +3036,8 @@
     "pdf_file": "12-hercegovacka.pdf",
     "soldier_id": "0101000100",
     "pdf_x_end": 367.0,
-    "death_place": "Stolac"
+    "death_place": "Stolac",
+    "birth_place": "Tuli"
   },
   {
     "last_name": "Kojović",
@@ -3184,7 +3184,7 @@
     "full_name": "Kovač P Drago",
     "additional_info": "rođen 1921. god. u selu. Janjač. Zamjenik političkog komesara čete. Poginuo 6. aprila 1945. god. kod Blažuja.",
     "birth_year": "1921",
-    "rank": "janjač",
+    "rank": "zamjenik političkog komesara čete",
     "pdf_page": 10,
     "pdf_y": 411.1,
     "pdf_x": 36.5,
@@ -3961,7 +3961,7 @@
     "additional_info": "rođen 1922. god. u Turmentima. Borac--puškomitraljezac. Poginuo 16. avgusta 1944. god. kod Džinove Mahale-Nevesinje.",
     "birth_year": "1922",
     "death_type": "poginuo",
-    "rank": "borac--puškomitraljezac",
+    "rank": "borac, puškomitraljezac",
     "death_date": "16.08.1944",
     "death_place": "Džinova Mahala, Nevesinje",
     "pdf_page": 11,
@@ -4074,7 +4074,7 @@
     "additional_info": "rođen 1924. god. u Dlakošama. Mlađi brat Milidragović G. Koste. Borac. Poginuo u junu 1945. god. u borbi protiv ustaških ostataka kod Neum-Žabe.",
     "birth_year": "1924",
     "death_type": "poginuo",
-    "rank": "mlađi brat Milidragović G. Koste",
+    "rank": "borac",
     "death_date": "06.1945",
     "pdf_page": 2,
     "pdf_y": 191.9,
@@ -4939,7 +4939,15 @@
     "ethnicity": "Musliman",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "24.10.1944",
+          "place": "kod Metkovića"
+        }
+      ]
+    }
   },
   {
     "last_name": "Petrović",
@@ -5545,6 +5553,7 @@
     "soldier_id": "0101000173",
     "pdf_x_end": 364.5,
     "death_place": "Čapljina",
+    "birth_place": "Šćenica",
     "other_sources": [
       {
         "soldier_id": "9003000557",
@@ -5886,7 +5895,7 @@
     "additional_info": "zvani Crni; rođen 1922. god. u Mekoj Grudi. Borac--bombaš. Poginuo u noći 20/21. maja 1944. god. na Hadžibegovom brdu kod Bileće.",
     "birth_year": "1922",
     "death_type": "poginuo",
-    "rank": "borac--bombaš",
+    "rank": "borac, bombaš",
     "pdf_page": 2,
     "pdf_y": 508.4,
     "pdf_x": 37.2,
@@ -8821,7 +8830,8 @@
     "pdf_y_end": 385.3,
     "pdf_file": "12-hercegovacka.pdf",
     "soldier_id": "0101000272",
-    "pdf_x_end": 368.5
+    "pdf_x_end": 368.5,
+    "birth_place": "Lokve"
   },
   {
     "last_name": "Šunjić",

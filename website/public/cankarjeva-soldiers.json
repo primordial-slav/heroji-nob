@@ -1233,7 +1233,7 @@
     "pdf_file": "cankarjeva.pdf",
     "soldier_id": "0061000061",
     "pdf_x_end": 288.6,
-    "death_place": "Štajerska (2.UB.)",
+    "death_place": "Štajerska",
     "other_sources": [
       {
         "soldier_id": "0061010003",
@@ -1311,7 +1311,26 @@
     "pdf_y_end": 578.1,
     "pdf_file": "cankarjeva.pdf",
     "soldier_id": "0061000063",
-    "pdf_x_end": 285.8
+    "pdf_x_end": 285.8,
+    "birth_place": "Belčji vrh",
+    "death_place": "Ambrus",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0070000037",
+        "name": "Bahor Janez",
+        "additional_info": "* 1920 Belčji vrh † 1943 Ambrus",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 2,
+        "pdf_x": 139.4,
+        "pdf_y": 232.9,
+        "pdf_x_end": 275.4,
+        "pdf_y_end": 239.4,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bahor",
@@ -4478,10 +4497,10 @@
   },
   {
     "last_name": "Brajovič",
-    "middle_name": "",
+    "middle_name": "Spasoja",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Brajovič Petar",
+    "fathers_name": "Spasoje",
+    "full_name": "Brajovič Spasoja Petar",
     "additional_info": "1915, Jelenak pii Danilovgradu",
     "birth_year": "1915",
     "pdf_page": 3,
@@ -4518,8 +4537,20 @@
         "ref_book": "klanjscek-komandni-sastav"
       },
       {
+        "soldier_id": "0040020086",
+        "name": "Brajović Spasoja Petar",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: k-dir voda, Jelenak, Danilovgrad, 1915, podoficir BJV",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 47,
+        "pdf_x": 156.6,
+        "pdf_y": 396.4,
+        "pdf_x_end": 458.5,
+        "pdf_y_end": 413.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0062000234",
-        "name": "Brajović Petar",
+        "name": "Brajović Spasoja Petar",
         "additional_info": "zvani Pero; 1915, Danilovgrad",
         "pdf_file": "gubceva.pdf",
         "pdf_page": 4,
@@ -7873,9 +7904,9 @@
   {
     "last_name": "Dopliher",
     "middle_name": "",
-    "first_name": "Franxc",
+    "first_name": "Franc",
     "fathers_name": "",
-    "full_name": "Dopliher Franxc",
+    "full_name": "Dopliher Franc",
     "additional_info": "Vrtovin 1902—1944",
     "birth_year": "1902",
     "death_type": "poginuo",
@@ -17802,7 +17833,21 @@
     "pdf_file": "cankarjeva.pdf",
     "soldier_id": "0061000855",
     "pdf_x_end": 425.1,
-    "birth_place": "Rožanec"
+    "birth_place": "Rožanec",
+    "other_sources": [
+      {
+        "soldier_id": "0070101511",
+        "name": "Joh Ivan",
+        "additional_info": "* 1919 Rožanec 2, Črnomelj",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 16,
+        "pdf_x": 137.5,
+        "pdf_y": 315.9,
+        "pdf_x_end": 283.0,
+        "pdf_y_end": 323.9,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jordan",
@@ -34437,7 +34482,7 @@
     "birth_year": "1922",
     "death_type": "poginuo",
     "death_date": "1945",
-    "birth_place": "Podturn pri DoL Toplicah",
+    "birth_place": "Podturn pri Dol. Toplicah",
     "pdf_page": 41,
     "pdf_y": 442.7,
     "pdf_x": 150.2,
@@ -43504,7 +43549,7 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Š. Polje no.mest"
+    "death_place": "Š. Polje, Novo Mesto"
   },
   {
     "last_name": "Ržen",
@@ -54490,7 +54535,7 @@
     "pdf_file": "cankarjeva.pdf",
     "soldier_id": "0061002578",
     "pdf_x_end": 293.9,
-    "birth_place": "Podturn pri DoL Toplicah",
+    "birth_place": "Podturn pri Dol. Toplicah",
     "other_sources": [
       {
         "soldier_id": "0150000402",

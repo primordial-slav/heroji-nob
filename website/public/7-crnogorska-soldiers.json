@@ -1395,7 +1395,20 @@
     "soldier_id": "0028000035",
     "birth_place": "Kanjuhe, Andrijevica",
     "pdf_x_end": 225.5,
-    "pdf_x_left": 68.8
+    "pdf_x_left": 68.8,
+    "other_sources": [
+      {
+        "soldier_id": "0028010036",
+        "name": "Bojović Anka",
+        "additional_info": "rodom iz Kanjuha, Andrijevica.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 256.6,
+        "pdf_y": 405.9,
+        "pdf_x_end": 522.5,
+        "pdf_y_end": 416.4
+      }
+    ]
   },
   {
     "last_name": "Bojović",
@@ -1413,7 +1426,20 @@
     "soldier_id": "0028000036",
     "birth_place": "Kanjuhe, Andrijevica",
     "pdf_x_end": 225.4,
-    "pdf_x_left": 68.8
+    "pdf_x_left": 68.8,
+    "other_sources": [
+      {
+        "soldier_id": "0028010037",
+        "name": "Bojović Vojislav",
+        "additional_info": "rodom iz Kanjuha, Andrijevica.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 256.8,
+        "pdf_y": 416.7,
+        "pdf_x_end": 559.3,
+        "pdf_y_end": 427.2
+      }
+    ]
   },
   {
     "last_name": "Boričić",
@@ -1869,6 +1895,17 @@
     "pdf_x_end": 212.9,
     "pdf_x_left": 68.9,
     "other_sources": [
+      {
+        "soldier_id": "0028010050",
+        "name": "Bulić Milić",
+        "additional_info": "rodom iz Šekulara, Ivangrad.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 257.1,
+        "pdf_y": 669.1,
+        "pdf_x_end": 513.4,
+        "pdf_y_end": 679.6
+      },
       {
         "soldier_id": "9035001467",
         "name": "Bulić M. Milić",
@@ -2876,7 +2913,20 @@
     "soldier_id": "0028000074",
     "birth_place": "Andrijevica",
     "pdf_x_end": 240.0,
-    "pdf_x_left": 78.6
+    "pdf_x_left": 78.6,
+    "other_sources": [
+      {
+        "soldier_id": "0028010078",
+        "name": "Dukić Miličko",
+        "additional_info": "rodom iz Andrijevice.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 6,
+        "pdf_x": 217.0,
+        "pdf_y": 663.4,
+        "pdf_x_end": 448.4,
+        "pdf_y_end": 673.9
+      }
+    ]
   },
   {
     "last_name": "Duletić",
@@ -3181,7 +3231,21 @@
     "pdf_file": "7-crnogorska-omladinska.pdf",
     "soldier_id": "0028000082",
     "birth_place": "Mašnica, Andrijevica",
-    "pdf_x_end": 232.2
+    "pdf_x_end": 232.2,
+    "other_sources": [
+      {
+        "soldier_id": "0028010087",
+        "name": "Garčević Vukić",
+        "additional_info": "rodom iz Mašnice, Andrijevica, 1. četa 4. bataljona.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 5,
+        "pdf_x": 255.4,
+        "pdf_y": 405.4,
+        "pdf_x_end": 611.5,
+        "pdf_y_end": 426.4
+      }
+    ],
+    "unit_detail": "1. četa, 4. bataljon"
   },
   {
     "last_name": "Gašić",
@@ -3479,10 +3543,10 @@
   },
   {
     "last_name": "Grdinić",
-    "middle_name": "",
+    "middle_name": "Vojina",
     "first_name": "Tomaš",
-    "fathers_name": "",
-    "full_name": "Grdinić Tomaš",
+    "fathers_name": "Vojin",
+    "full_name": "Grdinić Vojina Tomaš",
     "additional_info": "1922, Polja Kolašinska, Mojkovac, 2. četa 4. bataljona, poginuo 14. VIII 1944, u Piperima",
     "birth_year": "1922",
     "pdf_page": 8,
@@ -3540,8 +3604,31 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=340",
         "source_page": 695,
         "ref_book": "kolasin"
+      },
+      {
+        "soldier_id": "0005010310",
+        "name": "Grdinić Vojina Tomaš",
+        "additional_info": "borac, 1923, D. Polja, Mojkovac, zemljoradnik, član SKOJ-a, borac 3. brigade od avgusta 1943. Poginuo kao borac 7. crnogorske brigade, 1944. u Piperima.",
+        "pdf_file": "treca-proleterska-poginuli-knj3.pdf",
+        "pdf_page": 66,
+        "pdf_x": 77.0,
+        "pdf_y": 487.1,
+        "pdf_x_end": 358.9,
+        "pdf_y_end": 513.5,
+        "unit_file": "treca-proleterska-soldiers.json"
       }
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "borrowed": [
+      "occupation",
+      "party"
+    ],
+    "party": "SKOJ",
+    "variants": {
+      "born": [
+        "1923"
+      ]
+    }
   },
   {
     "last_name": "Grgurović",
@@ -4979,7 +5066,20 @@
     "soldier_id": "0028000123",
     "birth_place": "Andrijevica",
     "pdf_x_end": 224.1,
-    "pdf_x_left": 63.1
+    "pdf_x_left": 63.1,
+    "other_sources": [
+      {
+        "soldier_id": "0028010130",
+        "name": "Jukić Dimitrije",
+        "additional_info": "rodom iz Andrijevice.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 255.8,
+        "pdf_y": 596.0,
+        "pdf_x_end": 492.2,
+        "pdf_y_end": 606.5
+      }
+    ]
   },
   {
     "last_name": "Jukić",
@@ -5383,7 +5483,20 @@
     "soldier_id": "0028000131",
     "birth_place": "Ulotina, Andrijevica",
     "pdf_x_end": 223.6,
-    "pdf_x_left": 62.7
+    "pdf_x_left": 62.7,
+    "other_sources": [
+      {
+        "soldier_id": "0028010140",
+        "name": "Kastratović Golub",
+        "additional_info": "rodom iz Ulotine, Andrijevica.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 9,
+        "pdf_x": 259.0,
+        "pdf_y": 869.6,
+        "pdf_x_end": 561.8,
+        "pdf_y_end": 880.1
+      }
+    ]
   },
   {
     "last_name": "Kastratović",
@@ -6471,10 +6584,10 @@
     }
   },
   {
-    "last_name": "Kovačvvić",
+    "last_name": "Kovačević",
     "middle_name": "Ruže",
     "first_name": "Jovan",
-    "full_name": "Kovačvvić Ruže Jovan",
+    "full_name": "Kovačević Ruže Jovan",
     "additional_info": "1924, Grahovo, Nikšić, 2. četa 2. bataljona, poginuo 1. I 1945, na Pržištima",
     "birth_year": "1924",
     "pdf_page": 16,
@@ -6490,7 +6603,64 @@
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 350.9,
     "pdf_x_left": 74.5,
-    "mothers_name": "Ruža"
+    "mothers_name": "Ruža",
+    "other_sources": [
+      {
+        "soldier_id": "0028010165",
+        "name": "Kovačević Ružin Jovan",
+        "additional_info": "rođ. 1924. u Grahovu, Nikšić, 2. četa 3. bataljona, poginuo 1. januara 1945. na Pržištima, Mojkovac.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 10,
+        "pdf_x": 221.6,
+        "pdf_y": 574.1,
+        "pdf_x_end": 577.5,
+        "pdf_y_end": 595.4
+      },
+      {
+        "soldier_id": "9035007776",
+        "name": "Kovačević Ružin Jovan",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Nikšić: godina rođenja 1924; mjesto rođenja Podbožur; godina smrti 1945; mjesto pogibije Mojkovac",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 196,
+        "pdf_x": 57.1,
+        "pdf_y": 183.4,
+        "pdf_x_end": 456.9,
+        "pdf_y_end": 192.6,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9089000152",
+        "name": "Kovačević Ružin Jovan",
+        "additional_info": "Borci iz Grahova pali u NOR-u i revoluciji 1941-1945. godine: KOVAČEVIĆ Ružin JOVAN, rođen 1924. godine u Podbožuru, seljak; borac od 1944. godine; poginuo 1, januara 1945. godine, na Pržištima kod Mojkovca kao borac 2. bataljona 7. omladinske crnogorske udarne brigade u borbi protiv njemačkih snaga.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010235&pg_seq=120",
+        "source_page": 117,
+        "ref_book": "revolucionarno-grahovo"
+      },
+      {
+        "soldier_id": "9080000387",
+        "name": "Kovačević Ruže Jovan",
+        "additional_info": "Imena palih boraca u toku NOR-a, iz sreza nikšićkog: rođen 1924, Podbožur; poginuo 1944, Mojkovac",
+        "pdf_file": "niksicki-odred-pali-borci.pdf",
+        "pdf_page": 9,
+        "pdf_x": 22.6,
+        "pdf_y": 155.7,
+        "pdf_x_end": 368.7,
+        "pdf_y_end": 166.1,
+        "ref_book": "niksicki-odred-pali-borci"
+      },
+      {
+        "soldier_id": "9023004447",
+        "name": "Kovačević (Ruža) Jovan",
+        "additional_info": "rođen 1924, Podbožur (Nikšić). Crnogorac, poginuo 1944. u NOBu, Mojkovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=129",
+        "source_page": 129,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Krgović",
@@ -8399,7 +8569,20 @@
     "soldier_id": "0028000204",
     "birth_place": "Šekular, Ivangrad",
     "pdf_x_end": 214.8,
-    "pdf_x_left": 66.2
+    "pdf_x_left": 66.2,
+    "other_sources": [
+      {
+        "soldier_id": "0028010219",
+        "name": "Matović Milija",
+        "additional_info": "rodom iz Šekulara. Ivangrad.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 13,
+        "pdf_x": 260.8,
+        "pdf_y": 692.1,
+        "pdf_x_end": 537.6,
+        "pdf_y_end": 702.3
+      }
+    ]
   },
   {
     "last_name": "Mašanović",
@@ -10167,7 +10350,21 @@
     "soldier_id": "0028000244",
     "birth_place": "Lubnice, Ivangrad",
     "pdf_x_end": 224.3,
-    "pdf_x_left": 75.6
+    "pdf_x_left": 75.6,
+    "other_sources": [
+      {
+        "soldier_id": "0028010266",
+        "name": "Obradović Miladin",
+        "additional_info": "rodom iz Lubnice, Ivangrad, 2. četa 4. bataljona.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 15,
+        "pdf_x": 250.5,
+        "pdf_y": 792.0,
+        "pdf_x_end": 606.6,
+        "pdf_y_end": 813.1
+      }
+    ],
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "last_name": "Obradović",
@@ -10673,7 +10870,8 @@
         "pdf_x_end": 583.5,
         "pdf_y_end": 595.2
       }
-    ]
+    ],
+    "birth_place": "Tareta, Italija"
   },
   {
     "last_name": "Pantelić",
@@ -14040,7 +14238,20 @@
     "soldier_id": "0028000338",
     "birth_place": "Ivangrad",
     "pdf_x_end": 222.3,
-    "pdf_x_left": 74.0
+    "pdf_x_left": 74.0,
+    "other_sources": [
+      {
+        "soldier_id": "0028010366",
+        "name": "Stijović Dragomir",
+        "additional_info": "rodom iz Ivangrada.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 20,
+        "pdf_x": 221.6,
+        "pdf_y": 654.6,
+        "pdf_x_end": 464.1,
+        "pdf_y_end": 665.1
+      }
+    ]
   },
   {
     "last_name": "Stojanović",
@@ -14601,7 +14812,20 @@
     "soldier_id": "0028000352",
     "birth_place": "Ivangrad",
     "pdf_x_end": 215.2,
-    "pdf_x_left": 66.6
+    "pdf_x_left": 66.6,
+    "other_sources": [
+      {
+        "soldier_id": "0028010380",
+        "name": "Tmušić Vuko",
+        "additional_info": "rodom iz Ivangrada.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 21,
+        "pdf_x": 252.7,
+        "pdf_y": 572.0,
+        "pdf_x_end": 460.6,
+        "pdf_y_end": 582.5
+      }
+    ]
   },
   {
     "last_name": "Tomić",
@@ -14711,7 +14935,20 @@
     "soldier_id": "0028000356",
     "birth_place": "Šekular, Ivangrad",
     "pdf_x_end": 215.3,
-    "pdf_x_left": 66.5
+    "pdf_x_left": 66.5,
+    "other_sources": [
+      {
+        "soldier_id": "0028010384",
+        "name": "Tomović Branko",
+        "additional_info": "rodom iz Šekulara, Ivangrad.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 21,
+        "pdf_x": 252.7,
+        "pdf_y": 540.1,
+        "pdf_x_end": 533.1,
+        "pdf_y_end": 550.6
+      }
+    ]
   },
   {
     "last_name": "Tonković",
@@ -14852,7 +15089,20 @@
     "pdf_file": "7-crnogorska-omladinska.pdf",
     "soldier_id": "0028000361",
     "birth_place": "Kolašin",
-    "pdf_x_end": 219.2
+    "pdf_x_end": 219.2,
+    "other_sources": [
+      {
+        "soldier_id": "0028010391",
+        "name": "Vlahović Sava",
+        "additional_info": "rodom iz Kolašina.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 257.6,
+        "pdf_y": 770.4,
+        "pdf_x_end": 472.7,
+        "pdf_y_end": 780.9
+      }
+    ]
   },
   {
     "last_name": "Vojinović",
@@ -15587,6 +15837,7 @@
     "death_place": "u Bezjakovom Brdu kod Karlovca",
     "pdf_x_end": 583.8,
     "pdf_y_end": 738.7,
+    "birth_place": "Krnjice, Bar",
     "other_sources": [
       {
         "soldier_id": "9084001127",
@@ -15614,12 +15865,10 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "birth_place": "Krnjice, Bar",
+    "birth_year": "1925",
     "borrowed": [
-      "birth_place",
       "birth_year"
-    ],
-    "birth_year": "1925"
+    ]
   },
   {
     "last_name": "Vučetić",
@@ -16587,7 +16836,6 @@
     "fathers_name": "",
     "full_name": "Čukić Mileva",
     "additional_info": "D. Ržanica, Ivangrad",
-    "birth_year": "",
     "pdf_page": 36,
     "pdf_y": 107.7,
     "pdf_x": 97.9,
@@ -16596,7 +16844,50 @@
     "soldier_id": "0028000401",
     "birth_place": "D. Ržanica, Ivangrad",
     "pdf_x_end": 234.3,
-    "pdf_x_left": 71.2
+    "pdf_x_left": 71.2,
+    "other_sources": [
+      {
+        "soldier_id": "0028010435",
+        "name": "Čukić Mileva",
+        "additional_info": "rodom iz Donje Ržanice, Ivangrad, 1. četa 3. bataljona, poginula 13. aprila 1944. u Crncima, Piperi.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 22,
+        "pdf_x": 226.6,
+        "pdf_y": 784.1,
+        "pdf_x_end": 582.6,
+        "pdf_y_end": 807.3
+      },
+      {
+        "soldier_id": "9035002085",
+        "name": "Čukić Božinina Mileva",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1925; mjesto rođenja Donja Ržanica; godina smrti 1944; mjesto pogibije Danilovgrad",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 53,
+        "pdf_x": 95.0,
+        "pdf_y": 282.2,
+        "pdf_x_end": 509.2,
+        "pdf_y_end": 292.9,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023002421",
+        "name": "Čukić (Božina) Mileva",
+        "additional_info": "rođena 1925, Ivangrad. Crnogorka, poginula 1944. u NOBu, Spuž",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=76",
+        "source_page": 76,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ],
+    "unit_detail": "1. četa, 3. bataljon",
+    "death_type": "poginuo",
+    "death_date": "13.04.1944",
+    "death_place": "Crnci, Piperi",
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_year",
+      "ethnicity"
+    ],
+    "ethnicity": "Crnogorka"
   },
   {
     "last_name": "Čukić",
@@ -17476,7 +17767,20 @@
     "soldier_id": "0028000424",
     "birth_place": "Tucanje, Ivangrad",
     "pdf_x_end": 220.0,
-    "pdf_x_left": 71.4
+    "pdf_x_left": 71.4,
+    "other_sources": [
+      {
+        "soldier_id": "0028010458",
+        "name": "Šabotić Emin",
+        "additional_info": "rodom iz Tucanja, Ivangrad.",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 262.7,
+        "pdf_y": 355.5,
+        "pdf_x_end": 513.4,
+        "pdf_y_end": 366.0
+      }
+    ]
   },
   {
     "last_name": "Šapurić",
@@ -17717,7 +18021,20 @@
     "soldier_id": "0028000429",
     "birth_place": "Muvrovac, Ivangrad",
     "pdf_x_end": 218.6,
-    "pdf_x_left": 64.9
+    "pdf_x_left": 64.9,
+    "other_sources": [
+      {
+        "soldier_id": "0028010464",
+        "name": "Škrijelj Hajriz",
+        "additional_info": "rodom iz Muvrovca, Ivangrad,",
+        "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
+        "pdf_page": 23,
+        "pdf_x": 263.0,
+        "pdf_y": 484.6,
+        "pdf_x_end": 533.8,
+        "pdf_y_end": 495.1
+      }
+    ]
   },
   {
     "last_name": "Šljivančanin",
@@ -18469,38 +18786,6 @@
     "birth_year": "1920"
   },
   {
-    "last_name": "Bojović",
-    "middle_name": "",
-    "first_name": "Anka",
-    "fathers_name": "",
-    "full_name": "Bojović Anka",
-    "additional_info": "rodom iz Kanjuha, Andrijevica.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 405.9,
-    "pdf_x": 256.6,
-    "pdf_y_end": 416.4,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010036",
-    "pdf_x_end": 522.5
-  },
-  {
-    "last_name": "Bojović",
-    "middle_name": "",
-    "first_name": "Vojislav",
-    "fathers_name": "",
-    "full_name": "Bojović Vojislav",
-    "additional_info": "rodom iz Kanjuha, Andrijevica.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 416.7,
-    "pdf_x": 256.8,
-    "pdf_y_end": 427.2,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010037",
-    "pdf_x_end": 559.3
-  },
-  {
     "last_name": "Borčić",
     "middle_name": "",
     "first_name": "Milan",
@@ -18560,7 +18845,7 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "UbliKuči, Podgorica",
+    "birth_place": "Ubli Kuči, Podgorica",
     "borrowed": [
       "birth_place",
       "birth_year",
@@ -18616,22 +18901,6 @@
       "ethnicity"
     ],
     "ethnicity": "Crnogorac"
-  },
-  {
-    "last_name": "Bulić",
-    "middle_name": "",
-    "first_name": "Milić",
-    "fathers_name": "",
-    "full_name": "Bulić Milić",
-    "additional_info": "rodom iz Šekulara, Ivangrad.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 669.1,
-    "pdf_x": 257.1,
-    "pdf_y_end": 679.6,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010050",
-    "pdf_x_end": 513.4
   },
   {
     "last_name": "Bućković",
@@ -18789,22 +19058,6 @@
     "death_place": "Javorje, Kolašin",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 574.2
-  },
-  {
-    "last_name": "Dukić",
-    "middle_name": "",
-    "first_name": "Miličko",
-    "fathers_name": "",
-    "full_name": "Dukić Miličko",
-    "additional_info": "rodom iz Andrijevice.",
-    "birth_year": "",
-    "pdf_page": 6,
-    "pdf_y": 663.4,
-    "pdf_x": 217.0,
-    "pdf_y_end": 673.9,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010078",
-    "pdf_x_end": 448.4
   },
   {
     "last_name": "Duletić",
@@ -18965,23 +19218,6 @@
     "death_date": "1945",
     "unit_detail": "2. četa",
     "pdf_x_end": 611.6
-  },
-  {
-    "last_name": "Garčević",
-    "middle_name": "",
-    "first_name": "Vukić",
-    "fathers_name": "",
-    "full_name": "Garčević Vukić",
-    "additional_info": "rodom iz Mašnice, Andrijevica, 1. četa 4. bataljona.",
-    "birth_year": "",
-    "pdf_page": 5,
-    "pdf_y": 405.4,
-    "pdf_x": 255.4,
-    "pdf_y_end": 426.4,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010087",
-    "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 611.5
   },
   {
     "last_name": "Gašić",
@@ -19189,22 +19425,6 @@
     "death_place": "Trešnjevik, Andrijevica"
   },
   {
-    "last_name": "Jukić",
-    "middle_name": "",
-    "first_name": "Dimitrije",
-    "fathers_name": "",
-    "full_name": "Jukić Dimitrije",
-    "additional_info": "rodom iz Andrijevice.",
-    "birth_year": "",
-    "pdf_page": 9,
-    "pdf_y": 596.0,
-    "pdf_x": 255.8,
-    "pdf_y_end": 606.5,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010130",
-    "pdf_x_end": 492.2
-  },
-  {
     "last_name": "Kajević",
     "middle_name": "Ahmetov",
     "first_name": "Suljo",
@@ -19279,22 +19499,6 @@
     "pdf_x_end": 614.0
   },
   {
-    "last_name": "Kastratović",
-    "middle_name": "",
-    "first_name": "Golub",
-    "fathers_name": "",
-    "full_name": "Kastratović Golub",
-    "additional_info": "rodom iz Ulotine, Andrijevica.",
-    "birth_year": "",
-    "pdf_page": 9,
-    "pdf_y": 869.6,
-    "pdf_x": 259.0,
-    "pdf_y_end": 880.1,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010140",
-    "pdf_x_end": 561.8
-  },
-  {
     "last_name": "Kljajić",
     "middle_name": "",
     "first_name": "Ljubo",
@@ -19312,6 +19516,7 @@
     "death_place": "Zaton, Bijelo Polje",
     "unit_detail": "prateća četa",
     "pdf_x_end": 578.5,
+    "birth_place": "Raškova, Donja Morača, Kolašin",
     "other_sources": [
       {
         "soldier_id": "9023003098",
@@ -19322,13 +19527,11 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Raško, Kolašin",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Crnogorac",
     "birth_year": "1922"
   },
   {
@@ -19369,6 +19572,7 @@
     "death_place": "Bijelo Polje",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 577.4,
+    "birth_place": "Ržanica, Ivangrad",
     "other_sources": [
       {
         "soldier_id": "9035001683",
@@ -19383,12 +19587,10 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "birth_place": "Zagorje, Berane",
+    "birth_year": "1912",
     "borrowed": [
-      "birth_place",
       "birth_year"
-    ],
-    "birth_year": "1912"
+    ]
   },
   {
     "last_name": "Kopguta",
@@ -19429,74 +19631,6 @@
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 614.1,
     "death_place": "Dobra, Karlovac"
-  },
-  {
-    "last_name": "Kovačević",
-    "middle_name": "Ružin",
-    "first_name": "Jovan",
-    "fathers_name": "Ruža",
-    "full_name": "Kovačević Ružin Jovan",
-    "additional_info": "rođ. 1924. u Grahovu, Nikšić, 2. četa 3. bataljona, poginuo 1. januara 1945. na Pržištima, Mojkovac.",
-    "birth_year": "1924",
-    "pdf_page": 10,
-    "pdf_y": 574.1,
-    "pdf_x": 221.6,
-    "pdf_y_end": 595.4,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010165",
-    "death_type": "poginuo",
-    "death_date": "01.01.1945",
-    "death_place": "na Pržištima, Mojkovac",
-    "unit_detail": "2. četa, 3. bataljon",
-    "pdf_x_end": 577.5,
-    "other_sources": [
-      {
-        "soldier_id": "9035007776",
-        "name": "Kovačević Ružin Jovan",
-        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Nikšić: godina rođenja 1924; mjesto rođenja Podbožur; godina smrti 1945; mjesto pogibije Mojkovac",
-        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-        "pdf_page": 196,
-        "pdf_x": 57.1,
-        "pdf_y": 183.4,
-        "pdf_x_end": 456.9,
-        "pdf_y_end": 192.6,
-        "ref_book": "spomenica-crnogorskim-antifasistima"
-      },
-      {
-        "soldier_id": "9089000152",
-        "name": "Kovačević Ružin Jovan",
-        "additional_info": "Borci iz Grahova pali u NOR-u i revoluciji 1941-1945. godine: KOVAČEVIĆ Ružin JOVAN, rođen 1924. godine u Podbožuru, seljak; borac od 1944. godine; poginuo 1, januara 1945. godine, na Pržištima kod Mojkovca kao borac 2. bataljona 7. omladinske crnogorske udarne brigade u borbi protiv njemačkih snaga.",
-        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010235&pg_seq=120",
-        "source_page": 117,
-        "ref_book": "revolucionarno-grahovo"
-      },
-      {
-        "soldier_id": "9080000387",
-        "name": "Kovačević Ruže Jovan",
-        "additional_info": "Imena palih boraca u toku NOR-a, iz sreza nikšićkog: rođen 1924, Podbožur; poginuo 1944, Mojkovac",
-        "pdf_file": "niksicki-odred-pali-borci.pdf",
-        "pdf_page": 9,
-        "pdf_x": 22.6,
-        "pdf_y": 155.7,
-        "pdf_x_end": 368.7,
-        "pdf_y_end": 166.1,
-        "ref_book": "niksicki-odred-pali-borci"
-      },
-      {
-        "soldier_id": "9023004447",
-        "name": "Kovačević (Ruža) Jovan",
-        "additional_info": "rođen 1924, Podbožur (Nikšić). Crnogorac, poginuo 1944. u NOBu, Mojkovac",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=129",
-        "source_page": 129,
-        "ref_book": "zrtve-rata-1964-crg"
-      }
-    ],
-    "birth_place": "Podbožur, Nikšić",
-    "borrowed": [
-      "birth_place",
-      "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
   },
   {
     "last_name": "Krković",
@@ -19801,7 +19935,8 @@
     "death_date": "21.08.1944",
     "death_place": "Javorje, Kolašin",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 615.4
+    "pdf_x_end": 615.4,
+    "birth_place": "Ivangrad"
   },
   {
     "last_name": "Marsenić",
@@ -19822,22 +19957,6 @@
     "death_place": "Jagodnjak, Sarajevo",
     "unit_detail": "2. četa, 3. bataljon",
     "pdf_x_end": 615.5
-  },
-  {
-    "last_name": "Matović",
-    "middle_name": "",
-    "first_name": "Milija",
-    "fathers_name": "",
-    "full_name": "Matović Milija",
-    "additional_info": "rodom iz Šekulara. Ivangrad.",
-    "birth_year": "",
-    "pdf_page": 13,
-    "pdf_y": 692.1,
-    "pdf_x": 260.8,
-    "pdf_y_end": 702.3,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010219",
-    "pdf_x_end": 537.6
   },
   {
     "last_name": "Mijović",
@@ -19938,7 +20057,7 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
-    "birth_place": "Pšanik, Lučani",
+    "birth_place": "Kotraža",
     "borrowed": [
       "birth_place",
       "death_date",
@@ -19966,6 +20085,7 @@
     "death_date": "04.1944",
     "death_place": "Čađavica, Nikšić",
     "pdf_x_end": 577.1,
+    "birth_place": "Velimlje, Nikšić",
     "other_sources": [
       {
         "soldier_id": "9080000684",
@@ -19980,12 +20100,10 @@
         "ref_book": "niksicki-odred-pali-borci"
       }
     ],
-    "birth_place": "Macavare",
+    "birth_year": "1927",
     "borrowed": [
-      "birth_place",
       "birth_year"
-    ],
-    "birth_year": "1927"
+    ]
   },
   {
     "last_name": "Mirković",
@@ -20295,23 +20413,6 @@
     "pdf_x_end": 607.2
   },
   {
-    "last_name": "Obradović",
-    "middle_name": "",
-    "first_name": "Miladin",
-    "fathers_name": "",
-    "full_name": "Obradović Miladin",
-    "additional_info": "rodom iz Lubnice, Ivangrad, 2. četa 4. bataljona.",
-    "birth_year": "",
-    "pdf_page": 15,
-    "pdf_y": 792.0,
-    "pdf_x": 250.5,
-    "pdf_y_end": 813.1,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010266",
-    "unit_detail": "2. četa, 4. bataljon",
-    "pdf_x_end": 606.6
-  },
-  {
     "last_name": "Ognjenović",
     "middle_name": "Spasojev",
     "first_name": "Mij",
@@ -20365,6 +20466,7 @@
     "death_place": "Sjenica",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 583.6,
+    "birth_place": "Lijeva Rijeka",
     "other_sources": [
       {
         "soldier_id": "9035014548",
@@ -20387,13 +20489,11 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Pelev Brijeg, Podgorica",
+    "birth_year": "1923",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1923",
     "ethnicity": "Crnogorac"
   },
   {
@@ -20727,7 +20827,7 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Poda, Cetinje",
+    "birth_place": "Podi",
     "borrowed": [
       "birth_place",
       "ethnicity"
@@ -20752,6 +20852,7 @@
     "death_date": "21.08.1944",
     "death_place": "Javorje, Kolašin",
     "unit_detail": "3. četa, 4. bataljon",
+    "birth_place": "Kuči, Titograd",
     "other_sources": [
       {
         "soldier_id": "9035014755",
@@ -20766,12 +20867,10 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "birth_place": "Vidjelu Kuči, Podgorica",
+    "birth_year": "1927",
     "borrowed": [
-      "birth_place",
       "birth_year"
-    ],
-    "birth_year": "1927"
+    ]
   },
   {
     "last_name": "Radović",
@@ -21158,22 +21257,6 @@
     "pdf_x_end": 578.4
   },
   {
-    "last_name": "Stijović",
-    "middle_name": "",
-    "first_name": "Dragomir",
-    "fathers_name": "",
-    "full_name": "Stijović Dragomir",
-    "additional_info": "rodom iz Ivangrada.",
-    "birth_year": "",
-    "pdf_page": 20,
-    "pdf_y": 654.6,
-    "pdf_x": 221.6,
-    "pdf_y_end": 665.1,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010366",
-    "pdf_x_end": 464.1
-  },
-  {
     "last_name": "Stojanović",
     "middle_name": "",
     "first_name": "Magda",
@@ -21191,7 +21274,8 @@
     "death_date": "21.08.1944",
     "death_place": "Javorje, Kolašin",
     "unit_detail": "3. četa, 4. bataljon",
-    "pdf_x_end": 577.8
+    "pdf_x_end": 577.8,
+    "birth_place": "Trešnjevica, Ivangrad"
   },
   {
     "last_name": "Tejić",
@@ -21214,22 +21298,6 @@
     "pdf_x_end": 609.9
   },
   {
-    "last_name": "Tmušić",
-    "middle_name": "",
-    "first_name": "Vuko",
-    "fathers_name": "",
-    "full_name": "Tmušić Vuko",
-    "additional_info": "rodom iz Ivangrada.",
-    "birth_year": "",
-    "pdf_page": 21,
-    "pdf_y": 572.0,
-    "pdf_x": 252.7,
-    "pdf_y_end": 582.5,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010380",
-    "pdf_x_end": 460.6
-  },
-  {
     "last_name": "Tomić",
     "middle_name": "N",
     "first_name": "Mitar",
@@ -21247,22 +21315,6 @@
     "death_date": "06.05.1945",
     "death_place": "Luke, Karlovac",
     "pdf_x_end": 608.8
-  },
-  {
-    "last_name": "Tomović",
-    "middle_name": "",
-    "first_name": "Branko",
-    "fathers_name": "",
-    "full_name": "Tomović Branko",
-    "additional_info": "rodom iz Šekulara, Ivangrad.",
-    "birth_year": "",
-    "pdf_page": 21,
-    "pdf_y": 540.1,
-    "pdf_x": 252.7,
-    "pdf_y_end": 550.6,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010384",
-    "pdf_x_end": 533.1
   },
   {
     "last_name": "Šćepanović",
@@ -21374,6 +21426,7 @@
     "death_place": "Duga Poljana, Pešter",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 613.7,
+    "birth_place": "Rovci, Kolašin",
     "other_sources": [
       {
         "soldier_id": "9023003173",
@@ -21392,30 +21445,12 @@
         "ref_book": "kolasin"
       }
     ],
-    "birth_place": "Vlahovići, Kolašin",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "ethnicity": "Crnogorac",
     "birth_year": "1924"
-  },
-  {
-    "last_name": "Vlahović",
-    "middle_name": "",
-    "first_name": "Sava",
-    "fathers_name": "",
-    "full_name": "Vlahović Sava",
-    "additional_info": "rodom iz Kolašina.",
-    "birth_year": "",
-    "pdf_page": 3,
-    "pdf_y": 770.4,
-    "pdf_x": 257.6,
-    "pdf_y_end": 780.9,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010391",
-    "pdf_x_end": 472.7
   },
   {
     "last_name": "Vojinović",
@@ -21683,6 +21718,7 @@
     "death_place": "na Semolju, Sinjajevina",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 608.4,
+    "birth_place": "Žabljak",
     "other_sources": [
       {
         "soldier_id": "9035002062",
@@ -21705,13 +21741,11 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Štitari, Berane",
+    "birth_year": "1924",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1924",
     "ethnicity": "Crnogorac"
   },
   {
@@ -21768,55 +21802,6 @@
     "ethnicity": "Srbin"
   },
   {
-    "last_name": "Čukić",
-    "middle_name": "",
-    "first_name": "Mileva",
-    "fathers_name": "",
-    "full_name": "Čukić Mileva",
-    "additional_info": "rodom iz Donje Ržanice, Ivangrad, 1. četa 3. bataljona, poginula 13. aprila 1944. u Crncima, Piperi.",
-    "pdf_page": 22,
-    "pdf_y": 784.1,
-    "pdf_x": 226.6,
-    "pdf_y_end": 807.3,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010435",
-    "death_type": "poginuo",
-    "death_date": "13.04.1944",
-    "death_place": "Crnci, Piperi",
-    "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 582.6,
-    "other_sources": [
-      {
-        "soldier_id": "9035002085",
-        "name": "Čukić Božinina Mileva",
-        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Berane: godina rođenja 1925; mjesto rođenja Donja Ržanica; godina smrti 1944; mjesto pogibije Danilovgrad",
-        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-        "pdf_page": 53,
-        "pdf_x": 95.0,
-        "pdf_y": 282.2,
-        "pdf_x_end": 509.2,
-        "pdf_y_end": 292.9,
-        "ref_book": "spomenica-crnogorskim-antifasistima"
-      },
-      {
-        "soldier_id": "9023002421",
-        "name": "Čukić (Božina) Mileva",
-        "additional_info": "rođena 1925, Ivangrad. Crnogorka, poginula 1944. u NOBu, Spuž",
-        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=76",
-        "source_page": 76,
-        "ref_book": "zrtve-rata-1964-crg"
-      }
-    ],
-    "birth_place": "Donja Ržanica, Berane",
-    "borrowed": [
-      "birth_place",
-      "birth_year",
-      "ethnicity"
-    ],
-    "birth_year": "1925",
-    "ethnicity": "Crnogorka"
-  },
-  {
     "last_name": "Čupić",
     "middle_name": "",
     "first_name": "Mišo",
@@ -21834,7 +21819,8 @@
     "death_date": "07.03.1945",
     "death_place": "u Rudom brdu, Prača",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 582.9
+    "pdf_x_end": 582.9,
+    "birth_place": "Andrijevica"
   },
   {
     "last_name": "Čvorić",
@@ -21930,22 +21916,6 @@
     "pdf_x_end": 607.9
   },
   {
-    "last_name": "Šabotić",
-    "middle_name": "",
-    "first_name": "Emin",
-    "fathers_name": "",
-    "full_name": "Šabotić Emin",
-    "additional_info": "rodom iz Tucanja, Ivangrad.",
-    "birth_year": "",
-    "pdf_page": 23,
-    "pdf_y": 355.5,
-    "pdf_x": 262.7,
-    "pdf_y_end": 366.0,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010458",
-    "pdf_x_end": 513.4
-  },
-  {
     "last_name": "Šekularac",
     "middle_name": "Milijin",
     "first_name": "Milivoje",
@@ -21984,22 +21954,6 @@
     "death_place": "Bosanski Novi",
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 619.2
-  },
-  {
-    "last_name": "Škrijelj",
-    "middle_name": "",
-    "first_name": "Hajriz",
-    "fathers_name": "",
-    "full_name": "Škrijelj Hajriz",
-    "additional_info": "rodom iz Muvrovca, Ivangrad,",
-    "birth_year": "",
-    "pdf_page": 23,
-    "pdf_y": 484.6,
-    "pdf_x": 263.0,
-    "pdf_y_end": 495.1,
-    "pdf_file": "7-crnogorska-zbornik-poginuli.pdf",
-    "soldier_id": "0028010464",
-    "pdf_x_end": 533.8
   },
   {
     "last_name": "Šoškić",

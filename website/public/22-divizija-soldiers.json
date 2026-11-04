@@ -10661,7 +10661,7 @@
     "full_name": "Jović M Živan",
     "additional_info": "Orašje, 6. :XII 1944, Duga Poljana",
     "birth_place": "Orašje",
-    "death_date": "6. :XII 1944",
+    "death_date": "06.12.1944",
     "death_type": "poginuo",
     "death_place": "Duga Poljana",
     "unit_detail": "12. srpska brigada",
@@ -10691,7 +10691,15 @@
         "pdf_y_end": 97.4,
         "unit_file": "12-srpska-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "16.12.1944",
+          "place": "Sjenica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -14199,7 +14207,7 @@
     "full_name": "Manasijević Đ Milić",
     "additional_info": "D. Stajovac, 3. VIII 1944.",
     "birth_year": "",
-    "death_date": "3. VIII 1944. |",
+    "death_date": "03.08.1944",
     "unit_detail": "10. srpska brigada",
     "pdf_page": 17,
     "pdf_y": 334.707,
@@ -16335,7 +16343,6 @@
     "fathers_name": "T",
     "full_name": "Milojević T Momir",
     "additional_info": "Modra Stena, 12. IV 1945, Bosut",
-    "birth_year": "",
     "birth_place": "Modra Stena",
     "death_date": "12.04.1945",
     "death_type": "poginuo",
@@ -16387,7 +16394,23 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0087000232",
+        "name": "Milojević Tihomira Momir",
+        "additional_info": "rođen 1920. godine, Modra stena, Babušnica; poginuo 12.04.1945, Batrovci na reci Bosutu.",
+        "pdf_file": "8-srpska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 50.8,
+        "pdf_y": 428.1,
+        "pdf_x_end": 357.1,
+        "pdf_y_end": 448.4,
+        "unit_file": "8-srpska-soldiers.json"
       }
+    ],
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_year"
     ]
   },
   {
@@ -23916,11 +23939,10 @@
   {
     "last_name": "Petrunović",
     "middle_name": "R",
-    "first_name": "Vojielav",
+    "first_name": "Vojislav",
     "fathers_name": "R",
-    "full_name": "Petrunović R Vojielav",
+    "full_name": "Petrunović R Vojislav",
     "additional_info": "Crna Trava, 26. VI 1944, Oruglica",
-    "birth_year": "",
     "birth_place": "Crna Trava",
     "death_date": "26.06.1944",
     "death_type": "poginuo",
@@ -23932,7 +23954,27 @@
     "pdf_y_end": 134.6,
     "pdf_file": "22-divizija.pdf",
     "soldier_id": "0096000602",
-    "pdf_x_end": 334.5
+    "pdf_x_end": 334.5,
+    "birth_year": "1927",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "građevinski radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0090000256",
+        "name": "Petrunović Radovana Vojislav",
+        "additional_info": "1927, Crna Trava, građevinski radnik. U NOVJ od marta 1944, borac. Poginuo 26. juna 1944. todine kod Oruglice, Jablanica.",
+        "pdf_file": "12-srpska.pdf",
+        "pdf_page": 31,
+        "pdf_x": 37.0,
+        "pdf_y": 427.0,
+        "pdf_x_end": 343.4,
+        "pdf_y_end": 458.6,
+        "unit_file": "12-srpska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Pešić",
@@ -24979,7 +25021,7 @@
     "additional_info": "Bitvrđa, 5. :XII 1944, Novi Pazar",
     "birth_year": "1924",
     "birth_place": "Bitvrđa",
-    "death_date": "5. :XII 1944",
+    "death_date": "05.12.1944",
     "death_type": "poginuo",
     "death_place": "Novi Pazar",
     "unit_detail": "8. srpska brigada",
@@ -25028,7 +25070,15 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.11.1944",
+          "place": "Novi Pazar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ristić",

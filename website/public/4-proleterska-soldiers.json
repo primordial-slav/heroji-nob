@@ -5083,7 +5083,22 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "intendantura",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0040020079",
+        "name": "Božović Milije Dušan",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Brigadni Sanitet I Bolnica: borac, Golubovci, Zeta, 1896, zemljoradnik, Umro poslije rata",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 5,
+        "pdf_x": 173.5,
+        "pdf_y": 244.0,
+        "pdf_x_end": 486.1,
+        "pdf_y_end": 253.0
+      }
+    ],
+    "death_type": "umro",
+    "death_after_war": true
   },
   {
     "last_name": "Božović",
@@ -14653,7 +14668,29 @@
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "unit_detail": "5. bataljon"
+    "unit_detail": "5. bataljon",
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "17.01.1945",
+    "death_place": "Lovas, Srem",
+    "other_sources": [
+      {
+        "soldier_id": "0054000784",
+        "name": "Ivetić Marka Jovo",
+        "additional_info": "vodnik voda, rođen 1919'. u s. Kazanci, Bosansko Grahovo, poginuo 17. 1. 1945. kod s. Lovas, Srem",
+        "pdf_file": "12-krajiska-poginuli.pdf",
+        "pdf_page": 12,
+        "pdf_x": 76.9,
+        "pdf_y": 453.7,
+        "pdf_x_end": 357.0,
+        "pdf_y_end": 472.5,
+        "unit_file": "12-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivetić",
@@ -18815,7 +18852,8 @@
     "death_date": "10.06.1943",
     "death_place": "na Ljubinom Grobu na Zelengori",
     "rank": "borac",
-    "unit_detail": "3. bataljon"
+    "unit_detail": "3. bataljon",
+    "birth_place": "Danilovgrad"
   },
   {
     "last_name": "Jovović",
@@ -25763,11 +25801,11 @@
     "unit_detail": "1. bataljon"
   },
   {
-    "last_name": "Lekiq",
+    "last_name": "Lekić",
     "middle_name": "Riste",
     "first_name": "Nikola",
     "fathers_name": "Risto",
-    "full_name": "Lekiq Riste Nikola",
+    "full_name": "Lekić Riste Nikola",
     "additional_info": "borac 1. bataljona, rođen 1905, Seoca, Bar, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1932, poginuo u Miljevini 13. juna 1943. godine.",
     "birth_year": "1905",
     "pdf_page": 47,
@@ -25785,7 +25823,42 @@
     "death_place": "Miljevina",
     "rank": "borac",
     "unit_detail": "1. bataljon",
-    "party": "KPJ 1932"
+    "party": "KPJ 1932",
+    "other_sources": [
+      {
+        "soldier_id": "9084001252",
+        "name": "Lekić Rista Nikola",
+        "additional_info": "Poginuli, strijeljani i umrli borci NOR-a 1941-1945. sa teritorije Lovćenskog NOP odreda, Barski srez, Crmnica: ro đeč 15. novembra 1905. u Donjim Seocima, Crmnica, zemljoradnik, poginuo u ljeto 1943. na Majevici, u Četvrtoj crnogorskoj proleterskoj brigadi.",
+        "pdf_file": "lovcenski-odred-pali-borci.pdf",
+        "pdf_page": 61,
+        "pdf_x": 161.3,
+        "pdf_y": 181.2,
+        "pdf_x_end": 296.2,
+        "pdf_y_end": 222.8,
+        "pdf_x_left": 161.3,
+        "ref_book": "lovcenski-odred-pali-borci"
+      },
+      {
+        "soldier_id": "9035000937",
+        "name": "Lekić Rista Nikola",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Bar: godina rođenja 1905; mjesto rođenja Donji Seoci; godina smrti 1943; mjesto pogibije MiljevinaBosna",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 25,
+        "pdf_x": 76.3,
+        "pdf_y": 430.6,
+        "pdf_x_end": 506.8,
+        "pdf_y_end": 441.0,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
+      },
+      {
+        "soldier_id": "9023000204",
+        "name": "Lekić (Risto) Nikola",
+        "additional_info": "rođen 1910, Seoca (Bar). Crnogorac, poginuo 1943. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=7",
+        "source_page": 7,
+        "ref_book": "zrtve-rata-1964-crg"
+      }
+    ]
   },
   {
     "last_name": "Lekić",
@@ -27256,7 +27329,20 @@
     "death_place": "u Omerovim Vodama na planini Ozren u Istočnoj Bosni",
     "unit_detail": "2. četa, 5. bataljon",
     "rank": "komandir čete",
-    "party": "KPJ 1941"
+    "party": "KPJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0040020413",
+        "name": "Lopušina Savin Mijat",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: komandir voda, Strug, Uskoci, 1921, zemljoradnik član zemljoradnik član, SKOJ-a KPJ, Poginuo 1943. na Ozrenu",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 71,
+        "pdf_x": 169.4,
+        "pdf_y": 429.4,
+        "pdf_x_end": 476.3,
+        "pdf_y_end": 438.4
+      }
+    ]
   },
   {
     "last_name": "Lopušina",
@@ -45451,6 +45537,17 @@
         "pdf_y_end": 301.6
       },
       {
+        "soldier_id": "0040020696",
+        "name": "Rakočević Boška Rade",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Kolašin, 1915, radnik, kandidat KPJ, Poginuo 1943, Sutjeska",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 59,
+        "pdf_x": 159.2,
+        "pdf_y": 550.9,
+        "pdf_x_end": 445.9,
+        "pdf_y_end": 559.9
+      },
+      {
         "soldier_id": "9023002851",
         "name": "Rakočević (Boško) Rade",
         "additional_info": "rođen 1918, Blatina (Kolašin). Crnogorac, poginuo 1943. u NOBu, Sutjeska",
@@ -50665,7 +50762,20 @@
     "occupation": "đak",
     "rank": "borac",
     "unit_detail": "3. četa, 2. bataljon",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0040020775",
+        "name": "Sušić Milorad",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Kazanci",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 35,
+        "pdf_x": 161.2,
+        "pdf_y": 292.5,
+        "pdf_x_end": 444.6,
+        "pdf_y_end": 301.5
+      }
+    ]
   },
   {
     "last_name": "Svitlica",
@@ -57476,6 +57586,29 @@
         "pdf_y": 165.0,
         "pdf_x_end": 368.9,
         "pdf_y_end": 190.2
+      },
+      {
+        "soldier_id": "0040020901",
+        "name": "Ćorić Sava Radoje",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Podbišće, 1905, zemljoradnik, član KPJ Poginuo 1943,, Sutjeska",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 61,
+        "pdf_x": 159.7,
+        "pdf_y": 422.8,
+        "pdf_x_end": 451.6,
+        "pdf_y_end": 431.8
+      },
+      {
+        "soldier_id": "9035006854",
+        "name": "Ćorić Savov Radoje",
+        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Mojkovac: godina rođenja 1905; mjesto rođenja Podbišće; godina smrti 1943; mjesto pogibije Sutjeska",
+        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+        "pdf_page": 173,
+        "pdf_x": 57.8,
+        "pdf_y": 530.5,
+        "pdf_x_end": 455.2,
+        "pdf_y_end": 539.9,
+        "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
     "party": "KPJ 1936",
@@ -58520,7 +58653,8 @@
         "pdf_y_end": 607.0
       }
     ],
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "birth_place": "Štitarice"
   },
   {
     "last_name": "Čoguric-Čupić",
@@ -64581,7 +64715,8 @@
     "death_type": "poginuo",
     "death_date": "04.1943",
     "rank": "bolničarka",
-    "pdf_x_end": 355.6
+    "pdf_x_end": 355.6,
+    "birth_place": "Sajković, Bosna"
   },
   {
     "last_name": "",
@@ -65500,7 +65635,7 @@
     "pdf_y_end": 75.6,
     "pdf_file": "4-proleterska-poginuli.pdf",
     "soldier_id": "0040010038",
-    "birth_place": "Budimlju (Ivangrad)",
+    "birth_place": "Budimlja (Ivangrad)",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "01.1945",
@@ -66197,7 +66332,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 357.0
+    "pdf_x_end": 357.0,
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Barać",
@@ -66602,7 +66738,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 367.1
+    "pdf_x_end": 367.1,
+    "birth_place": "Dalmacija"
   },
   {
     "last_name": "Batezić",
@@ -66725,7 +66862,8 @@
     "death_date": "07.1943",
     "rank": "desetar",
     "pdf_x_end": 369.3,
-    "death_place": "Istočna Bosna"
+    "death_place": "Istočna Bosna",
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Beganović",
@@ -66781,7 +66919,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 367.2
+    "pdf_x_end": 367.2,
+    "birth_place": "Bjelopavlići"
   },
   {
     "last_name": "Begović",
@@ -70158,7 +70297,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 356.9
+    "pdf_x_end": 356.9,
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Damjanović",
@@ -70402,7 +70542,8 @@
     "death_date": "05.1943",
     "rank": "borac",
     "pdf_x_end": 370.2,
-    "death_place": "Jasenovo Polje"
+    "death_place": "Jasenovo Polje",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Dašić",
@@ -70992,7 +71133,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 356.9
+    "pdf_x_end": 356.9,
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Dimitrijević",
@@ -71593,7 +71735,8 @@
     "death_date": "08.1943",
     "rank": "borac",
     "pdf_x_end": 351.8,
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Dragović",
@@ -71860,7 +72003,8 @@
     "death_date": "08.1943",
     "rank": "borac",
     "pdf_x_end": 351.0,
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Drobnjak",
@@ -72372,7 +72516,7 @@
     "pdf_y_end": 228.4,
     "pdf_file": "4-proleterska-poginuli.pdf",
     "soldier_id": "0040010315",
-    "birth_place": "Gornjoj Ržanici (Andrijevica)",
+    "birth_place": "Gornja Ržanica (Andrijevica)",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "proljeće 1944",
@@ -73994,7 +74138,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 369.4
+    "pdf_x_end": 369.4,
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Grdinić",
@@ -74313,7 +74458,8 @@
     "death_date": "03.1943",
     "death_place": "Vilića gumno",
     "rank": "borac",
-    "pdf_x_end": 355.1
+    "pdf_x_end": 355.1,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Grujić",
@@ -75488,7 +75634,7 @@
     "pdf_file": "4-proleterska-poginuli.pdf",
     "soldier_id": "0040010438",
     "pdf_x_end": 351.5,
-    "birth_place": "Mašnici (An-drijevica)",
+    "birth_place": "Mašnica (Andrijevica)",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "proljeće 1944",
@@ -75620,7 +75766,8 @@
     "death_type": "poginuo",
     "death_date": "08.1943",
     "pdf_x_end": 351.5,
-    "death_place": "Majevica"
+    "death_place": "Majevica",
+    "birth_place": "Crna Gora"
   },
   {
     "last_name": "Ivančević",
@@ -80912,7 +81059,8 @@
     "death_date": "03.1943",
     "death_place": "Vilića gumno",
     "rank": "borac",
-    "pdf_x_end": 364.0
+    "pdf_x_end": 364.0,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Komatina",
@@ -84241,7 +84389,8 @@
     "death_type": "poginuo",
     "death_date": "08.1943",
     "rank": "borac",
-    "pdf_x_end": 351.7
+    "pdf_x_end": 351.7,
+    "birth_place": "Uskoci"
   },
   {
     "last_name": "Lopušina",
@@ -84283,7 +84432,8 @@
     "death_type": "poginuo",
     "death_date": "08.1943",
     "rank": "borac",
-    "pdf_x_end": 351.5
+    "pdf_x_end": 351.5,
+    "birth_place": "Uskoci"
   },
   {
     "last_name": "Lovren",
@@ -84602,12 +84752,11 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "08.1942",
-    "birth_place": "Donje Selo, Cetinje",
+    "birth_place": "Donja Sela, Ljubotinj",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Lubarda",
@@ -85101,7 +85250,8 @@
     "death_date": "02.1943",
     "rank": "borac",
     "pdf_x_end": 358.4,
-    "death_place": "između Drežnice i Konjica"
+    "death_place": "između Drežnice i Konjica",
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Mandić",
@@ -89847,7 +89997,8 @@
         "pdf_y_end": 628.4
       }
     ],
-    "unit_detail": "5. bataljon"
+    "unit_detail": "5. bataljon",
+    "birth_place": "Timar, Uskoci"
   },
   {
     "last_name": "Minić",
@@ -90115,6 +90266,7 @@
     "death_place": "Vilića gumno",
     "rank": "borac",
     "pdf_x_end": 363.8,
+    "birth_place": "Kordun",
     "other_sources": [
       {
         "soldier_id": "9027010867",
@@ -90125,12 +90277,10 @@
         "ref_book": "zrtve-rata-1964-voj"
       }
     ],
-    "birth_place": "Banatsko Karađorđevo, Žitište",
+    "ethnicity": "Srbin",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Srbin"
+    ]
   },
   {
     "last_name": "Mitrović",
@@ -90591,12 +90741,11 @@
       }
     ],
     "unit_detail": "3. četa",
-    "birth_place": "Pitoma Loza, Danilovgrad",
+    "birth_place": "Kosovi Lug, Danilovgrad",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Mladenović",
@@ -91698,7 +91847,8 @@
     "death_date": "05.1943",
     "death_place": "Sinjajevina",
     "rank": "borac",
-    "pdf_x_end": 368.5
+    "pdf_x_end": 368.5,
+    "birth_place": "Piva"
   },
   {
     "last_name": "Nešović",
@@ -91888,7 +92038,8 @@
     "death_date": "05.1943",
     "death_place": "Sinjajevina",
     "rank": "borac",
-    "pdf_x_end": 368.5
+    "pdf_x_end": 368.5,
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Nikitović",
@@ -94428,13 +94579,18 @@
     "death_date": "04.1944",
     "death_place": "Golija",
     "pdf_x_end": 363.6,
-    "ethnicity": "Crnogorka",
-    "borrowed": [
-      "ethnicity",
-      "party"
-    ],
-    "party": "KPJ",
     "other_sources": [
+      {
+        "soldier_id": "0040020584",
+        "name": "Pekić Jovova Sofija",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Virpazar",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 73,
+        "pdf_x": 166.7,
+        "pdf_y": 483.8,
+        "pdf_x_end": 454.4,
+        "pdf_y_end": 492.8
+      },
       {
         "soldier_id": "0117000439",
         "name": "Pekić Jove Sofija",
@@ -94448,6 +94604,14 @@
         "unit_file": "centralna-bolnica-soldiers.json"
       }
     ],
+    "rank": "borac",
+    "unit_detail": "5. bataljon",
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ",
     "variants": {
       "born": [
         "1911"
@@ -97447,6 +97611,7 @@
       }
     ],
     "unit_detail": "5. bataljon",
+    "birth_place": "Strug, Uskoci",
     "variants": {
       "death": [
         {
@@ -104544,7 +104709,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 362.7
+    "pdf_x_end": 362.7,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Stojanović",
@@ -105928,7 +106094,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "pdf_x_end": 368.9
+    "pdf_x_end": 368.9,
+    "birth_place": "Mateševo"
   },
   {
     "last_name": "Tomović",
@@ -105949,7 +106116,8 @@
     "death_date": "05.1943",
     "death_place": "Sinjajevina",
     "rank": "borac",
-    "pdf_x_end": 368.9
+    "pdf_x_end": 368.9,
+    "birth_place": "Lijeva Rijeka"
   },
   {
     "last_name": "Tončić",
@@ -105969,7 +106137,8 @@
     "death_type": "poginuo",
     "death_date": "08.1943",
     "death_place": "kod Seone (istočna Bosna)",
-    "pdf_x_end": 379.1
+    "pdf_x_end": 379.1,
+    "birth_place": "Piva"
   },
   {
     "last_name": "Trebaljevac",
@@ -106285,7 +106454,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "pdf_x_end": 352.6
+    "pdf_x_end": 352.6,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Tufegdžić",
@@ -108173,7 +108343,8 @@
     "death_date": "03.1943",
     "death_place": "Vilića gumno",
     "rank": "borac",
-    "pdf_x_end": 355.0
+    "pdf_x_end": 355.0,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Vujinović",
@@ -108703,11 +108874,10 @@
     "unit_detail": "1. četa",
     "party": "KPJ",
     "birth_place": "Čevo, Cetinje",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Vujović",
@@ -113382,7 +113552,8 @@
     "death_date": "03.1943",
     "death_place": "Vilića gumno",
     "rank": "borac",
-    "pdf_x_end": 364.0
+    "pdf_x_end": 364.0,
+    "birth_place": "Kordun"
   },
   {
     "last_name": "Čukić",
@@ -113617,9 +113788,9 @@
   {
     "last_name": "Čvorović",
     "middle_name": "Dimitrija",
-    "first_name": "Alkksandar",
+    "first_name": "Aleksandar",
     "fathers_name": "Dimitrije",
-    "full_name": "Čvorović Dimitrija Alkksandar",
+    "full_name": "Čvorović Dimitrija Aleksandar",
     "additional_info": "rođen 1906. u Šareniku, (Srbija), zemljoradnik, poginuo, kao vodič, maja 1944. u zapadnoj Srbiji.",
     "birth_year": "1906",
     "pdf_page": 82,
@@ -114842,6 +115013,7 @@
     "death_place": "Sinjajevina",
     "rank": "borac",
     "pdf_x_end": 368.1,
+    "birth_place": "Piva",
     "other_sources": [
       {
         "soldier_id": "9035004875",
@@ -114856,12 +115028,10 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "birth_place": "Vrela, Žabljak",
+    "birth_year": "1910",
     "borrowed": [
-      "birth_place",
       "birth_year"
-    ],
-    "birth_year": "1910"
+    ]
   },
   {
     "last_name": "Đurović",
@@ -116119,6 +116289,7 @@
     "rank": "politički delegat voda",
     "pdf_x_end": 372.0,
     "death_place": "Drina",
+    "birth_place": "Ljubotinj",
     "other_sources": [
       {
         "soldier_id": "9035017866",
@@ -116132,10 +116303,6 @@
         "pdf_y_end": 463.5,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ],
-    "birth_place": "Ljubotinj, Šavnik",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -117711,6 +117878,7 @@
     "pdf_y_end": 231.4,
     "soldier_id": "0040020001",
     "occupation": "zemljoradnik",
+    "birth_place": "Bjelice, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9035016034",
@@ -117733,16 +117901,14 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Prediš, Šavnik",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Konjic",
     "birth_year": "1918",
@@ -117765,7 +117931,8 @@
     "pdf_y_end": 516.0,
     "soldier_id": "0040020003",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Velestovo, Cetinje"
   },
   {
     "last_name": "Aligrundić",
@@ -117787,7 +117954,8 @@
     "death_type": "poginuo",
     "death_date": "14.08.1942",
     "death_place": "Kupres",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Balabani, Titograd"
   },
   {
     "last_name": "Andesilić",
@@ -117811,12 +117979,11 @@
     "death_place": "Zelengora",
     "rank": "borac",
     "birth_place": "Komarnica, Šavnik",
+    "ethnicity": "Crnogorka",
     "borrowed": [
-      "birth_place",
       "ethnicity",
       "party"
     ],
-    "ethnicity": "Crnogorka",
     "party": "SKOJ",
     "other_sources": [
       {
@@ -117850,7 +118017,8 @@
     "pdf_y_end": 611.0,
     "soldier_id": "0040020010",
     "occupation": "domaćica",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Virak, Žabljak"
   },
   {
     "last_name": "Andrić",
@@ -117869,7 +118037,8 @@
     "pdf_y_end": 220.6,
     "soldier_id": "0040020011",
     "occupation": "student",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Baltić",
@@ -117888,7 +118057,8 @@
     "pdf_y_end": 303.7,
     "soldier_id": "0040020018",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Štitarica"
   },
   {
     "last_name": "Balić",
@@ -117908,7 +118078,8 @@
     "soldier_id": "0040020023",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Paštrovići, Budva"
   },
   {
     "last_name": "Baltić-Vičić",
@@ -117926,7 +118097,8 @@
     "pdf_x_end": 455.3,
     "pdf_y_end": 457.2,
     "soldier_id": "0040020024",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Štitarice"
   },
   {
     "last_name": "Barjamović",
@@ -117983,6 +118155,7 @@
     "death_date": "14.08.1942",
     "death_place": "Kupres",
     "party": "SKOJ",
+    "birth_place": "Orahovo, Virpazar",
     "birth_year": "1920",
     "other_sources": [
       {
@@ -118024,9 +118197,7 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Orahovo, Bar",
     "borrowed": [
-      "birth_place",
       "birth_year"
     ]
   },
@@ -118050,7 +118221,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Zelengora",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Ohrahovo, Crmnica"
   },
   {
     "last_name": "Barjamović",
@@ -118074,6 +118246,7 @@
     "death_place": "Nedajno",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Orahovo, Crmnica",
     "other_sources": [
       {
         "soldier_id": "9035000589",
@@ -118109,12 +118282,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Orahovo, Bar",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Bećirović",
@@ -118134,7 +118305,8 @@
     "soldier_id": "0040020045",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Gornja Morača"
   },
   {
     "last_name": "Bećirović",
@@ -118156,6 +118328,7 @@
     "death_date": "1942",
     "death_place": "Okolišće",
     "rank": "borac",
+    "birth_place": "Jabuka, Kolašin",
     "other_sources": [
       {
         "soldier_id": "9035005164",
@@ -118177,10 +118350,6 @@
         "source_page": 684,
         "ref_book": "kolasin"
       }
-    ],
-    "birth_place": "Jabuka, Kolašin",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -118200,7 +118369,8 @@
     "pdf_y_end": 208.6,
     "soldier_id": "0040020049",
     "occupation": "ljekar",
-    "rank": "referent saniteta"
+    "rank": "referent saniteta",
+    "birth_place": "Nikšić"
   },
   {
     "last_name": "Leković",
@@ -118223,7 +118393,8 @@
     "death_date": "1943",
     "death_place": "Gvozd",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Boljevići, Crmnica"
   },
   {
     "soldier_id": "0040021010",
@@ -118241,7 +118412,8 @@
     "pdf_x": 164.2,
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Boljevići, Crmnica"
   },
   {
     "last_name": "Blagojević",
@@ -118281,7 +118453,8 @@
     "pdf_y_end": 352.0,
     "soldier_id": "0040020052",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Seljani, Piva"
   },
   {
     "last_name": "Bojčević",
@@ -118337,7 +118510,8 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Bukovik, Crmnica"
   },
   {
     "last_name": "Bošković",
@@ -118356,7 +118530,8 @@
     "pdf_y_end": 361.0,
     "soldier_id": "0040020072",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Trebaljevo"
   },
   {
     "last_name": "Bošković",
@@ -118376,7 +118551,8 @@
     "soldier_id": "0040020075",
     "death_type": "umro",
     "death_date": "1968",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Bošković",
@@ -118462,7 +118638,8 @@
     "death_date": "1943",
     "death_place": "Mrežice",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Božović",
@@ -118480,15 +118657,14 @@
     "pdf_y_end": 641.2,
     "soldier_id": "0040020078",
     "rank": "kurir",
+    "birth_place": "Golubovci, Zeta",
     "birth_year": "1922",
     "borrowed": [
-      "birth_place",
       "birth_year",
       "ethnicity",
       "occupation",
       "party"
     ],
-    "birth_place": "Golubovci, Podgorica",
     "ethnicity": "Crnogorac",
     "occupation": "zemljoradnik",
     "party": "KPJ 1942",
@@ -118506,27 +118682,6 @@
         "unit_file": "vrhovni-stab-soldiers.json"
       }
     ]
-  },
-  {
-    "last_name": "Božović",
-    "middle_name": "Milije",
-    "first_name": "Dušan",
-    "fathers_name": "Milija",
-    "full_name": "Božović Milije Dušan",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Brigadni Sanitet I Bolnica: borac, Golubovci, Zeta, 1896, zemljoradnik, Umro poslije rata",
-    "birth_year": "1896",
-    "unit_detail": "Brigadni Sanitet I Bolnica",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 5,
-    "pdf_x": 173.5,
-    "pdf_y": 244.0,
-    "pdf_x_end": 486.1,
-    "pdf_y_end": 253.0,
-    "soldier_id": "0040020079",
-    "occupation": "zemljoradnik",
-    "death_type": "umro",
-    "rank": "borac",
-    "death_after_war": true
   },
   {
     "last_name": "Božović",
@@ -118549,7 +118704,8 @@
     "death_date": "03.10.1943",
     "death_place": "Kolašin",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Spuž"
   },
   {
     "last_name": "Brajović",
@@ -118566,7 +118722,58 @@
     "pdf_y": 396.4,
     "pdf_x_end": 458.5,
     "pdf_y_end": 413.0,
-    "soldier_id": "0040020086"
+    "soldier_id": "0040020086",
+    "birth_place": "Jelenak, Danilovgrad",
+    "other_sources": [
+      {
+        "soldier_id": "0061000212",
+        "name": "Brajovič Spasoja Petar",
+        "additional_info": "1915, Jelenak pii Danilovgradu",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 3,
+        "pdf_x": 301.7,
+        "pdf_y": 219.2,
+        "pdf_x_end": 408.7,
+        "pdf_y_end": 235.6,
+        "unit_file": "cankarjeva-soldiers.json"
+      },
+      {
+        "soldier_id": "0061010011",
+        "name": "Brajovič Petar",
+        "additional_info": "Poveljniški kader Cankarjeve brigade: Komandanti II. bataljona, od 8. 12. 1942 do 1. 1. 1943.",
+        "pdf_file": "cankarjeva-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 198.9,
+        "pdf_y": 433.0,
+        "pdf_x_end": 245.5,
+        "pdf_y_end": 441.0,
+        "unit_file": "cankarjeva-soldiers.json"
+      },
+      {
+        "soldier_id": "0062000234",
+        "name": "Brajović Spasoja Petar",
+        "additional_info": "zvani Pero; 1915, Danilovgrad",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 4,
+        "pdf_x": 13.0,
+        "pdf_y": 148.2,
+        "pdf_x_end": 116.3,
+        "pdf_y_end": 165.4,
+        "unit_file": "gubceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0062010006",
+        "name": "Brajović Petar",
+        "additional_info": "zvani Pero; Poveljniški kader Gubčeve brigade: načelniki štaba brigade, od 30. 3. 1943 do 12. 9. 1943; komandanti II. bataljona, od 20. 2. 1943 do 30. 3. 1943.",
+        "pdf_file": "gubceva-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 17.7,
+        "pdf_y": 108.1,
+        "pdf_x_end": 95.0,
+        "pdf_y_end": 116.6,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Brajović",
@@ -118584,7 +118791,8 @@
     "pdf_x_end": 458.3,
     "pdf_y_end": 357.8,
     "soldier_id": "0040020089",
-    "rank": "desetar"
+    "rank": "desetar",
+    "birth_place": "Krasovina, Danilovgrad"
   },
   {
     "last_name": "Bulajić",
@@ -118608,6 +118816,7 @@
     "death_place": "Travnik",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Bileća",
     "other_sources": [
       {
         "soldier_id": "9035007071",
@@ -118629,10 +118838,6 @@
         "source_page": 96,
         "ref_book": "revolucionarno-grahovo"
       }
-    ],
-    "birth_place": "Prag, Nikšić",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -118653,6 +118858,7 @@
     "soldier_id": "0040020095",
     "occupation": "zemljoradnik",
     "rank": "borac",
+    "birth_place": "Rovačko Trebaljevo",
     "other_sources": [
       {
         "soldier_id": "9090020019",
@@ -118681,7 +118887,8 @@
     "pdf_y_end": 514.6,
     "soldier_id": "0040020096",
     "occupation": "pravnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Rečine"
   },
   {
     "last_name": "Burić",
@@ -118701,7 +118908,8 @@
     "soldier_id": "0040020103",
     "occupation": "đak",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Zagreda, Cetinje"
   },
   {
     "last_name": "Burić",
@@ -118710,7 +118918,6 @@
     "fathers_name": "Vuko",
     "full_name": "Burić Vuka Mirko",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: komesar čete, Zagreda, Cetinje 111999222111..., član KPJ",
-    "birth_year": "",
     "unit_detail": "1. četa",
     "pdf_file": "4-proleterska-formiranje.pdf",
     "pdf_page": 21,
@@ -118720,7 +118927,56 @@
     "pdf_y_end": 497.8,
     "soldier_id": "0040020104",
     "rank": "komesar čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Zagreda",
+    "birth_year": "1916",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Crnogorac",
+    "occupation": "đak",
+    "other_sources": [
+      {
+        "soldier_id": "0045000107",
+        "name": "Burić Vuka Mirko",
+        "additional_info": "politički komesar brigade, rođen 1916, Zagreda, Cetinje, đak, Crnogorac, u NOB od 1941. godine, predratni član KPJ.",
+        "pdf_file": "borci-sutjeske-8-banijska.pdf",
+        "pdf_page": 6,
+        "pdf_x": 189.6,
+        "pdf_y": 116.5,
+        "pdf_x_end": 360.1,
+        "pdf_y_end": 157.4,
+        "unit_file": "8-banijska-soldiers.json"
+      },
+      {
+        "soldier_id": "0045020016",
+        "name": "Burić Mirko",
+        "additional_info": "Pregled komandnog kadra 8. banijske brigade: komesar brigade.",
+        "pdf_file": "8-banijska-kadar.pdf",
+        "pdf_page": 1,
+        "pdf_x": 442.6,
+        "pdf_y": 271.2,
+        "pdf_x_end": 466.7,
+        "pdf_y_end": 280.2,
+        "pdf_rects": [
+          [
+            442.6,
+            271.2,
+            466.7,
+            280.2
+          ],
+          [
+            135.0,
+            281.7,
+            159.3,
+            290.7
+          ]
+        ],
+        "unit_file": "8-banijska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Cerović",
@@ -118740,14 +118996,15 @@
     "soldier_id": "0040020108",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Tušinja, Uskocn"
   },
   {
     "last_name": "Cerović",
     "middle_name": "Milanov",
-    "first_name": "Dragp",
+    "first_name": "Drago",
     "fathers_name": "Milan",
-    "full_name": "Cerović Milanov Dragp",
+    "full_name": "Cerović Milanov Drago",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Tušinja, Uskoci, 1917, radnik, član KPJ",
     "birth_year": "1917",
     "unit_detail": "5. bataljon",
@@ -118760,7 +119017,8 @@
     "soldier_id": "0040020109",
     "occupation": "radnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Tušinja, Uskoci"
   },
   {
     "last_name": "Cerović",
@@ -118779,7 +119037,8 @@
     "pdf_y_end": 448.7,
     "soldier_id": "0040020110",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Tušinja, Uskoni"
   },
   {
     "last_name": "Cerović",
@@ -118799,7 +119058,8 @@
     "soldier_id": "0040020112",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Tušinja, Uskocn"
   },
   {
     "last_name": "Cerović",
@@ -118820,7 +119080,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "rank": "borac",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Tušinja, Uskoci"
   },
   {
     "last_name": "Crnčević",
@@ -118840,7 +119101,8 @@
     "soldier_id": "0040020114",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dupilo, Crmnica"
   },
   {
     "last_name": "Dabović",
@@ -118860,7 +119122,8 @@
     "soldier_id": "0040020121",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dabovići, Crmnica"
   },
   {
     "last_name": "Damjanović",
@@ -118879,6 +119142,7 @@
     "pdf_y_end": 632.9,
     "soldier_id": "0040020123",
     "rank": "borac",
+    "birth_place": "Podbišće",
     "other_sources": [
       {
         "soldier_id": "9090020120",
@@ -118913,6 +119177,7 @@
     "death_place": "Kupres",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Podbišće",
     "other_sources": [
       {
         "soldier_id": "9035005388",
@@ -118946,10 +119211,6 @@
         "source_page": 696,
         "ref_book": "kolasin"
       }
-    ],
-    "birth_place": "Polja, Kolašin",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -118970,7 +119231,8 @@
     "soldier_id": "0040020126",
     "occupation": "domaćica",
     "rank": "ekonom čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Danilović",
@@ -118990,7 +119252,8 @@
     "soldier_id": "0040020129",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Dapčević",
@@ -119010,7 +119273,8 @@
     "soldier_id": "0040020131",
     "occupation": "student",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ljubotinj"
   },
   {
     "last_name": "Dapčević",
@@ -119066,7 +119330,8 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Durmitor",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Darčević",
@@ -119087,7 +119352,8 @@
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Delibašić-Jelušić",
@@ -119106,7 +119372,8 @@
     "pdf_y_end": 273.9,
     "soldier_id": "0040020137",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Spuž"
   },
   {
     "last_name": "Divanović",
@@ -119126,7 +119393,8 @@
     "soldier_id": "0040020138",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Budva"
   },
   {
     "last_name": "Dobrković",
@@ -119146,7 +119414,8 @@
     "soldier_id": "0040020139",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Tomići, Crmnica"
   },
   {
     "last_name": "Dobrković",
@@ -119166,7 +119435,8 @@
     "soldier_id": "0040020140",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Mačuge, Crmnica"
   },
   {
     "last_name": "Dobrković",
@@ -119189,7 +119459,8 @@
     "death_date": "1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Mačuge, Crmnica"
   },
   {
     "last_name": "Dragović",
@@ -119208,7 +119479,8 @@
     "pdf_y_end": 487.8,
     "soldier_id": "0040020152",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Gornja Morača"
   },
   {
     "last_name": "Drecun",
@@ -119227,7 +119499,8 @@
     "pdf_y_end": 311.4,
     "soldier_id": "0040020160",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Ljubotinj"
   },
   {
     "last_name": "Drecun",
@@ -119249,7 +119522,8 @@
     "death_date": "1943",
     "death_place": "na Sutjescn",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ljubotinj"
   },
   {
     "last_name": "Drekalović",
@@ -119268,7 +119542,8 @@
     "pdf_y_end": 500.7,
     "soldier_id": "0040020163",
     "occupation": "domaćica",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Duković",
@@ -119287,7 +119562,8 @@
     "pdf_y_end": 198.4,
     "soldier_id": "0040020172",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Virak, Žabljak"
   },
   {
     "last_name": "Filipović",
@@ -119305,7 +119581,8 @@
     "pdf_x_end": 456.6,
     "pdf_y_end": 549.6,
     "soldier_id": "0040020176",
-    "rank": "desetar"
+    "rank": "desetar",
+    "birth_place": "Luke, Danilovgrad"
   },
   {
     "last_name": "Filipović",
@@ -119405,7 +119682,8 @@
     "death_date": "1943",
     "death_place": "na Sinjavini",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Petrovac"
   },
   {
     "last_name": "Gagović",
@@ -119424,7 +119702,8 @@
     "pdf_y_end": 363.8,
     "soldier_id": "0040020181",
     "occupation": "domaćica",
-    "rank": "desetar"
+    "rank": "desetar",
+    "birth_place": "Bezuje, Piva"
   },
   {
     "last_name": "Gardašević",
@@ -119444,7 +119723,8 @@
     "soldier_id": "0040020182",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Čevo, Cetinje"
   },
   {
     "last_name": "Gazivoda",
@@ -119464,7 +119744,8 @@
     "soldier_id": "0040020187",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Rvaši, Rijeka Crnojevića"
   },
   {
     "last_name": "Gašić",
@@ -119484,7 +119765,8 @@
     "soldier_id": "0040020189",
     "occupation": "diplomirani pravnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Crkvice, Piva"
   },
   {
     "last_name": "Golović",
@@ -119505,7 +119787,8 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Istočna Bosna",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Pošćenje, Šavnik"
   },
   {
     "last_name": "Golović",
@@ -119525,7 +119808,8 @@
     "soldier_id": "0040020194",
     "death_type": "poginuo",
     "death_date": "04.1943",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Nikšić"
   },
   {
     "last_name": "Grbović",
@@ -119545,7 +119829,8 @@
     "soldier_id": "0040020196",
     "occupation": "zemljoradnik",
     "rank": "kurir",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Grbović",
@@ -119563,7 +119848,8 @@
     "pdf_x_end": 480.1,
     "pdf_y_end": 337.6,
     "soldier_id": "0040020199",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Virak, Žabljak"
   },
   {
     "last_name": "Grbović",
@@ -119583,7 +119869,8 @@
     "soldier_id": "0040020200",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Virak, Žabljak"
   },
   {
     "last_name": "Grgurović",
@@ -119602,7 +119889,8 @@
     "pdf_y_end": 389.7,
     "soldier_id": "0040020201",
     "occupation": "zemljoradnik",
-    "rank": "desetar"
+    "rank": "desetar",
+    "birth_place": "Danilovgrad"
   },
   {
     "last_name": "Grubač",
@@ -119623,6 +119911,7 @@
     "occupation": "đak",
     "rank": "bolničarka",
     "party": "SKOJ",
+    "birth_place": "Kolašin",
     "other_sources": [
       {
         "soldier_id": "9090020030",
@@ -119654,6 +119943,7 @@
     "occupation": "službenik",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Podbišće",
     "other_sources": [
       {
         "soldier_id": "9090020033",
@@ -119680,7 +119970,52 @@
     "pdf_y": 346.0,
     "pdf_x_end": 441.7,
     "pdf_y_end": 355.0,
-    "soldier_id": "0040020211"
+    "soldier_id": "0040020211",
+    "birth_place": "Lipovo",
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity",
+      "party"
+    ],
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0007001843",
+        "name": "Grujič Milisava Periša",
+        "additional_info": "Crnogorac, oficir bivše jugovojske. Član KPJ U NOV od 1941. U 2. dalm. od 18. 10. 1942. do lipnja 1943. Komandant bataljona i načelnik Štaba brigade. Nosilac »Partizanske spomenice 1941«.",
+        "pdf_file": "2-dalmatinska-proleterska.pdf",
+        "pdf_page": 63,
+        "pdf_x": 139.9,
+        "pdf_y": 336.1,
+        "pdf_x_end": 464.4,
+        "pdf_y_end": 359.9,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007100372",
+        "name": "Grujić Milisava Periša",
+        "additional_info": "načelnik štaba brigade, rođen 1915, Lipovo, Kolašin, oficir Jugoslovenske vojske, Crnogorac, u NOB od 1941, član KPJ od maja 1942, krajem rata komandant 1. tenkovske brigade.",
+        "pdf_file": "borci-sutjeske-2-dalmatinska.pdf",
+        "pdf_page": 25,
+        "pdf_x": 41.7,
+        "pdf_y": 493.6,
+        "pdf_x_end": 211.9,
+        "pdf_y_end": 555.6,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
+        "soldier_id": "0007010123",
+        "name": "Grujić Periša",
+        "additional_info": "Pregled štabova i komandi 2. dalmatinske brigade: operativni oficir, od ljeta 1943. načelnik štaba brigade, od maja do juna 1943; komandant 1. bataljona.",
+        "pdf_file": "2-dalmatinska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 43.4,
+        "pdf_y": 205.1,
+        "pdf_x_end": 210.3,
+        "pdf_y_end": 215.1,
+        "unit_file": "2-dalmatinska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Grujić",
@@ -119740,6 +120075,7 @@
     "death_place": "Kupres",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Polica",
     "other_sources": [
       {
         "soldier_id": "9035001523",
@@ -119775,12 +120111,10 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Goražde, Berane",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Guberinić",
@@ -119800,7 +120134,8 @@
     "soldier_id": "0040020216",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Polica"
   },
   {
     "last_name": "Iličković",
@@ -119879,14 +120214,15 @@
     "soldier_id": "0040020219",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Ninkovići, Žabljak"
   },
   {
     "last_name": "Ivanišević",
-    "middle_name": "",
+    "middle_name": "Stanislava",
     "first_name": "Labud",
-    "fathers_name": "",
-    "full_name": "Ivanišević Labud",
+    "fathers_name": "Stanislav",
+    "full_name": "Ivanišević Stanislava Labud",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: borac, Cetinje, 1913, radnik, Član KPJ",
     "birth_year": "1913",
     "unit_detail": "1. četa",
@@ -119899,7 +120235,32 @@
     "soldier_id": "0040020220",
     "occupation": "radnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje",
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "umro",
+    "death_date": "25.04.1989",
+    "death_place": "Zagreb",
+    "other_sources": [
+      {
+        "soldier_id": "0114000039",
+        "name": "Ivanišević Stanislava Labud",
+        "additional_info": "zvani Puška; borac brdske baterije divizije, rođen 1913, Cetinje, radnik, Crnogorac, u NOB od 1941, član KPJ od 1939, krajem rata komandant art. diviziona u 38. diviziji. Umro u Zagrebu 25. aprila 1989. godine.",
+        "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 24.2,
+        "pdf_y": 526.2,
+        "pdf_x_end": 194.3,
+        "pdf_y_end": 578.6,
+        "unit_file": "2-proleterska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivanišević",
@@ -119918,7 +120279,8 @@
     "pdf_y_end": 594.0,
     "soldier_id": "0040020222",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Bugojno"
   },
   {
     "last_name": "Ivanović",
@@ -119940,7 +120302,8 @@
     "death_type": "umro",
     "death_date": "1969",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Ivanović",
@@ -119959,7 +120322,8 @@
     "pdf_y_end": 302.2,
     "soldier_id": "0040020226",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Ivanović",
@@ -119978,7 +120342,8 @@
     "pdf_y_end": 437.0,
     "soldier_id": "0040020227",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kuči, Titograd"
   },
   {
     "last_name": "Ivanović",
@@ -119996,7 +120361,8 @@
     "pdf_x_end": 457.9,
     "pdf_y_end": 594.5,
     "soldier_id": "0040020230",
-    "occupation": "domaćica"
+    "occupation": "domaćica",
+    "birth_place": "Limljani"
   },
   {
     "last_name": "Leković",
@@ -120016,12 +120382,11 @@
     "soldier_id": "0040020232",
     "occupation": "radnik",
     "party": "KPJ",
-    "birth_place": "Boljevići, Bar",
+    "birth_place": "Boljevići, Crmnica",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
     ],
-    "ethnicity": "Crnogorac",
     "other_sources": [
       {
         "soldier_id": "0007100279",
@@ -120055,7 +120420,8 @@
     "soldier_id": "0040020235",
     "occupation": "student prava",
     "rank": "desetar",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dobra Sela, Šavnik"
   },
   {
     "last_name": "Jakić",
@@ -120074,7 +120440,8 @@
     "pdf_y_end": 206.8,
     "soldier_id": "0040020237",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Dobra Sela, Šavnik"
   },
   {
     "last_name": "Janjević",
@@ -120096,7 +120463,8 @@
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "unit_detail": "3. četa"
+    "unit_detail": "3. četa",
+    "birth_place": "Martinići, Danilovgrad"
   },
   {
     "last_name": "Janković",
@@ -120116,7 +120484,8 @@
     "soldier_id": "0040020246",
     "occupation": "student",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Krnja Jela"
   },
   {
     "last_name": "Janković",
@@ -120140,6 +120509,7 @@
     "death_place": "kod Kšša",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Krnja Jela",
     "other_sources": [
       {
         "soldier_id": "9035005503",
@@ -120153,10 +120523,6 @@
         "pdf_y_end": 333.2,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ],
-    "birth_place": "G. Morača, Kolašin",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -120180,7 +120546,8 @@
     "death_date": "1943",
     "death_place": "Zelengora",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Janković",
@@ -120234,7 +120601,8 @@
     "pdf_x_end": 440.5,
     "pdf_y_end": 514.2,
     "soldier_id": "0040020260",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Gacko"
   },
   {
     "last_name": "Jauković",
@@ -120254,7 +120622,8 @@
     "soldier_id": "0040020261",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Pridvorica, Šavnik"
   },
   {
     "last_name": "Jauković",
@@ -120276,7 +120645,8 @@
     "death_date": "1944",
     "death_place": "Majevica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Pridvorica, Šavnik"
   },
   {
     "last_name": "Jauković",
@@ -120332,7 +120702,8 @@
     "pdf_y_end": 500.6,
     "soldier_id": "0040020265",
     "occupation": "diplomirani pravnik",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Pridvorica, Šavnik"
   },
   {
     "last_name": "Jaćimić",
@@ -120352,7 +120723,8 @@
     "soldier_id": "0040020266",
     "occupation": "službenik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Donja Morača"
   },
   {
     "last_name": "Jegdić",
@@ -120370,7 +120742,8 @@
     "pdf_x_end": 467.0,
     "pdf_y_end": 293.4,
     "soldier_id": "0040020267",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Provalija, Šavnik"
   },
   {
     "last_name": "Jovalekić",
@@ -120392,7 +120765,8 @@
     "death_date": "1942",
     "death_place": "Hadžići",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Boljevići, Crmnica"
   },
   {
     "last_name": "Jovanović",
@@ -120413,7 +120787,8 @@
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Jovanović",
@@ -120432,7 +120807,8 @@
     "pdf_y_end": 257.7,
     "soldier_id": "0040020280",
     "occupation": "radnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Jovićević",
@@ -120475,7 +120851,8 @@
     "death_date": "02.03.1943",
     "death_place": "Vilićagumno",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dujeva, Rijeka Crnojevića"
   },
   {
     "last_name": "Jovović",
@@ -120496,7 +120873,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Gluhi Do, Crmnica"
   },
   {
     "last_name": "Jovović",
@@ -120518,14 +120896,15 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Šekovići",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Vukotica, Danilovgrad"
   },
   {
     "last_name": "Jovović-Zeković",
-    "middle_name": "",
+    "middle_name": "Miloša",
     "first_name": "Milica",
-    "fathers_name": "",
-    "full_name": "Jovović-Zeković Milica",
+    "fathers_name": "Miloš",
+    "full_name": "Jovović-Zeković Miloša Milica",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Brigadni Sanitet I Bolnica: medicinski radnik, Cetinje, 1915, ljekarski pomoćnik, član KPJ",
     "birth_year": "1915",
     "unit_detail": "Brigadni Sanitet I Bolnica",
@@ -120536,7 +120915,46 @@
     "pdf_x_end": 452.5,
     "pdf_y_end": 371.0,
     "soldier_id": "0040020305",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje",
+    "ethnicity": "Crnogorka",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "zdravstvena radnica",
+    "death_type": "umro",
+    "death_date": "1984",
+    "death_place": "Beograd",
+    "other_sources": [
+      {
+        "soldier_id": "0001004800",
+        "name": "Jovović-Zeković Miloša Milica",
+        "additional_info": "1915, Cetinje, Crna Gora, Crnogorka, zdrav. rad. u Cetinju, član KPJ od 1940, u NOB od 1941, u brigadi od maja 1942, bolničarka u brigadnom sanitetu",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 61,
+        "pdf_x": 44.3,
+        "pdf_y": 457.7,
+        "pdf_x_end": 351.9,
+        "pdf_y_end": 489.3,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0117000228",
+        "name": "Jovović-Zeković Miloša Milica",
+        "additional_info": "zvana Mica; lekarski pomoćnik u bolnici, rođena 1915, Cetinje, medicinska sestra, Crnogorka, u NOB od 1941, član KPJ od 1940. Umrla 1984. u Beogradu.",
+        "pdf_file": "borci-sutjeske-centralna-bolnica.pdf",
+        "pdf_page": 14,
+        "pdf_x": 203.9,
+        "pdf_y": 479.0,
+        "pdf_x_end": 374.5,
+        "pdf_y_end": 531.9,
+        "unit_file": "centralna-bolnica-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jugović",
@@ -120556,7 +120974,8 @@
     "soldier_id": "0040020306",
     "party": "KPJ",
     "death_type": "poginuo",
-    "death_date": "1943"
+    "death_date": "1943",
+    "birth_place": "Kosić, Danilovgrad"
   },
   {
     "last_name": "Kaluđerović",
@@ -120738,7 +121157,8 @@
     "pdf_y_end": 353.0,
     "soldier_id": "0040020319",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Petnica, Šavnik"
   },
   {
     "last_name": "Karadžić",
@@ -120757,7 +121177,8 @@
     "pdf_y_end": 378.9,
     "soldier_id": "0040020320",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Petnica, Šavnik"
   },
   {
     "last_name": "Karadžić",
@@ -120776,7 +121197,8 @@
     "pdf_y_end": 391.8,
     "soldier_id": "0040020321",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Petnica, Šavnik"
   },
   {
     "last_name": "Klisić",
@@ -120798,7 +121220,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Kolašin",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Klisić",
@@ -120817,6 +121240,7 @@
     "soldier_id": "0040020330",
     "occupation": "zemljoradnica",
     "party": "KPJ",
+    "birth_place": "Limljani, Crmnica",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Konjic",
@@ -120844,7 +121268,8 @@
     "death_date": "1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Klisić",
@@ -120866,7 +121291,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Mrežica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Limljani, Crmnica"
   },
   {
     "last_name": "Knežević",
@@ -120922,7 +121348,8 @@
     "soldier_id": "0040020341",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Začir, Ljubotinj"
   },
   {
     "last_name": "Kovačević",
@@ -120940,7 +121367,8 @@
     "pdf_x_end": 454.8,
     "pdf_y_end": 551.0,
     "soldier_id": "0040020350",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Krivaćević",
@@ -120958,7 +121386,8 @@
     "pdf_x_end": 477.7,
     "pdf_y_end": 377.6,
     "soldier_id": "0040020359",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Krš, Šaranci"
   },
   {
     "last_name": "Krković",
@@ -120981,7 +121410,8 @@
     "death_date": "1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Gornja Morača"
   },
   {
     "last_name": "Krković",
@@ -121004,6 +121434,7 @@
     "death_date": "1942",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Gornja Morača",
     "other_sources": [
       {
         "soldier_id": "9035005548",
@@ -121034,13 +121465,11 @@
         "ref_book": "kolasin"
       }
     ],
-    "birth_place": "G. Morača, Kolašin",
+    "death_place": "Bos. Petrovac",
     "borrowed": [
-      "birth_place",
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Bos. Petrovac",
     "ethnicity": "Crnogorac"
   },
   {
@@ -121062,7 +121491,8 @@
     "death_date": "1944",
     "death_place": "Ivanjica",
     "rank": "borac",
-    "unit_detail": "5. bataljon"
+    "unit_detail": "5. bataljon",
+    "birth_place": "Pašina Voda, Žabljak"
   },
   {
     "last_name": "Krstajić",
@@ -121080,7 +121510,8 @@
     "pdf_x_end": 474.7,
     "pdf_y_end": 221.6,
     "soldier_id": "0040020365",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Pašina Voda, Žabljak"
   },
   {
     "last_name": "Krstajić",
@@ -121099,7 +121530,8 @@
     "pdf_y_end": 265.8,
     "soldier_id": "0040020367",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Pašina Voda, Žabljak"
   },
   {
     "last_name": "Krstićević",
@@ -121120,6 +121552,7 @@
     "occupation": "radnik",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Ceklin, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9035016823",
@@ -121155,15 +121588,13 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Gornji Ceklin, Šavnik",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Drvar",
     "ethnicity": "Crnogorac"
@@ -121186,7 +121617,8 @@
     "soldier_id": "0040020370",
     "party": "KPJ",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Golubovci, Titograd"
   },
   {
     "last_name": "Kujović",
@@ -121253,7 +121685,8 @@
     "pdf_x_end": 437.6,
     "pdf_y_end": 356.8,
     "soldier_id": "0040020374",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Kužić",
@@ -121271,7 +121704,8 @@
     "pdf_x_end": 437.6,
     "pdf_y_end": 322.2,
     "soldier_id": "0040020379",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Laketić",
@@ -121290,7 +121724,8 @@
     "pdf_y_end": 361.2,
     "soldier_id": "0040020380",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Gornja Morača"
   },
   {
     "last_name": "Lakić",
@@ -121312,7 +121747,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Nevesinje",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Martinići, Danilovgrad"
   },
   {
     "last_name": "Lakić",
@@ -121424,7 +121860,8 @@
     "soldier_id": "0040020388",
     "occupation": "domaćica",
     "death_type": "umro",
-    "death_date": "1967"
+    "death_date": "1967",
+    "birth_place": "Donja Morača"
   },
   {
     "last_name": "Lazarević",
@@ -121433,7 +121870,6 @@
     "fathers_name": "Novo",
     "full_name": "Lazarević Novov Radomir",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Godijelji, Šavnik, Jablanici",
-    "birth_year": "",
     "unit_detail": "5. bataljon",
     "pdf_file": "4-proleterska-formiranje.pdf",
     "pdf_page": 71,
@@ -121442,7 +121878,32 @@
     "pdf_x_end": 490.9,
     "pdf_y_end": 425.4,
     "soldier_id": "0040020393",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Godijelji, Šavnik, Jablanici",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "ethnicity": "Crnogorac",
+    "occupation": "zemljoradnik",
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0112000224",
+        "name": "Lazarević Nova Radomir",
+        "additional_info": "borac 2. čete Pratećeg bataljona VŠ, rođen 1923, Godijelji, Šavnik, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od 1942. godine, krajem rata komandant bataljona.",
+        "pdf_file": "borci-sutjeske-vrhovni-stab.pdf",
+        "pdf_page": 14,
+        "pdf_x": 41.9,
+        "pdf_y": 240.3,
+        "pdf_x_end": 211.0,
+        "pdf_y_end": 302.3,
+        "unit_file": "vrhovni-stab-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lađić",
@@ -121463,7 +121924,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Nevesinje",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Zeta, Titograd"
   },
   {
     "last_name": "Lekić",
@@ -121481,7 +121943,8 @@
     "pdf_x_end": 467.7,
     "pdf_y_end": 484.9,
     "soldier_id": "0040020395",
-    "occupation": "učitelj"
+    "occupation": "učitelj",
+    "birth_place": "Andrijevica"
   },
   {
     "last_name": "Lekić",
@@ -121501,7 +121964,8 @@
     "soldier_id": "0040020396",
     "occupation": "studentkinja",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Ljutica",
@@ -121520,7 +121984,8 @@
     "pdf_y_end": 509.0,
     "soldier_id": "0040020400",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Crmnica"
   },
   {
     "last_name": "Ljutica",
@@ -121541,6 +122006,7 @@
     "occupation": "domaćica",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Crmnica",
     "other_sources": [
       {
         "soldier_id": "9035000981",
@@ -121568,14 +122034,12 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Mačuge, Bar",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
       "death_type"
     ],
-    "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Sutjeska"
   },
@@ -121645,7 +122109,8 @@
     "soldier_id": "0040020405",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Lopičić",
@@ -121665,28 +122130,8 @@
     "soldier_id": "0040020410",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
-  },
-  {
-    "last_name": "Lopušina",
-    "middle_name": "Savin",
-    "first_name": "Mijat",
-    "fathers_name": "Savo",
-    "full_name": "Lopušina Savin Mijat",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: komandir voda, Strug, Uskoci, 1921, zemljoradnik član zemljoradnik član, SKOJ-a KPJ, Poginuo 1943. na Ozrenu",
-    "birth_year": "1921",
-    "unit_detail": "5. bataljon",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 71,
-    "pdf_x": 169.4,
-    "pdf_y": 429.4,
-    "pdf_x_end": 476.3,
-    "pdf_y_end": 438.4,
-    "soldier_id": "0040020413",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Ozren",
-    "rank": "komandir voda"
+    "party": "KPJ",
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Lukić",
@@ -121705,7 +122150,8 @@
     "pdf_y_end": 335.5,
     "soldier_id": "0040020421",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Spuž"
   },
   {
     "last_name": "Luvarda",
@@ -121728,7 +122174,8 @@
     "death_date": "1942",
     "death_place": "na Zec pl. Pogorelica",
     "rank": "zamjenik komesara čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Donja Sela, Ljubotinj"
   },
   {
     "last_name": "Mahin",
@@ -121748,7 +122195,8 @@
     "soldier_id": "0040020423",
     "death_type": "umro",
     "death_date": "1945",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Nikolajevsk Sibir"
   },
   {
     "last_name": "Marenić",
@@ -121768,7 +122216,8 @@
     "soldier_id": "0040020427",
     "death_type": "poginuo",
     "death_date": "17.07.1942",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "birth_place": "Danilovgrad"
   },
   {
     "last_name": "Marinović",
@@ -121788,7 +122237,8 @@
     "soldier_id": "0040020428",
     "occupation": "advokat",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Očinići, Cetinje"
   },
   {
     "last_name": "Marinović",
@@ -121811,6 +122261,7 @@
     "death_date": "1943",
     "death_place": "Majevica",
     "rank": "borac",
+    "birth_place": "Očinići, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9084000138",
@@ -121893,7 +122344,8 @@
     "pdf_y_end": 317.8,
     "soldier_id": "0040020437",
     "occupation": "radnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Brijege, Crmkica"
   },
   {
     "last_name": "Marković",
@@ -121911,7 +122363,8 @@
     "pdf_x_end": 457.6,
     "pdf_y_end": 519.6,
     "soldier_id": "0040020438",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Crmnica"
   },
   {
     "last_name": "Martinović",
@@ -121931,7 +122384,8 @@
     "soldier_id": "0040020442",
     "death_type": "poginuo",
     "death_date": "1943",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kosovi Lug, Danilovgrad"
   },
   {
     "last_name": "Martinović",
@@ -121953,7 +122407,8 @@
     "death_date": "1943",
     "death_place": "Golubić",
     "occupation": "učitelj",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Bajice, Cetinje"
   },
   {
     "last_name": "Martinović",
@@ -121976,6 +122431,7 @@
     "death_place": "Kupres",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Bašce, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9084000203",
@@ -122014,6 +122470,7 @@
     "death_place": "Okolišće",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Donja Morača",
     "other_sources": [
       {
         "soldier_id": "9035005608",
@@ -122057,12 +122514,10 @@
         "ref_book": "ofanziva-1942-poginuli"
       }
     ],
-    "birth_place": "D. Morača, Kolašin",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Medenica",
@@ -122083,6 +122538,7 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Kolašin",
     "other_sources": [
       {
         "soldier_id": "9090020052",
@@ -122115,7 +122571,8 @@
     "death_date": "1943",
     "death_place": "Budanj",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Mijač",
@@ -122136,7 +122593,8 @@
     "death_type": "umro",
     "death_date": "1962",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Orahovo"
   },
   {
     "last_name": "Mijomanović",
@@ -122160,6 +122618,7 @@
     "death_place": "Kupres",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Moračko Trebaljevo",
     "other_sources": [
       {
         "soldier_id": "9035005640",
@@ -122181,10 +122640,6 @@
         "source_page": 709,
         "ref_book": "kolasin"
       }
-    ],
-    "birth_place": "M.Trebaljevo, Kolašin",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -122206,6 +122661,7 @@
     "occupation": "đak",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Moračko Trebaljevo",
     "other_sources": [
       {
         "soldier_id": "9090020061",
@@ -122235,7 +122691,8 @@
     "soldier_id": "0040020479",
     "occupation": "student",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Crmnica"
   },
   {
     "last_name": "Mijušković",
@@ -122274,7 +122731,8 @@
     "occupation": "domaćica",
     "death_type": "poginuo",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Čelobrdo, Budva"
   },
   {
     "last_name": "Milićević",
@@ -122293,7 +122751,8 @@
     "pdf_y_end": 202.7,
     "soldier_id": "0040020495",
     "occupation": "đak",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Ninkovići, Žabljak"
   },
   {
     "last_name": "Milošević",
@@ -122313,7 +122772,8 @@
     "soldier_id": "0040020502",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Donja Morača"
   },
   {
     "last_name": "Minić",
@@ -122332,7 +122792,8 @@
     "pdf_y_end": 365.7,
     "soldier_id": "0040020507",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Podbišće"
   },
   {
     "last_name": "Minić",
@@ -122374,7 +122835,8 @@
     "pdf_y_end": 381.6,
     "soldier_id": "0040020517",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Sv. Stefan, Budva"
   },
   {
     "last_name": "Mitrović",
@@ -122397,6 +122859,7 @@
     "death_date": "1943",
     "death_place": "Jablanica",
     "rank": "borac",
+    "birth_place": "Sotonići, Crmnica",
     "other_sources": [
       {
         "soldier_id": "9035001055",
@@ -122432,12 +122895,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Sotonići, Bar",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Mraković",
@@ -122457,7 +122918,8 @@
     "soldier_id": "0040020530",
     "rank": "borac",
     "occupation": "domaćica",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "D. Zagarač, Danilovgrad"
   },
   {
     "last_name": "Mučalica",
@@ -122480,6 +122942,7 @@
     "death_place": "kod Mrkonjić- Grada",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Gornja Morača",
     "other_sources": [
       {
         "soldier_id": "9035005668",
@@ -122501,10 +122964,6 @@
         "source_page": 710,
         "ref_book": "kolasin"
       }
-    ],
-    "birth_place": "G. Morača, Kolašin",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -122525,7 +122984,8 @@
     "soldier_id": "0040020539",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Brčelo, Virpazar"
   },
   {
     "last_name": "Nikaljevića",
@@ -122543,7 +123003,8 @@
     "pdf_x_end": 481.9,
     "pdf_y_end": 512.2,
     "soldier_id": "0040020540",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Brčelo, Crmnica"
   },
   {
     "last_name": "Nikitović",
@@ -122563,7 +123024,8 @@
     "soldier_id": "0040020543",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Komarnica, Šavnik"
   },
   {
     "last_name": "Nikitović",
@@ -122583,7 +123045,8 @@
     "soldier_id": "0040020545",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Komarnica, Šavnik"
   },
   {
     "last_name": "Nikolajević",
@@ -122602,7 +123065,8 @@
     "pdf_y_end": 448.8,
     "soldier_id": "0040020547",
     "occupation": "radnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Nikolić",
@@ -122622,7 +123086,8 @@
     "soldier_id": "0040020548",
     "occupation": "student",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Titograd"
   },
   {
     "last_name": "Nopović",
@@ -122645,7 +123110,8 @@
     "death_date": "1942",
     "death_place": "Kupres",
     "rank": "komesar čete",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Lužac, Ivangrad"
   },
   {
     "last_name": "Novaković",
@@ -122666,7 +123132,8 @@
     "occupation": "radnik",
     "death_type": "umro",
     "death_date": "1967",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Bijelo Polje"
   },
   {
     "last_name": "Obradović",
@@ -122686,7 +123153,8 @@
     "soldier_id": "0040020561",
     "occupation": "radnica",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Ostojić",
@@ -122706,7 +123174,8 @@
     "soldier_id": "0040020567",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Šljivansko, Šaranci"
   },
   {
     "last_name": "Otašević",
@@ -122724,7 +123193,8 @@
     "pdf_x_end": 462.0,
     "pdf_y_end": 563.8,
     "soldier_id": "0040020568",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "D. Zagarač Danilovgrad"
   },
   {
     "last_name": "Pajković",
@@ -122744,7 +123214,8 @@
     "soldier_id": "0040020570",
     "occupation": "student",
     "rank": "zamjenik komesara",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Lužac, Ivangrad"
   },
   {
     "last_name": "Pavićević",
@@ -122763,7 +123234,8 @@
     "pdf_y_end": 375.6,
     "soldier_id": "0040020571",
     "occupation": "domaćica",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "birth_place": "Rsojevići, Danilovgrad"
   },
   {
     "last_name": "Pejović",
@@ -122787,6 +123259,7 @@
     "death_place": "Tihomišlje",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Cetinje",
     "other_sources": [
       {
         "soldier_id": "9084000082",
@@ -122821,10 +123294,6 @@
         "pdf_y_end": 216.6,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ],
-    "birth_place": "Cetinje, Šavnik",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -122844,25 +123313,8 @@
     "pdf_y_end": 590.7,
     "soldier_id": "0040020583",
     "occupation": "đak",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Pekić",
-    "middle_name": "Jovova",
-    "first_name": "Sofija",
-    "fathers_name": "Jovova",
-    "full_name": "Pekić Jovova Sofija",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 5. Bataljon: borac, Virpazar",
-    "birth_year": "",
-    "unit_detail": "5. bataljon",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 73,
-    "pdf_x": 166.7,
-    "pdf_y": 483.8,
-    "pdf_x_end": 454.4,
-    "pdf_y_end": 492.8,
-    "soldier_id": "0040020584",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Peković",
@@ -122883,6 +123335,7 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Gornja Morača",
     "other_sources": [
       {
         "soldier_id": "9090020066",
@@ -122914,6 +123367,7 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "rank": "borac",
+    "birth_place": "Bjeloši, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9084000142",
@@ -122995,7 +123449,8 @@
     "pdf_y_end": 583.6,
     "soldier_id": "0040020592",
     "occupation": "student",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Luka, Šarancn"
   },
   {
     "last_name": "Perović",
@@ -123064,6 +123519,7 @@
     "occupation": "student",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Donja Morača",
     "other_sources": [
       {
         "soldier_id": "9035005684",
@@ -123094,15 +123550,13 @@
         "ref_book": "kolasin"
       }
     ],
-    "birth_place": "Prizren, Kolašin",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Knin",
     "ethnicity": "Crnogorac"
@@ -123124,7 +123578,8 @@
     "pdf_y_end": 562.4,
     "soldier_id": "0040020598",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Pješivci"
   },
   {
     "last_name": "Perunović",
@@ -123146,7 +123601,8 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "JGivno",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Pješivci"
   },
   {
     "last_name": "Perunović",
@@ -123166,7 +123622,8 @@
     "soldier_id": "0040020600",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Pješivci"
   },
   {
     "last_name": "Petričević",
@@ -123188,11 +123645,10 @@
     "rank": "borac",
     "party": "KPJ",
     "birth_place": "Cetinje",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
     ],
-    "ethnicity": "Crnogorac",
     "other_sources": [
       {
         "soldier_id": "0046000284",
@@ -123339,7 +123795,8 @@
     "occupation": "student",
     "death_type": "poginuo",
     "death_date": "1944",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Popović",
@@ -123358,7 +123815,8 @@
     "pdf_y_end": 602.8,
     "soldier_id": "0040020634",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Brčelo, Crmnica"
   },
   {
     "last_name": "Popović",
@@ -123377,14 +123835,15 @@
     "pdf_y_end": 523.7,
     "soldier_id": "0040020635",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Brčelo, Crmnica"
   },
   {
-    "last_name": "Popovpć",
+    "last_name": "Popović",
     "middle_name": "Blaža",
     "first_name": "Mišo",
     "fathers_name": "Blažo",
-    "full_name": "Popovpć Blaža Mišo",
+    "full_name": "Popović Blaža Mišo",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 1. Četa: borac, Cetinje, 1921, student, član KPJ",
     "birth_year": "1921",
     "unit_detail": "1. četa",
@@ -123397,7 +123856,38 @@
     "soldier_id": "0040020638",
     "occupation": "student",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje",
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0048000707",
+        "name": "Popović Blaža Mišo",
+        "additional_info": "omladinski rukovodilac 3. bataljona, rođen 1921, Cetinje, student, Crnogorac, u NOB od 1941, član KPJ od 1942. godine.",
+        "pdf_file": "borci-sutjeske-7-krajiska.pdf",
+        "pdf_page": 40,
+        "pdf_x": 9.6,
+        "pdf_y": 491.2,
+        "pdf_x_end": 180.6,
+        "pdf_y_end": 533.3,
+        "unit_file": "7-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0048012677",
+        "name": "Popović Blaže Mišo",
+        "additional_info": "roćen 1921. u Cetinju. Crnogorac, student. U NOB-i od 1941. Član SKOJ-a i član KPJ od 1942. Omladinski rukovodilac 3. bataljona. Učesnik bitke na Neretvi i Sutjesci.",
+        "pdf_file": "7-krajiska-spisak.pdf",
+        "pdf_page": 162,
+        "pdf_x": 102.2,
+        "pdf_y": 397.3,
+        "pdf_x_end": 269.1,
+        "pdf_y_end": 455.1,
+        "unit_file": "7-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Praščević",
@@ -123419,7 +123909,8 @@
     "death_type": "poginuo",
     "death_date": "25.09.1942",
     "death_place": "Vinac",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Slatina, Danilovgrad"
   },
   {
     "last_name": "Prlja",
@@ -123439,7 +123930,8 @@
     "soldier_id": "0040020644",
     "occupation": "službenik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ljubotinj"
   },
   {
     "last_name": "Radević",
@@ -123458,7 +123950,8 @@
     "pdf_y_end": 466.4,
     "soldier_id": "0040020652",
     "occupation": "student",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Lijeva Rijeka"
   },
   {
     "last_name": "Radojević",
@@ -123477,6 +123970,7 @@
     "pdf_y_end": 299.2,
     "soldier_id": "0040020655",
     "rank": "borac",
+    "birth_place": "Mokro, Šavnik",
     "other_sources": [
       {
         "soldier_id": "9035010897",
@@ -123499,15 +123993,13 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Brezna, Plužine",
+    "death_type": "poginuo",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Piperi",
     "ethnicity": "Crnogorac"
@@ -123532,7 +124024,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "u Pivn",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Sotonići, Crmnica"
   },
   {
     "last_name": "Radović",
@@ -123551,7 +124044,8 @@
     "pdf_y_end": 499.0,
     "soldier_id": "0040020665",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Sotonići, Crmnica"
   },
   {
     "last_name": "Radović",
@@ -123571,7 +124065,8 @@
     "soldier_id": "0040020666",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Radović",
@@ -123660,29 +124155,8 @@
     "death_type": "umro",
     "death_date": "1964",
     "rank": "borac",
-    "party": "KPJ"
-  },
-  {
-    "last_name": "Rakočević",
-    "middle_name": "Boška",
-    "first_name": "Rade",
-    "fathers_name": "Boško",
-    "full_name": "Rakočević Boška Rade",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 2. Četa: borac, Kolašin, 1915, radnik, kandidat KPJ, Poginuo 1943, Sutjeska",
-    "birth_year": "1915",
-    "unit_detail": "2. četa",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 59,
-    "pdf_x": 159.2,
-    "pdf_y": 550.9,
-    "pdf_x_end": 445.9,
-    "pdf_y_end": 559.9,
-    "soldier_id": "0040020696",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Sutjeska",
-    "rank": "borac"
+    "party": "KPJ",
+    "birth_place": "Moračko Trebaljevo"
   },
   {
     "last_name": "Raonić",
@@ -123700,7 +124174,8 @@
     "pdf_x_end": 455.9,
     "pdf_y_end": 234.0,
     "soldier_id": "0040020702",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Njegovuđa, Šaranci"
   },
   {
     "last_name": "Ražnjatović",
@@ -123723,6 +124198,7 @@
     "death_date": "14.08.1942",
     "death_place": "Kupres",
     "rank": "borac",
+    "birth_place": "Podgorica",
     "other_sources": [
       {
         "soldier_id": "9006000279",
@@ -123761,6 +124237,7 @@
     "death_place": "Bugojno",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Rijeka Crnojevića",
     "other_sources": [
       {
         "soldier_id": "9006000280",
@@ -123795,7 +124272,8 @@
     "soldier_id": "0040020711",
     "party": "KPJ",
     "occupation": "radnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Rović",
@@ -123814,7 +124292,8 @@
     "pdf_y_end": 383.0,
     "soldier_id": "0040020720",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Sanković",
@@ -123836,6 +124315,7 @@
     "death_date": "1943",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Tudorovići, Budva",
     "other_sources": [
       {
         "soldier_id": "9035003374",
@@ -123871,13 +124351,11 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Tudorovići, Budva",
+    "death_place": "I. Hercegovina",
     "borrowed": [
-      "birth_place",
       "death_place",
       "ethnicity"
     ],
-    "death_place": "I. Hercegovina",
     "ethnicity": "Crnogorac"
   },
   {
@@ -123897,7 +124375,8 @@
     "pdf_y_end": 396.0,
     "soldier_id": "0040020725",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Virak, Žabljak"
   },
   {
     "last_name": "Sekulić",
@@ -123916,7 +124395,8 @@
     "pdf_y_end": 584.0,
     "soldier_id": "0040020728",
     "occupation": "radnica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Rim"
   },
   {
     "last_name": "Selić",
@@ -123938,6 +124418,7 @@
     "death_date": "1942",
     "death_place": "Kupres",
     "rank": "borac",
+    "birth_place": "Kolašin",
     "other_sources": [
       {
         "soldier_id": "9035005808",
@@ -123969,12 +124450,10 @@
         "ref_book": "kolasin"
       }
     ],
-    "birth_place": "Kolašin, Kolašin",
+    "ethnicity": "Hrvat",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Hrvat"
+    ]
   },
   {
     "last_name": "Selić",
@@ -123995,6 +124474,7 @@
     "occupation": "učiteljica",
     "death_type": "umro",
     "death_after_war": true,
+    "birth_place": "Prilep",
     "other_sources": [
       {
         "soldier_id": "9090020085",
@@ -124026,6 +124506,7 @@
     "occupation": "studentkinja",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Rasica",
     "other_sources": [
       {
         "soldier_id": "9090020153",
@@ -124053,7 +124534,8 @@
     "pdf_y": 399.9,
     "pdf_x_end": 492.3,
     "pdf_y_end": 408.9,
-    "soldier_id": "0040020734"
+    "soldier_id": "0040020734",
+    "birth_place": "Bukovica, Žabljak"
   },
   {
     "last_name": "Simović",
@@ -124071,7 +124553,8 @@
     "pdf_x_end": 448.1,
     "pdf_y_end": 266.9,
     "soldier_id": "0040020739",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Spasić",
@@ -124128,7 +124611,8 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Bugojno",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Kosorići, Šavnik"
   },
   {
     "last_name": "Srdanović",
@@ -124146,6 +124630,7 @@
     "pdf_x_end": 492.4,
     "pdf_y_end": 453.6,
     "soldier_id": "0040020749",
+    "birth_place": "Kosorići, Šavnik",
     "other_sources": [
       {
         "soldier_id": "9006000353",
@@ -124169,15 +124654,13 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Dobra Sela, Rožaj",
+    "ethnicity": "Crnogorka",
     "borrowed": [
-      "birth_place",
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "ethnicity": "Crnogorka",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Bugojno"
@@ -124198,7 +124681,8 @@
     "pdf_x_end": 492.2,
     "pdf_y_end": 421.9,
     "soldier_id": "0040020750",
-    "occupation": "student"
+    "occupation": "student",
+    "birth_place": "Kosorići, Šavnik"
   },
   {
     "last_name": "Srzentić",
@@ -124217,7 +124701,8 @@
     "pdf_y_end": 236.0,
     "soldier_id": "0040020752",
     "occupation": "službenik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Ietrovac"
   },
   {
     "last_name": "Stanojević",
@@ -124235,7 +124720,8 @@
     "pdf_x_end": 460.4,
     "pdf_y_end": 416.2,
     "soldier_id": "0040020755",
-    "occupation": "domaćica"
+    "occupation": "domaćica",
+    "birth_place": "Velestovo"
   },
   {
     "last_name": "Stjepović",
@@ -124258,7 +124744,8 @@
     "death_date": "1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dubova, Ljubotinj"
   },
   {
     "last_name": "Stojković",
@@ -124278,7 +124765,8 @@
     "soldier_id": "0040020760",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Martinići, Danilovgrad"
   },
   {
     "last_name": "Stojović",
@@ -124302,6 +124790,7 @@
     "death_place": "Nevesinje",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Martinići, Danilovgrad",
     "other_sources": [
       {
         "soldier_id": "9035004641",
@@ -124324,12 +124813,10 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Gostilje M, Danilovgrad",
+    "ethnicity": "Crnogorka",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorka"
+    ]
   },
   {
     "last_name": "Strugar",
@@ -124350,7 +124837,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "party": "KPJ",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Strugar",
@@ -124369,7 +124857,8 @@
     "pdf_y_end": 484.6,
     "soldier_id": "0040020771",
     "death_type": "umro",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Strunjaš",
@@ -124390,25 +124879,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Vilića gumno",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Sušić",
-    "middle_name": "",
-    "first_name": "Milorad",
-    "fathers_name": "",
-    "full_name": "Sušić Milorad",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Kazanci",
-    "birth_year": "",
-    "unit_detail": "3. četa",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 35,
-    "pdf_x": 161.2,
-    "pdf_y": 292.5,
-    "pdf_x_end": 444.6,
-    "pdf_y_end": 301.5,
-    "soldier_id": "0040020775",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Timar, Uskoci"
   },
   {
     "last_name": "Tatić-Nikolić",
@@ -124428,7 +124900,8 @@
     "soldier_id": "0040020780",
     "occupation": "đak",
     "rank": "bolničarka",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Tomić",
@@ -124449,7 +124922,8 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Livno",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Timar, Uskoci"
   },
   {
     "last_name": "Tomković",
@@ -124473,6 +124947,7 @@
     "death_place": "Vinac",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Kosić, Danilovgrad",
     "other_sources": [
       {
         "soldier_id": "9035004669",
@@ -124486,10 +124961,6 @@
         "pdf_y_end": 347.4,
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
-    ],
-    "birth_place": "Jelenak, Danilovgrad",
-    "borrowed": [
-      "birth_place"
     ]
   },
   {
@@ -124509,7 +124980,8 @@
     "pdf_y_end": 230.0,
     "soldier_id": "0040020788",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Velimirović",
@@ -124529,7 +125001,8 @@
     "soldier_id": "0040020795",
     "rank": "borac",
     "occupation": "đak",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "D. Zagarač, Danilovgrcd"
   },
   {
     "last_name": "Vešović-Krstić",
@@ -124549,7 +125022,8 @@
     "soldier_id": "0040020801",
     "occupation": "studentkinja",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Beograd"
   },
   {
     "last_name": "Vicković",
@@ -124567,7 +125041,8 @@
     "pdf_x_end": 482.5,
     "pdf_y_end": 303.6,
     "soldier_id": "0040020802",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ćeklići, Cetinje"
   },
   {
     "last_name": "Vlahović-Vukanović",
@@ -124587,7 +125062,8 @@
     "soldier_id": "0040020803",
     "occupation": "đak",
     "rank": "bolničarka",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Vojvodić",
@@ -124693,7 +125169,8 @@
     "soldier_id": "0040020819",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ceklin"
   },
   {
     "last_name": "Vujanović",
@@ -124716,6 +125193,7 @@
     "death_date": "02.03.1943",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Drušići, Rijeka Crnojevića",
     "other_sources": [
       {
         "soldier_id": "9084000436",
@@ -124751,6 +125229,7 @@
     "occupation": "domaćica",
     "death_type": "umro",
     "death_after_war": true,
+    "birth_place": "Kolašin",
     "other_sources": [
       {
         "soldier_id": "9090020029",
@@ -124784,6 +125263,7 @@
     "death_date": "1943",
     "death_place": "Mrežice",
     "rank": "borac",
+    "birth_place": "Ljubotinj",
     "other_sources": [
       {
         "soldier_id": "9023001333",
@@ -124807,12 +125287,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Mušovići, Cetinje",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Vujović",
@@ -124831,7 +125309,8 @@
     "pdf_y_end": 413.1,
     "soldier_id": "0040020841",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Mikulići, Cetinje"
   },
   {
     "last_name": "Vujović",
@@ -124873,6 +125352,7 @@
     "death_place": "Livno",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "D. Zagarač, Danilovgrad",
     "other_sources": [
       {
         "soldier_id": "9084000988",
@@ -124904,7 +125384,8 @@
     "pdf_y": 254.8,
     "pdf_x_end": 481.4,
     "pdf_y_end": 274.6,
-    "soldier_id": "0040020844"
+    "soldier_id": "0040020844",
+    "birth_place": "Donji Zagarač, Danilovgrad"
   },
   {
     "last_name": "Vujović",
@@ -124924,7 +125405,8 @@
     "soldier_id": "0040020845",
     "occupation": "učitelj",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Donja Sela, Ljubotinj"
   },
   {
     "last_name": "Vujović",
@@ -124969,7 +125451,6 @@
     "fathers_name": "Vidak",
     "full_name": "Vujović Vidaka Savo",
     "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), Štab Bataljona: kurir bataljona, Ožegovice, Čevo, Cetinje 1917., član KPJ",
-    "birth_year": "",
     "unit_detail": "štab bataljona",
     "pdf_file": "4-proleterska-formiranje.pdf",
     "pdf_page": 21,
@@ -124979,7 +125460,36 @@
     "pdf_y_end": 409.2,
     "soldier_id": "0040020848",
     "rank": "kurir",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Ožegovice, Čevo",
+    "birth_year": "1923",
+    "borrowed": [
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Crnogorac",
+    "occupation": "zemljoradnik",
+    "death_type": "umro",
+    "death_date": "12.02.1991",
+    "death_place": "Sremski Karlovci",
+    "other_sources": [
+      {
+        "soldier_id": "0114000114",
+        "name": "Vujović Vidaka Savo",
+        "additional_info": "komandir voda u pratećoj četi, rođen 1923, Ožegovice, Cetinje, zemljoradnik, Crnogorac, u NOB od 1941, član KPJ od oktobra 1942, krajem rata oficir OZN-e. Umro u Sremskim Karlovcima 12. februara 1991. godine.",
+        "pdf_file": "borci-sutjeske-2-proleterska-divizija.pdf",
+        "pdf_page": 9,
+        "pdf_x": 54.7,
+        "pdf_y": 259.3,
+        "pdf_x_end": 223.8,
+        "pdf_y_end": 331.8,
+        "unit_file": "2-proleterska-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vukasović",
@@ -125038,6 +125548,7 @@
     "death_place": "Mrežice",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Građani, Cetinje",
     "other_sources": [
       {
         "soldier_id": "9035016351",
@@ -125073,12 +125584,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Građani, Šavnik",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Vukosavović",
@@ -125097,7 +125606,8 @@
     "pdf_y_end": 563.5,
     "soldier_id": "0040020863",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Sotonići, Crmnica"
   },
   {
     "last_name": "Vukoslavčević",
@@ -125119,6 +125629,7 @@
     "death_date": "1943",
     "death_place": "Jablanica",
     "rank": "borac",
+    "birth_place": "Popratnice, Crmnica",
     "other_sources": [
       {
         "soldier_id": "9023000194",
@@ -125142,12 +125653,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Popratnica, Bar",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Vukoslavčević",
@@ -125168,7 +125677,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "unit_detail": "3. četa"
+    "unit_detail": "3. četa",
+    "birth_place": "Popratnice, Crmnica"
   },
   {
     "last_name": "Vuković",
@@ -125189,7 +125699,8 @@
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "1965",
-    "rank": "kurir"
+    "rank": "kurir",
+    "birth_place": "Dobra Sela, Šavnik"
   },
   {
     "last_name": "Vuković",
@@ -125210,7 +125721,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "kod Nevesin.a",
-    "rank": "bolničarka"
+    "rank": "bolničarka",
+    "birth_place": "Šavnik"
   },
   {
     "last_name": "Vukčević",
@@ -125229,7 +125741,8 @@
     "pdf_y_end": 256.4,
     "soldier_id": "0040020875",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Gluhi Do, Crmnica"
   },
   {
     "last_name": "Vukčević",
@@ -125288,7 +125801,8 @@
     "death_type": "poginuo",
     "death_date": "02.10.1942",
     "rank": "desetar",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Mikulići, Cetinje"
   },
   {
     "last_name": "Zarubipa",
@@ -125311,7 +125825,8 @@
     "death_date": "1943",
     "death_place": "Nevesinje",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Bukovica, Žabljak"
   },
   {
     "last_name": "Zečević",
@@ -125331,7 +125846,8 @@
     "soldier_id": "0040020889",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Lijeva Rijeka"
   },
   {
     "last_name": "Zogović",
@@ -125397,48 +125913,8 @@
     "pdf_y_end": 538.5,
     "soldier_id": "0040020895",
     "occupation": "domaćica",
-    "rank": "borac"
-  },
-  {
-    "last_name": "Ćorić",
-    "middle_name": "Sava",
-    "first_name": "Radoje",
-    "fathers_name": "Savo",
-    "full_name": "Ćorić Sava Radoje",
-    "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: borac, Podbišće, 1905, zemljoradnik, član KPJ Poginuo 1943,, Sutjeska",
-    "birth_year": "1905",
-    "unit_detail": "3. četa",
-    "pdf_file": "4-proleterska-formiranje.pdf",
-    "pdf_page": 61,
-    "pdf_x": 159.7,
-    "pdf_y": 422.8,
-    "pdf_x_end": 451.6,
-    "pdf_y_end": 431.8,
-    "soldier_id": "0040020901",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "9035006854",
-        "name": "Ćorić Savov Radoje",
-        "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Mojkovac: godina rođenja 1905; mjesto rođenja Podbišće; godina smrti 1943; mjesto pogibije Sutjeska",
-        "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-        "pdf_page": 173,
-        "pdf_x": 57.8,
-        "pdf_y": 530.5,
-        "pdf_x_end": 455.2,
-        "pdf_y_end": 539.9,
-        "ref_book": "spomenica-crnogorskim-antifasistima"
-      }
-    ],
-    "birth_place": "Podbišće, Mojkovac",
-    "borrowed": [
-      "birth_place"
-    ]
+    "birth_place": "Dubrovsko, Šavnik"
   },
   {
     "last_name": "Ćosović",
@@ -125458,7 +125934,8 @@
     "soldier_id": "0040020903",
     "occupation": "zemljoradnik",
     "rank": "komandir voda",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Čobeljić",
@@ -125478,6 +125955,7 @@
     "soldier_id": "0040020910",
     "occupation": "zemljoradnik",
     "rank": "borac",
+    "birth_place": "Štitarica",
     "other_sources": [
       {
         "soldier_id": "9090020093",
@@ -125507,7 +125985,8 @@
     "pdf_y_end": 619.9,
     "soldier_id": "0040020912",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Lipovo"
   },
   {
     "last_name": "Čovorović",
@@ -125527,7 +126006,8 @@
     "soldier_id": "0040020913",
     "occupation": "đak",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Mokro, Šavnik"
   },
   {
     "last_name": "Đerković",
@@ -125546,7 +126026,8 @@
     "pdf_y_end": 268.7,
     "soldier_id": "0040020916",
     "occupation": "student",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Žabljak"
   },
   {
     "last_name": "Đokić",
@@ -125567,7 +126048,8 @@
     "occupation": "trgovac",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Glamoč"
+    "death_place": "Glamoč",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Đukanović",
@@ -125587,7 +126069,8 @@
     "soldier_id": "0040020922",
     "occupation": "domaćica",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Mačuge, Crmnica"
   },
   {
     "last_name": "Đurašević",
@@ -125611,6 +126094,7 @@
     "death_place": "Kolašin",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Čelobrdo, Paštrovići",
     "other_sources": [
       {
         "soldier_id": "9023000943",
@@ -125621,12 +126105,10 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "birth_place": "Tudorovići, Budva",
+    "ethnicity": "Crnogorka",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorka"
+    ]
   },
   {
     "last_name": "Đurašević",
@@ -125646,7 +126128,8 @@
     "soldier_id": "0040020928",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Paštrovići, Budva"
   },
   {
     "last_name": "Đurašković",
@@ -125670,6 +126153,7 @@
     "death_place": "Kupres",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Oćevići, Rijeka Crnojevića",
     "other_sources": [
       {
         "soldier_id": "9006000242",
@@ -125705,7 +126189,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Đuričković",
@@ -125725,7 +126210,8 @@
     "soldier_id": "0040020934",
     "occupation": "radnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Tivat"
   },
   {
     "last_name": "Đurišić",
@@ -125747,7 +126233,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Dupilo",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Boljevići, Crmnica"
   },
   {
     "last_name": "Đurković",
@@ -125765,7 +126252,8 @@
     "pdf_x_end": 441.3,
     "pdf_y_end": 249.7,
     "soldier_id": "0040020938",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Đurnić",
@@ -125789,6 +126277,7 @@
     "death_place": "Sutjeska",
     "rank": "borac",
     "party": "SKOJ",
+    "birth_place": "Mačuge, Crmnica",
     "other_sources": [
       {
         "soldier_id": "9035000776",
@@ -125824,12 +126313,10 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "birth_place": "Mačuge, Bar",
+    "ethnicity": "Crnogorac",
     "borrowed": [
-      "birth_place",
       "ethnicity"
-    ],
-    "ethnicity": "Crnogorac"
+    ]
   },
   {
     "last_name": "Đurović",
@@ -125851,7 +126338,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "borac",
-    "death_place": "u istočnoj Bosš"
+    "death_place": "u istočnoj Bosš",
+    "birth_place": "Dupilo, Crmnica"
   },
   {
     "last_name": "Đurović",
@@ -125871,7 +126359,8 @@
     "soldier_id": "0040020943",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Dupilo, Crmnica"
   },
   {
     "last_name": "Đurović",
@@ -125894,7 +126383,8 @@
     "death_date": "1943",
     "death_place": "Sutjeska",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Dupilo, Crmnica"
   },
   {
     "last_name": "Đurović",
@@ -125914,7 +126404,8 @@
     "soldier_id": "0040020946",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Kosovi Lug, Danilovgrad"
   },
   {
     "last_name": "Đurović",
@@ -125937,7 +126428,8 @@
     "death_type": "poginuo",
     "death_date": "09.06.1943",
     "death_place": "Sutjeska",
-    "rank": "komandant bataljona"
+    "rank": "komandant bataljona",
+    "birth_place": "Momišići, Titograd"
   },
   {
     "last_name": "Đurđić",
@@ -125956,7 +126448,8 @@
     "pdf_y_end": 293.4,
     "soldier_id": "0040020953",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Razvršje, Žabljak"
   },
   {
     "last_name": "Šaranović",
@@ -125974,7 +126467,8 @@
     "pdf_x_end": 471.5,
     "pdf_y_end": 384.7,
     "soldier_id": "0040020955",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Potkraj, Danilovgrad"
   },
   {
     "last_name": "Šaranović",
@@ -125993,7 +126487,8 @@
     "pdf_y_end": 363.8,
     "soldier_id": "0040020960",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Potkraj, Danilovgrad"
   },
   {
     "last_name": "Šipčić",
@@ -126011,7 +126506,8 @@
     "pdf_x_end": 436.5,
     "pdf_y_end": 576.4,
     "soldier_id": "0040020962",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Piva"
   },
   {
     "last_name": "Šišović",
@@ -126034,7 +126530,8 @@
     "death_date": "1943",
     "death_place": "Foča",
     "rank": "kurir",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Gornja Morača"
   },
   {
     "last_name": "Šoljaga",
@@ -126056,7 +126553,8 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Herceg-Novi",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Petrovac"
   },
   {
     "last_name": "Šoljaga",
@@ -126077,6 +126575,7 @@
     "occupation": "radnik",
     "rank": "borac",
     "party": "KPJ",
+    "birth_place": "Buljarica, Paštrovići",
     "other_sources": [
       {
         "soldier_id": "0102013212",
@@ -126148,7 +126647,8 @@
     "death_type": "umro",
     "rank": "bolničarka",
     "party": "SKOJ",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Moračko Trebaljevo"
   },
   {
     "last_name": "Šćepanović",
@@ -126170,7 +126670,8 @@
     "death_type": "umro",
     "rank": "borac",
     "party": "KPJ",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Šćepanović",
@@ -126188,7 +126689,8 @@
     "pdf_x_end": 457.1,
     "pdf_y_end": 551.6,
     "soldier_id": "0040020979",
-    "occupation": "radnik"
+    "occupation": "radnik",
+    "birth_place": "Kolašin"
   },
   {
     "last_name": "Šćepanović",
@@ -126208,7 +126710,8 @@
     "soldier_id": "0040020980",
     "death_type": "poginuo",
     "party": "KPJ",
-    "death_after_war": true
+    "death_after_war": true,
+    "birth_place": "D. Zagarač, Danilovgrad"
   },
   {
     "last_name": "Šćepanović",
@@ -126228,7 +126731,8 @@
     "soldier_id": "0040020982",
     "rank": "borac",
     "occupation": "domaćica",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "D. Zagarač, Danilovgrad"
   },
   {
     "last_name": "Žarić",
@@ -126248,7 +126752,8 @@
     "soldier_id": "0040020984",
     "occupation": "radnik",
     "rank": "borac",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Martinići, Danilovgrad"
   },
   {
     "last_name": "Žarković",
@@ -126267,7 +126772,8 @@
     "pdf_y_end": 460.2,
     "soldier_id": "0040020989",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Nedajno, Piva"
   },
   {
     "last_name": "Živković",
@@ -126289,7 +126795,8 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Miljevina",
-    "rank": "kurir"
+    "rank": "kurir",
+    "birth_place": "Šavnik"
   },
   {
     "last_name": "Žižić",
@@ -126311,7 +126818,8 @@
     "death_type": "poginuo",
     "death_date": "02.08.1965",
     "rank": "borac",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Miloševići, Šavnik"
   },
   {
     "last_name": "Žižić",
@@ -126331,7 +126839,8 @@
     "soldier_id": "0040020995",
     "death_type": "umro",
     "death_date": "1949",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Miloševići, Šavnik"
   },
   {
     "last_name": "Žižić",
@@ -126350,7 +126859,8 @@
     "pdf_y_end": 566.7,
     "soldier_id": "0040020997",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Miloševići, Šavnik"
   },
   {
     "last_name": "Žižić",
@@ -126369,7 +126879,8 @@
     "pdf_y_end": 588.3,
     "soldier_id": "0040021001",
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Miloševići, Šavnik"
   },
   {
     "last_name": "Žugić",
@@ -126388,7 +126899,8 @@
     "pdf_y_end": 270.5,
     "soldier_id": "0040021002",
     "occupation": "domaćica",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Novakovići, Žabljak"
   },
   {
     "last_name": "Žugić",
@@ -126448,7 +126960,8 @@
     "pdf_y_end": 291.6,
     "soldier_id": "0040021009",
     "occupation": "domaćica",
-    "rank": "borac"
+    "rank": "borac",
+    "birth_place": "Novakovići, Žabljak"
   },
   {
     "last_name": "Abramović",
@@ -129302,7 +129815,8 @@
       }
     ],
     "occupation": "učiteljica",
-    "party": "KPJ"
+    "party": "KPJ",
+    "birth_place": "Cetinje"
   },
   {
     "last_name": "Trampić",

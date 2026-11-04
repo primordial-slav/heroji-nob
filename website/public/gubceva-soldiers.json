@@ -4957,10 +4957,10 @@
   },
   {
     "last_name": "Brajović",
-    "middle_name": "",
+    "middle_name": "Spasoja",
     "first_name": "Petar",
-    "fathers_name": "",
-    "full_name": "Brajović Petar",
+    "fathers_name": "Spasoje",
+    "full_name": "Brajović Spasoja Petar",
     "additional_info": "zvani Pero; 1915, Danilovgrad",
     "birth_year": "1915",
     "pdf_page": 4,
@@ -4997,8 +4997,20 @@
         "ref_book": "klanjscek-komandni-sastav"
       },
       {
+        "soldier_id": "0040020086",
+        "name": "Brajović Spasoja Petar",
+        "additional_info": "Spisak boraca i starešina na dan formiranja brigade (17. jun 1942), 3. Četa: k-dir voda, Jelenak, Danilovgrad, 1915, podoficir BJV",
+        "pdf_file": "4-proleterska-formiranje.pdf",
+        "pdf_page": 47,
+        "pdf_x": 156.6,
+        "pdf_y": 396.4,
+        "pdf_x_end": 458.5,
+        "pdf_y_end": 413.0,
+        "unit_file": "4-proleterska-soldiers.json"
+      },
+      {
         "soldier_id": "0061000212",
-        "name": "Brajovič Petar",
+        "name": "Brajovič Spasoja Petar",
         "additional_info": "1915, Jelenak pii Danilovgradu",
         "pdf_file": "cankarjeva.pdf",
         "pdf_page": 3,
@@ -33119,7 +33131,7 @@
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062001544",
     "pdf_x_end": 140.9,
-    "death_place": "Dolenjske Toylice",
+    "death_place": "Dolenjske Toplice",
     "other_sources": [
       {
         "soldier_id": "0068000391",
@@ -53268,11 +53280,11 @@
     "death_place": "Ledeča vas"
   },
   {
-    "last_name": "Stmiša",
+    "last_name": "Strniša",
     "middle_name": "",
     "first_name": "Jože",
     "fathers_name": "",
-    "full_name": "Stmiša Jože",
+    "full_name": "Strniša Jože",
     "additional_info": "Hrastnik, 1900—1944",
     "birth_year": "1900",
     "death_type": "poginuo",
@@ -53284,7 +53296,23 @@
     "pdf_y_end": 331.9,
     "pdf_file": "gubceva.pdf",
     "soldier_id": "0062002480",
-    "pdf_x_end": 280.4
+    "pdf_x_end": 280.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020002795",
+        "name": "Strniša (Jože) Jože",
+        "additional_info": "rođen 1900, Krnice (Hrastnik). Slovenac, poginuo 1944. u NOBu, Žuženbreg",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=105",
+        "source_page": 105,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Žuženbreg"
   },
   {
     "last_name": "Ston",

@@ -42159,10 +42159,28 @@
         "pdf_y": 183.6,
         "pdf_y_end": 197.1,
         "pdf_x_end": 195.0
+      },
+      {
+        "soldier_id": "0142000347",
+        "name": "Pavšič Angel",
+        "additional_info": "rojen (?), Dol. Trebuša, padel 25. marca 1945, Zgornje Ravne",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 11,
+        "pdf_x": 160.5,
+        "pdf_y": 420.6,
+        "pdf_x_end": 295.8,
+        "pdf_y_end": 445.9,
+        "unit_file": "kosovelova-soldiers.json"
       }
     ],
     "birth_place": "Dolenja Trebuša",
-    "pdf_x_end": 92.7
+    "pdf_x_end": 92.7,
+    "death_date": "25.03.1945",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Zgornje Ravne"
   },
   {
     "last_name": "Pavšič",
@@ -62478,7 +62496,7 @@
       "ethnicity"
     ],
     "death_date": "1943",
-    "death_place": "Kolov, Venecija italija",
+    "death_place": "Kolov, Venecija, Italija",
     "birth_year": "1907"
   },
   {
