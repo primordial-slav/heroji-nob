@@ -194,12 +194,8 @@ export const sr = {
     references: 'Reference',
     book: 'Knjiga',
     loadingPage: 'Učitavanje strane…',
-    source: 'Izvor',
-    noScan: 'Za ovaj spisak nema skenirane knjige: objavljen je kao tekst na [znaci.org].',
     /** The 1964 census, whose volumes are PDFs on the Museum of Genocide Victims' site: the volume's title */
-    noScanMuseum: (title: string) => `${title}. Popis je objavljen kao PDF na sajtu [Muzeja žrtava genocida].`,
     /** A book whose scan is not on the site: its title and page */
-    noScanBook: (title: string, page: number | null) => `${title}${page != null ? `, strana ${page}` : ''}.`,
     steps: 'Susedni zapisi u spisku',
     /** Going through a search's results: the same bar, and where the record is among them */
     stepsFound: 'Susedni rezultati pretrage',

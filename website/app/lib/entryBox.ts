@@ -17,6 +17,26 @@ export function cropBox(entry: { pdf_x?: number; pdf_y?: number; pdf_x_left?: nu
   return { left: box.left - padX, top: box.top - padY, width: box.width + 2 * padX, height: box.height + 2 * padY }
 }
 
+type Placed = Parameters<typeof cropBox>[0] & { pdf_rects?: number[][] }
+
+// An entry boxed in parts (one that runs on to the next column, a name on two lines) is all its parts, not only the first
+export function cropBoxes(entry: Placed) {
+  if (!entry.pdf_rects?.length) return [cropBox(entry)]
+  return entry.pdf_rects.map(([left, top, right, bottom]) => cropBox({ pdf_x: left, pdf_y: top, pdf_x_end: right, pdf_y_end: bottom }))
+}
+
+// White between the parts of a cut-out, in PDF points
+export const CROP_GAP = 4
+
+// The cut-out's size: its parts one under the other, in PDF points
+export function cropSize(entry: Placed) {
+  const boxes = cropBoxes(entry)
+  return {
+    width: Math.max(...boxes.map((b) => b.width)),
+    height: boxes.reduce((all, b) => all + b.height, 0) + CROP_GAP * (boxes.length - 1),
+  }
+}
+
 // The boxes to draw: the entry's box, or, for a name its parser boxed word by word (a list that runs the names on,
 // comma after comma), one box for each line the name takes: rects as [left, top, right, bottom] in PDF points
 export function highlightBoxes(x: number, y: number, xLeft?: number, xEnd?: number, yEnd?: number, rects?: number[][]) {

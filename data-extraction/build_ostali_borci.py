@@ -66,12 +66,16 @@ NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avr
               '9035011823': ('Jelovac', 'Milan', 'Vučetin'), '9035011826': ('Jelovac', 'Strainj', 'Vučetin'),  # "Vučegin"
               '9001000203': ('Demonja', 'Nikola', ''), '9001000908': ('Rakovac', 'Joakim', ''),
               '9001001039': ('Šoti', 'Pal', 'Pala'),
+              '9093000448': ('Peratić', 'Milan', 'Ilije'),     # Sokolac's "Tterat-Tlć", П read as Tt
+              '9005001062': ('Šuća', 'Miloš', 'Pere'),         # Hronika's "Ttuća" of Bojna, Glina, Ш read as Tt
               '9035015149': ('Migrović', 'Arso', 'Petrov')}   # the Spomenica prints "Ми гровић Петров Арсо" (Podgorica 128)
 NO_NICK = {'9035015149'}      # entries whose parser read a given name as a nickname
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
                '9009000207': 'Velimir', '9010000622': 'Petar', '9007000140': 'Nikola', '9005001914': 'Miodrag',
-               '9010000363': 'Dmitar', '9038001274': 'Đorđe'}
+               '9010000363': 'Dmitar', '9038001274': 'Đorđe',
+               '9095002088': 'Rifat',       # Bijelo Polje's "Rifattršo": the narodni heroj Rifat Burdžović Tršo
+               '9016001012': 'Dušan'}       # Čačak's "Dutttač", Ш read as ttt
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica',      # (Ostrvica's census names the head, the father)
                       'lezimir',                            # (Ležimir's list: "Babić (Radovan) Petar")

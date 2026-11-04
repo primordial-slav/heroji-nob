@@ -49,8 +49,10 @@ export function linkedRecords(soldier: Soldier): LinkedRecord[] {
     : out
 }
 
-// A unit's name in a man's list of them, without the words every brigade's name has: "Prva proleterska", "4. splitska"
-const NAME_FILLER = /\s*(?:narodnooslobodilačk\p{L}+|народноослободилачк\p{L}+|народноослободителн\p{L}+|narodnoosvobodiln\p{L}+|people’s liberation|udarn\p{L}+|ударн\p{L}+|assault|brigad\p{L}+|бригад\p{L}+)(?!\p{L})/giu
+// A unit's name in a man's list of them, without the words that say nothing of which unit it is: "Prva proleterska
+// brigada", "4. splitska brigada". The kind stays, or a brigade would read otherwise than the division beside it (the
+// user's correction of 2026-11-04)
+const NAME_FILLER = /\s*(?:narodnooslobodilačk\p{L}+|народноослободилачк\p{L}+|народноослободителн\p{L}+|narodnoosvobodiln\p{L}+|people[’']s liberation|udarn\p{L}+|ударн\p{L}+|assault)(?!\p{L})/giu
 
 /** A unit as its name says it is: "brigade", "division", "detachment" (odred), "battalion", "company", or "unit" */
 export function unitKind(name?: string): string {
@@ -70,8 +72,8 @@ const FULL_NAME = /^\p{Lu}\p{Ll}{2,}(?:-\p{Lu}\p{Ll}+)?$/u
 /**
  * Otac (or Majka), Rođen, Narodnost, Zanimanje, U brigadi, Dužnost, Partija and the fate, in the page's language; the
  * values as the books give them (scripts/standardize_fields.py gives the dates one form). A man of several units has one
- * row, "Jedinice", in place of U brigadi and Dužnost: a line for each unit, the record opened first, "Prva proleterska,
- * 6. bataljon · komandant brigade" (shortName: how the page names a unit; the user's choice of 2026-11-04).
+ * row, "Jedinice", in place of U brigadi and Dužnost: a line for each unit, the record opened first, "Prva proleterska
+ * brigada, 6. bataljon · komandant brigade" (shortName: how the page names a unit; the user's choice of 2026-11-04).
  */
 export function recordFacts(soldier: Soldier, t: Messages, unitName?: string, shortName?: (unit: Unit) => string): Fact[] {
   const woman = isWoman(soldier)

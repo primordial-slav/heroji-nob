@@ -694,6 +694,42 @@ def entries(soldiers: list[dict]):
         yield from (o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book'))
 
 
+# Lists whose parser's box runs past the entry: the next man's heading in the entry's last text block, or, where his
+# heading was only read later (scripts/split_dalmatinci_glued.py), whole columns of other men's entries
+STOP_AT_NEXT = {'dalmatinci-prva-proleterska.pdf'}
+
+
+def stop_at_next_entry(soldiers: list[dict]) -> None:
+    """End each box of those lists above the next entry that starts inside it, and drop its parts after that, in place."""
+    by_page = defaultdict(list)
+    for e in entries(soldiers):
+        if e.get('pdf_file') in STOP_AT_NEXT and e.get('pdf_y') is not None and e.get('pdf_x') is not None:
+            by_page[(e['pdf_file'], e.get('pdf_page'))].append(e)
+    for recs in by_page.values():
+        starts = {(e['pdf_x'], e['pdf_y']) for e in recs}
+        for e in recs:
+            own = (e['pdf_x'], e['pdf_y'])
+
+            def next_start(left, top, right, bottom):
+                # 12 pt: a heading stands an indent right of the text under it, the list's text never left of its column
+                inside = [y for x, y in starts if (x, y) != own and left - 12 <= x <= right and top + 4 < y < bottom]
+                return min(inside) if inside else None
+
+            if e.get('pdf_rects'):
+                kept = []
+                for left, top, right, bottom in e['pdf_rects']:
+                    y = next_start(left, top, right, bottom)
+                    kept.append([left, top, right, bottom if y is None else round(y - 0.5, 1)])
+                    if y is not None:
+                        break
+                e['pdf_rects'] = kept
+                e['pdf_y_end'] = kept[0][3]
+            elif e.get('pdf_x_end') is not None and e.get('pdf_y_end') is not None:
+                y = next_start(e.get('pdf_x_left') or e['pdf_x'], e['pdf_y'], e['pdf_x_end'], e['pdf_y_end'])
+                if y is not None:
+                    e['pdf_y_end'] = round(y - 0.5, 1)
+
+
 def fill_boxes(soldiers: list[dict], cache: PageCache | None = None, keep_given: bool = False) -> dict:
     """Set pdf_x_end / pdf_y_end (and pdf_x_left) on every entry with a position (a record's own, and
     those in its other_sources), in place. Returns counts: boxed, unmatched (no text line at the stored start;
@@ -704,6 +740,7 @@ def fill_boxes(soldiers: list[dict], cache: PageCache | None = None, keep_given:
     own_cache = cache is None
     cache = cache or PageCache()
     stats = {'boxed': 0, 'unmatched': 0, 'cleared': 0, 'stops': Counter(), 'layouts': {}}
+    stop_at_next_entry(soldiers)
     by_page: dict[str, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for s in entries(soldiers):
         inline = s.get('pdf_file') in INLINE_ENTRIES or s.get('pdf_page') in INLINE_PAGES.get(s.get('pdf_file'), ())

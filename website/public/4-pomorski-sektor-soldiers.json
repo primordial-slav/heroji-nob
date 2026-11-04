@@ -78114,7 +78114,6 @@
     "fathers_name": "Miloš",
     "full_name": "Ćirin Miloša Milivoj",
     "additional_info": "Vojka",
-    "birth_year": "",
     "birth_place": "Vojka",
     "pdf_page": 10,
     "pdf_y": 455.8,
@@ -78122,7 +78121,28 @@
     "pdf_y_end": 465.3,
     "pdf_file": "4-pomorski-sektor.pdf",
     "pdf_x_end": 176.1,
-    "soldier_id": "0168004453"
+    "soldier_id": "0168004453",
+    "birth_year": "1924",
+    "borrowed": [
+      "birth_year",
+      "occupation"
+    ],
+    "occupation": "đak",
+    "other_sources": [
+      {
+        "soldier_id": "0057001032",
+        "name": "Ćirin Miloša Milivoj",
+        "additional_info": "rođen 1924. Vojka, Stara Pazova, ćak, zamenik komandira čete, ranjen 26. 3. 1944. Rahić, istočna Bosna.",
+        "pdf_file": "3-vojvodjanska.pdf",
+        "pdf_page": 81,
+        "pdf_x": 47.0,
+        "pdf_y": 149.4,
+        "pdf_x_end": 328.7,
+        "pdf_y_end": 175.9,
+        "rank": "zamenik komandira čete",
+        "unit_file": "3-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ćirić",

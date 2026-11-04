@@ -227,8 +227,8 @@ def apply_edit(soldiers, correction):
     if sid in MERGED_IDS:
         # merged into another record: its entry's text lives in that record's other_sources (an edit that came
         # before the merge set it already; one that came after, such as trimming a glued entry, sets it there), and
-        # so does its box where the list's parser draws the boxes (entry_boxes.INLINE_ENTRIES: the Dalmatinci list)
-        kept = {k: v for k, v in fields.items() if k == 'additional_info' or k in entry_boxes.BOX_FIELDS}
+        # so does its place and box where the list's parser draws the boxes (entry_boxes.INLINE_ENTRIES: the Dalmatinci list)
+        kept = {k: v for k, v in fields.items() if k in ('additional_info', 'pdf_x', 'pdf_y') or k in entry_boxes.BOX_FIELDS}
         if kept:
             for s in soldiers:
                 for o in s.get('other_sources', ()):

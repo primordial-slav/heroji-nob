@@ -1,8 +1,9 @@
 'use client'
 
-import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { SoldierSource } from '@/app/lib/types'
-import { cropBox } from '@/app/lib/entryBox'
+import { cropSize } from '@/app/lib/entryBox'
+import { hasPage } from '@/app/lib/records'
 import { useT } from '@/app/i18n/LangContext'
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
 import { useLightboxKeys } from './PhotoLightbox'
@@ -32,15 +33,35 @@ function EntryPopup({ src, width, label, onClose }: { src: string; width: number
   )
 }
 
-// The printed line cut from the scan, under the record's facts; a man printed in several books has one to a book, swiped
-// through, or stepped through with the arrows on either side of it. Only the books whose scan is on the site are here
-// (`entries`: hasPage): one that isn't is named further down, as it always was. Nothing is cut until the strip comes on
-// screen, so a record read only for its facts, or stepped past, opens no book, and then only the line shown and the next,
-// so a man in six books doesn't load six PDFs at once. Each stands in the middle, in a window as tall as it is, up to
-// TALLEST, worked out from the entries' boxes before any is cut; a longer one opens whole with "Ceo zapis" or a click on it.
-export default function EntryStrip({ entries, label, onWholePage }: {
+// An entry whose book's scan is not on the site: its text, whole, in the cut-out's place. No box says how tall it is
+// before it is set, so it says so itself.
+function EntryText({ text, onHeight }: { text: string; onHeight: (height: number) => void }) {
+  const ref = useRef<HTMLParagraphElement>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const measure = () => onHeight(el.offsetHeight)
+    measure()
+    const watch = new ResizeObserver(measure)
+    watch.observe(el)
+    return () => watch.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  return <p ref={ref} className="modal-entry record-lead-text">{text}</p>
+}
+
+// Each of the record's entries under his facts: the printed lines cut from the scan, or the text where the book's scan is
+// not on the site. A man printed in several books has one to a book, swiped through, or stepped through with the arrows
+// on either side of it. Nothing is cut until the strip comes on screen, so a record read only for its facts, or stepped
+// past, opens no book, and then only the line shown and the next, so a man in six books doesn't load six PDFs at once. A
+// cut-out stands in the middle, in a window as tall as it is, up to TALLEST, worked out from the entries' boxes before any
+// is cut; a longer one opens whole with "Ceo zapis" or a click on it.
+export default function EntryStrip({ entries, label, title, onWholePage }: {
   entries: SoldierSource[]
-  label: (entry: SoldierSource) => string
+  /** The line over the entry: its book and page */
+  label: (entry: SoldierSource) => ReactNode
+  /** The same in plain text, for the whole entry over the page */
+  title: (entry: SoldierSource) => string
   onWholePage: (entry: SoldierSource) => void
 }) {
   const t = useT()
@@ -51,6 +72,7 @@ export default function EntryStrip({ entries, label, onWholePage }: {
   const [cut, setCut] = useState<Set<number>>(() => new Set())
   const [seen, setSeen] = useState(false)
   const [images, setImages] = useState<Record<number, string>>({})
+  const [textHeights, setTextHeights] = useState<Record<number, number>>({})
   const [popup, setPopup] = useState<number | null>(null)
   const many = entries.length > 1
   const shown = Math.min(at, entries.length - 1)
@@ -83,11 +105,14 @@ export default function EntryStrip({ entries, label, onWholePage }: {
   }, [])
 
   const sizes = entries.map((entry) => {
-    const box = cropBox(entry)
+    if (!hasPage(entry)) return { width: 0, height: 0, whole: 0 }
+    const box = cropSize(entry)
     const across = Math.min(width, box.width * PIXELS_PER_POINT)
     // and the image's border
     return { width: across, height: Math.ceil((across * box.height) / box.width) + 2, whole: box.width * 2 }
   })
+  // A text shows whole; until it has said how tall it is, the strip takes its own height
+  const stripHeight = hasPage(entries[shown]) ? Math.min(TALLEST, sizes[shown].height) : textHeights[shown]
 
   const goTo = (i: number) => {
     const el = strip.current
@@ -104,16 +129,18 @@ export default function EntryStrip({ entries, label, onWholePage }: {
       </div>
       <div className="record-lead-foot">
         <span>{label(entries[shown])}</span>
-        <span className="record-lead-links">
-          {sizes[shown].height > TALLEST && (
-            <button type="button" className="record-fact-link" disabled={!images[shown]} onClick={() => setPopup(shown)}>
-              {t.record.wholeEntry}<ChevronRightIcon size={14} />
+        {hasPage(entries[shown]) && (
+          <span className="record-lead-links">
+            {sizes[shown].height > TALLEST && (
+              <button type="button" className="record-fact-link" disabled={!images[shown]} onClick={() => setPopup(shown)}>
+                {t.record.wholeEntry}<ChevronRightIcon size={14} />
+              </button>
+            )}
+            <button type="button" className="record-fact-link" onClick={() => onWholePage(entries[shown])}>
+              {t.record.wholePage}<ChevronRightIcon size={14} />
             </button>
-          )}
-          <button type="button" className="record-fact-link" onClick={() => onWholePage(entries[shown])}>
-            {t.record.wholePage}<ChevronRightIcon size={14} />
-          </button>
-        </span>
+          </span>
+        )}
       </div>
       <div className={`record-lead-stage${many ? ' has-steps' : ''}`}>
         {many && (
@@ -124,25 +151,29 @@ export default function EntryStrip({ entries, label, onWholePage }: {
         <div
           ref={strip}
           className="record-lead-strip"
-          style={{ height: Math.min(TALLEST, sizes[shown].height) }}
+          style={{ height: stripHeight }}
           onScroll={(e) => {
             const el = e.currentTarget
             if (el.clientWidth) setAt(Math.round(el.scrollLeft / el.clientWidth))
           }}
         >
           {entries.map((entry, i) => (
-            <div key={`${entry.pdf_file}#${entry.pdf_page}#${entry.pdf_y}`} className="record-lead-slide">
-              <div
-                className={`record-lead-crop${sizes[i].height > TALLEST ? ' is-longer' : ''}`}
-                style={{ width: sizes[i].width, height: Math.min(TALLEST, sizes[i].height) }}
-                onClick={() => { if (images[i]) setPopup(i) }}
-              >
-                {cut.has(i) ? (
-                  <Suspense fallback={<div className="entry-crop-loading" />}>
-                    <EntryCrop entry={entry} onImage={(src) => setImages((old) => ({ ...old, [i]: src }))} />
-                  </Suspense>
-                ) : <div className="entry-crop-loading" />}
-              </div>
+            <div key={i} className="record-lead-slide">
+              {hasPage(entry) ? (
+                <div
+                  className={`record-lead-crop${sizes[i].height > TALLEST ? ' is-longer' : ''}`}
+                  style={{ width: sizes[i].width, height: Math.min(TALLEST, sizes[i].height) }}
+                  onClick={() => { if (images[i]) setPopup(i) }}
+                >
+                  {cut.has(i) ? (
+                    <Suspense fallback={<div className="entry-crop-loading" />}>
+                      <EntryCrop entry={entry} onImage={(src) => setImages((old) => ({ ...old, [i]: src }))} />
+                    </Suspense>
+                  ) : <div className="entry-crop-loading" />}
+                </div>
+              ) : entry.additional_info && (
+                <EntryText text={entry.additional_info} onHeight={(height) => setTextHeights((old) => (old[i] === height ? old : { ...old, [i]: height }))} />
+              )}
             </div>
           ))}
         </div>
@@ -153,7 +184,7 @@ export default function EntryStrip({ entries, label, onWholePage }: {
         )}
       </div>
       {popup !== null && images[popup] && (
-        <EntryPopup src={images[popup]} width={sizes[popup].whole} label={label(entries[popup])} onClose={() => setPopup(null)} />
+        <EntryPopup src={images[popup]} width={sizes[popup].whole} label={title(entries[popup])} onClose={() => setPopup(null)} />
       )}
     </section>
   )

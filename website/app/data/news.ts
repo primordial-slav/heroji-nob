@@ -15,6 +15,24 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-11-05',
+    text: {
+      sr: 'Borac koji je bio u više jedinica sada u zapisu ima red za svaku, s bataljonom i dužnošću. Zapisi iz knjiga stoje na jednom mestu, a duži se otvaraju ceo.',
+      sl: 'Borec, ki je bil v več enotah, ima zdaj v zapisu vrstico za vsako, z bataljonom in dolžnostjo. Zapisi iz knjig so na enem mestu, daljši pa se odprejo v celoti.',
+      mk: 'Борец што бил во повеќе единици сега во записот има ред за секоја, со баталјонот и должноста. Записите од книгите стојат на едно место, а подолгите се отвораат цели.',
+      en: 'A fighter who served in several units now has a line for each in his record, with his battalion and duty. Entries from the books stand in one place, and longer ones open in full.',
+    },
+  },
+  {
+    date: '2026-11-05',
+    text: {
+      sr: 'U spisku Treće vojvođanske brigade ispravili smo oko 250 imena koja je skeniranje pokvarilo. Neki od tih boraca sada uz svoj zapis imaju i zapis iz popisa poginulih ili druge knjige.',
+      sl: 'V seznamu Tretje vojvodinske brigade smo popravili okoli 250 imen, ki jih je pokvarilo skeniranje. Nekateri od teh borcev imajo zdaj ob svojem zapisu še zapis iz popisa padlih ali druge knjige.',
+      mk: 'Во списокот на Третата војводинска бригада поправивме околу 250 имиња што ги расипа скенирањето. Некои од овие борци сега покрај својот запис имаат и запис од пописот на загинатите или од друга книга.',
+      en: 'In the roll of the 3rd Vojvodina Brigade we have corrected about 250 names the scanning had spoiled. Some of these fighters now also have their entry from the census of the fallen or another book.',
+    },
+  },
+  {
     date: '2026-11-04',
     text: {
       sr: 'Razdvojili smo oko 35 imenjaka koje smo greškom vodili kao istog čoveka. Neki borci koji su preživeli rat zato više ne stoje kao poginuli.',

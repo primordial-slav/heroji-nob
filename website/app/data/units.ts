@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 2606,
+    soldierCount: 2605,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf', '/pdfs/borci-sutjeske-treca-proleterska.pdf']
   },
@@ -396,7 +396,7 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 2038,
+    soldierCount: 2037,
     dataFile: '/druga-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf', '/pdfs/pozega-cete.pdf']
   },
@@ -446,7 +446,7 @@ export const units: Unit[] = [
     nameEn: '7th Banija Brigade "Vasilj Gaćeša"',
     description: 'Formirana 2. septembra 1942. Borci brigade u bici na Sutjesci, maja i juna 1943.',
     image: '/images/7-banijska-brigada.jpg',
-    soldierCount: 1558,
+    soldierCount: 1557,
     dataFile: '/7-banijska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-7-banijska.pdf', '/pdfs/7-banijska-poginuli.pdf']
   },
@@ -586,7 +586,7 @@ export const units: Unit[] = [
     nameEn: '3rd Vojvodina Brigade',
     description: 'Formirana 15. maja 1943. u Sremu. Poginuli borci i starešine, oni čija je sudbina ostala neutvrđena, i preživeli.',
     image: '/images/3-vojvodjanska-brigada.jpg',
-    soldierCount: 4238,
+    soldierCount: 4240,
     dataFile: '/3-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/3-vojvodjanska.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 65843,
+    soldierCount: 65835,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1548,7 +1548,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Slovenia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Slovenije, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 15278,
+    soldierCount: 15276,
     dataFile: '/ostali-borci-slovenija.json',
     pdfFiles: []
   },
@@ -1559,7 +1559,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Croatia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Hrvatske, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 50410,
+    soldierCount: 50409,
     dataFile: '/ostali-borci-hrvatska.json',
     pdfFiles: []
   },
@@ -1570,7 +1570,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Bosnia and Herzegovina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Bosne i Hercegovine, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 29969,
+    soldierCount: 29967,
     dataFile: '/ostali-borci-bih.json',
     pdfFiles: []
   },
@@ -1603,7 +1603,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 31755,
+    soldierCount: 31751,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },
@@ -1625,7 +1625,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Vojvodina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 9726,
+    soldierCount: 9706,
     dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }

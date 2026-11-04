@@ -4,7 +4,7 @@ import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
-import { entriesOf, hasPage, isFamily, isMuseum, isPoreklo, unitByName } from '@/app/lib/records'
+import { entriesOf, hasPage, isFamily, isPoreklo, unitByName } from '@/app/lib/records'
 import { sourceTitle } from '@/app/lib/recordSources'
 import { recordFacts, type Fact as RecordFact, type FactKey } from '@/app/lib/recordFacts'
 import { eventLines } from '@/app/lib/warEvents'
@@ -72,6 +72,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
   // The soldier's own entry, then the same soldier's entries in the unit's other books
   const entries: SoldierSource[] = entriesOf(soldier)
   const pages = entries.filter(hasPage)
+  const references = entries.filter((e) => hasPage(e) || e.additional_info || e.source_url)
   const [shownPage, setShownPage] = useState(0)
   const page = pages[Math.min(shownPage, pages.length - 1)]
   // the line over the page viewer: the book and its page
@@ -292,16 +293,6 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
           />
         </Suspense>
       )}
-
-      {!page && soldier.source_url && (
-        <p className="modal-source-note">
-          {/* a book whose scan is not on the site is named with its page, not linked; so is a family's archive */}
-          {isPoreklo(soldier.source_url) || isFamily(soldier.source_url)
-            ? t.record.noScanBook(bookTitle(soldier, lang), soldier.source_page ?? null)
-            : <RichText text={isMuseum(soldier.source_url) ? t.record.noScanMuseum(bookTitle(soldier, lang)) : t.record.noScan}
-                render={(part) => <a href={soldier.source_url} target="_blank" rel="noopener noreferrer">{part}</a>} />}
-        </p>
-      )}
     </>
   )
 
@@ -379,19 +370,17 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
               <LifeLine soldier={soldier} entries={entries} unitName={unitRecord?.name ?? unit} pageOf={pageOf} onShow={showEntry} />
             </aside>
           )}
-
-          {!foldPage && (
-            <section className="record-page" ref={pageRef}>
-              <div className="modal-source-head">
-                <h3>{page || !soldier.source_url ? t.record.references : t.record.source}</h3>
-              </div>
-              {sourceBody}
-            </section>
-          )}
         </div>
 
-        {pages.length > 0 && (
-          <EntryStrip key={soldier.soldier_id} entries={pages} label={bookLabel} onWholePage={(e) => showEntry(entries.indexOf(e))} />
+        {/* Every book's entry, the printed lines where its scan is on the site, else the text */}
+        {references.length > 0 && (
+          <EntryStrip
+            key={soldier.soldier_id}
+            entries={references}
+            label={(e) => (hasPage(e) ? bookLabel(e) : entryLabel(e))}
+            title={bookLabel}
+            onWholePage={(e) => showEntry(entries.indexOf(e))}
+          />
         )}
         <RecordActions soldier={soldier} unit={unitRecord} />
 
