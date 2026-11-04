@@ -25,7 +25,7 @@ BAND_HEIGHT = 400  # the band's, likewise
 
 # The posters on the band: data/bandPosters.ts places them
 BAND = ['zena-u-borbi', 'miting-zena', 'ni-zrno', 'narod', 'zima', 'bratstvom', 'u-borbu', 'slovenske-zene', 'zgrabimo', 'svi-u-borbu', 'srbija', 'proletarca',
-        'dan-zena', 'osmi-mart', 'za-zadnji-udar', 'gradi-zemunice', 'dalmatinka', 'partizanka', 'ja-se-borim', 'pazi', 'muslimanska', 'zena-kroz-borbu', 'zene-steber', 'dosla-je']
+        'svi-na-front', 'osmi-mart', 'za-zadnji-udar', 'gradi-zemunice', 'dalmatinka', 'partizanka', 'ja-se-borim', 'pazi', 'muslimanska', 'zena-kroz-borbu', 'zene-steber', 'dosla-je']
 
 # id: (file, [left, top, right, bottom] of the poster inside the scan, language, a woman on it, title, author, year)
 POSTERS = {
@@ -37,6 +37,7 @@ POSTERS = {
     'dalmatinka': (PLAKATI / 'commons' / 'dalmatinka-u-borbi.jpg', None, 'sh', True, 'Dalmatinka u borbi', '', '1944'),
     'dosla-je': (PLAKATI / 'commons' / 'dosla-je-bratska-crvena-armija.png', None, 'sh', False, 'Došla je bratska Crvena armija', 'Zlatko Prica', '1944'),
     'gradi-zemunice': (PLAKATI / 'commons' / 'gradi-zemunice.jpg', None, 'sh', False, 'Gradi zemunice', 'Franjo Mraz', '1943'),
+    'svi-na-front': (PLAKATI / 'commons' / 'vasilij-petrovic-antipov-svi-na-front-sve-za-front.jpg', None, 'sh', False, 'Svi na front, sve za front!', 'Vasilij Petrović-Antipov', '1944'),
     'rujan': (PLAKATI / 'commons' / '15-rujan-je-zadnji-rok.jpg', (0, 0, 1, .72), 'sh', False, '15. rujan je zadnji rok', 'Ivan Lovrenčić', '1944'),
     'bratstvom': (PLAKATI / 'commons' / 'bratstvom-i-jedinstvom-omladina-izgradjuje-svoj-novi-zivot.jpg', None, 'sh', False, 'Bratstvom i jedinstvom', 'Vlado Kristl', '1944'),
     'muslimanska': (PLAKATI / 'commons' / 'godisnjica-16-muslimanske-brigade.jpg', None, 'sh', False, 'Godišnjica XVI muslimanske brigade', 'Ismet Mujezinović', '1944'),

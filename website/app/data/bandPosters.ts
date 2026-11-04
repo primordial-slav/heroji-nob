@@ -19,7 +19,7 @@ export const BAND_POSTERS: { left: BandPoster[]; right: BandPoster[] } = {
     { id: 'proletarca', o: 668, y: 150, h: 186, w: 152, turn: -2, title: 'Proletarca na jurišu', author: 'Nikolaj Pirnat', year: '1944' },
   ],
   right: [
-    { id: 'dan-zena', o: 30, y: 10, h: 174, w: 143, turn: -3, title: 'Дан жена', author: '', year: '1944' },
+    { id: 'svi-na-front', o: 40, y: 2, h: 186, w: 128, turn: -3, title: 'Svi na front, sve za front!', author: 'Vasilij Petrović-Antipov', year: '1944' },
     { id: 'osmi-mart', o: 22, y: 176, h: 169, w: 118, turn: -1, title: 'Живео 8. март', author: 'Ismet Mujezinović', year: '1945' },
     { id: 'za-zadnji-udar', o: 156, y: 28, h: 162, w: 128, turn: 1, title: 'Za zadnji udar vsi - vse!', author: 'Nikolaj Pirnat', year: '1945' },
     { id: 'gradi-zemunice', o: 150, y: 182, h: 139, w: 123, turn: 3, title: 'Gradi zemunice', author: 'Franjo Mraz', year: '1943' },
