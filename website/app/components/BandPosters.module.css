@@ -8,29 +8,16 @@
   width: calc((100% - var(--page)) / 2 + 0.5rem);
   overflow: hidden;
   opacity: 0.15;
-  animation: wall-in 3s ease both;
+  animation: wall-in 0.6s ease both;
 }
 
-/* One wall gives way to the next (the time is FADE_MS in BandPosters.tsx) */
-.leaving {
-  animation: wall-out 3s ease both;
-}
-
+/* The wall is chosen in the browser, after the page has drawn: it comes in softly */
 @keyframes wall-in {
   from {
     opacity: 0;
   }
   to {
     opacity: 0.15;
-  }
-}
-
-@keyframes wall-out {
-  from {
-    opacity: 0.15;
-  }
-  to {
-    opacity: 0;
   }
 }
 

@@ -1,4 +1,4 @@
-"""The home band's walls: the same posters' arrangements that components/BandPosters.tsx shows in turn. Each wall has one
+"""The home band's walls: the arrangements of the posters, of which components/BandPosters.tsx shows one per page load. Each wall has one
 structure, the one the user chose of 2026-11-05 (two rows on each margin, every poster the same height, about 10 px of
 overlap, a slight tilt); only the posters and their order differ. Written to website/app/data/bandWalls.json, which the page
 loads only on screens wide enough to show it.
