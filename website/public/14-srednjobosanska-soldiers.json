@@ -11824,11 +11824,11 @@
     "birth_place": "Žepce"
   },
   {
-    "last_name": "Gojaković",
+    "last_name": "Gojković",
     "middle_name": "M",
     "first_name": "Nikola",
     "fathers_name": "M",
-    "full_name": "Gojaković M Nikola",
+    "full_name": "Gojković M Nikola",
     "additional_info": "rođen 1927, Kladari, Doboj, borac, poginuo.",
     "birth_year": "1927",
     "pdf_page": 8,
@@ -11840,7 +11840,33 @@
     "pdf_x_end": 447.0,
     "birth_place": "Kladari, Doboj",
     "death_type": "poginuo",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9111000223",
+        "name": "Gojković Milana Nikola",
+        "additional_info": "Poginuli borci narodnooslobodilačkog rata, Kladari: Gojković Milana Nikola, 1927, Kladari, Doboj, Srbin, zemljoradnik, u NOB-u od marta 1944. u 14. srednjobosanskoj NOU brigadi, kao borac poginuo oktobra 1944. kod Crnog vrha, Tešanj.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=389",
+        "source_page": 385,
+        "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014210",
+        "name": "Gojković (Milan) Nikola",
+        "additional_info": "rođen 1926, Kladari (Doboj). Srbin, poginuo 1942. u NOBu, Kod žepče",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1245",
+        "source_page": 1245,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1942",
+    "death_place": "Kod žepče"
   },
   {
     "last_name": "Gojić",
@@ -14116,9 +14142,9 @@
   {
     "last_name": "Hedemović",
     "middle_name": "J",
-    "first_name": "Muharemc",
+    "first_name": "Muharem",
     "fathers_name": "J",
-    "full_name": "Hedemović J Muharemc",
+    "full_name": "Hedemović J Muharem",
     "additional_info": "ino, 1910, Prnjavor (opština Prnjavor)",
     "birth_year": "",
     "pdf_page": 45,
@@ -17375,11 +17401,11 @@
     "rank": "komesar bataljona"
   },
   {
-    "last_name": "Jovanovio",
+    "last_name": "Jovanović",
     "middle_name": "R",
     "first_name": "Nikola",
     "fathers_name": "R",
-    "full_name": "Jovanovio R Nikola",
+    "full_name": "Jovanović R Nikola",
     "additional_info": "rođen 1921, Ritešić, Podnovlje, Doboj. Desetar 2. č. 1. bat. poginuo 5. maja 1945. god. D. Svilaj, Odžak.",
     "birth_year": "1921",
     "pdf_page": 11,
@@ -17394,7 +17420,42 @@
     "death_date": "05.05.1945",
     "death_place": "D. Svilaj, Odžak",
     "rank": "desetar",
-    "unit_detail": "2. četa, 1. bataljon"
+    "unit_detail": "2. četa, 1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9111000541",
+        "name": "Jovanović Riste Nikola",
+        "additional_info": "Poginuli borci narodnooslobodilačkog rata, Ritešić: Jovanović Riste Nikola, 1920, Ritešić, Doboj, Srbin, zemljoradnik, u NOB-u od 8. marta 1945, kao desetar u 14. srednjobosanskoj NOU brigadi poginuo početkom maja 1945. u Vrbovcu, Odžak.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=416",
+        "source_page": 412,
+        "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014451",
+        "name": "Jovanović (Risto) Nikola",
+        "additional_info": "rođen 1920, Ritešić (Doboj). Srbin, poginuo 1945. u NOBu, Posavine-odžak",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1256",
+        "source_page": 1256,
+        "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0033000249",
+        "name": "Jovanović Riste Nikola",
+        "additional_info": "rođen 1921, Ristići Derevnta, 19. brigada, poginuo, 5. V 1945, D. Svilaj, sahranjen: Mala Brusnica",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 23,
+        "pdf_x": 9.3,
+        "pdf_y": 100.5,
+        "pdf_x_end": 644.3,
+        "pdf_y_end": 125.0,
+        "unit_detail": "19. brigada",
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Jovanović",
@@ -37400,9 +37461,9 @@
   {
     "last_name": "Radić",
     "middle_name": "J",
-    "first_name": "Ljubog",
+    "first_name": "Ljubo",
     "fathers_name": "J",
-    "full_name": "Radić J Ljubog",
+    "full_name": "Radić J Ljubo",
     "additional_info": "edžo, 1922, Brestovo (opština Doboj)",
     "birth_year": "",
     "pdf_page": 35,
@@ -42656,7 +42717,22 @@
     "death_date": "06.05.1945",
     "death_place": "Vlaška Mala, Odžak",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon"
+    "unit_detail": "3. četa, 4. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000607",
+        "name": "Smiljanić Sime Mihailo",
+        "additional_info": "rođen 1926, Glamoč, 3. č. 4. bat. 14. brigade, poginuo, Vlaška Mala, sahranjen: Vlaška Mala",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 52,
+        "pdf_x": 8.9,
+        "pdf_y": 225.7,
+        "pdf_x_end": 622.6,
+        "pdf_y_end": 241.9,
+        "unit_detail": "3. četa, 4. bataljon, 14. brigada",
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Smiljanić",
@@ -45863,11 +45939,11 @@
     ]
   },
   {
-    "last_name": "Talio",
+    "last_name": "Talić",
     "middle_name": "M",
     "first_name": "Rašid",
     "fathers_name": "M",
-    "full_name": "Talio M Rašid",
+    "full_name": "Talić M Rašid",
     "additional_info": "rođen 1904, Kaloševići, Tešanj, borac 1. bat. poginuo 16. aprila 1945. god. Putnikovo Brdo, Doboj.",
     "birth_year": "1904",
     "pdf_page": 25,
@@ -45882,7 +45958,22 @@
     "death_date": "16.04.1945",
     "death_place": "Putnikovo Brdo, Doboj",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000645",
+        "name": "Talić Muniba Rašid",
+        "additional_info": "rođen 1904, Kaloševići, 14. brigada, poginuo, 16. IV 1945, Putnikovo Brdo, sahranjen: Alilbegovci",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 60,
+        "pdf_x": 9.6,
+        "pdf_y": 146.0,
+        "pdf_x_end": 639.4,
+        "pdf_y_end": 162.4,
+        "unit_detail": "14. brigada",
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Tanasić",

@@ -2239,11 +2239,11 @@
     "death_place": "Suhomlaka"
   },
   {
-    "last_name": "Bešković",
+    "last_name": "Bošković",
     "middle_name": "",
     "first_name": "Jovan",
     "fathers_name": "",
-    "full_name": "Bešković Jovan",
+    "full_name": "Bošković Jovan",
     "additional_info": "rođ. 1900, Darda, poginuo u Bar. Petrovom Selu marta 1945.",
     "birth_year": "1900",
     "birth_place": "Darda",
@@ -6769,7 +6769,23 @@
     "soldier_id": "0078000242",
     "death_date": "16.04.1945",
     "death_place": "Kućanci",
-    "pdf_x_end": 345.4
+    "pdf_x_end": 345.4,
+    "other_sources": [
+      {
+        "soldier_id": "0111010067",
+        "name": "Galić Nikola",
+        "additional_info": "Bački Breg, Sombor, borac, poginuo 16. 4. 1945. kod mesta Kućanaca.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 28,
+        "pdf_x": 75.3,
+        "pdf_y": 339.4,
+        "pdf_x_end": 355.8,
+        "pdf_y_end": 356.6,
+        "unit_detail": "8. vojvođanska brigada",
+        "rank": "borac",
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Garai",
@@ -18596,9 +18612,9 @@
   {
     "last_name": "Nikšić",
     "middle_name": "",
-    "first_name": "Sotija",
+    "first_name": "Sofija",
     "fathers_name": "",
-    "full_name": "Nikšić Sotija",
+    "full_name": "Nikšić Sofija",
     "additional_info": "rođ. 1922, Stejanovci, Ruma, poginula u Kamenici (IriSki venac) 25. VIII 1944.",
     "birth_year": "1922",
     "birth_place": "Stejanovci, Ruma",
@@ -23029,11 +23045,11 @@
     "death_date": "23.03.1945"
   },
   {
-    "last_name": "Ruduć",
-    "middle_name": "",
+    "last_name": "Rudić",
+    "middle_name": "S",
     "first_name": "Blaško",
-    "fathers_name": "",
-    "full_name": "Ruduć Blaško",
+    "fathers_name": "S",
+    "full_name": "Rudić S Blaško",
     "additional_info": "rođ. 1920, Subotica, poginuo kod N. Bezdana 7. III 1945.",
     "birth_year": "1920",
     "birth_place": "Subotica",
@@ -23046,7 +23062,35 @@
     "soldier_id": "0078000798",
     "death_date": "07.03.1945",
     "death_place": "N. Bezdan",
-    "pdf_x_end": 348.3
+    "pdf_x_end": 348.3,
+    "other_sources": [
+      {
+        "soldier_id": "9027009777",
+        "name": "Rudić (Siva) Blaško",
+        "additional_info": "rođen 1921, Mala Bosna (Subotica). Hrvat, poginuo 1945. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=504",
+        "source_page": 504,
+        "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0111011201",
+        "name": "Rudić S Blaško",
+        "additional_info": "1920, Subotica, borac, poginuo 7. 3. 1945. u mestu N. Bezdan.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 38,
+        "pdf_x": 79.2,
+        "pdf_y": 253.0,
+        "pdf_x_end": 360.5,
+        "pdf_y_end": 270.1,
+        "unit_detail": "8. vojvođanska brigada",
+        "rank": "borac",
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rumenković",

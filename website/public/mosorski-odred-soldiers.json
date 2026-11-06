@@ -22570,6 +22570,21 @@
     "occupation": "krojač",
     "rank": "ekonom",
     "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0008001235",
+        "name": "Ferić Paške Marin",
+        "additional_info": ". . , Split, .. , borac",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 38,
+        "pdf_x": 41.3,
+        "pdf_y": 474.0,
+        "pdf_x_end": 223.6,
+        "pdf_y_end": 482.7,
+        "rank": "borac",
+        "unit_file": "4-splitska-soldiers.json"
+      }
+    ],
     "birth_date": "14.03.1912"
   },
   {
@@ -63071,11 +63086,11 @@
     "rank": "borac"
   },
   {
-    "last_name": "Pakao",
+    "last_name": "Fakač",
     "middle_name": "Nikole",
     "first_name": "Kamilo",
     "fathers_name": "Nikola",
-    "full_name": "Pakao Nikole Kamilo",
+    "full_name": "Fakač Nikole Kamilo",
     "additional_info": "borac Pratećeg voda 1. bataljona mosorskog PO. Rođen 1912. u Splitu, službenik, Hrvat. U Mosorski PO došao rujna 1943. Iz odreda otišao 11. studenog 1943. kada je upućen u bolnicu na Vis, a zatim u sastav 1. proleterske brigade. Umro 1983.",
     "birth_year": "1912",
     "pdf_page": 53,
@@ -63092,7 +63107,39 @@
     "death_type": "umro",
     "death_date": "1983",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "party": "KPJ",
+    "borrowed": [
+      "party"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001002932",
+        "name": "Fakač Nikole Kamilo",
+        "additional_info": "1912, Split, Hrvatska, Hrvat, službenik, u NOB od septembra 1943, u brigadi od maja 1944, prištapske jedinice, apotekar u brigadnom sanitetu",
+        "pdf_file": "prva-proleterska-1.pdf",
+        "pdf_page": 230,
+        "pdf_x": 64.1,
+        "pdf_y": 378.6,
+        "pdf_x_end": 371.4,
+        "pdf_y_end": 410.6,
+        "unit_detail": "prištapske jedinice",
+        "since": "1944-05",
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001400208",
+        "name": "Fakač Nikole Kamilo",
+        "additional_info": "rođen 1912, Split, službenik, iz trgovačke porodice. Kao mladić se družio sa naprednom omladinom i bio je privržen naprednom radničkom pokretu. Po dolasku okupatora 1941. pomaže i radi za NOP kao namještenik prehrambenog otsjeka općine u Splitu. Izdavao je bonove za hranu i onim osobama za koje je okupator zabranio. Bio je otkriven 1942. i optužen od Vojnog specijalnog suda u Zadru, ali je oslobođen zbog nedostatka dokaza, a on je i dalje nastavio pomagati NOP. U rujnu 1943. ostavlja familju i odlazi u Mosorski partizanski odred iz kojeg je otišao na Vis i ušao u sastav 2. brigade 26. divizije odakle je otišao na kurs apotekara. U ožujku 1944. upućen je u sanitetsko odjeljenje VS u Drvar, gdje je ostao do desanta na Drvaru 25. svibnja 1944. kada je upućen u sanitet bolnice 1. proleterske divizije s kojom prolazi VII ofenzivu i ulazi u sastav saniteta 1. proleterske NOU brigade u kojoj je obavljao dužnost apotekara, na toj dužnosti ga je zatekao kraj rata. Poslije rata se demobilisao i nastavio rad na obnovi zemlje. U toku rata je postao član KPJ.",
+        "pdf_file": "dalmatinci-prva-proleterska.pdf",
+        "pdf_page": 63,
+        "pdf_x": 105.9,
+        "pdf_y": 228.1,
+        "pdf_x_end": 214.1,
+        "pdf_y_end": 646.7,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Paladin",
@@ -92833,9 +92880,9 @@
   {
     "last_name": "Vrcalj",
     "middle_name": "",
-    "first_name": "Bozislav",
+    "first_name": "Borislav",
     "fathers_name": "",
-    "full_name": "Vrcalj Bozislav",
+    "full_name": "Vrcalj Borislav",
     "additional_info": "borac Mosorskog PO. U Mosorski PO došao u rujnu 1943. i u njegovom se sastavu nalazio do 10. studenog kada je upućen u bolnicu.",
     "birth_year": "",
     "pdf_page": 198,
