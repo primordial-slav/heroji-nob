@@ -621,7 +621,7 @@ const sl: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: 'IV. pomorski obalni sektor',
-    description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja in od kod je kdo, pri padlih in umrlih tudi kje so padli, ter štab sektorja.',
+    description: 'Ustanovljen 30. oktobra 1943 na Hvaru, sektor mornarice NOVJ za srednjo Dalmacijo in otoke. Vsi borci sektorja s krajem, od koder je kdo, pri padlih in umrlih tudi s krajem smrti, ter štab sektorja.',
   },
   'viski-bataljon': {
     name: 'Viški prostovoljni bataljon',
@@ -629,11 +629,11 @@ const sl: Record<string, UnitText> = {
   },
   'kokrski-odred': {
     name: 'Kokrški odred',
-    description: 'Ustanovljen 18. junija 1942 na Kališču pod Storžičem, drugič 27. avgusta 1944 v Dragi pri Begunjah. Borci prvega odreda z življenjepisi in spisek drugega po štabih, službah in četah.',
+    description: 'Ustanovljen 18. junija 1942 na Kališču pod Storžičem, drugič 27. avgusta 1944 v Dragi pri Begunjah. Borci prvega odreda z življenjepisi in seznam drugega po štabih, službah in četah.',
   },
   'cankarjev-bataljon': {
     name: 'Cankarjev bataljon',
-    description: 'Ustanovljen 5. avgusta 1941 na Vodiški planini na Jelovici; januarja 1942 dražgoška bitka. Padli cankarjevci in preživeli udeleženci dražgoške bitke.',
+    description: 'Ustanovljen 5. avgusta 1941 na Vodiški planini na Jelovici; januarja 1942 se je boril v dražgoški bitki. Padli cankarjevci in preživeli udeleženci dražgoške bitke.',
   },
   'novosadski-odred': {
     name: 'Novosadski partizanski odred',
@@ -641,15 +641,15 @@ const sl: Record<string, UnitText> = {
   },
   'deveta-brigada': {
     name: 'Deveta brigada (Kočevska)',
-    description: 'Ustanovljena 14. septembra 1943 iz bataljonov Zapadnodolenjskega odreda, v sestavu 18. divizije. Štabi brigade in bataljonov; borci brigade: leto in kraj rojstva, pri padlih tudi kje so padli.',
+    description: 'Ustanovljena 14. septembra 1943 iz bataljonov Zapadnodolenjskega odreda, v sestavu 18. divizije. Štabi brigade in bataljonov; borci brigade: leto in kraj rojstva, pri padlih tudi kraj smrti.',
   },
   '4-prekomorska-brigada': {
     name: '4. prekomorska brigada',
-    description: 'Ustanovljena 7. septembra 1944 v Italiji pri bazi NOVJ v Bariju: nakladanje in prevoz zavezniške pomoči. Padli in umrli ter vodilni kader.',
+    description: 'Ustanovljena 7. septembra 1944 v Italiji pri bazi NOVJ v Bariju za nakladanje in prevoz zavezniške pomoči. Padli in umrli ter vodilni kader.',
   },
   '9-srpska-brigada': {
     name: '9. srbska brigada',
-    description: 'Ustanovljena 11. marca 1944 v Rečici. Borci v stroju na dan ustanovitve, poveljniški kader brigade, bataljonov in čet ter bolničarke in borke.',
+    description: 'Ustanovljena 11. marca 1944 v Rečici. Borci, postrojeni na dan ustanovitve, poveljniški kader brigade, bataljonov in čet ter bolničarke in borke.',
   },
   'kozjanski-odred': {
     name: 'Kozjanski odred',
@@ -700,7 +700,7 @@ const sl: Record<string, UnitText> = {
     description: 'Ustanovljena 14. januarja 1944 v Veliki Plani pri Prokuplju kot 3. južnomoravska brigada. Padli in umrli borci in starešine brigade.',
   },
   'cacanski-odred': {
-    name: 'Čačanski partizanski odred "Dr. Dragiša Mišović"',
+    name: 'Čačanski partizanski odred "dr. Dragiša Mišović"',
     description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh.',
   },
   'mostarski-bataljon': {
@@ -852,7 +852,7 @@ const mk: Record<string, UnitText> = {
   '7-vojvodjanska-brigada': {
     name: '7-ма војводинска ударна бригада',
     description:
-      'Формирана на 2 јули 1944 на фармата на Мушицки кај Батровци. Преживеани, загинати и борци починати по војната, и борци од 4-тиот (рускиот) баталјон.',
+      'Формирана на 2 јули 1944 на фармата на Мушицки кај Батровци. Преживеани и загинати борци, борци починати по војната и борците на 4-тиот (рускиот) баталјон.',
   },
   '19-bircanska-brigada': {
     name: '19-та бирчанска бригада',
@@ -864,7 +864,7 @@ const mk: Record<string, UnitText> = {
   },
   'tuzlanski-odred': {
     name: 'Тузлански партизански одред',
-    description: 'Формиран на 24 октомври 1943 во Тузла. Борци на одредот, многумина и со фотографија.',
+    description: 'Формиран на 24 октомври 1943 во Тузла. Борците на одредот, многумина со фотографија.',
   },
   'uzicki-odred': {
     name: 'Ужички партизански одред "Димитрије Туцовиќ"',
@@ -1119,7 +1119,7 @@ const mk: Record<string, UnitText> = {
   '4-vojvodjanska-brigada': {
     name: '4-та војводинска бригада',
     description:
-      'Формирана на 7 октомври 1943 во шумата Варадин кај Вишњићево. Борците од првиот состав на бригадата и загинатите.',
+      'Формирана на 7 октомври 1943 во шумата Варадин кај Вишњиќево. Борците од првиот состав на бригадата и загинатите.',
   },
   '1-kosovsko-metohijska-brigada': {
     name: '1-ва косовско-метохиска бригада',
@@ -1284,7 +1284,7 @@ const mk: Record<string, UnitText> = {
   'turopoljsko-posavski-odred': {
     name: 'Туропољско-посавски партизански одред',
     description:
-      'Формиран на 8 август 1943 кај Чичка Пољана. Загинатите борци на одредот и оние што непријателите ги стрелаа или умреа во војната.',
+      'Формиран на 8 август 1943 кај Чичка Пољана. Загинатите борци на одредот, стреланите од непријателот и починатите во војната.',
   },
   'zascitni-bataljon-vpv': {
     name: 'Заштитен баталјон на ИООФ и ЦК КПС',
@@ -1378,7 +1378,7 @@ const mk: Record<string, UnitText> = {
   },
   '4-pomorski-sektor': {
     name: 'IV поморски крајбрежен сектор',
-    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот и од каде е кој, а за загинатите и починатите и каде паднале, и штабот на секторот.',
+    description: 'Формиран на 30 октомври 1943 во Хвар, сектор на морнарицата на НОВЈ за средна Далмација и островите. Сите борци на секторот со местото од каде е секој, за загинатите и починатите и местото на смртта, и штабот на секторот.',
   },
   'viski-bataljon': {
     name: 'Вишки доброволен баталјон',
@@ -1386,11 +1386,11 @@ const mk: Record<string, UnitText> = {
   },
   'kokrski-odred': {
     name: 'Кокршки одред',
-    description: 'Формиран на 18 јуни 1942 на Калишче под Сторжич, а втор пат на 27 август 1944 во Драга кај Бегуње. Борците на првиот одред со биографии и списокот на вториот по штабови, служби и чети.',
+    description: 'Формиран на 18 јуни 1942 на Калишче под Сторжич, а повторно на 27 август 1944 во Драга кај Бегуње. Борците на првиот одред со биографии и списокот на вториот по штабови, служби и чети.',
   },
   'cankarjev-bataljon': {
     name: 'Цанкаров баталјон',
-    description: 'Формиран на 5 август 1941 на Водишката планина на Јеловица; во јануари 1942 битката за Драгоше. Загинатите борци на баталјонот и преживеаните учесници во битката за Драгоше.',
+    description: 'Формиран на 5 август 1941 на Водишката планина на Јеловица; во јануари 1942 се борел во битката за Дражгоше. Загинатите борци на баталјонот и преживеаните учесници во битката за Дражгоше.',
   },
   'novosadski-odred': {
     name: 'Новосадски партизански одред',
@@ -1398,11 +1398,11 @@ const mk: Record<string, UnitText> = {
   },
   'deveta-brigada': {
     name: 'Деветта бригада (Кочевска)',
-    description: 'Формирана на 14 септември 1943 од баталјоните на Западнодолењскиот одред, во составот на 18-та дивизија. Штабовите на бригадата и баталјоните; борците на бригадата: година и место на раѓање, а за загинатите и каде паднале.',
+    description: 'Формирана на 14 септември 1943 од баталјоните на Западнодолењскиот одред, во составот на 18-та дивизија. Штабовите на бригадата и баталјоните; борците на бригадата: година и место на раѓање, а за загинатите и местото на смртта.',
   },
   '4-prekomorska-brigada': {
     name: '4-та прекуморска бригада',
-    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари: товарење и превоз на сојузничката помош. Загинатите и починатите и командниот кадар.',
+    description: 'Формирана на 7 септември 1944 во Италија, при базата на НОВЈ во Бари, за товарење и превоз на сојузничката помош. Загинатите и починатите и командниот кадар.',
   },
   '9-srpska-brigada': {
     name: '9-та српска бригада',
@@ -1418,11 +1418,11 @@ const mk: Record<string, UnitText> = {
   },
   '1-tenkovski-bataljon': {
     name: 'Прв тенковски баталјон',
-    description: 'Формиран на 21 септември 1943 во Лика, од Тенковската чета на 1-от корпус. Припадниците на тенковскиот вод, чета и баталјон на Главниот штаб на Хрватска.',
+    description: 'Формиран на 21 септември 1943 во Лика, од Тенковската чета на 1-виот корпус. Припадниците на тенковскиот вод, чета и баталјон на Главниот штаб на Хрватска.',
   },
   '3-diverzantski-odred': {
     name: 'Трет диверзантски одред',
-    description: 'Формиран на 7 септември 1944 во Побјеник кај Чазма, од 3-от диверзантски баталјон. Сите борци и старешини на диверзантската група, чета, баталјон и одред.',
+    description: 'Формиран на 7 септември 1944 во Побјеник кај Чазма, од 3-тиот диверзантски баталјон. Сите борци и старешини на диверзантската група, чета, баталјон и одред.',
   },
   '1-2-prekomorska-brigada': {
     name: '1-ва и 2-ра прекуморска бригада',

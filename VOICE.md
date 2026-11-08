@@ -119,6 +119,8 @@ Search examples on the home page suit each audience (Slovene names and places fo
 - Soldiers who fell are "padli" ("padel v boju"); "poginiti" is any violent death, accidents included, so the site doesn't use it for them.
 - Three dots apart from a whole word: "Nalaganje …".
 - Unit names as Slovene says them: Prva liška proletarska brigada »Marko Orešković«, 5. krajiška (kozaraška) udarna brigada.
+- Slovene words, not the books' Serbo-Croatian ones: proletarski (never "proleterski"), seznam (not "spisek"), politodel, saniteta (genitive "sanitete"), "postrojeni v Rudem" or "zbor" for a unit in formation ("stroj" is a machine), "dr." in lower case. Adjectives of places as Slovene forms them: nikšiški, kruševški, požarevški, osiješki.
+- "Se je udeležil" for taking part in a march or a battle ("se je udeležil igmanskega marša 27. in 28. januarja 1942"); "zapisal", "navedel" or "vnesel" for what we put in a record, never "prebrali" (it reads as if we hadn't read the book).
 
 ### Македонски
 
@@ -126,7 +128,9 @@ Search examples on the home page suit each audience (Slovene names and places fo
 - The definite article and the doubled object where Macedonian has them ("проверете ја врската", "го видите списокот").
 - Words: борец, борци; загинати, починати, исчезнати; соборци, земјаци; единица, список, запис, книга.
 - Ordinals as Macedonian writes them, everywhere, unit names and running text alike: 13-та бригада, 1-ви баталјон, 2-ра чета, 7-ма, 8-ма, 9-ти корпус, "од 3-та, 4-та и 5-та далматинска бригада" (never the Serbian "3. бригада"; `mkOrdinal` in `messages/mk.ts`). Dates without a full stop: "8 јули 1942". Quotes „…“; thousands with a dot.
-- "Починати" for those who died, as the filters say; "умрени" is the civil registry's word.
+- The definite ordinal where the noun is definite (after "на", "од", or naming one unit in a sentence): 1-виот баталјон, 3-тиот корпус, 2-рата чета, 1-вата чета (`mkOrdinalDefinite`); never "1-от".
+- "Починати" for those who died, as the filters say; "умрени" is the civil registry's word, and "умреле" goes the same way ("загинале или починале"). The fallen are "загинати", not "паднати" (the books' "pali" is still "загинати").
+- Serbo-Croatian place names in Macedonian Cyrillic take ќ and ѓ for ć and đ: Никшиќ, Теслиќ, Вишњиќево, Житораѓе; never the Serbian ћ and ђ.
 - The medal with its article, as Macedonian writes it: "Носител на Партизанската споменица 1941", "носителите на Партизанската споменица".
 - An imperative before its object ("Побарајте го борецот…"), not the object first ("Борецот побарајте го…").
 - Names from the books stay in the Latin the books print; the site does not transliterate them.

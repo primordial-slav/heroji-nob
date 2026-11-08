@@ -18,8 +18,8 @@ export const NEWS: NewsItem[] = [
     date: '2026-11-05',
     text: {
       sr: 'Borac koji je bio u više jedinica sada u zapisu ima red za svaku, s bataljonom i dužnošću. Zapisi iz knjiga stoje na jednom mestu, a duži se otvaraju ceo.',
-      sl: 'Borec, ki je bil v več enotah, ima zdaj v zapisu vrstico za vsako, z bataljonom in dolžnostjo. Zapisi iz knjig so na enem mestu, daljši pa se odprejo v celoti.',
-      mk: 'Борец што бил во повеќе единици сега во записот има ред за секоја, со баталјонот и должноста. Записите од книгите стојат на едно место, а подолгите се отвораат цели.',
+      sl: 'Borec, ki je bil v več enotah, ima zdaj v zapisu vrstico za vsako, z bataljonom in dolžnostjo. Zapisi iz knjig so zdaj zbrani na enem mestu, daljše pa lahko odprete v celoti.',
+      mk: 'Борец што бил во повеќе единици сега во записот има ред за секоја, со баталјонот и должноста. Записите од книгите сега се на едно место, а подолгите можете да ги отворите во целост.',
       en: 'A fighter who served in several units now has a line for each in his record, with his battalion and duty. Entries from the books stand in one place, and longer ones open in full.',
     },
   },
@@ -27,8 +27,8 @@ export const NEWS: NewsItem[] = [
     date: '2026-11-05',
     text: {
       sr: 'U spisku Treće vojvođanske brigade ispravili smo oko 250 imena koja je skeniranje pokvarilo. Neki od tih boraca sada uz svoj zapis imaju i zapis iz popisa poginulih ili druge knjige.',
-      sl: 'V seznamu Tretje vojvodinske brigade smo popravili okoli 250 imen, ki jih je pokvarilo skeniranje. Nekateri od teh borcev imajo zdaj ob svojem zapisu še zapis iz popisa padlih ali druge knjige.',
-      mk: 'Во списокот на Третата војводинска бригада поправивме околу 250 имиња што ги расипа скенирањето. Некои од овие борци сега покрај својот запис имаат и запис од пописот на загинатите или од друга книга.',
+      sl: 'V seznamu Tretje vojvodinske brigade smo popravili okoli 250 imen, ki so se pri skeniranju popačila. Zato smo nekatere od teh borcev zdaj našli tudi v popisu padlih ali v drugi knjigi.',
+      mk: 'Во списокот на Третата војводинска бригада поправивме околу 250 имиња што беа искривени при скенирањето. Затоа некои од овие борци сега ги најдовме и во пописот на загинатите или во друга книга.',
       en: 'In the roll of the 3rd Vojvodina Brigade we have corrected about 250 names the scanning had spoiled. Some of these fighters now also have their entry from the census of the fallen or another book.',
     },
   },
@@ -36,8 +36,8 @@ export const NEWS: NewsItem[] = [
     date: '2026-11-04',
     text: {
       sr: 'Razdvojili smo oko 35 imenjaka koje smo greškom vodili kao istog čoveka. Neki borci koji su preživeli rat zato više ne stoje kao poginuli.',
-      sl: 'Razdružili smo okoli 35 soimenjakov, ki smo jih pomotoma vodili kot isto osebo. Nekateri borci, ki so vojno preživeli, zato niso več navedeni kot padli.',
-      mk: 'Раздвоивме околу 35 имењаци што по грешка ги водевме како ист човек. Затоа некои борци што ја преживеаја војната повеќе не стојат како загинати.',
+      sl: 'Ločili smo okoli 35 soimenjakov, ki smo jih pomotoma imeli za isto osebo. Zato nekateri borci, ki so vojno preživeli, niso več navedeni med padlimi.',
+      mk: 'Раздвоивме околу 35 имењаци што по грешка ги сметавме за ист човек. Затоа некои борци што ја преживеаја војната повеќе не се наведени како загинати.',
       en: 'We have separated about 35 namesakes we had wrongly taken for the same man. Some fighters who survived the war are therefore no longer listed as fallen.',
     },
   },
@@ -45,8 +45,8 @@ export const NEWS: NewsItem[] = [
     date: '2026-11-04',
     text: {
       sr: 'Kod još oko 2.000 boraca sada piše gde su poginuli, a kod oko 800 i kada. Knjige su to navodile, ali ranije nismo pročitali.',
-      sl: 'Pri še okoli 2.000 borcih zdaj piše, kje so padli, pri okoli 800 pa tudi kdaj. Knjige so to navajale, a tega prej nismo prebrali.',
-      mk: 'Кај уште околу 2.000 борци сега пишува каде загинале, а кај околу 800 и кога. Книгите го наведуваа тоа, но порано не го прочитавме.',
+      sl: 'Pri še okoli 2.000 borcih je zdaj navedeno, kje so padli, pri okoli 800 pa tudi kdaj. Knjige so to navajale, a tega doslej nismo vnesli.',
+      mk: 'Кај уште околу 2.000 борци сега пишува каде загинале, а кај околу 800 и кога. Книгите го наведуваа тоа, но досега не го внесовме.',
       en: 'For about 2,000 more fighters, the record now says where they fell, and for about 800 also when. The books gave it, but we had not read it before.',
     },
   },
@@ -54,8 +54,8 @@ export const NEWS: NewsItem[] = [
     date: '2026-11-04',
     text: {
       sr: 'Kod još oko 12.000 boraca sada piše i mesto rođenja. Knjige su ga navodile, ali ga ranije nismo pročitali.',
-      sl: 'Pri še okoli 12.000 borcih zdaj piše tudi kraj rojstva. Knjige so ga navajale, a ga prej nismo prebrali.',
-      mk: 'Кај уште околу 12.000 борци сега пишува и местото на раѓање. Книгите го наведуваа, но порано не го прочитавме.',
+      sl: 'Pri še okoli 12.000 borcih je zdaj naveden tudi kraj rojstva. Knjige so ga navajale, a ga doslej nismo vnesli.',
+      mk: 'Кај уште околу 12.000 борци сега пишува и местото на раѓање. Книгите го наведуваа, но досега не го внесовме.',
       en: 'For about 12,000 more fighters, the place of birth now shows. The books gave it, but we had not read it before.',
     },
   },
@@ -109,7 +109,7 @@ export const NEWS: NewsItem[] = [
     text: {
       sr: 'Dodali smo borce iz sedam knjiga o selima i krajevima: Han Pijesak, Skakavac, Žitorađe, Brod kod Crne Trave, Grahovo kod Nikšića, Kolašin i Božiće.',
       sl: 'Dodali smo borce iz sedmih knjig o vaseh in krajih: Han Pijesak, Skakavac, Žitorađe, Brod pri Crni Travi, Grahovo pri Nikšiću, Kolašin in Božiće.',
-      mk: 'Додадовме борци од седум книги за села и краишта: Хан Пијесак, Скакавац, Житорађе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе.',
+      mk: 'Додадовме борци од седум книги за села и краишта: Хан Пијесак, Скакавац, Житораѓе, Брод кај Црна Трава, Грахово кај Никшиќ, Колашин и Божиќе.',
       en: 'We have added the fighters from seven books on villages and districts: Han Pijesak, Skakavac, Žitorađe, Brod near Crna Trava, Grahovo near Nikšić, Kolašin and Božiće.',
     },
   },

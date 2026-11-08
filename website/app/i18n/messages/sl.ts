@@ -29,7 +29,7 @@ export const sl: Messages = {
   language: { label: 'Jezik' },
   footer: {
     contact: 'Kontakt',
-    records: 'Napako v zapisu ali kaj, kar veste o borcu, lahko pošljete tudi iz samega zapisa.',
+    records: 'Napako ali kar veste o borcu nam lahko sporočite tudi neposredno iz njegovega zapisa.',
     missingAsk: 'Če borca ni na strani,',
     missingLink: 'nam pošljite, kar veste o njem',
   },
@@ -53,7 +53,7 @@ export const sl: Messages = {
     doors: {
       title: 'Raziščite',
       units: 'Enote',
-      unitsText: 'Brigade, divizije in odredi po letu ustanovitve, vsaka s seznamom svojih borcev.',
+      unitsText: 'Brigade, divizije in odredi po letu ustanovitve in seznami njihovih borcev.',
       unitsCount: (x: number) => `${n(x)} ${plural('sl', x, { one: 'enota', two: 'enoti', few: 'enote', other: 'enot' })}`,
       photos: 'Fotografije',
       photosText: 'Obrazi borcev iz knjig njihovih enot, z znaci.org in iz družinskih albumov.',
@@ -122,7 +122,7 @@ export const sl: Messages = {
   },
 
   onThisDay: {
-    title: (day: number, month: number) => `Padli, umrli ali pogrešani dne ${day}. ${MONTHS_GENITIVE[month - 1]}`,
+    title: (day: number, month: number) => `Padli, umrli ali pogrešani ${day}. ${MONTHS_GENITIVE[month - 1]}`,
     loading: 'Nalaganje',
     deathTitle: 'Leto in kraj smrti',
     missingTitle: 'Leto in kraj izginotja',
@@ -141,7 +141,7 @@ export const sl: Messages = {
     source: (page: number | string) => `Iz zapisa na str. ${page}`,
     printedLabels: false,
     born: (woman: boolean) => (woman ? 'Rojena' : 'Rojen'),
-    skoj: 'Član SKOJ',
+    skoj: 'Član SKOJ-a',
     kpj: 'Član KPJ',
     party: (items: [string, string][]) => items.map(([org, year]) => org + (year ? ` od ${year}` : '')).join(', '),
     nob: 'V NOB',
@@ -190,8 +190,8 @@ export const sl: Messages = {
     loadingPage: `Nalaganje strani${dots}`,
     steps: 'Sosednji zapisi na seznamu',
     stepsFound: 'Sosednji rezultati iskanja',
-    wholePage: 'Cela stran vira',
-    wholeEntry: 'Cel zapis',
+    wholePage: 'Celotna stran vira',
+    wholeEntry: 'Celoten zapis',
     stepOf: (at: number, total: number) => `${n(at)} od ${n(total)}`,
     previous: 'Prejšnji',
     next: 'Naslednji',
@@ -205,15 +205,15 @@ export const sl: Messages = {
       party: 'Partija',
     },
     or: 'ali',
-    /** The Igman march: "Kot pripadnik 2. čete 1. bataljona je sodeloval v igmanskem maršu 27.–28. januarja 1942." */
+    /** The Igman march: "Kot pripadnik 2. čete 1. bataljona se je udeležil igmanskega marša 27. in 28. januarja 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const where = e.c && e.b ? `${e.c}. čete ${e.b}. bataljona`
-        : e.s === 'bstab' ? `štaba ${e.b}. bataljona` : e.s === 'bsanitet' ? `sanitetne službe ${e.b}. bataljona`
+        : e.s === 'bstab' ? `štaba ${e.b}. bataljona` : e.s === 'bsanitet' ? `sanitete ${e.b}. bataljona`
         : e.s === 'posavska' ? 'Posavske čete 6. bataljona' : e.s === 'stab' ? 'štaba brigade'
-        : e.s === 'sanitet' ? 'sanitetne službe brigade' : e.s === 'odeljenje' ? 'sanitetnega oddelka brigade'
+        : e.s === 'sanitet' ? 'sanitete brigade' : e.s === 'odeljenje' ? 'sanitetnega oddelka brigade'
         : e.s === 'hirurska' ? 'kirurške ekipe brigade' : ''
-      const did = `je ${e.sure ? '' : 'najverjetneje '}${woman ? 'sodelovala' : 'sodeloval'} v igmanskem maršu 27.–28. januarja 1942.`
-      return where ? `Kot ${woman ? 'pripadnica' : 'pripadnik'} ${where} ${did}` : `${woman ? 'Sodelovala' : 'Sodeloval'} je v igmanskem maršu 27.–28. januarja 1942.`
+      const did = `se je ${e.sure ? '' : 'najverjetneje '}${woman ? 'udeležila' : 'udeležil'} igmanskega marša 27. in 28. januarja 1942.`
+      return where ? `Kot ${woman ? 'pripadnica' : 'pripadnik'} ${where} ${did}` : `${woman ? 'Udeležila' : 'Udeležil'} se je igmanskega marša 27. in 28. januarja 1942.`
     },
     /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
     sutjeska: (woman: boolean) => `${woman ? 'Sodelovala' : 'Sodeloval'} je v bitki na Sutjeski maja in junija 1943.`,
@@ -246,10 +246,10 @@ export const sl: Messages = {
     prompt: 'Imate fotografijo ali veste kaj o tem borcu?',
     open: 'Vem kaj o tem borcu',
     title: 'Vem kaj o tem borcu',
-    relation: 'Kaj ste temu borcu?',
+    relation: 'Kako ste povezani s tem borcem?',
     relationHint: 'Na primer: vnukinja, sin, sorodnik, sosed',
     story: 'Kaj veste o tem borcu',
-    storyHint: 'Kaj se pripoveduje v družini, kje je grob, kaj je bilo po vojni ali kaj v zapisu ni pravilno.',
+    storyHint: 'Kaj se o njem pripoveduje v družini, kje je pokopan, kaj je bilo po vojni ali kaj v zapisu ni pravilno.',
     photo: 'Fotografija',
     optional: '(ni obvezno)',
     choosePhoto: 'Izberite fotografijo',
@@ -268,7 +268,7 @@ export const sl: Messages = {
     emailHint: 'E-naslov potrebujemo samo zato, da se vam lahko oglasimo: če ga pustite, vas obvestimo, ko bo kartica borca dopolnjena. Ne objavimo ga, z nikomer ga ne delimo in spama ne bo.',
     consent: 'Dovoljujem, da se besedilo in fotografije, ki jih pošiljam, objavijo na kartici tega borca.',
     consentName: 'Dovoljujem, da se objavi tudi, kdo je to poslal: prva črka mojega imena, priimek in sorodstvo.',
-    error: 'Ni bilo poslano. Preverite internetno povezavo in poskusite znova.',
+    error: 'Sporočilo ni bilo poslano. Preverite internetno povezavo in poskusite znova.',
     send: 'Pošlji',
     sending: `Pošiljanje${dots}`,
     cancel: 'Prekliči',
@@ -435,7 +435,7 @@ export const sl: Messages = {
     intro:
       'Podatki o borcih so zbrani iz monografij brigad in seznamov borcev, ki jih je izdal Vojnozgodovinski inštitut v Beogradu. Tu si lahko ogledate in prenesete izvirne dokumente PDF.',
     openPdf: 'Odpri PDF',
-    fullDescription: 'Cel opis',
+    fullDescription: 'Celoten opis',
     download: 'Prenesi',
     openList: 'Odpri seznam',
     medalsTitle: 'Slike odlikovanj',

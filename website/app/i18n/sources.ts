@@ -29,17 +29,17 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'treca-proleterska-poginuli-knj3':
       'Seznam padlih in umrlih borcev in poveljnikov po letih, 1942–1945 (1.374 imen; v tem izvodu manjkajo strani z začetkom leta 1944)',
     'treca-proleterska-formiranje':
-      'Isti seznam kot v monografiji Žarka Vidovića, v cirilici, kot ga je uredilo uredništvo zbornika spominov; po bataljonih in četah',
+      'Isti seznam kot v monografiji Žarka Vidovića, v cirilici, kot ga je pripravilo uredništvo zbornika spominov; po bataljonih in četah',
     'ljubljanska-brigada': 'Monografija Ljubljanske brigade',
     '13-proleterska-spisak': 'Seznam padlih in preživelih borcev (tretji del monografije)',
     '2-dalmatinska-proleterska': 'Seznam borcev 2. dalmatinske proletarske brigade NOVJ',
     '2-dalmatinska-stabovi':
-      'Starešine štaba brigade s časom, ko je kdo opravljal dolžnost, čet pri štabu, brigadne bolnišnice, štabov bataljonov in poveljstev čet, po dolžnostih (str. 473–486)',
+      'Starešine štaba brigade, čet pri štabu, brigadne bolnišnice, štabov bataljonov in poveljstev čet, po dolžnostih, pri štabu brigade s časom, ko je kdo opravljal dolžnost (str. 473–486)',
     '4-splitska-brigada': 'Seznam padlih in preživelih borcev brigade',
     'prva-vojvodjanska': 'Seznam borcev Prve vojvodinske brigade',
     '5-kozaracka': 'Seznam padlih, pogrešanih in umrlih borcev in poveljnikov brigade',
     '2-vojvodjanska': 'Seznam borcev in poveljnikov 2. vojvodinske brigade',
-    '8-krajiska': 'Seznam padlih in umrlih v NOB iz 8. krajiške brigade',
+    '8-krajiska': 'Seznam borcev 8. krajiške brigade, ki so padli ali umrli v NOB',
     '8-krajiska-sjecanja-poginuli':
       'Seznam padlih in umrlih borcev brigade iz zbornika spominov: oče, leto in kraj rojstva, kdaj in kje je padel, dolžnost.',
     '6-krajiska': 'Seznam padlih in umrlih borcev in poveljnikov brigade, z dopolnilnim seznamom',
@@ -102,7 +102,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-prva-proleterska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'prva-proleterska-stroj-u-rudom':
-      'Borci, ki so 21. decembra 1941 stali v zboru v Rudem, po štabih, bataljonih in četah: rojstvo, poklic, dolžnost in kaj se je s kom zgodilo v vojni (str. 433–492). Zvezdica ob imenu označuje borca, ki je padel v vojni.',
+      'Borci, ki so bili 21. decembra 1941 postrojeni v Rudem, po štabih, bataljonih in četah: rojstvo, poklic, dolžnost in kaj se je s kom zgodilo v vojni (str. 433–492). Zvezdica ob imenu označuje borca, ki je padel v vojni.',
     'borci-sutjeske-druga-proleterska':
       'Imenski seznam borcev s Sutjeske: vsi borci brigade v bitki, s podatki o vsakem in o tem, kaj se je z njim zgodilo do konca vojne.',
     'borci-sutjeske-treca-proleterska':
@@ -120,13 +120,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '3-krajiska-spisak-boraca':
       'Seznam borcev, ki so se v brigadi borili od 22. 8. 1942 do 9. 5. 1945, preživelih in padlih: od kod so bili, poklic, kdaj so vstopili v NOB in v brigado, dolžnost, usoda; z dopolnilom in prilogo (str. 579 in naprej)',
     '3-krajiska-sastav-1942':
-      'Vsi borci in starešine brigade sredi novembra 1942, po štabu, politodjelu, intendanturi, bataljonih, četah in vodih: dolžnost, leto in kraj rojstva, narodnost, poklic, pri mnogih tudi poznejša usoda (besedilo na znaci.org, brez skenirane knjige)',
+      'Vsi borci in starešine brigade sredi novembra 1942, po štabu, politodelu, intendanturi, bataljonih, četah in vodih: dolžnost, leto in kraj rojstva, narodnost, poklic, pri mnogih tudi poznejša usoda (besedilo na znaci.org, brez skenirane knjige)',
     '6-krajiska-prezivjeli':
       'Seznam borcev brigade, ki so vojno preživeli, samo imena, z naknadnim seznamom (str. 747–762 knjige)',
     '6-krajiska-kadar':
       'Starešine brigade 1942–1943 po dolžnostih, od komandantov brigade do četnih bolničark, samo imena (str. 739–745 knjige)',
     '32-divizija-borci':
-      'Borci štaba divizije, spremljevalnih enot, brigad Braća Radić, Matija Gubec, Mihovil Pavlek Miškina in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
+      'Borci štaba divizije, spremljevalnih enot, brigad »Braća Radić«, »Matija Gubec«, »Mihovil Pavlek Miškina« in I. udarne zagorske ter borci z nepopolnimi podatki: leto in kraj rojstva, narodnost, poklic, vstop v NOV, usoda; borec je naveden v vsaki enoti, v kateri se je boril (str. 431–662 knjige)',
     '32-divizija-kadar':
       'Starešine štaba divizije in enot pri štabu, brigad »Braća Radić«, »Matija Gubec«, »Mihovil Pavlek Miškina« in 1. zagorske, njihovih bataljonov in spremljevalnih čet, po dolžnostih (str. 286–295)',
     '18-hrvatska':
@@ -148,7 +148,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '4-proleterska-poginuli':
       'Borci in poveljniki brigade, padli od 1942 do 1945, po letih: rojstvo, poklic, dolžnost, kdaj in kje so padli',
     '4-proleterska-formiranje':
-      'Seznam borcev in starešin na dan ustanovitve brigade, 17. junija 1942, po štabih, bataljonih in četah: dolžnost, kraj in leto rojstva, poklic, članstvo v KPJ in SKOJ in kaj je bilo z njim.',
+      'Seznam borcev in starešin na dan ustanovitve brigade, 17. junija 1942, po štabih, bataljonih in četah: dolžnost, kraj in leto rojstva, poklic, članstvo v KPJ in SKOJ in kaj se je z vsakim zgodilo.',
     '3-vojvodjanska':
       'Seznami borcev in poveljnikov brigade: padli, tisti, katerih usoda ni znana, in preživeli (str. 479 in naprej)',
     'kalnicki-odred':
@@ -254,7 +254,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'karlovacka':
       'Seznam borcev in starešin brigade na dan ustanovitve v Hrašću 5. marca 1944 in seznam padlih borcev in starešin (str. 379–414)',
     'karlovacka-kadar':
-      'Štab brigade in štabi štirih bataljonov s časom, ko je kdo opravljal dolžnost, in kaj je bilo z njim, komandirji, komisarji in delegati čet in vodov, čete in vodi pri štabu, zaledje (str. 371–378)',
+      'Štab brigade in štabi štirih bataljonov s časom, ko je kdo opravljal dolžnost, in njegovo usodo; komandirji, komisarji in delegati čet in vodov, čete in vodi pri štabu, zaledje (str. 371–378)',
     '14-primorsko-goranska':
       'Seznam padlih borcev brigade z rojstvom, dolžnostjo in krajem smrti (str. 227–264)',
     '22-divizija':
@@ -262,13 +262,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '34-divizija':
       'Pregled padlih borcev in starešin divizije: čin, brigada, rojstvo, vstop v NOB, kraj in dan smrti (str. 401–432)',
     '34-divizija-kadar':
-      'Starešine štaba divizije, divizijskega komiteja KPJ, političnega oddelka, intendanture in saniteta, brigad »Franjo Ogulinac Seljo«, 16. mladinske »Joža Vlahović«, karlovške in žumberške, partizanskih odredov in samostojnih enot divizije, po dolžnostih (str. 389–399)',
+      'Starešine štaba divizije, divizijskega komiteja KPJ, političnega oddelka, intendanture in sanitete, brigad »Franjo Ogulinac Seljo«, 16. mladinske »Joža Vlahović«, karlovške in žumberške, partizanskih odredov in samostojnih enot divizije, po dolžnostih (str. 389–399)',
     '4-sandzacka':
       'Seznam padlih borcev in starešin (rojstvo, kje so padli) in seznam ranjenih s krajem in dnem ranitve (str. 460–485)',
     '3-primorsko-goranska':
       'Seznam starešin brigade in četnih bolničarjev z dolžnostjo ter seznam padlih pripadnikov brigade z rojstvom in krajem smrti (str. 234–259)',
     '3-primorsko-goranska-stabovi':
-      'Člani štaba brigade, štabov bataljonov in poveljniki samostojnih enot, po dolžnostih, s časom na dolžnosti in kako se je končal (str. 227–233)',
+      'Člani štaba brigade, štabov bataljonov in poveljniki samostojnih enot, po dolžnostih, s časom na dolžnosti in tem, kako se je dolžnost končala (str. 227–233)',
     '13-hercegovacka':
       'Padli borci in starešine brigade (rojstvo, dan in kraj smrti) in seznam borcev, ki so se borili v brigadi, samo imena (str. 316–347)',
     '13-hercegovacka-starjesine':
@@ -278,7 +278,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '1-bokeljska':
       'Seznam padlih in umrlih borcev brigade ter pogrešanih v boju: bataljon, rojstvo, kje in kdaj so padli (str. 315–321)',
     '1-bokeljska-spisak':
-      'Seznam brigade od ustanovitve 5. oktobra 1944 do konca vojne, po enotah: štab, bataljoni in enote pri štabu, dolžnost in ime vsakega borca in starešine (str. 291–314). Borec, premeščen v drugo enoto, je vpisan tudi vanjo, zato se nekateri pojavijo dvakrat. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik.',
+      'Seznam brigade od ustanovitve 5. oktobra 1944 do konca vojne, po enotah: štab, bataljoni in enote pri štabu, dolžnost in ime vsakega borca in starešine (str. 291–314). Borec, premeščen v drugo enoto, je vpisan tudi tam, zato se nekateri pojavijo dvakrat. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik.',
     '6-dalmatinska':
       'Seznam padlih borcev brigade: od kod so bili, kje in kdaj so padli (str. 259–271)',
     '6-dalmatinska-kadar':
@@ -290,7 +290,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '1-zagorska':
       'Seznam padlih borcev in starešin brigade od 8. maja 1944 do 15. maja 1945: leto in kraj rojstva, kdaj in kje so padli (str. 191–205)',
     '6-crnogorska':
-      'Seznam padlih borcev in poveljnikov brigade, z umrlimi zaradi ran in bolezni: rojstvo, dolžnost, kje in kdaj so padli (str. 871 in dalje)',
+      'Seznam padlih borcev in poveljnikov brigade, z umrlimi zaradi ran in bolezni: rojstvo, dolžnost, kje in kdaj so padli (str. 871 in naprej)',
     '11-krajiska-poginuli':
       'Seznam padlih borcev brigade po občinah: rojstvo, narodnost, poklic, kdaj so vstopili v NOV, dolžnost, kje in kdaj so padli (str. 439–463)',
     '11-krajiska-zene':
@@ -340,9 +340,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'viski-bataljon':
       'Seznam borcev Viškega prostovoljnega bataljona na Visu konec januarja 1944: poveljstvo, čete, vodi in desetini Biševa in Oključne (str. 538–539).',
     'kokrski-odred-1':
-      'Seznam borcev Kokrškega odreda prve sestave, junij 1942 - januar 1943, po štabu, bataljonih in četah: od kod je kdo, dolžnosti in kaj se je s kom zgodilo (str. 509–525).',
+      'Seznam borcev Kokrškega odreda prve sestave, junij 1942 – januar 1943, po štabu, bataljonih in četah: od kod je kdo, dolžnosti in kaj se je s kom zgodilo (str. 509–525).',
     'kokrski-odred':
-      'Spisek borcev Drugega kokrškega odreda, avtorjeva rekonstrukcija po spiskih in dokumentih odreda: štabi, obveščevalni center in točke, kurirske postaje, sanitetne ustanove, delavnice in bataljoni po četah in obdobjih, z letnico rojstva in kdo je padel (str. 453–478).',
+      'Seznam borcev Drugega kokrškega odreda, avtorjeva rekonstrukcija po seznamih in dokumentih odreda: štabi, obveščevalni center in točke, kurirske postaje, sanitetne ustanove, delavnice in bataljoni po četah in obdobjih, z letnico rojstva in oznako padlih (str. 453–478).',
     'cankarjev-bataljon':
       'Formacija bataljona v Dražgošah, španski borci in narodni heroji, padli cankarjevci po bojih 1941–1942, preživeli nosilci spomenice 1941 in ostali preživeli udeleženci dražgoške bitke (str. 338–346).',
     'novosadski-odred':
@@ -350,11 +350,11 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'deveta':
       'Seznam borcev IX. SNOB Kočevske: ime, leto in kraj rojstva, pri padlih leto in kraj smrti (str. 425–446).',
     'deveta-kader':
-      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti in kdo je padel na dolžnosti (str. 401–404)',
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba brigade ter komandanti in komisarji bataljonov, s časom na dolžnosti in oznako tistih, ki so na dolžnosti padli (str. 401–404)',
     '4-prekomorska':
       'Seznam padlih in umrlih borcev in vodilni kader brigade: štab, komanda stana, bataljoni, samostojna četa in komande čet (str. 327–333).',
     '9-srpska':
-      'Stroj v Rečici: 377 borcev na dan ustanovitve, 11. marca 1944; poveljniški kader brigade, bataljonov in čet z datumi dolžnosti; bolničarke in borke. Imenika borcev s kratkimi življenjepisi (str. 47–372) znaci.org nima.',
+      'Zbor v Rečici: 377 borcev na dan ustanovitve, 11. marca 1944; poveljniški kader brigade, bataljonov in čet z datumi dolžnosti; bolničarke in borke. Imenika borcev s kratkimi življenjepisi (str. 47–372) znaci.org nima.',
     'kozjanski-odred':
       'Seznam borcev in bork Kozjanskega odreda: 3.495 oseb od ustanovitve do ukinitve, z datumom in krajem rojstva, vstopom v NOV in POS, poklicem in opombo (kje je kdo bil, kdo je padel); strani so tu črno-bele, besedilo kot v knjigi.',
     'proleterski-bataljon-bk':
@@ -372,7 +372,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'kosovelova':
       'Seznam padlih, pogrešanih in za posledicami ran umrlih borcev (504 imena: rojstvo, kraj, kdaj in kje je kdo padel) in poveljniški kader brigade in njenih bataljonov z datumi dolžnosti (str. 803–824).',
     'eskadrile-novj':
-      'Seznama moštva prve in druge eskadrilje NOVJ (352. in 351. eskadrilja RAF): številka, čin, dolžnost, rojstvo in kako je kdo prišel v eskadrilji, z Bližnjega vzhoda, iz italijanskega ujetništva ali iz domovine; na koncu imena, katerih eskadrilja ni ugotovljena (str. 331–354).',
+      'Seznama moštva prve in druge eskadrilje NOVJ (352. in 351. eskadrilja RAF): številka, čin, dolžnost, rojstvo in kako je kdo prišel v eskadriljo, z Bližnjega vzhoda, iz italijanskega ujetništva ali iz domovine; na koncu imena, katerih eskadrilja ni ugotovljena (str. 331–354).',
     '42-vazduhoplovna':
       'Seznam moštva divizije po polkih (421., 422. in 423. letalski polk), štabu, samostojni četi in letalskih delavnicah: čin in dolžnost (str. 291–321).',
     '18-srpska':
@@ -384,7 +384,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mostarski-bataljon':
       'Borci Konjiškega bataljona (september 1941 — junij 1942), Mostarskega bataljona (junij 1942 — junij 1943) in Mostarskega bataljona v Mostarskem partizanskem odredu (junij 1943 — maj 1944), vsak s kratkim življenjepisom: rojstvo, poklic, SKOJ in KPJ, prihod v bataljon, dolžnost in usoda (str. 329–392).',
     '13-krajiska':
-      'Dva seznama: borci in starešine, ki so bili v brigadi avgusta in septembra 1943, s krajem, dolžnostjo in za padle, kdaj in kje so padli in kje so pokopani; člani partijske organizacije KPJ brigade maja 1945, z dnem sprejema v Partijo in dolžnostjo (str. 365–404).',
+      'Dva seznama: borci in starešine, ki so bili v brigadi avgusta in septembra 1943, s krajem in dolžnostjo, pri padlih tudi kdaj in kje so padli in kje so pokopani; člani partijske organizacije KPJ brigade maja 1945, z dnem sprejema v Partijo in dolžnostjo (str. 365–404).',
     'pozega-pali':
       'Priloga Dragoljuba Munjića: seznam padlih borcev NOB, žrtev fašističnega terorja in civilnih žrtev vojne v okraju Požega, po vaseh, z rojstvom, enoto in tem, kako je kdo padel. Vneseni so borci in, označeni kot aktivisti, sodelavci NOP, odborniki in delavci partizanskih delavnic; civilne žrtve in vojaki nekdanje jugoslovanske vojske niso. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'cacanski-kraj-pali':
@@ -402,9 +402,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'trebinjci-pali':
       'Spominska knjiga Zveze borcev Trebinje (1974): borci z območja občine, ki so padli v vojni (str. 13–96), in borci iz vse Jugoslavije, padli pri Trebinju (str. 159–174), z rojstvom, enotami in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Seznama žrtev fašističnega terorja iz iste knjige nismo vnesli.',
     'pali-za-lepsa-svitanja':
-      'Pripovedujejo matere narodnih herojev o svojih sinovih in hčerah (1967); nad vsako zgodbo je kratek življenjepis heroja: rojstvo, poklic, KPJ, NOB, smrt in dan razglasitve. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za heroja, ki je že na strani, smo njegovemu zapisu dodali njegov življenjepis iz knjige.',
+      'Matere narodnih herojev pripovedujejo o svojih sinovih in hčerah (1967); nad vsako zgodbo je kratek življenjepis heroja: rojstvo, poklic, KPJ, NOB, smrt in dan razglasitve. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za heroja, ki je že na strani, smo njegovemu zapisu dodali njegov življenjepis iz knjige.',
     'ofanziva-1942-poginuli':
-      'Seznam borcev 1., 2., 3. in 4. proleterske brigade, ki so padli ali izginili na pohodu v zahodno Bosno od 24. junija do 30. septembra 1942 (str. 698–711), po brigadah in bataljonih, z rojstvom, poklicem in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Seznam borcev 1., 2., 3. in 4. proletarske brigade, ki so padli ali izginili na pohodu v zahodno Bosno od 24. junija do 30. septembra 1942 (str. 698–711), po brigadah in bataljonih, z rojstvom, poklicem in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'hak-20-gospic-perusic':
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 20): padli borci z območja okrajev Gospić in Perušić 1941–1945 (str. 986–1045) in nosilci Partizanske spomenice 1941 (str. 1194–1209), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
     'hak-10-korenica-udbina':
@@ -442,7 +442,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'vrebac':
       'Monografija vasi Vrebac, Zavođe in Pavlovac pri Gospiću: padli borci NOB teh vasi od 1941 do 1945, po vaseh, vsak s kratkim življenjepisom (str. 298–311). Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'licko-petrovo-selo':
-      'Vojna kronika nekdanje občine Ličko Petrovo Selo (1985): padli borci po vaseh (Ličko Petrovo Selo, Novo Selo, Željava, Arapov Do, Rešetar, Zaklopača in Lisina, Donji Vaganac), v tabeli z letom rojstva, vstopa v NOV in smrti, krajem smrti, enoto in dolžnostjo (str. 207–214). Umrlih za tifusom, od lakote in min nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Vojna kronika nekdanje občine Ličko Petrovo Selo (1985): padli borci po vaseh (Ličko Petrovo Selo, Novo Selo, Željava, Arapov Do, Rešetar, Zaklopača in Lisina, Donji Vaganac), v tabeli z letom rojstva, vstopa v NOV in smrti, krajem smrti, enoto in dolžnostjo (str. 207–214). Umrlih za tifusom in od lakote ter žrtev min nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'bosansko-grahovo':
       'Padli borci narodnoosvobodilne vojne z območja Bosanskega Grahova, po vaseh, vsak s kratkim življenjepisom (str. 642–697). Seznama žrtev fašističnega terorja, ki sledi, nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'staromajdansko':
@@ -454,7 +454,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'zitoradje':
       'Udeleženci NOV iz Žitorađa pri Vladičinem Hanu, le imena (str. 86), ranjeni in padli borci iz vasi (str. 86–88) ter borci srbskih brigad, padli ob osvoboditvi vasi septembra in oktobra 1944, vsak s kratkim življenjepisom (str. 89–91). Žrtve fašističnega terorja niso vnesene. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'brod-crna-trava':
-      'Priloga III, padli 1941–1945 iz vasi Brod pri Crni Travi, preglednica z mahalo, datumom in krajem smrti ter enoto (str. 808–809). Vneseni so le tisti, za katere preglednica navaja enoto, saj so med drugimi tudi civilne žrtve. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Priloga III, padli 1941–1945 iz vasi Brod pri Crni Travi, preglednica z zaselkom, datumom in krajem smrti ter enoto (str. 808–809). Vneseni so le tisti, za katere preglednica navaja enoto, saj so med drugimi tudi civilne žrtve. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'revolucionarno-grahovo':
       'Borci iz Grahova pri Nikšiću, padli v NOV in revoluciji 1941–1945, vsak s kratkim življenjepisom (str. 93–128), in padli narodni heroji (str. 81–91). Vneseni so tudi, označeni kot aktivisti, pripadniki gibanja, ki so umrli v zaporih in taboriščih, od žrtev fašističnega terorja (str. 129–133) pa le aktivisti in borci. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'kolasin':
@@ -470,11 +470,11 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'hak-7-plascanska-dolina':
       'Iz zbornika Zgodovinskega arhiva v Karlovcu (knj. 7): padli borci iz Plaščanske doline in okolice 1941–1945 (str. 689–701), po občinah in vaseh, z rojstvom, potjo v NOB in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Seznamov žrtev fašističnega terorja in umrlih za tifusom iz iste knjige nismo vnesli.',
     'krusevac-1944-poginuli':
-      'Seznam borcev, padlih v bojih za osvoboditev Kruševca septembra in oktobra 1944, po enotah: 4. proleterska črnogorska, 3., 6. in 17. srbska brigada ter Poveljstvo kruševačkega vojnega področja (str. 273–283), z rojstvom in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Seznam borcev, padlih v bojih za osvoboditev Kruševca septembra in oktobra 1944, po enotah: 4. proleterska črnogorska, 3., 6. in 17. srbska brigada ter Poveljstvo kruševškega vojnega področja (str. 273–283), z rojstvom in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'u-rovovima-srema-poginuli':
       'Seznam borcev, padlih na sremski fronti (str. 230–267), po brigadah in krajih, kjer so padli, samo imena, včasih z dolžnostjo. Knjiga ni vezana na eno samo enoto. Kjer po imenu, brigadi in kraju smrti zanesljivo vemo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'sremski-front-poginuli':
-      'Seznami borcev, padlih na sremski fronti od oktobra 1944 do aprila 1945, po divizijah in brigadah, vsak za kratko zgodovino enote: samo imena, včasih z očetovo začetnico. Knjiga ni vezana na eno samo enoto. Kjer po imenu, brigadi in času smrti zanesljivo vemo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Seznamov padlih rdečearmejcev s konca knjige nismo vnesli.',
+      'Seznami borcev, padlih na sremski fronti od oktobra 1944 do aprila 1945, po divizijah in brigadah, vsak za kratkim orisom zgodovine enote: samo imena, včasih z očetovo začetnico. Knjiga ni vezana na eno samo enoto. Kjer po imenu, brigadi in času smrti zanesljivo vemo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Seznamov padlih rdečearmejcev s konca knjige nismo vnesli.',
     'bitka-kod-oborova-poginuli':
       'Imena 128 borcev 2. moslavaške brigade in Posavskega partizanskega odreda, padlih pri Oborovem 29. marca 1944 (str. 158–160). Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'zrtve-rata-1964-slo':
@@ -518,7 +518,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mosorski-odred':
       'Seznam borcev Mosorskega partizanskega odreda 1942–1944 (prvi del seznama, str. 355–562): I. mosorski odred, Mosorski bataljon, Leteča mosorska četa in odred od oktobra 1943 do novembra 1944, z rojstvom, poklicem, prihodom v odred in usodo. Drugi del seznama, borci komand mest in terenski delavci, ni vnesen.',
     'mosorski-odred-2':
-      'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. V seznamu odreda so borci, tisti, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske, in pripadniki delovnih bataljonov. Terenski in politični delavci, odborniki in članice AFŽ so vneseni kot aktivisti, vsak k zapisu borca, ki je na strani, če je to on, ostali med Borci drugih enot.',
+      'Drugi del seznama iz iste knjige (str. 573–648): borci komand mest ter partijsko-politični in terenski delavci s področja Mosorja. Med borce odreda smo vnesli tiste, za katere zapis pravi, da so bili borci, ali navaja vojaško dolžnost ali enoto vojske, in pripadnike delovnih bataljonov. Terenske in politične delavce, odbornike in članice AFŽ smo vnesli kot aktiviste: kdor je že na strani, ima to v svojem zapisu, ostali so med Borci drugih enot.',
     'mosorski-odred-kader':
       'Vodstvo odreda 1942–1944, po dolžnostih, od komandantov odreda do komandirjev vodov, vodnih delegatov in četnih bolničark, samo imena (str. 563–568)',
     'turopoljsko-posavski-odred':
@@ -544,21 +544,21 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'jajce-1942-poginuli':
       'Iz zbornika spominov o jajškem območju (knj. II): seznam borcev in aktivistov NOG z jajškega območja, padlih leta 1942, z rojstvom, enoto in smrtjo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'spomenica-crnogorskim-antifasistima':
-      'Seznam črnogorskih antifašistov, padlih in umrlih v letih 1941–1945, po občinah, v tabeli: ime, očetovo ime, leto in kraj rojstva, leto smrti in kraj smrti. Vsi, ki jih knjiga navaja, so šteti za partizane. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Seznam črnogorskih antifašistov, padlih in umrlih v letih 1941–1945, po občinah, v tabeli: ime, očetovo ime, leto in kraj rojstva, leto in kraj smrti. Vsi, ki jih knjiga navaja, so šteti za partizane. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'moste-polje-spomenica-1941':
-      'Nosilci partizanske spomenice 1941 z območja današnje občine Moste-Polje v Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, letnica rojstva in poklic, za tiste, ki so umrli po vojni, tudi letnica smrti. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Nosilci Partizanske spomenice 1941 z območja današnje občine Moste-Polje v Ljubljani, iz arhiva CK ZKS (str. 257–260): ime, letnica rojstva in poklic, za tiste, ki so umrli po vojni, tudi letnica smrti. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'vis-spomenica-1941':
-      'Nosilci partizanske spomenice 1941 z viškega otočja (str. 521), samo imena, in stavek knjige o narodnem heroju Andriji Božaniću. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca z otoka, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Nosilci Partizanske spomenice 1941 z viškega otočja (str. 521), samo imena, in stavek knjige o narodnem heroju Andriji Božaniću. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca z otoka, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'prilog-u-krvi-pali-borci':
       'Padli borci NOB iz pljevaljskega okraja od aprila 1941 do 15. maja 1945 (str. 141–216), z življenjepisom vsakega. Knjiga med padle borce šteje tudi partijske in politične delavce, odbornike in sodelavce NOG: vneseni so tudi ti, označeni kot aktivisti. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'jevreji-jugoslavije-ucesnici-nor':
-      'Seznam judovskih udeležencev narodnoosvobodilne vojne, z življenjepisom vsakega (str. 307 in dalje). Seznam šteje vse, ki so bili v NOG: vneseni so vsi, politični in zaledni delavci ter tisti, ki so jih ujeli na poti k partizanom, pa so označeni kot aktivisti. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Seznam judovskih udeležencev narodnoosvobodilne vojne, z življenjepisom vsakega (str. 307 in naprej). Seznam šteje vse, ki so bili v NOG: vneseni so vsi, politični in zaledni delavci ter tisti, ki so jih ujeli na poti k partizanom, pa so označeni kot aktivisti. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'hrvatsko-zagorje-1981':
       'Seznam padlih udeležencev NOB 1941–1945 z območja občin Donja Stubica, Ivanec, Klanjec, Krapina, Pregrada, Zabok, Zaprešić in Zlatar-Bistrica, z rojstvom, enoto in smrtjo. Seznam skupaj navaja borce in žrtve fašističnega terorja; vneseni so borci in, označeni kot aktivisti, člani KPJ, SKOJ in NOO, politični delavci in kurirji, žrtve terorja pa ne. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'imotska-krajina-pali-borci':
       'Padli borci in žrtve fašističnega terorja po vaseh Imotske krajine (str. 163–472), z rojstvom, potjo v NOV in smrtjo. Vneseni so padli borci iz dela, ki ga knjiga za vsako vas naslovi »Poginuli borci«, skojevci, komunisti in politični delavci, ki jih knjiga tam šteje, pa so označeni kot aktivisti; žrtev terorja nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'knjazevac-pomenik':
-      'Vsi, ki so umrli v drugi svetovni vojni z območja občine Knjaževac, po vaseh (str. 37–327), z rojstvom in smrtjo: partizani, četniki, ustreljeni in civilisti skupaj. Vneseni so partizanski borci in, označeni kot aktivisti, komunisti, skojevci, odborniki in sodelavci partizanov; četniki, civilisti in tisti, ki jih je obsodila nova oblast, niso. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Vsi z območja občine Knjaževac, ki so umrli v drugi svetovni vojni, po vaseh (str. 37–327), z rojstvom in smrtjo: partizani, četniki, ustreljeni in civilisti skupaj. Vneseni so partizanski borci in, označeni kot aktivisti, komunisti, skojevci, odborniki in sodelavci partizanov; četniki, civilisti in tisti, ki jih je obsodila nova oblast, niso. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'iskra-in-plamen-padli':
       'Iz zbornika o NOB v vaseh nekdanje občine Polje pri Ljubljani: »Svoja življenja so dali za svobodo«, umrli iz teh vasi po vaseh, z letnicama rojstva in smrti ter krajem smrti. Vneseni so le padli v NOV; umrli v internaciji in zaporih, talci in ostale žrtve niso. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'cazinska-krajina-pali-borci':
@@ -576,7 +576,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'susak-rijeka-spomenica':
       'Iz prilog knjige o Sušaku in Reki v NOB: nosilci Partizanske spomenice 1941 z območja občine Reka, ime in kraj, kot jih je sestavil občinski odbor ZZB. Seznama članov KPJ in SKOJ iz leta 1941, padlih v NOB, nista vnesena, ker ne povesta, kdo je bil borec. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'zene-vi-korpus-poginule':
-      'Iz zbornika dokumentov o ženah Hrvaške v NOB (dokument 427): seznam padlih tovarišic borcev in voditeljic v enotah VI. korpusa NOVJ, ki ga je štab korpusa sestavil 23. decembra 1944, z dolžnostjo in enoto, letom in krajem rojstva ter tem, kdaj in v katerem boju je padla. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Iz zbornika dokumentov o ženah Hrvaške v NOB (dokument 427): seznam padlih bork in voditeljic v enotah VI. korpusa NOVJ, ki ga je štab korpusa sestavil 23. decembra 1944, z dolžnostjo in enoto, letom in krajem rojstva ter tem, kdaj in v katerem boju je padla. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'ludbreg-poginuli':
       'Seznami borcev, padlih v dveh bojih za Ludbreg: 17. slavonske brigade v Ludbregu in Šemovcu 3. oktobra 1943, brigade »Braća Radić« pri Šemovcu istega dne in 17. slavonske v Ludbregu 6. julija 1944 (str. 84–85, 287–289), z letom in krajem rojstva. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'dolomiti-v-nob-3':
@@ -588,13 +588,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'artileristi-prekomorci':
       'Seznam padlih artileristov prekomorcev, Slovencev in Istranov, ki so iz Italije in Afrike prišli v artilerijske enote, ustanovljene na Visu in v Italiji, in seznam vodilnega kadra teh enot (str. 227–234). Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'virovitica-spomenica-1941':
-      'Nosilci partizanske spomenice 1941 iz občine Virovitica, štirinajst življenjepisov s fotografijami (str. 221–239). Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Nosilci Partizanske spomenice 1941 iz občine Virovitica, štirinajst življenjepisov s fotografijami (str. 221–239). Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'vis-zrtve-nob':
       'Žrtve NOB s spominskih plošč viškega otočja (str. 516–520): padli v bojih in umrli zaradi ran in bolezni iz Visa, Komiže, Biševa, Oključne in vasi pod Humom, samo ime in očetovo ime. Talci, ki so jih Italijani ustrelili leta 1943, in umrli v ustaških zaporih niso vpisani. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca z otoka, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'xxxi-divizija-stabi':
       'Štabi XXXI. divizije ter Gradnikove, Prešernove in Vojkove brigade (str. 557–562): komandanti, komisarji, njihovi namestniki in načelniki štaba, vsak s časom, ko je bil na dolžnosti, in kdo od njih je padel. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     '15-brigada-stabi':
-      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba 15. brigade ter komandanti in komisarji njenih bataljonov (str. 447–450), vsak s časom, ko je bil na dolžnosti, in kjer se je dolžnost tako končala, da je bil ranjen, je zbolel ali padel. Brigade ni na strani. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Komandanti, politični komisarji, njihovi namestniki in načelniki štaba 15. brigade ter komandanti in komisarji njenih bataljonov (str. 447–450), vsak s časom, ko je bil na dolžnosti, pri nekaterih tudi s tem, da je bil ranjen, je zbolel ali padel. Brigade ni na strani. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     '15-divizija-stabi':
       'Poveljniška sestava 15. divizije NOV in POS (str. 583–584): komandanti, politični komisarji, njihovi namestniki in pomočniki ter načelniki štaba, vsak s časom, ko je bil na dolžnosti. Divizije ni na strani. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'jb-odred-stabi':
@@ -604,7 +604,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'letalci-prekomorci-kader':
       'Vodilni kader 1. in 2. lovske eskadrilje NOVJ, letalskega detašmana NOVJ v Alžiriji in 1. letalskega polka (str. 322–325): čin in dolžnost vsakega, s časom, ko jo je opravljal. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'niksicki-odred-pali-borci':
-      'Imena padlih borcev z območja nekdanjega nikšiškega okraja in občine Herceg Novi (str. 393–420): kraj in leto rojstva, kraj in leto smrti; ter narodni heroji Nikšića in Herceg Novega, z življenjepisom vsakega (str. 423–427). Skoraj vsi so šli skozi Nikšićki odred, padli pa so v brigadah, v odredu in na drugih dolžnostih. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
+      'Imena padlih borcev z območja nekdanjega nikšiškega okraja in občine Herceg Novi (str. 393–420): kraj in leto rojstva, kraj in leto smrti; ter narodni heroji Nikšića in Herceg Novega, z življenjepisom vsakega (str. 423–427). Skoraj vsi so šli skozi Nikšiški odred, padli pa so v brigadah, v odredu in na drugih dolžnostih. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'teslic-u-nob-borci':
       'Seznam borcev narodnoosvobodilne vojne občine Teslić (str. 234–267) in seznam padlih in umrlih borcev (str. 269–279), z življenjepisom vsakega. Seznama ob borcih štejeta tudi odbornike in sodelavce NOG: vneseni so le tisti, za katere zapis pravi, da so bili borci ali v NOVJ, ali navaja vojaško dolžnost ali enoto vojske. Strani na znaci.org nimajo besedila, le slike: imena so prebrana s slik. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem. Ostali so med Borci drugih enot.',
     'lovcenski-odred-pali-borci':
@@ -612,13 +612,13 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'zene-1-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 368): dolžnost in čin, datum in kraj rojstva, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     '1-dalmatinska-komandni-sastav':
-      'Komandanti, komisarji, njihovi namestniki, načelniki štaba, intendanti, referenti saniteta, mladinski voditelji in obveščevalni častniki štaba brigade in vsakega bataljona od 6. septembra 1942 do konca vojne, s časom, ko je kdo opravljal dolžnost (str. 435–443)',
+      'Komandanti, komisarji, njihovi namestniki, načelniki štaba, intendanti, referenti sanitete, mladinski voditelji in obveščevalni častniki štaba brigade in vsakega bataljona od 6. septembra 1942 do konca vojne, s časom, ko je kdo opravljal dolžnost (str. 435–443)',
     '1-dalmatinska-formiranje':
       'Starešine štaba brigade, političnega oddelka, bataljonov in čet 6. septembra 1942 v vasi Dobro pri Livnu: dolžnost, leto rojstva, narodnost, poklic (str. 55–58)',
     'zene-11-dalmatinska':
       'Seznam bork brigade iz let 1944–1945 (dokument 376): datum in kraj rojstva, dolžnost in čin, kdaj so vstopile v NOV, odlikovanja in mnenje štaba o vsaki',
     '11-dalmatinska-stabovi':
-      'Starešine štaba brigade s časom, ko je kdo opravljal dolžnost, čet pri štabu, previjališč in podčastniškega tečaja, štabov bataljonov in poveljstev čet, po dolžnostih (str. 611–624)',
+      'Starešine štaba brigade, čet pri štabu, previjališč in podčastniškega tečaja, štabov bataljonov in poveljstev čet, po dolžnostih, pri štabu brigade s časom, ko je kdo opravljal dolžnost (str. 611–624)',
     'osjecka-zene':
       'Borke Osiješke brigade po bataljonih, kot jih je štab brigade popisal za I. kongres AFŽ Hrvaške (dokument 420): datum in kraj rojstva, od kdaj so v partizanih',
     'dalmatinci-prva-proleterska':
@@ -628,7 +628,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'rudarska-ceta':
       'Borci Rudarske čete (rudarji Trepče in Kopaonika), ko je 21. decembra 1941 v Rudem vstopila v Prvo proletarsko, z življenjepisom vsakega (str. 426–430)',
     'prva-proleterska-dopunski':
-      'Pripadniki brigade, ki jih je uredništvo našlo po seznamu v prvih treh knjigah, s podatki o vsakem (str. 1065–1071)',
+      'Pripadniki brigade, ki jih je uredništvo našlo, ko je bil seznam v prvih treh knjigah že natisnjen, s podatki o vsakem (str. 1065–1071)',
     'prva-proleterska-garibaldi':
       'Italijanski vojaki, ki so se po kapitulaciji Italije pridružili partizanom, s štabom bataljona, samo imena in dolžnosti (str. 1072–1082)',
     'kotor-varos':
@@ -638,7 +638,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'popovo-polje':
       'Priloga »Borci iz Popovega polja, padli v NOB« (str. 419–430): rojstvo, dolžnost, kraj in dan smrti. Seznama žrtev fašističnega terorja iz iste knjige nismo vnesli. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'bijelo-polje':
-      'Priloge monografije: nosilci Partizanske spomenice 1941 (str. 733–753) in padli borci NOB okraja Bijelo Polje (str. 778–886), z rojstvom, enotami in smrtjo. Seznama borcev v stroju Tretje sandžaške brigade na dan ustanovitve (str. 754–774) še nismo vnesli, ker so imena v skenu težko berljiva; ne padlih v aprilski vojni in žrtev terorja. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
+      'Priloge monografije: nosilci Partizanske spomenice 1941 (str. 733–753) in padli borci NOB okraja Bijelo Polje (str. 778–886), z rojstvom, enotami in smrtjo. Seznama borcev, postrojenih na dan ustanovitve Tretje sandžaške brigade (str. 754–774), še nismo vnesli, ker so imena v skenu težko berljiva; padlih v aprilski vojni in žrtev terorja pa ne vnašamo. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'lezimir':
       'Članek »Žrtve vasi Ležimir 1941–1945« (str. 95–120): vsi umrli iz Ležimira v Sremu. Vneseni so le borci, tisti, za katere seznam pravi, da so padli v NOB; žrtve terorja in tisti, ki so jih ubili partizani, niso. Knjiga ni vezana na eno samo enoto. Kjer je zanesljivo, da gre za borca, ki je že na strani, smo njegovemu zapisu dodali, kar knjiga piše o njem.',
     'prva-niska-gimnazija':
@@ -700,12 +700,12 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '13-proleterska-spisak': 'Список на загинатите и преживеаните борци (трет дел од монографијата)',
     '2-dalmatinska-proleterska': 'Список на борците на 2-ра далматинска пролетерска бригада на НОВЈ',
     '2-dalmatinska-stabovi':
-      'Старешините на штабот на бригадата со времето кога кој ја вршел должноста, на четите при штабот, на бригадната болница, на штабовите на баталјоните и на командите на четите, по должности (стр. 473–486)',
+      'Старешините на штабот на бригадата, на четите при штабот, на бригадната болница, на штабовите на баталјоните и на командите на четите, по должности, а за штабот на бригадата и времето кога кој ја вршел должноста (стр. 473–486)',
     '4-splitska-brigada': 'Список на загинатите и преживеаните борци на бригадата',
     'prva-vojvodjanska': 'Список на борците на Првата војводинска бригада',
     '5-kozaracka': 'Список на загинатите, исчезнатите и починатите борци и старешини на бригадата',
     '2-vojvodjanska': 'Список на борците и старешините на 2-ра војводинска бригада',
-    '8-krajiska': 'Список на загинатите и починатите во НОБ од 8-ма краишка бригада',
+    '8-krajiska': 'Список на борците на 8-ма краишка бригада загинати или починати во НОБ',
     '8-krajiska-sjecanja-poginuli':
       'Списокот на загинатите и починатите борци на бригадата од зборникот спомени: татко, година и место на раѓање, кога и каде загинал, должност.',
     '6-krajiska': 'Список на загинатите и починатите борци и старешини на бригадата, со дополнителен список',
@@ -742,7 +742,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
       'Список на борците на Првата далматинска пролетерска бригада загинати во народноослободителната војна (текст на znaci.org, без скенирана книга)',
     '16-slavonska-omladinska':
       'Список на загинатите борци и старешини на бригадата; список на загинатите во Покупје и на Жумберак; раководството на бригадата од формирањето до крајот на војната (стр. 389–428 од книгата)',
-    '8-crnogorska': 'Список на паднатите другари, борци и старешини на бригадата (стр. 471–501 од книгата) и дополнителен список на паднатите од Уб (стр. 509–510)',
+    '8-crnogorska': 'Список на загинатите другари, борци и старешини на бригадата (стр. 471–501 од книгата) и дополнителен список на загинатите од Уб (стр. 509–510)',
     'druga-proleterska':
       'Загинати, починати и исчезнати борци на бригадата, по место и ден на загинувањето: Сутјеска, источна Босна, Пљевља и Пријеполе, западна Србија, Сремскиот фронт (стр. 274–278 од книгата)',
     'borci-sutjeske-4-proleterska':
@@ -802,7 +802,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '11-dalmatinska':
       'Список на борците на бригадата: загинати, исчезнати и преживеани (на 15 мај 1945): должност, раѓање, занимање, кога стапиле во НОБ, судбина (стр. 479–600 од книгата)',
     '7-krajiska-spisak':
-      'Преживеани и загинати борци и раководители од формирањето на бригадата декември 1942 до крајот на војната: раѓање, народност, занимање, кога стапиле во НОБ, должност, судбина (стр. 447 и натаму)',
+      'Преживеани и загинати борци и раководители од формирањето на бригадата во декември 1942 до крајот на војната: раѓање, народност, занимање, кога стапиле во НОБ, должност, судбина (стр. 447 и натаму)',
     '12-krajiska-poginuli':
       'Загинатите борци и раководители на бригадата: должност, година и место на раѓање, каде и кога загинале',
     '12-krajiska-prezivjeli':
@@ -814,7 +814,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '4-proleterska-poginuli':
       'Борци и старешини на бригадата загинати од 1942 до 1945, по години: раѓање, занимање, должност, кога и каде загинале',
     '4-proleterska-formiranje':
-      'Списокот на борците и старешините на денот на формирањето на бригадата, 17 јуни 1942, по штабови, баталјони и чети: должност, место и година на раѓање, занимање, членство во КПЈ и СКОЈ и што се случило со него.',
+      'Списокот на борците и старешините на денот на формирањето на бригадата, 17 јуни 1942, по штабови, баталјони и чети: должност, место и година на раѓање, занимање, членство во КПЈ и СКОЈ и што се случило со секого.',
     '3-vojvodjanska':
       'Списоци на борците и старешините на бригадата: загинати, оние чија судбина остана неутврдена, и преживеани (стр. 479 и натаму)',
     'kalnicki-odred':
@@ -826,7 +826,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '8-kordunaska-divizija':
       'Список на загинатите борци на Осмата дивизија, по презиме, со бригадата во која биле (стр. 806 и натаму)',
     '8-kordunaska-divizija-kadar':
-      'Командантите, политичките комесари и началниците на штабот на дивизијата, нејзините бригади и баталјони, со времето на должноста и што станало со секој (стр. 762–775)',
+      'Командантите, политичките комесари и началниците на штабот на дивизијата, нејзините бригади и баталјони, со времето на должноста и што станало со секого (стр. 762–775)',
     'cankarjeva':
       'Список на борците на бригадата што ја преживеале војната (стр. 815 и натаму) и список на нејзините загинати (стр. 847 и натаму)',
     'cankarjeva-kader':
@@ -858,7 +858,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'braciceva':
       'Список на загинатите борци на бригадата (стр. 722 и натаму) и на оние што ја преживеале војната (стр. 746 и натаму)',
     'tomsiceva-1':
-      'Списоци на борците на единиците од кои настанала бригадата: ударната група на 3-ти баталјон Љубо Шерцер, Дакиевата летечка ударна патрола, Пролетерската ударна патрола и чета и 1-ви словенечки пролетерски ударен баталјон Тоне Томшич (1-ва книга, стр. 535 и натаму)',
+      'Списоци на борците на единиците од кои настанала бригадата: ударната група на 3-тиот баталјон „Љубо Шерцер“, Дакиевата летечка ударна патрола, Пролетерската ударна патрола и чета и 1-виот словенечки пролетерски ударен баталјон „Тоне Томшич“ (1-ва книга, стр. 535 и натаму)',
     'tomsiceva-2':
       'Список на борците на бригадата од 16 јули 1942 до 13 јули 1943 (2-ра книга, стр. 847 и натаму)',
     'tomsiceva-3':
@@ -920,7 +920,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'karlovacka':
       'Список на борците и раководителите на бригадата на денот на формирањето во Храшќе на 5 март 1944 и список на загинатите борци и раководители (стр. 379–414)',
     'karlovacka-kadar':
-      'Штабот на бригадата и штабовите на четирите баталјони со времето кога кој ја вршел должноста и што станало со него, командирите, комесарите и делегатите на четите и водовите, четите и водовите при штабот, позадината (стр. 371–378)',
+      'Штабот на бригадата и штабовите на четирите баталјони со времето кога кој ја вршел должноста и што станало со секого, командирите, комесарите и делегатите на четите и водовите, четите и водовите при штабот, позадината (стр. 371–378)',
     '14-primorsko-goranska':
       'Список на загинатите борци на бригадата, со раѓањето, должноста и местото на загинувањето (стр. 227–264)',
     '22-divizija':
@@ -934,7 +934,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '3-primorsko-goranska':
       'Список на старешините на бригадата и четните болничари, со должноста, и список на загинатите припадници на бригадата, со раѓањето и местото на загинувањето (стр. 234–259)',
     '3-primorsko-goranska-stabovi':
-      'Членовите на штабот на бригадата, на штабовите на баталјоните и старешините на самостојните единици, по должности, со времето на должноста и како завршило (стр. 227–233)',
+      'Членовите на штабот на бригадата, на штабовите на баталјоните и старешините на самостојните единици, по должности, со времето на должноста и како таа завршила (стр. 227–233)',
     '13-hercegovacka':
       'Загинатите борци и старешини на бригадата (раѓање, ден и место на загинувањето) и список на борците што се бореле во бригадата, само имиња (стр. 316–347)',
     '13-hercegovacka-starjesine':
@@ -966,7 +966,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '8-banijska-poginuli':
       'Загинатите и починатите борци на бригадата од 7 септември 1942 до 6 декември 1944: раѓање, занимање, кога стапиле во бригадата, должност, каде и кога загинале (стр. 247–312)',
     '8-banijska-kadar':
-      'Штабот на бригадата, политоделот и штабовите на петте баталјони, по должности (стр. 244–246)',
+      'Штабот на бригадата, политодделот и штабовите на петте баталјони, по должности (стр. 244–246)',
     'macvanski-odred':
       'Список на борците на Мачванскиот (Подринскиот) партизански одред, прв дел (јули 1941 – март 1942): по местата од кои стапиле во одредот, со податоци за секого (текст на znaci.org, без скенирана книга; вториот дел не е објавен)',
     'posavski-odred':
@@ -978,7 +978,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'borci-sutjeske-vrhovni-stab':
       'Поименичен список на борците од Сутјеска: сите припадници на Врховниот штаб, неговите служби, Придружниот баталјон и британската воена мисија во битката, со податоци за секого и што било со него до крајот на војната.',
     'vtr-grmec':
-      'Работниците на воено-техничката работилница на Врховниот штаб во Грмеч 1942–1943, со занаетот и местото од каде што биле, оние што загинале или умреле во војната и по неа, обезбедувањето на работилницата и работниците на дрварската леарница (стр. 361–364).',
+      'Работниците на воено-техничката работилница на Врховниот штаб во Грмеч 1942–1943, со занаетот и местото од каде што биле, оние што загинале или починале во војната и по неа, обезбедувањето на работилницата и работниците на дрварската леарница (стр. 361–364).',
     'borci-sutjeske-1-proleterska-divizija':
       'Поименичен список на борците од Сутјеска: штабот на дивизијата, неговите служби и придружни единици во битката, со податоци за секого и што било со него до крајот на војната.',
     'borci-sutjeske-2-proleterska-divizija':
@@ -1006,39 +1006,39 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'viski-bataljon':
       'Списокот на борците на Вишкиот доброволен баталјон на Вис кон крајот на јануари 1944: командата, четите, водовите и десетините од Бишево и Оклучна (стр. 538–539).',
     'kokrski-odred-1':
-      'Списокот на борците на Кокршкиот одред од првиот состав, јуни 1942 - јануари 1943, по штабот, баталјоните и четите: од каде е кој, должностите и што се случило со секого (стр. 509–525).',
+      'Списокот на борците на Кокршкиот одред од првиот состав, јуни 1942 – јануари 1943, по штабот, баталјоните и четите: од каде е кој, должностите и што се случило со секого (стр. 509–525).',
     'kokrski-odred':
-      'Списокот на борците на Вториот кокршки одред, авторова реконструкција според списоците и документите на одредот: штабовите, разузнавачкиот центар и точки, куририските станици, санитетот, работилниците и баталјоните по чети и периоди, со годината на раѓање и кој загинал (стр. 453–478).',
+      'Списокот на борците на Вториот кокршки одред, авторова реконструкција според списоците и документите на одредот: штабовите, разузнавачкиот центар и точки, курирските станици, санитетот, работилниците и баталјоните по чети и периоди, со годината на раѓање и ознака за загинатите (стр. 453–478).',
     'cankarjev-bataljon':
-      'Формацијата на баталјонот во Драгоше, шпанските борци и народните херои, загинатите борци по битките 1941–1942, преживеаните носители на Споменицата 1941 и другите преживеани учесници во битката за Драгоше (стр. 338–346).',
+      'Формацијата на баталјонот во Дражгоше, шпанските борци и народните херои, загинатите борци по битките 1941–1942, преживеаните носители на Споменицата 1941 и другите преживеани учесници во битката за Дражгоше (стр. 338–346).',
     'novosadski-odred':
       'Попис на припадниците на Новосадскиот партизански одред во 1941 и 1944 година: име, должност, од каде е кој и од кога (стр. 85–92).',
     'deveta':
       'Список на борците на IX. СНОБ Кочевска: име, година и место на раѓање, а за загинатите година и место на смртта (стр. 425–446).',
     'deveta-kader':
-      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста и кој паднал на должноста (стр. 401–404)',
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на бригадата и командантите и комесарите на баталјоните, со времето на должноста и кој загинал на должноста (стр. 401–404)',
     '4-prekomorska':
       'Список на загинатите и починатите борци и командниот кадар на бригадата: штаб, команда на место, баталјони, самостојна чета и команди на четите (стр. 327–333).',
     '9-srpska':
       'Строј во Речица: 377 борци на денот на формирањето, 11 март 1944; командниот кадар на бригадата, баталјоните и четите со датумите на должностите; болничарките и борките. Именикот на борците со кратки биографии (стр. 47–372) znaci.org го нема.',
     'kozjanski-odred':
-      'Список на борците и борките на Козјанскиот одред: 3.495 лица од формирањето до расформирањето, со датум и место на раѓање, влез во НОВ, занимање и забелешка (каде кој бил, кој паднал); страниците се тука црно-бели, текстот како во книгата.',
+      'Список на борците и борките на Козјанскиот одред: 3.495 лица од формирањето до расформирањето, со датум и место на раѓање, влез во НОВ, занимање и забелешка (каде кој бил, кој загинал); страниците се тука црно-бели, текстот како во книгата.',
     'proleterski-bataljon-bk':
-      'Список на борците на баталјонот: биографија на секој, со неговата фотографија, од раѓањето и доаѓањето во Козарачката, Грмечката или Дрварската пролетерска чета до загинувањето или крајот на војната (стр. 256–362).',
+      'Список на борците на баталјонот: биографијата на секого, покрај неговата фотографија, од раѓањето и доаѓањето во Козарачката, Грмечката или Дрварската пролетерска чета до загинувањето или крајот на војната (стр. 256–362).',
     '1-tenkovski-bataljon':
-      'Попис на припадниците на Тенковскиот вод на Групата партизански одреди за Лика, Тенковската чета на 1-от корпус и Тенковскиот баталјон на Главниот штаб на НОВ и ПО на Хрватска (251 име, стр. 337–340).',
+      'Попис на припадниците на Тенковскиот вод на Групата партизански одреди за Лика, Тенковската чета на 1-виот корпус и Тенковскиот баталјон на Главниот штаб на НОВ и ПО на Хрватска (251 име, стр. 337–340).',
     '3-diverzantski-odred':
       'Преглед на борците и старешините на 3-та диверзантска група, чета, баталјон и одред (имиња, со ознака за загинатите и починатите по војната) и преглед на загинатите диверзанти со должност и година (прилог IV, стр. 587–591).',
     '1-2-prekomorska':
-      'Список на загинатите борци и борки на двете бригади (раѓање, кога и каде паднал) и командниот кадар во логорите Карбонара и Гравина, на Корчула, Хвар и Вис и командите на четите (стр. 357–372).',
+      'Список на загинатите борци и борки на двете бригади (раѓање, кога и каде загинал) и командниот кадар во логорите Карбонара и Гравина, на Корчула, Хвар и Вис и командите на четите (стр. 357–372).',
     '5-prekomorska':
-      'Список на загинатите борци и борки (256: раѓање, кога и каде паднал) и командниот кадар на бригадата, баталјоните и четите (стр. 283–301).',
+      'Список на загинатите борци и борки (256: раѓање, кога и каде загинал) и командниот кадар на бригадата, баталјоните и четите (стр. 283–301).',
     'sercerjeva':
       'Список на доброволците на Шерцерјевата бригада од формирањето на 6 октомври 1942 до крајот на февруари 1943 (име, партизанско име и место) и список на загинатите до крајот на 1943, по местото и денот на загинувањето (стр. 509–523).',
     'kosovelova':
-      'Список на загинатите, исчезнатите и починатите од рани (504 имиња: раѓање, место, кога и каде паднал) и командниот кадар на бригадата и нејзините баталјони со датумите на должностите (стр. 803–824).',
+      'Список на загинатите, исчезнатите и починатите од рани (504 имиња: раѓање, место, кога и каде загинал) и командниот кадар на бригадата и нејзините баталјони со датумите на должностите (стр. 803–824).',
     'eskadrile-novj':
-      'Списоци на составот на првата и втората ескадрила на НОВЈ (352-ри и 351-ви сквадрон на РАФ): број, чин, должност, раѓање и како кој дошол во ескадрилите, од Блискиот Исток, од италијанско заробеништво или од земјата; на крајот имиња чија ескадрила не е утврдена (стр. 331–354).',
+      'Списоци на составот на првата и втората ескадрила на НОВЈ (352-ри и 351-ви сквадрон на РАФ): број, чин, должност, раѓање и како кој дошол во ескадрилите, од Блискиот Исток, од италијанско заробеништво или од татковината; на крајот имиња чија ескадрила не е утврдена (стр. 331–354).',
     '42-vazduhoplovna':
       'Список на составот на дивизијата по полкови (421-ви, 422-ри и 423-ти воздухопловен полк), штаб, самостојна чета и авиоработилници: чин и должност (стр. 291–321).',
     '18-srpska':
@@ -1052,9 +1052,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '13-krajiska':
       'Два списока: борците и раководителите што биле во бригадата во август и септември 1943, со место, должност и, за загинатите, кога и каде загинале и каде се погребани; членовите на партиската организација на КПЈ во бригадата во мај 1945, со денот на приемот во Партијата и должноста (стр. 365–404).',
     'pozega-pali':
-      'Прилогот на Драгољуб Муњиќ: список на загинатите борци од НОБ, жртвите на фашистичкиот терор и цивилните жртви на војната во срезот Пожега, по села, со раѓање, единица и како загинал секој. Внесени се борците и, означени како активисти, соработниците на НОП, одборниците и работниците во партизанските работилници; цивилните жртви и војниците на поранешната југословенска војска не се. Книгата не припаѓа на една единица: записот од неа е додаден кон записот на секој борец што е на сајтот и за кого сигурно се знае дека е тој.',
+      'Прилогот на Драгољуб Муњиќ: список на загинатите борци од НОБ, жртвите на фашистичкиот терор и цивилните жртви на војната во срезот Пожега, по села, со раѓање, единица и како загинал секој. Внесени се борците и, означени како активисти, соработниците на НОП, одборниците и работниците во партизанските работилници; цивилните жртви и војниците на поранешната југословенска војска не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'cacanski-kraj-pali':
-      'Загинатите и настраданите од чачанскиот крај 1941–1945, по краеви (Драгачево, Љубиќ, Таково, Трнава, Чачак) и села: татко, занимање, раѓање, единица и како загинал секој. Внесени се борците и, означени како активисти, членовите на КПЈ и СКОЈ, одборниците, соработниците на НОП и работниците во партизанските работилници во 1941; цивилните жртви и четниците не се. Книгата не припаѓа на една единица: записот од неа е додаден кон записот на секој борец што е на сајтот и за кого сигурно се знае дека е тој.',
+      'Загинатите и настраданите од чачанскиот крај 1941–1945, по краеви (Драгачево, Љубиќ, Таково, Трнава, Чачак) и села: татко, занимање, раѓање, единица и како загинал секој. Внесени се борците и, означени како активисти, членовите на КПЈ и СКОЈ, одборниците, соработниците на НОП и работниците во партизанските работилници во 1941; цивилните жртви и четниците не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     '1-krajiska':
       'Список на загинатите, починатите и исчезнатите борци на бригадата, 2.127 имиња: раѓање, кога стапиле во НОБ и во бригадата, чета и баталјон, должност, кога и каде загинале и каде се погребани (стр. 331–442). Податоците ги истражил и обработил Слободан Спегар Спего.',
     'pionirska-ceta':
@@ -1066,15 +1066,15 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'narodni-heroji-1982-2':
       'Биографии на сите народни херои, второ издание (1982), том 2 (N–Ž): раѓање, живот пред војната, пат во НОБ, смрт или живот по војната и денот на прогласувањето. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за херој што веќе е на сајтот, неговата биографија од книгата ја додадовме во неговиот запис.',
     'trebinjci-pali':
-      'Споменица на Сојузот на борците од Требиње (1974): борците од општината што паднале во војната (стр. 13–96) и борците од цела Југославија што загинале кај Требиње (стр. 159–174), со раѓање, единици и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен.',
+      'Споменица на Сојузот на борците од Требиње (1974): борците од општината што загинале во војната (стр. 13–96) и борците од цела Југославија што загинале кај Требиње (стр. 159–174), со раѓање, единици и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен.',
     'pali-za-lepsa-svitanja':
       'Мајките на народните херои раскажуваат за своите синови и ќерки (1967); над секоја приказна е кратка биографија на херојот: раѓање, занимање, КПЈ, НОБ, смрт и денот на прогласувањето. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за херој што веќе е на сајтот, неговата биографија од книгата ја додадовме во неговиот запис.',
     'ofanziva-1942-poginuli':
       'Список на борците од 1-ва, 2-ра, 3-та и 4-та пролетерска бригада што загинале или исчезнале во походот кон западна Босна, од 24 јуни до 30 септември 1942 (стр. 698–711), по бригади и баталјони, со раѓање, занимање и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'hak-20-gospic-perusic':
-      'Од зборникот на Историскиот архив во Карловац (кн. 20): паднатите борци од околиите Госпиќ и Перушиќ 1941–1945 (стр. 986–1045) и носителите на Партизанската споменица 1941 (стр. 1194–1209), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 20): загинатите борци од околиите Госпиќ и Перушиќ 1941–1945 (стр. 986–1045) и носителите на Партизанската споменица 1941 (стр. 1194–1209), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-10-korenica-udbina':
-      'Од зборникот на Историскиот архив во Карловац (кн. 10): паднатите борци од околиите Кореница и Удбина 1941–1945 (стр. 990–1039), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 10): загинатите борци од околиите Кореница и Удбина 1941–1945 (стр. 990–1039), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hronika-prigrevica':
       'Монографија на селото Пригревица кај Апатин (1997), во кое по војната се населиле семејства на борци од Лика и Банија: загинатите, починатите и исчезнатите борци од НОБ од тие семејства (стр. 307–331) и носителите на Партизанската споменица 1941 (стр. 339–353), со раѓање, единица и смрт или живот по војната. Списоците на борците што влегле во војната подоцна, само со име, не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'hronika-medak':
@@ -1098,9 +1098,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'hronika-beli-breg':
       'Монографија на селото Бели Брег кај Алексинац (2009): жителите учесници во НОБ, со година на раѓање, денот кога влегле во единицата и единицата, и загинатите и починатите веднаш по војната (стр. 113–114). Заробениците, интернираните и војниците на Југословенската војска од истата табела не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'hronika-donja-gorevnica':
-      'Монографија на селото Доња Горевница кај Чачак (1996): од списокот на паднатите борци и жртви од селото се внесени само борците (стр. 233–238), а не и жртвите на теророт и војниците на Југословенската војска. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Монографија на селото Доња Горевница кај Чачак (1996): од списокот на загинатите борци и жртви од селото се внесени само борците (стр. 233–238), а не и жртвите на теророт и војниците на Југословенската војска. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'ostrvica':
-      'Монографија на селото Острвица кај Госпиќ (2003): попис на домаќинствата во селото со промените за време на војната (стр. 617–663), секој член на семејството и што се случило со него. Внесени се само борците, оние за кои записот вели дека биле борци, наведува воена должност или единица; цивилите, жртвите на теророт и припадниците на војската на НДХ не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Монографија на селото Острвица кај Госпиќ (2003): попис на домаќинствата во селото со промените за време на војната (стр. 617–663), секој член на семејството и што се случило со него. Внесени се само борците, оние за кои записот вели дека биле борци или наведува воена должност или единица; цивилите, жртвите на теророт и припадниците на војската на НДХ не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'divoselo':
       'Монографија на селата Дивосело, Читлук и Орнице кај Госпиќ: загинатите борци и офицери од тие села 1941–1945, секој со кратка биографија (стр. 425–435). Двајцата војници на Југословенската војска загинати во априлската војна не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'mogoric':
@@ -1108,21 +1108,21 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'vrebac':
       'Монографија на селата Вребац, Завоѓе и Павловац кај Госпиќ: загинатите борци од НОВ од тие села од 1941 до 1945, по села, секој со кратка биографија (стр. 298–311). Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'licko-petrovo-selo':
-      'Воена хроника на некогашната општина Личко Петрово Село (1985): загинатите борци по села (Личко Петрово Село, Ново Село, Жељава, Арапов До, Решетар, Заклопача и Лисина, Доњи Ваганац), во табела со годините на раѓање, стапување во НОВ и загинување, местото на загинување, единицата и должноста (стр. 207–214). Починатите од тифус, глад и мини не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Воена хроника на некогашната општина Личко Петрово Село (1985): загинатите борци по села (Личко Петрово Село, Ново Село, Жељава, Арапов До, Решетар, Заклопача и Лисина, Доњи Ваганац), во табела со годините на раѓање, стапување во НОВ и загинување, местото на загинување, единицата и должноста (стр. 207–214). Починатите од тифус и глад и загинатите од мини не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'bosansko-grahovo':
       'Загинатите борци од народноослободителната војна од подрачјето на Босанско Грахово, по села, секој со кратка биографија (стр. 642–697). Списокот на жртвите на фашистичкиот терор што следи не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'staromajdansko':
       'Загинатите борци и жртвите на фашистичкиот терор од подрачјето на Стари Мајдан кај Сански Мост, по села, секој со кратка биографија (стр. 177–246), и списоците на починатите и живите борци и учесници во војната во 1983 и на носителите на Партизанската споменица 1941, само имиња (стр. 247–266). Внесени се загинатите борци и носителите на споменицата; борците и учесниците во војната од списоците на имиња се означени како учесници, бидејќи списокот не кажува кој бил борец, а кој активист; жртвите на теророт не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'han-pijesak':
-      'Борците од општината Хан Пијесак и оние што паднале на нејзиното подрачје: загинатите во Пјеновац на 21 јануари 1942 и во втората непријателска офанзива, главно борци на Првата пролетерска бригада (стр. 106–109), народните херои и истакнатите учесници во НОБ (стр. 147–150) и загинатите борци 1941–1945, секој со кратка биографија (стр. 151–161). Внесени се и, означени како активисти, партиските и теренските работници што списокот ги брои меѓу загинатите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Борците од општината Хан Пијесак и оние што загинале на нејзиното подрачје: загинатите во Пјеновац на 21 јануари 1942 и во втората непријателска офанзива, главно борци на Првата пролетерска бригада (стр. 106–109), народните херои и истакнатите учесници во НОБ (стр. 147–150) и загинатите борци 1941–1945, секој со кратка биографија (стр. 151–161). Внесени се и, означени како активисти, партиските и теренските работници што списокот ги брои меѓу загинатите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'skakavac':
       'Борците и учесниците во НОБ од селото Скакавац кај Босански Петровац: првоборците, носители на Партизанската споменица 1941 (стр. 163–165), учесниците во НОВ што ја преживеале војната (стр. 166–173) и загинатите борци (стр. 173–177), секој со кратка биографија, и членовите на народноослободителните одбори, одборите на АФЖ, младинската организација и КПЈ, само имиња (стр. 181–191), внесени како активисти. Преживеаните за кои биографијата кажува само дека биле учесници во НОВ се означени како учесници. Жртвите на теророт и еден што во 1943 преминал кај четниците не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'zitoradje':
-      'Учесниците во НОВ од Житорађе кај Владичин Хан, само имиња (стр. 86), ранетите и загинатите борци од селото (стр. 86–88) и борците на српските бригади загинати при ослободувањето на селото во септември и октомври 1944, секој со кратка биографија (стр. 89–91). Жртвите на фашистичкиот терор не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Учесниците во НОВ од Житораѓе кај Владичин Хан, само имиња (стр. 86), ранетите и загинатите борци од селото (стр. 86–88) и борците на српските бригади загинати при ослободувањето на селото во септември и октомври 1944, секој со кратка биографија (стр. 89–91). Жртвите на фашистичкиот терор не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'brod-crna-trava':
       'Прилог III, загинатите 1941–1945 од селото Брод кај Црна Трава, табела со маалото, датумот и местото на загинувањето и единицата (стр. 808–809). Внесени се само оние за кои табелата ја наведува единицата, бидејќи меѓу другите има и цивилни жртви. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'revolucionarno-grahovo':
-      'Борците од Грахово кај Никшиќ паднати во НОВ и револуцијата 1941–1945, секој со кратка биографија (стр. 93–128), и загинатите народни херои (стр. 81–91). Внесени се и, означени како активисти, припадниците на движењето што загинале во затворите и логорите, а од жртвите на фашистичкиот терор (стр. 129–133) само активистите и борците. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Борците од Грахово кај Никшиќ загинати во НОВ и револуцијата 1941–1945, секој со кратка биографија (стр. 93–128), и загинатите народни херои (стр. 81–91). Внесени се и, означени како активисти, припадниците на движењето што загинале во затворите и логорите, а од жртвите на фашистичкиот терор (стр. 129–133) само активистите и борците. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'kolasin':
       'Загинатите во НОВ и револуцијата од подрачјето на Колашин, секој со кратка биографија (стр. 683–724), и носителите на Партизанската споменица 1941 со должноста што ја имале на крајот на војната (стр. 732–743). Активистите на движењето се означени како активисти, а загинатите за кои биографијата кажува само дека биле во НОД како учесници; од жртвите на фашизмот и војната (стр. 726–731) внесени се само борците. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'bozice':
@@ -1130,35 +1130,35 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'otocac-brinje':
       'Список на загинатите борци, жртвите на фашистичкиот терор и преживеаните борци и активни учесници во НОБ од некогашната општина Оточац, по села: загинатите борци (стр. 411–433) и преживеаните борци и активни учесници во НОБ (стр. 461–531), со раѓање, стапување во НОБ и должност. Внесени се и активните учесници, политичките работници, одборниците и членовите на СКОЈ и АФЖ, означени како активисти; жртвите на теророт не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'hak-14-donji-lapac':
-      'Од зборникот на Историскиот архив во Карловац (кн. 14): паднатите борци од околијата Доњи Лапац 1941–1945 (стр. 1041–1094), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 14): загинатите борци од околијата Доњи Лапац 1941–1945 (стр. 1041–1094), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-13-gracac':
-      'Од зборникот на Историскиот архив во Карловац (кн. 13): паднатите борци од околијата Грачац 1941–1945 (стр. 917–965), по општини, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 13): загинатите борци од околијата Грачац 1941–1945 (стр. 917–965), по општини, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-7-plascanska-dolina':
-      'Од зборникот на Историскиот архив во Карловац (кн. 7): паднатите борци од Плашчанската долина и околината 1941–1945 (стр. 689–701), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 7): загинатите борци од Плашчанската долина и околината 1941–1945 (стр. 689–701), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'krusevac-1944-poginuli':
       'Список на борците загинати во борбите за ослободувањето на Крушевац во септември и октомври 1944, по единици: 4-та пролетерска црногорска, 3-та, 6-та и 17-та српска бригада и Командата на крушевачкото воено подрачје (стр. 273–283), со раѓање и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'u-rovovima-srema-poginuli':
-      'Список на борците загинати на Сремскиот фронт (стр. 230–267), по бригади и по местото каде што паднале, само имиња, понекогаш со должноста. Книгата не е врзана за една единица. Каде што според името, бригадата и местото на загинувањето сигурно знаеме дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Список на борците загинати на Сремскиот фронт (стр. 230–267), по бригади и по местото каде што загинале, само имиња, понекогаш со должноста. Книгата не е врзана за една единица. Каде што според името, бригадата и местото на загинувањето сигурно знаеме дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'sremski-front-poginuli':
       'Списоци на борците загинати на Сремскиот фронт од октомври 1944 до април 1945, по дивизии и бригади, секој по кратката историја на единицата: само имиња, понекогаш со иницијалот на таткото. Книгата не е врзана за една единица. Каде што според името, бригадата и времето на загинувањето сигурно знаеме дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на загинатите црвеноармејци од крајот на книгата не се внесени.',
     'bitka-kod-oborova-poginuli':
       'Имињата на 128 борци од 2-ра мославачка бригада и Посавскиот партизански одред загинати кај Оборово на 29 март 1944 (стр. 158–160). Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'zrtve-rata-1964-slo':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Словенија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Словенија, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-hrv':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Хрватска, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Хрватска, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-bih':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Босна и Херцеговина, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-crg':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Црна Гора, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-mak':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Македонија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Македонија, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-srb':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Србија без покраините, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-kos':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Косово и Метохија, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     'zrtve-rata-1964-voj':
-      'Пописот на жртвите на војната од 1964, од подрачјето на Војводина, по општини и села: внесени се само борците на НОБ што загинале или умреле во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
+      'Пописот на жртвите на војната од 1964, од подрачјето на Војводина, по општини и села: внесени се само борците на НОБ што загинале или починале во војната, не и жртвите на теророт. Пописот не е врзан за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што пописот го наведува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици. Пописот го објави Музејот на жртвите на геноцидот.',
     '6-istocnobosanska-dopuna':
       'Борци на бригадата чии податоци не се објавени во книгата „Borbeni put Šeste proleterske brigade“ (1977), собрани до 1981: раѓање, кога стапиле во НОБ, должност, судбина; и борци за кои не се утврдени местото и времето на загинувањето (стр. 676 и натаму)',
     '7-banijska-poginuli':
@@ -1166,7 +1166,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     '15-majevicka-spisak':
       'Народните херои на бригадата и список на сите нејзини борци: година и место на раѓање, народност, занимање, кога стапиле во НОБ и дошле во бригадата, судбина (стр. 484–557)',
     'beogradski-bataljon':
-      'Сите борци на Белградскиот баталјон од првите денови на востанието до 1 март 1945, кога стана 3-ти баталјон на Првата пролетерска, според тоа кога дошле во баталјонот: занимање, раѓање, членство во КПЈ и СКОЈ, што се случило со секого во војната',
+      'Сите борци на Белградскиот баталјон од првите денови на востанието до 1 март 1945, кога стана 3-тиот баталјон на Првата пролетерска, според тоа кога дошле во баталјонот: занимање, раѓање, членство во КПЈ и СКОЈ, што се случило со секого во војната',
     '1-dalmatinska-monografija':
       'Командирите и политичките комесари на четите по баталјони, биографиите на народните херои на бригадата и списокот на борците загинати во војната, истиот како на znaci.org, тука со скенираната книга',
     '4-brigada-slavonije':
@@ -1184,55 +1184,55 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'mosorski-odred':
       'Список на борците на Мосорскиот партизански одред 1942–1944 (првиот дел од списокот, стр. 355–562): I мосорски одред, Мосорскиот баталјон, Летечката мосорска чета и одредот од октомври 1943 до ноември 1944, со раѓање, занимање, доаѓање во одредот и судбина. Вториот дел од списокот, борците на командите на места и теренските работници, не е внесен.',
     'mosorski-odred-2':
-      'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Во списокот на одредот се борците, оние за кои записот вели дека биле борци или наведува воена должност или единица на војската, и припадниците на работните баталјони. Теренските и политичките работници, одборниците и членките на АФЖ се внесени како активисти, секој кон записот на борецот што е на сајтот ако е тоа тој, останатите меѓу Борците од други единици.',
+      'Вториот дел од пописот од истата книга (стр. 573–648): борците на командите на места, партиско-политичките и теренските работници од подрачјето на Мосор. Меѓу борците на одредот ги внесовме оние за кои записот вели дека биле борци или наведува воена должност или единица на војската, и припадниците на работните баталјони. Теренските и политичките работници, одборниците и членките на АФЖ ги внесовме како активисти: кој веќе е на сајтот, го има тоа во својот запис, а останатите се меѓу Борците од други единици.',
     'mosorski-odred-kader':
       'Раководниот кадар на одредот 1942–1944, по должности, од командантите на одредот до командирите на водови, водните делегати и четните болничарки, само имиња (стр. 563–568)',
     'turopoljsko-posavski-odred':
-      'Список на загинатите борци на одредот (99, со место на раѓање, датум и место на загинувањето) и стрелани и починати борци на одредот во војната (16), стр. 17–20 (Музеј на Туропоље, Велика Горица 1983)',
+      'Список на загинатите борци на одредот (99, со место на раѓање, датум и место на загинувањето) и стреланите и починатите борци на одредот во војната (16), стр. 17–20 (Музеј на Туропоље, Велика Горица 1983)',
     'zascitna-enota-vpv':
       'Припадниците на заштитната единица на воено-политичкото раководство на НОБ на Словенија што ја преживеаја војната, со датум и место на раѓање и базите во кои служеле, потоа загинатите борци, народните херои и носителите на Партизанската споменица 1941 (стр. 293–310).',
     'hak-19-vojnic':
-      'Од зборникот на Историскиот архив во Карловац (кн. 19): паднатите борци од околијата Војниќ 1941–1945 (стр. 1123–1177), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 19): загинатите борци од околијата Војниќ 1941–1945 (стр. 1123–1177), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-18-slunj-veljun':
-      'Од зборникот на Историскиот архив во Карловац (кн. 18): паднатите борци од околиите Слуњ и Велјун 1941–1945 (стр. 921–977), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 18): загинатите борци од околиите Слуњ и Велјун 1941–1945 (стр. 921–977), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-15-duga-resa':
-      'Од зборникот на Историскиот архив во Карловац (кн. 15): паднатите борци од денешната општина Дуга Реса 1941–1945 (стр. 1060–1090), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 15): загинатите борци од денешната општина Дуга Реса 1941–1945 (стр. 1060–1090), по општини и села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус од истата книга не се внесени.',
     'hak-12-dreznica':
-      'Од зборникот на Историскиот архив во Карловац (кн. 12): паднатите борци од општината Дрежница 1941–1945 (стр. 865–876), по села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 12): загинатите борци од општината Дрежница 1941–1945 (стр. 865–876), по села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
     'hak-16-gornje-dubrave':
-      'Од зборникот на Историскиот архив во Карловац (кн. 16): паднатите борци од општината Горње Дубраве 1941–1945 (стр. 889–899), по села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
+      'Од зборникот на Историскиот архив во Карловац (кн. 16): загинатите борци од општината Горње Дубраве 1941–1945 (стр. 889–899), по села, со раѓање, пат во НОБ и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списокот на жртвите на фашистичкиот терор и на војната од истата книга не е внесен.',
     'sjenicak':
-      'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: паднатите и починатите борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус и настинка од истата книга не се внесени.',
+      'Хроника на едно кордунско село, издадена од Историскиот архив во Карловац, со два нејзини списока: загинатите и починатите борци 1941–1945 од Долни, Горни и Ласињски Сјеничак (стр. 330–338), по села, со раѓање, пат во НОБ и смрт, и носителите на Партизанската споменица 1941 (стр. 385–389). Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Списоците на жртвите на фашистичкиот терор и на починатите од тифус и настинка од истата книга не се внесени.',
     'tuzla-spomen-knjiga':
-      'Спомен-книга на општина Тузла: биографии на нејзините учесници во НОБ што загинале во 1941–1945 (стр. 13–300), родени, живееле или работеле во Тузла или од неа тргнале во партизаните, често со фотографија, со единицата, раѓањето и смртта. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Вториот дел на книгата, жртвите на фашистичкиот терор, не е внесен.',
+      'Спомен-книга на општина Тузла: биографии на нејзините учесници во НОБ што загинале во 1941–1945 (стр. 13–300), што се родиле, живееле или работеле во Тузла или од неа тргнале во партизаните, често со фотографија, со единицата, раѓањето и смртта. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Вториот дел на книгата, жртвите на фашистичкиот терор, не е внесен.',
     'jajce-1941-poginuli':
       'Од зборникот спомени за јајачкиот крај (кн. I): списокот на борците од јајачкото подрачје загинати во 1941 година, со раѓање, единица и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'jajce-1942-poginuli':
       'Од зборникот спомени за јајачкиот крај (кн. II): списокот на борците и активистите на НОД од јајачкото подрачје загинати во 1942 година, со раѓање, единица и смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'spomenica-crnogorskim-antifasistima':
-      'Список на црногорските антифашисти загинати и починати во 1941–1945, по општини, во табела: име, татково име, година и место на раѓање, година на смрт и место на загинување. Сите што книгата ги наведува се водат како партизани. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Список на црногорските антифашисти загинати и починати во 1941–1945, по општини, во табела: име, татково име, година и место на раѓање, година и место на смртта. Сите што книгата ги наведува се водат како партизани. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'moste-polje-spomenica-1941':
-      'Носителите на Партизанската споменица 1941 од подрачјето на денешната општина Мосте-Поље во Љубљана, од архивот на ЦК ЗКС (стр. 257–260): име, година на раѓање и занимање, а за оние што умреле по војната и година на смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Носителите на Партизанската споменица 1941 од подрачјето на денешната општина Мосте-Поље во Љубљана, од архивот на ЦК ЗКС (стр. 257–260): име, година на раѓање и занимање, а за оние што починале по војната и година на смрт. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'vis-spomenica-1941':
       'Носителите на Партизанската споменица 1941 од вишкото островје (стр. 521), само имиња, и реченицата на книгата за народниот херој Андрија Божаниќ. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец од островот што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'prilog-u-krvi-pali-borci':
-      'Паднатите борци на НОБ од пљеваљската околија од април 1941 до 15 мај 1945 (стр. 141–216), со биографија на секој. Книгата меѓу паднатите борци ги вбројува и партиските и политичките работници, одборниците и соработниците на НОД: и тие се внесени, означени како активисти. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Паднатите борци на НОБ од пљеваљската околија од април 1941 до 15 мај 1945 (стр. 141–216), со биографија на секој. Книгата меѓу загинатите борци ги вбројува и партиските и политичките работници, одборниците и соработниците на НОД: и тие се внесени, означени како активисти. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'jevreji-jugoslavije-ucesnici-nor':
-      'Списокот на еврејските учесници во народноослободителната војна, со биографија на секој (стр. 307 и понатаму). Списокот ги брои сите што биле во НОД: внесени се сите, а политичките и позадинските работници и оние што биле фатени на патот кон партизаните се означени како активисти. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Списокот на еврејските учесници во народноослободителната војна, со биографија на секој (стр. 307 и натаму). Списокот ги брои сите што биле во НОД: внесени се сите, а политичките и позадинските работници и оние што биле фатени на патот кон партизаните се означени како активисти. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'hrvatsko-zagorje-1981':
-      'Попис на загинатите учесници во НОБ 1941–1945 од подрачјето на општините Доња Стубица, Иванец, Клањец, Крапина, Прерада, Забок, Запрешиќ и Златар-Бистрица, со раѓање, единица и смрт. Пописот заедно ги наведува борците и жртвите на фашистичкиот терор; внесени се борците и, означени како активисти, членовите на КПЈ, СКОЈ и НОО, политичките работници и куририте, а жртвите на теророт не. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Попис на загинатите учесници во НОБ 1941–1945 од подрачјето на општините Доња Стубица, Иванец, Клањец, Крапина, Преграда, Забок, Запрешиќ и Златар-Бистрица, со раѓање, единица и смрт. Пописот заедно ги наведува борците и жртвите на фашистичкиот терор; внесени се борците и, означени како активисти, членовите на КПЈ, СКОЈ и НОО, политичките работници и куририте, а жртвите на теророт не. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'imotska-krajina-pali-borci':
-      'Паднатите борци и жртвите на фашистичкиот терор по селата на Имотската крајина (стр. 163–472), со раѓање, пат во НОВ и смрт. Внесени се паднатите борци од делот што книгата за секое село го насловува »Poginuli borci«, а скоевците, комунистите и политичките работници што книгата таму ги вбројува се означени како активисти; жртвите на теророт не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Паднатите борци и жртвите на фашистичкиот терор по селата на Имотската крајина (стр. 163–472), со раѓање, пат во НОВ и смрт. Внесени се загинатите борци од делот што книгата за секое село го насловува „Poginuli borci“, а скоевците, комунистите и политичките работници што книгата таму ги вбројува се означени како активисти; жртвите на теророт не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'knjazevac-pomenik':
       'Сите настрадани во Втората светска војна од подрачјето на општина Књажевац, по села (стр. 37–327), со раѓање и смрт: партизани, четници, стрелани и цивили заедно. Внесени се партизанските борци и, означени како активисти, комунистите, скоевците, одборниците и соработниците на партизаните; четниците, цивилите и оние што ги осудила новата власт не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'iskra-in-plamen-padli':
-      'Од зборникот за НОБ во селата на некогашната општина Поље кај Љубљана: „Svoja življenja so dali za svobodo“, починатите од тие села по села, со годините на раѓање и смрт и местото на загинувањето. Внесени се само загинатите во НОВ; починатите во интернација и затвори, заложниците и другите жртви не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Од зборникот за НОБ во селата на некогашната општина Поље кај Љубљана: „Svoja življenja so dali za svobodo“, починатите од тие села, по села, со годините на раѓање и смрт и местото на загинувањето. Внесени се само загинатите во НОВ; починатите во интернација и затвори, заложниците и другите жртви не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'cazinska-krajina-pali-borci':
       'Списокот на загинатите борци од Цазинска Крајина, по општини (Бихаќ, Босанска Крупа, Цазин, Велика Кладуша) и села, со името на таткото и годините на раѓање и загинување. Списокот на српските цивилни жртви од истата книга не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'derventa-pali-borci':
       'Списокот на загинатите борци од народноослободителната војна од подрачјето на општина Дервента, со раѓање, единица и место на загинувањето. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'sanski-most-borci':
-      'Списоците на борците од Санскиот срез по населби: загинатите во НОБ, носителите на Партизанската споменица 1941 и борците на НОБ живи на 15 мај 1945, со раѓање, занимање, стапување во НОБ и должност. Од третиот список внесени се борците (борец, воена должност или чин, единица) и, означени како активисти, одборниците и членовите на СКОЈ и АФЖ без воена должност; жртвите на фашистичкиот терор не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Списоците на борците од срезот Сански Мост по населби: загинатите во НОБ, носителите на Партизанската споменица 1941 и борците на НОБ живи на 15 мај 1945, со раѓање, занимање, стапување во НОБ и должност. Од третиот список внесени се борците (борец, воена должност или чин, единица) и, означени како активисти, одборниците и членовите на СКОЈ и АФЖ без воена должност; жртвите на фашистичкиот терор не се. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'rat-i-djeca-kozare':
       'Од книгата за децата на Козара во војната, поглавјето „Pali kao borci narodnooslobodilačkog rata“: 370 козарски момчиња и девојчиња помлади од 15 години кои загинале како борци, по општини, со местото и годините на раѓање и загинување (текст на znaci.org, без скенирана книга). Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'krizani-v-boju-za-svobodo':
@@ -1242,7 +1242,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'susak-rijeka-spomenica':
       'Од прилозите на книгата за Сушак и Риека во НОБ: носителите на Партизанската споменица 1941 од подрачјето на општина Риека, име и место, како ги составил општинскиот одбор на СУБНОР. Списоците на членовите на КПЈ и СКОЈ од 1941 загинати во НОБ не се внесени, бидејќи не кажуваат кој бил борец. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'zene-vi-korpus-poginule':
-      'Од зборникот документи за жените на Хрватска во НОБ (документ 427): пописот на загинатите другарки борци и раководителки во единиците на VI корпус на НОВЈ, што штабот на корпусот го составил на 23 декември 1944, со должноста и единицата, годината и местото на раѓање и кога и во која борба загинала. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Од зборникот документи за жените на Хрватска во НОБ (документ 427): пописот на загинатите жени борци и раководителки во единиците на VI корпус на НОВЈ, што штабот на корпусот го составил на 23 декември 1944, со должноста и единицата, годината и местото на раѓање и кога и во која борба загинала. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'ludbreg-poginuli':
       'Списоци на борците загинати во двете борби за Лудбрег: од 17-та славонска бригада во Лудбрег и Шемовец на 3 октомври 1943, од бригадата „Браќа Радиќ“ кај Шемовец истиот ден и од 17-та славонска во Лудбрег на 6 јули 1944 (стр. 84–85, 287–289), со година и место на раѓање. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'dolomiti-v-nob-3':
@@ -1260,21 +1260,21 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'xxxi-divizija-stabi':
       'Штабовите на XXXI дивизија и на нејзините бригади, Градникова, Прешернова и Војкова (стр. 557–562): командантите, комесарите, нивните заменици и началниците на штабот, секој со времето кога бил на должноста, и кој од нив загинал. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     '15-brigada-stabi':
-      'Командантите, политичките комесари, нивните заменици и началниците на штабот на 15-та словенечка бригада и командантите и комесарите на нејзините баталјони (стр. 447–450), секој со времето кога бил на должноста и, каде што должноста така завршила, дека бил ранет, се разболел или загинал. Бригадата не е на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Командантите, политичките комесари, нивните заменици и началниците на штабот на 15-та словенечка бригада и командантите и комесарите на нејзините баталјони (стр. 447–450), секој со времето кога бил на должноста, а кај некои и дека бил ранет, се разболел или загинал. Бригадата не е на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     '15-divizija-stabi':
       'Командниот состав на 15-та дивизија на НОВ и ПО на Словенија (стр. 583–584): командантите, политичките комесари, нивните заменици и помошници и началниците на штабот, секој со времето кога бил на должноста. Дивизијата не е на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'jb-odred-stabi':
       'Штабовите на Јесеничко-бохињскиот одред, на неговите три баталјони и на школскиот логор, август 1944 – мај 1945 (стр. 354–356): командантите, политичките комесари, нивните помошници и заменици и началникот на штабот, секој со времето кога бил на должноста. Одредот не е на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'banijski-odredi-kadar':
-      'Старешините на банискиот партизански одреди 1941–1945 (стр. 372–378): на малите одреди и селските групи борци од 1941, на Банискиот партизански одред и неговите баталјони, ударните баталјони, партизанските чети и двата одреди на Банија од 1944, по должности. Одредите не се на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Старешините на банијските партизански одреди 1941–1945 (стр. 372–378): на малите одреди и селските групи борци од 1941, на Банијскиот партизански одред и неговите баталјони, ударните баталјони, партизанските чети и двата одреди на Банија од 1944, по должности. Одредите не се на сајтот. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'letalci-prekomorci-kader':
-      'Раководниот кадар на 1-ва и 2-ра ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1-ви воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Раководниот кадар на 1-ва и 2-ра ловечка ескадрила на НОВЈ, на воздухопловниот одред на НОВЈ во Алжир и на 1-виот воздухопловен полк (стр. 322–325): чинот и должноста на секој, со времето кога ја вршел. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'niksicki-odred-pali-borci':
-      'Имињата на паднатите борци од подрачјето на поранешната никшиќка околија и општината Херцег Нови (стр. 393–420): место и година на раѓање, место и година на загинување; и народните херои на Никшиќ и Херцег Нови, со биографија на секој (стр. 423–427). Речиси сите поминале низ Никшиќкиот одред, а загинале во бригадите, во одредот и на други должности. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Имињата на загинатите борци од подрачјето на поранешната никшиќка околија и општината Херцег Нови (стр. 393–420): место и година на раѓање, место и година на загинување; и народните херои на Никшиќ и Херцег Нови, со биографија на секој (стр. 423–427). Речиси сите поминале низ Никшиќкиот одред, а загинале во бригадите, во одредот и на други должности. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'teslic-u-nob-borci':
       'Списокот на борците од народноослободителната војна од општината Теслиќ (стр. 234–267) и списокот на загинатите и починатите борци (стр. 269–279), со биографија на секој. Списоците покрај борците ги бројат и одборниците и соработниците на НОД: внесени се само оние за кои записот вели дека биле борци или во НОВЈ, или наведува воена должност или единица на војската. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'lovcenski-odred-pali-borci':
-      'Загинатите, стрелани и починати борци од НОВ 1941–1945 од територијата на Ловќенскиот партизански одред, по околии (цетињска, барска, которска) и села, со биографија на секој (стр. 611–713). Авторот меѓу паднатите борци ги брои сите од движењето што го загубиле животот, и активистите, а жртвите на теророт не; внесени се сите. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Загинатите, стреланите и починатите борци од НОБ 1941–1945 од територијата на Ловќенскиот партизански одред, по околии (цетињска, барска, которска) и села, со биографија на секој (стр. 611–713). Авторот меѓу загинатите борци ги брои сите од движењето што го загубиле животот, и активистите, а жртвите на теророт не; внесени се сите. Страниците на znaci.org немаат текст, само слики: имињата се прочитани од сликите. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'zene-1-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 368): должност и чин, датум и место на раѓање, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     '1-dalmatinska-komandni-sastav':
@@ -1284,9 +1284,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'zene-11-dalmatinska':
       'Список на жените борци на бригадата од 1944–1945 (документ 376): датум и место на раѓање, должност и чин, кога стапиле во НОВ, одликувања и мислењето на штабот за секоја',
     '11-dalmatinska-stabovi':
-      'Старешините на штабот на бригадата со времето кога кој ја вршел должноста, на четите при штабот, превивалиштата и подофицерскиот курс, на штабовите на баталјоните и командите на четите, по должности (стр. 611–624)',
+      'Старешините на штабот на бригадата, на четите при штабот, превивалиштата и подофицерскиот курс, на штабовите на баталјоните и командите на четите, по должности, а за штабот на бригадата и времето кога кој ја вршел должноста (стр. 611–624)',
     'osjecka-zene':
-      'Жените борци на Осиечката бригада по баталјони, како што ги попишал штабот на бригадата за I конгрес на АФЖ на Хрватска (документ 420): датум и место на раѓање, од кога се во партизани',
+      'Жените борци на Осиечката бригада по баталјони, како што ги попишал штабот на бригадата за I конгрес на АФЖ на Хрватска (документ 420): датум и место на раѓање, од кога се во партизаните',
     'dalmatinci-prva-proleterska':
       'Борците на Првата пролетерска бригада од Далмација, со биографија за секого: раѓање, занимање, пат во НОБ и во бригадата, борби, судбина; и дополнителен список на оние за кои авторите не собрале податоци (стр. 467–754)',
     'crnogorski-bataljon':
@@ -1294,7 +1294,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'rudarska-ceta':
       'Борците на Рударската чета (рудари од Трепча и Копаоник) кога влезе во Првата пролетерска во Рудо на 21 декември 1941, со биографија за секого (стр. 426–430)',
     'prva-proleterska-dopunski':
-      'Припадниците на бригадата што редакцијата ги најде по списокот во првите три книги, со податоци за секого (стр. 1065–1071)',
+      'Припадниците на бригадата што редакцијата ги најде откако списокот во првите три книги веќе беше отпечатен, со податоци за секого (стр. 1065–1071)',
     'prva-proleterska-garibaldi':
       'Италијанските војници што по капитулацијата на Италија им се приклучија на партизаните, со штабот на баталјонот, само имиња и должности (стр. 1072–1082)',
     'kotor-varos':
@@ -1318,7 +1318,7 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'gornja-jablanica':
       'Народните херои и другите загинати првоборци од Горња Јабланица, по села (стр. 663–669), и носителите на Партизанската споменица 1941 (стр. 669–673), само имиња. Носителите на Албанската споменица и на Караѓорѓевата ѕвезда не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     '2-korpus-stabovi':
-      'Списокот на командниот состав на штабовите на дивизиите и на штабот на 2-ри ударен корпус (стр. 463–465): командантите, политичките комесари, заменици и началниците на штабовите на корпусот, 2-ра пролетерска, 3-та ударна, 29-та и 37-ма ударна дивизија, Приморската оперативна група, италијанската дивизија »Гарибалди« и артилериската бригада на корпусот, со месеците на должноста. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
+      'Списокот на командниот состав на штабовите на дивизиите и на штабот на 2-риот ударен корпус (стр. 463–465): командантите, политичките комесари, заменици и началниците на штабовите на корпусот, 2-ра пролетерска, 3-та ударна, 29-та и 37-ма ударна дивизија, Приморската оперативна група, италијанската дивизија „Гарибалди“ и артилериската бригада на корпусот, со месеците на должноста. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис.',
     'moslavina-spomenica-1941':
       'Прегледот на носителите на Партизанската споменица 1941 од подрачјето на Мославина (стр. 629–632), само имиња и прекари: родени во Мославина или подолго живееле таму, меѓу нив и раководителите на КП, СКОЈ, АФЖ и НОО. Одредот не е на сајтот; останатите се меѓу Борците од други единици.',
     'knezica':
@@ -1332,9 +1332,9 @@ const DESCRIPTION: Partial<Record<Lang, Texts>> = {
     'rogatica':
       'Монографијата за Рогатица (Сараево 2009): „Истакнати првоборци од Народноослободителната војна“ (стр. 235–254), 48 борци од рогатичкиот крај, секој со биографија. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'grahovo-podjele':
-      'Прилозите на книгата за Грахово кај Никшиќ: партизанските работници во позадината убиени и стрелани од заминувањето на партизаните во Босна 1942 до нивното враќање 1943 (стр. 237–238) и грахоѓаните носители на Партизанската споменица 1941 (стр. 252–255). Списокот на загинатите четници од истата книга не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Прилозите на книгата за Грахово кај Никшиќ: партизанските работници во позадината убиени и стрелани од заминувањето на партизаните во Босна 1942 до нивното враќање 1943 (стр. 237–238) и носителите на Партизанската споменица 1941 од Грахово (стр. 252–255). Списокот на загинатите четници од истата книга не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'sutorina':
-      'Прилозите на хрониката на Суторина кај Херцег Нови: Суторинската партизанска чета, нејзината команда и четирите вода по села, со годината на раѓање и должноста (стр. 405–409), загинатите борци во НОБ 1941–1945 (стр. 410–414) и сутораните носители на Партизанската споменица 1941, со биографија (стр. 416–418). Списоците на жртвите на теророт, на загинатите во војната 1991–1995 и на доброволците од поранешните војни од истата книга не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
+      'Прилозите на хрониката на Суторина кај Херцег Нови: Суторинската партизанска чета, нејзината команда и четирите вода по села, со годината на раѓање и должноста (стр. 405–409), загинатите борци во НОБ 1941–1945 (стр. 410–414) и носителите на Партизанската споменица 1941 од Суторина, со биографија (стр. 416–418). Списоците на жртвите на теророт, на загинатите во војната 1991–1995 и на доброволците од поранешните војни од истата книга не се внесени. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'doboj3':
       'Списокот на загинатите борци во Народноослободителната војна од добојската општина по села (стр. 366–422), со раѓањето, стапувањето во НОБ, единицата и загинувањето. Внесени се борците и, означени како активисти, активните соработници на НОП, одборниците и илегалците што ги брои списокот. Списокот на жртвите на фашистичкиот терор од истата книга не е внесен. Книгата не е врзана за една единица. Каде што е сигурно дека станува збор за борец што веќе е на сајтот, она што книгата го пишува за него го додадовме во неговиот запис. Останатите се меѓу Борците од други единици.',
     'ljesnjani':
