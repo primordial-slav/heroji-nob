@@ -32,7 +32,7 @@ census gives its columns as fields (born_in, ethnicity, death_year, death_place)
 Usage:
     python data-extraction/build_ostali_borci.py            # dry run: counts and samples
     python data-extraction/build_ostali_borci.py --write    # write website/public/ostali-borci*.json
-Then (CLAUDE.md, "Ostali borci"): python scripts/normalize_all_json.py --brigade 122 131 132 133 134 135 136 137 138
+Then (docs/claude/ostali-borci.md): python scripts/normalize_all_json.py --brigade 122 131 132 133 134 135 136 137 138
 --apply; python scripts/extract_structured_fields.py --brigade 122 --apply; python scripts/apply_corrections.py --apply
 --brigade 122 131 132 133 134 135 136 137 138; python scripts/build_relations.py --write.
 """

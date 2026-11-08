@@ -30,7 +30,7 @@ Usage:
     python scripts/find_identities.py --write --start N    # ... from correction id N (default: after the highest
                                                            # below 200000, this project's sessions' own range)
     python scripts/find_identities.py --answer KEY same|different|unsure [--note TEXT] [--by NAME]
-Then run the pipeline: apply_corrections.py --apply, and rebuild Ostali borci (see CLAUDE.md) when references changed.
+Then run the pipeline: apply_corrections.py --apply, and rebuild Ostali borci (see docs/claude/ostali-borci.md) when references changed.
 """
 from __future__ import annotations
 

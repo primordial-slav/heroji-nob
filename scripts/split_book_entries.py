@@ -2,7 +2,7 @@
 man is on the site under no name of his own. Each is cut out of his host's text and becomes an entry of the book, numbered
 after the file's last so the others' numbers stay, his place on the page found by his heading, read as his list's others
 (a list that counts the movement's people marks him by the same rule). The names are read from the heading, the alphabetical
-order and the site's records of the village. python scripts/split_book_entries.py [--write], then the chain in CLAUDE.md
+order and the site's records of the village. python scripts/split_book_entries.py [--write], then the chain in docs/claude/ostali-borci.md
 (Ostali borci, its fields, the identity pass)."""
 import json
 import re

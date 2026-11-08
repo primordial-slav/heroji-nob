@@ -3,7 +3,7 @@ layer: "... u oslobođenom Beogradu. ATLAGIĆ Jovana MIĆO MILAN, rođen 1918, .
 one before. Each host keeps its own text and box (an edit; for an entry merged into a roster record it lands in that
 record's other_sources), each glued man becomes a record of the list (an add, ids from 0001403001) read by the
 parser's own parse(), with his box drawn as the parser draws them: from his heading's line to the next entry, one
-rectangle a column. Done on 2026-10-17 (corrections 250001-250572; see CLAUDE.md, Known OCR Issues, after the Beogradski
+rectangle a column. Done on 2026-10-17 (corrections 250001-250572; see docs/claude/ocr-issues.md, after the Beogradski
 bataljon). Usage, from the project root: python scripts/split_dalmatinci_glued.py [unit file] --range=LO-HI [--write]
 [--dump=proposals.json]; a re-run on the split list finds nothing more."""
 import json

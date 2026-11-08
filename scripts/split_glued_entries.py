@@ -9,7 +9,7 @@ heading's surname in capitals, the first after the host's start in reading order
 page). Page furniture glued in between (a list's title, a number) is cut off (JUNK). The boxes are drawn by
 entry_boxes.py from the new starts; in a list whose parser draws them (entry_boxes.INLINE_ENTRIES: the Proleterski
 bataljon Bosanske krajine's Karasijević) the new record has none and the host keeps its box.
-Found with a scan for capitals after a sentence's end (see CLAUDE.md, Known OCR Issues); done on 2026-10-17.
+Found with a scan for capitals after a sentence's end (see docs/claude/ocr-issues.md); done on 2026-10-17.
 Usage, from the project root: python scripts/split_glued_entries.py --range=LO-HI [--write]
 """
 import json

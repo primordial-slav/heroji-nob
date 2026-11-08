@@ -2,7 +2,7 @@
 such record, the row after the one its text ends with, in its column on its page (or the next column's or page's
 first row), if that row is not another entry's start. Writes a review table (json) of proposals: status 'ok' where
 the row starts in lowercase (the syllable to join; check it holds no word in capitals, the next entry in a flush
-list), 'check' where it doesn't, 'end row not found' where the text layer lacks the cut line. See CLAUDE.md, "Lost
+list), 'check' where it doesn't, 'end row not found' where the text layer lacks the cut line. See docs/claude/ocr-issues.md, "Lost
 continuation lines" (the corrections of 2026-10-17 were written from these tables).
 Usage: python scripts/find_lost_lines.py website/public/<unit>-soldiers.json <out.json> [--from-git]"""
 import json

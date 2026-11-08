@@ -143,7 +143,7 @@ ORDINALS = ['prv', 'drug', 'treć', 'četvrt', 'pet', 'šest', 'sedm', 'osm', 'd
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10, 'XI': 11, 'XII': 12,
          'XIII': 13, 'XIV': 14, 'XV': 15, 'XVI': 16, 'XVII': 17, 'XVIII': 18, 'XIX': 19, 'XX': 20, 'XXI': 21, 'XXII': 22,
          'XXIII': 23, 'XXIV': 24, 'XXV': 25}
-# the site's brigades by number and the word of their name (CLAUDE.md's table)
+# the site's brigades by number and the word of their name (the table in docs/claude/units.md)
 BRIGADES = {
     'proletersk': {1: 1, 2: 39, 3: 5, 4: 40, 5: 41, 6: 42, 13: 6},
     'srpsk': {4: 21, 5: 127, 7: 85, 8: 87, 9: 165, 10: 88, 12: 90, 14: 27, 15: 86, 17: 55, 18: 128, 19: 73, 20: 91,
