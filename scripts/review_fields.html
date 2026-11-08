@@ -80,6 +80,12 @@ kbd { font: 12px ui-monospace, monospace; background: rgba(255,255,255,.22); bor
 .case .detail { grid-column: 2 / -1; }
 .case .snip { grid-column: 2 / -1; color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip.woman { background: var(--amber); color: #fff; font-size: 11px; font-weight: 600; padding: 0 7px; }
+.choice { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 15px; }
+.choice-btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 4px; }
+.choice-btns button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 7px 12px; cursor: pointer; color: #fff; }
+.choice-btns .fix { background: var(--blue); } .choice-btns .keep { background: var(--green); }
+.enter-will { margin-top: 8px; font-size: 13px; color: var(--muted); }
+.enter-will b { color: var(--ink); }
 .case .detail .text { font-size: 13px; }
 @media (max-width: 800px) { .case { grid-template-columns: 22px 1fr; } .case .who, .case .why, .case .tools { grid-column: 2; } }
 </style>
@@ -169,6 +175,18 @@ function highlight(text, r) {
   return t;
 }
 
+// a foreigner's name (an Italian of the Garibaldi battalion, a Hungarian, one born abroad): the proposed spelling is a
+// form of this country's names, mostly wrong for him ("Corda" → Ćorda), so such a case starts unticked too
+const FOREIGN = /\b(Italijan\w*|Talijan\w*|Nemac|Nijemac|Njemica|Nemica|Austrijan\w*|Mađar\w*|Madžar\w*|Slovak\w*|Slovakinja|Čeh|Čehinja|Rus|Ruskinja|Rusin\w*|Ukrajin\w*|Poljak\w*|Englez\w*|Francuz\w*|Amerikan\w*|Grk|Grkinja|Bugar\w*|Rumun\w*|Turčin|Turkinja|Španac)\b|\b(Italij[aie]|Italiji|Nemačk\w+|Njemačk\w+|Austrij\w+|Mađarsk\w+|Čehoslovačk\w+|Francusk\w+|Engleskoj|SSSR\w*|Rusij\w+|Poljsk\w+|Rumunij\w+|Grčk\w+|Bugarsk\w+|Albanij\w+|SAD)\b/;
+const foreignCase = r => FOREIGN.test(((r.fields || {}).birth_place || '') + ' ' + (r.text || '').slice(0, 220));
+
+function warnings(r) {
+  const w = [];
+  if (womanCase(r)) w.push('<span class="chip woman" title="The entry reads as a woman\'s: the proposed spelling may be a man\'s name">woman</span>');
+  if (r.check === 'name_slips' && foreignCase(r)) w.push('<span class="chip woman" title="A foreigner, or born abroad: the proposed spelling is a form of this country\'s names">foreign</span>');
+  return w.join(' ');
+}
+
 function editor(r) {
   const f = r.fields || {};
   const show = [...NAME_FIELDS];
@@ -177,13 +195,18 @@ function editor(r) {
   const val = k => k === 'additional_info' ? r.text : (f[k] ?? '');
   // a name slip comes with the spelling proposed, filled in: Enter takes it, K keeps the name as printed
   const proposed = r.check === 'name_slips' ? (/→ (.+?) \(/.exec(r.note) || [])[1] : null;
-  return show.map(k => {
+  const choice = proposed ? `<div class="choice">
+      <div>Printed <b>${esc(r.value)}</b> · proposed <b>${esc(proposed)}</b> ${warnings(r)}</div>
+      <div class="choice-btns"><button class="fix" data-c="take">Take ${esc(proposed)}<kbd>Enter</kbd></button>
+        <button class="keep" data-c="keep">Keep ${esc(r.value)} as printed<kbd>K</kbd></button></div>
+      <div class="src">Or type another spelling below; Enter saves what the fields hold.</div></div>` : '';
+  return choice + show.map(k => {
     const v = esc(val(k));
     const p = proposed && k === r.field ? esc(proposed) : null;
     const input = k === 'additional_info' ? `<textarea data-k="${k}" data-v="${v}">${v}</textarea>`
       : `<input data-k="${k}" data-v="${v}" value="${p ?? v}"${p ? ' class="changed"' : ''}>`;
     return `<label>${esc(FIELD_LABELS[k] || k)}${input}</label>`;
-  }).join('') + (r.check === 'glued' ? '<div class="src">To split, cut the text here and say who the glued man is in the note; it is done by hand.</div>' : '');
+  }).join('') + '<div class="enter-will" id="enterWill"></div>' + (r.check === 'glued' ? '<div class="src">To split, cut the text here and say who the glued man is in the note; it is done by hand.</div>' : '');
 }
 
 // ---- the name slips by change: the cases grouped by what the proposed spelling changes, one answer for the ticked ----
@@ -232,11 +255,11 @@ const WOMAN = /\b(rođena|rodjena|roćena|poginula|umrla|nestala|streljana|strij
 const womanCase = r => r.field === 'first_name' && WOMAN.test(r.text || '');
 
 function caseLine(r) {
-  const p = proposedOf(r), d = diffParts(r.value, p), a = answers[r.key], w = womanCase(r);
+  const p = proposedOf(r), d = diffParts(r.value, p), a = answers[r.key], warn = warnings(r), w = !!warn;
   const why = r.note.replace(/^.*?\(/, '').replace(/\)$/, '');
   return `<div class="case${w ? ' off' : ''}" data-key="${esc(r.key)}">
     <input type="checkbox" class="tick"${w ? '' : ' checked'}>
-    <span class="nm">${marked(r.value, d, 'from')} → ${marked(p, d, 'to')}${w ? ' <span class="chip woman" title="The entry reads as a woman\'s: the proposed spelling may be a man\'s name">woman</span>' : ''}</span>
+    <span class="nm">${marked(r.value, d, 'from')} → ${marked(p, d, 'to')} ${warn}</span>
     <span class="who">${esc(r.name)} · ${esc(r.file.replace(/-soldiers\.json$|\.json$/, ''))}</span>
     <span class="why">${esc(why)}</span>
     <span class="tools">${a ? `<span class="answered ${a}">${a}</span>` : ''}<button data-do="page">page</button><button data-do="one">open</button></span>
@@ -292,6 +315,14 @@ document.getElementById('view').addEventListener('click', e => {
   render();
 });
 document.getElementById('main').addEventListener('click', e => {
+  const ch = e.target.closest('.choice button[data-c]');
+  if (ch) {
+    const r = list[i], p = proposedOf(r);
+    if (ch.dataset.c === 'keep') return answer('keep');
+    const el = document.querySelector(`.edit [data-k="${r.field}"]`);
+    if (el) el.value = p;
+    return answer('fix');
+  }
   const act = e.target.closest('.ghead button[data-act]');
   if (act) return answerGroup(act.closest('.group'), act.dataset.act);
   const all = e.target.closest('.ghead .all');
@@ -351,22 +382,36 @@ function render() {
       <div class="box edit"><h3>Fix: change what is wrong, then Enter</h3>${editor(r)}<div class="err" id="err"></div></div>
       ${twin}${others}
     </div>`;
-  main.querySelectorAll('.edit input, .edit textarea').forEach(el => el.addEventListener('input', () =>
-    el.classList.toggle('changed', el.value !== el.dataset.v)));
+  main.querySelectorAll('.edit input, .edit textarea').forEach(el => el.addEventListener('input', () => {
+    el.classList.toggle('changed', el.value !== el.dataset.v);
+    enterWill(r);
+  }));
+  enterWill(r);
   document.getElementById('note').value = '';
+}
+
+// what Enter does with the fields as they stand: save the values changed, or, with nothing changed, keep the record as
+// it is (before 2026-11-08 it said "Change a field first", and a name typed back as printed couldn't be kept by Enter)
+function changedFields() {
+  const fields = {};
+  document.querySelectorAll('.edit [data-k]').forEach(el => { if (el.value.trim() !== el.dataset.v) fields[el.dataset.k] = el.value.trim(); });
+  return fields;
+}
+function enterWill(r) {
+  const el = document.getElementById('enterWill');
+  if (!el) return;
+  const ch = changedFields(), keys = Object.keys(ch);
+  el.innerHTML = !keys.length ? `Enter: <b>right as it is</b> (keep ${esc(r.field === 'record' ? 'the record' : r.value || 'the field')})`
+    : `Enter: <b>save</b> ${keys.map(k => `${esc(FIELD_LABELS[k] || k)} = ${esc(ch[k]) || '(empty)'}`).join(', ')}`;
 }
 
 async function answer(kind) {
   // taking back is for the last answer given, which has left the open list
   const r = kind === 'clear' && last ? last : list[i];
   if (!r) return;
+  if (kind === 'fix' && !Object.keys(changedFields()).length) kind = 'keep';   // nothing changed: right as it is
   const body = { key: r.key, answer: kind, by, note: document.getElementById('note').value };
-  if (kind === 'fix') {
-    const fields = {};
-    document.querySelectorAll('.edit [data-k]').forEach(el => { if (el.value !== el.dataset.v) fields[el.dataset.k] = el.value.trim(); });
-    if (!Object.keys(fields).length) { document.getElementById('err').textContent = 'Change a field first.'; return; }
-    body.fields = fields;
-  }
+  if (kind === 'fix') body.fields = changedFields();
   const res = await fetch('/api/answer', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).then(x => x.json());
   if (res.error) { document.getElementById('err').textContent = res.error; return; }
   if (kind === 'clear') {
