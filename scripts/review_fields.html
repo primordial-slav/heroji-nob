@@ -48,6 +48,7 @@ mark { background: var(--hit); color: inherit; border-radius: 2px; }
 .answered.delete { color: var(--red); } .answered.unsure { color: var(--amber); }
 .bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--panel); border-top: 1px solid var(--line);
        padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; }
+.bar[hidden] { display: none; }
 .bar button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; color: #fff; }
 .bar .fix { background: var(--blue); } .bar .keep { background: var(--green); } .bar .delete { background: var(--red); }
 .bar .merge { background: #6b4fa0; } .bar .unsure { background: var(--amber); } .bar .nav { background: var(--chip); color: var(--ink); font-weight: 500; }
@@ -56,12 +57,38 @@ kbd { font: 12px ui-monospace, monospace; background: rgba(255,255,255,.22); bor
 .empty { text-align: center; color: var(--muted); padding: 60px 0; }
 .err { color: var(--red); font-weight: 600; }
 @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } .edit label { grid-template-columns: 95px 1fr; } }
+/* the name slips by change: a group of cases with one answer for the ticked ones */
+.view { display: none; gap: 0; }
+.view.on { display: inline-flex; }
+.view button { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 3px 9px; cursor: pointer; }
+.view button:first-child { border-radius: 6px 0 0 6px; } .view button:last-child { border-radius: 0 6px 6px 0; border-left: 0; }
+.view button.on { background: var(--blue); color: #fff; border-color: var(--blue); }
+.group { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; margin-bottom: 14px; }
+.ghead { position: sticky; top: 52px; z-index: 1; background: var(--panel); border-bottom: 1px solid var(--line); border-radius: 8px 8px 0 0;
+         display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 8px 12px; }
+.ghead h2 { font-size: 16px; margin: 0 8px 0 0; } .ghead h2 .n { color: var(--muted); font-weight: 500; margin-left: 6px; }
+.ghead button { font: inherit; font-size: 13px; font-weight: 600; border: 0; border-radius: 6px; padding: 5px 10px; cursor: pointer; color: #fff; }
+.ghead .fix { background: var(--blue); } .ghead .keep { background: var(--green); } .ghead .unsure { background: var(--amber); }
+.ghead label { font-size: 13px; color: var(--muted); display: inline-flex; gap: 4px; align-items: center; }
+.case { display: grid; grid-template-columns: 22px minmax(170px, 1.1fr) minmax(150px, 1.4fr) minmax(120px, 1fr) auto; gap: 4px 10px;
+        align-items: baseline; padding: 5px 12px; border-top: 1px solid var(--line); font-size: 14px; }
+.case:first-of-type { border-top: 0; }
+.case.off { opacity: .55; }
+.case .nm { font-weight: 600; } .case .who, .case .why { color: var(--muted); font-size: 13px; }
+.case .tools { display: flex; gap: 6px; }
+.case .tools button { font: inherit; font-size: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 5px; padding: 1px 7px; cursor: pointer; }
+.case .detail { grid-column: 2 / -1; }
+.case .snip { grid-column: 2 / -1; color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip.woman { background: var(--amber); color: #fff; font-size: 11px; font-weight: 600; padding: 0 7px; }
+.case .detail .text { font-size: 13px; }
+@media (max-width: 800px) { .case { grid-template-columns: 22px 1fr; } .case .who, .case .why, .case .tools { grid-column: 2; } }
 </style>
 </head>
 <body>
 <header>
   <h1>Entry checks</h1>
   <div class="tabs" id="tabs"></div>
+  <div class="view" id="view"><button data-v="one">One by one</button><button data-v="list">By change</button></div>
   <select id="show"><option value="open">Open</option><option value="unsure">Not sure</option><option value="done">Answered</option><option value="all">All</option></select>
   <span class="count" id="count"></span>
 </header>
@@ -159,14 +186,153 @@ function editor(r) {
   }).join('') + (r.check === 'glued' ? '<div class="src">To split, cut the text here and say who the glued man is in the note; it is done by hand.</div>' : '');
 }
 
+// ---- the name slips by change: the cases grouped by what the proposed spelling changes, one answer for the ticked ----
+let view = 'one', lastBatch = null;
+try { view = localStorage.getItem('reviewView') || 'one'; } catch (e) {}
+const slipTab = () => tab.startsWith('name_slips/');
+const listMode = () => view === 'list' && slipTab();
+const proposedOf = r => (/→ (.+?) \(/.exec(r.note) || [])[1] || '';
+
+function diffParts(a, b) {
+  const x = a.toLowerCase(), y = b.toLowerCase();
+  let pre = 0; while (pre < x.length && pre < y.length && x[pre] === y[pre]) pre++;
+  let suf = 0; while (suf < x.length - pre && suf < y.length - pre && x[x.length - 1 - suf] === y[y.length - 1 - suf]) suf++;
+  return { pre, suf, from: a.slice(pre, a.length - suf), to: b.slice(pre, b.length - suf) };
+}
+function changeOf(a, b) {
+  const d = diffParts(a, b);
+  const at = d.pre === 0 ? ' at the start' : d.suf === 0 ? ' at the end' : '';
+  if (!d.from) return `“${d.to}” added${at}`;
+  if (!d.to) return `“${d.from}” dropped${at}`;
+  return `${d.from} → ${d.to}${at}`;
+}
+function marked(s, d, part) {
+  const mid = part === 'from' ? d.from : d.to;
+  return esc(s.slice(0, d.pre)) + (mid ? `<mark>${esc(mid)}</mark>` : '<mark>&nbsp;</mark>') + esc(s.slice(d.pre + mid.length));
+}
+
+function groupsOf(cases) {
+  const by = new Map();
+  for (const r of cases) {
+    const k = changeOf(r.value, proposedOf(r));
+    if (!by.has(k)) by.set(k, []);
+    by.get(k).push(r);
+  }
+  const big = [], other = [];
+  for (const [k, rs] of by) (rs.length >= 3 ? big.push([k, rs]) : other.push(...rs));
+  big.sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  if (other.length) big.push(['Other changes (fewer than three cases each)', other]);
+  for (const [, rs] of big) rs.sort((a, b) => a.file.localeCompare(b.file) || a.value.localeCompare(b.value));
+  return big;
+}
+
+// an entry that reads as a woman's: the proposed spelling of a given name may be a man's ("Tahira" → Tahir), so such a
+// case starts unticked
+const WOMAN = /\b(rođena|rodjena|roćena|poginula|umrla|nestala|streljana|strijeljana|ubijena|domaćica|bolničarka|udata|udova|kći|Srpkinja|Hrvatica|Muslimanka|Slovenka|Crnogorka|Makedonka|Jevrejka|rojena|padla|umrla)\b/i;
+const womanCase = r => r.field === 'first_name' && WOMAN.test(r.text || '');
+
+function caseLine(r) {
+  const p = proposedOf(r), d = diffParts(r.value, p), a = answers[r.key], w = womanCase(r);
+  const why = r.note.replace(/^.*?\(/, '').replace(/\)$/, '');
+  return `<div class="case${w ? ' off' : ''}" data-key="${esc(r.key)}">
+    <input type="checkbox" class="tick"${w ? '' : ' checked'}>
+    <span class="nm">${marked(r.value, d, 'from')} → ${marked(p, d, 'to')}${w ? ' <span class="chip woman" title="The entry reads as a woman\'s: the proposed spelling may be a man\'s name">woman</span>' : ''}</span>
+    <span class="who">${esc(r.name)} · ${esc(r.file.replace(/-soldiers\.json$|\.json$/, ''))}</span>
+    <span class="why">${esc(why)}</span>
+    <span class="tools">${a ? `<span class="answered ${a}">${a}</span>` : ''}<button data-do="page">page</button><button data-do="one">open</button></span>
+    <span class="snip">${esc((r.text || '').slice(0, 220))}</span>
+    <div class="detail" hidden></div></div>`;
+}
+
+function renderList() {
+  const main = document.getElementById('main');
+  document.getElementById('bar').hidden = true;
+  const groups = groupsOf(list);
+  main.innerHTML = `<p class="src">${list.length} cases in ${groups.length} groups, the commonest change first. Untick the ones the answer is not for, then answer the group: each case ticked is kept as its own answer. Z takes the last group answer back.</p>`
+    + groups.map(([k, rs], g) => `<section class="group" data-g="${g}">
+      <div class="ghead"><h2>${esc(k)}<span class="n">${rs.length}</span></h2>
+        <label><input type="checkbox" class="all" checked> all</label>
+        <button class="fix" data-act="fix">Take the proposed spelling</button>
+        <button class="keep" data-act="keep">Keep as printed</button>
+        <button class="unsure" data-act="unsure">Not sure</button>
+        <span class="err"></span></div>
+      ${rs.map(caseLine).join('')}</section>`).join('');
+  main._groups = groups;
+}
+
+async function answerGroup(section, act) {
+  const [, rs] = document.getElementById('main')._groups[+section.dataset.g];
+  const ticked = new Set([...section.querySelectorAll('.case')].filter(c => c.querySelector('.tick').checked).map(c => c.dataset.key));
+  const items = rs.filter(r => ticked.has(r.key)).map(r => ({ key: r.key, answer: act,
+    ...(act === 'fix' ? { fields: { [r.field]: proposedOf(r) } } : {}) }));
+  if (!items.length) { section.querySelector('.err').textContent = 'Nothing ticked.'; return; }
+  const res = await fetch('/api/answers', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items, by }) }).then(x => x.json());
+  if (res.error) { section.querySelector('.err').textContent = res.error; return; }
+  for (const it of items) answers[it.key] = act;
+  lastBatch = items.map(it => it.key);
+  render();
+}
+
+async function undoBatch() {
+  if (!lastBatch) return;
+  const res = await fetch('/api/answers', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items: lastBatch.map(key => ({ key, answer: 'clear' })), by }) }).then(x => x.json());
+  if (res.error) return;
+  for (const k of lastBatch) delete answers[k];
+  lastBatch = null;
+  render();
+}
+
+document.getElementById('view').addEventListener('click', e => {
+  const b = e.target.closest('button[data-v]');
+  if (!b) return;
+  view = b.dataset.v;
+  try { localStorage.setItem('reviewView', view); } catch (err) {}
+  render();
+});
+document.getElementById('main').addEventListener('click', e => {
+  const act = e.target.closest('.ghead button[data-act]');
+  if (act) return answerGroup(act.closest('.group'), act.dataset.act);
+  const all = e.target.closest('.ghead .all');
+  if (all) {
+    // "all" ticks every case but the ones that read as a woman's, which are ticked one by one
+    all.closest('.group').querySelectorAll('.case').forEach(c => {
+      const on = all.checked && !c.querySelector('.woman');
+      c.querySelector('.tick').checked = on;
+      c.classList.toggle('off', !on);
+    });
+    return;
+  }
+  const tick = e.target.closest('.case .tick');
+  if (tick) { tick.closest('.case').classList.toggle('off', !tick.checked); return; }
+  const tool = e.target.closest('.case button[data-do]');
+  if (!tool) return;
+  const c = tool.closest('.case'), r = rows.find(x => x.key === c.dataset.key);
+  if (tool.dataset.do === 'one') {
+    view = 'one';
+    try { localStorage.setItem('reviewView', view); } catch (err) {}
+    list = filtered();
+    i = Math.max(0, list.findIndex(x => x.key === r.key));
+    return render();
+  }
+  const det = c.querySelector('.detail');
+  if (det.hidden) det.innerHTML = `<div class="text">${highlight(r.text, r)}</div>${crop(r)}`;
+  det.hidden = !det.hidden;
+});
+
 function render() {
   tabs();
   list = filtered();
   if (i >= list.length) i = Math.max(0, list.length - 1);
   const open = rows.filter(r => !answers[r.key]).length;
   document.getElementById('count').textContent = `${open} open of ${rows.length}`;
+  const viewEl = document.getElementById('view');
+  viewEl.classList.toggle('on', slipTab());
+  viewEl.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.v === (listMode() ? 'list' : 'one')));
   const main = document.getElementById('main'), bar = document.getElementById('bar');
   if (!list.length) { main.innerHTML = '<div class="empty">Nothing here.</div>'; bar.hidden = true; return; }
+  if (listMode()) return renderList();
   bar.hidden = false;
   const r = list[i];
   document.getElementById('mergeBtn').style.display = r.twin ? '' : 'none';
@@ -223,6 +389,10 @@ document.getElementById('prev').onclick = () => { i = Math.max(0, i - 1); render
 document.getElementById('next').onclick = () => { i = Math.min(list.length - 1, i + 1); render(); };
 document.getElementById('undo').onclick = () => answer('clear');
 document.addEventListener('keydown', e => {
+  if (listMode()) {
+    if (!e.target.matches('input[type=text], textarea') && e.key.toLowerCase() === 'z') undoBatch();
+    return;
+  }
   const typing = e.target.matches('input, textarea');
   if (e.key === 'Enter' && !e.shiftKey && (!typing || e.target.closest('.edit'))) { e.preventDefault(); return answer('fix'); }
   if (typing) return;

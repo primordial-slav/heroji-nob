@@ -827,6 +827,18 @@ def main():
     except Exception as e:                                               # noqa: BLE001
         print(f"\n  WARNING: field checks not run ({e.__class__.__name__}: {e})")
 
+    # The answers given on the review pages, checked against the data as it now stands (scripts/check_answers.py): a
+    # reader, rule or matcher that undoes one is listed here; nothing is changed
+    try:
+        import check_answers
+        found = check_answers.run(units, load_corrections(corrections_path))
+        if args.apply:
+            check_answers.write_report(found)
+        print(f"\n  Your answers: {check_answers.describe(found)}")
+        check_answers.show([f for f in found if f['status'] == check_answers.BROKEN], 10)
+    except Exception as e:                                               # noqa: BLE001
+        print(f"\n  WARNING: answers not checked ({e.__class__.__name__}: {e})")
+
     # The site tells women from men by the same names (website/app/data/name-genders.json)
     if args.apply and feminine_alias.write_site(names, project_root):
         print(f"\n  Written: {feminine_alias.SITE_FILE}")

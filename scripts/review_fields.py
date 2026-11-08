@@ -12,6 +12,9 @@ Usage:
     python scripts/review_fields.py --answer KEY fix --fields '{"first_name": "Dragutin"}' --by claude
     python scripts/review_fields.py --write [--start 290061]   # then apply_corrections.py --apply
 Keys on the page: Enter fix, K keep, X delete, M merge, U not sure, Z take back, arrows to move.
+The name slips can also be seen "by change" (2026-11-08): the cases grouped by the letters the proposed spelling changes
+("c → č", "a dropped at the end"), largest group first, each case a line with a box to tick; one answer takes the
+proposed spelling, keeps the names as printed or says not sure for every case ticked, each kept as its own answer.
 """
 from __future__ import annotations
 
@@ -46,10 +49,26 @@ def report_rows() -> list[dict]:
 def save_answer(key: str, answer: str, by: str, note: str = '', fields: dict | None = None) -> dict:
     """Keep one answer (the last given for a case wins), with what the case answered (the field's value or the note)
     so it holds only while that is unchanged. The file is re-read right before writing."""
+    return save_answers([{'key': key, 'answer': answer, 'note': note, 'fields': fields}], by)[0]
+
+
+def save_answers(items: list[dict], by: str) -> list[dict]:
+    """several answers at once (the page's groups: one answer for the cases ticked), written in one go; every item is
+    checked before anything is written"""
+    rows = {r.get('key'): r for r in report_rows()}
+    decisions = CF.load_decisions()
+    out = [_answer(decisions, rows.get(i['key']), i['key'], i['answer'], i.get('by') or by, i.get('note') or '',
+                   i.get('fields')) for i in items]
+    tmp = CF.DECISIONS.with_suffix('.json.tmp')
+    tmp.write_text(json.dumps(sorted(decisions.values(), key=lambda x: x['key']), ensure_ascii=False, indent=1) + '\n',
+                   encoding='utf-8')
+    os.replace(tmp, CF.DECISIONS)
+    return out
+
+
+def _answer(decisions: dict, row: dict | None, key: str, answer: str, by: str, note: str, fields: dict | None) -> dict:
     if answer not in ANSWERS and answer != 'clear':
         raise ValueError(answer)
-    row = next((r for r in report_rows() if r.get('key') == key), None)
-    decisions = CF.load_decisions()
     if answer == 'clear':
         decisions.pop(key, None)
         d = {'key': key, 'answer': None}
@@ -70,10 +89,6 @@ def save_answer(key: str, answer: str, by: str, note: str = '', fields: dict | N
              **({'twin_id': (base.get('twin') or {}).get('soldier_id') or old.get('twin_id')} if answer == 'merge' else {}),
              'by': by, 'date': datetime.date.today().isoformat(), **({'note': note} if note else {})}
         decisions[key] = d
-    tmp = CF.DECISIONS.with_suffix('.json.tmp')
-    tmp.write_text(json.dumps(sorted(decisions.values(), key=lambda x: x['key']), ensure_ascii=False, indent=1) + '\n',
-                   encoding='utf-8')
-    os.replace(tmp, CF.DECISIONS)
     return d
 
 
@@ -159,11 +174,14 @@ class Handler(BaseHTTPRequestHandler):
         self.send(b'not found', 'text/plain', 404)
 
     def do_POST(self):
-        if self.path != '/api/answer':
+        if self.path not in ('/api/answer', '/api/answers'):
             return self.send(b'not found', 'text/plain', 404)
         body = json.loads(self.rfile.read(int(self.headers['Content-Length'])).decode('utf-8'))
         try:
-            d = save_answer(body['key'], body['answer'], body.get('by') or self.by, body.get('note', ''), body.get('fields'))
+            if self.path == '/api/answers':        # a group's ticked cases, one answer each
+                d = save_answers(body['items'], body.get('by') or self.by)
+            else:
+                d = save_answer(body['key'], body['answer'], body.get('by') or self.by, body.get('note', ''), body.get('fields'))
         except (ValueError, KeyError) as e:
             return self.send(json.dumps({'error': str(e)}).encode('utf-8'), 'application/json', 400)
         self.send(json.dumps(d, ensure_ascii=False).encode('utf-8'), 'application/json; charset=utf-8')
