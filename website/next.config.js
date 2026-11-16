@@ -28,7 +28,8 @@ const nextConfig = {
   // The unit files (public/*.json, data/life-events/) and what scripts/prepare-data.ts writes from them (public/data/,
   // generated/) are read only while the site is built: every page is prerendered, and a record's own address reads its
   // files from the CDN (lib/recordAnswer.ts). Their path is a variable, so
-  // the tracer would otherwise pack all of public/ (the PDFs too) into each server function, past Vercel's 250 MB limit
+  // the tracer would otherwise pack all of public/ (the PDFs too) into each server function, past Vercel's 250 MB limit.
+  // Served, the unit files would hand out every record at once: middleware.ts answers them 404
   outputFileTracingExcludes: {
     '*': ['public/**/*', 'data/life-events/**/*', 'generated/**/*'],
   },
