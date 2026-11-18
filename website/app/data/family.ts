@@ -24,6 +24,24 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-10',
   },
+  {
+    soldierId: '0126000703', // Novaković Vuka Radomir, Čačanski NOP odred
+    text: 'Njegova slika nalazi se u Spomen-muzeju prve partizanske bolnice u rodnom selu u Donjoj Gorevnici kod Čačka. Njegovo ime upisano je na spomen-ploči na Zadružnom domu u Donjoj Gorevnici.',
+    from: 'Filip Adžić, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0136006734', // Todosijević Dragić Jelica (Borci drugih jedinica – Srbija)
+    text: 'Ne znamo gde je sahranjena. Ne znamo za sigurno ni gde je poginula. Neki kažu da su je ubili četnici 1942.',
+    from: 'Jelica Todosijević, bratanica',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0136021032', // Đoković Miodrag Dragan (Borci drugih jedinica – Srbija)
+    text: 'Pre rata radio je kao učitelj (pre toga i izuzetan učenik) u rodnom mestu, nakon čega je dobio nadimak „Uča” (negde napisano i kao „Učo”). Posle rata njegovo ime sve do danas nosi Osnovna škola u Lađevcima kod Kraljeva. Tokom rata bio je borac Kraljevačkog NOP odreda. Ispred škole, od 1976. godine, nalazi se spomen-bista Dragana Đokovića, rad autora Ace Mitrovića. Bistu su podigli braća i majka Dragana Đokovića.',
+    from: 'Filip Adžić',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
