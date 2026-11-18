@@ -26,6 +26,7 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0126000703', // Novaković Vuka Radomir, Čačanski NOP odred
+    photo: '0126000703-1.jpg',
     text: 'Njegova slika nalazi se u Spomen-muzeju prve partizanske bolnice u rodnom selu u Donjoj Gorevnici kod Čačka. Njegovo ime upisano je na spomen-ploči na Zadružnom domu u Donjoj Gorevnici.',
     from: 'F. Adžić, rođak',
     date: '2026-11',
