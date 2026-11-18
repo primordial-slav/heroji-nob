@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Golos_Text, PT_Serif } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import '../globals.css'
 import SiteFrame, { type LanguageProvider } from './SiteFrame'
 import { HTML_LANG, type Lang } from '../i18n/config'
@@ -32,6 +33,11 @@ const themeScript = `
   })();
 `
 
+// Vercel's Web Analytics (the project's Analytics tab: visitors, pages, where they came from), cookieless, its script
+// and its counts on the site's own address (/_vercel/insights/). Only in a build made on Vercel: elsewhere that
+// address doesn't exist, and under next dev the package would load a script from another host, which the CSP refuses
+const ON_VERCEL = process.env.VERCEL === '1'
+
 // The document: fonts, styles and the theme before the first paint. The 404 page (global-not-found.tsx) puts its
 // own frame in it, since it learns its language only in the browser.
 export function SiteDocument({ lang, children }: { lang: Lang; children: ReactNode }) {
@@ -40,7 +46,10 @@ export function SiteDocument({ lang, children }: { lang: Lang; children: ReactNo
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {ON_VERCEL && <Analytics />}
+      </body>
     </html>
   )
 }
