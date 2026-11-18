@@ -38,7 +38,7 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0136021032', // Đoković Miodrag Dragan (Borci drugih jedinica – Srbija)
-    text: 'Pre rata radio je kao učitelj (pre toga i izuzetan učenik) u rodnom mestu, nakon čega je dobio nadimak „Uča” (negde napisano i kao „Učo”). Posle rata njegovo ime sve do danas nosi Osnovna škola u Lađevcima kod Kraljeva. Tokom rata bio je borac Kraljevačkog NOP odreda. Ispred škole, od 1976. godine, nalazi se spomen-bista Dragana Đokovića, rad autora Ace Mitrovića. Bistu su podigli braća i majka Dragana Đokovića.',
+    text: 'Pre rata, radio je kao učitelj (pre toga i izuzetan učenik) u rodnom mestu nakon čega je dobio nadimak „Uča” (negde napisano i kao „Učo”). Posle rata, njegovo ime sve do danas nosi Osnovna škola u Lađevcima kod Kraljeva. Tokom rata, bio je borac Kraljevačkog NOP odreda. Ispred škole, od 1976. godine nalazi se spomen-bista Dragana Đokovića, rad autora Ace Mitrovića. Bistu su podigli braća i majka Dragana Đokovića.',
     from: 'F. Adžić',
     date: '2026-11',
   },
