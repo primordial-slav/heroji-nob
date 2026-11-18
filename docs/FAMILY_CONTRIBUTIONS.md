@@ -23,7 +23,7 @@ Only publish when the sender ticked **Dozvola za objavu: Da**. Corrections to th
      photo: '0002000003-1.jpg',            // optional
      photoCaption: 'Petar 1946. u Bogatiću', // optional, the sender's words
      text: 'Posle rata se vratio u Belotić…', // optional, as sent; fix only spelling
-     from: 'Ana Petrović, unuka',          // name and relation, as the sender gave them
+     from: 'A. Petrović, unuka',            // initial, surname and relation (the user's rule of 2026-11-19: never the full name)
      date: '2026-10',                      // month it was sent
    },
    ```
