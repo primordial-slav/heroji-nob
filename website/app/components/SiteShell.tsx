@@ -34,7 +34,7 @@ const themeScript = `
 `
 
 // Vercel's Web Analytics (the project's Analytics tab: visitors, pages, where they came from), cookieless, its script
-// and its counts on the site's own address (/_vercel/insights/). Only in a build made on Vercel: elsewhere that
+// and its counts on the site's own address (a path Vercel gives the project). Only in a build made on Vercel: elsewhere that
 // address doesn't exist, and under next dev the package would load a script from another host, which the CSP refuses
 const ON_VERCEL = process.env.VERCEL === '1'
 
