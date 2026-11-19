@@ -119,9 +119,10 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122959607', // Krnić Ive Blaž of Konjevrate (Šibenik), survived; the photo shows epaulettes, so it stays an album piece, not a portrait
+    soldierId: '0122959607', // Krnić Ive Blaž of Konjevrate (Šibenik), survived; his photo in uniform is his portrait (the user's choice, 2026-11-19)
+    photo: '9990000003-1.jpg',
+    photoCaption: 'U uniformi',
     text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika.',
-    pieces: [{ kind: 'photo', file: '9990000003-1.jpg', caption: 'U uniformi' }],
     from: 'D. Krnić, unuk',
     date: '2026-11',
   },
