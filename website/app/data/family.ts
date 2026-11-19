@@ -18,6 +18,7 @@ export interface FamilyContribution {
   pieces?: FamilyPiece[] // more photos and documents from the same sender
   from: string          // credit line, e.g. 'Ana Petrović, unuka'
   date: string          // when it was sent, 'YYYY-MM'
+  origin?: 'facebook'   // not from the family but from a public Facebook page: the heading says so, `from` names the page
 }
 
 export const familyContributions: FamilyContribution[] = [
@@ -80,7 +81,9 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0036100540', // Karamatić Joze Ivo "Čović" of Plina Istočna (Ploče), 1. dalmatinska; the user sent the photos
     photo: '0036100540-1.jpg', // a boy in a partisan cap with a rifle, cut from a group photo, tinted
     pieces: [{ kind: 'photo', file: '0036100540-2.jpg', caption: 'U kasnijim godinama' }], // in a partisan cap, with his decorations
-    from: 'Facebook stranica „Bitka na Sutjesci”', // the photos' source, as the user gave it
+    // the photos' source, as the user gave it; under the heading "Sa Facebook stranice" (the user, 2026-11-19)
+    from: '„Bitka na Sutjesci”',
+    origin: 'facebook',
     date: '2026-11',
   },
   {

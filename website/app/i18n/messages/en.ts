@@ -325,6 +325,7 @@ export const en: Messages = {
 
   family: {
     title: 'From the family',
+    titleFacebook: 'From a Facebook page',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}` : `${year}`),
     /** A family's photos and documents (components/FamilyStory.tsx) */
     kind: { photo: 'photograph', document: 'document' },

@@ -358,6 +358,8 @@ export const sr = {
 
   family: {
     title: 'Od porodice',
+    /** The heading over photos that came from a public page, not from the family (FamilyContribution.origin) */
+    titleFacebook: 'Sa Facebook stranice',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}.` : `${year}.`),
     /** A family's photos and documents (components/FamilyStory.tsx) */
     kind: { photo: 'fotografija', document: 'dokument' },

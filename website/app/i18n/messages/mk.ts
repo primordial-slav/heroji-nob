@@ -332,6 +332,7 @@ export const mk: Messages = {
 
   family: {
     title: 'Од семејството',
+    titleFacebook: 'Од Facebook страница',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}` : `${year}`),
     /** A family's photos and documents (components/FamilyStory.tsx) */
     kind: { photo: 'фотографија', document: 'документ' },
