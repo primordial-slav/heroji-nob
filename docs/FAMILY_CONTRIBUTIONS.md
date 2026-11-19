@@ -152,22 +152,28 @@ address taken from the mailbox when the button is pressed, never stored). Not bu
 |---|---|---|---|
 | F. Adžić, rođak / F. Adžić | 0126000703 Novaković Vuka Radomir, 0136021032 Đoković Miodrag Dragan | yes | not yet |
 | J. Todosijević, bratanica | 0136006734 Todosijević Dragić Jelica | yes | not yet |
-| nećak | 0122917644 Kovačević Pajov Dušan | yes | not yet |
+| nećak (Kovačević's) | 0122917644 Kovačević Pajov Dušan | yes | not yet |
 | Ispravka po prijavi | 0135000797 Piperov Nikola Vlado | yes | not yet (a correction; tell if the reporter left an email) |
-| B. Batalo, praunuk | 0122907839 Sekulić Mane Miloš | no, until 27653388 is pushed | not yet |
+| B. Batalo, praunuk | 0122907839 Sekulić Mane Miloš, 0060000921 Kosanović Milovana Manojlo | no, until main is pushed (27653388 and after) | not yet |
+| N. Kaišarević | 0122957805 Kupres Marka Miloš | no, until main is pushed (96c7a991) | not yet |
+| nećak (the Eftimovskis') | 0122959606 Eftimovski Gjore, 0135001012 Eftimovski Božo Kiro | no, until main is pushed (1f06a244, 96c7a991) | not yet |
 
 Mile Bakić's and Todor Bajić's pieces are from the family archive itself: nobody to tell.
 
 ### Ready to send (made 2026-11-19, the user sends them later)
 
-Each link opens the note in Serbo-Croatian as a new message in the contact account; the address comes from the
-submission in the contact inbox. If its "Jezik" row says another language, make that version from the table above.
+Each link opens the note as a new message in the contact account, in Serbo-Croatian unless it says otherwise; the
+address comes from the submission. If its "Jezik" row says another language, make that version from the table above.
 
 - [F. Adžić: Novaković Vuka Radomir, Đoković Miodrag Dragan](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Novakovi%C4%87%20Vuka%20Radomir%2C%20%C4%90okovi%C4%87%20Miodrag%20Dragan&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisima%3A%0ANovakovi%C4%87%20Vuka%20Radomir%3A%20https%3A//heroji-nob.vercel.app/borac/0126000703%0A%C4%90okovi%C4%87%20Miodrag%20Dragan%3A%20https%3A//heroji-nob.vercel.app/borac/0136021032%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
 - [J. Todosijević: Todosijević Dragić Jelica](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0136006734%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
 - [nećak: Kovačević Pajov Dušan](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Kova%C4%8Devi%C4%87%20Pajov%20Du%C5%A1an&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Kova%C4%8Devi%C4%87%20Pajov%20Du%C5%A1an%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0122917644%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
 - [Ispravka po prijavi: Piperov Nikola Vlado](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Piperov%20Nikola%20Vlado&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Piperov%20Nikola%20Vlado%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0135000797%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca) (only if the reporter left an email)
-- [B. Batalo: Sekulić Mane Miloš](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Sekuli%C4%87%20Mane%20Milo%C5%A1&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Sekuli%C4%87%20Mane%20Milo%C5%A1%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0122907839%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca): **only after 27653388 is pushed and his record shows the story**
+Only after main is pushed and each record shows the story on the live site:
+
+- [B. Batalo: Sekulić Mane Miloš, Kosanović Milovana Manojlo](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Sekuli%C4%87%20Mane%20Milo%C5%A1%2C%20Kosanovi%C4%87%20Milovana%20Manojlo&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisima%3A%0ASekuli%C4%87%20Mane%20Milo%C5%A1%3A%20https%3A//heroji-nob.vercel.app/borac/0122907839%0AKosanovi%C4%87%20Milovana%20Manojlo%3A%20https%3A//heroji-nob.vercel.app/borac/0060000921%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
+- [N. Kaišarević: Kupres Marka Miloš](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Kupres%20Marka%20Milo%C5%A1&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Kupres%20Marka%20Milo%C5%A1%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0122957805%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
+- [The Eftimovskis' nephew: Eftimovski Gjore, Eftimovski Božo Kiro, in Macedonian](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D0%BE%D1%80%D1%86%D0%B8%D1%82%D0%B5%3A%20Eftimovski%20Gjore%2C%20Eftimovski%20Bo%C5%BEo%20Kiro&body=%D0%94%D0%BE%D0%B1%D0%B0%D1%80%20%D0%B4%D0%B5%D0%BD%2C%0A%0A%D0%BE%D0%BD%D0%B0%20%D1%88%D1%82%D0%BE%20%D0%BD%D0%B8%20%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D0%B5%20%D1%81%D0%B5%D0%B3%D0%B0%20%D0%B5%20%D0%BD%D0%B0%20%D1%81%D0%B0%D1%98%D1%82%D0%BE%D1%82%2C%20%D0%B2%D0%BE%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%D1%82%D0%B5%3A%0AEftimovski%20Gjore%3A%20https%3A//heroji-nob.vercel.app/mk/borac/0122959606%0AEftimovski%20Bo%C5%BEo%20Kiro%3A%20https%3A//heroji-nob.vercel.app/mk/borac/0135001012%0A%0A%D0%92%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%80%D0%B8%D0%BC%D0%B5%20%D1%88%D1%82%D0%BE%20%D0%BD%D0%B8%20%D0%BF%D0%B8%D1%88%D0%B0%D0%B2%D1%82%D0%B5.%0A%0A%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D0%BE%D1%80%D1%86%D0%B8%D1%82%D0%B5) (their story is in Macedonian; check the submission's "Jezik")
 
 When one is sent, mark it in "Told so far" (the month) and take it off this list.
 
