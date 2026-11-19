@@ -268,6 +268,15 @@ export const en: Messages = {
   family: {
     title: 'From the family',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}` : `${year}`),
+    /** A family's photos and documents (components/FamilyStory.tsx) */
+    kind: { photo: 'photograph', document: 'document' },
+    pages: (n: number) => `${n} pages`,
+    page: (page: number, of: number) => `page ${page} of ${of}`,
+    transcript: 'Transcription',
+    previous: 'Previous',
+    next: 'Next',
+    close: 'Close',
+    open: (what: string) => `Open: ${what}`,
   },
 
   kin: {

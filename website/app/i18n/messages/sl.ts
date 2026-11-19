@@ -265,6 +265,15 @@ export const sl: Messages = {
   family: {
     title: 'Iz družine',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}` : `${year}`),
+    /** A family's photos and documents (components/FamilyStory.tsx) */
+    kind: { photo: 'fotografija', document: 'dokument' },
+    pages: (n: number) => `${n} str.`,
+    page: (page: number, of: number) => `stran ${page} od ${of}`,
+    transcript: 'Prepis',
+    previous: 'Prejšnja',
+    next: 'Naslednja',
+    close: 'Zapri',
+    open: (what: string) => `Odpri: ${what}`,
   },
 
   kin: {

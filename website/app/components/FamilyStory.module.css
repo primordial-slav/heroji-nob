@@ -1,0 +1,211 @@
+/* A family's photos and documents (FamilyStory.tsx): the album under the story, and the viewer a piece opens in */
+
+.album {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .album {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.piece {
+  display: grid;
+  gap: 0.125rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.image {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  margin-bottom: var(--space-1);
+  background: var(--surface-sunk);
+  border: 1px solid var(--rule);
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+/* a photo black and white like every portrait on the site; a document keeps its paper */
+.piece[data-kind='photo'] .image img {
+  filter: var(--photo-filter);
+}
+
+/* a document whole, however long: a clipping is wider than the tile */
+.piece[data-kind='document'] .image img {
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.piece:hover .caption {
+  color: var(--red-ink);
+}
+
+.piece:hover .image {
+  border-color: var(--rule-strong);
+}
+
+.pages {
+  position: absolute;
+  right: var(--space-1);
+  bottom: var(--space-1);
+  padding: 2px 7px;
+  font-size: var(--step--1);
+  background: var(--ground);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+
+.caption {
+  font-size: var(--step--1);
+  line-height: 1.4;
+}
+
+.kind {
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+/* The viewer, inside the site's lightbox */
+.viewer {
+  display: grid;
+  gap: var(--space-4);
+  width: min(100%, 64rem);
+  max-height: 100%;
+  overflow-y: auto;
+  cursor: default;
+  color: #f4f1ec;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr) 2.5rem;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.big {
+  display: block;
+  justify-self: center;
+  max-width: 100%;
+  max-height: 72vh;
+  width: auto;
+  height: auto;
+  border: 4px solid #f4f1ec;
+}
+
+.big[data-kind='photo'] {
+  filter: grayscale(1);
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(244, 241, 236, 0.35);
+  border-radius: 2px;
+  background: transparent;
+  color: #f4f1ec;
+  cursor: pointer;
+}
+
+.arrow:hover:not(:disabled) {
+  border-color: #f4f1ec;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.about {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: center;
+  text-align: center;
+  padding-inline: 3.25rem;
+}
+
+.what {
+  font-family: var(--font-name);
+  font-size: var(--step-1);
+}
+
+.meta {
+  font-size: var(--step--1);
+  color: #c9c3ba;
+}
+
+.transcript {
+  max-width: 65ch;
+  padding-top: var(--space-2);
+  border-top: 1px solid rgba(244, 241, 236, 0.2);
+  text-align: left;
+  font-family: var(--font-name);
+  line-height: 1.6;
+}
+
+.label {
+  font-family: var(--font-ui, inherit);
+  font-size: 0.75rem;
+  color: #c9c3ba;
+}
+
+.thumbs {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.thumbs button {
+  width: 2.75rem;
+  aspect-ratio: 3 / 4;
+  padding: 0;
+  border: 1px solid rgba(244, 241, 236, 0.35);
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.thumbs button[aria-current] {
+  outline: 2px solid #f4f1ec;
+  outline-offset: 1px;
+}
+
+.thumbs img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .stage {
+    grid-template-columns: 2.25rem minmax(0, 1fr) 2.25rem;
+    gap: var(--space-2);
+  }
+
+  .about {
+    padding-inline: 0;
+  }
+}

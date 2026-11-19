@@ -5,10 +5,13 @@ import { CloseIcon } from './Icons'
 import { useT } from '@/app/i18n/LangContext'
 
 /** Something opened over the record: focus on its close button, and Escape closes it and only it. Returns that button's ref. */
-export function useLightboxKeys(onClose: () => void) {
+export function useLightboxKeys(onClose: () => void, onArrow?: (dir: -1 | 1) => void) {
   const closeRef = useRef<HTMLButtonElement>(null)
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
+  // the arrows step through what is shown (a family's album) where it has more than one thing
+  const onArrowRef = useRef(onArrow)
+  onArrowRef.current = onArrow
 
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null
@@ -19,6 +22,7 @@ export function useLightboxKeys(onClose: () => void) {
         e.stopPropagation()
         e.preventDefault()
         if (e.key === 'Escape') onCloseRef.current()
+        else onArrowRef.current?.(e.key === 'ArrowLeft' ? -1 : 1)
       }
     }
     window.addEventListener('keydown', onKey, true)

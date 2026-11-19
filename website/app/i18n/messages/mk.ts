@@ -275,6 +275,15 @@ export const mk: Messages = {
   family: {
     title: 'Од семејството',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}` : `${year}`),
+    /** A family's photos and documents (components/FamilyStory.tsx) */
+    kind: { photo: 'фотографија', document: 'документ' },
+    pages: (n: number) => `${n} стр.`,
+    page: (page: number, of: number) => `страна ${page} од ${of}`,
+    transcript: 'Препис',
+    previous: 'Претходна',
+    next: 'Следна',
+    close: 'Затвори',
+    open: (what: string) => `Отвори: ${what}`,
   },
 
   kin: {
