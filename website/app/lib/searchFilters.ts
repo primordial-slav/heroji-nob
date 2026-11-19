@@ -4,7 +4,7 @@ import type { Soldier } from './types'
 
 // Narrowing a search down to one soldier among many with the same name: birth year, a place in the entry,
 // the unit and how he died. The search and its filters live in the page address, so a search can be sent
-// as a link: ?q=Petrović&mesto=Gračac&godina=1920&raspon=2&bezgodine=1&jedinica=prva-licka-brigada&sudbina=poginuli&cele=1
+// as a link: ?q=Petrović&mesto=Gračac&godina=1920&raspon=2&bezgodine=0&jedinica=prva-licka-brigada&sudbina=poginuli&cele=1
 
 export type Fate = 'poginuli' | 'umrli' | 'nestali'
 
@@ -13,8 +13,10 @@ export interface SearchFilters {
   year: string
   /** How many years either side of `year` still count */
   range: number
-  /** With a year set, also keep those whose entries print no birth year (a visitor's wish, 2026-11-19: many entries
-   * give none, and a year alone hid them) */
+  /** With a year set, also keep those whose entries print no birth year, after those born in it (a visitor's wish,
+   * 2026-11-19: many entries give none, and a year alone hid them). On unless asked otherwise (the user: it "should be
+   * automatically selected", as genealogy sites keep a record without the year and rank it lower); the address says
+   * only the strict choice, bezgodine=0 */
   withoutYear: boolean
   /** A village or town anywhere in the entry */
   place: string
@@ -25,7 +27,7 @@ export interface SearchFilters {
   wholeWords: boolean
 }
 
-export const NO_FILTERS: SearchFilters = { year: '', range: 0, withoutYear: false, place: '', unit: '', fate: '', wholeWords: false }
+export const NO_FILTERS: SearchFilters = { year: '', range: 0, withoutYear: true, place: '', unit: '', fate: '', wholeWords: false }
 
 export const RANGES = [0, 2, 5]
 
@@ -102,7 +104,7 @@ export function readSearch(params: URLSearchParams): { query: string; filters: S
     filters: {
       year: params.get(PARAM.year) ?? '',
       range: RANGES.includes(range) ? range : 0,
-      withoutYear: params.get(PARAM.withoutYear) === '1',
+      withoutYear: params.get(PARAM.withoutYear) !== '0',
       place: params.get(PARAM.place) ?? '',
       unit: units.some((u) => u.id === params.get(PARAM.unit)) ? params.get(PARAM.unit)! : '',
       fate: FATES.some((f) => f.value === fate) ? (fate as Fate) : '',
@@ -119,7 +121,7 @@ export function writeSearch(url: URL, query: string, filters: SearchFilters, wit
     [PARAM.place, filters.place.trim()],
     [PARAM.year, year !== null ? String(year) : ''],
     [PARAM.range, year !== null && filters.range ? String(filters.range) : ''],
-    [PARAM.withoutYear, year !== null && filters.withoutYear ? '1' : ''],
+    [PARAM.withoutYear, year !== null && !filters.withoutYear ? '0' : ''],
     [PARAM.unit, withUnit ? filters.unit : ''],
     [PARAM.fate, filters.fate],
     [PARAM.wholeWords, filters.wholeWords ? '1' : ''],
