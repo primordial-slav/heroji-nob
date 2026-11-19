@@ -29,7 +29,7 @@ export const sr = {
     records: 'Grešku u zapisu ili nešto što znate o borcu možete poslati i iz samog zapisa.',
     /** "Ako borca nema na sajtu, pošaljite nam šta znate o njemu.": the link opens the form on the home page */
     missingAsk: 'Ako borca nema na sajtu,',
-    missingLink: 'pošaljite nam šta znate o njemu',
+    missingLink: 'pošaljite nam šta znate o njemu ili njoj',
   },
   notFound: {
     title: 'Ova strana ne postoji',
@@ -314,13 +314,13 @@ export const sr = {
 
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
-    prompt: 'Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu.',
+    prompt: 'Borca nema u knjigama na sajtu? Pošaljite nam šta znate o njemu ili njoj.',
     /** Under the home search field, after the count: "508.897 imena · Nema vašeg borca? Pošaljite nam šta znate o njemu" */
     ask: 'Nema vašeg borca?',
-    askLink: 'Pošaljite nam šta znate o njemu',
+    askLink: 'Pošaljite nam šta znate o njemu ili njoj',
     open: 'Pošaljite podatke o borcu',
     title: 'Borac kojeg nema na sajtu',
-    intro: 'Napišite šta znate i dodajte fotografije njega i njegovih dokumenata. Ništa se ne objavljuje samo od sebe: borca dodajemo ručno, kad proverimo šta ste poslali.',
+    intro: 'Napišite šta znate i dodajte fotografije i dokumente. Ništa se ne objavljuje samo od sebe: borca dodajemo ručno, kad proverimo šta ste poslali.',
     soldier: 'Ime i prezime borca',
     father: 'Ime oca',
     born: 'Godina rođenja',
@@ -329,11 +329,11 @@ export const sr = {
     unit: 'Jedinica',
     unitHint: 'brigada, odred ili bataljon, ako znate',
     fate: 'Sudbina',
-    fates: { unknown: 'Ne znam', fell: 'Poginuo', died: 'Umro u ratu', missing: 'Nestao', survived: 'Preživeo rat' },
-    story: 'Šta znate o njemu',
-    storyHint: 'Šta porodica pamti: gde je i s kim ratovao, gde je poginuo ili šta je bilo posle rata.',
+    fates: { unknown: 'Ne znam', fell: 'Poginuo ili poginula', died: 'Umro ili umrla u ratu', missing: 'Nestao ili nestala', survived: 'Preživeo ili preživela rat' },
+    story: 'Šta znate o njemu ili njoj',
+    storyHint: 'Šta porodica pamti: jedinica i saborci, mesto pogibije ili život posle rata.',
     files: 'Fotografije i dokumenti',
-    filesHint: (n: number) => `Fotografije borca i njegovih dokumenata (vojna knjižica, rešenja, pisma), slikane telefonom ili skenirane. Do ${n} fajlova.`,
+    filesHint: (n: number) => `Fotografije i dokumenti (vojna knjižica, rešenja, pisma), slikani telefonom ili skenirani. Do ${n} fajlova.`,
     chooseFiles: 'Izaberite fajlove',
     addMore: 'Dodajte još',
     remove: 'Ukloni',
@@ -341,7 +341,7 @@ export const sr = {
     tooMany: (n: number) => `Najviše ${n} fajlova.`,
     tooLarge: (name: string) => `${name} je prevelik. Pošaljite manji (do 9 MB).`,
     name: 'Vaše ime i prezime',
-    relation: 'Ko ste vi njemu?',
+    relation: 'U kakvom ste srodstvu?',
     relationHint: 'npr. unuka, sin, rođak',
     email: 'Email',
     optional: '(nije obavezno)',

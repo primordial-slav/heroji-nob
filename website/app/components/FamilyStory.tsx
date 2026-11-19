@@ -34,8 +34,10 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
     ...(item.photo ? [{ kind: 'photo' as const, file: item.photo, caption: item.photoCaption, all: [item.photo], from: item.from, date: item.date }] : []),
     ...(item.pieces ?? []).map((p) => ({ ...p, all: [p.file, ...(p.pages ?? [])], from: item.from, date: item.date })),
   ])
-  const album = pieces.length > 1
   const portrait = items.find((item) => item.photo)
+  // an album when there is more than the portrait: two pieces or more, or a single piece that isn't the portrait (Krnić
+  // Blaž's photo in a postwar uniform, kept out of the portrait, had shown nowhere)
+  const album = pieces.length > 1 || (pieces.length === 1 && !portrait)
   // Without an album, as before: a story, and a photo that is not the portrait beside its story
   const shown = items
     .map((item) => (album || item === portrait ? { ...item, photo: undefined } : item))
