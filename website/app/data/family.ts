@@ -77,6 +77,13 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0036100540', // Karamatić Joze Ivo "Čović" of Plina Istočna (Ploče), 1. dalmatinska; the user sent the photos
+    photo: '0036100540-1.jpg', // a boy in a partisan cap with a rifle, cut from a group photo, tinted
+    pieces: [{ kind: 'photo', file: '0036100540-2.jpg', caption: 'U kasnijim godinama' }], // in a partisan cap, with his decorations
+    from: 'Facebook stranica „Bitka na Sutjesci”', // the photos' source, as the user gave it
+    date: '2026-11',
+  },
+  {
     soldierId: '0135000797', // Piperov Nikola Vlado (Borci drugih jedinica – Makedonija)
     text: 'Ispravka godine rođenja: na njegovoj spomen-bisti u selu Stojakovo uklesana je 1919. Popis iz 1964. navodi 1920.',
     from: 'Ispravka po prijavi',
