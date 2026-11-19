@@ -51,6 +51,7 @@ from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # 
 from extract_structured_fields import NAME_LISTS, fix_place  # noqa: E402
 from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES, clean_name_field, to_title_case  # noqa: E402
 import convert_fathers_genitive as fathers_genitive  # noqa: E402
+from safe_write import write_text  # noqa: E402  (E: can refuse a write for a moment, OSError 22: it stopped a rebuild 2026-11-19)
 
 FATHER_WORD = re.compile(r'^[A-ZČĆŽŠĐ][a-zčćžšđ]+$')
 
@@ -235,6 +236,10 @@ TWO_MEN = [
     ('9085000107', '9001000745', 'Nikolić Živojin-Žoja of Stubline (Obrenovac), killed at Han Pijesak in January 1942, '
                                  'is not the narodni heroj Nikolić Vujice Živojin-Brka of Stol (Babušnica)'),
     ('9085000107', '9002000819', 'the same, against Narodni heroji Jugoslavije\'s entry of Brka'),
+    ('9023003762', '9035007769', 'Kovačević Pajov Dušan of Osječenica (Nikšić), born 1923, fell in 1945 (the Spomenica; '
+                                 'his nephew wrote the site) is not the census\'s Kovačević (Pajo) Dušan of Brestica '
+                                 '(Mojkovac), born 1922, dead of wounds in Zagreb'),
+    ('9023003762', '9089000148', 'the same, against Revolucionarno Grahovo\'s entry of the Osječenica man'),
 ]
 TWO_MEN_PAIRS = {frozenset(p[:2]) for p in TWO_MEN}
 
@@ -908,9 +913,9 @@ def main():
     if write:
         for code in [CODE, *CENSUS_VOLUMES.values()]:
             path = ROOT / 'website' / 'public' / BRIGADE_CONFIGS[code]['json_file']
-            path.write_text(json.dumps(parts.get(code, []), ensure_ascii=False, indent=2), encoding='utf-8')
+            write_text(path, json.dumps(parts.get(code, []), ensure_ascii=False, indent=2))
             print('Written', path)
-        IDS.write_text(json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0), encoding='utf-8')
+        write_text(IDS, json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0))
         print('Written', IDS)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
         # records that hold its man (2026-10-31: they had shown nowhere)

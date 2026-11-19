@@ -792,16 +792,10 @@ def main():
         soldiers[:] = [fix_names(s) for s in soldiers]
         new_text = json.dumps(soldiers, ensure_ascii=False, indent=2)
         if args.apply and new_text != original_text:
-            # the dev server's data watcher may hold the file a moment (Windows: "Invalid argument"); an hour's run shouldn't die of it
-            for attempt in range(6):
-                try:
-                    with open(json_path, 'w', encoding='utf-8') as f:
-                        f.write(new_text)
-                    break
-                except OSError:
-                    if attempt == 5:
-                        raise
-                    time.sleep(5)
+            # beside the file, then swapped in, with retries (safe_write): the dev server's watcher may hold the file a
+            # moment (Windows: "Invalid argument"), and a write that fails half-way must not leave it empty (2026-11-19:
+            # running out of memory while writing emptied ostali-borci-vojvodina.json)
+            write_text(json_path, new_text)
             print(f"    Written: {json_path}")
 
     # The dated steps of each soldier's life for the dialog's line (website/data/life-events/), from the final

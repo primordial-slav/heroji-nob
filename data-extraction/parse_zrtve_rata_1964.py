@@ -111,10 +111,11 @@ def read_volume(key: str) -> tuple[list[dict], Counter]:
         for col, y, font, text, size in lines_of(page):
             italic = 'Italic' in font
             bold = 'Bold' in font
-            # the running header and footer
+            # the running header and footer. The header names a municipality of the page, but it must not set the
+            # one the villages are under: read at the top of the right column, it relabelled every village after it,
+            # even past a new "Opština" heading in the left column (2026-11-19, a visitor: Bogorojca is in Gevgelija,
+            # not Demir Hisar; the Demir Hisar villages after the header stood under Delčevo). Only the headings count.
             if y < 42 or y > page.rect.height - 50:
-                if italic and text.startswith('opština '):
-                    opstina = title_case(text[len('opština '):])
                 continue
             if bold and text.startswith('Opština '):
                 opstina = title_case(text[len('Opština '):])
@@ -163,7 +164,8 @@ def numbered(entries: list[dict], prefix: str, path: Path) -> list[dict]:
             e['soldier_id'] = f'{prefix}{i:06d}'
         return entries
     old = json.loads(path.read_text(encoding='utf-8'))
-    key = lambda e: (e['last_name'], e['first_name'], e['fathers_name'], e['birth_year'], e['born_in'])
+    # the village, not the municipality: the municipality a run puts it under may be mended (the running header, above)
+    key = lambda e: (e['last_name'], e['first_name'], e['fathers_name'], e['birth_year'], e['born_in'].split(', ')[0])
     j, fresh = 0, []
     for e in entries:
         if j < len(old) and key(old[j]) == key(e):
