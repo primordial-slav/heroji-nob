@@ -1,55 +1,95 @@
-/* "+ bez godine rođenja" beside the birth year (the user's choice of 2026-11-19 among eight mockups, admin/mockups/
-   filter-godina.html on the admin-panel branch, no. 4): pressed, a year keeps the records whose entries print none.
-   On the unit page it is drawn like the fields there; in the home page's red band, white on the red, white when on. */
+/* The birth year's switch (the user's choice of 2026-11-19, after eight mockups, admin/mockups/filter-godina.html on the
+   admin-panel branch, and a walk through both visitors): a visitor who doesn't know the year sees only an empty field
+   that says "ako je znate"; once a year is typed, a switch whose two halves name the two states, "Samo rođeni 1919" and
+   "I bez godine rođenja", the second on unless pressed off. In the home page's red band it is drawn like the header's
+   light/dark switch (white on the red, the chosen half white); on the unit page like the fields there. */
+
+/* the fields start level, so the switch under the year doesn't push the others down */
+.filters {
+  align-items: flex-start;
+}
 
 .pair {
   flex-wrap: wrap;
 }
 
-.undated {
-  height: 2.25rem;
-  padding: 0 var(--space-3);
+/* wide enough for "ako je znate" */
+.pair input.year {
+  width: 6.5rem;
+}
+
+.seg {
+  display: inline-flex;
+  margin-top: var(--space-1);
   border: 1px solid var(--rule-strong);
   border-radius: 2px;
+  overflow: hidden;
+}
+
+.seg button {
+  height: 2rem;
+  padding: 0 var(--space-3);
+  border: 0;
   background: transparent;
   color: var(--ink);
   font: inherit;
   white-space: nowrap;
   cursor: pointer;
+  transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
-.undated:hover:not(:disabled) {
-  border-color: var(--ink);
+.seg button + button {
+  border-left: 1px solid var(--rule-strong);
 }
 
-.undated[aria-pressed='true'] {
+.seg button:hover:not([aria-pressed='true']) {
+  background: var(--surface-sunk);
+}
+
+.seg button[aria-pressed='true'] {
   background: var(--ink);
-  border-color: var(--ink);
   color: var(--ground);
   font-weight: 600;
-}
-
-.undated:disabled {
-  opacity: 0.5;
   cursor: default;
 }
 
-.undated:focus-visible {
+.seg button:focus-visible {
   outline: 2px solid currentColor;
-  outline-offset: 2px;
+  outline-offset: -4px;
 }
 
-:global(.finder) .undated {
-  border-color: rgba(255, 255, 255, 0.75);
+:global(.finder) .seg {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+:global(.finder) .seg button {
   color: var(--on-red);
 }
 
-:global(.finder) .undated:hover:not(:disabled) {
-  border-color: var(--on-red);
+:global(.finder) .seg button + button {
+  border-left-color: rgba(255, 255, 255, 0.45);
 }
 
-:global(.finder) .undated[aria-pressed='true'] {
-  background: var(--surface);
-  border-color: var(--surface);
-  color: var(--red-ink);
+:global(.finder) .seg button:hover:not([aria-pressed='true']) {
+  background: var(--red-deep);
+}
+
+:global(.finder) .seg button[aria-pressed='true'] {
+  background: var(--on-red);
+  color: var(--red);
+}
+
+@media (max-width: 640px) {
+  .seg {
+    display: flex;
+    width: 100%;
+  }
+
+  .seg button {
+    flex: 1 1 0;
+    white-space: normal;
+    height: auto;
+    min-height: 2rem;
+    padding-block: var(--space-1);
+  }
 }

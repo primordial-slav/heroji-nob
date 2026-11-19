@@ -83,9 +83,12 @@ export const en: Messages = {
     birthYear: 'Year of birth',
     range: 'Years either side',
     exact: 'exact',
-    /** Beside the year: also the records whose entries print no birth year */
-    withoutYear: '+ no birth year',
-    withoutYearHint: 'Type a year first',
+    /** In the empty year field: the year is optional */
+    yearHint: 'if known',
+    /** The switch under a typed year: the year alone, or also the records whose entries print none */
+    yearOnly: (from: number, to: number) => (from === to ? `Only born ${from}` : `Only born ${from}–${to}`),
+    yearAny: 'Also with no birth year',
+    undatedLabel: 'Records with no birth year',
     place: 'Place',
     placeHint: 'village or town',
     unit: 'Unit',

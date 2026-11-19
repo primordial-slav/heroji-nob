@@ -80,9 +80,12 @@ export const sl: Messages = {
     birthYear: 'Leto rojstva',
     range: 'Odstopanje od leta rojstva',
     exact: 'točno',
-    /** Beside the year: also the records whose entries print no birth year */
-    withoutYear: '+ brez letnice rojstva',
-    withoutYearHint: 'Najprej vpišite letnico',
+    /** In the empty year field: the year is optional */
+    yearHint: 'če jo veste',
+    /** The switch under a typed year: the year alone, or also the records whose entries print none */
+    yearOnly: (from: number, to: number) => (from === to ? `Samo rojeni ${from}` : `Samo rojeni ${from}–${to}`),
+    yearAny: 'Tudi brez letnice rojstva',
+    undatedLabel: 'Zapisi brez letnice rojstva',
     place: 'Kraj',
     placeHint: 'vas ali mesto',
     unit: 'Enota',

@@ -43,9 +43,10 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
   const lang = useLang()
   const unitText = useUnitText()
   const set = (patch: Partial<Filters>) => onChange({ ...filters, ...patch })
+  const year = birthYear(filters.year)
 
   return (
-    <div className="filters" id={id}>
+    <div className={`filters ${s.filters}`} id={id}>
       <div className="filter filter-year">
         <label htmlFor={`${id}-year`}>{t.birthYear}</label>
         <div className={`filter-pair ${s.pair}`}>
@@ -54,7 +55,8 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
             type="text"
             inputMode="numeric"
             maxLength={4}
-            placeholder="1920"
+            className={s.year}
+            placeholder={t.yearHint}
             value={filters.year}
             onChange={(e) => set({ year: e.target.value.replace(/\D/g, '') })}
             autoComplete="off"
@@ -66,18 +68,19 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
           >
             {RANGES.map((r) => <option key={r} value={r}>{r ? `± ${r}` : t.exact}</option>)}
           </select>
-          {/* the records whose entries print no birth year, which a year leaves out: pressed, they are kept too */}
-          <button
-            type="button"
-            className={s.undated}
-            aria-pressed={filters.withoutYear}
-            disabled={birthYear(filters.year) === null}
-            title={birthYear(filters.year) === null ? t.withoutYearHint : undefined}
-            onClick={() => set({ withoutYear: !filters.withoutYear })}
-          >
-            {t.withoutYear}
-          </button>
         </div>
+        {/* Only once a year is typed: the records whose entries print no birth year, kept after those born in it unless
+            the visitor asks for the year alone. The left half names the years: "Samo rođeni 1919", "… 1917–1921" */}
+        {year !== null && (
+          <div className={s.seg} role="group" aria-label={t.undatedLabel}>
+            <button type="button" aria-pressed={!filters.withoutYear} onClick={() => set({ withoutYear: false })}>
+              {t.yearOnly(year - filters.range, year + filters.range)}
+            </button>
+            <button type="button" aria-pressed={filters.withoutYear} onClick={() => set({ withoutYear: true })}>
+              {t.yearAny}
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="filter filter-place">

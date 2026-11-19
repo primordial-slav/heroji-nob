@@ -82,9 +82,12 @@ export const sr = {
     birthYear: 'Godina rođenja',
     range: 'Odstupanje od godine rođenja',
     exact: 'tačno',
-    /** Beside the year: also the records whose entries print no birth year */
-    withoutYear: '+ bez godine rođenja',
-    withoutYearHint: 'Najpre upišite godinu',
+    /** In the empty year field: the year is optional */
+    yearHint: 'ako je znate',
+    /** The switch under a typed year: the year alone, or also the records whose entries print none */
+    yearOnly: (from: number, to: number) => (from === to ? `Samo rođeni ${from}` : `Samo rođeni ${from}–${to}`),
+    yearAny: 'I bez godine rođenja',
+    undatedLabel: 'Zapisi bez godine rođenja',
     place: 'Mesto',
     placeHint: 'selo ili grad',
     unit: 'Jedinica',

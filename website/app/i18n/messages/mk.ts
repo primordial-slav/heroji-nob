@@ -88,9 +88,12 @@ export const mk: Messages = {
     birthYear: 'Година на раѓање',
     range: 'Отстапување од годината на раѓање',
     exact: 'точно',
-    /** Beside the year: also the records whose entries print no birth year */
-    withoutYear: '+ без година на раѓање',
-    withoutYearHint: 'Најпрво внесете година',
+    /** In the empty year field: the year is optional */
+    yearHint: 'ако ја знаете',
+    /** The switch under a typed year: the year alone, or also the records whose entries print none */
+    yearOnly: (from: number, to: number) => (from === to ? `Само родени ${from}` : `Само родени ${from}–${to}`),
+    yearAny: 'И без година на раѓање',
+    undatedLabel: 'Записи без година на раѓање',
     place: 'Место',
     placeHint: 'село или град',
     unit: 'Единица',
