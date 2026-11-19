@@ -81,3 +81,93 @@ against the site (the search, the census of the fallen, the books across units; 
 then added by hand like the family archive's (Porodična arhiva: a record of Borci drugih jedinica with his entry as the
 family gave it), his photos and papers as `pieces` (above), the sender credited by initial, surname and relation.
 
+## Telling the family
+
+When a family's contribution is live, its sender gets one short email with the record's address (the user's wish of
+2026-11-19). Only senders who left an email; nothing goes out without the user reading it and pressing Send.
+
+1. **Live first.** Open the record on the live site and see the story or photo under "Od porodice". A commit that is
+   not pushed is not live (Sekulić Miloš's, 27653388, was not on 2026-11-19).
+2. **The address** is the row "Email pošiljaoca" of the submission's table. FormSubmit's emails carry no Reply-To,
+   even though the forms send `_replyto` (two submissions checked on 2026-11-19), so "Reply" would go to FormSubmit.
+   The address stays in Gmail: never in the repo, a commit, a file or a note.
+3. **The language** is the row "Jezik"; the link goes to the record in that language.
+4. **One note per sender**: someone who sent two fighters (F. Adžić: Novaković and Đoković) gets one note with both.
+5. **A new message**, not a reply in the submission's thread (a reply quotes the whole FormSubmit table and its ad), and
+   no Gmail signature (it may carry the user's name).
+6. **From nob.borci.kontakt@gmail.com**, written in that account itself, never in the personal one (the user's
+   decision; see "Sending" below), and the link checked before Send: it must be the site's own address, not a
+   google.com one.
+
+### The note
+
+`{ime}` is the record's name as the site shows it ("Sekulić Mane Miloš"; names stay in Latin in every language),
+`{id}` its ID. It names no gender and needs no case, so it fits every record. For two or more records the subject
+names them all, "u zapisu {ime}:" becomes "u zapisima:" ("v zapisih:", "во записите:", "in the records:"), and the
+address becomes one line per record: `{ime}: https://heroji-nob.vercel.app/borac/{id}`.
+
+| Jezik | Subject | Body | Address |
+|---|---|---|---|
+| Srpskohrvatski | Knjiga boraca: {ime} | Dobar dan,<br><br>ono što ste nam poslali sada je na sajtu, u zapisu {ime}:<br>{address}<br><br>Hvala vam što ste nam pisali.<br><br>Knjiga boraca | `https://heroji-nob.vercel.app/borac/{id}` |
+| Српскохрватски | Књига бораца: {ime} | Добар дан,<br><br>оно што сте нам послали сада је на сајту, у запису {ime}:<br>{address}<br><br>Хвала вам што сте нам писали.<br><br>Књига бораца | `.../sr-cyrl/borac/{id}` |
+| Slovenščina | Knjiga borcev: {ime} | Dober dan,<br><br>kar ste nam poslali, je zdaj na strani, v zapisu {ime}:<br>{address}<br><br>Hvala, ker ste nam pisali.<br><br>Knjiga borcev | `.../sl/borac/{id}` |
+| Македонски | Книга на борците: {ime} | Добар ден,<br><br>она што ни го испративте сега е на сајтот, во записот {ime}:<br>{address}<br><br>Ви благодариме што ни пишавте.<br><br>Книга на борците | `.../mk/borac/{id}` |
+| English | Knjiga boraca: {ime} | Hello,<br><br>What you sent us is now on the site, in the record for {ime}:<br>{address}<br><br>Thank you for writing to us.<br><br>Knjiga boraca | `.../en/borac/{id}` |
+
+### Sending: what the test of 2026-11-19 showed
+
+Three test drafts, addressed to the user's own address only:
+
+- The Gmail connector in Claude reaches the personal account, and `create_draft` has no From: every draft it makes
+  is From the personal account's name and address, a reply in the submission's thread too. No "Send mail as"
+  address was set up, so Gmail's "reply from the same address the message was sent to" could not be tried.
+- A draft made with `replyToMessageId` stays in the submission's thread (In-Reply-To set), with the subject
+  "Re: Znam ovog borca: ...", and quotes the submission whole.
+- The connector rewrites every link in a draft, in the plain text and in an HTML `href` alike, into a
+  `google.com/url?q=...&ust=...` redirect; the text shown stays the true address. Such a link stops working once the
+  `ust` time passes, so the link has to be put in again by hand in Gmail before Send.
+- The contact inbox forwards to the personal one only since 2026-11-19, 00:30 UTC (Gmail's forwarding confirmation).
+  Earlier submissions (F. Adžić's, J. Todosijević's, the nephew's, the Piperov report) are only in the contact inbox.
+
+**Decided (the user, 2026-11-19): the notes go out from the nob.borci.kontakt account itself**, never from the
+personal one, not even through "Send mail as". So the connector's drafts are not used for them. For each note Claude
+gives the user the filled-in text and a link that opens it as a new message in the contact account (Gmail's compose
+address: `https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=...&body=...`, the
+subject and body URL-encoded, no address in it). The user, signed in to the contact account in the browser, opens it,
+checks that From shows nob.borci.kontakt@gmail.com, pastes the address from the submission and presses Send. Gmail
+makes the link itself, so it is the site's own. If the link opens the personal account instead, the note is copied
+into a new message in the contact account by hand.
+
+### Later: "Obavesti porodicu" in the admin panel
+
+The local admin panel (branch `admin-panel`, publish step `admin/mockups/objavi.html`) should get an "Obavesti porodicu"
+step after the push and the check of the live site: for each published contribution whose sender left an email, the
+note above in the sender's language, read and changed there, then opened as a new message in the contact account to
+be sent by hand (Gmail's compose address with the contact account's `authuser`, the subject and body filled, the
+address taken from the mailbox when the button is pressed, never stored). Not built yet.
+
+### Told so far
+
+| Credit on the site | Record | Live | Told |
+|---|---|---|---|
+| F. Adžić, rođak / F. Adžić | 0126000703 Novaković Vuka Radomir, 0136021032 Đoković Miodrag Dragan | yes | not yet |
+| J. Todosijević, bratanica | 0136006734 Todosijević Dragić Jelica | yes | not yet |
+| nećak | 0122917644 Kovačević Pajov Dušan | yes | not yet |
+| Ispravka po prijavi | 0135000797 Piperov Nikola Vlado | yes | not yet (a correction; tell if the reporter left an email) |
+| B. Batalo, praunuk | 0122907839 Sekulić Mane Miloš | no, until 27653388 is pushed | not yet |
+
+Mile Bakić's and Todor Bajić's pieces are from the family archive itself: nobody to tell.
+
+### Ready to send (made 2026-11-19, the user sends them later)
+
+Each link opens the note in Serbo-Croatian as a new message in the contact account; the address comes from the
+submission in the contact inbox. If its "Jezik" row says another language, make that version from the table above.
+
+- [F. Adžić: Novaković Vuka Radomir, Đoković Miodrag Dragan](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Novakovi%C4%87%20Vuka%20Radomir%2C%20%C4%90okovi%C4%87%20Miodrag%20Dragan&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisima%3A%0ANovakovi%C4%87%20Vuka%20Radomir%3A%20https%3A//heroji-nob.vercel.app/borac/0126000703%0A%C4%90okovi%C4%87%20Miodrag%20Dragan%3A%20https%3A//heroji-nob.vercel.app/borac/0136021032%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
+- [J. Todosijević: Todosijević Dragić Jelica](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0136006734%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
+- [nećak: Kovačević Pajov Dušan](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Kova%C4%8Devi%C4%87%20Pajov%20Du%C5%A1an&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Kova%C4%8Devi%C4%87%20Pajov%20Du%C5%A1an%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0122917644%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca)
+- [Ispravka po prijavi: Piperov Nikola Vlado](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Piperov%20Nikola%20Vlado&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Piperov%20Nikola%20Vlado%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0135000797%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca) (only if the reporter left an email)
+- [B. Batalo: Sekulić Mane Miloš](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Sekuli%C4%87%20Mane%20Milo%C5%A1&body=Dobar%20dan%2C%0A%0Aono%20%C5%A1to%20ste%20nam%20poslali%20sada%20je%20na%20sajtu%2C%20u%20zapisu%20Sekuli%C4%87%20Mane%20Milo%C5%A1%3A%0Ahttps%3A//heroji-nob.vercel.app/borac/0122907839%0A%0AHvala%20vam%20%C5%A1to%20ste%20nam%20pisali.%0A%0AKnjiga%20boraca): **only after 27653388 is pushed and his record shows the story**
+
+When one is sent, mark it in "Told so far" (the month) and take it off this list.
+
