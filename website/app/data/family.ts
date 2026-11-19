@@ -88,6 +88,13 @@ export const familyContributions: FamilyContribution[] = [
     from: 'nećak',
     date: '2026-11',
   },
+  {
+    soldierId: '0122907839', // Sekulić Mane Miloš of Zbjeg (Slunj), Borci drugih jedinica
+    photo: '0122907839-1.jpg',
+    text: 'Znamo da je bio komesar i da je poginuo negde na Žumberku. Spasio je od streljanja svog sestrića Manojla Manu Kosanovića, koji je poginuo na Ilirskoj Bistrici goneći ustaše.',
+    from: 'B. Batalo, praunuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
