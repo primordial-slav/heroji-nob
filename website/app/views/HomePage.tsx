@@ -9,6 +9,7 @@ import { PAGE_SIZES, fullRecord, loadPortraitPeople, loadedPortraitPeople } from
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
+import MissingSoldierForm from '@/app/components/MissingSoldierForm'
 import { SearchIcon } from '@/app/components/Icons'
 import { totalNames } from '@/app/lib/totals'
 import BandPhoto from '@/app/components/BandPhoto'
@@ -168,13 +169,16 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
                   </button>
                 </p>
               )}
+              <MissingSoldierForm query={searchTerm} />
             </div>
           ) : hasQuery && count === 0 ? (
             <div className="empty">
               <h2>{t.home.noneTitle(searchTerm)}</h2>
               <p>{t.home.noneText}</p>
+              <MissingSoldierForm query={searchTerm} />
             </div>
           ) : (
+            <>
             <SoldierResults
               results={found?.soldiers ?? NO_SOLDIERS}
               paged={{
@@ -197,6 +201,9 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
               scrollTargetId="results"
               actions={<ShareSearch />}
             />
+            {/* he may not be among them */}
+            {hasQuery && <MissingSoldierForm query={searchTerm} />}
+            </>
           )
         ) : (
           <>

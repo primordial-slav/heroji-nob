@@ -61,3 +61,17 @@ pieces: [
 - Before a document goes up, cover anything that identifies a living person (an address, an ID number).
 - Photos that show other people (family groups) go up only with the family's word for each.
 - A transcription is the document's own words; write `[potpis]` for a signature and `[nečitko]` where it can't be read.
+
+## A fighter who is not on the site
+
+Since 2026-11-19 (the user's promise in the Reddit thread) a second form, `components/MissingSoldierForm.tsx`, stands where
+a home search finds no one and under the results: "Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu." It asks
+for the fighter's name (the search fills it in), father, year and place of birth, unit, fate, what the family knows, and
+up to six photos of him and of his papers, then the sender's name, relation and email, and the permission to publish.
+
+It arrives at the same address: one email "Borac kojeg nema na sajtu: <name>" with the fields (and the search that found
+nothing), and one email per file, "Prilog: <name> (1/3)". Nothing is published by itself. A man it names is checked first
+against the site (the search, the census of the fallen, the books across units; he may be there under another spelling),
+then added by hand like the family archive's (Porodična arhiva: a record of Borci drugih jedinica with his entry as the
+family gave it), his photos and papers as `pieces` (above), the sender credited by initial, surname and relation.
+
