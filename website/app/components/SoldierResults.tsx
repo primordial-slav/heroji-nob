@@ -33,9 +33,14 @@ interface SoldierResultsProps {
    * whole list; a change of page or of page size goes to `onPage`
    */
   paged?: { count: number; firstNear: number; page: number; perPage: number; onPage: (page: number, perPage: number) => void }
+  /**
+   * With a birth year set: the records whose entries print no year, which the year leaves out. The count line offers
+   * them ("još 273 bez godine rođenja"), or, once they are in, says how many and takes them out again
+   */
+  undated?: { count: number; included: boolean; onToggle: () => void }
 }
 
-export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, paged }: SoldierResultsProps) {
+export default function SoldierResults({ results, showUnit, onSelect, scrollTargetId, actions, paged, undated }: SoldierResultsProps) {
   const t = useT()
   const lang = useLang()
   const unitText = useUnitText()
@@ -72,7 +77,23 @@ export default function SoldierResults({ results, showUnit, onSelect, scrollTarg
         <p className="results-count" aria-live="polite">
           {/* the count and its word stay together on a narrow screen */}
           {(firstNear < 0 ? t.found(count) : firstNear === 0 ? t.results.noExact : t.found(firstNear)).replace(/ /g, '\u00a0')}
+          {undated && undated.count > 0 && (
+            <>
+              {' '}
+              <span>
+                {'· '}
+                {undated.included ? (
+                  <>
+                    {t.results.undatedIn(undated.count)} (
+                    <button type="button" className="link-button" onClick={undated.onToggle}>{t.results.undatedHide}</button>)
+                  </>
+                ) : (
+                  <button type="button" className="link-button" onClick={undated.onToggle}>{t.results.undated(undated.count)}</button>
+                )}
           {firstNear >= 0 && <> <span>· {t.results.similar(count - firstNear, firstNear > 0)}</span></>}
+              </span>
+            </>
+          )}
           {totalPages > 1 && <> <span>· {t.results.pageOf(page, totalPages)}</span></>}
         </p>
         <div className="results-tools">

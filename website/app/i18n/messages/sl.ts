@@ -80,7 +80,6 @@ export const sl: Messages = {
     birthYear: 'Leto rojstva',
     range: 'Odstopanje od leta rojstva',
     exact: 'točno',
-    withoutYear: 'Tudi tisti brez letnice rojstva',
     place: 'Kraj',
     placeHint: 'vas ali mesto',
     unit: 'Enota',
@@ -107,6 +106,11 @@ export const sl: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'še ' : ''}${n(x)} ${plural('sl', x, { one: 'podoben zapis', two: 'podobna zapisa', few: 'podobni zapisi', other: 'podobnih zapisov' })}`,
     similarTitle: 'Podobni zapisi',
+    /** With a birth year set: the records whose entries print none, which the year leaves out */
+    undated: (x: number) => `še ${n(x)} brez letnice rojstva`,
+    undatedIn: (x: number) => `od tega ${n(x)} brez letnice rojstva`,
+    undatedHide: 'skrij jih',
+    undatedShow: (x: number) => `Pokaži ${n(x)} brez letnice rojstva`,
   },
 
   onThisDay: {

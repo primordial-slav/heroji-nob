@@ -19,7 +19,7 @@ import PortraitRails from '@/app/components/PortraitRails'
 import type { HomePictures } from '@/app/lib/homePictures'
 import { HOME_RESET } from '@/app/components/HomeLink'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
-import { NO_FILTERS, filterCount, narrows, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { birthYear, NO_FILTERS, filterCount, narrows, readSearch, writeSearch } from '@/app/lib/searchFilters'
 import { useT } from '@/app/i18n/LangContext'
 import RichText from '@/app/i18n/RichText'
 
@@ -161,6 +161,13 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
                   )}
                 />
               </p>
+              {!filters.withoutYear && (found?.undated ?? 0) > 0 && (
+                <p>
+                  <button type="button" className="link-button" onClick={() => setFilters({ ...filters, withoutYear: true })}>
+                    {t.results.undatedShow(found?.undated ?? 0)}
+                  </button>
+                </p>
+              )}
             </div>
           ) : hasQuery && count === 0 ? (
             <div className="empty">
@@ -180,6 +187,11 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
                   setPerPage(size)
                 },
               }}
+              undated={birthYear(filters.year) !== null ? {
+                count: found?.undated ?? 0,
+                included: filters.withoutYear,
+                onToggle: () => setFilters({ ...filters, withoutYear: !filters.withoutYear }),
+              } : undefined}
               showUnit
               onSelect={openSoldier}
               scrollTargetId="results"

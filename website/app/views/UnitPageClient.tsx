@@ -15,7 +15,7 @@ import { RECORD_PARAM } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
 import { unitImageProps } from '@/app/lib/unitImage'
 import SearchFilters, { FilterToggle, ShareSearch } from '@/app/components/SearchFilters'
-import { NO_FILTERS, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
+import { birthYear, NO_FILTERS, filterCount, readSearch, writeSearch } from '@/app/lib/searchFilters'
 import { useLang, useLocalePath, useT, useUnitText } from '@/app/i18n/LangContext'
 import RichText from '@/app/i18n/RichText'
 
@@ -203,6 +203,11 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
                 perPage: found?.perPage ?? perPage,
                 onPage,
               }}
+              undated={birthYear(filters.year) !== null ? {
+                count: found?.undated ?? 0,
+                included: filters.withoutYear,
+                onToggle: () => setFilters({ ...filters, withoutYear: !filters.withoutYear }),
+              } : undefined}
               onSelect={openSoldier}
               scrollTargetId="results"
               actions={(searching || filtersSet) && <ShareSearch />}

@@ -88,7 +88,6 @@ export const mk: Messages = {
     birthYear: 'Година на раѓање',
     range: 'Отстапување од годината на раѓање',
     exact: 'точно',
-    withoutYear: 'И оние без година на раѓање',
     place: 'Место',
     placeHint: 'село или град',
     unit: 'Единица',
@@ -115,6 +114,11 @@ export const mk: Messages = {
     similar: (x: number, more: boolean) =>
       `${more ? 'уште ' : ''}${n(x)} ${plural('mk', x, { one: 'сличен запис', other: 'слични записи' })}`,
     similarTitle: 'Слични записи',
+    /** With a birth year set: the records whose entries print none, which the year leaves out */
+    undated: (x: number) => `уште ${n(x)} без година на раѓање`,
+    undatedIn: (x: number) => `од нив ${n(x)} без година на раѓање`,
+    undatedHide: 'скриј ги',
+    undatedShow: (x: number) => `Прикажи ${n(x)} без година на раѓање`,
   },
 
   onThisDay: {

@@ -83,7 +83,6 @@ export const en: Messages = {
     birthYear: 'Year of birth',
     range: 'Years either side',
     exact: 'exact',
-    withoutYear: 'Also those with no birth year',
     place: 'Place',
     placeHint: 'village or town',
     unit: 'Unit',
@@ -110,6 +109,11 @@ export const en: Messages = {
     similar: (x: number, more: boolean) =>
       `${n(x)} ${more ? 'more ' : ''}similar ${plural('en', x, { one: 'record', other: 'records' })}`,
     similarTitle: 'Similar records',
+    /** With a birth year set: the records whose entries print none, which the year leaves out */
+    undated: (x: number) => `${n(x)} more with no birth year`,
+    undatedIn: (x: number) => `${n(x)} of them with no birth year`,
+    undatedHide: 'hide them',
+    undatedShow: (x: number) => `Show ${n(x)} with no birth year`,
   },
 
   onThisDay: {

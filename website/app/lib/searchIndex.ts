@@ -163,6 +163,8 @@ export interface SearchResultPage {
   firstNear: number
   /** How many it found before the filters */
   unfiltered: number
+  /** With a birth year set: how many it leaves out for printing none, or how many of the list print none once kept */
+  undated: number
   /** Which page this is, from 1, and how many soldiers a page has */
   page: number
   perPage: number

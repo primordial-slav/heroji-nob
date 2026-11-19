@@ -247,7 +247,7 @@ export interface SearchRequest {
  */
 export function searchPage(data: SearchData, { query, filters, page, perPage, unit }: SearchRequest): string {
   const home = unit === undefined
-  const { listed, nearFrom, unfiltered } = searchList(data, query, filters, unit)
+  const { listed, nearFrom, unfiltered, undated } = searchList(data, query, filters, unit)
   const start = (page - 1) * perPage
   const rows = Array.from(listed.slice(start, start + perPage), (i) => {
     const also = data.also.get(i)
@@ -255,7 +255,7 @@ export function searchPage(data: SearchData, { query, filters, page, perPage, un
       data.rows.toString('utf8', data.rowAt[i], data.rowAt[i + 1])}${also && home ? `,"also":${JSON.stringify(also)}` : ''}}`
   })
   const firstNear = nearFrom < listed.length ? nearFrom : -1
-  return `{"count":${listed.length},"firstNear":${firstNear},"unfiltered":${unfiltered},"page":${page},"perPage":${perPage},"rows":[${rows.join(',')}]}`
+  return `{"count":${listed.length},"firstNear":${firstNear},"unfiltered":${unfiltered},"undated":${undated},"page":${page},"perPage":${perPage},"rows":[${rows.join(',')}]}`
 }
 
 interface Listed {
@@ -265,6 +265,9 @@ interface Listed {
   nearFrom: number
   /** How many were found before the filters */
   unfiltered: number
+  /** With a birth year set: how many the year leaves out because their entries print none (the results line offers
+   * them), or once they are kept, how many of the list print none; 0 without a year */
+  undated: number
 }
 
 // The last searches' lists, so another page of one, or the same search again, is only cut from its list
@@ -313,6 +316,8 @@ function runSearch(data: SearchData, typed: string, filters: SearchFilters, unit
     nearFrom = 0
   }
   const unfiltered = found.length
+  // where the names found end and the similar ones begin, before the filters
+  const exactFound = nearFrom
 
   let listed: number[] = Array.from(found)
   const keep = filterTest(data, filters, home)
@@ -320,13 +325,22 @@ function runSearch(data: SearchData, typed: string, filters: SearchFilters, unit
     nearFrom = listed.slice(0, nearFrom).filter(keep).length
     listed = listed.filter(keep)
   }
-  // With "I oni bez godine rođenja", those born in the year (or near it) come first, then those whose entries give
-  // none, among the names found and again among the similar ones
-  if (birthYear(filters.year) !== null && filters.withoutYear) {
-    const datedFirst = (part: number[]) => [...part.filter((i) => !Number.isNaN(data.born[i])), ...part.filter((i) => Number.isNaN(data.born[i]))]
-    listed = [...datedFirst(listed.slice(0, nearFrom)), ...datedFirst(listed.slice(nearFrom))]
+  // A birth year drops the entries that print none; the results line offers them ("još 273 bez godine rođenja").
+  // Kept, they come after those born in the year (or near it), among the names found and again among the similar ones
+  let undated = 0
+  if (birthYear(filters.year) !== null) {
+    const noYear = (i: number) => Number.isNaN(data.born[i])
+    if (filters.withoutYear) {
+      const datedFirst = (part: number[]) => [...part.filter((i) => !noYear(i)), ...part.filter(noYear)]
+      listed = [...datedFirst(listed.slice(0, nearFrom)), ...datedFirst(listed.slice(nearFrom))]
+      undated = listed.slice(0, nearFrom).filter(noYear).length
+    } else {
+      const keepUndated = filterTest(data, { ...filters, withoutYear: true }, home)
+      // the names found only, so the line's "još 273" is what joins its "Pronađeno 83" (the similar ones join their own part)
+      for (let k = 0; k < exactFound; k++) if (noYear(found[k]) && (!keepUndated || keepUndated(found[k]))) undated++
+    }
   }
-  return { listed: Int32Array.from(listed), nearFrom, unfiltered }
+  return { listed: Int32Array.from(listed), nearFrom, unfiltered, undated }
 }
 
 // ── One record's kin ─────────────────────────────────────────

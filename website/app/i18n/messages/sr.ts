@@ -82,7 +82,6 @@ export const sr = {
     birthYear: 'Godina rođenja',
     range: 'Odstupanje od godine rođenja',
     exact: 'tačno',
-    withoutYear: 'I oni bez godine rođenja',
     place: 'Mesto',
     placeHint: 'selo ili grad',
     unit: 'Jedinica',
@@ -113,6 +112,11 @@ export const sr = {
       `${more ? 'još ' : ''}${n(x)} ${plural('sr', x, { one: 'sličan zapis', few: 'slična zapisa', other: 'sličnih zapisa' })}`,
     /** Over the similar records in the list: spelled differently, or without one of the words */
     similarTitle: 'Slični zapisi',
+    /** With a birth year set: the records whose entries print none, which the year leaves out */
+    undated: (x: number) => `još ${n(x)} bez godine rođenja`,
+    undatedIn: (x: number) => `od toga ${n(x)} bez godine rođenja`,
+    undatedHide: 'skloni ih',
+    undatedShow: (x: number) => `Prikaži ${n(x)} bez godine rođenja`,
   },
 
   onThisDay: {
