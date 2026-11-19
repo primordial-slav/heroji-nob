@@ -63,10 +63,11 @@ export interface Soldier {
   death_after_war?: boolean // a survivor who has died since, with no year ("† po osvoboditvi"): "Umro posle rata"
   party?: string          // membership of SKOJ and the party, with the year each began: "SKOJ 1941, KPJ 1944"
   birth_date?: string     // the day of birth, or the month, where any of his entries prints it: "27.12.1915", "12.1915"
-  // what the unit's other books and his records in other units give otherwise (scripts/record_sources.py): other birth
-  // years ("1918", or "05.03.1918" with the day), other deaths with the place that book names (in the record's own
-  // spelling where it is the same place)
-  variants?: { born?: string[]; death?: { date: string; place?: string }[] }
+  // what the unit's other books, his records in other units, the census and the column books give otherwise
+  // (scripts/record_sources.py): other birth years ("1918", or "05.03.1918" with the day), other deaths with the place
+  // that book names (in the record's own spelling where it is the same place), another place in the same year too; a
+  // column book may name the place alone, without its date ("ili Ostrog")
+  variants?: { born?: string[]; death?: { date?: string; place?: string }[] }
   // PDF source position metadata (optional - may not be available for all records)
   pdf_page?: number       // 1-indexed page number in the source PDF
   pdf_y?: number          // Y of the entry's first line, in PDF points from page top

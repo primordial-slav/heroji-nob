@@ -186,6 +186,9 @@ def rebuild_computed_fields(soldier, skip_birth_year=False):
 
 
 MANUAL_FIELDS = {}   # soldier_id -> structured fields some correction sets explicitly
+SET_FIELDS = {}      # soldier_id -> every field some edit or add correction sets
+FAMILY_FIELDS = {}   # soldier_id -> the fields a family's report set (record_sources.FAMILY_REASON): the books' other
+                     # versions show after "ili" on the card
 EDITED_FIELDS = {}   # soldier_id -> fields some edit correction sets
 DELETED = {}         # soldier_id -> the record a delete correction removed in this run
 MERGED_IDS = set()   # ids a merge correction folds into another record: their earlier edits are done (after a re-parse
@@ -612,6 +615,10 @@ def main():
     for c in corrections:
         set_fields = set(c.get('fields', {})) | set(c.get('record', {}))
         MANUAL_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & set(structured.FIELDS))
+        if c['action'] in ('edit', 'add'):
+            SET_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields)
+            if record_sources.FAMILY_REASON.search(c.get('reason') or ''):
+                FAMILY_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields)
         if 290061 <= c['id'] <= 293060:     # a field the review page's answer leaves empty stays so (scripts/review_fields.py)
             for k, v in c.get('fields', {}).items():
                 blanked = structured.BLANKED.setdefault(c['soldier_id'], set())
@@ -784,7 +791,7 @@ def main():
     told = {}
     for code, (json_path, _, soldiers) in results.items():
         if json_path.name in live_files:
-            for k, n in record_sources.apply(soldiers, by_id).items():
+            for k, n in record_sources.apply(soldiers, by_id, SET_FIELDS, FAMILY_FIELDS).items():
                 told[k] = told.get(k, 0) + n
     print(f"\n  Birth days and the books' other years and deaths: {', '.join(f'{k} {n}' for k, n in told.items())}")
 

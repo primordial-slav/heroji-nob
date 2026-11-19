@@ -725,12 +725,24 @@ ABBREV = {'Podr', 'Grub', 'Bos', 'Vel', 'Gor', 'Gornj', 'Donj', 'Mal', 'Slav', '
           'Juž', 'Zap', 'Ist', 'Crn', 'Kos', 'Mitr', 'Aleks', 'Petr', 'Brd', 'Polj', 'Sel', 'Gradiš', 'Orah', 'Mikl'}
 
 
-def sentences(t: str) -> list[str]:
-    """Split at sentence ends, not at the dots of dates, abbreviations ("Podr. Slatina") or initials."""
+# a unit's word cut short before the unit's name or its initials is no sentence's end where a death clause names the
+# unit ("poginuo kao komesar bat. Karlovačke brig. 34. div. u Žumberku 10. 9. 1944.", "Poginuo u 1. bat. 3. brig. 6. lič.
+# prol. DNT u Srijemu 28. 4. 1943.", "kao vodnik 1. brig. KNOJ-a kod Generalskog Stola", "sekretar org. KPH u 5. div."):
+# about 155 entries, most of them the Karlovac and Lika volumes', had lost their place and day (2026-11-19, Sekulić Mane
+# Miloš); not before a sentence of its own ("borac 2. bat. Poginuo 1943.")
+UNIT_ABBREV = {'bat', 'brig', 'div', 'prol', 'kord', 'lič', 'org', 'opć', 'odr', 'korp', 'dalm', 'slav', 'krajiš'}
+UNIT_NAMED = re.compile(rf'[{U}]{{2,}}\b|[{U}][{L}]+\s+(?:[{L}]+\s+){{0,2}}?(?:brig|div|odr|bat|korp|sektor|PO\b|NO[VP])')
+
+
+def sentences(t: str, units: bool = False) -> list[str]:
+    """Split at sentence ends, not at the dots of dates, abbreviations ("Podr. Slatina") or initials; units: nor at a
+    unit's word cut short before the unit's name (UNIT_ABBREV)."""
     out, start = [], 0
     for m in re.finditer(rf'(?:(?<=[{L}]{{3}})|(?<=[{L}]\))|(?<=\d{{4}}))\.\s+(?=[{U}])', t):
         word = re.search(r'(\w+)$', t[:m.start()])
         if word and word.group(1) in ABBREV:
+            continue
+        if units and word and word.group(1) in UNIT_ABBREV and UNIT_NAMED.match(t, m.end()):
             continue
         out.append(t[start:m.start()])
         start = m.end()
@@ -1257,7 +1269,8 @@ class Extractor:
         if re.match(rf'^\s*\.\s+[{U}]', rest):
             rest = ''                       # "hrabro poginuo. Član KPJ postao ...": the death's sentence ends at the verb
         # the death clause runs to the end of its sentence, or to "sahranjen" / a new clause
-        clause = sentences(rest)[0] if rest.strip() else ''
+        clause = sentences(rest, units=True)[0] if rest.strip() else ''
+        joined = rest.strip() and clause != sentences(rest)[0]     # a unit's cut word kept the clause going (UNIT_ABBREV)
         clause = clause.split(';')[0]                                        # "poginuo u NOB; zvani ...": a note follows
         # "Poginuo 20. IV. 1945. i sahranjen u Buku": nothing but the date before it, the burial place is where he fell
         clause = re.sub(rf'^(\s*(?:{DATE})\.?,?)\s*i\s+(?:je\s+)?(?:sahranjen|sahranjena|pokopan|pokopana)\b', r'\1', clause)
@@ -1295,8 +1308,18 @@ class Extractor:
         clause = re.sub(r'^\s*,?\s*(?:vješanjem|vešanjem|klanjem|nožem|kamom|batinama|maljem|sjekirom|sekirom)\b', ' ', clause)
         # "poginuo kao ranjenik u Centralnoj bolnici na Sutjesci": the words go, not the place
         clause = re.sub(r'\bkao\s+(?:teški\s+|teško\s+)?(?:ranjenik|ranjenica|bolesnik|bolesnica|ranjen[a-z]*)\b', ' ', clause)
+        # where lands meet is no place the site can name: "na tromeđi Bosne, Crne Gore, Srbije" (the cut of the duty below
+        # took "kao borac Pratećeg bat. ... na tromeđi Bosne" to the comma and left "Crne Gore, Srbije")
+        clause = re.sub(r'\bna\s+tromeđi\b.*$', '', clause)
         # right after the verb the duty stands before the place: "Poginuo kao borac 2. brig. 8. div. kod Tržića", "kao komandant u 35. div. na Zuleševu"
         clause = re.sub(rf'^\s*,?\s*kao\s+[^,]*?(?=\s(?:kod|u|na|pri)\s+[{U}]|,|$)', ' ', clause)
+        # and the unit he fell in, where a unit's word is cut short in it: "Poginuo u 1. bat. 3. brig. 6. lič. prol. DNT u
+        # Srijemu", "u 2. bat. 3. ličke brig. u Ribniku", "u 1. četi 2. bat. 1. LPO u Ličkom Novom" (DEATH_NOISE_RE below
+        # takes "u 21. diviziji" before "ispred Pleternice")
+        clause = re.sub(rf'^\s*,?\s*u\s+\d+\.\s*(?:(?:bat|brig|div|odr|korp)\.|(?:bat|brig|div|čet|odr|korp)\w*'
+                        rf'(?=[^,]*?\b(?:bat|brig|div|odr|korp)\.))[^,]*?'
+                        rf'(?=\s(?:kod|u|na|pri|v|blizu|ispred|iznad|ispod|između|iza|preko|pored|kraj|oko)\s+'
+                        rf'(?:s\.\s*|sela\s+|selu\s+|rejonu\s+|području\s+|okolini\s+)?[{U}]|,|$)', ' ', clause)
         clause = re.sub(r'\s+kao\s+.*$', '', clause)                     # "poginuo 1943. kao borac 19. divizije"
         # a cause naming the enemy before the place: "od talijanskog bombardiranja u Pazarištu", "od neprijateljskih
         # snaga kod Stoca" (ENEMY_RE below would take "od talijanskog" alone and leave "bombardiranja u Pazarištu")
@@ -1361,7 +1384,10 @@ class Extractor:
         elif (conv and len(conv) <= 70 and not re.search(r'\d', conv)
               # no unit: "prilikom napada II krajiške brigade i Romanijskog partizanskog odreda na Brezu"
               and not re.search(r'\b(?:brigad|odred|bataljon|divizij|korpus)\w*', conv, re.I)
-              # every part a place: not "u Centralnoj , bolnici u Sandžaku", "Sombor, uisled i teških rana"
+              # every part a place: not "u Centralnoj , bolnici u Sandžaku", "Sombor, uisled i teških rana"; nor, in a clause a
+              # unit's cut word kept going, a text glued on after a lone full stop ("bat. PO »Velebit« u Ploči 26. 3. 1942.
+              # fašističkog terora i poginulih u španjolskom"; elsewhere "na Sutjesci . u Centralnoj bolnici" is cut below)
+              and not (joined and re.search(r'\s\.\s', conv))
               and all(re.match(rf'^(?:{PREP}\s+)?(?:s\.\s)?[{U}]', p.strip()) for p in conv.split(','))
               and (place_re is None or place_re.fullmatch(clause))):
             place = self.nominative(conv)
