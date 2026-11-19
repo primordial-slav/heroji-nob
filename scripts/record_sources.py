@@ -15,8 +15,8 @@
   "05.03.1943, kod Gornjeg Vakufa ili 06.1943, Sutjeska"; "10.09.1944, Žumberak ili 1944, Bosiljevo slove"): another
   year, month or day, or another place in the same year too (2026-11-19, the user's "use family report always and
   there should be also an option for alternative location if there's a mismatch"), where both places lie on the map
-  further apart than NEAR_KM (same_place: a village and its town, a misspelling, the census's cut-off column or a
-  region are no other place). A value a family's correction set stays first, and the record's own book shows after
+  further apart than NEAR_KM (same_place: a village and its town, a misspelling, the census's cut-off column, a region,
+  or an area and a place inside it, "Kozara" and Bosanska Dubica, are no other place). A value a family's correction set stays first, and the record's own book shows after
   "ili" where it says otherwise (FAMILY_REASON). The other books across units only fill. Borci drugih jedinica has
   them from its own books (each one book among the others: the census's columns may have given its fields); the
   census's parts, one entry each, none.
@@ -213,13 +213,46 @@ REGIONS = {'srem', 'srijem', 'sremski front', 'bosna', 'lika', 'kordun', 'banija
            'bih', 'bosna hercegovina', 'stajerska', 'stajerskem', 'koroska', 'gorenjska', 'dolenjska', 'notranjska',
            'primorska', 'lici', 'c gora', 'italija', 'nemacka', 'njemacka', 'austrija', 'madarska', 'albanija', 'bugarska', 'grcka'}
 NEAR_KM = 30            # a village and the town it belongs to, or one battle's two places: no other version
-# the battles a place of death names that GeoNames places nowhere or in another land (a river, a village of the name in
-# Serbia): where the books' and the census's other places of them lie, so "Zelengora" or "Tjentište" beside
-# "Sutjeska" is one battle's place, "Jablanica" beside it another battle's
-BATTLES = {'sutjeska': (43.354, 18.692), 'neretva': (43.660, 17.760), 'romanija': (43.850, 18.700),
-           'igman': (43.750, 18.250), 'piva': (43.250, 18.830), 'zelengora': (43.370, 18.500),
-           'durmitor': (43.130, 19.030), 'grmec': (44.750, 16.330), 'kozara': (44.970, 17.090),
-           'vucevo': (43.300, 18.800)}      # (the Sutjeska's Vučevo, not the village of Pljevlja GeoNames gives)
+# An area covers ground, so a place inside it is no other place (the user's correction of 2026-11-19: "one might be a
+# region and the other could be a place within the region"): how far from its GeoNames point a place may lie and still
+# be in it, by the feature's code (data-extraction/places/areas.json, scripts/area_places.py): a region, a mountain
+# range ("Kozara" and Bosanska Dubica at its foot, 31 km), a plain, an island, a river along its course ("Neretva" and
+# Jablanica, Konjic or Mostar), a single mountain, a valley; a hill, a peak or a spring hardly more than a village
+AREA_KM = {'RGN': 50, 'ADM1': 60, 'ADM2': 60, 'ADM3': 30, 'MTS': 35, 'HLLS': 35, 'PLN': 30, 'PLAT': 30, 'AREA': 25,
+           'ISL': 25, 'STM': 60, 'STMI': 15, 'MT': 20, 'VAL': 20, 'DPR': 20}
+AREA_SMALL_KM = 10      # any other area: a hill, a peak, a ridge, a locality, a spring
+# a river a hundred km long or more is no point ("na Drini": Foča, Višegrad, Zvornik): it covers LONG_RIVER_KM, still no
+# place 400 km off ("Lim" is not Vinkovci; the Neretva is the battle's ground by Jablanica, NAMED_AREAS)
+LONG_RIVER_KM = 100
+LONG_RIVERS = {'Drina', 'Ibar', 'Južna Morava', 'Kupa', 'Lim', 'Una', 'Vrbas', 'Sana', 'Tara', 'Morača', 'Beli Drim',
+               'Bregalnica', 'Sutla', 'Треска', 'Stara Drava'}
+# the areas a place of death names that GeoNames places nowhere or as something else (a village of the name in Serbia,
+# a peak of the name): their point and ground, so "Zelengora" or "Tjentište" beside "Sutjeska" is that battle's place
+# and "Jablanica" beside it another battle's, and "Bosiljevo" lies outside Žumberak (37 km from its middle, 20 km
+# past its southern edge)
+NAMED_AREAS = {'sutjeska': (43.354, 18.692, 35), 'neretva': (43.660, 17.760, 60), 'romanija': (43.850, 18.700, 35),
+               'igman': (43.750, 18.250, 20), 'piva': (43.250, 18.830, 35), 'zelengora': (43.370, 18.500, 35),
+               'durmitor': (43.130, 19.030, 35), 'grmec': (44.750, 16.330, 35), 'kozara': (44.970, 17.090, 35),
+               'vucevo': (43.300, 18.800, 20),      # (the Sutjeska's Vučevo, not the village of Pljevlja GeoNames gives)
+               'zumberak': (45.730, 15.450, 25)}    # (the region, not the peak Žumberak GeoNames gives)
+
+
+@lru_cache(maxsize=1)
+def _areas() -> dict:
+    import json
+    from pathlib import Path
+    path = Path(__file__).resolve().parent.parent / 'data-extraction' / 'places' / 'areas.json'
+    return json.loads(path.read_text(encoding='utf-8'))['areas'] if path.exists() else {}
+
+
+def ground(gid) -> float:
+    """How far from its point a place may lie inside the resolved place gid: 0 for a settlement"""
+    a = _areas().get(str(gid))
+    if not a:
+        return 0
+    if a[1] in ('PCLI', 'PCL'):
+        return 500
+    return LONG_RIVER_KM if a[2] in LONG_RIVERS else AREA_KM.get(a[1], AREA_SMALL_KM)
 
 
 def place_words(v: str) -> list[str]:
@@ -270,11 +303,11 @@ def _points(text: str, unit: str) -> list[tuple]:
     places), else where most units' places put the name (two fields or more, two in three of them: "Bosiljevo" is by
     Karlovac for four fields and by Ivanić-Grad for two); nothing for a name the units read as several places. The
     resolved places have their slips (Opčine by Trieste put in Montenegro), so two places are told apart only where
-    every reading of each lies far from the other's (same_place)"""
+    every reading of each lies far from the other's (same_place). Each point is (lat, lon, the ground it covers)"""
     import resolved_places
     key = fold(text).strip()
-    if key in BATTLES:
-        return [BATTLES[key]]
+    if key in NAMED_AREAS:
+        return [NAMED_AREAS[key]]
     units, votes = _resolved()
     gids = units.get(unit, {}).get(key)
     if not gids:
@@ -286,7 +319,7 @@ def _points(text: str, unit: str) -> list[tuple]:
         if n * 3 < sum(vote.values()) * 2:
             return []
         gids = {gid}
-    points = [tuple(p) for p in (resolved_places.coords(g) for g in sorted(gids)) if p]
+    points = [(*p[:2], ground(g)) for g, p in ((g, resolved_places.coords(g)) for g in sorted(gids)) if p]
     # (a unit whose birthplaces and places of death read one name as two places: neither)
     return [] if any(km(points[0], p) > 5 for p in points[1:]) else points
 
@@ -313,6 +346,16 @@ def nearest(a: str, b: str, unit: str = '') -> float | None:
     return min(km(x, y) for x in pa for y in pb) if pa and pb else None
 
 
+def beyond(a: str, b: str, unit: str = '') -> float | None:
+    """How far two places lie apart beyond what one place may span, at the nearest of their readings: the distance less
+    NEAR_KM or the ground the larger of them covers (an area, ground()); 0 or less where one may lie in the other or
+    beside it; None where one can't be put on the map"""
+    pa, pb = points_of(a, unit), points_of(b, unit)
+    if not (pa and pb):
+        return None
+    return min(km(x, y) - max(NEAR_KM, x[2], y[2]) for x in pa for y in pb)
+
+
 def km(a, b) -> float:
     la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
     h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
@@ -328,24 +371,27 @@ def words_match(wa: list, wb: list) -> bool:
 def one_place(a: str, b: str, unit: str = '') -> bool:
     """Two places of death that name one place: a word of one is a word of the other in another case or spelling ("Šid"
     and "Sid", "Crnac" and "u s. Crnac — Slavonija", "Šujica" and "Šujica, Livno", "Žumberak" and "u Žumberku"), or a
-    village and its town, or two places of one battle, a few km apart (the resolved places, NEAR_KM)"""
+    village and its town a few km apart (the resolved places, NEAR_KM); not an area and a place in it, which the card
+    names each in its own words ("Kozara" is not Bosanska Dubica)"""
     if words_match(place_words(a), place_words(b)):
         return True
-    d = nearest(a, b, unit)
-    return d is not None and d <= NEAR_KM
+    pa, pb = points_of(a, unit), points_of(b, unit)
+    return any(km(x, y) <= NEAR_KM for x in pa for y in pb if not x[2] and not y[2])
 
 
 def same_place(a: str, b: str, unit: str = '') -> bool:
-    """Two places of death that don't say otherwise: unless both lie where the resolved places put them and further
-    apart than NEAR_KM, and no word of one is a word of the other, and neither is a region ("Srem" beside "Ilinci").
-    A place the site can't put on the map says nothing against another: the census's column, cut at 15 letters and
-    often misspelt ("Podrav slatina", "Lukovo kod bolj"), or a village of a name several bear. "Žumberak" and "Bosiljevo
-    slove" are two places (42 km); "Tovarnik" and "Šid", "Miljevina" and "Sutjeska", one (10 and 19 km)"""
+    """Two places of death that don't say otherwise: unless both lie where the resolved places put them, further apart
+    than NEAR_KM and than the ground an area among them covers (beyond: "Kozara" and Bosanska Dubica at its foot,
+    "Neretva" and Konjic, "Sutjeska" and Miljevina say the same), and no word of one is a word of the other, and neither
+    is a region or a land ("Srem" beside "Ilinci"). A place the site can't put on the map says nothing against another:
+    the census's column, cut at 15 letters and often misspelt ("Podrav slatina", "Lukovo kod bolj"), or a village of a
+    name several bear. "Žumberak" and "Bosiljevo slove" are two places (Bosiljevo lies 37 km from Žumberak's middle);
+    so are "Neretva" and "Sutjeska", two battles 80 km apart"""
     wa, wb = place_words(a), place_words(b)
     if not wa or not wb or region(wa) or region(wb) or words_match(wa, wb):
         return True
-    d = nearest(a, b, unit)
-    return d is None or d <= NEAR_KM
+    d = beyond(a, b, unit)
+    return d is None or d <= 0
 
 
 def date_parts(v: str):
