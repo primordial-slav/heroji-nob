@@ -45,6 +45,12 @@ export const familyContributions: FamilyContribution[] = [
     from: 'F. Adžić',
     date: '2026-11',
   },
+  {
+    soldierId: '0135000797', // Piperov Nikola Vlado (Borci drugih jedinica – Makedonija)
+    text: 'Ispravka godine rođenja: na njegovoj spomen-bisti u selu Stojakovo uklesana je 1919. Popis iz 1964. navodi 1920.',
+    from: 'ispravka po prijavi',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
