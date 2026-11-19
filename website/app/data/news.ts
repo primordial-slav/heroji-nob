@@ -65,7 +65,7 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-11-05',
     text: {
-      sr: 'Borac koji je bio u više jedinica sada u zapisu ima red za svaku, s bataljonom i dužnošću. Zapisi iz knjiga stoje na jednom mestu, a duži se otvaraju ceo.',
+      sr: 'Borac koji je bio u više jedinica sada u zapisu ima red za svaku, s bataljonom i dužnošću. Zapisi iz knjiga stoje na jednom mestu, a duži se otvaraju u celini.',
       sl: 'Borec, ki je bil v več enotah, ima zdaj v zapisu vrstico za vsako, z bataljonom in dolžnostjo. Zapisi iz knjig so zdaj zbrani na enem mestu, daljše pa lahko odprete v celoti.',
       mk: 'Борец што бил во повеќе единици сега во записот има ред за секоја, со баталјонот и должноста. Записите од книгите сега се на едно место, а подолгите можете да ги отворите во целост.',
       en: 'A fighter who served in several units now has a line for each in his record, with his battalion and duty. Entries from the books stand in one place, and longer ones open in full.',
