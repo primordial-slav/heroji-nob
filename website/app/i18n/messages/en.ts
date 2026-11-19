@@ -76,6 +76,9 @@ export const en: Messages = {
     censusLead: 'Fighters killed or dead in the war whose unit is not on the site yet, by republic and province.',
     /** The wartime portraits in the home page's margins */
     rails: 'Partisans in wartime photographs',
+    /** The switch at the top of the right margin: it stops the drifting portraits, then starts them again */
+    railsStop: 'Pause the portraits',
+    railsStart: 'Resume the portraits',
     bandCredit: 'In the photograph:',
   },
 

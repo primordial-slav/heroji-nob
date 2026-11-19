@@ -73,6 +73,9 @@ export const sl: Messages = {
     censusLead: 'Padli in umrli borci, katerih enote še ni na strani, po republikah in pokrajinah.',
     /** The wartime portraits in the home page's margins */
     rails: 'Borci na fotografijah iz vojne',
+    /** The switch at the top of the right margin: it stops the drifting portraits, then starts them again */
+    railsStop: 'Ustavi portrete',
+    railsStart: 'Zaženi portrete',
     bandCredit: 'Na fotografiji:',
   },
 

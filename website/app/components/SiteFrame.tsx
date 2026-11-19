@@ -2,6 +2,7 @@ import type { ComponentType, ReactNode } from 'react'
 import HomeLink from './HomeLink'
 import Navigation from './Navigation'
 import ThemeToggle from './ThemeToggle'
+import RailSwitch from './RailSwitch'
 import LanguageMenu from './LanguageMenu'
 import SiteFooter from './SiteFooter'
 import { ThemeProvider } from '../lib/ThemeContext'
@@ -22,6 +23,7 @@ export default function SiteFrame({ lang, Language, children }: { lang: Lang; La
             <Navigation />
             <LanguageMenu />
             <ThemeToggle />
+            <RailSwitch />
           </div>
         </header>
         <main>

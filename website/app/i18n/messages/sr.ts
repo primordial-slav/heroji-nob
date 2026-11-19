@@ -76,6 +76,9 @@ export const sr = {
     censusLead: 'Poginuli i umrli borci čija jedinica još nije na sajtu, po republikama i pokrajinama.',
     /** The wartime portraits in the home page's margins */
     rails: 'Borci na fotografijama iz rata',
+    /** The switch at the top of the right margin: it stops the drifting portraits, then starts them again */
+    railsStop: 'Zaustavi portrete',
+    railsStart: 'Pokreni portrete',
     bandCredit: 'Na fotografiji:',
   },
 

@@ -4053,19 +4053,34 @@ button.kin-row:not(:disabled):hover .kin-label {
   mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
 }
 
-/* Two identical sets, so moving up by half loops without a seam: about 10px a second */
+/* Two identical sets, so moving up by half loops without a seam. The time of one set follows its number of faces,
+   about 10 px a second (PortraitRails.tsx sets it); this one is only until the script runs. */
 .rail-track {
   animation: rail-drift 420s linear infinite;
 }
 
 .rail-col + .rail-col .rail-track {
-  animation-duration: 480s;
   animation-delay: -120s;
 }
 
 .rail-window:hover .rail-track,
-.rail-window:focus-within .rail-track {
+.rail-window:focus-within .rail-track,
+[data-rails-still] .rail-track {
   animation-play-state: paused;
+}
+
+/* Their switch in the header (RailSwitch.tsx), a pause icon framed like the theme's buttons and close to them, its
+   words ("Zaustavi portrete", "Pokreni portrete") in the tooltip: only on a page with the portraits, where the
+   margins show them */
+.rail-switch {
+  display: none;
+  margin-left: calc(var(--space-2) - var(--space-4));
+}
+
+@media (min-width: 84rem) {
+  html:has(.rails) .rail-switch {
+    display: inline-flex;
+  }
 }
 
 @keyframes rail-drift {
@@ -4074,9 +4089,14 @@ button.kin-row:not(:disabled):hover .kin-label {
   }
 }
 
+/* Where the system asks for less motion the faces stand still, and there is nothing to stop */
 @media (prefers-reduced-motion: reduce) {
   .rail-track {
     animation: none;
+  }
+
+  .rail-switch {
+    display: none;
   }
 }
 

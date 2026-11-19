@@ -10,7 +10,14 @@ import type { HomePictures } from '@/app/lib/homePictures'
 
 // Wartime portraits drifting slowly up the empty margins beside the home page column, on screens wide enough to
 // have margins (globals.css hides them below 84rem), in a new order on every visit. Pointing at a face or focusing
-// it stops the drift, and a click opens the soldier's record.
+// it stops the drift, and a click opens the soldier's record. The switch in the header (RailSwitch.tsx) stops them
+// all.
+
+// A face takes about 212 px with its name and the gap under it, so one set of n faces taking n × 21 s moves at
+// about 10 px a second, some ninety seconds on the screen for each face; the right column a little slower, so the
+// two never move in step. The time follows the number of faces: a fixed one (420 s) had them run faster with every
+// portrait added, until a visitor saw them cross the screen in six seconds (150 px a second, 2026-11-19).
+const SECONDS_PER_FACE = [21, 24]
 
 interface Face {
   id: string
@@ -106,7 +113,7 @@ export default function PortraitRails({ pictures, soldiers, onOpen }: PortraitRa
       {sides.map((side, i) => (
         <div key={i} className="rail-col">
           <div className="rail-window">
-            <div className="rail-track">
+            <div className="rail-track" style={{ animationDuration: `${side.length * SECONDS_PER_FACE[i]}s` }}>
               <div className="rail-set">
                 {side.map((f) => <RailFace key={f.id} face={f} onOpen={onOpen} />)}
               </div>

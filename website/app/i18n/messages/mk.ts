@@ -86,6 +86,9 @@ export const mk: Messages = {
     censusLead: 'Загинати и починати борци чија единица сè уште ја нема на сајтот, по републики и покраини.',
     /** The wartime portraits in the home page's margins */
     rails: 'Борци на фотографии од војната',
+    /** The switch at the top of the right margin: it stops the drifting portraits, then starts them again */
+    railsStop: 'Запри ги портретите',
+    railsStart: 'Пушти ги портретите',
     bandCredit: 'На фотографијата:',
   },
 
