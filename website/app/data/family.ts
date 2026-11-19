@@ -112,6 +112,13 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0042000145', // Gaković Gojka Milorad, Banjani; the same man as Gaković Milorad 0013020151 of the 6. krajiška (linked)
+    photo: '0042000145-1.jpg',
+    text: 'Rođen u Banjanima kod Bosanskog Broda. Pre rata trgovac, povezan sa KPJ, ali nije bio aktivan član. Učesnik NOB-a od 1941. Prebacio je brojnu porodicu u Vojvodinu pre pokolja, pa se vratio u selo. Tifusar na Neretvi, ranjen na Sutjesci. U sastavu Šeste krajiške, a zatim 7. istočnobosanske muslimanske divizije. U memoarima saboraca pominje se pod nadimkom „Crni”. Predvodio je akciju zauzimanja i uništenja rudnika Ljubija 1943.',
+    from: 'B. Obradović, unuk',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122957805', // Kupres Marka Miloš of Kožuhe (Doboj), narodni heroj, Borci drugih jedinica
     text: 'U čast ovog narodnog heroja Kulturno-umjetničko društvo u Kožuhama nosi ime po njemu.',
     from: 'N. Kaišarević',
