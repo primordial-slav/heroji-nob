@@ -67,3 +67,24 @@ export function watchData() {
   watch(path.join(root, 'data', 'events'), (name) => name.endsWith('.json'))
   run()
 }
+
+// Next restarts a dev server only when its JavaScript heap nears its limit, half the machine's memory, and what grew
+// over days of code changes was largely outside that heap (the search data's buffers): the main checkout's server
+// reached 6 GB on a 16 GB machine (2026-11-19). Past this much of both it exits with the code Next's `next dev` takes as
+// "restart" (RESTART_EXIT_CODE in next/dist/server/lib/utils), and comes back in a few seconds with nothing held. Not
+// `rss`, which on Windows is the working set: under memory pressure it showed 182 MB of the 6 GB the server held.
+const MOST_MB = Number(process.env.DEV_MEMORY_LIMIT_MB) || 2500
+const RESTART_EXIT_CODE = 77
+
+export function watchMemory() {
+  const shared = globalThis as unknown as { memoryWatch?: boolean }
+  if (shared.memoryWatch) return
+  shared.memoryWatch = true
+  setInterval(() => {
+    const { heapUsed, external } = process.memoryUsage()
+    const mb = Math.round((heapUsed + external) / 1048576)
+    if (mb < MOST_MB) return
+    console.warn(`The dev server holds ${mb} MB (more than ${MOST_MB}); restarting it`)
+    process.exit(RESTART_EXIT_CODE)
+  }, 60_000).unref()
+}

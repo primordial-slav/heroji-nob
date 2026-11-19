@@ -18,14 +18,19 @@ export const maxDuration = 30
 const LONGEST_QUERY = 400
 
 // Written by scripts/prepare-data.ts (before the build, and under `next dev` whenever a data file changes) and read
-// once per instance of the function; under `next dev`, again when it has been written anew
-let loaded: { mtime: number; data: SearchData } | null = null
+// once per instance of the function; under `next dev`, again when it has been written anew. A copy is about 200 MB,
+// most of it outside the JavaScript heap, so it is kept on globalThis: `next dev` evaluates this module anew after a
+// code change, and a copy per evaluation took the dev server to 6 GB over three days (2026-11-19)
+const shared = globalThis as unknown as { searchData?: { mtime: number; data: SearchData } }
 
 function searchData(): SearchData {
   const dir = path.join(process.cwd(), 'search-data')
   const mtime = process.env.NODE_ENV === 'development' ? fs.statSync(path.join(dir, 'index.bin.gz')).mtimeMs : 0
-  if (!loaded || loaded.mtime !== mtime) loaded = { mtime, data: readSearchData(dir) }
-  return loaded.data
+  if (shared.searchData?.mtime !== mtime) {
+    shared.searchData = undefined
+    shared.searchData = { mtime, data: readSearchData(dir) }
+  }
+  return shared.searchData.data
 }
 
 export function GET(request: Request) {
