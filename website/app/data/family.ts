@@ -48,7 +48,7 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0135000797', // Piperov Nikola Vlado (Borci drugih jedinica – Makedonija)
     text: 'Ispravka godine rođenja: na njegovoj spomen-bisti u selu Stojakovo uklesana je 1919. Popis iz 1964. navodi 1920.',
-    from: 'ispravka po prijavi',
+    from: 'Ispravka po prijavi',
     date: '2026-11',
   },
 ]
