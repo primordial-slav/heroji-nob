@@ -8,9 +8,11 @@ import { sourceAuthor } from '@/app/i18n/sourceNames'
 
 /** The book (or web page) an entry was printed in, as the Sources page lists it */
 export function sourceOf(entry: SoldierSource) {
-  return entry.pdf_file
-    ? sources.find((s) => s.pdfPath === `/pdfs/${entry.pdf_file}`)
-    : sources.find((s) => entry.source_url?.startsWith(s.pdfPath))
+  if (entry.pdf_file) return sources.find((s) => s.pdfPath === `/pdfs/${entry.pdf_file}`)
+  const url = entry.source_url
+  // a Poreklo book by its key, whole ("poreklo:hronika-medak" must not find "poreklo:hronika-me..."); a web page's
+  // entry by the address its page starts with
+  return url?.startsWith('poreklo:') ? sources.find((s) => s.pdfPath === url) : sources.find((s) => url?.startsWith(s.pdfPath))
 }
 
 export function sourceTitle(entry: SoldierSource): string {

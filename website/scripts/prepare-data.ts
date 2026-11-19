@@ -16,6 +16,7 @@ import { buildSearchData, writeSearchData } from '@/app/lib/searchData'
 import { dayKey, eachListedOnce, encodeKinRow, encodeRow, listOnce, type PlacedRow } from '@/app/lib/searchIndex'
 import type { LifeEvent, Soldier, WarEvent } from '@/app/lib/types'
 import type { GalleryItem } from '@/app/views/GalleryClient'
+import porekloBooks from './poreklo-books.json'
 
 // Writes, from the unit files, what the site's pages load as data (lib/dataFiles.ts) to public/data/, the search the
 // server answers to search-data/ (lib/searchData.ts), and what the pages read while they are built to generated/
@@ -31,8 +32,9 @@ const force = process.argv.includes('--force')
 const MANIFEST = path.join(root, GENERATED_DIR, 'manifest.json')
 const LOCK = path.join(root, GENERATED_DIR, 'prepare-data.lock')
 const SEARCH_DIR = path.join(root, 'search-data')
-// The form of the records' and places' files: a change to it writes them all again
-const RECORDS_FORM = `${RECORDS_PER_PART}:2`
+// The form of the records' and places' files: a change to it writes them all again (3: the Poreklo library's addresses
+// replaced by their books' keys)
+const RECORDS_FORM = `${RECORDS_PER_PART}:3`
 const PLACES_FORM = `${PLACE_CHUNK_BYTES}:1`
 
 interface Manifest {
@@ -115,8 +117,36 @@ const eventsFile = (unit: Unit) => path.join('data', 'life-events', unit.dataFil
 const warEventsFile = (unit: Unit) => path.join('data', 'events', unit.dataFile)
 const partsOf = (count: number) => Math.ceil(count / RECORDS_PER_PART)
 
+// The Poreklo library's books are named on the site and never linked, and their addresses are not published at all
+// (the user, 2026-11-19): an entry's source_url in the library becomes its book's key, "poreklo:<source id>", which
+// data/sources.ts lists (lib/recordSources.ts finds the book by it). The addresses are in scripts/poreklo-books.json,
+// which only this script reads; the longest first, so a book is never taken for one whose address is a prefix of its.
+const LIBRARY = 'https://biblioteka.poreklo.rs/'
+const POREKLO_BOOKS = [...porekloBooks].sort((a, b) => b.url.length - a.url.length)
+let unknownLibraryPages = 0
+
+function hideLibrary(value: unknown): void {
+  if (Array.isArray(value)) {
+    value.forEach(hideLibrary)
+  } else if (value && typeof value === 'object') {
+    const entry = value as Record<string, unknown>
+    for (const key of Object.keys(entry)) {
+      const field = entry[key]
+      if (key === 'source_url' && typeof field === 'string' && field.startsWith(LIBRARY)) {
+        const book = POREKLO_BOOKS.find((b) => field.startsWith(b.url))
+        if (!book) unknownLibraryPages++
+        entry[key] = book ? `poreklo:${book.id}` : 'poreklo:'
+      } else if (field && typeof field === 'object') {
+        hideLibrary(field)
+      }
+    }
+  }
+}
+
 function readUnit(unit: Unit): Soldier[] {
-  return JSON.parse(fs.readFileSync(path.join(root, unitFile(unit)), 'utf8'))
+  const soldiers: Soldier[] = JSON.parse(fs.readFileSync(path.join(root, unitFile(unit)), 'utf8'))
+  hideLibrary(soldiers)
+  return soldiers
 }
 
 // ── The outputs ──
@@ -331,6 +361,8 @@ async function main() {
     }
     fs.mkdirSync(path.dirname(MANIFEST), { recursive: true })
     fs.writeFileSync(MANIFEST, JSON.stringify(next))
+    // a page of the library whose book data/sources.ts doesn't list: published as "poreklo:", named as no book
+    if (unknownLibraryPages) console.warn(`Poreklo library pages of no listed book: ${unknownLibraryPages} (add the book to data/sources.ts and scripts/poreklo-books.json)`)
     const seconds = ((Date.now() - started) / 1000).toFixed(1)
     console.log(done.length ? `Data (public/${DATA_DIR}): ${done.join('; ')}, in ${seconds} s` : `Data (public/${DATA_DIR}): up to date`)
   } finally {

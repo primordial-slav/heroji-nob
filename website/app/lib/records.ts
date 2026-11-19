@@ -28,8 +28,11 @@ export function entriesOf(soldier: Soldier): SoldierSource[] {
 
 export const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file != null
 
-/** A book in the Poreklo digital library (biblioteka.poreklo.rs): scanned there, open to its members only */
-export const isPoreklo = (url?: string) => !!url?.startsWith('https://biblioteka.poreklo.rs/')
+/** A book in the Poreklo digital library (biblioteka.poreklo.rs): scanned there, open to its members only. The site
+ * names it and never links it: its key is "poreklo:<source id>" (data/sources.ts), and the published data carry that
+ * key instead of the library's address (scripts/prepare-data.ts, the user's wish of 2026-11-19). The address itself is
+ * still recognised, so a record that kept one is never shown as a link either. */
+export const isPoreklo = (url?: string) => !!url && (url.startsWith('poreklo:') || url.startsWith('https://biblioteka.poreklo.rs/'))
 
 /** What a soldier's family sent from its papers (a military booklet, a decision, a photograph), for a man no book prints:
  * the source "Porodična arhiva", named and never linked */
