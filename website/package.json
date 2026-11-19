@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 127.0.0.1",
-    "build": "npm run prepare-data && next build",
+    "build": "npm run prepare-data && next build && node scripts/drop-build-inputs.mjs",
     "prepare-data": "esbuild scripts/prepare-data.ts --bundle --platform=node --format=cjs --outfile=.next/cache/prepare-data.cjs --log-level=warning && node --max-old-space-size=6144 .next/cache/prepare-data.cjs",
     "start": "next start"
   },
