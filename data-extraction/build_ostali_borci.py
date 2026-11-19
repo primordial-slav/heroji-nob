@@ -49,7 +49,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 from extract_structured_fields import NAME_LISTS, fix_place  # noqa: E402
-from name_utils import BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES, clean_name_field, to_title_case  # noqa: E402
+from name_utils import (BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES, REGIONAL_GENITIVES, clean_name_field,  # noqa: E402
+                        genitive_to_nominative, to_title_case)
 import convert_fathers_genitive as fathers_genitive  # noqa: E402
 from safe_write import write_text  # noqa: E402  (E: can refuse a write for a moment, OSError 22: it stopped a rebuild 2026-11-19)
 
@@ -231,6 +232,18 @@ ONE_MAN = [
                                  'in 1944: the Slunj-Veljun book and the 1964 census print Mane as the father, the Primišlje '
                                  'list "Miloša Mane" turns it round'),
     ('9035001457', '9035002190', 'Bubanja Miljanov Milonja of Bubanje, born 1912, fell at Kolašin: under Berane and under Bijelo Polje, the scan reading "Minjanov"'),
+    # one man until the Spomenica's surnames were read by its alphabetical order (2026-11-03): the census's text has
+    # him as Usović, as the Spomenica's scan had, and the record kept only the census's father, from an entry it no
+    # longer held
+    ('9035005111', '9023007234', 'Ćosović Veljko of Vrela (Žabljak), son of Đorđije ("Đ."), born 1907, fell 1944: '
+                                 'the census\'s "Usović"'),
+    # Anica-Anđa, Vučić's daughter, of Podbišće by Polja, born 1922, fell at Javorje in Gornja Morača in 1944, a youth
+    # leader of the 7. crnogorska omladinska brigada: the Kolašin book and the Spomenica's chapters of Kolašin ("V.",
+    # Polja, G. Morača) and Mojkovac (no father, Podbišće, Javorje); one record until 2026-11-03
+    ('9090000524', '9035005457', 'Đurašinović Vučića Anica of Podbišće, born 1922, fell 1944 in Gornja Morača: the '
+                                 'Kolašin book and the Spomenica\'s Kolašin chapter ("V.")'),
+    ('9035005457', '9035006621', 'Đurašinović Anica, born 1922, fell 1944: the Spomenica\'s Kolašin (Polja, G. Morača) '
+                                 'and Mojkovac (Podbišće, Javorje) chapters'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
@@ -591,6 +604,13 @@ def from_genitive(word: str, local: Counter | None = None) -> str:
     return nom if nom and nom != word else ''
 
 
+def normalizer_reads(word: str) -> bool:
+    """normalize_all_json.py will put this printed genitive in the nominative (its own dictionary: "Milivoja", which
+    from_genitive leaves, Milivoje and Milivoj being both common)"""
+    word = to_title_case(clean_name_field(word))
+    return word not in REGIONAL_GENITIVES and genitive_to_nominative(word) not in ('', word)
+
+
 def from_possessive_or_genitive(word: str, local: Counter | None = None) -> str:
     """A book of possessive fathers prints some in the genitive too: "Jova" and "Steva" are Jovo's and Stevo's, not a
     daughter's possessive of "J" and "St" (from_possessive alone gave "J" and "Sto"): the reading whose name the site
@@ -638,13 +658,18 @@ def chosen_fathers() -> dict[str, tuple[str, str]]:
     choice reads the site's given names and how often a form still stands unconverted in the units, which change as
     the units' own fathers are put in the nominative (by corrections), so a run of the same entries would choose
     otherwise ("Mila" Milo or Mile, "Save" Sava or as printed). 122's records have no corrections to hold the choice:
-    it stays while he is printed so, as his ID does. Blank a fathers_name in the file to have it chosen again."""
+    it stays while he is printed so, as his ID does. Blank a fathers_name in the file to have it chosen again.
+    The printed form is kept as the normalizer leaves it, whichever file this run reads: one a run of this script wrote
+    still holds him as printed ("Đ.", "JOSIPA", "Marka."), and a second run before normalize_all_json had compared
+    that with the cleaned form and lost the choice (2026-11-19: Ćosović Veljko's Đorđije became the initial "Đ").
+    An initial is never a choice to keep."""
     if not OUT.exists():
         return {}
     out = {}
     for r in json.loads(OUT.read_text(encoding='utf-8')):
-        printed, nom = r.get('middle_name') or '', r.get('fathers_name') or ''
-        if printed and nom and nom != printed:
+        printed = to_title_case(clean_name_field(r.get('middle_name') or ''))
+        nom = r.get('fathers_name') or ''
+        if printed and len(re.sub(r'\W', '', nom)) > 2 and nom != printed:
             out[r['soldier_id']] = (printed, nom)
     return out
 
@@ -813,6 +838,18 @@ def main():
             # read as that entry's book prints him (nominative, possessive or genitive)
             given = lambda m, n: len(re.sub(r'\W', '', m.get('fathers_name') or '')) > n
             fsrc = first if given(first, 2) else next((m for m in g if given(m, 2)), None)
+            # a possessive the scan spoiled, which no name reads from ("Milivojsv", "Sgankov"), gives way to an entry
+            # whose father its book's rule reads (another book's "Milivoja", "Stanka", the census's nominative):
+            # Drašković Ilija had kept the lead's initial, others the spoiled form; a rare name's "Mišurov" stays where
+            # the other book's "Mišura" reads no better, and a book's own nominative ("Đuro") is never set aside
+            # (a genitive also where the normalizer's own dictionary reads it, as it will: "Milivoja" Milivoje)
+            reads = lambda m: given(m, 2) and bool(
+                m['fathers_name'] if m['_vol'] or m['_book'] in NOMINATIVE_FATHERS else
+                from_possessive_or_genitive(m['fathers_name'], book_given[m['_book']])
+                if m['_book'] in POSSESSIVE_FATHERS else
+                from_genitive(m['fathers_name'], book_given[m['_book']]) or normalizer_reads(m['fathers_name']))
+            if fsrc and fsrc['_book'] in POSSESSIVE_FATHERS and not reads(fsrc):
+                fsrc = next((m for m in g if reads(m)), fsrc)
             fsrc = fsrc or (first if given(first, 0) else next((m for m in g if given(m, 0)), first))
             father = fsrc.get('fathers_name') or ''
             census = [m for m in g if m['_vol']]
@@ -923,9 +960,11 @@ def main():
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
         # records that hold its man (2026-10-31: they had shown nowhere)
         ON_SITE.parent.mkdir(parents=True, exist_ok=True)
-        ON_SITE.write_text(json.dumps([{'entry': m['soldier_id'], 'book': f"{CENSUS}-{m['_vol']}" if m['_vol'] else m['_book'],
-                                        'name': m['name'], 'with': m['_with']} for m in on_site],
-                                      ensure_ascii=False, indent=0), encoding='utf-8')
+        # (through safe_write too: a run stopped here by E:'s OSError 22 leaves the files written, and run again it
+        # reads its own output before normalize_all_json has cleaned it; see chosen_fathers)
+        write_text(ON_SITE, json.dumps([{'entry': m['soldier_id'], 'book': f"{CENSUS}-{m['_vol']}" if m['_vol'] else m['_book'],
+                                         'name': m['name'], 'with': m['_with']} for m in on_site],
+                                       ensure_ascii=False, indent=0))
     else:
         import random
         random.seed(1)
