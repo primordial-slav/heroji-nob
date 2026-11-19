@@ -148,7 +148,15 @@
         "unit_file": "22-divizija-soldiers.json"
       }
     ],
-    "death_place": "Sofija, Bugarska"
+    "death_place": "Sofija, Bugarska",
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Vlasotince"
+        }
+      ]
+    }
   },
   {
     "last_name": "Andrejević",
@@ -3851,7 +3859,7 @@
       "death": [
         {
           "date": "18.11.1944",
-          "place": "Oštro koplje"
+          "place": "Oštro koplje, Ko"
         },
         {
           "date": "16.11.1944",
@@ -4552,7 +4560,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.02.1945",
+          "place": "D. Trešnjevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Krstić",
@@ -5290,7 +5306,7 @@
       "death": [
         {
           "date": "09.02.1945",
-          "place": "Sakar"
+          "place": "Donja Trešnjica, Mali Zvornik"
         }
       ]
     }
@@ -5438,6 +5454,10 @@
     "birth_date": "10.04.1923",
     "variants": {
       "death": [
+        {
+          "date": "1945",
+          "place": "Vinkovci"
+        },
         {
           "date": "08.02.1945",
           "place": "Sakar"
@@ -5855,6 +5875,10 @@
         "1922"
       ],
       "death": [
+        {
+          "date": "1944",
+          "place": "Zvornik"
+        },
         {
           "date": "09.02.1945"
         }
@@ -7099,7 +7123,15 @@
     "birth_year": "1923",
     "borrowed": [
       "birth_year"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Sakar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mladenović",
@@ -8371,7 +8403,15 @@
         "unit_detail": "12. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Vinkovci"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pavlović",
@@ -8667,7 +8707,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "25.01.1945",
+          "place": "Obrenovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Pešić",
@@ -8869,6 +8917,10 @@
         "1923"
       ],
       "death": [
+        {
+          "date": "09.02.1945",
+          "place": "D. Trešnjevica"
+        },
         {
           "date": "08.02.1945",
           "place": "D. Trešnjevica"
@@ -9386,8 +9438,12 @@
     "variants": {
       "death": [
         {
+          "date": "1945",
+          "place": "Bajina Bašta"
+        },
+        {
           "date": "09.02.1945",
-          "place": "Sakar"
+          "place": "Donja Trešnjica, Mali Zvornik"
         }
       ]
     }
@@ -9448,7 +9504,15 @@
     "birth_year": "1919",
     "borrowed": [
       "birth_year"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Belo Polje"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ristić",
@@ -9595,7 +9659,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Simonović",
@@ -9969,7 +10041,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -10404,7 +10484,15 @@
     "birth_year": "1901",
     "borrowed": [
       "birth_year"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Veljova glava"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stanković",
@@ -10821,7 +10909,15 @@
         "unit_detail": "12. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "09.02.1945",
+          "place": "D. Trešnjevica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stefanović",
@@ -10959,7 +11055,19 @@
     "birth_year": "1923",
     "borrowed": [
       "birth_year"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Leskovac"
+        },
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stefanović",
@@ -11728,7 +11836,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.08.1944",
+          "place": "Klinovac"
+        }
+      ]
+    }
   },
   {
     "last_name": "Stojković",
@@ -12062,7 +12178,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Crna Trava"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tasić",
@@ -13818,7 +13942,15 @@
         "unit_detail": "10. srpska brigada",
         "unit_file": "22-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "17.02.1945",
+          "place": "Loznica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đorđević",
@@ -14000,7 +14132,15 @@
     "borrowed": [
       "birth_year",
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Bajina Bašta"
+        }
+      ]
+    }
   },
   {
     "last_name": "Živković",
