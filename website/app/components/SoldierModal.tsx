@@ -1,6 +1,6 @@
 'use client'
 
-import { lazy, Suspense, useCallback, useEffect, useId, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { Soldier, SoldierSource } from '@/app/lib/types'
 import { SoldierName } from './SoldierResults'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon } from './Icons'
@@ -86,9 +86,6 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
   const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
     .filter((u, i, list): u is string => Boolean(u) && list.indexOf(u) === i)
   const hasLine = (soldier.life_events?.length ?? 0) > 0
-  // The record's own entry stays open; its other books fold under it
-  const [moreOpen, setMoreOpen] = useState(false)
-  const moreId = useId()
   // With the printed lines shown, the page they come from folds, as the comrades do, till it is asked for
   const foldPage = pages.length > 0
   const [pageOpen, setPageOpen] = useState(false)
@@ -137,7 +134,6 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
   useEffect(() => {
     setShownPage(0)
     setFlash(0)
-    setMoreOpen(false)
     setPageOpen(false)
     setKinRequest(null)
     // the counts are not cleared here: on a first opening the folds may have counted him before this runs
@@ -217,48 +213,11 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
   const facts: Fact[] = recordFacts(soldier, t, unitRecord?.name ?? unit, unitText.shortName).map((f) => ({ ...f, link: links[f.key] }))
   const events = eventLines(soldier, t)
 
-  // The entries as text and the page they stand on
+  // The page the entry stands on, and nothing else: the entries themselves, each book's, are under "Reference" above
+  // (EntryStrip). Until 2026-11-19 the fold also gave the entries as text, a "još N zapisa" fold and the book's name
+  // twice more (the user: "messy and redundant and confusing"); now the book and page are named once, over the viewer
   const sourceBody = (
     <>
-      {entries.length === 1 && soldier.additional_info && (
-        <p className="modal-entry">{soldier.additional_info}</p>
-      )}
-
-      {entries.length > 1 && (
-        <div className="record-entries">
-          <p className="modal-source-label">{entryLabel(entries[0])}</p>
-          {entries[0].additional_info && <p className="modal-entry">{entries[0].additional_info}</p>}
-          <div className="entries-more">
-            <button type="button" className="entries-more-button" aria-expanded={moreOpen} aria-controls={moreId}
-              onClick={() => setMoreOpen((open) => !open)}>
-              <ChevronRightIcon size={16} />
-              <span>{t.record.moreEntries(entries.length - 1)}</span>
-            </button>
-            {moreOpen ? (
-              <ol className="modal-sources entries-more-list" id={moreId} aria-label={t.record.entries}>
-                {entries.slice(1).map((e, k) => (
-                  <li key={k} className="modal-source-entry">
-                    <p className="modal-source-label">{entryLabel(e)}</p>
-                    {e.additional_info && <p className="modal-entry">{e.additional_info}</p>}
-                    {hasPage(e) && (
-                      <button type="button" className="entry-show-page" onClick={() => showEntry(k + 1)}>
-                        {t.record.showPage}
-                      </button>
-                    )}
-                  </li>
-                ))}
-              </ol>
-            ) : (
-              // the books it holds, each named once
-              <p className="entries-more-books">
-                {entries.slice(1).map((e) => sourceTitle(e).split(' — ')[0])
-                  .filter((b, i, list) => list.indexOf(b) === i).join(' · ')}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* Over the viewer, outside it, so the menu keeps its focus while the other book's page loads: the book
           shown, and with more than one, a menu of the others (the select lies unseen over the name) */}
       {page && (
@@ -391,7 +350,8 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
                 <button type="button" className="record-fold-row" aria-expanded={pageOpen} onClick={() => setPageOpen((open) => !open)}>
                   <span className="record-fold-text">
                     <span className="record-fold-title">{t.record.wholePage}</span>
-                    {page && <span className="record-fold-summary">{bookLabel(page)}</span>}
+                    {/* open, the viewer's own top line names the book and page */}
+                    {page && !pageOpen && <span className="record-fold-summary">{bookLabel(page)}</span>}
                   </span>
                   <ChevronDownIcon size={18} />
                 </button>

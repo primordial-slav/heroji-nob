@@ -3,10 +3,11 @@
 import { useEffect, useState } from 'react'
 import { units } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
-import { FATES, NO_FILTERS, RANGES, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
+import { FATES, NO_FILTERS, RANGES, birthYear, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
 import { shareLink } from '@/app/lib/share'
 import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import { FilterIcon, ShareIcon } from './Icons'
+import s from './SearchFilters.module.css'
 
 // The units in the order the home page lists them: by formation date, undated last
 const UNIT_OPTIONS = [...units].sort((a, b) =>
@@ -47,7 +48,7 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
     <div className="filters" id={id}>
       <div className="filter filter-year">
         <label htmlFor={`${id}-year`}>{t.birthYear}</label>
-        <div className="filter-pair">
+        <div className={`filter-pair ${s.pair}`}>
           <input
             id={`${id}-year`}
             type="text"
@@ -65,6 +66,17 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
           >
             {RANGES.map((r) => <option key={r} value={r}>{r ? `± ${r}` : t.exact}</option>)}
           </select>
+          {/* the records whose entries print no birth year, which a year leaves out: pressed, they are kept too */}
+          <button
+            type="button"
+            className={s.undated}
+            aria-pressed={filters.withoutYear}
+            disabled={birthYear(filters.year) === null}
+            title={birthYear(filters.year) === null ? t.withoutYearHint : undefined}
+            onClick={() => set({ withoutYear: !filters.withoutYear })}
+          >
+            {t.withoutYear}
+          </button>
         </div>
       </div>
 

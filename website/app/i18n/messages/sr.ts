@@ -82,6 +82,9 @@ export const sr = {
     birthYear: 'Godina rođenja',
     range: 'Odstupanje od godine rođenja',
     exact: 'tačno',
+    /** Beside the year: also the records whose entries print no birth year */
+    withoutYear: '+ bez godine rođenja',
+    withoutYearHint: 'Najpre upišite godinu',
     place: 'Mesto',
     placeHint: 'selo ili grad',
     unit: 'Jedinica',

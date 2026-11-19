@@ -88,6 +88,9 @@ export const mk: Messages = {
     birthYear: 'Година на раѓање',
     range: 'Отстапување од годината на раѓање',
     exact: 'точно',
+    /** Beside the year: also the records whose entries print no birth year */
+    withoutYear: '+ без година на раѓање',
+    withoutYearHint: 'Најпрво внесете година',
     place: 'Место',
     placeHint: 'село или град',
     unit: 'Единица',

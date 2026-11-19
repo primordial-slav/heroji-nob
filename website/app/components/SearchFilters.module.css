@@ -1,0 +1,55 @@
+/* "+ bez godine rođenja" beside the birth year (the user's choice of 2026-11-19 among eight mockups, admin/mockups/
+   filter-godina.html on the admin-panel branch, no. 4): pressed, a year keeps the records whose entries print none.
+   On the unit page it is drawn like the fields there; in the home page's red band, white on the red, white when on. */
+
+.pair {
+  flex-wrap: wrap;
+}
+
+.undated {
+  height: 2.25rem;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.undated:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+
+.undated[aria-pressed='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--ground);
+  font-weight: 600;
+}
+
+.undated:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.undated:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+:global(.finder) .undated {
+  border-color: rgba(255, 255, 255, 0.75);
+  color: var(--on-red);
+}
+
+:global(.finder) .undated:hover:not(:disabled) {
+  border-color: var(--on-red);
+}
+
+:global(.finder) .undated[aria-pressed='true'] {
+  background: var(--surface);
+  border-color: var(--surface);
+  color: var(--red-ink);
+}

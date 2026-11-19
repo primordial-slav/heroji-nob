@@ -83,6 +83,9 @@ export const en: Messages = {
     birthYear: 'Year of birth',
     range: 'Years either side',
     exact: 'exact',
+    /** Beside the year: also the records whose entries print no birth year */
+    withoutYear: '+ no birth year',
+    withoutYearHint: 'Type a year first',
     place: 'Place',
     placeHint: 'village or town',
     unit: 'Unit',
