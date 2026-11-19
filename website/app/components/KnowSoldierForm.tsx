@@ -14,7 +14,8 @@ const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EM
 // can't read cross-origin. So the text goes through AJAX (and we know it arrived), the photo separately here.
 const PHOTO_ENDPOINT = `https://formsubmit.co/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // The form service takes at most 10 MB per message
-const MAX_PHOTO_BYTES = 9_500_000
+const MAX_FILE_BYTES = 9_500_000
+const MAX_FILES = 6
 
 type Status = 'closed' | 'open' | 'sending' | 'sent' | 'error'
 
@@ -27,28 +28,28 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const [status, setStatus] = useState<Status>('closed')
   const [relation, setRelation] = useState('')
   const [story, setStory] = useState('')
-  const [photo, setPhoto] = useState<File | null>(null)
-  const [photoError, setPhotoError] = useState('')
+  const [files, setFiles] = useState<File[]>([])
+  const [fileError, setFileError] = useState('')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [mayPublish, setMayPublish] = useState(false)
-  const [photoLost, setPhotoLost] = useState(false)
+  const [mayShowName, setMayShowName] = useState(false)
+  const [filesLost, setFilesLost] = useState(false)
   const fileInput = useRef<HTMLInputElement>(null)
 
-  const canSend = (story.trim() || photo) && name.trim() && !photoError
+  const canSend = (story.trim() || files.length > 0) && name.trim()
 
-  const choosePhoto = (file: File | null) => {
-    setPhotoError('')
-    setPhoto(null)
-    if (!file) {
-      if (fileInput.current) fileInput.current.value = ''
+  const addFiles = (chosen: FileList | null) => {
+    setFileError('')
+    const list = Array.from(chosen ?? [])
+    if (fileInput.current) fileInput.current.value = ''
+    if (list.some((f) => !f.type.startsWith('image/') && f.type !== 'application/pdf')) {
+      setFileError(t.notImage)
       return
     }
-    if (!file.type.startsWith('image/')) {
-      setPhotoError(t.notImage)
-      return
-    }
-    setPhoto(file)
+    const all = [...files, ...list]
+    if (all.length > MAX_FILES) setFileError(t.tooMany(MAX_FILES))
+    setFiles(all.slice(0, MAX_FILES))
   }
 
   const send = async () => {
@@ -67,18 +68,24 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       'Šta zna': story,
       'Ime pošiljaoca': name,
       'Email pošiljaoca': email,
-      'Dozvola za objavu': mayPublish ? 'Da, uz ime pošiljaoca' : 'Ne',
+      'Dozvola za objavu teksta i fotografija': mayPublish ? 'Da' : 'Ne',
+      'Dozvola za objavu imena pošiljaoca': mayPublish && mayShowName ? 'Da, prvo slovo imena, prezime i srodstvo' : 'Ne',
     }
     if (email.trim()) fields._replyto = email.trim()
 
     try {
-      const blob = photo ? await shrinkPhoto(photo) : null
-      if (photo && blob && blob.size > MAX_PHOTO_BYTES) {
-        setPhotoError(t.tooLarge)
-        setStatus('open')
-        return
+      const blobs: Blob[] = []
+      for (const file of files) {
+        // photographs are shrunk; a PDF goes as it is
+        const blob = file.type === 'application/pdf' ? file : await shrinkPhoto(file)
+        if (blob.size > MAX_FILE_BYTES) {
+          setFileError(t.fileTooLarge(file.name))
+          setStatus('open')
+          return
+        }
+        blobs.push(blob)
       }
-      if (photo) fields['Fotografija'] = 'stiže u posebnoj poruci („Fotografija: …“)'
+      if (files.length) fields['Prilozi'] = `${files.length}, stižu u posebnim porukama („Fotografija: …“)`
 
       const res = await fetch(ENDPOINT, {
         method: 'POST',
@@ -90,22 +97,23 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         return
       }
 
-      if (photo && blob) {
+      // one message a file; the answer is opaque (no CORS), so only a network error shows as a failure
+      for (let i = 0; i < blobs.length; i++) {
         const body = new FormData()
-        body.append('_subject', `Fotografija: ${soldier.full_name} (${soldier.soldier_id})`)
+        body.append('_subject', `Fotografija: ${soldier.full_name} (${soldier.soldier_id}) ${i + 1}/${blobs.length}`)
         body.append('_template', 'table')
         body.append('_captcha', 'false')
         body.append('Borac', soldier.full_name)
         body.append('ID', soldier.soldier_id)
         body.append('Ime pošiljaoca', name)
         if (email.trim()) body.append('_replyto', email.trim())
-        const ext = blob.type === 'image/jpeg' ? 'jpg' : photo.name.split('.').pop() || 'jpg'
-        body.append('Fotografija', blob, `${soldier.soldier_id}.${ext}`)
-        // The answer is opaque (no CORS on this endpoint); only a network error shows as a failure
+        const isPdf = files[i].type === 'application/pdf'
+        const ext = isPdf ? 'pdf' : blobs[i].type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'
+        body.append('Fotografija', blobs[i], `${soldier.soldier_id}-${i + 1}.${ext}`)
         try {
           await fetch(PHOTO_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
         } catch {
-          setPhotoLost(true)
+          setFilesLost(true)
         }
       }
       setStatus('sent')
@@ -131,7 +139,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         <p className="know-soldier-done">
           {t.thanks}
           {email.trim() && ` ${t.willReply}`}
-          {photoLost && ` ${t.photoLost}`}
+          {filesLost && ` ${t.filesLost}`}
         </p>
       </div>
     )
@@ -163,27 +171,33 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         placeholder={t.storyHint}
       />
 
-      <span className="know-label">{t.photo} <span className="know-optional">{t.optional}</span></span>
+      <span className="know-label">{t.files} <span className="know-optional">{t.optional}</span></span>
+      <p className="know-hint">{t.filesHint(MAX_FILES)}</p>
       <div className="know-file">
         <input
           ref={fileInput}
-          id="know-photo"
+          id="know-files"
           type="file"
-          accept="image/*"
+          accept="image/*,application/pdf"
+          multiple
           className="visually-hidden"
-          onChange={(e) => choosePhoto(e.target.files?.[0] ?? null)}
+          onChange={(e) => addFiles(e.target.files)}
         />
-        <label htmlFor="know-photo" className="btn btn-secondary">
-          {photo ? t.chooseOther : t.choosePhoto}
+        <label htmlFor="know-files" className="btn btn-secondary">
+          {files.length ? t.addMore : t.chooseFiles}
         </label>
-        {photo && (
-          <>
-            <span className="know-file-name">{photo.name}</span>
-            <button type="button" className="report-error-link" onClick={() => choosePhoto(null)}>{t.remove}</button>
-          </>
-        )}
       </div>
-      {photoError && <p className="know-error">{photoError}</p>}
+      {files.length > 0 && (
+        <ul className="know-files">
+          {files.map((f, i) => (
+            <li key={`${f.name}-${i}`}>
+              <span className="know-file-name">{f.name}</span>
+              <button type="button" className="report-error-link" onClick={() => setFiles(files.filter((_, k) => k !== i))}>{t.remove}</button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {fileError && <p className="know-error">{fileError}</p>}
 
       <div className="know-pair">
         <div>
@@ -205,8 +219,12 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       <p className="know-hint">{t.emailHint}</p>
 
       <label className="know-check">
-        <input type="checkbox" checked={mayPublish} onChange={(e) => setMayPublish(e.target.checked)} />
+        <input type="checkbox" checked={mayPublish} onChange={(e) => { setMayPublish(e.target.checked); if (!e.target.checked) setMayShowName(false) }} />
         {t.consent}
+      </label>
+      <label className="know-check">
+        <input type="checkbox" checked={mayShowName} disabled={!mayPublish} onChange={(e) => setMayShowName(e.target.checked)} />
+        {t.consentName}
       </label>
 
       {status === 'error' && (
