@@ -15,6 +15,54 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-11-19',
+    title: {
+      sr: 'Porodice mogu da pošalju šta znaju o borcu',
+      sl: 'Svojci lahko pošljejo, kar vedo o borcu',
+      mk: 'Семејствата можат да испратат што знаат за борецот',
+      en: 'Families can send what they know about a fighter',
+    },
+    text: {
+      sr: 'Sa kartice borca, preko „Znam ovog borca”, možete poslati priču, fotografije i dokumente. Za borca kojeg nema ni u jednoj knjizi na sajtu služi obrazac ispod pretrage. Desetak kartica već ima beleške porodica, a neke i album fotografija i dokumenata.',
+      sl: 'Na kartici borca lahko prek gumba »Vem kaj o tem borcu« pošljete zgodbo, fotografije in dokumente. Za borca, ki ga ni v nobeni knjigi na strani, je pod iskalnikom obrazec. Okoli deset kartic že ima zapise družin, nekatere tudi album fotografij in dokumentov.',
+      mk: 'Од картичката на борецот, преку „Знам нешто за овој борец“, можете да испратите приказна, фотографии и документи. За борец што го нема во ниту една книга на сајтот, под пребарувањето има образец. Десетина картички веќе имаат белешки од семејствата, а некои и албум со фотографии и документи.',
+      en: 'From a fighter’s card, under “I know about this Partisan”, you can send a story, photographs and documents. For a fighter who is in none of the books here, there is a form below the search. About ten cards already carry notes from families, and some an album of photographs and documents.',
+    },
+  },
+  {
+    date: '2026-11-19',
+    title: {
+      sr: 'Godina rođenja u pretrazi',
+      sl: 'Leto rojstva pri iskanju',
+      mk: 'Година на раѓање во пребарувањето',
+      en: 'Year of birth in the search',
+    },
+    text: {
+      sr: 'Upišite godinu rođenja ako je znate. Zapisi bez godine ostaju u rezultatima, iza onih s godinom, a jednim dugmetom ih sklanjate.',
+      sl: 'Vpišite leto rojstva, če ga poznate. Zapisi brez letnice ostanejo med zadetki, za tistimi z letnico, z enim gumbom pa jih skrijete.',
+      mk: 'Внесете ја годината на раѓање ако ја знаете. Записите без година остануваат во резултатите, по оние со година, а со едно копче ги тргате.',
+      en: 'Enter the year of birth if you know it. Records without a year stay in the results, after those with one, and a single button hides them.',
+    },
+  },
+  {
+    date: '2026-11-19',
+    text: {
+      sr: 'U popisu poginulih iz 1964. ispravili smo opštinu kod 6.734 zapisa, po prijavi jednog čitaoca: selo Bogorojca je u opštini Gevgelija, a ne Demir Hisar.',
+      sl: 'V popisu padlih iz leta 1964 smo po prijavi bralca popravili občino pri 6.734 zapisih: vas Bogorodica je v občini Gevgelija, ne Demir Hisar.',
+      mk: 'Во пописот на загинатите од 1964 година ја поправивме општината кај 6.734 записи, по пријава од еден читател: селото Богородица е во општина Гевгелија, а не во Демир Хисар.',
+      en: 'In the 1964 census of the fallen we have corrected the municipality of 6,734 entries, after a reader’s report: the village of Bogorodica is in Gevgelija, not Demir Hisar.',
+    },
+  },
+  {
+    date: '2026-11-19',
+    text: {
+      sr: 'Tekst sajta na slovenačkom i makedonskom smo pročitali ponovo i ispravili oko 140 rečenica koje su zvučale kao prevod.',
+      sl: 'Besedilo strani v slovenščini smo znova pregledali in popravili okoli 140 stavkov, ki so zveneli kot prevod.',
+      mk: 'Текстот на сајтот на македонски повторно го прегледавме и поправивме околу 140 реченици што звучеа како превод.',
+      en: 'We have read the site’s Slovene and Macedonian text again and corrected about 140 sentences that read like a translation.',
+    },
+  },
+  {
     date: '2026-11-05',
     text: {
       sr: 'Borac koji je bio u više jedinica sada u zapisu ima red za svaku, s bataljonom i dužnošću. Zapisi iz knjiga stoje na jednom mestu, a duži se otvaraju ceo.',
