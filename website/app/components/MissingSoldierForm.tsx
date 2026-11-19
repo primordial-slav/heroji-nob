@@ -53,6 +53,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [mayPublish, setMayPublish] = useState(false)
+  const [mayShowName, setMayShowName] = useState(false)
   const [filesLost, setFilesLost] = useState(false)
   const fileInput = useRef<HTMLInputElement>(null)
 
@@ -87,7 +88,8 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
       'Veza sa borcem': relation.trim(),
       'Ime pošiljaoca': name.trim(),
       'Email pošiljaoca': email.trim(),
-      'Dozvola za objavu': mayPublish ? 'Da, uz prvo slovo imena, prezime i srodstvo' : 'Ne',
+      'Dozvola za objavu teksta i fotografija': mayPublish ? 'Da' : 'Ne',
+      'Dozvola za objavu imena pošiljaoca': mayPublish && mayShowName ? 'Da, prvo slovo imena, prezime i srodstvo' : 'Ne',
       Pretraga: query?.trim() ?? '',
       Jezik: LANG_NAMES[lang].name,
       Prilozi: files.length ? `${files.length}, stižu u posebnim porukama („Prilog: …“)` : 'nema',
@@ -237,9 +239,16 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
       </div>
       <p className="know-hint">{t.emailHint}</p>
 
+      {/* two permissions, asked apart, as in KnowSoldierForm: what was sent, and the sender's name beside it */}
+      <span className="know-label">{t.consentTitle}</span>
+      <p className="know-hint">{t.consentHint}</p>
       <label className="know-check">
-        <input type="checkbox" checked={mayPublish} onChange={(e) => setMayPublish(e.target.checked)} />
+        <input type="checkbox" checked={mayPublish} onChange={(e) => { setMayPublish(e.target.checked); if (!e.target.checked) setMayShowName(false) }} />
         {t.consent}
+      </label>
+      <label className="know-check">
+        <input type="checkbox" checked={mayShowName} disabled={!mayPublish} onChange={(e) => setMayShowName(e.target.checked)} />
+        {t.consentName}
       </label>
 
       {status === 'error' && <p className="know-error">{t.error}</p>}

@@ -128,6 +128,12 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0001003949', // Ivanović Radosava Špiro of Dragovoljići (Nikšić), Prva proleterska; the form of 2026-11-19 18:15
+    text: 'Umro je 1976. godine. Penzionisan je kao pukovnik JNA.',
+    from: 'S. Polić, pranećak',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122957805', // Kupres Marka Miloš of Kožuhe (Doboj), narodni heroj, Borci drugih jedinica
     text: 'U čast ovog narodnog heroja Kulturno-umjetničko društvo u Kožuhama nosi ime po njemu.',
     from: 'N. Kaišarević',

@@ -218,6 +218,9 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       </div>
       <p className="know-hint">{t.emailHint}</p>
 
+      {/* two permissions, asked apart: what was sent, and the sender's name beside it (the user, 2026-11-19) */}
+      <span className="know-label">{t.consentTitle}</span>
+      <p className="know-hint">{t.consentHint}</p>
       <label className="know-check">
         <input type="checkbox" checked={mayPublish} onChange={(e) => { setMayPublish(e.target.checked); if (!e.target.checked) setMayShowName(false) }} />
         {t.consent}
