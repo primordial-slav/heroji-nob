@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { units } from '@/app/data/units'
 import { formation, formationKey } from '@/app/data/formation'
-import { FATES, NO_FILTERS, RANGES, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
+import { FATES, NO_FILTERS, RANGES, birthYear, filterCount, type SearchFilters as Filters } from '@/app/lib/searchFilters'
 import { shareLink } from '@/app/lib/share'
 import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 import { FilterIcon, ShareIcon } from './Icons'
@@ -100,6 +100,12 @@ export default function SearchFilters({ id, filters, onChange, withUnit = false 
       </div>
 
       <div className="filter-end">
+        {birthYear(filters.year) !== null && (
+          <label className="filter-check">
+            <input type="checkbox" checked={filters.withoutYear} onChange={(e) => set({ withoutYear: e.target.checked })} />
+            {t.withoutYear}
+          </label>
+        )}
         <label className="filter-check">
           <input type="checkbox" checked={filters.wholeWords} onChange={(e) => set({ wholeWords: e.target.checked })} />
           {t.wholeWords}

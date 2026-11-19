@@ -4,7 +4,7 @@ import type { Soldier } from './types'
 
 // Narrowing a search down to one soldier among many with the same name: birth year, a place in the entry,
 // the unit and how he died. The search and its filters live in the page address, so a search can be sent
-// as a link: ?q=Petrović&mesto=Gračac&godina=1920&raspon=2&jedinica=prva-licka-brigada&sudbina=poginuli&cele=1
+// as a link: ?q=Petrović&mesto=Gračac&godina=1920&raspon=2&bezgodine=1&jedinica=prva-licka-brigada&sudbina=poginuli&cele=1
 
 export type Fate = 'poginuli' | 'umrli' | 'nestali'
 
@@ -13,6 +13,9 @@ export interface SearchFilters {
   year: string
   /** How many years either side of `year` still count */
   range: number
+  /** With a year set, also keep those whose entries print no birth year (a visitor's wish, 2026-11-19: many entries
+   * give none, and a year alone hid them) */
+  withoutYear: boolean
   /** A village or town anywhere in the entry */
   place: string
   /** A unit's id (home page only) */
@@ -22,7 +25,7 @@ export interface SearchFilters {
   wholeWords: boolean
 }
 
-export const NO_FILTERS: SearchFilters = { year: '', range: 0, place: '', unit: '', fate: '', wholeWords: false }
+export const NO_FILTERS: SearchFilters = { year: '', range: 0, withoutYear: false, place: '', unit: '', fate: '', wholeWords: false }
 
 export const RANGES = [0, 2, 5]
 
@@ -34,7 +37,8 @@ export const FATES: { value: Fate; types: string[] }[] = [
 ]
 
 const PARAM = {
-  query: 'q', year: 'godina', range: 'raspon', place: 'mesto', unit: 'jedinica', fate: 'sudbina', wholeWords: 'cele',
+  query: 'q', year: 'godina', range: 'raspon', withoutYear: 'bezgodine', place: 'mesto', unit: 'jedinica', fate: 'sudbina',
+  wholeWords: 'cele',
 } as const
 
 export const birthYear = (year: string) => (/^\d{4}$/.test(year.trim()) ? Number(year.trim()) : null)
@@ -82,7 +86,7 @@ export function applyFilters(list: Soldier[], filters: SearchFilters, withUnit =
     if (fate && !fate.types.includes(soldier.death_type ?? '')) return false
     if (year !== null) {
       const born = parseInt(soldier.birth_year ?? '', 10)
-      if (Number.isNaN(born) || Math.abs(born - year) > filters.range) return false
+      if (Number.isNaN(born) ? !filters.withoutYear : Math.abs(born - year) > filters.range) return false
     }
     if (place && !entryWords(soldier).includes(` ${place}`)) return false
     return true
@@ -98,6 +102,7 @@ export function readSearch(params: URLSearchParams): { query: string; filters: S
     filters: {
       year: params.get(PARAM.year) ?? '',
       range: RANGES.includes(range) ? range : 0,
+      withoutYear: params.get(PARAM.withoutYear) === '1',
       place: params.get(PARAM.place) ?? '',
       unit: units.some((u) => u.id === params.get(PARAM.unit)) ? params.get(PARAM.unit)! : '',
       fate: FATES.some((f) => f.value === fate) ? (fate as Fate) : '',
@@ -114,6 +119,7 @@ export function writeSearch(url: URL, query: string, filters: SearchFilters, wit
     [PARAM.place, filters.place.trim()],
     [PARAM.year, year !== null ? String(year) : ''],
     [PARAM.range, year !== null && filters.range ? String(filters.range) : ''],
+    [PARAM.withoutYear, year !== null && filters.withoutYear ? '1' : ''],
     [PARAM.unit, withUnit ? filters.unit : ''],
     [PARAM.fate, filters.fate],
     [PARAM.wholeWords, filters.wholeWords ? '1' : ''],

@@ -188,7 +188,7 @@ function filterTest(data: SearchData, filters: SearchFilters, withUnit: boolean)
   return (i) => {
     if (unitName && units[data.unitAt[i]].name !== unitName && !data.also.get(i)?.includes(unitName)) return false
     if (fateTypes && !fateTypes.has(data.deathType[i])) return false
-    if (year !== null && (Number.isNaN(data.born[i]) || Math.abs(data.born[i] - year) > filters.range)) return false
+    if (year !== null && (Number.isNaN(data.born[i]) ? !filters.withoutYear : Math.abs(data.born[i] - year) > filters.range)) return false
     if (named && !named[i]) return false
     return true
   }
@@ -319,6 +319,12 @@ function runSearch(data: SearchData, typed: string, filters: SearchFilters, unit
   if (keep) {
     nearFrom = listed.slice(0, nearFrom).filter(keep).length
     listed = listed.filter(keep)
+  }
+  // With "I oni bez godine rođenja", those born in the year (or near it) come first, then those whose entries give
+  // none, among the names found and again among the similar ones
+  if (birthYear(filters.year) !== null && filters.withoutYear) {
+    const datedFirst = (part: number[]) => [...part.filter((i) => !Number.isNaN(data.born[i])), ...part.filter((i) => Number.isNaN(data.born[i]))]
+    listed = [...datedFirst(listed.slice(0, nearFrom)), ...datedFirst(listed.slice(nearFrom))]
   }
   return { listed: Int32Array.from(listed), nearFrom, unfiltered }
 }

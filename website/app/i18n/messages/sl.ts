@@ -80,6 +80,7 @@ export const sl: Messages = {
     birthYear: 'Leto rojstva',
     range: 'Odstopanje od leta rojstva',
     exact: 'točno',
+    withoutYear: 'Tudi tisti brez letnice rojstva',
     place: 'Kraj',
     placeHint: 'vas ali mesto',
     unit: 'Enota',
