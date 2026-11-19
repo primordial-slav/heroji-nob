@@ -54910,7 +54910,7 @@
     "other_sources": [
       {
         "soldier_id": "0048019018",
-        "name": "Čutura Dušan",
+        "name": "Čutura M Dušan",
         "additional_info": "rođen 1920. Zablaće, Ključ. Srbin, zemljoradnik. U NOB-i od 1942. Borac 1. čete 3. bataljona.",
         "pdf_file": "7-krajiska-spisak.pdf",
         "pdf_page": 215,
@@ -95107,19 +95107,45 @@
   },
   {
     "last_name": "Gaković",
-    "middle_name": "",
+    "middle_name": "Gojka",
     "first_name": "Milorad",
-    "fathers_name": "",
-    "full_name": "Gaković Milorad",
+    "fathers_name": "Gojko",
+    "full_name": "Gaković Gojka Milorad",
     "additional_info": "Spisak ratnog kadra Šeste krajiške NOU brigade 1942—1943: Obavještajni oficiri bataljona",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 3,
     "pdf_y": 144.1,
     "pdf_x": 114.8,
     "pdf_y_end": 153.8,
     "pdf_file": "6-krajiska-kadar.pdf",
     "pdf_x_end": 192.2,
-    "soldier_id": "0013020151"
+    "soldier_id": "0013020151",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Banjani, Bosanska Krupa",
+    "ethnicity": "Jugosloven",
+    "occupation": "radnik",
+    "party": "KPJ",
+    "other_sources": [
+      {
+        "soldier_id": "0042000145",
+        "name": "Gaković Gojka Milorad",
+        "additional_info": "desetar, rođen 1921, Banjani, Bosanska Krupa, radnik, Jugosloven, u NOB od 1941. godine, član KPJ, krajem rata komandant bataljona.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 12,
+        "pdf_x": 193.4,
+        "pdf_y": 325.6,
+        "pdf_x_end": 363.8,
+        "pdf_y_end": 378.0,
+        "rank": "desetar",
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Gaković",
