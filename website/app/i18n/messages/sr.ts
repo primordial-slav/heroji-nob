@@ -27,6 +27,9 @@ export const sr = {
   footer: {
     contact: 'Kontakt',
     records: 'Grešku u zapisu ili nešto što znate o borcu možete poslati i iz samog zapisa.',
+    /** "Ako borca nema na sajtu, pošaljite nam šta znate o njemu.": the link opens the form on the home page */
+    missingAsk: 'Ako borca nema na sajtu,',
+    missingLink: 'pošaljite nam šta znate o njemu',
   },
   notFound: {
     title: 'Ova strana ne postoji',

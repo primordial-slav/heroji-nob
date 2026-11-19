@@ -10,6 +10,7 @@ import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
 import MissingSoldierForm, { MissingSoldierAsk } from '@/app/components/MissingSoldierForm'
+import { MISSING_FORM_HASH } from '@/app/lib/missingForm'
 import { SearchIcon } from '@/app/components/Icons'
 import { totalNames } from '@/app/lib/totals'
 import BandPhoto from '@/app/components/BandPhoto'
@@ -64,6 +65,23 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
     writeSearch(url, searchTerm, filters)
     if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url)
   }, [addressRead, searchTerm, filters])
+
+  // The footer's "pošaljite nam šta znate o njemu" (/#prijava) opens the form under the band: on arriving here, or on
+  // this page itself, where the link only changes the hash. The hash is taken off again, so a reload doesn't reopen it.
+  useEffect(() => {
+    const openFromAddress = () => {
+      if (window.location.hash !== `#${MISSING_FORM_HASH}`) return
+      setAskOpen(true)
+      // already open, the form takes the focus (and comes into view) again; a newly opened one takes it itself
+      window.setTimeout(() => document.getElementById('missing-soldier')?.focus(), 50)
+      const url = new URL(window.location.href)
+      url.hash = ''
+      window.history.replaceState(window.history.state, '', url)
+    }
+    openFromAddress()
+    window.addEventListener('hashchange', openFromAddress)
+    return () => window.removeEventListener('hashchange', openFromAddress)
+  }, [])
 
   useEffect(() => {
     // The site name and "Početna" start the page over, also when it is already open

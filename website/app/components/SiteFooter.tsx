@@ -1,5 +1,6 @@
 import { messagesFor } from '../i18n'
-import type { Lang } from '../i18n/config'
+import { localePath, type Lang } from '../i18n/config'
+import { MISSING_FORM_HASH } from '../lib/missingForm'
 import ThemeToggle from './ThemeToggle'
 
 // The site's address for mail: the one the forms send to (website/.env)
@@ -22,6 +23,9 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
             <p className="site-footer-label">{f.contact}</p>
             <p><a href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
             <p>{f.records}</p>
+            {/* opens the form for a fighter not on the site under the home page's band (HomePage); a plain link, so it
+                works from every page and in every language */}
+            <p>{f.missingAsk} <a href={`${localePath(lang, '/')}#${MISSING_FORM_HASH}`}>{f.missingLink}</a>.</p>
           </div>
         )}
       </div>

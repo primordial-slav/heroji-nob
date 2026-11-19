@@ -68,7 +68,10 @@ Since 2026-11-19 (the user's promise in the Reddit thread) a second form, `compo
 a home search finds no one and under the results: "Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu." The
 line under the home search field offers it too, after the count ("508.897 imena · Nema vašeg borca? Pošaljite nam šta znate
 o njemu", `MissingSoldierAsk`; the user chose it from seven versions): the form then opens right under the band, and the
-copies at the end of a search wait until it is closed. It asks
+copies at the end of a search wait until it is closed. A unit's page offers it the same way where its search finds no
+one and under its results, with the unit's name already in the unit field (not on Borci drugih jedinica or the census's
+parts). The footer of every page ends "Ako borca nema na sajtu, pošaljite nam šta znate o njemu." with a link to
+`/#prijava` (`lib/missingForm.ts`), which opens the form under the home page's band. It asks
 for the fighter's name (the search fills it in), father, year and place of birth, unit, fate, what the family knows, and
 up to six photos of him and of his papers, then the sender's name, relation and email, and the permission to publish.
 

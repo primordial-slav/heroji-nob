@@ -32,6 +32,8 @@ export const en: Messages = {
   footer: {
     contact: 'Contact',
     records: 'You can also send a mistake in a record, or something you know about a fighter, from the record itself.',
+    missingAsk: 'If a fighter is not on the site,',
+    missingLink: 'send us what you know about him',
   },
   notFound: {
     title: 'This page doesn’t exist',

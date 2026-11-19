@@ -23,10 +23,12 @@ type Status = 'closed' | 'open' | 'sending' | 'sent' | 'error'
 // nothing is published by itself; a man is added by hand after a check, as the family archive's are
 // (docs/FAMILY_CONTRIBUTIONS.md). Offered where a search finds no one, and under the results, since he may not be
 // among them. The form speaks the page's language; the email to us is in Serbo-Croatian and names the language used.
-// The home page also offers it under the search field (MissingSoldierAsk): that one opens at once (startOpen) and
-// is taken away again on "Otkaži" (onClose).
-export default function MissingSoldierForm({ query, startOpen = false, onClose }: {
+// The home page also offers it under the search field (MissingSoldierAsk) and from the footer (/#prijava): that one
+// opens at once (startOpen) and is taken away again on "Otkaži" (onClose). On a unit's page the unit's name fills the
+// unit field (unitName), which the visitor may change.
+export default function MissingSoldierForm({ query, unitName, startOpen = false, onClose }: {
   query?: string
+  unitName?: string
   startOpen?: boolean
   onClose?: () => void
 }) {
@@ -42,7 +44,7 @@ export default function MissingSoldierForm({ query, startOpen = false, onClose }
   const [father, setFather] = useState('')
   const [born, setBorn] = useState('')
   const [birthplace, setBirthplace] = useState('')
-  const [unit, setUnit] = useState('')
+  const [unit, setUnit] = useState(unitName ?? '')
   const [fate, setFate] = useState<Fate>('unknown')
   const [story, setStory] = useState('')
   const [files, setFiles] = useState<File[]>([])
@@ -119,7 +121,8 @@ export default function MissingSoldierForm({ query, startOpen = false, onClose }
         body.append('_template', 'table')
         body.append('_captcha', 'false')
         body.append('Borac', soldier.trim())
-        body.append('Ime pošiljaoca', name.trim())
+        // one word: FormSubmit's regular endpoint writes a space in a field's name as "_" ("Ime_pošiljaoca")
+        body.append('Pošiljalac', name.trim())
         if (email.trim()) body.append('_replyto', email.trim())
         const ext = blobs[i].type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'
         body.append('Prilog', blobs[i], `prilog-${i + 1}.${ext}`)

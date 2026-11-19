@@ -30,6 +30,8 @@ export const sl: Messages = {
   footer: {
     contact: 'Kontakt',
     records: 'Napako v zapisu ali kaj, kar veste o borcu, lahko pošljete tudi iz samega zapisa.',
+    missingAsk: 'Če borca ni na strani,',
+    missingLink: 'nam pošljite, kar veste o njem',
   },
   notFound: {
     title: 'Te strani ni',

@@ -10,6 +10,7 @@ import { PAGE_SIZES, fullRecord, loadKin } from '@/app/lib/searchIndex'
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
+import MissingSoldierForm from '@/app/components/MissingSoldierForm'
 import { ArrowLeftIcon, SearchIcon } from '@/app/components/Icons'
 import { RECORD_PARAM } from '@/app/lib/records'
 import { photoPosition } from '@/app/data/photoFocus'
@@ -115,6 +116,11 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
   const unfiltered = found?.unfiltered ?? 0
   // The page's own first page shows unless the address asks for a search
   const early = onFirstPage
+  // The form for a fighter who is not on the site, where a search here finds no one and under its results, the unit's
+  // name already in its unit field (not on Borci drugih jedinica and the census's parts, which are no unit)
+  const missingForm = (
+    <MissingSoldierForm query={searchTerm} unitName={unit.dataFile.startsWith('/ostali-borci') ? undefined : unitText.name(unit)} />
+  )
   const waiting = server.pending && count === 0 && !server.failed
 
   return (
@@ -185,6 +191,7 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
                   )}
                 />
               </p>
+              {missingForm}
             </div>
           ) : count === 0 ? (
             <div className="empty">
@@ -192,8 +199,10 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
               <p>
                 <RichText text={t.unit.noneText} render={(part) => <Link href={to('/')}>{part}</Link>} />
               </p>
+              {missingForm}
             </div>
           ) : (
+            <>
             <SoldierResults
               results={found?.soldiers ?? NO_SOLDIERS}
               paged={{
@@ -212,6 +221,9 @@ export default function UnitPageClient({ unit, firstPage, total }: UnitPageClien
               scrollTargetId="results"
               actions={(searching || filtersSet) && <ShareSearch />}
             />
+            {/* he may not be among them */}
+            {searching && missingForm}
+            </>
           )}
         </div>
       </div>
