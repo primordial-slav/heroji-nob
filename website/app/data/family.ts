@@ -122,8 +122,9 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0122959607', // Krnić Ive Blaž of Konjevrate (Šibenik), survived; his photo in uniform is his portrait (the user's choice, 2026-11-19)
     photo: '9990000003-1.jpg',
     photoCaption: 'U uniformi',
-    text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika.',
-    from: '', // the grandson's later form (14:21) did not allow his name
+    // the grandson's forms of 11:51 and 16:23 (the wound and Bari), lightly edited for spelling
+    text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika. Tijekom NOB-a teško je ranjen i prebačen u Bari (Italija), u savezničku bolnicu. Kasnije se vratio u borbu.',
+    from: '', // the grandson's later forms (14:21, 16:23) did not allow his name
     date: '2026-11',
   },
   {
