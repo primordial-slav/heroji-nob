@@ -227,6 +227,9 @@ ONE_MAN = [
     ('9005002010', '9005000996', 'Radaković Milanka Janko of Mogorić, born 1920, in both chronicles'),
     ('9005002014', '9005001202', 'Maljković Mile Miloš of Mogorić, a spomenica holder in both chronicles'),
     ('9005000343', '9005001992', 'Radaković Đuro of Mogorić, Paje or Pavla, fell at Korenica in 1942'),
+    ('9019000641', '9105000315', 'Sekulić Miloš, son of Mane, of Zbjeg, born 1916, commissar of a battalion, fell at Žumberak '
+                                 'in 1944: the Slunj-Veljun book and the 1964 census print Mane as the father, the Primišlje '
+                                 'list "Miloša Mane" turns it round'),
     ('9035001457', '9035002190', 'Bubanja Miljanov Milonja of Bubanje, born 1912, fell at Kolašin: under Berane and under Bijelo Polje, the scan reading "Minjanov"'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}

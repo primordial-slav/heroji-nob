@@ -91,8 +91,26 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122907839', // Sekulić Mane Miloš of Zbjeg (Slunj), Borci drugih jedinica
     photo: '0122907839-1.jpg',
-    text: 'Znamo da je bio komesar i da je poginuo negde na Žumberku. Spasio je od streljanja svog sestrića Manojla Manu Kosanovića, koji je poginuo na Ilirskoj Bistrici goneći ustaše.',
+    text: 'Ime mu se u izvorima razlikuje: knjige ga upisuju i kao Miloša, sina Manina, i kao Manu, sina Milošev. Znamo da je bio komesar i da je poginuo negde na Žumberku. Spasio je od streljanja svog sestrića Manojla Manu Kosanovića, koji je poginuo na Ilirskoj Bistrici goneći ustaše.',
     from: 'B. Batalo, praunuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0060000921', // Kosanović Milovana Mane (Manojlo), Zbjeg: the nephew Miloš Sekulić saved from a firing squad
+    text: 'Porodica ga navodi kao Manojla Manu Kosanovića. Njegov ujak Miloš Sekulić, komesar bataljona, spasio ga je od streljanja. Poginuo je kod Ilirske Bistrice, goneći ustaše.',
+    from: 'B. Batalo, praunuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122959606', // Eftimovski Đore of Sušica (Gostivar), brother of Kiro (Porodična arhiva)
+    text: 'Роден е 1925 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете оди на печалба во Белград како општ работник, каде што се запознава со идеите на напредното работничко движење. За време на окупацијата на земјата во Белград е примен за член на СКОЈ, а нешто подоцна и за член на КПЈ. Кон крајот на 1941 година е уапсен од страна на Недиќевата полиција, но заради немање докази набрзо е пуштен на слобода. Особена активност и бестрашност покажува во вршењето на многу одговорни курирски задачи. Во единиците на Народноослободителната војска стапил доброволно во јуни 1943 година, како борец во составот на Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот фашистички окупатор и нешто подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
+    from: 'nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0135001012', // Eftimovski Božo Kiro of Sušica (Gostivar), census part Makedonija
+    text: 'Роден е 1923 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете останал сирак без татко, па бил присилен да оди на печалба во Белград, каде што работи како општ работник. Во слободните мигови постојано е во друштво со напредни работници и младинци, што му дава можност да се запознае со идеите на напредното работничко движење. Во Белград останал до капитулацијата на стара Југославија. Веднаш по капитулацијата се враќа во своето родно место, се приклучува во напредното движење и станал член на Месниот народноослободителен одбор. Бил член и на партискиот актив на селото. Во единиците на Народноослободителната војска стапил доброволно во мај 1944 година, како борец во составот на Првата македонско-косовска бригада. Со својата единица учествувал во сите борби и акции. Загинал на 28 август 1944 година во борбите за ослободување на Кичево. Неговиот брат Ѓоре (роден 1925 година, исто така од Сушица) во јуни 1943 година стапил во Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот окупатор и подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
+    from: 'nećak',
     date: '2026-11',
   },
 ]
