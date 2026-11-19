@@ -28,7 +28,7 @@ export interface ShownPortrait {
 export function portraitFor(soldier: Soldier): ShownPortrait | null {
   const ids = [soldier.soldier_id, ...(soldier.other_sources ?? []).map((o) => o.soldier_id)].filter(Boolean) as string[]
   const family = contributionsFor(soldier.soldier_id, ids.slice(1)).find((c) => c.photo)
-  if (family?.photo) return { src: `/porodica/${family.photo}`, credit: family.from, focus: 30 }
+  if (family?.photo) return { src: `/porodica/${family.photo}`, credit: family.from || 'porodica', focus: 30 } // a sender who did not allow his name: 'porodica'
   const own = ids.map((id) => PORTRAITS[id]).find(Boolean)
   return own
     ? { src: `/portreti/${own.f}`, large: own.v && `/portreti/${own.v}`, credit: own.c, href: own.h, focus: own.y ?? 30 }

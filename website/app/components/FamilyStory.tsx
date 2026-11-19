@@ -54,7 +54,8 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
           <figcaption>
             {item.photoCaption && <p className="family-caption">{item.photoCaption}</p>}
             {item.text && <p className="family-text">{item.text}</p>}
-            <p className="family-from">{item.from} · {sentOn(item.date)}</p>
+            {/* a sender who did not allow his name: the date alone */}
+            <p className="family-from">{item.from && `${item.from} · `}{sentOn(item.date)}</p>
           </figcaption>
         </figure>
       ))}
@@ -123,7 +124,7 @@ function FamilyViewer({ pieces, at, onMove, onClose, sentOn }: {
           <p className={s.meta}>
             {t.kind[piece.kind]}
             {piece.all.length > 1 && <> · {t.page(at.page + 1, piece.all.length)}</>}
-            {' · '}{piece.from} · {sentOn(piece.date)}
+            {' · '}{piece.from && `${piece.from} · `}{sentOn(piece.date)}
           </p>
           {transcript && (
             <div className={s.transcript}>

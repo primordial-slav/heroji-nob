@@ -123,7 +123,7 @@ export const familyContributions: FamilyContribution[] = [
     photo: '9990000003-1.jpg',
     photoCaption: 'U uniformi',
     text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika.',
-    from: 'D. Krnić, unuk',
+    from: '', // the grandson's later form (14:21) did not allow his name
     date: '2026-11',
   },
   {
