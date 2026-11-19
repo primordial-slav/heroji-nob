@@ -9,7 +9,7 @@ import { PAGE_SIZES, fullRecord, loadPortraitPeople, loadedPortraitPeople } from
 import type { Soldier } from '@/app/lib/types'
 import SoldierModal, { usePreloadSoldierModal } from '@/app/components/LazySoldierModal'
 import SoldierResults from '@/app/components/SoldierResults'
-import MissingSoldierForm from '@/app/components/MissingSoldierForm'
+import MissingSoldierForm, { MissingSoldierAsk } from '@/app/components/MissingSoldierForm'
 import { SearchIcon } from '@/app/components/Icons'
 import { totalNames } from '@/app/lib/totals'
 import BandPhoto from '@/app/components/BandPhoto'
@@ -33,6 +33,9 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
   const [filters, setFilters] = useState(NO_FILTERS)
   const [showFilters, setShowFilters] = useState(false)
   const [selectedSoldier, setSelectedSoldier] = useState<Soldier | null>(null)
+  // The form for a fighter who is not on the site, opened from the line under the search field: it stands right
+  // under the band, and the copies at the end of a search wait until it is closed (one form, one set of field ids)
+  const [askOpen, setAskOpen] = useState(false)
   // The soldier whose full record is being loaded for the dialog
   const opening = useRef<Soldier | null>(null)
   useBackClosesRecord(selectedSoldier?.soldier_id, () => setSelectedSoldier(null))
@@ -68,6 +71,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
       setSearchTerm('')
       setFilters(NO_FILTERS)
       setShowFilters(false)
+      setAskOpen(false)
       opening.current = null
       setSelectedSoldier(null)
       window.scrollTo({ top: 0 })
@@ -102,6 +106,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
   const count = found?.count ?? 0
   const unfiltered = found?.unfiltered ?? 0
   const waiting = server.pending && count === 0 && !server.failed
+  const missingForm = !askOpen && <MissingSoldierForm query={searchTerm} />
 
   return (
     <div>
@@ -130,13 +135,17 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
             />
           </div>
           {showFilters && <SearchFilters id="home-filters" filters={filters} onChange={setFilters} withUnit />}
-          <p className="finder-hint">{t.home.total(totalNames)}</p>
+          <p className="finder-hint">
+            {t.home.total(totalNames)}
+            <MissingSoldierAsk open={askOpen} onOpen={() => setAskOpen(true)} />
+          </p>
           <BandPhoto units={units} />
         </div>
       </section>
 
       <div className="home-body">
       <div className="container section" id="results">
+        {askOpen && <MissingSoldierForm query={searchTerm} startOpen onClose={() => setAskOpen(false)} />}
         {hasQuery || filtering ? (
           // A first search, or one after an empty result, shows the loading rows until its results are in
           waiting ? (
@@ -169,13 +178,13 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
                   </button>
                 </p>
               )}
-              <MissingSoldierForm query={searchTerm} />
+              {missingForm}
             </div>
           ) : hasQuery && count === 0 ? (
             <div className="empty">
               <h2>{t.home.noneTitle(searchTerm)}</h2>
               <p>{t.home.noneText}</p>
-              <MissingSoldierForm query={searchTerm} />
+              {missingForm}
             </div>
           ) : (
             <>
@@ -202,7 +211,7 @@ export default function HomePage({ pictures }: { pictures: HomePictures }) {
               actions={<ShareSearch />}
             />
             {/* he may not be among them */}
-            {hasQuery && <MissingSoldierForm query={searchTerm} />}
+            {hasQuery && missingForm}
             </>
           )
         ) : (

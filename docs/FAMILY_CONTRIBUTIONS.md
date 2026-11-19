@@ -65,7 +65,10 @@ pieces: [
 ## A fighter who is not on the site
 
 Since 2026-11-19 (the user's promise in the Reddit thread) a second form, `components/MissingSoldierForm.tsx`, stands where
-a home search finds no one and under the results: "Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu." It asks
+a home search finds no one and under the results: "Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu." The
+line under the home search field offers it too, after the count ("508.897 imena · Nema vašeg borca? Pošaljite nam šta znate
+o njemu", `MissingSoldierAsk`; the user chose it from seven versions): the form then opens right under the band, and the
+copies at the end of a search wait until it is closed. It asks
 for the fighter's name (the search fills it in), father, year and place of birth, unit, fate, what the family knows, and
 up to six photos of him and of his papers, then the sender's name, relation and email, and the permission to publish.
 

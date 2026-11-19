@@ -274,6 +274,8 @@ export const en: Messages = {
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
     prompt: 'Not in any of the books here? Send us what you know about him.',
+    ask: 'Can’t find your fighter?',
+    askLink: 'Send us what you know about him',
     open: 'Send details about the fighter',
     title: 'A fighter who is not on the site',
     intro: 'Write what you know and add photographs of him and of his papers. Nothing is published by itself: we add a fighter by hand, once we have checked what you sent.',

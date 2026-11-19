@@ -271,6 +271,8 @@ export const sl: Messages = {
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
     prompt: 'Ga ni v knjigah na strani? Pošljite nam, kar veste o njem.',
+    ask: 'Ne najdete svojega borca?',
+    askLink: 'Pošljite nam, kar veste o njem',
     open: 'Pošljite podatke o borcu',
     title: 'Borec, ki ga ni na strani',
     intro: 'Napišite, kar veste, in dodajte fotografije njega in njegovih dokumentov. Nič se ne objavi samo od sebe: borca dodamo ročno, ko preverimo, kar ste poslali.',

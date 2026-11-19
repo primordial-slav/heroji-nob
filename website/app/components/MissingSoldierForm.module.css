@@ -64,9 +64,21 @@ form.form > p {
   gap: var(--space-3);
 }
 
+/* .ask and .askDot: the line under the home search field (MissingSoldierAsk). The question keeps the line's muted
+   colour, and the link is styled by globals.css's .finder-hint button; only the phone layout is set here */
+
 @media (max-width: 640px) {
   .row,
   .row2 {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* on a phone the question takes a line of its own, so the dot would end the count's line */
+  .askDot {
+    display: none;
+  }
+
+  .ask {
+    flex-basis: 100%;
   }
 }

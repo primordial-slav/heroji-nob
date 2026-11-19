@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { shrinkPhoto } from '@/app/lib/images'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import { useLang, useT } from '@/app/i18n/LangContext'
@@ -23,11 +23,22 @@ type Status = 'closed' | 'open' | 'sending' | 'sent' | 'error'
 // nothing is published by itself; a man is added by hand after a check, as the family archive's are
 // (docs/FAMILY_CONTRIBUTIONS.md). Offered where a search finds no one, and under the results, since he may not be
 // among them. The form speaks the page's language; the email to us is in Serbo-Croatian and names the language used.
-export default function MissingSoldierForm({ query }: { query?: string }) {
+// The home page also offers it under the search field (MissingSoldierAsk): that one opens at once (startOpen) and
+// is taken away again on "Otkaži" (onClose).
+export default function MissingSoldierForm({ query, startOpen = false, onClose }: {
+  query?: string
+  startOpen?: boolean
+  onClose?: () => void
+}) {
   const lang = useLang()
   const t = useT().missing
-  const [status, setStatus] = useState<Status>('closed')
-  const [soldier, setSoldier] = useState('')
+  const [status, setStatus] = useState<Status>(startOpen ? 'open' : 'closed')
+  const [soldier, setSoldier] = useState(() => (startOpen ? query?.trim() ?? '' : ''))
+  const firstField = useRef<HTMLInputElement>(null)
+  // opened from the line under the search field, the form takes the focus, which also brings it into view
+  useEffect(() => {
+    if (startOpen) firstField.current?.focus()
+  }, [startOpen])
   const [father, setFather] = useState('')
   const [born, setBorn] = useState('')
   const [birthplace, setBirthplace] = useState('')
@@ -154,7 +165,7 @@ export default function MissingSoldierForm({ query }: { query?: string }) {
       <p className="know-hint">{t.intro}</p>
 
       <label htmlFor="missing-soldier">{t.soldier}</label>
-      <input id="missing-soldier" value={soldier} onChange={(e) => setSoldier(e.target.value)} maxLength={160} autoComplete="off" />
+      <input ref={firstField} id="missing-soldier" value={soldier} onChange={(e) => setSoldier(e.target.value)} maxLength={160} autoComplete="off" />
 
       <div className={s.row}>
         <div>
@@ -234,8 +245,23 @@ export default function MissingSoldierForm({ query }: { query?: string }) {
         <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
           {status === 'sending' ? t.sending : t.send}
         </button>
-        <button type="button" className="btn btn-secondary" onClick={() => setStatus('closed')}>{t.cancel}</button>
+        <button type="button" className="btn btn-secondary" onClick={() => { setStatus('closed'); onClose?.() }}>{t.cancel}</button>
       </div>
     </form>
+  )
+}
+
+// "· Nema vašeg borca? Pošaljite nam šta znate o njemu": the rest of the line under the home search field, after the
+// count of names (finder-hint, a wrapping flex row). On a phone the dot goes and the question takes a line of its own.
+export function MissingSoldierAsk({ open, onOpen }: { open: boolean; onOpen: () => void }) {
+  const t = useT().missing
+  return (
+    <>
+      <span className={s.askDot} aria-hidden="true">·</span>
+      <span className={s.ask}>
+        {t.ask}{' '}
+        <button type="button" aria-expanded={open} onClick={onOpen}>{t.askLink}</button>
+      </span>
+    </>
   )
 }

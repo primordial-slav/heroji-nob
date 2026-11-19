@@ -305,6 +305,9 @@ export const sr = {
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
     prompt: 'Nema ga u knjigama na sajtu? Pošaljite nam šta znate o njemu.',
+    /** Under the home search field, after the count: "508.897 imena · Nema vašeg borca? Pošaljite nam šta znate o njemu" */
+    ask: 'Nema vašeg borca?',
+    askLink: 'Pošaljite nam šta znate o njemu',
     open: 'Pošaljite podatke o borcu',
     title: 'Borac kojeg nema na sajtu',
     intro: 'Napišite šta znate i dodajte fotografije njega i njegovih dokumenata. Ništa se ne objavljuje samo od sebe: borca dodajemo ručno, kad proverimo šta ste poslali.',
