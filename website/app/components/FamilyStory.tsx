@@ -47,7 +47,10 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
   return (
     <section className="family-story">
       {/* photos from a public page, not the family, say so ("Sa Facebook stranice"); the credit names the page */}
-      <h3>{items.every((item) => item.origin === 'facebook') ? t.titleFacebook : t.title}</h3>
+      {/* and what a visitor who is not of the family sent (a researcher, the one who reported a slip) says so too */}
+      <h3>{items.every((item) => item.origin === 'facebook') ? t.titleFacebook
+        : items.every((item) => item.origin) ? t.titleVisitor
+          : items.some((item) => item.origin) ? t.titleMixed : t.title}</h3>
       {shown.map((item, i) => (
         <figure key={i} className={item.photo ? 'family-item has-photo' : 'family-item'}>
           {item.photo && <img src={`/porodica/${item.photo}`} alt={item.photoCaption ?? ''} />}

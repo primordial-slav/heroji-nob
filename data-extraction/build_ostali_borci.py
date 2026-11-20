@@ -81,7 +81,8 @@ GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Mi
 # books that print the father in the nominative, as the census does: his name goes to fathers_name, not middle_name
 NOMINATIVE_FATHERS = {'tuzla-spomen-knjiga', 'ostrvica',      # (Ostrvica's census names the head, the father)
                       'lezimir',                            # (Ležimir's list: "Babić (Radovan) Petar")
-                      'porodicna-arhiva'}                   # (a family's papers: the father as they name him)
+                      'porodicna-arhiva',                   # (a family's papers: the father as they name him)
+                      'poruke-posetilaca', 'vikipedija'}    # (a visitor's message, a Wikipedia article: likewise)
 # books that print him as a possessive ("Mitrov", "Jovanova"): fathers_name is the nominative the site's names know
 POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
                       'revolucionarno-grahovo', 'bozice',       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
@@ -244,6 +245,9 @@ ONE_MAN = [
                                  'Kolašin book and the Spomenica\'s Kolašin chapter ("V.")'),
     ('9035005457', '9035006621', 'Đurašinović Anica, born 1922, fell 1944: the Spomenica\'s Kolašin (Polja, G. Morača) '
                                  'and Mojkovac (Podbišće, Javorje) chapters'),
+    # his Wikipedia article, which a visitor pointed us to, on a man whose record 122 holds
+    ('9991000004', '9001000086', 'Bogavac Vukašina Dragoslav of Veliđe (Berane), born 1910, the narodni heroj who fell '
+                                 'at Vrbnica in the spring of 1942 (F. Adžić, 2026-11-20)'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,

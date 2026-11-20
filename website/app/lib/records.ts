@@ -35,8 +35,9 @@ export const hasPage = (e: SoldierSource) => e.pdf_page != null && e.pdf_file !=
 export const isPoreklo = (url?: string) => !!url && (url.startsWith('poreklo:') || url.startsWith('https://biblioteka.poreklo.rs/'))
 
 /** What a soldier's family sent from its papers (a military booklet, a decision, a photograph), for a man no book prints:
- * the source "Porodična arhiva", named and never linked */
-export const isFamily = (url?: string) => !!url?.startsWith('porodica:')
+ * the source "Porodična arhiva", named and never linked; and so what a visitor who is not of the family sent ("Poruke
+ * posetilaca", posetioci:<entry>) */
+export const isFamily = (url?: string) => !!url && (url.startsWith('porodica:') || url.startsWith('posetioci:'))
 
 /** The 1964 census of the war's dead, a PDF per republic on the Museum of Genocide Victims' site */
 export const isMuseum = (url?: string) => !!url?.startsWith('https://www.muzejgenocida.rs/')

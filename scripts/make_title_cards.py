@@ -39,6 +39,8 @@ CARDS = {
     'knezica': (['КНЕЖИЦА', 'У КНЕШПОЉУ'], ['Миливој Родић'], 'Лакташи'),
     'kordunski-rekvijem': (['KORDUNSKI', 'REKVIJEM'], ['Svetozar Livada', 'i drugi'], 'Euroknjiga'),
     'porodicna-arhiva': (['PORODIČNA', 'ARHIVA'], ['Podaci i fotografije', 'iz porodičnih dokumenata'], ''),
+    'poruke-posetilaca': (['PORUKE', 'POSETILACA'], ['Podaci koje su poslali', 'posetioci sajta'], ''),
+    'vikipedija': (['VIKIPEDIJA'], ['Članci o borcima', 'na srpskom jeziku'], ''),
     'rogatica': (['ROGATICA'], ['Jusuf Žiga i drugi'], 'Sarajevo\n2009.'),
     'sutorina': (['СУТОРИНА', 'хроника подручја и насеља', 'са родословљем'], [], ''),
     'grahovo-podjele': (['GRAHOVO', 'U VRIJEME RATA', '1941–1945', 'grahovske podjele'], ['Mlađen Jovanov Vučetić'], 'Beograd\n2020.'),

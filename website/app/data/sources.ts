@@ -3186,5 +3186,26 @@ export const sources: PdfSource[] = [
     thumbnail: '/images/pdf-thumbs/porodicna-arhiva.jpg',
     brigadeName: '',
     description: 'Borci kojih nema ni u jednom spisku na sajtu, a za koje su porodice poslale podatke iz svojih dokumenata: vojne knjižice, rešenja, fotografije. Podatke prenosimo kako stoje u dokumentu. Nalaze se među Borcima drugih jedinica.'
+  },
+  {
+    // what visitors who are not of the family sent (a researcher's messages, 2026-11-20): named, never linked, as the
+    // family's papers (lib/records.ts isFamily)
+    id: 'poruke-posetilaca',
+    title: 'Poruke posetilaca',
+    author: '',
+    pdfPath: 'posetioci:',
+    thumbnail: '/images/pdf-thumbs/poruke-posetilaca.jpg',
+    brigadeName: '',
+    description: 'Podaci o borcima i aktivistima koje su nam poslali posetioci sajta koji nisu iz njihovih porodica, na primer istraživači lokalne istorije. Gde je sigurno da je reč o borcu koji je već na sajtu, poruku smo dodali njegovom zapisu. Ostali se nalaze među Borcima drugih jedinica.'
+  },
+  {
+    // a fighter's article on the Serbian Wikipedia, as a visitor pointed us to it (2026-11-20): each entry links its article
+    id: 'vikipedija',
+    title: 'Vikipedija',
+    author: '',
+    pdfPath: 'https://sr.wikipedia.org/wiki/',
+    thumbnail: '/images/pdf-thumbs/vikipedija.jpg',
+    brigadeName: '',
+    description: 'Članci o borcima i aktivistima na Vikipediji na srpskom jeziku. Iz članka smo preneli podatke o rođenju, radu u pokretu, borbi i smrti; svaki zapis vodi na svoj članak. Gde je sigurno da je reč o borcu koji je već na sajtu, dodali smo ih njegovom zapisu. Ostali se nalaze među Borcima drugih jedinica.'
   }
 ]

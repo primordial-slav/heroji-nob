@@ -369,6 +369,10 @@ export const sr = {
     title: 'Od porodice',
     /** The heading over photos that came from a public page, not from the family (FamilyContribution.origin) */
     titleFacebook: 'Sa Facebook stranice',
+    /** The heading over what a visitor who is not of the family sent (a researcher, a neighbour: FamilyContribution.origin
+     * 'visitor'), and over a family's and a visitor's together */
+    titleVisitor: 'Od posetilaca',
+    titleMixed: 'Od porodice i posetilaca',
     /** The link under a note to the fighter's article on Wikipedia (FamilyContribution.wikipedia) */
     wikipedia: 'Članak na Vikipediji',
     sent: (year: number, month?: number) => (month ? `${MONTHS[month - 1]} ${year}.` : `${year}.`),
