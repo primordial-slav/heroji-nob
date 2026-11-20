@@ -19,6 +19,7 @@ export interface FamilyContribution {
   from: string          // credit line, e.g. 'Ana Petrović, unuka'
   date: string          // when it was sent, 'YYYY-MM'
   origin?: 'facebook'   // not from the family but from a public Facebook page: the heading says so, `from` names the page
+  wikipedia?: string    // his article on Wikipedia, linked under the note ("Članak na Vikipediji"; the user, 2026-11-20)
 }
 
 export const familyContributions: FamilyContribution[] = [
@@ -76,6 +77,34 @@ export const familyContributions: FamilyContribution[] = [
     text: 'Pre rata, radio je kao učitelj (pre toga i izuzetan učenik) u rodnom mestu nakon čega je dobio nadimak „Uča” (negde napisano i kao „Učo”). Posle rata, njegovo ime sve do danas nosi Osnovna škola u Lađevcima kod Kraljeva. Tokom rata, bio je borac Kraljevačkog NOP odreda. Ispred škole, od 1976. godine nalazi se spomen-bista Dragana Đokovića, rad autora Ace Mitrovića. Bistu su podigli braća i majka Dragana Đokovića.',
     from: 'F. Adžić',
     date: '2026-11',
+    wikipedia: 'https://sr.wikipedia.org/wiki/Драган_Ђоковић_Учо',
+  },
+  {
+    soldierId: '0001010635', // Ristović Milije Dobrica "Staća" of Kovanluk (Kraljevo), Prva proleterska; a visitor's message of 2026-11-19
+    photo: '0001010635-1.jpg', // from his Wikipedia article; postwar, his portrait all the same (the user, 2026-11-20)
+    photoCaption: 'Posle rata',
+    text: 'Nosilac Partizanske spomenice 1941. Posle rata bio je visoki funkcioner u Kraljevu, između ostalog predsednik Sreskog odbora. Umro je 1971. i sahranjen u Aleji nosilaca Partizanske spomenice 1941. u Kraljevu.',
+    from: 'F. Adžić',
+    date: '2026-11',
+    wikipedia: 'https://sr.wikipedia.org/wiki/Добрица_Ристовић',
+  },
+  {
+    soldierId: '0136040042', // Jasnić Antonije Danica "Koka" of Kraljevo (census part Srbija); a visitor's message of 2026-11-20
+    photo: '0136040042-1.jpg', // from her Wikipedia article (public domain)
+    photoCaption: 'U Studenici, 1940.',
+    pieces: [{ kind: 'photo', file: '0136040042-2.jpg', caption: 'Spomen-ploča u selu Lisi kod Ivanjice, sa imenima streljanih boraca' }], // her Wikipedia article (CC0)
+    text: 'Profesorka francuskog jezika u Gimnaziji u Kraljevu. Uhapšena je u junu 1941, pobegla iz zatvora sa Olgom Jovičić Ritom i stupila u Kraljevački NOP odred „Jovo Kursula”. U decembru 1941. ostala je uz ranjenike u selu Kaoni; zarobili su je četnici i streljali u selu Lisi kod Ivanjice. Posmrtno je odlikovana Partizanskom spomenicom 1941.',
+    from: 'F. Adžić',
+    date: '2026-11',
+    wikipedia: 'https://sr.wikipedia.org/wiki/Даница_Кока_Јаснић',
+  },
+  {
+    soldierId: '0136014651', // Kolarević Miloš Tihomir "Tika" of Grdica (Kraljevo), census part Srbija; a visitor's message of 2026-11-20
+    photo: '0136014651-1.jpg',
+    photoCaption: '1930-ih',
+    text: 'Tihomir Tika Kolarević i njegov rođeni brat Milomir iz Grdice kod Kraljeva stupili su na početku rata u različite vojske: Tika u partizane, Milomir u četnike. Tokom rata su se suočili, kada je Tika razoružao brata i njegovu jedinicu. Tika je poginuo u ratu, a Milomir je otišao u izbeglištvo u London, gde je umro od starosti nekoliko decenija kasnije. Od posleratnih godina u Grdici postoji Ulica Tike Kolarevića, a od 2000-ih jedna ulica nosi i Milomirovo ime, pored ulice brata protiv kojeg je ratovao. Izmišljena verzija dvojice braće, po njihovoj priči, pojavljuje se u filmu „Crvena zemlja” iz 1970-ih, smeštenom u Kraljevo 1941.',
+    from: 'F. Adžić',
+    date: '2026-11',
   },
   {
     soldierId: '0036100540', // Karamatić Joze Ivo "Čović" of Plina Istočna (Ploče), 1. dalmatinska; the user sent the photos
@@ -131,6 +160,41 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0001003949', // Ivanović Radosava Špiro of Dragovoljići (Nikšić), Prva proleterska; the form of 2026-11-19 18:15
     text: 'Umro je 1976. godine. Penzionisan je kao pukovnik JNA.',
     from: 'S. Polić, pranećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122959609', // Milutinović Olga "Debela" of Gledić (Kraljevo), activist (Porodična arhiva 9990000005); F. Adžić's message
+    text: 'Njeno ime nosi Osnovna škola u Godačici kod Kraljeva, a ispred škole je od 1972. njena bista.',
+    from: 'F. Adžić',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122959610', // Vilotijević Dragomir "Crni" of Kraljevo, activist (Porodična arhiva 9990000006); his Wikipedia article
+    text: 'Osnovna škola „Braća Vilotijević” u Kraljevu nosi ime njega i njegovog brata, narodnog heroja Rada Vilotijevića Viće.',
+    from: 'F. Adžić',
+    date: '2026-11',
+    wikipedia: 'https://sr.wikipedia.org/wiki/Драгомир_Вилотијевић_Црни',
+  },
+  {
+    soldierId: '0122959611', // Kuzmanović Tihomir of Donja Gorevnica, activist (Porodična arhiva 9990000007); his Wikipedia article
+    photo: '9990000007-1.jpg', // the relief of his plaque, as his portrait (the user, 2026-11-20)
+    photoCaption: 'Reljef sa spomen-ploče u Žiči',
+    pieces: [{ kind: 'photo', file: '9990000007-2.jpg', caption: 'Spomen-ploča na Zadružnom domu u Žiči' }],
+    text: 'Zadrugari i meštani Žiče postavili su mu spomen-ploču nad ulazom u Zadružni dom, koji je podignut 1935. na njegovu inicijativu.',
+    from: 'F. Adžić',
+    date: '2026-11',
+    wikipedia: 'https://sr.wikipedia.org/wiki/Тихомир_Кузмановић',
+  },
+  {
+    soldierId: '0136014584', // Pirić Velimir Đorđe of Čibukovac (Kraljevo), census part Srbija; one of the five Pirić brothers
+    text: 'Bio je jedan od petorice braće Pirić iz Kraljeva, koji su svi bili partizani: Dragomir, Đorđije Đorđe, Milivoje, Jovan i Života. Rat je preživeo samo Života.',
+    from: 'F. Adžić',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0136014585', // Pirić Velimir Milivoje of Čibukovac (Kraljevo), census part Srbija; one of the five Pirić brothers
+    text: 'Bio je jedan od petorice braće Pirić iz Kraljeva, koji su svi bili partizani: Dragomir, Đorđije Đorđe, Milivoje, Jovan i Života. Rat je preživeo samo Života.',
+    from: 'F. Adžić',
     date: '2026-11',
   },
   {

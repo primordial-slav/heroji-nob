@@ -55,7 +55,10 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
             {item.photoCaption && <p className="family-caption">{item.photoCaption}</p>}
             {item.text && <p className="family-text">{item.text}</p>}
             {/* a sender who did not allow his name: the date alone */}
-            <p className="family-from">{item.from && `${item.from} · `}{sentOn(item.date)}</p>
+            <p className="family-from">
+              {item.from && `${item.from} · `}{sentOn(item.date)}
+              {item.wikipedia && <>{' · '}<a href={item.wikipedia} target="_blank" rel="noopener noreferrer">{t.wikipedia}</a></>}
+            </p>
           </figcaption>
         </figure>
       ))}
