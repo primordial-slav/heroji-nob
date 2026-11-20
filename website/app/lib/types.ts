@@ -85,6 +85,9 @@ export interface Soldier {
   // The soldier's entries in the unit's other books (or lists); fields above that this entry leaves empty were
   // filled in from them
   other_sources?: SoldierSource[]
+  // A man of Borci drugih jedinica whose entries name his unit, now its record: his old id there (old links still find
+  // him through it: scripts/prepare-data.ts)
+  former_ids?: string[]
   // Set on the home page for a soldier linked across units: the other units he is listed in
   also_units?: string[]
   // The dated steps of his life, in order, where there are three or more (website/data/life-events/, merged in by

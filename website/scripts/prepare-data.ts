@@ -112,6 +112,12 @@ function fileHash(manifest: Manifest, seen: Manifest['files'], relative: string)
 }
 
 const unitFile = (unit: Unit) => path.join('public', unit.dataFile)
+// the men Borci drugih jedinica gave to their units (data-extraction/build_ostali_borci.py, 2026-11-20): their old id ->
+// their record's id, so an old link still finds him; read with that unit's shards (writeWhere)
+const OSTALI_UNIT = 'ostali-borci'
+const MOVED_FILE = path.join('data', 'moved-ids.json')
+const movedIds = (): Record<string, string> =>
+  fs.existsSync(path.join(root, MOVED_FILE)) ? JSON.parse(fs.readFileSync(path.join(root, MOVED_FILE), 'utf8')) : {}
 const eventsFile = (unit: Unit) => path.join('data', 'life-events', unit.dataFile)
 // the war's events his unit was part of (scripts/make_igman_list.py), for the units that have them
 const warEventsFile = (unit: Unit) => path.join('data', 'events', unit.dataFile)
@@ -169,6 +175,9 @@ function writeWhere(unit: Unit, soldiers: Soldier[]) {
       }
     }
   })
+  // a man of Borci drugih jedinica now a record of his unit: his old id gives the new one (the address answers only
+  // with it, a 308, so no slice of the other unit is named here)
+  if (unit.id === OSTALI_UNIT) for (const [old, now] of Object.entries(movedIds())) put(old, [0, now])
   // a thousand ids of which none is left leave no file behind
   const dir = path.dirname(publicFile(wherePath('0000000')))
   fs.mkdirSync(dir, { recursive: true })
@@ -310,7 +319,9 @@ async function main() {
     const seen: Manifest['files'] = {}
     const unitHash = (unit: Unit) => {
       const war = fileHash(manifest, seen, warEventsFile(unit))
-      return sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)), ...(war ? [':', war] : []))
+      const moved = unit.id === OSTALI_UNIT ? fileHash(manifest, seen, MOVED_FILE) : ''
+      return sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)), ...(war ? [':', war] : []),
+        ...(moved ? [':', moved] : []))
     }
     const hashes = new Map(units.map((unit) => [unit.id, unitHash(unit)]))
     const recordsKey = (unit: Unit) => `${hashes.get(unit.id)}:${RECORDS_FORM}`

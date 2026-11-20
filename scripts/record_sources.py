@@ -509,7 +509,7 @@ def own_facts(s: dict, code: int, ex) -> dict:
     doesn't carry"""
     if code in OSTALI_CODES and structured.CENSUS not in (s.get('source_url') or ''):
         merged = {o.get('soldier_id') for o in s.get('other_sources', ())}
-        for eid in sorted(own_entry_ids(s['soldier_id']) - merged):
+        for eid in sorted(own_entry_ids((s.get('former_ids') or [s['soldier_id']])[0]) - merged):
             if column_entry(eid)[1]:
                 return column_facts({'soldier_id': eid}) or {}
     return facts_of({k: s.get(k) for k in ('soldier_id', 'additional_info', 'pdf_file', 'source_url')}, code, ex)
@@ -519,7 +519,7 @@ def sources(s: dict, by_id: dict, ex, own: bool = False) -> list[dict]:
     """The facts of each of the record's other entries: the unit's other books, the same man's records in other units
     and their books, and the census's and the column books' columns (their death; not the other books across units);
     own: the record's own entry first"""
-    code = int(s['soldier_id'][:4])
+    code = structured.read_code(s, int(s['soldier_id'][:4]))
     out = [own_facts(s, code, ex)] if own else []
     for o in s.get('other_sources', ()):
         oid = o.get('soldier_id') or ''
@@ -557,8 +557,9 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
     """The birth years and the deaths the record's other books, linked records, the census and the column books give
     otherwise. family: the fields a family's correction set on the record; fixed: those other corrections set. The
     record's own entry is one book among the others in Borci drugih jedinica (the census's columns may have given its
-    fields), and in a unit's record where a family's correction set the field"""
-    code = int(s['soldier_id'][:4])
+    fields), and in a unit's record where a family's correction set the field; a man Borci drugih jedinica gave his unit
+    is one of its records here (structured.read_code)"""
+    code = structured.read_code(s, int(s['soldier_id'][:4]))
     if code in OSTALI_CODES and code != 122:
         return {}                   # the census's parts: one entry each, its columns the fields
     own_death = (code == 122 or bool(family & set(DEATH_FIELDS))) and not (fixed - family) & set(DEATH_FIELDS)

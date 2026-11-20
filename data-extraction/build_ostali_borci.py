@@ -61,6 +61,12 @@ IDS = ROOT / 'data-extraction' / 'ostali_borci_ids.json'
 ON_SITE = ROOT / 'data-extraction' / '.cache' / 'ostali_on_site.json'     # the entries left out for their man's record
 FIRST_NEW = 900001
 OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json, which the parsers' corpora read
+# a man whose entries name a unit on the site without doubt is a record of that unit, not of 122 (2026-11-20, the
+# user's rule; scripts/unit_named.py): his record in the unit's file, its ID from UNIT_FIRST in a range no unit's books
+# use, kept by entry as IDS keeps 122's (UNIT_IDS: entry -> the unit record's ID), his 122 ID in former_ids
+UNIT_IDS = ROOT / 'data-extraction' / 'unit_record_ids.json'
+UNIT_FIRST = 900001
+MOVED = ROOT / 'website' / 'data' / 'moved-ids.json'
 CENSUS = 'zrtve-rata-1964'                                  # the census's volumes: zrtve-rata-1964-<vol>
 # names a parser read wrong, by entry: the Zbornik's headings "DEMONJ A (NIKOLA)", "RAKOVAC J (OAKIM)" and one whose
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
@@ -736,15 +742,80 @@ def chosen_fathers() -> dict[str, tuple[str, str]]:
     still holds him as printed ("Đ.", "JOSIPA", "Marka."), and a second run before normalize_all_json had compared
     that with the cleaned form and lost the choice (2026-11-19: Ćosović Veljko's Đorđije became the initial "Đ").
     An initial is never a choice to keep."""
-    if not OUT.exists():
-        return {}
     out = {}
-    for r in json.loads(OUT.read_text(encoding='utf-8')):
-        printed = to_title_case(clean_name_field(r.get('middle_name') or ''))
-        nom = r.get('fathers_name') or ''
-        if printed and len(re.sub(r'\W', '', nom)) > 2 and nom != printed:
-            out[r['soldier_id']] = (printed, nom)
+    # (and the men this script gave to their units, by their 122 ID: the choice goes with him)
+    for path, moved in [(OUT, False)] + [(unit_file(code), True) for code in unit_codes()]:
+        if not path.exists():
+            continue
+        for r in json.loads(path.read_text(encoding='utf-8')):
+            if moved and not is_moved(r):
+                continue
+            printed = to_title_case(clean_name_field(r.get('middle_name') or ''))
+            nom = r.get('fathers_name') or ''
+            if printed and len(re.sub(r'\W', '', nom)) > 2 and nom != printed:
+                out[r['former_ids'][0] if moved else r['soldier_id']] = (printed, nom)
     return out
+
+
+def unit_file(code: int) -> Path:
+    return ROOT / 'website' / 'public' / BRIGADE_CONFIGS[code]['json_file']
+
+
+def unit_registry() -> dict[str, str]:
+    return json.loads(UNIT_IDS.read_text(encoding='utf-8')) if UNIT_IDS.exists() else {}
+
+
+def unit_codes() -> set[int]:
+    """the units that hold men this script gave them"""
+    return {int(v[:4]) for v in unit_registry().values()}
+
+
+def is_moved(r: dict) -> bool:
+    return bool(r.get('former_ids')) and int(r['soldier_id'][4:]) >= UNIT_FIRST
+
+
+def move_to_units(recs: list[dict], ids: dict[str, str]) -> tuple[dict, dict, Counter]:
+    """Take out of 122's records those whose entries name a unit on the site without doubt (scripts/unit_named.py),
+    each with its ID in the unit: unit code -> the records, the registry, and why the others stay. Not a man of the
+    movement who was no fighter (role), nor one whose entries include the unit's own book, whose parser left him out
+    (the Mosor list's activists: "držao u ilegalnosti 2. četu ... Mosorskog PO")."""
+    import unit_named
+    registry_ = unit_registry()
+    entries_of = defaultdict(list)
+    for e, rid in ids.items():
+        entries_of[rid].append(e)
+    nxt = {}
+    for v in registry_.values():
+        nxt[int(v[:4])] = max(nxt.get(int(v[:4]), UNIT_FIRST), int(v[4:]) + 1)
+    moved, keep, why, taken_ids = defaultdict(list), [], Counter(), set()
+    for r in recs:
+        if r.get('role'):
+            keep.append(r)
+            why['a man of the movement, no fighter'] += 1
+            continue
+        texts = [r.get('additional_info') or ''] + [o.get('additional_info') or '' for o in r.get('other_sources') or ()]
+        code, how = unit_named.unit_of(texts)
+        pdfs = {r.get('pdf_file')} | {o.get('pdf_file') for o in r.get('other_sources') or ()}
+        if code and pdfs & unit_named.own_books(code):
+            code, how = None, "an entry of the unit's own book, which its parser left out"
+        if not code:
+            keep.append(r)
+            why[how] += 1
+            continue
+        es = sorted(entries_of[r['soldier_id']])
+        had = sorted(v for e in es for v in [registry_.get(e, '')] if v[:4] == f'{code:04d}' and v not in taken_ids)
+        if had:
+            nid = had[0]
+        else:
+            nid = f'{code:04d}{nxt.setdefault(code, UNIT_FIRST):06d}'
+            nxt[code] += 1
+        taken_ids.add(nid)
+        for e in es:
+            registry_[e] = nid
+        moved[code].append({**r, 'soldier_id': nid, 'former_ids': [r['soldier_id']]})
+        why['to its unit'] += 1
+    recs[:] = keep
+    return moved, registry_, why
 
 
 def source_entry(e: dict) -> dict:
@@ -1021,9 +1092,17 @@ def main():
     parts = defaultdict(list)                                 # code -> its records
     for r in records:
         parts[int(r['soldier_id'][:4])].append(r)
-    for recs in parts.values():
-        recs.sort(key=lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id']))
+    # the men whose entries name their unit on the site go to it (move_to_units)
+    to_units, unit_ids, why = move_to_units(parts[CODE], ids)
+    by_name = lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id'])  # noqa: E731
+    for recs in list(parts.values()) + list(to_units.values()):
+        recs.sort(key=by_name)
     print(f'{len(entries)} entries, {len(taken)} on records of units; {len(records)} records')
+    print(f'{sum(len(v) for v in to_units.values())} records of {CODE} go to {len(to_units)} units:')
+    for k, v in why.most_common():
+        print(f'  {v:6d}  {k}')
+    for code, recs in sorted(to_units.items(), key=lambda kv: -len(kv[1])):
+        print(f"  {len(recs):5d}  {code} {BRIGADE_CONFIGS[code]['name']}")
     print(f'{len(on_site)} more entries are the same man as an entry on the site and stay out')
     for k, v in sorted(counts.items()):
         print(f'  {k}: {v}')
@@ -1037,6 +1116,20 @@ def main():
             print('Written', path)
         write_text(IDS, json.dumps(dict(sorted(ids.items())), ensure_ascii=False, indent=0))
         print('Written', IDS)
+        # the unit files: their own records as they are, this script's range replaced (a unit that held men of an
+        # earlier run and holds none now is written too)
+        for code in sorted(set(to_units) | unit_codes()):
+            path = unit_file(code)
+            own = [r for r in json.loads(path.read_text(encoding='utf-8')) if not is_moved(r)]
+            write_text(path, json.dumps(own + to_units.get(code, []), ensure_ascii=False, indent=2))
+        print(f'Written {len(set(to_units) | unit_codes())} unit files')
+        write_text(UNIT_IDS, json.dumps(dict(sorted(unit_ids.items())), ensure_ascii=False, indent=0))
+        print('Written', UNIT_IDS)
+        # his old address still finds him: old 122 ID -> his record's (website/scripts/prepare-data.ts writes it into
+        # 122's own where-files, and /borac/<old> answers with the new one)
+        write_text(MOVED, json.dumps({r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs},
+                                     ensure_ascii=False, indent=0, sort_keys=True))
+        print('Written', MOVED)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
         # records that hold its man (2026-10-31: they had shown nowhere)
         ON_SITE.parent.mkdir(parents=True, exist_ok=True)

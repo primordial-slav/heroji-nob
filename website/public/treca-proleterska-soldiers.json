@@ -4637,10 +4637,10 @@
     "ethnicity": "Srbin",
     "death_place": "u Štitkovc",
     "party": "KPJ",
+    "death_date": "19.10.1943",
     "birth_place": "Nova Varoš",
     "occupation": "radnik",
     "death_type": "poginuo",
-    "death_date": "10.1943",
     "rank": "borac"
   },
   {
@@ -17497,10 +17497,10 @@
     ],
     "ethnicity": "Crnogorka",
     "unit_detail": "1. četa, 2. bataljon",
+    "death_date": "13.06.1943",
     "birth_place": "Prijepolje",
     "occupation": "domaćica",
     "death_type": "poginuo",
-    "death_date": "06.1943",
     "death_place": "Sutjeska",
     "rank": "bolničarka"
   },
@@ -33812,15 +33812,21 @@
     "unit_detail": "4. bataljon",
     "ethnicity": "Crnogorac",
     "party": "KPJ 1942",
+    "death_date": "13.04.1944",
     "birth_place": "Mioče",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
-    "death_date": "1944",
     "death_place": "kod Sahovića",
     "rank": "borac",
     "variants": {
       "born": [
         "1921"
+      ],
+      "death": [
+        {
+          "date": "14.04.1944",
+          "place": "kod Sahovića"
+        }
       ]
     }
   },
@@ -102852,5 +102858,26 @@
     "rank": "bolničarka",
     "unit_detail": "2. četa, 2. bataljon",
     "pdf_x_end": 378.4
+  },
+  {
+    "soldier_id": "0005900001",
+    "last_name": "Marjanović",
+    "middle_name": "Joje",
+    "first_name": "Drago",
+    "fathers_name": "Joja",
+    "full_name": "Marjanović Joje Drago",
+    "additional_info": "Nosioci Partizanske spomenice 1941. godine, Lušci Palanka: MARJANOVIĆ Joje DRAGO, rođen 1922, službenik, 4 raz. osnovne škole, sekretar Štaba 3. proleterske brigade",
+    "birth_year": "1922",
+    "pdf_file": "sanski-most-borci.pdf",
+    "pdf_page": 170,
+    "pdf_x": 143.1,
+    "pdf_y": 629.5,
+    "pdf_x_end": 500.5,
+    "pdf_y_end": 649.5,
+    "former_ids": [
+      "0122936052"
+    ],
+    "occupation": "službenik",
+    "birth_place": "Lušci Palanka"
   }
 ]

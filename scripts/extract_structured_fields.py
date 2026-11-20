@@ -643,6 +643,28 @@ def odred_named(text: str) -> str:
     return f'{m.group(1)}i odred' if m else ''
 
 
+# a brigade by its number with the division after it: "3. brig. 6. lič. prol. DNT", "1. brigadi VII banijske divizije"
+BRIGADE_DIVISION_RE = re.compile(rf'(?<![\w.])(\d{{1,2}})\.\s*brig(?:ad[aeiu]|\.)?\s*,?\s*(\d{{1,2}}\.|(?-i:[IVX]{{1,5}})\.?)'
+                                 rf'\s*(?:[{U}{L}-]+\.?\s+){{0,3}}?(?:divizij\w*|div\.|D[{U}]{{1,3}}\b)')
+
+
+def higher_unit(text: str) -> str:
+    """The brigade or odred a Borci drugih jedinica entry names, which its sub-unit needs: a brigade by its name ("4.
+    sandžačka brigada"), a numbered one with its division ("3. brig. 6. lič. prol. DNT" is 3. brigada 6. divizije; the
+    reader had cut the division and the card said "3. brigada", 2026-11-20), an odred; a bare number names none"""
+    from standardize_fields import roman_value
+    b = brigade_named_loose(text)
+    if len(b.split()) > 2:
+        return b
+    m = BRIGADE_DIVISION_RE.search(text)
+    if m:
+        d = m.group(2).rstrip('.')
+        d = d if d.isdigit() else str(roman_value(d) or '')
+        if d:
+            return f'{m.group(1)}. brigada {d}. divizije'
+    return odred_named(text)
+
+
 # the soldier's duty printed after where he fell, to the end (8. krajiška ends every bio so); all lowercase,
 # so a name glued on after it (5. kozaračka, 21. slavonska) keeps the clause from passing for a place
 DUTY_AFTER_PLACE = re.compile(
@@ -1777,7 +1799,7 @@ class Extractor:
         if code in BRIGADE_IN_UNIT and 'brigad' not in unit.lower():
             unit = ', '.join(p for p in (unit, brigade_named(text)) if p)
         if code == OSTALI and unit and not HIGHER_UNIT.search(unit):
-            higher = brigade_named_loose(text) or odred_named(text)
+            higher = higher_unit(text)
             unit = f'{unit}, {higher}' if higher else ''
         if unit:
             out['unit_detail'] = unit
@@ -2044,9 +2066,31 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     return True
 
 
+def read_code(s: dict, code: int) -> int:
+    """The rules a record's entries are read by: a man Borci drugih jedinica gave his unit (former_ids, 2026-11-20) is
+    read as one of its records, his entries being its books' and none of the unit's own (the 34. divizija's column of
+    dates, the Druga proleterska's fields set by its parser)"""
+    return OSTALI if s.get('former_ids') else code
+
+
+def unit_on_its_page(unit: str, code: int) -> str:
+    """A moved man's "U jedinici" row on his unit's page: the sub-unit alone where the page is his brigade or odred
+    ("2. bataljon, 3. brigada 6. divizije" on the 3. lička's is 2. bataljon), the brigade kept where it is his division
+    ("2. bataljon, 1. brigada 8. divizije" on the 8. kordunaška's is 2. bataljon, 1. brigada)"""
+    import unit_named
+    sub, _, higher = unit.rpartition(', ')
+    if not sub:
+        return ''
+    if code in unit_named.division_codes():
+        m = re.match(r'(\d{1,2}\.\s+\S*\s*brigada)', higher)
+        return f'{sub}, {m.group(1)}' if m else sub
+    return sub
+
+
 def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
+    unit_code, code = code, read_code(s, code)
     got, village, orgs = {}, '', {}
     # another unit's entries: its own fields; a book across units (a hero's portrait): read by no rule here
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
@@ -2098,6 +2142,10 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         got['birth_place'] = clean_birthplace(got['birth_place'])
         if not got['birth_place']:
             del got['birth_place']
+    if unit_code != code and got.get('unit_detail'):
+        got['unit_detail'] = unit_on_its_page(got['unit_detail'], unit_code)
+        if not got['unit_detail']:
+            del got['unit_detail']
     return got
 
 
@@ -2152,7 +2200,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--apply', action='store_true', help='write the brigade JSON files')
     ap.add_argument('--sample', type=int, default=6, help='samples to print per brigade (dry run)')
-    ap.add_argument('--brigade', type=int, help='only this brigade code')
+    ap.add_argument('--brigade', type=int, nargs='+', help='only these brigade codes (122 and the units its men went to)')
     args = ap.parse_args()
 
     brigades = load_live()
@@ -2160,7 +2208,7 @@ def main():
     random.seed(1)
     total = Counter()
     for code, (fname, d) in brigades.items():
-        if args.brigade and code != args.brigade:
+        if args.brigade and code not in args.brigade:
             continue
         filled, samples, touched = Counter(), [], 0
         for s in d:
