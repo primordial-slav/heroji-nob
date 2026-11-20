@@ -620,13 +620,16 @@ def apply(soldiers: list[dict], by_id: dict, manual: dict | None = None, family:
     manual, family = manual or {}, family or {}
     counts = {'birth_date': 0, 'born': 0, 'death': 0}
     for s in soldiers:
-        s.pop('birth_date', None)
+        sid = s['soldier_id']
+        # a day a family's report sets stays (his own papers: Radenković Živan's autobiography, 2026-11-20); the day
+        # older corrections set (units 2 and 7, "31. 7. 1907.") is still read again from the entries
+        if 'birth_date' not in family.get(sid, ()):
+            s.pop('birth_date', None)
         s.pop('variants', None)
-        day = birth_day(s)
+        day = None if s.get('birth_date') else birth_day(s)
         if day:
             s['birth_date'] = day_form(day[3])
             counts['birth_date'] += 1
-        sid = s['soldier_id']
         v = variants(s, by_id, ex, set(family.get(sid, ())), set(manual.get(sid, ())))
         if v:
             s['variants'] = v
