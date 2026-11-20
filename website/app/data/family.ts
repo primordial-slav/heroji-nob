@@ -270,6 +270,18 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0122959616', // Radenković Milorada Petar of Počekovina (Porodična arhiva 9990000006), Živan's and Živka's elder brother; the nephew's missing-fighter form of 2026-11-20 21:50
+    photo: '0122959616-1.jpg', // the photo the family set on his medal's certificate
+    photoCaption: 'U kasnijim godinama',
+    text: 'Godine 1941. uključio se u prikupljanje oružja za borbu protiv okupatora. Učestvovao je u pripremi bitke na Popini kao deo grupe koja je, pod rukovodstvom kapetana Milenkovića, porušila most u selu Gornji Ribnik na putu Kruševac–Kraljevo. Tih dana bio je kurir na liniji Trstenik–Kruševac tokom priprema za pružanje otpora na Popini kod Trstenika. Kada su započele borbe između četnika i partizana, povukao se i gledao kako da spase glavu od četnika u dolini Zapadne Morave, koji su proganjali porodicu zbog sestre i brata koji su bili u partizanima. Partizanima se priključio 1944. godine, što je upisano u Monografiju o učesnicima NOR-a opštine Trstenik (str. 305).',
+    pieces: [
+      { kind: 'document', file: '0122959616-2.jpg', caption: 'Monografija o učesnicima NOR-a 1941–1945. opštine Trstenik (1996), str. 305: „Radenković (Milorada) Petar, rođen 1923. g., učesnik NOR-a od 1944. godine”' },
+      { kind: 'document', file: '0122959616-3.jpg', caption: 'Uverenje o odlikovanju Medaljom rada, 1972.' },
+    ],
+    from: 'H. Radenković, bratanac',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959609', // Milutinović Olga "Debela" of Gledić (Kraljevo), activist (Poruke posetilaca 9992000001); F. Adžić's message
     text: 'Njeno ime nosi Osnovna škola u Godačici kod Kraljeva, a ispred škole je od 1972. njena bista.',
     from: 'F. Adžić',
