@@ -305,7 +305,9 @@ export const sr = {
     addMore: 'Dodajte još',
     tooMany: (n: number) => `Najviše ${n} fajlova.`,
     fileTooLarge: (name: string) => `${name} je prevelik. Pošaljite manji (do 9 MB).`,
-    filesLost: 'Neki fajlovi nisu stigli zbog prekida veze; pošaljite ih, molimo, još jednom.',
+    filesLost: (names: string) => `Ovi fajlovi nisu stigli: ${names}.`,
+    sendAgain: 'Pošalji ih ponovo',
+    sendingFile: (n: number, of: number) => `Šalje se fajl ${n} od ${of}…`,
     name: 'Vaše ime i prezime',
     email: 'Email',
     emailHint: 'Email nam služi samo da vam se javimo, a ako ostavite adresu, javićemo vam kad kartica borca bude dopunjena. Ne objavljujemo ga, ne delimo ni sa kim i neće biti nikakvog spama.',
@@ -367,7 +369,9 @@ export const sr = {
     cancel: 'Otkaži',
     thanks: 'Hvala vam. Pogledaćemo šta ste poslali.',
     willReply: 'Ako nešto ne bude jasno, javićemo vam se.',
-    filesLost: 'Neki fajlovi nisu stigli zbog prekida veze; pošaljite ih, molimo, još jednom.',
+    filesLost: (names: string) => `Ovi fajlovi nisu stigli: ${names}.`,
+    sendAgain: 'Pošalji ih ponovo',
+    sendingFile: (n: number, of: number) => `Šalje se fajl ${n} od ${of}…`,
   },
 
   family: {

@@ -6,14 +6,14 @@ import type { Unit } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import { shrinkPhoto } from '@/app/lib/images'
 import { wasDelivered } from '@/app/lib/formsubmit'
+import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
 
 const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
-// FormSubmit's AJAX endpoint drops attachments; its regular endpoint keeps them but answers with a page we
-// can't read cross-origin. So the text goes through AJAX (and we know it arrived), the photo separately here.
-const PHOTO_ENDPOINT = `https://formsubmit.co/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
-// The form service takes at most 10 MB per message
+// The text goes through FormSubmit's AJAX endpoint (so we know it arrived), each file after it in a message of its own,
+// through the site's /api/prilog, which waits for FormSubmit's answer (lib/attachments.ts).
+// The form service takes at most 10 MB per message (a PDF over 4.3 MB goes to it straight)
 const MAX_FILE_BYTES = 9_500_000
 const MAX_FILES = 6
 
@@ -34,7 +34,8 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const [email, setEmail] = useState('')
   const [mayPublish, setMayPublish] = useState(false)
   const [mayShowName, setMayShowName] = useState(false)
-  const [filesLost, setFilesLost] = useState(false)
+  const [sendingFile, setSendingFile] = useState<[number, number] | null>(null)
+  const [lost, setLost] = useState<Attachment[]>([])
   const fileInput = useRef<HTMLInputElement>(null)
 
   const canSend = (story.trim() || files.length > 0) && name.trim()
@@ -97,25 +98,22 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         return
       }
 
-      // one message a file; the answer is opaque (no CORS), so only a network error shows as a failure
-      for (let i = 0; i < blobs.length; i++) {
-        const body = new FormData()
-        body.append('_subject', `Fotografija: ${soldier.full_name} (${soldier.soldier_id}) ${i + 1}/${blobs.length}`)
-        body.append('_template', 'table')
-        body.append('_captcha', 'false')
-        body.append('Borac', soldier.full_name)
-        body.append('ID', soldier.soldier_id)
-        body.append('Ime pošiljaoca', name)
-        if (email.trim()) body.append('_replyto', email.trim())
+      // one message a file, each waited for; those that still didn't arrive are named, with a button to send them again
+      const items: Attachment[] = blobs.map((blob, i) => {
         const isPdf = files[i].type === 'application/pdf'
-        const ext = isPdf ? 'pdf' : blobs[i].type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'
-        body.append('Fotografija', blobs[i], `${soldier.soldier_id}-${i + 1}.${ext}`)
-        try {
-          await fetch(PHOTO_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
-        } catch {
-          setFilesLost(true)
+        const ext = isPdf ? 'pdf' : blob.type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'
+        return {
+          name: files[i].name,
+          subject: `Fotografija: ${soldier.full_name} (${soldier.soldier_id}) ${i + 1}/${blobs.length}`,
+          field: 'Fotografija',
+          fields: { Borac: soldier.full_name, ID: soldier.soldier_id, 'Ime pošiljaoca': name },
+          replyTo: email.trim() || undefined,
+          blob,
+          filename: `${soldier.soldier_id}-${i + 1}.${ext}`,
         }
-      }
+      })
+      setLost(await sendAttachments(items, (n, of) => setSendingFile([n, of])))
+      setSendingFile(null)
       setStatus('sent')
     } catch {
       setStatus('error')
@@ -133,14 +131,27 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
     )
   }
 
+  const sendAgain = async () => {
+    const again = await sendAttachments(lost, (n, of) => setSendingFile([n, of]))
+    setSendingFile(null)
+    setLost(again)
+  }
+
   if (status === 'sent') {
     return (
       <div className="know-soldier" role="status">
         <p className="know-soldier-done">
           {t.thanks}
           {email.trim() && ` ${t.willReply}`}
-          {filesLost && ` ${t.filesLost}`}
         </p>
+        {lost.length > 0 && (
+          <>
+            <p className="know-error">{t.filesLost(lost.map((a) => a.name).join(', '))}</p>
+            <button type="button" className="btn btn-secondary" onClick={sendAgain} disabled={!!sendingFile}>
+              {sendingFile ? t.sendingFile(...sendingFile) : t.sendAgain}
+            </button>
+          </>
+        )}
       </div>
     )
   }
@@ -236,7 +247,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
 
       <div className="report-actions">
         <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
-          {status === 'sending' ? t.sending : t.send}
+          {status === 'sending' ? (sendingFile ? t.sendingFile(...sendingFile) : t.sending) : t.send}
         </button>
         <button type="button" className="btn btn-secondary" onClick={() => setStatus('closed')}>
           {t.cancel}

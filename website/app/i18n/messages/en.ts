@@ -271,7 +271,9 @@ export const en: Messages = {
     addMore: 'Add more',
     tooMany: (n: number) => `At most ${n} files.`,
     fileTooLarge: (name: string) => `${name} is too large. Please send a smaller one (up to 9 MB).`,
-    filesLost: 'Some files did not arrive because the connection broke; please send them again.',
+    filesLost: (names: string) => `These files did not arrive: ${names}.`,
+    sendAgain: 'Send them again',
+    sendingFile: (n: number, of: number) => `Sending file ${n} of ${of}…`,
     name: 'Your full name',
     email: 'Email',
     emailHint: 'We use your email only to get back to you: if you leave it, we will tell you when the card of the fighter is updated. We never publish it or share it, and there will be no spam.',
@@ -331,7 +333,9 @@ export const en: Messages = {
     cancel: 'Cancel',
     thanks: 'Thank you. We will look at what you sent.',
     willReply: 'If anything is unclear, we will get in touch.',
-    filesLost: 'Some files did not arrive because the connection broke; please send them again.',
+    filesLost: (names: string) => `These files did not arrive: ${names}.`,
+    sendAgain: 'Send them again',
+    sendingFile: (n: number, of: number) => `Sending file ${n} of ${of}…`,
   },
 
   family: {

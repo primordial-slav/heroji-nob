@@ -268,7 +268,9 @@ export const sl: Messages = {
     addMore: 'Dodajte še',
     tooMany: (n: number) => `Največ ${n} datotek.`,
     fileTooLarge: (name: string) => `Datoteka ${name} je prevelika. Pošljite manjšo (do 9 MB).`,
-    filesLost: 'Nekatere datoteke zaradi prekinitve povezave niso prispele; prosimo, pošljite jih še enkrat.',
+    filesLost: (names: string) => `Te datoteke niso prispele: ${names}.`,
+    sendAgain: 'Pošlji jih znova',
+    sendingFile: (n: number, of: number) => `Pošiljanje datoteke ${n} od ${of}${dots}`,
     name: 'Vaše ime in priimek',
     email: 'E-pošta',
     emailHint: 'E-naslov potrebujemo samo zato, da se vam lahko oglasimo: če ga vpišete, vam sporočimo, ko bo kartica borca dopolnjena. Ne bomo ga objavili ali dali nikomur in ne bomo vam pošiljali nezaželene pošte.',
@@ -328,7 +330,9 @@ export const sl: Messages = {
     cancel: 'Prekliči',
     thanks: 'Hvala. Pregledali bomo, kar ste poslali.',
     willReply: 'Če kaj ne bo jasno, se vam bomo oglasili.',
-    filesLost: 'Nekatere datoteke zaradi prekinitve povezave niso prispele; prosimo, pošljite jih še enkrat.',
+    filesLost: (names: string) => `Te datoteke niso prispele: ${names}.`,
+    sendAgain: 'Pošlji jih znova',
+    sendingFile: (n: number, of: number) => `Pošiljanje datoteke ${n} od ${of}${dots}`,
   },
 
   family: {

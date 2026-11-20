@@ -172,6 +172,36 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0122959608', // Ćulibrk Svetko of Risovac (Porodična arhiva 9990000004); the granddaughter's form of 2026-11-20 15:51
+    photo: '0122959608-1.jpg',
+    // she sent his two war memoirs as a typed PDF (the first was printed as "U Trećoj krajiškoj brigadi" in Bosanski
+    // Petrovac u NOB, zbornik sjećanja, knj. V, 1974, pp. 235-239, which she sent whole) and allowed text and photos,
+    // not her name
+    pieces: [{
+      kind: 'document',
+      file: '0122959608-2.jpg',
+      pages: ['0122959608-3.jpg', '0122959608-4.jpg', '0122959608-5.jpg', '0122959608-6.jpg'],
+      caption: 'Njegova ratna sećanja: „Postao sam proleterski borac” (u zborniku Bosanski Petrovac u NOB, knj. V, 1974) i „Na pragu Srbije”',
+    }],
+    from: '',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122908393', // Lukić Luke Petar of Gejkovac (Krstinja), killed at Jadovno 1941 (hak-19-vojnic); the great-granddaughter's form of 2026-11-20 17:28
+    photo: '0122908393-1.jpg', // cut from the photo with his sons, shown whole in the album
+    pieces: [{ kind: 'photo', file: '0122908393-2.jpg', caption: 'Sa sinovima Ilijom i Bogdanom' }],
+    text: 'Prema porodičnom sjećanju, ljudi su odvedeni iz Mehina Stanja, a neki su završili u crkvi u Kladuši, odakle su odvedeni u Jadovno. Nakon rata djeca su ostala siročad, a djed je bio udomljen u Ljubljani. Ipak, nakon par dana vratio se na Kordun.',
+    from: 'A. Petrušić, praunuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0067000827', // Palčič Dino, b. 1925, Istarski odred; the great-grandson's form of 2026-11-20 17:48 (sent four times, its photo never arrived)
+    // translated from Slovene by the sender
+    text: 'Učestvovao je u borbama i radio kao stražar u tajnoj partizanskoj bolnici. Na kraju je izgubio nogu usled rane od gelera koja se inficirala. Posle rata živeo je u Ljubljani, gde je radio kao mehaničar na železničkoj stanici. Preminuo je 2007. godine u Ljubljani, gde je i sahranjen.',
+    from: 'M. Palčič, praunuk',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959609', // Milutinović Olga "Debela" of Gledić (Kraljevo), activist (Poruke posetilaca 9992000001); F. Adžić's message
     text: 'Njeno ime nosi Osnovna škola u Godačici kod Kraljeva, a ispred škole je od 1972. njena bista.',
     from: 'F. Adžić',

@@ -3,14 +3,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { shrinkPhoto } from '@/app/lib/images'
 import { wasDelivered } from '@/app/lib/formsubmit'
+import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
 import s from './MissingSoldierForm.module.css'
 
 const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
-// As in KnowSoldierForm: FormSubmit's AJAX endpoint drops attachments, its regular one keeps them but answers with a page
-// we can't read cross-origin. The text goes through AJAX (so we know it arrived), each file in a message of its own here.
-const FILE_ENDPOINT = `https://formsubmit.co/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
+// As in KnowSoldierForm: the text goes through FormSubmit's AJAX endpoint (so we know it arrived), each file after it in
+// a message of its own, through the site's /api/prilog, which waits for FormSubmit's answer (lib/attachments.ts).
 const MAX_FILE_BYTES = 9_500_000
 const MAX_FILES = 6
 const FATES = ['unknown', 'fell', 'died', 'missing', 'survived'] as const
@@ -54,7 +54,8 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
   const [email, setEmail] = useState('')
   const [mayPublish, setMayPublish] = useState(false)
   const [mayShowName, setMayShowName] = useState(false)
-  const [filesLost, setFilesLost] = useState(false)
+  const [sendingFile, setSendingFile] = useState<[number, number] | null>(null)
+  const [lost, setLost] = useState<Attachment[]>([])
   const fileInput = useRef<HTMLInputElement>(null)
 
   const canSend = soldier.trim() && name.trim() && (story.trim() || files.length > 0 || unit.trim() || birthplace.trim())
@@ -116,24 +117,19 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
         setStatus('error')
         return
       }
-      // one message a file; the answer is opaque (no CORS), so only a network error shows as a failure
-      for (let i = 0; i < blobs.length; i++) {
-        const body = new FormData()
-        body.append('_subject', `Prilog: ${soldier.trim()} (${i + 1}/${blobs.length})`)
-        body.append('_template', 'table')
-        body.append('_captcha', 'false')
-        body.append('Borac', soldier.trim())
+      // one message a file, each waited for; those that still didn't arrive are named, with a button to send them again
+      const items: Attachment[] = blobs.map((blob, i) => ({
+        name: files[i].name,
+        subject: `Prilog: ${soldier.trim()} (${i + 1}/${blobs.length})`,
+        field: 'Prilog',
         // one word: FormSubmit's regular endpoint writes a space in a field's name as "_" ("Ime_pošiljaoca")
-        body.append('Pošiljalac', name.trim())
-        if (email.trim()) body.append('_replyto', email.trim())
-        const ext = blobs[i].type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'
-        body.append('Prilog', blobs[i], `prilog-${i + 1}.${ext}`)
-        try {
-          await fetch(FILE_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
-        } catch {
-          setFilesLost(true)
-        }
-      }
+        fields: { Borac: soldier.trim(), Pošiljalac: name.trim() },
+        replyTo: email.trim() || undefined,
+        blob,
+        filename: `prilog-${i + 1}.${blob.type === 'image/jpeg' ? 'jpg' : files[i].name.split('.').pop() || 'jpg'}`,
+      }))
+      setLost(await sendAttachments(items, (n, of) => setSendingFile([n, of])))
+      setSendingFile(null)
       setStatus('sent')
     } catch {
       setStatus('error')
@@ -152,14 +148,27 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
     )
   }
 
+  const sendAgain = async () => {
+    const again = await sendAttachments(lost, (n, of) => setSendingFile([n, of]))
+    setSendingFile(null)
+    setLost(again)
+  }
+
   if (status === 'sent') {
     return (
       <div className="know-soldier" role="status">
         <p className="know-soldier-done">
           {t.thanks}
           {email.trim() && ` ${t.willReply}`}
-          {filesLost && ` ${t.filesLost}`}
         </p>
+        {lost.length > 0 && (
+          <>
+            <p className="know-error">{t.filesLost(lost.map((a) => a.name).join(', '))}</p>
+            <button type="button" className="btn btn-secondary" onClick={sendAgain} disabled={!!sendingFile}>
+              {sendingFile ? t.sendingFile(...sendingFile) : t.sendAgain}
+            </button>
+          </>
+        )}
       </div>
     )
   }
@@ -255,7 +264,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
 
       <div className="report-actions">
         <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
-          {status === 'sending' ? t.sending : t.send}
+          {status === 'sending' ? (sendingFile ? t.sendingFile(...sendingFile) : t.sending) : t.send}
         </button>
         <button type="button" className="btn btn-secondary" onClick={() => { setStatus('closed'); onClose?.() }}>{t.cancel}</button>
       </div>
