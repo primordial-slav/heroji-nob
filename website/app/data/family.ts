@@ -322,8 +322,7 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0122912114', // Bogavac Vukašina Dragoslav, narodni heroj, of Veliđe (Berane), Vikipedija 9991000004; a visitor's message of 2026-11-20 (F. Adžić, who didn't write the article)
-    photo: '0122912114-1.jpg', // from his Wikipedia article
-    photoFrom: 'Vikipedija',
+    photo: '0122912114-1.jpg', // F. Adžić's own, clearer than his Wikipedia article's, which it replaced (his message of 2026-11-20)
     text: 'U Kraljevu je radio u Fabrici vagona i bio među organizatorima protesta i štrajkova. Godine 1941. bio je sekretar Okružnog komiteta KPJ za Kraljevo i od pristiglih boraca sastavio je tri odreda; u Bosni je postao komesar Fočansko-čelebićkog odreda. Poginuo je u proleće 1942. na Vrbnici na Zelengori, kada su se 5. proleterska brigada, Vrhovni štab i ranjenici probijali iz četničkog obruča.',
     from: 'F. Adžić',
     origin: 'visitor',
