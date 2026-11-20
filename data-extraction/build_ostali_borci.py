@@ -307,6 +307,75 @@ def place_or_unit(place: str) -> dict:
 # a book whose born_in is the area of the list, not the man's
 BORN_IN_NOT_HIS = {'moste-polje-spomenica-1941'}
 
+# Places of death read by hand where the reader's reading of his own entry is a misreading no rule tells (2026-11-20,
+# the 933 places the map can't place read beside the census's, at 00-TEAM LEAD's request): record -> the place his
+# entry names, or '' where the census's place stands (the same place garbled: "kod Njubovije", "u Hraliji"; or no place:
+# a man's name, "u Markosovim partizanima", "na putu za Dalmaciju"). His entry stays as printed.
+DEATH_PLACE_READS = {
+    # the census's place: his entry names it garbled, or names no place
+    '0122925609': '', '0122926849': '', '0122916381': '', '0122927195': '', '0122010645': '', '0122915799': '',
+    '0122927049': '', '0122930320': '', '0122906239': '', '0122906338': '', '0122925180': '', '0122940823': '',
+    '0122915852': '', '0122924710': '', '0122927166': '', '0122050903': '', '0122010392': '', '0122909197': '',
+    '0122915941': '', '0122926314': '', '0122908690': '', '0122932906': '', '0122924592': '', '0122908379': '',
+    '0122925325': '', '0122909592': '', '0122923439': '', '0122943346': '', '0122080817': '', '0122911643': '',
+    '0122905597': '', '0122926176': '', '0122926900': '', '0122925147': '', '0122906298': '', '0122913038': '',
+    '0122011077': '', '0122110224': '',
+    # the place his entry names, read by hand
+    '0122090222': 'Valjevo',                        # "Vaijevo"
+    '0122926148': 'Zagarač', '0122916270': 'Zagarač', '0122926515': 'Zagarač',     # "u Zagarču"
+    '0122915769': 'Sinjajevina',                    # "na Sinjavini"
+    '0122927223': 'Gradačac',                       # "kod Gradačpa u Bosni"
+    '0122932864': 'Štrpci, Prnjavor',               # "u Štrpcima Prnj"
+    '0122925363': 'Zabjelo, Podgorica',             # "na Zabjelu kod Podgovice"
+    '0122917119': 'Dramiševo, Nevesinje',           # "u selu Dramiševo kod Nevesnnja"
+    '0122911535': 'Sozina',                         # "na Soziki"
+    '0122100457': 'Žegar',                          # "u Zsgaru"
+    '0122100634': 'na Bukovom vrhu kod Gračaca',    # "vrbu"
+    '0122925206': 'Piperi', '0122912005': 'Piperi', # "u Pilerima", "u Šiperima"
+    '0122924623': 'Bogdašići',                      # "kod Bog dašića"
+    '0122940654': 'Danilovgrad',                    # "kod Danilovgra"
+    '0122958471': 'Obrade',                         # "u Obradama prtiv Nemaca"
+    '0122935413': 'Han Kola',                       # "kod Han Kola. borac"
+    '0122956101': 'Japaga, Han Pijesak',            # "u Japagi kod Hai Pijeska"
+    '0122932983': 'Pitomača',                       # "u Pitomači Slav"
+    '0122914312': 'kod Trešnjevika',                # "... zadobijenim"
+    '0122915797': 'Babska, Šid',                    # "Novak Babska, Šid"
+    '0122908944': 'na Jurinim brdima',              # "... kraj sela"
+    '0122924963': 'Luštica',                        # "Luštici"
+    '0122959211': 'Srpska Crnica',                  # "kod Srpske Criice u Bosni"
+    '0122940904': 'Nikšić',                         # "u Nikšiću zadobijenim"
+    '0122939280': 'Ljubovija',                      # "JBubovija"
+    '0122927190': 'Goražde',                        # "kod Goražda u Boga–Jiz"
+    '0122910548': 'Grubišno Polje',                 # "na Grubišnom poiiu kraj Bilogore"
+    '0122905925': 'Komletinci',                     # "u Komletincima na oremskom frontu"
+    '0122905814': 'Otok',                           # "Otokoc na oremskom frontu"
+    '0122906421': 'Bratunac',                       # "kod Bratunca u Bosni maota"
+    '0122090855': 'Rastičevo',                      # "kod Rasti čeva"
+    '0122956010': 'Romanija, Sokolac',              # "u Romaniji – Sokolac y borbi"
+    '0122050794': 'Gospić',                         # "u Gospiđu"
+    '0122070109': 'Papuča',                         # "u Papuči i tamo je"
+    '0122905514': 'Užice',                          # "Užipu"
+    '0122925645': 'Trešnjevo, Cuce',                # "na Trešnje vu u Cucama"
+    '0122939981': 'Bugojno',                        # "kod Bupojna"
+    '0122906219': 'Nemci',                          # "u selu Nemcima na sremskom frontu janzgara"
+    '0122926793': 'Meterizi, Rijeka Crnojevića',    # "na Metprizima kod Rijeks Crnojevića"
+    '0122906048': 'Đakovo',                         # "kod Ćakova u Slavoniji"
+    '0122910739': 'Nožice, Slovenija',              # "... borac u srijemskim jedinicama"
+    '0122910552': 'kraj Trsta',                     # "... u završnim borbama za oslobođenje Istre"
+    '0122909196': 'Babina Greda',                   # "... kod Slavinskog Broda, Republika Hrvatska"
+    '0122958446': 'u Sitnicama na albanskoj granici',   # "alabanskoj"
+    '0122070032': 'Sutjeska',                       # "Stujeska"
+    '0122958573': 'Bojovića gumno',                 # "na Bojovića gumnu (zajedno)"
+    '0122916162': 'Grbalj',                         # "u Grblju u saobraćajnoj nesreći"
+    '0122953773': 'Malo Polje',                     # "pri Komandi mjesta Stogulje u Malom Polju"
+    '0122030400': 'Mjedenik',                       # "na Borču milicije u selu Mjedeniku"
+    '0122070935': 'Srb',                            # "u Srbi"
+    '0122070493': 'Bilaj',                          # "pri Komandi mjesta Medak u Bilaju"
+    '0122010866': 'Šćepan Polje',                   # "u Sćepan Polju"
+    '0122906658': 'Zaselje',                        # "u Zaeelju"
+    '0122100540': 'Ilirska Bistrica',               # "u Novoj Kročini kod Ilirske Bistrice"
+}
+
 
 def column_fields(e: dict) -> dict:
     # a list of officers names who fell and who lived (the XXXI. divizija's staffs): no death for one who lived
@@ -925,7 +994,14 @@ def main():
                 seen = next((m['born_in'] for m in g if m.get('born_in') and m['_book'] not in BORN_IN_NOT_HIS), '')
                 if seen:
                     rec['born_in'] = seen
-            death_cols = [k for k in ('death_type', 'death_date') if k in filled]
+            # the place too (2026-11-19): Sekulić Mane Miloš's own "u Žumberku 10. 9. 1944." over the census's
+            # "Bosiljevo slove"; the census's place then shows after "ili" where it lies far off (record_sources.variants)
+            death_cols = [k for k in ('death_type', 'death_date', 'death_place') if k in filled]
+            read = DEATH_PLACE_READS.get(rid)
+            if read is not None and 'death_place' in death_cols:
+                death_cols.remove('death_place')         # the census's place stands, or the place read by hand
+                if read:
+                    rec['death_place'] = read
             if death_cols and any(m['_book'] not in COLUMN_BOOKS and not m['_book'].startswith('zrtve-rata-1964')
                                   for m in g):
                 rec['from_columns'] = death_cols

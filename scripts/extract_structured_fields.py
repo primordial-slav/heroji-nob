@@ -456,7 +456,7 @@ _UNIT_PHRASE = r'(?:u|v)\s+' + _UNIT_WORD + r'{0,3}?(?:brigad\w*|bataljon\w*|pre
 # oslobođenja", "u Somboru posle ranjavanja na Batini", "Zeleni Brijeg nakon povratka iz Njemačkog logora", "kod Gata
 # na povratku za Omiš", "kod Vinkovaca Odlikovan Ordenom narodnog heroja", "kod Pukiša u sanitetu Brigade"
 TAIL_ANYWHERE_RE = re.compile(
-    r'\s*[,.;—–]?\s*(?:\b(?:na\s+dužnosti|u\s+svojstvu|u\s+sastavu|kao\s+(?:borac|ranjenik|komandir|komesar|politički|'
+    r'\s*[,.;—–]?\s*(?:\b(?:na\s+dužnosti|na\s+osiguranju|u\s+svojstvu|u\s+sastavu|kao\s+(?:borac|ranjenik|komandir|komesar|politički|'
     r'član))\b|\b' + _UNIT_PHRASE + r'\b|\b(?:' + _DUTY + r')\b|\b(?:bio|bila|zbog)\s|'
     r'(?:\bneposredno\s+)?\b(?:posle|poslije|nakon)\b|\bna\s+povratku\b|\bOdlikovan\w*\b|\bu\s+sanitetu\b|'
     # how he fell, from the deaths a heading had hidden until 2026-11-04: "u Prijepolju u jurišu na most", "na Treskavcu kod
@@ -1974,6 +1974,76 @@ def another_year(a, b) -> bool:
     return abs(ya - yb) >= 2 and min(ya, yb) <= 1945
 
 
+def date_rank(v: str):
+    """(year, month, how exact) of a date of death as read: 3 the day, 2 the month, 1 the year alone (month None); None
+    without a year or for a date no rule reads ("krajem 1942": standardize_fields.date_form leaves it as printed)"""
+    from standardize_fields import date_form
+    d = date_form(v or '')
+    m = re.fullmatch(r'(?:(\d\d)(?:[-/]\d\d)?\.)?(\d\d)\.(\d{4})', d)
+    if m:
+        return int(m[3]), int(m[2]), 3 if m[1] else 2
+    return (int(d), None, 1) if re.fullmatch(r'1[89]\d\d', d) else None
+
+
+def finer_same_year(a: str, b: str) -> bool:
+    """b in a's year (and month, where a gives one) and more exact (2026-11-20, the lead's Bogdanović Stevana Dušan of
+    122): his own entry's "u Trnovcu kod Gospića 1943." gives way to another book's "Poginuo 16. juna 1943." (no other
+    version: the same year); "06.1943" to "16.06.1943", never to "16.08.1943\""""
+    ra, rb = date_rank(a), date_rank(b)
+    return bool(ra and rb and ra[0] == rb[0] and ra[1] in (None, rb[1]) and rb[2] > ra[2])
+
+
+# the scan's garble in a place read from a biography, mostly the Lovćenski odred's Cyrillic read as Latin: a stray sign
+# ("u Don>oj Trepči", "u Tuzli&", "Žž U logoru ..."), a capital inside a word ("kod NikIha", "u BeograAV", "TpHoBa"), a
+# word in capitals ("KOD Srebrenika", "u ARVZRU"), a lone full stop ("u okolini Loznice . dlo", "Ex ., Mateševo", "Mapra . u Peći" for
+# "marta"), a figure, a capital letter or two cut off a word ("u J abukama"), a letter or two after a full stop at the
+# end ("u Starom Baru. ži"), a stray apostrophe ("u Hezepu kod ' Osnabrika")
+SCAN_GARBLE_RE = re.compile(r'[^\w\s,.()\'’\-–—/]|\s\.|\b\w*[a-zčćžšđ][A-ZČĆŽŠĐ]\w*|\b[A-ZČĆŽŠĐ]{2,}\b|\d|'
+                            r'\b[A-ZČĆŽŠĐ][a-zčćžšđ]?\s[a-zčćžšđ]{3,}|\.\s*\w{1,2}$|\s[\'’]\s')
+# the small words of a place that name no part of it, in counting which of two forms of one place says more
+PLACE_PREPS = {'u', 'v', 'na', 'kod', 'pri', 'iz', 'od', 'do', 's', 'selo', 'selu', 'sela', 'blizu', 'kraj', 'izmedu',
+               'okolini', 'okolina', 'podrucju', 'i'}
+
+
+def own_place_first(own: str, column: str, date: str, own_date: str, unit: str = 'ostali-borci.json') -> bool:
+    """Borci drugih jedinica: the place of death his own entries give (own, the reader's) before the census's or a
+    column book's (column, from_columns; 2026-11-20, Sekulić Mane Miloš's "u Žumberku" over the census's "Bosiljevo
+    slove"), unless it says less: a region or a land where the column names a place ("Bosna" for Tuzla, "Lika" for
+    Plješevica, "Sremski front" for Irig; a mountain or a battle is often closer than the census's municipality,
+    "Petrova gora" for Vojnić, and stays), a reading the scan garbled (SCAN_GARBLE_RE), or a place that goes with a death
+    of another year than the date the record keeps (date). Two forms of one place (a word in common): his entries' only
+    where it says more and the map knows it ("Mokronoge, Priboj" for Priboj, "Jadovnik, Sjenica"), or mends a column
+    the map can't place ("Preboj": Prijeboj, "Bos krupa"); else the column's, in the census's one form and on the map
+    ("Šumane, Pljevlja", not "Pljevlja"; "Luštica", not "Luštici"; "Kanjski Most", not "na Kanjskom mostu")"""
+    from record_sources import (REGIONS, fold, place_words, points_of, region as loose_region,  # (it imports this
+                                words_match)                                                    # module: not at the top)
+
+    def forms(x):                   # a region's word in its cases: "Srijemu", "sremskom frontu", "Crnoj Gori", "Lici"
+        return {x, x + 'u', x + 'a', x + 'om', x + 'e', x + 'i'} | {x[:-1] + e for e in ('i', 'e', 'u', 'om', 'oj', 'og', 'em')}
+
+    def region(v):
+        words = place_words(v)
+        return any(len(r.split()) == len(words) and all(w in forms(x) for w, x in zip(words, r.split())) for r in REGIONS)
+    ya, yb = (re.search(r'(?<!\d)1[89]\d\d(?!\d)', x or '') for x in (date, own_date))
+    if ya and yb and ya.group(0) != yb.group(0):
+        return False
+    # (the column's region read loosely, as record_sources does: the census's "Sremski font" is the front too)
+    if (region(own) and not loose_region(place_words(column))) or SCAN_GARBLE_RE.search(own):
+        return False
+    if words_match(place_words(own), place_words(column)):
+        def named(v):
+            return [w for w in re.findall(r'[a-z]+', fold(v)) if w not in PLACE_PREPS]
+        mine, theirs = bool(points_of(own, unit)), bool(points_of(column, unit))
+        def prep(v):
+            return bool(set(re.findall(r'[a-z]+', fold(v))) & {'u', 'v', 'na', 'kod', 'pri', 'blizu', 'kraj', 'izmedu'})
+        a, b = named(own), named(column)
+        # (as many words: the fuller spelling, "Bosanska Krupa" for "Bos krupa", "Donja Kupčina" for the census's cut
+        # "Donja kupčin"; not the same words in a case after a preposition, "u Krtolima" for Krtoli, "kod Tounja")
+        fuller = len(a) == len(b) and len(''.join(a)) > len(''.join(b)) and not (prep(own) and not prep(column))
+        return mine and (not theirs or len(a) > len(b) or fuller)
+    return True
+
+
 def read_all(ex: Extractor, s: dict, code: int) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
     (other_sources) give."""
@@ -2004,6 +2074,9 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
                 continue
             if k == 'death_place' and another_year(got.get('death_date'), fields.get('death_date')):
                 continue            # that book's place goes with its own death ("Umro 1962" is not "Poginuo 1942, na Kupresu")
+            if k == 'death_date' and finer_same_year(got.get('death_date'), v):
+                got[k] = v          # the day another book gives in the year the first one gives alone
+                continue
             got.setdefault(k, v)
         if e.get('pdf_file') in ROSTERS:
             head = re.match(r'([^:;]{3,40}):', info)          # the unit the roster lists him under
@@ -2097,6 +2170,12 @@ def main():
             cols = set(s.get('from_columns') or ())
             new = {k: v for k, v in got.items() if not s.get(k) or (k in cols and v != s[k] and (
                 k != 'death_date' or len(re.findall(r'\d+|[a-zčćžšđ]{3,}', v)) >= len(re.findall(r'\d+|[a-zčćžšđ]{3,}', s[k]))))}
+            # and the place, where it says no less than the column's (own_place_first): the census's shows after "ili"
+            # where the two lie apart (record_sources.variants)
+            if 'death_place' in cols and s.get('death_place') and new.get('death_place') and not own_place_first(
+                    new['death_place'], s['death_place'], new.get('death_date', s.get('death_date')), got.get('death_date'),
+                    BRIGADE_CONFIGS[code]['json_file']):
+                del new['death_place']
             if args.apply:
                 s.pop('born_in', None)
             if new:
