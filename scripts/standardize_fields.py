@@ -869,6 +869,22 @@ def column_slips(v: str) -> str:
 
 
 def place_form(value: str) -> str | None:
+    """A place in the site's form, the steps below repeated until nothing changes: a later step can leave a form an
+    earlier one reads (the census's "Crna gora-5 ofa": the offensive's cut leaves "Crna gora", which PLACE_READ writes
+    "Crna Gora"), and a second run of apply_corrections.py must change nothing (2026-11-20: the census parts' "Crna
+    gora" took two runs to become "Crna Gora")"""
+    v = _place_form_once(value)
+    for _ in range(3):
+        if v is None:
+            break
+        again = _place_form_once(v)
+        if again == v:
+            break
+        v = again
+    return v
+
+
+def _place_form_once(value: str) -> str | None:
     v = re.sub('­\\s*', '', value).strip()
     v = LJ_CAPS.sub(lambda m: m.group(1) + 'j', PLACE_READ.get(v, v))
     v = LJ_SCAN_RE.sub(lambda m: LJ_SCAN[m.group(0)], v)
