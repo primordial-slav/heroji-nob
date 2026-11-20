@@ -282,6 +282,18 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0029000349', // Lukić Risto Veljko "Kurjak", narodni heroj, first commander of the 17. majevička; a visitor's form of 2026-11-20 22:00
+    // two wartime photos as printed in a book (photographed from its pages), with the book's captions; no text, and no
+    // relation given, so a visitor's; his portrait stays the one the site had
+    pieces: [
+      { kind: 'photo', file: '0029000349-1.jpg', caption: 'Na konju levo, kao komandant Majevičkog odreda, sa Rodoljubom Čolakovićem, u selu Vršani' },
+      { kind: 'photo', file: '0029000349-2.jpg', caption: 'Slijeva nadesno: Haso Burić, Veljko Lukić Kurjak, Rodoljub Čolaković, Cviko Radovanović i Nikola Simić (april 1943, selo Vršani)' },
+    ],
+    from: 'N. Zarić',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959609', // Milutinović Olga "Debela" of Gledić (Kraljevo), activist (Poruke posetilaca 9992000001); F. Adžić's message
     text: 'Njeno ime nosi Osnovna škola u Godačici kod Kraljeva, a ispred škole je od 1972. njena bista.',
     from: 'F. Adžić',
