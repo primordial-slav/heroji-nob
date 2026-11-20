@@ -4736,6 +4736,11 @@ span.rail-face {
   font-weight: 600;
 }
 
+.site-footer-support {
+  margin-top: var(--space-4);
+  max-width: 26rem;
+}
+
 .site-footer-contact p + p:last-child {
   margin-top: var(--space-2);
 }

@@ -34,6 +34,9 @@ export const en: Messages = {
     records: 'You can also send a mistake in a record, or something you know about a fighter, from the record itself.',
     missingAsk: 'If a fighter is not on the site,',
     missingLink: 'send us what you know about him or her',
+    support: 'Support',
+    supportText: 'The site is free and has no ads. If you’d like to help keep it that way,',
+    supportLink: 'support it on Ko-fi',
   },
   notFound: {
     title: 'This page doesn’t exist',

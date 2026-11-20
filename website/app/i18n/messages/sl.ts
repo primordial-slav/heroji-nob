@@ -32,6 +32,9 @@ export const sl: Messages = {
     records: 'Napako ali kar veste o borcu nam lahko sporočite tudi neposredno iz njegovega zapisa.',
     missingAsk: 'Če borca ni na strani,',
     missingLink: 'nam pošljite, kar veste o njem ali njej',
+    support: 'Podpora',
+    supportText: 'Stran je brezplačna in brez oglasov. Če želite pomagati, da tako ostane,',
+    supportLink: 'jo podprite na platformi Ko-fi',
   },
   notFound: {
     title: 'Te strani ni',

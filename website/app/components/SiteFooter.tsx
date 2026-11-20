@@ -6,8 +6,12 @@ import ThemeToggle from './ThemeToggle'
 // The site's address for mail: the one the forms send to (website/.env)
 const EMAIL = process.env.NEXT_PUBLIC_REPORT_EMAIL
 
-// The foot of every page: the site's name and where to write. The sources are named on Izvori alone. On a phone the
-// theme switch is here, not at the top of the screen (globals.css).
+// The site's page for donations (the user's, set up 2026-11-20): a plain link, never Ko-fi's widget, which would load
+// their script on every page
+const KOFI = 'https://ko-fi.com/knjigaboraca'
+
+// The foot of every page: the site's name, where to give and where to write. The sources are named on Izvori alone. On
+// a phone the theme switch is here, not at the top of the screen (globals.css).
 export default function SiteFooter({ lang }: { lang: Lang }) {
   const t = messagesFor(lang)
   const f = t.footer
@@ -17,6 +21,10 @@ export default function SiteFooter({ lang }: { lang: Lang }) {
         <div>
           <p className="site-footer-name">{t.site.name}</p>
           <div className="site-footer-theme"><ThemeToggle /></div>
+          <div className="site-footer-support">
+            <p className="site-footer-label">{f.support}</p>
+            <p>{f.supportText} <a href={KOFI}>{f.supportLink}</a>.</p>
+          </div>
         </div>
         {EMAIL && (
           <div className="site-footer-contact">

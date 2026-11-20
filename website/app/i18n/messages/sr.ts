@@ -30,6 +30,11 @@ export const sr = {
     /** "Ako borca nema na sajtu, pošaljite nam šta znate o njemu.": the link opens the form on the home page */
     missingAsk: 'Ako borca nema na sajtu,',
     missingLink: 'pošaljite nam šta znate o njemu ili njoj',
+    /** "Sajt je besplatan i bez reklama. Ako želite da pomognete da tako ostane, podržite ga na Ko-fi.": the link
+     * opens the site's Ko-fi page */
+    support: 'Podrška',
+    supportText: 'Sajt je besplatan i bez reklama. Ako želite da pomognete da tako ostane,',
+    supportLink: 'podržite ga na Ko-fi',
   },
   notFound: {
     title: 'Ova strana ne postoji',
