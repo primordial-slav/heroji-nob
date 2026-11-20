@@ -1059,6 +1059,13 @@ def main():
                     if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):
                         rec[k] = v                           # the Spomenica's columns
                         filled.append(k)
+            # a family's papers (Porodična arhiva): the fields its entry sets by hand, what the family's prose tells that
+            # the field reader can't read ("u Prvoj krajiškoj brigadi ... prešao u Treću krajišku", "majke Simone"):
+            # every fact the text gives stands in its row on the card (the user's rule of 2026-11-20)
+            for m in g:
+                if m['_book'] == 'porodicna-arhiva':
+                    for k, v in (m.get('fields') or {}).items():
+                        rec.setdefault(k, v)
             if not rec.get('birth_place'):
                 # what the book's parser read of where he is from (often in a case): extract_structured_fields.read_all
                 # takes it where no entry's text names a place, and the reader leaves no trace of it on the record

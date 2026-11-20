@@ -31,6 +31,22 @@ Only publish when the sender ticked **Dozvola za objavu: Da**. Corrections to th
 3. Build and push. The photo and story appear in the record under **Od porodice**, and the first photo
    also on the soldier's memorial card (`/kartica`).
 
+**The card's rows and life line must carry what the text says** (the user's rule of 2026-11-20, "absolutely crucial").
+Before a card counts as done, open it and check every fact its text, entries and the family's papers give against the
+rows and the life line ("Životni put"):
+- every unit the text names in the unit row ("U jedinici" / "Jedinice"): Ćulibrk Svetko's text named the Prva and the
+  Treća krajiška brigada and his card had no unit row;
+- the dated steps in the life line: born, joined the NOB, came to a unit, wounded, demobilised, death. A family's entry
+  is written in the phrasing `scripts/extract_life_events.py` reads ("U NOB od 15. decembra 1943, u XVI jastrebačkom
+  odredu; demobilisana 15. maja 1945.", "ranjen 10. oktobra 1943. kod Oboraca"), not in prose it misses ("U NOB-u od
+  ... do ...", "posle ranjavanja", "Učesnik NOR-a od 1944"). The line shows only with three dated steps, or two between
+  birth and death (`shows_line`); a record with fewer has none, and no date is made up for it;
+- duty, birth, death, as anywhere.
+Only the rows the site already uses: the "Majka" row is for a census entry that names the mother of a man whose father
+is unknown, so other parents stay in the text. For a unit record the fields go in `corrections.json`; for a Porodična
+arhiva record in the entry's `fields` (`build_ostali_borci.py` copies them into the record on every rebuild, as the
+field reader can't read a unit from prose) and in the record, then `extract_life_events.py --write --brigade 122`.
+
 An entry can point at an ID that was later merged into another record (`other_sources[].soldier_id`); it is
 still shown on the merged record. Never publish the sender's email address.
 
