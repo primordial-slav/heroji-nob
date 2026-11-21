@@ -3287,6 +3287,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika sela Trepče kod Andrijevice: Trepčani u jedinicama Narodnooslobodilačke vojske, po jedinicama u kojima su se borili (str. 273–275), i poginuli borci NOV (str. 275–276), sa zanimanjem, jedinicom, mestom i danom pogibije. Borac koji stoji u oba spiska jedan je zapis. Poginuli od bombardovanja u Aprilskom ratu i taoci koje su streljali Nemci, Italijani i četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'krbavica',
+    title: 'Krbavica u prošlosti i sadašnjosti',
+    author: '',
+    pdfPath: 'poreklo:krbavica',
+    thumbnail: '/images/pdf-thumbs/krbavica.jpg',
+    brigadeName: '',
+    description: 'U članku Roka Franića Barbe „Prva dalmatinska”: borci Prve dalmatinske čete (Treće čete bataljona „Marko Orešković”), 118 partizana severne Dalmacije koji su u novembru i decembru 1941. otišli u Liku, po grupama i mestima odakle su pošli (str. 357–362), sa imenom oca, nadimkom i dužnošću. Spisak je utvrdio Roko Franić Barba sa SUBNOR-om Šibenika. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
