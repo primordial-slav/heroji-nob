@@ -3224,6 +3224,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika sela Vilusa kod Grahova, spisak „Poginuli i stradali u Drugom svjetskom ratu 1941–1945. godine” (str. 262–273), sa selom, zanimanjem, učešćem u NOB-u i pogibijom. Spisak broji i četnike, one koje su streljali organi NOP-a i žrtve fašističkog terora; uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'krusevice',
+    title: 'Kruševice (Svrčuge – Petijevići – Bijelići)',
+    author: 'Vojin S. Murišić',
+    pdfPath: 'poreklo:krusevice',
+    thumbnail: '/images/pdf-thumbs/krusevice.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Kruševica kod Herceg Novog: sastav Kruševičke partizanske čete pri formiranju 1941, komanda i pet vodova (str. 175–180), poginuli u NOR-u po selima Kruševice, Svrčuge, Petijevići i Bijelići, sa biografijom (str. 240–249), i nosioci Spomenice 1941. (str. 251–252). Borac koji stoji u dva spiska jedan je zapis. Žrtve fašističkog terora iz istog poglavlja nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
