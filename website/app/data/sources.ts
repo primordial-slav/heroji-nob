@@ -3251,6 +3251,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika sela Vodice kod Smederevske Palanke: prvoborci sela, sa biografijom (str. 252–254), i borci koji su stupili u NOVJ u jesen 1944. i poginuli ili umrli od rana i bolesti u borbama za konačno oslobođenje (str. 257–262), sa rođenjem, danom stupanja, jedinicom i pogibijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'guca',
+    title: 'Guča kroz vekove',
+    author: '',
+    pdfPath: 'poreklo:guca',
+    thumbnail: '/images/pdf-thumbs/guca.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih Gučana po godinama, 1941–1945. (str. 109–115), preuzet iz knjige Gorana Davidovića i Miloša Timotijevića Zatamnjena prošlost, sa godinom rođenja, načinom pogibije i stranom na kojoj je ko poginuo. Uneti su oni koje spisak naziva partizanima, borcima NOP-a i NOVJ, i, označeni kao učesnici, simpatizeri NOP-a. Civili, pripadnici JVuO, ZBOR-a, Srpske državne straže i Vojske Kraljevine Jugoslavije iz istog spiska nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
