@@ -3269,6 +3269,24 @@ export const sources: PdfSource[] = [
     description: 'Spiskovi učenika i nastavnika Državne trgovačke akademije u Beogradu, sa kratkom biografijom: poginuli u Aprilskom ratu 1941, NOB-u, streljani i umrli u fašističkim logorima (str. 187–195) i preživeli učesnici Aprilskog rata i NOB-a (str. 196–212). Uneti su borci i, označeni kao aktivisti, članovi KPJ i SKOJ-a, ilegalci i oni koji su pomagali NOP. Oni koje spisak beleži samo za Aprilski rat i zarobljeništvo, žrtve okupatora za koje ne kaže da su bili u pokretu i učesnici ratova do 1918. iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'crna-trava',
+    title: 'Crna Trava i Crnotravci',
+    author: 'Radomir Kostadinović',
+    pdfPath: 'poreklo:crna-trava',
+    thumbnail: '/images/pdf-thumbs/crna-trava.jpg',
+    brigadeName: '',
+    description: 'Spiskovi na kraju knjige o Crnoj Travi: narodni heroji poniklih iz Crnotravskog (Drugog južnomoravskog) odreda (str. 524), poginuli „Oni koji su u naše danas i sutra ugradili svoje živote” po selima (str. 525–538), sa godinom i mestom pogibije, od koga su poginuli i jedinicom, i nosioci Spomenice 1941. (str. 539). Žrtve fašističkog terora, koje spisak poginulih po selima navodi posebno, nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'trepca',
+    title: 'Trepča kod Andrijevice',
+    author: '',
+    pdfPath: 'poreklo:trepca',
+    thumbnail: '/images/pdf-thumbs/trepca.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Trepče kod Andrijevice: Trepčani u jedinicama Narodnooslobodilačke vojske, po jedinicama u kojima su se borili (str. 273–275), i poginuli borci NOV (str. 275–276), sa zanimanjem, jedinicom, mestom i danom pogibije. Borac koji stoji u oba spiska jedan je zapis. Poginuli od bombardovanja u Aprilskom ratu i taoci koje su streljali Nemci, Italijani i četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
