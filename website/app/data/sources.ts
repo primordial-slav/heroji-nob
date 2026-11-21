@@ -3275,7 +3275,7 @@ export const sources: PdfSource[] = [
     pdfPath: 'poreklo:crna-trava',
     thumbnail: '/images/pdf-thumbs/crna-trava.jpg',
     brigadeName: '',
-    description: 'Spiskovi na kraju knjige o Crnoj Travi: narodni heroji poniklih iz Crnotravskog (Drugog južnomoravskog) odreda (str. 524), poginuli „Oni koji su u naše danas i sutra ugradili svoje živote” po selima (str. 525–538), sa godinom i mestom pogibije, od koga su poginuli i jedinicom, i nosioci Spomenice 1941. (str. 539). Žrtve fašističkog terora, koje spisak poginulih po selima navodi posebno, nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+    description: 'Spiskovi na kraju knjige o Crnoj Travi: narodni heroji ponikli iz Crnotravskog (Drugog južnomoravskog) odreda (str. 524), poginuli „Oni koji su u naše danas i sutra ugradili svoje živote” po selima (str. 525–538), sa godinom i mestom pogibije, od koga su poginuli i jedinicom, i nosioci Spomenice 1941. (str. 539). Žrtve fašističkog terora, koje spisak poginulih po selima navodi posebno, nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
     id: 'trepca',
