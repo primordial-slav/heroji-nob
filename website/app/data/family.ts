@@ -351,6 +351,16 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0069002027', // Čolnik Karel of Rošpoh (Maribor), Bračičeva brigada; a historian's form of 2026-11-21 08:23
+    // (author of "Anzac Guerrillas", co-author of "The Greatest Escape"), sent in English, translated here; his three
+    // photos (a portrait from the 1950 Australian immigration file, the standing photo cut from Jože Petek's photograph
+    // of the escape, that whole photograph) were lost by the form's /api/prilog on Vercel and never arrived
+    text: 'Bio je u pratnji pod komandom Franca Grudna koja je od 1. do 7. septembra 1944. sprovela 105 odbeglih ratnih zarobljenika iz zemalja Komonvelta i Francuske sa Pohorja do Save. Sa suprugom Anicom iselio se 1950. u Melburn, u Australiji. Godine 1985. pojavio se u dokumentarnom filmu Televizije Ljubljana i australijskog SBS-a „Pot k svobodi” („March to Freedom”).',
+    from: 'E. Goldrick, istoričar',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959606', // Eftimovski Gjore of Sušica (Gostivar), brother of Kiro (Porodična arhiva)
     text: 'Роден е 1925 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете оди на печалба во Белград како општ работник, каде што се запознава со идеите на напредното работничко движење. За време на окупацијата на земјата во Белград е примен за член на СКОЈ, а нешто подоцна и за член на КПЈ. Кон крајот на 1941 година е уапсен од страна на Недиќевата полиција, но заради немање докази набрзо е пуштен на слобода. Особена активност и бестрашност покажува во вршењето на многу одговорни курирски задачи. Во единиците на Народноослободителната војска стапил доброволно во јуни 1943 година, како борец во составот на Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот фашистички окупатор и нешто подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
     from: 'nećak',

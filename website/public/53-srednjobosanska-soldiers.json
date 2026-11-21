@@ -12270,16 +12270,51 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1221",
         "source_page": 1221,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "0001007129",
+        "name": "Mihić Gojka Maksim",
+        "additional_info": "1928, Miškovci, Derventa, BiH, Srbin, zemljoradnik, u NOB od januara 1943, u brigadi od januara 1943, borac, poginuo 1945, Komarice, Doboj",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 237,
+        "pdf_x": 46.3,
+        "pdf_y": 398.9,
+        "pdf_x_end": 353.1,
+        "pdf_y_end": 430.0,
+        "rank": "borac",
+        "since": "1943-01",
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0056001266",
+        "name": "Mihić G Maksim",
+        "additional_info": "rođen 1928, Miškovci, Derventa, vodnik 1. č. 1. bat. poginuo 8. marta 1945. god. Ritešić, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 93.6,
+        "pdf_y": 160.8,
+        "pdf_x_end": 452.1,
+        "pdf_y_end": 181.3,
+        "unit_detail": "1. četa, 1. bataljon",
+        "rank": "vodnik",
+        "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
     "borrowed": [
       "death_date",
       "death_place",
-      "ethnicity"
+      "ethnicity",
+      "occupation"
     ],
+    "occupation": "zemljoradnik",
     "death_date": "1945",
-    "death_place": "Ritešić -doboj"
+    "death_place": "Komarice, Doboj",
+    "variants": {
+      "born": [
+        "1928"
+      ]
+    }
   },
   {
     "last_name": "Mikić",

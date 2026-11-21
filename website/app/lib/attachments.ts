@@ -2,6 +2,8 @@
 // through the site's own /api/prilog, which passes it on to FormSubmit and reads its answer, so the form knows it
 // arrived, tries again when it didn't, and names the files that still didn't (2026-11-20: sent straight to FormSubmit,
 // whose answer a page can't read, a family's photo was lost four times and the form said "sent").
+// On Vercel the route can't reach FormSubmit (Cloudflare refuses its servers, 2026-11-21), so a file the route
+// doesn't get through goes straight from the browser, where only a broken connection shows as a failure.
 // Vercel takes at most 4.5 MB in a request: photos are shrunk below ROUTE_MAX_BYTES (lib/images.ts); only a larger PDF
 // still goes straight to FormSubmit, where only a broken connection shows as a failure.
 
@@ -36,11 +38,15 @@ async function sendOne(a: Attachment): Promise<boolean> {
       if (res.ok && (await res.json())?.ok === true) return true
       // refused for what it is (too large, not a photo or a PDF): another try won't help
       if (res.status >= 400 && res.status < 500) return false
+      // FormSubmit turned the server away (502): Cloudflare in front of it refuses Vercel's servers, though it takes
+      // the same message from a visitor's browser (2026-11-21: every photo sent through the route since the deploy
+      // at 03:12 was lost, E. Goldrick's and V. Mihić's). Send it from the browser, as before the route
+      if (res.status === 502) return sendDirect(a)
     } catch {
       // the connection broke: try again
     }
   }
-  return false
+  return sendDirect(a)
 }
 
 async function sendDirect(a: Attachment): Promise<boolean> {
