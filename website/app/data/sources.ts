@@ -3233,6 +3233,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika sela Kruševica kod Herceg Novog: sastav Kruševičke partizanske čete pri formiranju 1941, komanda i pet vodova (str. 175–180), poginuli u NOR-u po selima Kruševice, Svrčuge, Petijevići i Bijelići, sa biografijom (str. 240–249), i nosioci Spomenice 1941. (str. 251–252). Borac koji stoji u dva spiska jedan je zapis. Žrtve fašističkog terora iz istog poglavlja nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'istocna-tamnava',
+    title: 'Istočna Tamnava – Brgule i okolina',
+    author: '',
+    pdfPath: 'poreklo:istocna-tamnava',
+    thumbnail: '/images/pdf-thumbs/istocna-tamnava.jpg',
+    brigadeName: '',
+    description: 'Hronika osam sela kod Uba (Brgule, Radljevo, Kalenić, Šarbane, Liso Polje, Stublenica, Mali Borak, Skobalj): od spiska poginulih građana 1941–1945. po selima (str. 537–543) uneti su oni koji su poginuli na frontovima NOVJ 1944–1945. (Srem, Slavonija, put do Zagreba i Maribora), i nosioci Partizanske spomenice 1941. (str. 546). Ostali iz istog spiska (taoci, internirci, deca, poginuli kod kuće 1941–1943. za koje se ne kaže na čijoj strani) nisu uneti, kao ni nosioci Albanske spomenice i ratni zarobljenici iz 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
