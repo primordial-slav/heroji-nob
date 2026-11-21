@@ -19,6 +19,7 @@ This file is the core: what every session needs. The rest is in `docs/claude/`, 
 | `docs/claude/ocr-issues.md` | known OCR issues book by book, and the rounds of fixes read against the pages | writing a parser, mending names or entries |
 | `docs/claude/site.md` | the home page's news and icons, languages, unit photos, band posters, medals, the map and unit pages, server search, data files, a record's own address | work on the site |
 | `docs/claude/portraits.md` | soldiers' portraits: every source and how it was paired, the gallery, the rails, the embroidered frames | adding or moving portraits |
+| `docs/claude/email.md` | the contact account and its forward, reading and sending mail, the user's rules for mail, the forms' mail, notes to families, the outreach letters and their replies | reading, answering or drafting any mail |
 
 Other docs: `VOICE.md` (the site's text), `DESIGN.md` (how it looks), `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md` (which books on znaci.org have soldier lists), `docs/NEW_BRIGADE_PARSER_STATUS.md` (the parsers on the scaffold), `docs/UNIT_PHOTOS.md` (each unit photo's source).
 
