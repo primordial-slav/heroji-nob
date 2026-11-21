@@ -3260,6 +3260,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak poginulih Gučana po godinama, 1941–1945. (str. 109–115), preuzet iz knjige Gorana Davidovića i Miloša Timotijevića Zatamnjena prošlost, sa godinom rođenja, načinom pogibije i stranom na kojoj je ko poginuo. Uneti su oni koje spisak naziva partizanima, borcima NOP-a i NOVJ, i, označeni kao učesnici, simpatizeri NOP-a. Civili, pripadnici JVuO, ZBOR-a, Srpske državne straže i Vojske Kraljevine Jugoslavije iz istog spiska nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'ekonomska-skola',
+    title: '100 godina Prve ekonomske škole „Vladimir Perić Valter” u Beogradu',
+    author: '',
+    pdfPath: 'poreklo:ekonomska-skola',
+    thumbnail: '/images/pdf-thumbs/ekonomska-skola.jpg',
+    brigadeName: '',
+    description: 'Spiskovi učenika i nastavnika Državne trgovačke akademije u Beogradu, sa kratkom biografijom: poginuli u Aprilskom ratu 1941, NOB-u, streljani i umrli u fašističkim logorima (str. 187–195) i preživeli učesnici Aprilskog rata i NOB-a (str. 196–212). Uneti su borci i, označeni kao aktivisti, članovi KPJ i SKOJ-a, ilegalci i oni koji su pomagali NOP. Oni koje spisak beleži samo za Aprilski rat i zarobljeništvo, žrtve okupatora za koje ne kaže da su bili u pokretu i učesnici ratova do 1918. iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
