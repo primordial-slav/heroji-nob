@@ -17,6 +17,11 @@ const contentSecurityPolicy = [
   "frame-ancestors 'none'",
 ].join('; ')
 
+// The old address leads to the site's own domain once one is set in Vercel (Settings → Domains): Vercel then builds
+// with VERCEL_PROJECT_PRODUCTION_URL set to that domain. Until then, and in a local build, there is no redirect
+const OLD_HOST = 'heroji-nob.vercel.app'
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -40,6 +45,15 @@ const nextConfig = {
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
+  },
+  async redirects() {
+    if (!productionHost || productionHost === OLD_HOST) return []
+    return [{
+      source: '/:path*',
+      has: [{ type: 'host', value: OLD_HOST }],
+      destination: `https://${productionHost}/:path*`,
+      permanent: true,
+    }]
   },
   async headers() {
     return [
