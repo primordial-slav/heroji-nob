@@ -107,13 +107,57 @@ When a family's contribution is live, its sender gets one short email with the r
 2. **The address** is the row "Email pošiljaoca" of the submission's table. FormSubmit's emails carry no Reply-To,
    even though the forms send `_replyto` (two submissions checked on 2026-11-19), so "Reply" would go to FormSubmit.
    The address stays in Gmail: never in the repo, a commit, a file or a note.
-3. **The language** is the row "Jezik"; the link goes to the record in that language.
+3. **The language** is the one the sender wrote their own text in; the row "Jezik" is only the site's language they
+   had open (V. Mihić's three forms say English, he wrote Serbian), so it decides only when they wrote nothing. The
+   link goes to the record in that language.
 4. **One note per sender**: someone who sent two fighters (F. Adžić: Novaković and Đoković) gets one note with both.
 5. **A new message**, not a reply in the submission's thread (a reply quotes the whole FormSubmit table and its ad), and
    no Gmail signature (it may carry the user's name).
 6. **From nob.borci.kontakt@gmail.com**, written in that account itself, never in the personal one (the user's
    decision; see "Sending" below), and the link checked before Send: it must be the site's own address, not a
    google.com one.
+
+### Before writing: every sentence checked against the live card
+
+Read on 2026-11-21 against every form so far (the audit is local, `quality/odgovori-pregled-2026-11-21.md`). A reply
+says only what the sender can see when they open the link, and the generic note below ("what you sent is now on the
+site") is true only when all of it went up. For each sender:
+
+1. **All their messages first.** Every form they sent (the same man may come in several forms, one a record:
+   V. Mihić's three), their answers to earlier emails in the contact inbox (Z. Rutešić gave his permission in a reply,
+   unseen for 16 hours), and what was already sent to them ("Told so far").
+2. **Count the files.** Each form's "Prilozi" row says how many follow; count the "Fotografija: …" / "Prilog: …"
+   messages that came. One a form over three forms is three; the same form sent four times is one (M. Palčič). Lost
+   files are named in the reply ("the three photos you attached: the portrait from …"), with the ask to send them as
+   an attachment to a reply.
+3. **Open the card on the live site** (in a browser: the family notes render in the page) and list what the sender
+   gave, fact by fact, against it: in the note, in a row, in the album, or left out. Each goes in the reply as it
+   stands:
+   - on the card: say where ("on his card, credited to you" / "without your name, as you asked");
+   - shown beside the book's version ("1976 ili 1984"): say both are shown and why ("the 1. bataljon book prints
+     1984"), never "corrected";
+   - in the note but not in the rows (Kovačević's Srem front in April 1945, the rows say May 1945, Slavonija): first
+     fix the rows by the card-rows rule above; if it stays out, say so;
+   - translated (E. Goldrick's English, shown in Serbo-Croatian): say so;
+   - not used: say what and why (no permission to publish the text, only the dates were taken; unclear; not a war
+     fact).
+4. **Ask only for what the card and the forms both lack.** Read the rows and every reference first ("where did he
+   fall" was asked of a card that gives 8 March 1945, Ritešić, from two books). At most one or two asks.
+5. **Links** go to the record where the change shows: of linked records, the one with the corrected name (Mihić's
+   14. srednjobosanska record keeps the book's "G Maksim"); for a split or a new record, its new ID.
+6. **Doubts on the card come first.** If the card disagrees with the family on who he was (M. Palčič's great-grandfather
+   lived to 2007, the only reference is a list of the fallen; Gaković's rows say Banjani near Bosanska Krupa, the note
+   near Bosanski Brod), settle it, or ask the sender, before writing "his card".
+7. **Only what was seen working.** No "I fixed it" for the site until a real case went through; "I changed it" is true.
+8. **Record the send** in "Told so far": the date, and what was promised ("adds the photos when they come"), so the
+   next reply keeps the promise. A reply the user writes in the contact account goes in too (D. Krnić's of 11-19,
+   Z. Rutešić's of 11-20 weren't).
+
+The order of a reply, from the user's own two (D. Krnić 11-19, Z. Rutešić 11-20): greeting by first name, thanks,
+what the card has now as a short list of the changes (photo, birth year, name taken off "as you asked in your later
+form"), what isn't there and why, the one ask, the link, an invitation to write again if something is wrong. The
+signature is open (the user signs "Projekat Heroji NOB-a", the outreach letters "Projekat Knjiga boraca", the photo
+requests of 11-21 "Boris / Knjiga boraca"): ask the user until it is decided.
 
 ### The note
 
@@ -177,14 +221,22 @@ address taken from the mailbox when the button is pressed, never stored). Not bu
 | N. Kaišarević | 0122957805 Kupres Marka Miloš | yes | not yet |
 | nećak (the Eftimovskis') | 0122959606 Eftimovski Gjore, 0135001012 Eftimovski Božo Kiro | yes | not yet |
 | B. Obradović, unuk | 0042000145 Gaković Gojka Milorad | yes | nobody to tell (no address given) |
-| (no credit: his grandson's last form said "Ne" to his name, the user 11-19) | 0122959607 Krnić Blaž | yes (record, note, photo as portrait, born 1926) | not yet |
+| (no credit: his grandson's last form said "Ne" to his name, the user 11-19) | 0122959607 Krnić Blaž | yes (record, note, photo as portrait, born 1926) | 2026-11-19, by the user (photo, birth year, name taken off; the Bari note went up after) |
+| (nothing published: "Ne") | 0041000831 Milović Petra Lazar | no | 2026-11-20, by the user (asked whether some war facts may go up unsigned); he answered 11-21: yes, with a new account, waiting for the user |
+| E. Goldrick, istoričar | 0069002027 Čolnik Karel | yes (note, translated) | 2026-11-21: asked to resend his three photos by reply; promised to add them with his captions |
+| V. Mihić (no credit yet: no text) | 0001007129, 0033000402, 0056001266 Mihić Maksim | yes (Maksim, linked) | 2026-11-21: asked to resend the photos by reply; promised to add them |
+| M. Palčič, praunuk | 0067000827 Palčič Dino | yes (note, surname, death 2007) | 2026-11-21: asked to resend the photo by reply; promised to add it |
 
 Mile Bakić's and Todor Bajić's pieces are from the family archive itself: nobody to tell.
 
 ### Ready to send (made 2026-11-19, the user sends them later)
 
 Each link opens the note as a new message in the contact account, in Serbo-Croatian unless it says otherwise; the
-address comes from the submission. If its "Jezik" row says another language, make that version from the table above.
+address comes from the submission. Each must pass "Before writing" above first: the generic text is true as it stands for F. Adžić,
+N. Kaišarević, B. Batalo and the Eftimovskis' nephew; Kovačević's card gives his death as the books do (May 1945,
+Slavonija), not as the nephew wrote (the Srem front, early April 1945), so the row comes first; J. Todosijević's
+reply says the census's 1945, Rušanj stays in the row and the family's account is in the note. Krnić's grandson was
+told by the user on 11-19. If its "Jezik" row says another language, make that version from the table above.
 
 - [F. Adžić: Novaković Vuka Radomir, Đoković Miodrag Dragan](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Novakovi%C4%87%20Vuka%20Radomir%2C%20%C4%90okovi%C4%87%20Miodrag%20Dragan&body=Pozdrav%2C%0A%0Ajavljam%20vam%20da%20je%20ono%20%C5%A1to%20ste%20poslali%20sada%20na%20sajtu%2C%20u%20zapisima%3A%0ANovakovi%C4%87%20Vuka%20Radomir%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0126000703%0A%C4%90okovi%C4%87%20Miodrag%20Dragan%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0136021032%0A%0AHvala%20vam%20%C5%A1to%20ste%20ovo%20podelili.%20Sajt%20sam%20napravio%20da%20bi%20porodice%20lak%C5%A1e%20na%C5%A1le%20svoje%20borce%2C%20a%20pri%C4%8De%20i%20fotografije%20poput%20va%C5%A1e%20ga%20%C4%8Dine%20mnogo%20bogatijim.%20Ako%20primetite%20ne%C5%A1to%20%C5%A1to%20treba%20ispraviti%2C%20ili%20imate%20jo%C5%A1%20fotografija%20ili%20dokumenata%2C%20slobodno%20mi%20pi%C5%A1ite.%0A%0AHvala%20vam%20na%20vremenu.%0AKnjiga%20boraca)
 - [J. Todosijević: Todosijević Dragić Jelica](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica&body=Pozdrav%2C%0A%0Ajavljam%20vam%20da%20je%20ono%20%C5%A1to%20ste%20poslali%20sada%20na%20sajtu%2C%20u%20zapisu%20Todosijevi%C4%87%20Dragi%C4%87%20Jelica%3A%0Ahttps%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0136006734%0A%0AHvala%20vam%20%C5%A1to%20ste%20ovo%20podelili.%20Sajt%20sam%20napravio%20da%20bi%20porodice%20lak%C5%A1e%20na%C5%A1le%20svoje%20borce%2C%20a%20pri%C4%8De%20i%20fotografije%20poput%20va%C5%A1e%20ga%20%C4%8Dine%20mnogo%20bogatijim.%20Ako%20primetite%20ne%C5%A1to%20%C5%A1to%20treba%20ispraviti%2C%20ili%20imate%20jo%C5%A1%20fotografija%20ili%20dokumenata%2C%20slobodno%20mi%20pi%C5%A1ite.%0A%0AHvala%20vam%20na%20vremenu.%0AKnjiga%20boraca)
@@ -193,7 +245,6 @@ address comes from the submission. If its "Jezik" row says another language, mak
 - [N. Kaišarević: Kupres Marka Miloš](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Kupres%20Marka%20Milo%C5%A1&body=Pozdrav%2C%0A%0Ajavljam%20vam%20da%20je%20ono%20%C5%A1to%20ste%20poslali%20sada%20na%20sajtu%2C%20u%20zapisu%20Kupres%20Marka%20Milo%C5%A1%3A%0Ahttps%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0122957805%0A%0AHvala%20vam%20%C5%A1to%20ste%20ovo%20podelili.%20Sajt%20sam%20napravio%20da%20bi%20porodice%20lak%C5%A1e%20na%C5%A1le%20svoje%20borce%2C%20a%20pri%C4%8De%20i%20fotografije%20poput%20va%C5%A1e%20ga%20%C4%8Dine%20mnogo%20bogatijim.%20Ako%20primetite%20ne%C5%A1to%20%C5%A1to%20treba%20ispraviti%2C%20ili%20imate%20jo%C5%A1%20fotografija%20ili%20dokumenata%2C%20slobodno%20mi%20pi%C5%A1ite.%0A%0AHvala%20vam%20na%20vremenu.%0AKnjiga%20boraca)
 - [The Eftimovskis' nephew: Eftimovski Gjore, Eftimovski Božo Kiro, in Macedonian](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D0%BE%D1%80%D1%86%D0%B8%D1%82%D0%B5%3A%20Eftimovski%20Gjore%2C%20Eftimovski%20Bo%C5%BEo%20Kiro&body=%D0%9F%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%2C%0A%0A%D0%B2%D0%B5%20%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D1%83%D0%B2%D0%B0%D0%BC%20%D0%B4%D0%B5%D0%BA%D0%B0%20%D0%BE%D0%BD%D0%B0%20%D1%88%D1%82%D0%BE%20%D0%B3%D0%BE%20%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D0%B5%20%D1%81%D0%B5%D0%B3%D0%B0%20%D0%B5%20%D0%BD%D0%B0%20%D1%81%D0%B0%D1%98%D1%82%D0%BE%D1%82%2C%20%D0%B2%D0%BE%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%D1%82%D0%B5%3A%0AEftimovski%20Gjore%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fmk%2Fborac%2F0122959606%0AEftimovski%20Bo%C5%BEo%20Kiro%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fmk%2Fborac%2F0135001012%0A%0A%D0%92%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%80%D0%B0%D0%BC%20%D1%88%D1%82%D0%BE%20%D0%B3%D0%BE%20%D1%81%D0%BF%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D0%B2%D1%82%D0%B5%20%D0%BE%D0%B2%D0%B0.%20%D0%A1%D0%B0%D1%98%D1%82%D0%BE%D1%82%20%D0%B3%D0%BE%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%B2%20%D0%B7%D0%B0%20%D1%81%D0%B5%D0%BC%D0%B5%D1%98%D1%81%D1%82%D0%B2%D0%B0%D1%82%D0%B0%20%D0%BF%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%BE%20%D0%B4%D0%B0%20%D0%B3%D0%B8%20%D0%BD%D0%B0%D1%98%D0%B4%D0%B0%D1%82%20%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5%20%D0%B1%D0%BE%D1%80%D1%86%D0%B8%2C%20%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B8%20%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%D1%82%D0%B5%20%D0%BA%D0%B0%D0%BA%D0%BE%20%D0%B2%D0%B0%D1%88%D0%B0%D1%82%D0%B0%20%D0%B3%D0%BE%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%82%20%D0%BC%D0%BD%D0%BE%D0%B3%D1%83%20%D0%BF%D0%BE%D0%B1%D0%BE%D0%B3%D0%B0%D1%82.%20%D0%90%D0%BA%D0%BE%20%D0%B7%D0%B0%D0%B1%D0%B5%D0%BB%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%20%D0%BD%D0%B5%D1%88%D1%82%D0%BE%20%D1%88%D1%82%D0%BE%20%D1%82%D1%80%D0%B5%D0%B1%D0%B0%20%D0%B4%D0%B0%20%D1%81%D0%B5%20%D0%BF%D0%BE%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%2C%20%D0%B8%D0%BB%D0%B8%20%D0%B8%D0%BC%D0%B0%D1%82%D0%B5%20%D1%83%D1%88%D1%82%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D0%B8%D0%BB%D0%B8%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8%2C%20%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%20%D0%BF%D0%B8%D1%88%D0%B5%D1%82%D0%B5%20%D0%BC%D0%B8.%0A%0A%D0%92%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%80%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%B2%D0%B0%D1%88%D0%B5%D1%82%D0%BE%20%D0%B2%D1%80%D0%B5%D0%BC%D0%B5.%0A%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D0%BE%D1%80%D1%86%D0%B8%D1%82%D0%B5)
 - [B. Batalo: Sekulić Mane Miloš, Kosanović Milovana Manojlo](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Sekuli%C4%87%20Mane%20Milo%C5%A1%2C%20Kosanovi%C4%87%20Milovana%20Manojlo&body=Pozdrav%2C%0A%0Ajavljam%20vam%20da%20je%20ono%20%C5%A1to%20ste%20poslali%20sada%20na%20sajtu%2C%20u%20zapisima%3A%0ASekuli%C4%87%20Mane%20Milo%C5%A1%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0122907839%0AKosanovi%C4%87%20Milovana%20Manojlo%3A%20https%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0060000921%0A%0AHvala%20vam%20%C5%A1to%20ste%20ovo%20podelili.%20Sajt%20sam%20napravio%20da%20bi%20porodice%20lak%C5%A1e%20na%C5%A1le%20svoje%20borce%2C%20a%20pri%C4%8De%20i%20fotografije%20poput%20va%C5%A1e%20ga%20%C4%8Dine%20mnogo%20bogatijim.%20Ako%20primetite%20ne%C5%A1to%20%C5%A1to%20treba%20ispraviti%2C%20ili%20imate%20jo%C5%A1%20fotografija%20ili%20dokumenata%2C%20slobodno%20mi%20pi%C5%A1ite.%0A%0AHvala%20vam%20na%20vremenu.%0AKnjiga%20boraca)
-- [Krnić's grandson: Krnić Blaž](https://mail.google.com/mail/?authuser=nob.borci.kontakt%40gmail.com&view=cm&fs=1&su=Knjiga%20boraca%3A%20Krni%C4%87%20Bla%C5%BE&body=Pozdrav%2C%0A%0Ajavljam%20vam%20da%20je%20ono%20%C5%A1to%20ste%20poslali%20sada%20na%20sajtu%2C%20u%20zapisu%20Krni%C4%87%20Bla%C5%BE%3A%0Ahttps%3A%2F%2Fheroji-nob.vercel.app%2Fborac%2F0122959607%0A%0AHvala%20vam%20%C5%A1to%20ste%20ovo%20podelili.%20Sajt%20sam%20napravio%20da%20bi%20porodice%20lak%C5%A1e%20na%C5%A1le%20svoje%20borce%2C%20a%20pri%C4%8De%20i%20fotografije%20poput%20va%C5%A1e%20ga%20%C4%8Dine%20mnogo%20bogatijim.%20Ako%20primetite%20ne%C5%A1to%20%C5%A1to%20treba%20ispraviti%2C%20ili%20imate%20jo%C5%A1%20fotografija%20ili%20dokumenata%2C%20slobodno%20mi%20pi%C5%A1ite.%0A%0AHvala%20vam%20na%20vremenu.%0AKnjiga%20boraca)
 
 When one is sent, mark it in "Told so far" (the month) and take it off this list.
 
