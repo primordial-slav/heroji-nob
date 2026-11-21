@@ -3206,6 +3206,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika sela Ostružnice kod Beograda, spiskovi njenih boraca (str. 260–264): prvoborci, izginuli u borbama 1943–1945, sa godinom stupanja u borbu i mestom pogibije, i preživeli borci, sa mesecom i godinom stupanja i činom. Uneti su borci i, označeni kao aktivisti, politički radnici i oni koji su pomagali NOP. Spiskovi onih koje su streljali okupatori i zaklali četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'srbi-duvna',
+    title: 'Srbi Duvna, život i stradanja',
+    author: '',
+    pdfPath: 'poreklo:srbi-duvna',
+    thumbnail: '/images/pdf-thumbs/srbi-duvna.jpg',
+    brigadeName: '',
+    description: 'Tri spiska boraca iz Duvna: borci bitke na Sutjesci rodom iz Duvna, preuzeti iz knjige Viktora Kučana Borci Sutjeske (str. 369–377), sa biografijom, oficiri i podoficiri NOV-a iz registra SUBNOR-a Duvna (str. 417–418), sa godinom rođenja, danom stupanja u NOV i činom, i tabela poginulih Srba iz Duvna u NOR-u 1941–1945. po selima (str. 421–424), sa godinom i mestom pogibije i jedinicom. Borac koji stoji u dva ili tri spiska jedan je zapis. Spiskovi žrtava fašističkog terora iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
