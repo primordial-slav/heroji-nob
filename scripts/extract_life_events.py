@@ -394,9 +394,12 @@ def life_events(s: dict, code: int) -> list[dict]:
     entries = [s] + list(s.get('other_sources') or [])
     steps: list[dict] = []
     for i, e in enumerate(entries):
-        if e.get('ref_book') or parser_set(code, e):
+        if (e.get('ref_book') and e['ref_book'] != 'porodicna-arhiva') or parser_set(code, e):
             continue                        # a book across units (a hero's portrait): its summary is not read here;
-                                            # a parser's unit's own list: its text is written from its fields
+                                            # a parser's unit's own list: its text is written from its fields. A
+                                            # family's papers (Porodična arhiva) are read: their entry is written in
+                                            # the reader's phrasing so the card's line carries them (Radenković Živan's
+                                            # autobiography on his 4. srpska record, 2026-11-21)
         for step in read_entry(e.get('additional_info') or ''):
             step['s'] = i
             steps.append(step)
@@ -426,7 +429,10 @@ def life_events(s: dict, code: int) -> list[dict]:
                 step['e'] = iso(when[1])                                 # fell between two days: "3—8. juna 1943"
             for i, e in enumerate(entries):
                 ph = death_phrase(e.get('additional_info') or '')
-                if ph:
+                # not a clause that prints another year: the date is the family's or another book's (Ivanović Špiro's
+                # "1976" pointed at Borci Sutjeske's "Umro 1984. godine", 2026-11-21)
+                years = re.findall(r'(?<!\d)(?:18|19|20)\d\d(?!\d)', ph[1]) if ph else []
+                if ph and (not years or str(when[0][0]) in years):
                     step['at'], step['s'], step['_at'] = [ph[0], ph[0] + len(ph[1])], i, ph[0]
                     break
             steps.append(step)

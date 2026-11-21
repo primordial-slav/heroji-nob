@@ -361,6 +361,13 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0122959617', // Muhadinović Jovana Radovan of Kranji Do (Cetinje), not in any book on the site: his grandson's
+    // missing-fighter form of 2026-11-21 18:05 (Porodična arhiva 9990000007); his own words, as sent
+    text: 'Ratni vojni invalid. Ranjen na brdu Bukovica, Cetinjski srez, pri napadu na bunkersko gnijezdo neprijatelja. Odlikovan nekoliko puta; 1948. dodijeljena mu je Medalja za hrabrost.',
+    from: 'J. Muhadinović, unuk',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959606', // Eftimovski Gjore of Sušica (Gostivar), brother of Kiro (Porodična arhiva)
     text: 'Роден е 1925 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете оди на печалба во Белград како општ работник, каде што се запознава со идеите на напредното работничко движење. За време на окупацијата на земјата во Белград е примен за член на СКОЈ, а нешто подоцна и за член на КПЈ. Кон крајот на 1941 година е уапсен од страна на Недиќевата полиција, но заради немање докази набрзо е пуштен на слобода. Особена активност и бестрашност покажува во вршењето на многу одговорни курирски задачи. Во единиците на Народноослободителната војска стапил доброволно во јуни 1943 година, како борец во составот на Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот фашистички окупатор и нешто подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
     from: 'nećak',

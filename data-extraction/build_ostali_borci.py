@@ -254,8 +254,16 @@ ONE_MAN = [
     # his Wikipedia article, which a visitor pointed us to, on a man whose record 122 holds
     ('9991000004', '9001000086', 'Bogavac Vukašina Dragoslav of Veliđe (Berane), born 1910, the narodni heroj who fell '
                                  'at Vrbnica in the spring of 1942 (F. Adžić, 2026-11-20)'),
+    ('9111000275', '9001000532', 'Kupres Marka Miloš of Kožuhe (Doboj), the narodni heroj who fell at Turija in January '
+                                 '1942: Kožuhe\'s list of the fallen (born 1907) and the hero book (born 1920); found by '
+                                 'the email session on 2026-11-21, the records stood side by side'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
+# the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
+# -> the record's, written into moved-ids.json with the men moved to a unit), since links to it may be out
+MERGED_IDS = {
+    '0122010532': '0122957805',   # Kupres Marka Miloš: the hero book's record, joined to Kožuhe's (2026-11-21)
+}
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
 TWO_MEN = [
@@ -1134,7 +1142,7 @@ def main():
         print('Written', UNIT_IDS)
         # his old address still finds him: old 122 ID -> his record's (website/scripts/prepare-data.ts writes it into
         # 122's own where-files, and /borac/<old> answers with the new one)
-        write_text(MOVED, json.dumps({r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs},
+        write_text(MOVED, json.dumps({**MERGED_IDS, **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}},
                                      ensure_ascii=False, indent=0, sort_keys=True))
         print('Written', MOVED)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the

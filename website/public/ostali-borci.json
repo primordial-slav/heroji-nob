@@ -103300,7 +103300,9 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "proleće 1942",
-    "death_place": "Foča, Kalinovnik",
+    "death_place": "Vrbnica, Zelengora",
+    "unit_detail": "Fočansko-čelebićki odred",
+    "rank": "komesar odreda",
     "from_columns": [
       "death_type",
       "death_date",
@@ -103336,9 +103338,7 @@
       }
     ],
     "occupation": "pravnik",
-    "party": "KPJ 1936",
-    "unit_detail": "Fočansko-čelebićki odred",
-    "rank": "komesar odreda"
+    "party": "KPJ 1936"
   },
   {
     "soldier_id": "0122912115",
@@ -561434,8 +561434,8 @@
     "pdf_y_end": 669.4,
     "birth_place": "Osječenica, Nikšić",
     "death_type": "poginuo",
-    "death_date": "05.1945",
-    "death_place": "Slavonija",
+    "death_date": "04.1945",
+    "death_place": "Sremski front",
     "from_columns": [
       "death_type",
       "death_date",
@@ -595751,33 +595751,6 @@
     "birth_place": "Kranj"
   },
   {
-    "soldier_id": "0122010532",
-    "last_name": "Kupres",
-    "middle_name": "Marka",
-    "first_name": "Miloš",
-    "fathers_name": "Marko",
-    "full_name": "Kupres Marka Miloš",
-    "additional_info": "Rođen 1920 u selu Kožuhama. Osječani, Doboj, Bosna i Hercegovina. Zemljoradnik. Član KPJ od 1941. U NOB stupio 1941. Poginuo početkom 1942 na Turiji. Za narodnog heroja proglašen 24-VII-1953.",
-    "birth_year": "1920",
-    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=422",
-    "source_page": 400,
-    "other_sources": [
-      {
-        "soldier_id": "9002000586",
-        "name": "Kupres Marka Miloš",
-        "additional_info": "Rođen je 1920. godine u selu Kožuhama kod Doboja, Bosna i Hercegovina. … Narodnim herojem proglašen je 24. jula 1953. godine.",
-        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=441",
-        "source_page": 437
-      }
-    ],
-    "birth_place": "Kožuhe",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "početkom 1942",
-    "death_place": "Turija",
-    "party": "KPJ 1941"
-  },
-  {
     "soldier_id": "0122957805",
     "last_name": "Kupres",
     "middle_name": "Marka",
@@ -595788,13 +595761,35 @@
     "birth_year": "1907",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=393",
     "source_page": 389,
+    "other_sources": [
+      {
+        "soldier_id": "9001000532",
+        "name": "Kupres Marka Miloš",
+        "additional_info": "Rođen 1920 u selu Kožuhama. Osječani, Doboj, Bosna i Hercegovina. Zemljoradnik. Član KPJ od 1941. U NOB stupio 1941. Poginuo početkom 1942 na Turiji. Za narodnog heroja proglašen 24-VII-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=422",
+        "source_page": 400
+      },
+      {
+        "soldier_id": "9002000586",
+        "name": "Kupres Marka Miloš",
+        "additional_info": "Rođen je 1920. godine u selu Kožuhama kod Doboja, Bosna i Hercegovina. … Narodnim herojem proglašen je 24. jula 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=441",
+        "source_page": 437
+      }
+    ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "13.01.1942",
     "death_place": "Turija, Lukavac",
     "rank": "komandir čete",
-    "birth_place": "Kožuhe"
+    "birth_place": "Kožuhe",
+    "party": "KPJ 1941",
+    "variants": {
+      "born": [
+        "1920"
+      ]
+    }
   },
   {
     "soldier_id": "0122942046",
@@ -806876,6 +806871,18 @@
     "pdf_x_end": 216.3,
     "pdf_y_end": 321.2,
     "birth_place": "Horjul"
+  },
+  {
+    "soldier_id": "0122959617",
+    "last_name": "Muhadinović",
+    "middle_name": "Jovana",
+    "first_name": "Radovan",
+    "fathers_name": "Jovan",
+    "full_name": "Muhadinović Jovana Radovan",
+    "additional_info": "rođen 1925, Kranji Do, Cetinje. Ranjen na brdu Bukovica, Cetinjski srez, pri napadu na bunkersko gnijezdo neprijatelja; ratni vojni invalid. Odlikovan nekoliko puta, 1948. Medaljom za hrabrost. Preživio rat.",
+    "birth_year": "1925",
+    "source_url": "porodica:9990000007",
+    "birth_place": "Kranji Do, Cetinje"
   },
   {
     "soldier_id": "0122926254",
@@ -1089557,15 +1089564,7 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "komesar bataljona",
-    "variants": {
-      "death": [
-        {
-          "date": "1944",
-          "place": "Bosiljevo slove"
-        }
-      ]
-    }
+    "rank": "komesar bataljona"
   },
   {
     "soldier_id": "0122914844",

@@ -16,8 +16,8 @@
   year, month or day, or another place in the same year too (2026-11-19, the user's "use family report always and
   there should be also an option for alternative location if there's a mismatch"), where both places lie on the map
   further apart than NEAR_KM (same_place: a village and its town, a misspelling, the census's cut-off column, a region,
-  or an area and a place inside it, "Kozara" and Bosanska Dubica, are no other place). A value a family's correction set stays first, and the record's own book shows after
-  "ili" where it says otherwise (FAMILY_REASON). The other books across units only fill. Borci drugih jedinica has
+  or an area and a place inside it, "Kozara" and Bosanska Dubica, are no other place). A value a family's correction set shows alone (FAMILY_REASON; the user's rule of
+  2026-11-21: the books' versions stay in their references as printed). The other books across units only fill. Borci drugih jedinica has
   them from its own books (each one book among the others: the census's columns may have given its fields); the
   census's parts, one entry each, none.
 """
@@ -544,9 +544,9 @@ def plausible_birth(year: int, s: dict) -> bool:
 
 
 # a correction that gives a family's report ("Family (B. Batalo, 2026-11-19) names him ...", "Form 2026-11-19 (a
-# great-nephew ...)", "Visitor form", "the family (B. Batalo)"): its values win on the card, and what the record's own
-# book says otherwise shows after "ili" (the user's rule of 2026-11-19); a correction that mends a reading doesn't make
-# the misreading another version
+# great-nephew ...)", "Visitor form", "the family (B. Batalo)"): its values win on the card, alone: what the books say
+# otherwise stays in their references (the user's rule of 2026-11-21, which took back the "ili" of 2026-11-19 for a
+# family's report); a correction that mends a reading doesn't make the misreading another version
 FAMILY_REASON = re.compile(r"\bfamil(?:y|ies)(?:'s)?\s*(?:\(|biography|report|letter|papers|says|said|sent|wrote|names)|"
                            r'\b(?:visitor\s+)?form\s+20\d\d-\d\d-\d\d|\bvisitor\s+form\b|'
                            r'\bgrand(?:son|daughter|child)\b|\bgreat-(?:nephew|niece|grand\w+)\b', re.I)
@@ -576,7 +576,10 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
         if y and y not in seen and year and plausible_birth(int(y), s):
             seen.add(y)
             born.append(f.get('birth_date') or y)
-    if born:
+    # a field a family's report set shows the family's value alone, the books' in their references as printed (the user's
+    # rule of 2026-11-21, after Ivanović Špiro's "1976 ili 1984": it replaces the "ili" of 2026-11-19 for a family's
+    # report; books that disagree with each other, no family speaking, keep their "ili")
+    if born and not {'birth_year', 'birth_date'} & family:
         out['born'] = born
     deaths = []
     unit = BRIGADE_CONFIGS[code]['json_file'] if code in BRIGADE_CONFIGS else ''
@@ -608,7 +611,7 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
             like['date'] = d['date']
         if 'place' in d and 'place' not in like:
             like['place'] = d['place']
-    if deaths:
+    if deaths and not family & set(DEATH_FIELDS):
         out['death'] = deaths
     return out
 
