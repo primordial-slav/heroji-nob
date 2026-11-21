@@ -3188,6 +3188,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika bratstva Kovačevića iz Grahova kod Nikšića: Kovačevići poginuli u Drugom svetskom ratu (str. 278–286), sa rođenjem, jedinicom i pogibijom, narodni heroji (str. 286–287) i nosioci Partizanske spomenice 1941. (str. 287). Spisak poginulih broji i četnike, one koje su streljali organi NOP-a i civilne žrtve; uneti su borci i, označeni kao aktivista i učesnik, pozadinski radnik i čovek koji je poginuo prikupljajući oružje 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'piskavica',
+    title: 'Piskavica, moj zavičaj i moji doživljaji',
+    author: 'Nikola Pavić',
+    pdfPath: 'poreklo:piskavica',
+    thumbnail: '/images/pdf-thumbs/piskavica.jpg',
+    brigadeName: '',
+    description: 'Spisak „Poginuli i preživjeli borci u Drugom svjetskom ratu iz Piskavice” (str. 37–53), koji je autor preuzeo iz knjige Timar u Bosanskoj krajini, po selima Piskavica, Radosavska i Niševići kod Ivanjske: poginuli borci sa godinama rođenja i pogibije i jedinicom, preživeli sa godinom rođenja i jedinicom ili dužnošću. Uneti su borci i, označeni kao aktivisti, odbornici NOO-a, skojevci i članice AFŽ-a koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
