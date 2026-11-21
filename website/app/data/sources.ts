@@ -3179,6 +3179,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak „Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine” (str. 297–317): profesori i drugi radnici Gimnazije i njeni učenici i bivši učenici, sa kratkom biografijom. Spisak broji i one koje su okupator i njegovi pomagači streljali ili koji su umrli u logorima; uneti su i oni koji nisu bili borci, označeni kao aktivisti ili učesnici. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'grahovski-kovacevici',
+    title: 'Grahovski Kovačevići kroz vekove i ratove',
+    author: '',
+    pdfPath: 'poreklo:grahovski-kovacevici',
+    thumbnail: '/images/pdf-thumbs/grahovski-kovacevici.jpg',
+    brigadeName: '',
+    description: 'Hronika bratstva Kovačevića iz Grahova kod Nikšića: Kovačevići poginuli u Drugom svetskom ratu (str. 278–286), sa rođenjem, jedinicom i pogibijom, narodni heroji (str. 286–287) i nosioci Partizanske spomenice 1941. (str. 287). Spisak poginulih broji i četnike, one koje su streljali organi NOP-a i civilne žrtve; uneti su borci i, označeni kao aktivista i učesnik, pozadinski radnik i čovek koji je poginuo prikupljajući oružje 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
