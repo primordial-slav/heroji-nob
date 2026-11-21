@@ -3215,6 +3215,15 @@ export const sources: PdfSource[] = [
     description: 'Tri spiska boraca iz Duvna: borci bitke na Sutjesci rodom iz Duvna, preuzeti iz knjige Viktora Kučana Borci Sutjeske (str. 369–377), sa biografijom, oficiri i podoficiri NOV-a iz registra SUBNOR-a Duvna (str. 417–418), sa godinom rođenja, danom stupanja u NOV i činom, i tabela poginulih Srba iz Duvna u NOR-u 1941–1945. po selima (str. 421–424), sa godinom i mestom pogibije i jedinicom. Borac koji stoji u dva ili tri spiska jedan je zapis. Spiskovi žrtava fašističkog terora iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'vilusi',
+    title: 'Vilusi (zajednica sela: Balosave, Broćanac, Dolovi, Okolišta, Podbožur, Riječani, Spila)',
+    author: '',
+    pdfPath: 'poreklo:vilusi',
+    thumbnail: '/images/pdf-thumbs/vilusi.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Vilusa kod Grahova, spisak „Poginuli i stradali u Drugom svjetskom ratu 1941–1945. godine” (str. 262–273), sa selom, zanimanjem, učešćem u NOB-u i pogibijom. Spisak broji i četnike, one koje su streljali organi NOP-a i žrtve fašističkog terora; uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',

@@ -95,7 +95,8 @@ POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
                       'popovo-polje',                           # (Popovo polje's "Akšam Ilija, Burin")
                       'grahovo-podjele',                        # (Grahovo's rear workers, "Bulajić Simov Mirko")
                       'ljesnjani',                              # (Lješnjani's "Blagojević Tomov Andrija")
-                      'grahovski-kovacevici'}                   # (Grahovo's Kovačevići, "Andrija Gajov")
+                      'grahovski-kovacevici',                   # (Grahovo's Kovačevići, "Andrija Gajov")
+                      'vilusi'}                                 # (Vilusi's "Babić Stevana Vidak", "Bulajić Kostov Blagota")
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
 # out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
