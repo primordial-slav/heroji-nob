@@ -368,6 +368,32 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0082000602', // Dimitrić (Dimitrijević) Branko "Jaša" of Jazak, 5. vojvođanska; his grandson's two forms of
+    // 2026-11-21 20:16 and 20:36; the names of his wife, children and siblings left out (living people among them)
+    photo: '0082000602-1.jpg', // in uniform with a titovka
+    text: 'Nadimak iz rata: Jaša. Ranjen je u nogu tokom rata; operisan je nekoliko puta bez uspeha, a rana nikada nije potpuno zarasla. Posle rata doslužio je vojni rok u Gardijskoj brigadi. Živeo je povučeno u Jasku, oženio se 1947. i bavio se poljoprivredom; društveno-politički angažman nakon rata ga nije zanimao. Amaterski je svirao bas na igrankama. Preminuo je 2002. i sahranjen na seoskom groblju u Jasku.',
+    pieces: [
+      { kind: 'photo', file: '0082000602-2.jpg', caption: 'Posle rata, za vreme dosluženja vojnog roka u Gardijskoj brigadi; vidi se pečat' },
+    ],
+    from: 'D. Dimitrijević, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0060010080', // Macut Pavao, 8. kordunaška, načelnik štaba of its 2. brigada; a form of 2026-11-21 20:42 by a
+    // distant relative. A public office of someone alive is dated, never "sada" (the user, 2026-11-21: "as of november
+    // 2026 ... so we dont have to change it later")
+    text: 'Posle rata služio je u Jugoslovenskoj narodnoj armiji i penzionisan je u činu pukovnika. Otac je Đura Macuta, predsednika Vlade Srbije u novembru 2026. Rođen je 1915, a umro 2008. ili 2009.',
+    from: 'D. Dimitrijević, dalji rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0060001137', // Macut Nikole Đuro of Pješćanica, 8. kordunaška, fell 17.06.1943 at Cetingrad; the same
+    // sender's form of 2026-11-21 20:39 (the office dated, as above)
+    text: 'Rođeni stric Đura Macuta, predsednika Vlade Srbije u novembru 2026, koji je po njemu dobio ime.',
+    from: 'D. Dimitrijević, dalji rođak',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959606', // Eftimovski Gjore of Sušica (Gostivar), brother of Kiro (Porodična arhiva)
     text: 'Роден е 1925 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете оди на печалба во Белград како општ работник, каде што се запознава со идеите на напредното работничко движење. За време на окупацијата на земјата во Белград е примен за член на СКОЈ, а нешто подоцна и за член на КПЈ. Кон крајот на 1941 година е уапсен од страна на Недиќевата полиција, но заради немање докази набрзо е пуштен на слобода. Особена активност и бестрашност покажува во вршењето на многу одговорни курирски задачи. Во единиците на Народноослободителната војска стапил доброволно во јуни 1943 година, како борец во составот на Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот фашистички окупатор и нешто подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
     from: 'nećak',
