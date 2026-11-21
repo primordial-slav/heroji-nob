@@ -3242,6 +3242,15 @@ export const sources: PdfSource[] = [
     description: 'Hronika osam sela kod Uba (Brgule, Radljevo, Kalenić, Šarbane, Liso Polje, Stublenica, Mali Borak, Skobalj): od spiska poginulih građana 1941–1945. po selima (str. 537–543) uneti su oni koji su poginuli na frontovima NOVJ 1944–1945. (Srem, Slavonija, put do Zagreba i Maribora), i nosioci Partizanske spomenice 1941. (str. 546). Ostali iz istog spiska (taoci, internirci, deca, poginuli kod kuće 1941–1943. za koje se ne kaže na čijoj strani) nisu uneti, kao ni nosioci Albanske spomenice i ratni zarobljenici iz 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'vodice',
+    title: 'Hronika sela Vodice u Donjoj Jasenici',
+    author: 'Nikola Vladisavljević',
+    pdfPath: 'poreklo:vodice',
+    thumbnail: '/images/pdf-thumbs/vodice.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Vodice kod Smederevske Palanke: prvoborci sela, sa biografijom (str. 252–254), i borci koji su stupili u NOVJ u jesen 1944. i poginuli ili umrli od rana i bolesti u borbama za konačno oslobođenje (str. 257–262), sa rođenjem, danom stupanja, jedinicom i pogibijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
