@@ -3296,6 +3296,15 @@ export const sources: PdfSource[] = [
     description: 'U članku Roka Franića Barbe „Prva dalmatinska”: borci Prve dalmatinske čete (Treće čete bataljona „Marko Orešković”), 118 partizana severne Dalmacije koji su u novembru i decembru 1941. otišli u Liku, po grupama i mestima odakle su pošli (str. 357–362), sa imenom oca, nadimkom i dužnošću. Spisak je utvrdio Roko Franić Barba sa SUBNOR-om Šibenika. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'grabovica',
+    title: 'Grabovica u Drobnjaku i porodice u njoj',
+    author: 'Todor Janjić',
+    pdfPath: 'poreklo:grabovica',
+    thumbnail: '/images/pdf-thumbs/grabovica.jpg',
+    brigadeName: '',
+    description: 'U poglavlju „Grabovica u NOR-u 1941–1945” (str. 123–131) ljudi sela Grabovice kod Šavnika koji su učestvovali u NOB-u, po porodicama Janjić i Janković, sa kratkom biografijom: učešćem u Trinaestojulskom ustanku, jedinicama, dužnostima i pogibijom. Uneti su borci i, označeni kao aktivisti, odbornici i oni koji su pomagali NOP. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
