@@ -3197,6 +3197,15 @@ export const sources: PdfSource[] = [
     description: 'Spisak „Poginuli i preživjeli borci u Drugom svjetskom ratu iz Piskavice” (str. 37–53), koji je autor preuzeo iz knjige Timar u Bosanskoj krajini, po selima Piskavica, Radosavska i Niševići kod Ivanjske: poginuli borci sa godinama rođenja i pogibije i jedinicom, preživeli sa godinom rođenja i jedinicom ili dužnošću. Uneti su borci i, označeni kao aktivisti, odbornici NOO-a, skojevci i članice AFŽ-a koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'ostruznica',
+    title: 'Ostružnica',
+    author: '',
+    pdfPath: 'poreklo:ostruznica',
+    thumbnail: '/images/pdf-thumbs/ostruznica.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Ostružnice kod Beograda, spiskovi njenih boraca (str. 260–264): prvoborci, izginuli u borbama 1943–1945, sa godinom stupanja u borbu i mestom pogibije, i preživeli borci, sa mesecom i godinom stupanja i činom. Uneti su borci i, označeni kao aktivisti, politički radnici i oni koji su pomagali NOP. Spiskovi onih koje su streljali okupatori i zaklali četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',
