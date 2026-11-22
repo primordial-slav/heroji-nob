@@ -76,7 +76,12 @@ NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avr
               '9001001039': ('Šoti', 'Pal', 'Pala'),
               '9093000448': ('Peratić', 'Milan', 'Ilije'),     # Sokolac's "Tterat-Tlć", П read as Tt
               '9005001062': ('Šuća', 'Miloš', 'Pere'),         # Hronika's "Ttuća" of Bojna, Glina, Ш read as Tt
-              '9035015149': ('Migrović', 'Arso', 'Petrov')}   # the Spomenica prints "Ми гровић Петров Арсо" (Podgorica 128)
+              '9035015149': ('Migrović', 'Arso', 'Petrov'),   # the Spomenica prints "Ми гровић Петров Арсо" (Podgorica 128)
+              # Bijelo Polje's "Borović" (749-752): Ćorović, as the Spomenica and the census print them (a reader, 2026-11-22);
+              # 752's "Šahinj" given as the Spomenica prints him, so the two entries meet (the text keeps "Šahinj")
+              '9095002749': ('Ćorović', 'Zaim', 'Alja'), '9095002750': ('Ćorović', 'Maho', 'Hamida'),
+              '9095002751': ('Ćorović', 'Osmo', 'Džema'), '9095002752': ('Ćorović', 'Šahim', 'Šeća'),
+              '9035002206': ('Bulatović', 'Milena', 'Ristova')}   # the Spomenica's "Risgova", т read as г
 NO_NICK = {'9035015149'}      # entries whose parser read a given name as a nickname
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
@@ -259,12 +264,25 @@ ONE_MAN = [
     ('9111000275', '9001000532', 'Kupres Marka Miloš of Kožuhe (Doboj), the narodni heroj who fell at Turija in January '
                                  '1942: Kožuhe\'s list of the fallen (born 1907) and the hero book (born 1920); found by '
                                  'the email session on 2026-11-21, the records stood side by side'),
+    # a reader's reports of 2026-11-22: Bijelo Polje's "Borović" of Lozna and Ivanje is Ćorović, as the Spomenica
+    # (Bijelo Polje 929-932) and the census print them; the surname in NAME_FIXES, the pairs here
+    ('9095002749', '9035003058', 'Ćorović Aljov Zaim of Lozna, born 1919, fell 1945 at Pale near Sarajevo'),
+    ('9095002750', '9035003059', 'Ćorović Hamidov Maho of Lozna, born 1919, fell 1945 at Jabuka near Goražde'),
+    ('9095002751', '9035003060', 'Ćorović Džemov Osmo of Ivanje, born 1925, fell 1944 at Obrovo'),
+    ('9095002752', '9035003061', 'Ćorović Šećov Šahim of Lozna, born 1915, died 1945 near Sjenica (Bijelo Polje '
+                                 'reads Šahinj)'),
+    # the Spomenica's "Risgova" (Bijelo Polje 76, the scan's т read as г) is Ristova: Bijelo Polje's 71, her father
+    # Risto (a reader's report of 2026-11-22)
+    ('9095002071', '9035002206', 'Bulatović Rista Milena of Štitari, born 1905, a political worker, fell 1944 at Lozna'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
 # -> the record's, written into moved-ids.json with the men moved to a unit), since links to it may be out
 MERGED_IDS = {
     '0122010532': '0122957805',   # Kupres Marka Miloš: the hero book's record, joined to Kožuhe's (2026-11-21)
+    # Bijelo Polje's records, joined to the Spomenica's (2026-11-22): the four Ćorović of Lozna and Ivanje, Bulatović Milena
+    '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
+    '0122954539': '0122912799',
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
