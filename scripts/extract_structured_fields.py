@@ -32,7 +32,10 @@ from safe_write import write_text
 
 import argparse
 import difflib
+import hashlib
 import json
+import os
+import pickle
 import random
 import re
 import sys
@@ -1812,7 +1815,81 @@ def load_live():
             for code, cfg in sorted(BRIGADE_CONFIGS.items()) if cfg['json_file'] in live}
 
 
+VOCABULARY_CACHE = ROOT / 'data-extraction' / '.cache' / 'vocabulary.pickle'
+
+
+def vocabulary_key(brigades) -> str:
+    """Everything build_extractor learns from: every record's text in the order read (outside Ostali borci also its
+    occupation and places), the code of every script and parser, the places and order-of-battle tables and the site's
+    list of units. Wider than the reader needs, so that no change it depends on can leave an old vocabulary in use: a
+    changed script or table costs one learning run. Not ostali_cases.json, which the corrections run itself adds to
+    (resolved_places.remember) and the reader never reads, and of units.ts only its data files: the run writes the
+    counts there."""
+    h = hashlib.sha256()
+    files = sorted([*(ROOT / 'scripts').glob('*.py'), *(ROOT / 'data-extraction').glob('*.py'),
+                    *(ROOT / 'data-extraction' / 'places').glob('*'), *(ROOT / 'data-extraction' / 'novj').rglob('*')])
+    for f in files:
+        if f.is_file() and f.name != 'ostali_cases.json':
+            h.update(f.relative_to(ROOT).as_posix().encode() + b'\0' + f.read_bytes() + b'\1')
+    h.update('\n'.join(sorted(live_json_files())).encode() + b'\1')
+    for code, (_, d) in brigades.items():
+        h.update(b'\2%d\2' % code)
+        own = code not in OSTALI_CODES
+        for s in d:
+            h.update((s.get('additional_info') or '').encode() + b'\3')
+            if own:
+                h.update('\4'.join(s.get(k) or '' for k in ('occupation', 'birth_place', 'death_place')).encode() + b'\5')
+    return h.hexdigest()
+
+
 def build_extractor(brigades) -> Extractor:
+    """The reader with the vocabulary the records teach (occupations, known places). Learning it reads every record and
+    takes some three minutes, so it is kept in data-extraction/.cache/vocabulary.pickle and used again while nothing it
+    is learned from has changed (vocabulary_key; 2026-11-21). The kept vocabulary is the very one learning would give:
+    an Extractor holds only the occupations it was made with and the places counted to the end."""
+    key = vocabulary_key(brigades)
+    ex = kept_extractor(key)
+    if ex is not None:
+        return ex
+    occupations, places = learn_vocabulary(brigades)
+    # a file of this process's own, put in place in one step: sessions running at once never write into one file
+    tmp = VOCABULARY_CACHE.with_name(f'vocabulary.{os.getpid()}.tmp')
+    try:
+        VOCABULARY_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        with open(tmp, 'wb') as f:
+            pickle.dump({'key': key, 'occupations': occupations, 'places': places}, f, protocol=pickle.HIGHEST_PROTOCOL)
+        os.replace(tmp, VOCABULARY_CACHE)
+    except OSError:                             # a vocabulary not kept is learned again next time
+        try:
+            tmp.unlink()
+        except OSError:
+            pass
+    return Extractor(occupations, places)
+
+
+def kept_extractor(key: str):
+    """The reader from the kept vocabulary if it was learned from what vocabulary_key now gives, else None."""
+    try:
+        with open(VOCABULARY_CACHE, 'rb') as f:
+            kept = pickle.load(f)
+        if kept.get('key') == key:
+            return Extractor(kept['occupations'], kept['places'])
+    except Exception:                           # unreadable or of another shape: learned again
+        pass
+    return None
+
+
+def use_kept_vocabulary(brigades) -> bool:
+    """For a caller that has read the unit files already (apply_corrections): the reader is made now from the kept
+    vocabulary when it is current, so the files need not be read again for it; otherwise it is learned as before, when
+    first needed. True if made."""
+    global _EXTRACTOR
+    if _EXTRACTOR is None:
+        _EXTRACTOR = kept_extractor(vocabulary_key(brigades))
+    return _EXTRACTOR is not None
+
+
+def learn_vocabulary(brigades) -> tuple[Counter, Counter]:
     # the units' own records teach the vocabulary; Ostali borci (122, 131-138), made of many books' OCR, would teach
     # it wrong
     # ("španski borac" for an occupation)
@@ -1856,7 +1933,7 @@ def build_extractor(brigades) -> Extractor:
         places[extra] += 5
     for wrong, right in LOCATIVE_PLACES.items():                          # their votes go to the place they are
         places[right] += places.pop(wrong, 0)
-    return ex
+    return occupations, places
 
 
 _EXTRACTOR = None
