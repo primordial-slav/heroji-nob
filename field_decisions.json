@@ -1060,6 +1060,18 @@
   "written": 290175
  },
  {
+  "key": "duplicates:same_entry_twice:0006007460:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0006007460",
+  "field": "record",
+  "name": "Vidović Mijo",
+  "value": "= 0006007319",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-07"
+ },
+ {
   "key": "duplicates:same_entry_twice:0006007555:record",
   "check": "duplicates",
   "kind": "same_entry_twice",
@@ -1662,6 +1674,20 @@
   "note": "two lines of one name the book prints apart (namesakes, or a man in two of its lists): left as printed"
  },
  {
+  "key": "duplicates:same_entry_twice:0035102680:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0035102680",
+  "field": "record",
+  "name": "Gašparov Bartol",
+  "value": "= 0035102627",
+  "answer": "merge",
+  "twin_id": "0035102627",
+  "by": "Boris",
+  "date": "2026-11-07",
+  "written": 290548
+ },
+ {
   "key": "duplicates:same_entry_twice:0035103645:record",
   "check": "duplicates",
   "kind": "same_entry_twice",
@@ -1755,6 +1781,20 @@
   "date": "2026-10-30",
   "note": "one name and the same text, with a year and more: one man the book printed twice",
   "written": 290112
+ },
+ {
+  "key": "duplicates:same_entry_twice:0035105325:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0035105325",
+  "field": "record",
+  "name": "Kostančić Alojz",
+  "value": "= 0035105023",
+  "answer": "merge",
+  "twin_id": "0035105023",
+  "by": "Boris",
+  "date": "2026-11-07",
+  "written": 290549
  },
  {
   "key": "duplicates:same_entry_twice:0035106220:record",
@@ -2106,6 +2146,19 @@
   "written": 290189
  },
  {
+  "key": "duplicates:same_entry_twice:0064003333:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0064003333",
+  "field": "record",
+  "name": "Černač Jože",
+  "value": "= 0064003324",
+  "answer": "delete",
+  "by": "Boris",
+  "date": "2026-11-07",
+  "written": 290550
+ },
+ {
   "key": "duplicates:same_entry_twice:0064003442:record",
   "check": "duplicates",
   "kind": "same_entry_twice",
@@ -2134,6 +2187,18 @@
   "date": "2026-10-31",
   "note": "the scan repeats the lines at the page turn (a block of the same entries on both pages)",
   "written": 290191
+ },
+ {
+  "key": "duplicates:same_entry_twice:0064003550:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0064003550",
+  "field": "record",
+  "name": "Štrukelj Milan",
+  "value": "= 0064003539",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-07"
  },
  {
   "key": "duplicates:same_entry_twice:0070100629:record",
@@ -2365,6 +2430,20 @@
   "note": "two lines of one name the book prints apart (namesakes, or a man in two of its lists): left as printed"
  },
  {
+  "key": "duplicates:same_entry_twice:0075001601:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0075001601",
+  "field": "record",
+  "name": "Pejić Marinko",
+  "value": "= 0075000494",
+  "answer": "merge",
+  "twin_id": "0075000494",
+  "by": "Boris",
+  "date": "2026-11-07",
+  "written": 290551
+ },
+ {
   "key": "duplicates:same_entry_twice:0075001651:record",
   "check": "duplicates",
   "kind": "same_entry_twice",
@@ -2512,6 +2591,20 @@
   "by": "claude",
   "date": "2026-10-31",
   "note": "two lines of one name the book prints apart (namesakes, or a man in two of its lists): left as printed"
+ },
+ {
+  "key": "duplicates:same_entry_twice:0085000596:record",
+  "check": "duplicates",
+  "kind": "same_entry_twice",
+  "soldier_id": "0085000596",
+  "field": "record",
+  "name": "Mladenović T Stanislav",
+  "value": "= 0085000595",
+  "answer": "merge",
+  "twin_id": "0085000595",
+  "by": "Boris",
+  "date": "2026-11-07",
+  "written": 290552
  },
  {
   "key": "duplicates:same_entry_twice:0085000914:record",
@@ -7935,6 +8028,30 @@
   "date": "2026-10-31"
  },
  {
+  "key": "name_slips:caron:0001001265:last_name",
+  "check": "name_slips",
+  "kind": "caron",
+  "soldier_id": "0001001265",
+  "field": "last_name",
+  "name": "Bucanović Mihajla Milorad",
+  "value": "Bucanović",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-08"
+ },
+ {
+  "key": "name_slips:caron:0001001516:last_name",
+  "check": "name_slips",
+  "kind": "caron",
+  "soldier_id": "0001001516",
+  "field": "last_name",
+  "name": "Corda Costantino Giovanni",
+  "value": "Corda",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-08"
+ },
+ {
   "key": "name_slips:caron:0001003154:last_name",
   "check": "name_slips",
   "kind": "caron",
@@ -7948,6 +8065,18 @@
   "note": "the page prints Gasparini, and 2 men bear it"
  },
  {
+  "key": "name_slips:caron:0001006053:last_name",
+  "check": "name_slips",
+  "kind": "caron",
+  "soldier_id": "0001006053",
+  "field": "last_name",
+  "name": "Lisčić Petra Luka",
+  "value": "Lisčić",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-08"
+ },
+ {
   "key": "name_slips:caron:0001010778:last_name",
   "check": "name_slips",
   "kind": "caron",
@@ -7959,6 +8088,30 @@
   "by": "claude",
   "date": "2026-11-04",
   "note": "the page prints Sajković, and 4 men bear it"
+ },
+ {
+  "key": "name_slips:caron:0001011147:last_name",
+  "check": "name_slips",
+  "kind": "caron",
+  "soldier_id": "0001011147",
+  "field": "last_name",
+  "name": "Sindić Jože",
+  "value": "Sindić",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-08"
+ },
+ {
+  "key": "name_slips:caron:0001011178:last_name",
+  "check": "name_slips",
+  "kind": "caron",
+  "soldier_id": "0001011178",
+  "field": "last_name",
+  "name": "Skrbin Mije Stjepan",
+  "value": "Skrbin",
+  "answer": "keep",
+  "by": "Boris",
+  "date": "2026-11-08"
  },
  {
   "key": "name_slips:caron:0001012005:last_name",

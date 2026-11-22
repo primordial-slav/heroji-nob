@@ -356,7 +356,7 @@ export const units: Unit[] = [
     nameEn: '32nd Zagorje Division',
     description: 'Formirana 12. decembra 1943. na Kalniku. Borci divizije i Zapadne grupe odreda, i borci štaba i brigada divizije, s podacima o svakom, i komandni sastav.',
     image: '/images/32-zagorska-divizija.jpg',
-    soldierCount: 18149,
+    soldierCount: 18147,
     dataFile: '/32-divizija-soldiers.json',
     pdfFiles: ['/pdfs/32-divizija.pdf', '/pdfs/32-divizija-borci.pdf', '/pdfs/32-divizija-kadar.pdf']
   },
@@ -656,7 +656,7 @@ export const units: Unit[] = [
     nameEn: 'Gradnik Brigade',
     description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade, njen štab i narodni heroji.',
     image: '/images/gradnikova-brigada.jpg',
-    soldierCount: 3645,
+    soldierCount: 3644,
     dataFile: '/gradnikova-soldiers.json',
     pdfFiles: ['/pdfs/gradnikova.pdf', '/pdfs/gradnikova-kader.pdf']
   },
@@ -766,7 +766,7 @@ export const units: Unit[] = [
     nameEn: '12th Vojvodina Brigade',
     description: 'Formirana 8. oktobra 1944. u Vojlovici kod Pančeva. Borci brigade, po mestima u kojima su živeli, i poginuli.',
     image: '/images/12-vojvodjanska-brigada.jpg',
-    soldierCount: 2545,
+    soldierCount: 2544,
     dataFile: '/12-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/12-vojvodjanska.pdf']
   },
@@ -866,7 +866,7 @@ export const units: Unit[] = [
     nameEn: '7th Serbian Brigade',
     description: 'Formirana 4. februara 1944. u Jabukoviku kod Crne Trave, kao 5. južnomoravska. Borci u maju 1944. i poginuli, umrli i nestali. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/7-srpska-brigada.jpg',
-    soldierCount: 1209,
+    soldierCount: 1208,
     dataFile: '/7-srpska-soldiers.json',
     pdfFiles: ['/pdfs/7-srpska.pdf']
   },
