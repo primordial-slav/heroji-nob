@@ -219,7 +219,7 @@ address taken from the mailbox when the button is pressed, never stored). Not bu
 
 | Credit on the site | Record | Live | Told |
 |---|---|---|---|
-| F. Adžić, rođak / F. Adžić | 0126000703 Novaković Vuka Radomir, 0136021032 Đoković Miodrag Dragan | yes | not yet |
+| F. Adžić, rođak / F. Adžić | 0126000703 Novaković Vuka Radomir, 0136021032 Đoković Miodrag Dragan | yes | told by the user privately in Reddit DMs, every record of his (2026-11-22); no mail note |
 | J. Todosijević, bratanica | 0136006734 Todosijević Dragić Jelica | yes | nobody to tell: her form gave no address (the user, 2026-11-21) |
 | nećak (Kovačević's) | 0122917644 Kovačević Pajov Dušan | yes | not yet |
 | Ispravka po prijavi | 0135000797 Piperov Nikola Vlado | yes | not yet (a correction; tell if the reporter left an email) |
