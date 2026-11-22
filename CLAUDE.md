@@ -21,6 +21,8 @@ This file is the core: what every session needs. The rest is in `docs/claude/`, 
 | `docs/claude/portraits.md` | soldiers' portraits: every source and how it was paired, the gallery, the rails, the embroidered frames | adding or moving portraits |
 | `docs/claude/email.md` | the contact account and its forward, reading and sending mail, the user's rules for mail, the forms' mail, notes to families, the outreach letters and their replies | reading, answering or drafting any mail |
 
+**Sessions, the board, the people.** Each session's own file (its job, what it owns, its rules), the board of tasks, the daily handover log, everyone who reported something, the letters sent and the reply templates are in the private local repo `E:\Projects\knjiga-boraca-ops` (local git only, never pushed: it holds names and addresses). Read its README and your session's file when you start; commit there what you change there (2026-11-22, the user's request).
+
 Other docs: `VOICE.md` (the site's text), `DESIGN.md` (how it looks), `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md` (which books on znaci.org have soldier lists), `docs/NEW_BRIGADE_PARSER_STATUS.md` (the parsers on the scaffold), `docs/UNIT_PHOTOS.md` (each unit photo's source).
 
 ## Git
