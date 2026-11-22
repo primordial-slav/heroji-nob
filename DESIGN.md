@@ -103,7 +103,7 @@ Knjiga boraca is where a family member types a remembered name and finds one per
 The photographs are the only emotional material. They are real, black and white, and shown large: behind the red band on the home page (multiplied into the red), as the whole top of each unit card, full width on a unit page, and as a strip above a person's record. On wide screens the soldiers' own wartime portraits drift slowly up the margins beside the home page column, and the margins of the home band hold the Partisans' own wartime posters, very faint, tilted and overlapping like a pasted wall. There is no decoration beyond them.
 
 **Key Characteristics:**
-- A solid red band (header, and on the home page the search) with one brigade photograph multiplied into it.
+- A solid red band (header, and on the home page the search) with one brigade photograph multiplied into it. The band's red ends in a stitched hem 5px deep: a row of satin stitches with lozenges hanging from it, a large and a small one by turns, in the portrait frames' counted-thread stitch (`public/ornament/rub.svg` from `scripts/make_band_edge.py`; on the home page cut from the band itself, photograph and all, elsewhere the header's red going on below it; the user's choice of 2026-11-08 among the mockups of `/predlog/rub`, after trims beside the line and larger edges were turned down). It is the band's own edge, not a border.
 - Black-and-white brigade photographs, large, never thumbnails.
 - Names in PT Serif, surname first and bold, as the books print them; everything else in Golos Text.
 - Neutral ground, ink text, hairline rules, square corners, no shadows except the record popup.

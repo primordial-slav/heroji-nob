@@ -383,6 +383,38 @@ body:has(.band-photo[data-ready]) header.masthead {
   opacity: var(--band-photo-opacity);
 }
 
+/* The band's stitched edge (public/ornament/rub.svg, scripts/make_band_edge.py): the red ends in a satin-stitch hem
+   with lozenges hanging from it, a large and a small one by turns, 5px into the page. On the home page the band's
+   own layer reaches 5px below the section and the edge is cut from it, photograph and all; on the other pages the
+   header's red goes on below it. */
+section.masthead {
+  margin-bottom: 5px;
+}
+
+.band-photo {
+  bottom: -5px;
+  -webkit-mask: linear-gradient(#000 0 0) 0 0 / 100% calc(100% - 5px) no-repeat, url('/ornament/rub.svg') 50% 100% / 31.2px 5px repeat-x;
+  mask: linear-gradient(#000 0 0) 0 0 / 100% calc(100% - 5px) no-repeat, url('/ornament/rub.svg') 50% 100% / 31.2px 5px repeat-x;
+}
+
+body:not(:has(section.masthead)) header.masthead {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+body:not(:has(section.masthead)) header.masthead::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 5px;
+  background: var(--red);
+  -webkit-mask: url('/ornament/rub.svg') 50% 0 / 31.2px 5px repeat-x;
+  mask: url('/ornament/rub.svg') 50% 0 / 31.2px 5px repeat-x;
+  pointer-events: none;
+}
+
 /* Home search, set inside the band */
 
 .finder {
