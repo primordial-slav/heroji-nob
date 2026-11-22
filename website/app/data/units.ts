@@ -976,7 +976,7 @@ export const units: Unit[] = [
     nameEn: '22nd Division',
     description: 'Formirana maja 1944. na desnoj obali Južne Morave. Poginuli borci 8., 10. i 12. srpske brigade. Uz njih i borci divizije iz drugih knjiga.',
     image: '/images/22-divizija.jpg',
-    soldierCount: 1010,
+    soldierCount: 1011,
     dataFile: '/22-divizija-soldiers.json',
     pdfFiles: ['/pdfs/22-divizija.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 63790,
+    soldierCount: 63720,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1603,7 +1603,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Serbia',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja uže Srbije, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 31623,
+    soldierCount: 31605,
     dataFile: '/ostali-borci-srbija.json',
     pdfFiles: []
   },
@@ -1625,7 +1625,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Vojvodina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 9707,
+    soldierCount: 9708,
     dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }

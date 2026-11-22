@@ -124,7 +124,19 @@ COLUMN_BOOKS = {'spomenica-crnogorskim-antifasistima', 'cazinska-krajina-pali-bo
                 'licko-petrovo-selo',                  # (Ličko Petrovo Selo's table of the fallen)
                 'niksicki-odred-pali-borci',   # the Nikšić region's fallen: a table of birthplace and year, death place and year
                 'brod-crna-trava',             # Brod's table of the fallen: mahala, day and place of death, unit
-                'knezica'}                     # Knežica's fallen: "1926–1942. Kozara" (its survivors get no death)
+                'knezica',                     # Knežica's fallen: "1926–1942. Kozara" (its survivors get no death)
+                # Crna Trava's fallen by village: "Apostolović M. Denča 1944. Predejane", who killed him, where, his
+                # unit, and no verb, so the field reader read no death (2026-11-22, the user: "fill in Crna Trava's
+                # deaths"); only that list (COLUMN_LISTS)
+                'crna-trava'}
+# a book of which one list only is a table: its other lists' entries are read as text (Crna Trava's heroes, whose
+# paragraphs give the birth and the death in words: "rođen 1924. u selu Mačkatici")
+COLUMN_LISTS = {'crna-trava': 'Oni koji su u naše danas i sutra ugradili svoje živote'}
+
+
+def is_column(book: str, e: dict) -> bool:
+    """An entry whose book is printed as a table of columns (COLUMN_BOOKS), in the list that is one (COLUMN_LISTS)"""
+    return book in COLUMN_BOOKS and (book not in COLUMN_LISTS or e.get('list') == COLUMN_LISTS[book])
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
 # Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
@@ -317,6 +329,11 @@ MERGED_IDS = {
     '0122941528': '0001013391',   # Vujičić Mila Jakov (Prva proleterska)
     '0122917135': '0041001335',   # Vujičić Ristov Krsto (5. proleterska)
     '0122941526': '0041001338',   # Vujičić Ristov Vaso (5. proleterska)
+    # Crna Trava's list read again (2026-11-22): a unit's record holds the man through his entry now (12. srpska,
+    # Kostić M. Božilo of the 7. srpska), and two census fighters of other lands stand alone again, since the victims of
+    # terror whose records they had joined are out (Bajince's Petrović M. Milorad, Pavličine's Krstić J. Dušan)
+    '0122959818': '0085000362', '0122959827': '0090000345', '0122959853': '0090000341',
+    '0122959742': '0136023735', '0122959790': '0138003753',
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
@@ -1216,7 +1233,7 @@ def main():
                     if k not in rec and not (k == 'unit_detail' and len(census) < len(g)):
                         rec[k] = v                           # the census's columns, where a list gave no death
                         filled.append(k)
-            columns = [m for m in g if m['_book'] in COLUMN_BOOKS]
+            columns = [m for m in g if is_column(m['_book'], m)]
             if columns:
                 for k, v in column_fields(columns[0]).items():
                     if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):
@@ -1246,7 +1263,7 @@ def main():
                 death_cols.remove('death_place')         # the census's place stands, or the place read by hand
                 if read:
                     rec['death_place'] = read
-            if death_cols and any(m['_book'] not in COLUMN_BOOKS and not m['_book'].startswith('zrtve-rata-1964')
+            if death_cols and any(not is_column(m['_book'], m) and not m['_book'].startswith('zrtve-rata-1964')
                                   for m in g):
                 rec['from_columns'] = death_cols
             if rest:

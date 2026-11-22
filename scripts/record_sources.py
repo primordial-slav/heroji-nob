@@ -116,8 +116,10 @@ def no_death_lent(s: dict) -> bool:
 
 def fill_from(s: dict, book: str, e: dict) -> list[str]:
     """Fill s's empty fields from a reference of a census or column book; the fields filled"""
-    if not (book.startswith(CENSUS_BOOK) or book in fill_books()):
-        # any other book: only where he is from, as its parser read it (2026-11-03)
+    import build_ostali_borci
+    if not (book.startswith(CENSUS_BOOK) or build_ostali_borci.is_column(book, e)):
+        # any other book (or a column book's list printed as text: Crna Trava's heroes): only where he is from, as its
+        # parser read it (2026-11-03)
         if s.get('birth_place') or not e.get('born_in'):
             return []
         place = structured.born_in_form(e['born_in'], e.get('additional_info') or '')
@@ -160,8 +162,10 @@ def column_entry(sid: str, book: str = '') -> tuple[str, dict]:
             path = entries_path(name)
             if path.exists():
                 import json
+                import build_ostali_borci
                 for x in json.loads(path.read_text(encoding='utf-8')):
-                    _COLUMN_ENTRIES[x['soldier_id']] = (name, x)
+                    if build_ostali_borci.is_column(name, x):         # (not Crna Trava's heroes: COLUMN_LISTS)
+                        _COLUMN_ENTRIES[x['soldier_id']] = (name, x)
         _COLUMN_ENTRIES.setdefault('', ('', {}))
     got = _COLUMN_ENTRIES.get(sid, ('', {}))
     return got if not book or got[0] == book else ('', {})

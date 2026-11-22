@@ -173,7 +173,11 @@
       }
     ],
     "death_type": "poginuo",
-    "death_date": "1945"
+    "death_date": "1945",
+    "death_place": "Beograd",
+    "borrowed": [
+      "death_place"
+    ]
   },
   {
     "last_name": "Aićelković",
@@ -686,6 +690,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=387",
         "source_page": 387,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9125001419",
+        "name": "Arizanović J Nikola",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Preslap: 1. Arizanović J. Nikola, 4. 1944. Lužnica, 7. br.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=509",
+        "source_page": 537,
+        "ref_book": "crna-trava"
       }
     ],
     "death_date": "23.04.1944",
@@ -2379,12 +2391,20 @@
       {
         "soldier_id": "9125001194",
         "name": "Cvetković M Branislav",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Rupnje: 17. Cvetković M. Branislav, 1943. Bugara Jablanica II juž. m. od..",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Rupnje: 17. Cvetković M. Branislav, 1943. Bugara Jablanica II juž. m. od.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=505",
         "source_page": 533,
         "ref_book": "crna-trava"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1943",
+    "death_place": "Jablanica"
   },
   {
     "last_name": "Cvetković",
@@ -3252,7 +3272,15 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Beli Potok",
-    "birth_year": "1916"
+    "birth_year": "1916",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Zaječar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dinić",
@@ -4611,12 +4639,12 @@
     ],
     "rank": "politički komesar",
     "death_place": "Seselac",
-    "ethnicity": "Srbin",
+    "death_date": "1944",
     "borrowed": [
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1944"
+    "ethnicity": "Srbin"
   },
   {
     "last_name": "Golubović",
@@ -5390,7 +5418,7 @@
       {
         "soldier_id": "9125001282",
         "name": "Ilić R Radomir",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: Ilić R. Radomir, 1944. Babušnica.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: Ilić R. Radomir, 1944. Babušnica.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=507",
         "source_page": 535,
         "ref_book": "crna-trava"
@@ -6129,6 +6157,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=382",
         "source_page": 382,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9125001335",
+        "name": "Janković D Ljubica",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Crna Trava: Janković D. Ljubica, 1944. Soko Banja.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=497",
+        "source_page": 525,
+        "ref_book": "crna-trava"
       },
       {
         "soldier_id": "0096000224",
@@ -7002,7 +7038,7 @@
       {
         "soldier_id": "9125001248",
         "name": "Jović S Dobrić",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Ostrozub: 10. Jović S. Dobrić, 1944. Četnika Knjaž. 7. br. 23. diviz..",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Dobro Polje: 10. Jović S. Dobrić, 7. 8. 1944. Četnika Knjaž. 7. br. 23. diviz.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=506",
         "source_page": 534,
         "ref_book": "crna-trava"
@@ -7011,7 +7047,15 @@
     "occupation": "građevinski radnik",
     "death_date": "07.09.1944",
     "death_place": "Zaječar",
-    "rank": "borac"
+    "rank": "borac",
+    "variants": {
+      "death": [
+        {
+          "date": "07.08.1944",
+          "place": "Knjaž"
+        }
+      ]
+    }
   },
   {
     "last_name": "Jović",
@@ -7698,7 +7742,25 @@
     "pdf_file": "7-srpska.pdf",
     "birth_place": "Dobro Polje",
     "pdf_x_end": 137.9,
-    "soldier_id": "0085000362"
+    "soldier_id": "0085000362",
+    "other_sources": [
+      {
+        "soldier_id": "9125001247",
+        "name": "Kostić M Božilo",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Dobro Polje: 8. Kostić M. Božilo, 5. 7. 1944. Četnika B. Potok 7. sr. br. 23. u.d.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=506",
+        "source_page": 534,
+        "ref_book": "crna-trava"
+      }
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "05.07.1944",
+    "death_place": "Beli Potok"
   },
   {
     "last_name": "Kostić",
@@ -8705,12 +8767,32 @@
         "pdf_y": 324.3,
         "pdf_x_end": 312.1,
         "pdf_y_end": 332.3
+      },
+      {
+        "soldier_id": "9125001336",
+        "name": "Ljubić N Sima",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Crna Trava: Ljubić N. Sima, 1945.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=497",
+        "source_page": 525,
+        "ref_book": "crna-trava"
+      },
+      {
+        "soldier_id": "9025009571",
+        "name": "Ljubić (Nastas) Sima",
+        "additional_info": "rođen 1916, Crna Trava. Srbin, poginuo 1945. u NOBu, Murata.bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=382",
+        "source_page": 382,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ],
     "death_date": "22.03.1945",
     "death_place": "Sokol, Gračanica",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Ljubić",
@@ -9962,7 +10044,7 @@
       {
         "soldier_id": "9125001286",
         "name": "Miladinović M Dušan",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: 12. Miladinović M. Dušan, 1944. Babušnica.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: 12. Miladinović M. Dušan, 1944. Babušnica.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=508",
         "source_page": 536,
         "ref_book": "crna-trava"
@@ -9972,12 +10054,14 @@
     "borrowed": [
       "birth_year",
       "death_date",
+      "death_place",
       "death_type",
       "ethnicity"
     ],
     "death_type": "poginuo",
     "death_date": "1944",
-    "birth_year": "1918"
+    "birth_year": "1918",
+    "death_place": "Babušnica"
   },
   {
     "last_name": "Miladinović",
@@ -11932,13 +12016,20 @@
       {
         "soldier_id": "9125001033",
         "name": "Milčić J Velimir",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Crna Trava: Milčić J. Velimir, 1944..",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Crna Trava: Milčić J. Velimir, 1944.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=497",
         "source_page": 525,
         "ref_book": "crna-trava"
       }
     ],
-    "death_date": "11.02.1945"
+    "death_date": "11.02.1945",
+    "variants": {
+      "death": [
+        {
+          "date": "1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Minojević",
@@ -12148,6 +12239,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=380",
         "source_page": 380,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9125001370",
+        "name": "Mitrović S Aleksandar",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: Mitrović S. Aleksandar, 1945. Nemaca Nip.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=501",
+        "source_page": 529,
+        "ref_book": "crna-trava"
       },
       {
         "soldier_id": "0127000449",
@@ -12468,7 +12567,7 @@
       {
         "soldier_id": "9125001291",
         "name": "Mladenović M Dobrivoje",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: 18. Mladenović M. Dobrivoje, 1943. Aleksinac.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: 18. Mladenović M. Dobrivoje, 1943. Aleksinac.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=508",
         "source_page": 536,
         "ref_book": "crna-trava"
@@ -12484,14 +12583,22 @@
     ],
     "occupation": "građevinski radnik",
     "rank": "komandir voda",
-    "ethnicity": "Srbin",
+    "death_date": "1943",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_date": "1945",
-    "death_place": "Tuzla"
+    "death_place": "Aleksinac",
+    "ethnicity": "Srbin",
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Tuzla"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mladenović",
@@ -12928,6 +13035,22 @@
         "pdf_y_end": 218.0
       },
       {
+        "soldier_id": "9125001414",
+        "name": "Momčilović Miltena Vitomir",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Jabukovik: 6. Momčilović (Miltena) Vitomir, 10. V. 1944. Lipovica.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=509",
+        "source_page": 537,
+        "ref_book": "crna-trava"
+      },
+      {
+        "soldier_id": "9025009693",
+        "name": "Momčilović (Milten) Vitomir",
+        "additional_info": "rođen 1900, Jabukovik (Crna Trava). Srbin, poginuo 1944. u NOBu, Oruglica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=385",
+        "source_page": 385,
+        "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
         "soldier_id": "0090000212",
         "name": "Momčilović Milovana Vitomir",
         "additional_info": "1903, Jabukovik, Vlasotince, zemljoradnik. U NOVJ od maja 1944, borac. Poginuo 10. jula 1944. godine kod Lipovice, Konopnica, Vlasotince.",
@@ -12958,6 +13081,10 @@
     "death_date": "27.05.1944",
     "death_place": "Gornja Jablanica",
     "rank": "borac",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
     "variants": {
       "born": [
         "1903"
@@ -13064,7 +13191,15 @@
       "ethnicity"
     ],
     "death_place": "kod Gadžinog Hana",
-    "ethnicity": "Srbin"
+    "ethnicity": "Srbin",
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Suva planina"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mujadin",
@@ -13452,7 +13587,15 @@
       "ethnicity"
     ],
     "death_place": "Vinkovci, Šid",
-    "birth_date": "17.11.1924"
+    "birth_date": "17.11.1924",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Tuzla"
+        }
+      ]
+    }
   },
   {
     "last_name": "Nikolić",
@@ -15324,7 +15467,7 @@
         "ref_book": "zrtve-rata-1964-srb"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_type": "poginuo",
     "borrowed": [
       "birth_year",
       "death_date",
@@ -15332,9 +15475,9 @@
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Selo lopušnja",
+    "death_place": "Beograd",
+    "ethnicity": "Srbin",
     "birth_year": "1926"
   },
   {
@@ -15616,6 +15759,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=385",
         "source_page": 385,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "9125001415",
+        "name": "Petrović Teodosija Trajko",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Jabukovik: 7. Petrović (Teodosija) Trajko, 6. 6. 1944. Lipovica.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=509",
+        "source_page": 537,
+        "ref_book": "crna-trava"
       }
     ],
     "ethnicity": "Srbin",
@@ -16398,7 +16549,15 @@
         "source_page": 526,
         "ref_book": "crna-trava"
       }
-    ]
+    ],
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1944",
+    "death_place": "Bukovik"
   },
   {
     "last_name": "Radoičić",
@@ -17540,7 +17699,7 @@
       {
         "soldier_id": "9125001246",
         "name": "Ranđelović O Radomir",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Ostrozub: 7. Ranđelović O. Radomir, 1944. Četnika Bukovik 7. sprska 6. 23. d..",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Dobro Polje: 7. Ranđelović O. Radomir, 30. 5. 1944. Četnika Bukovik 7. sprska 6. 23. d.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=506",
         "source_page": 534,
         "ref_book": "crna-trava"
@@ -17553,7 +17712,15 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "30.05.1944",
+          "place": "Bukovik"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ranđelović",
@@ -18428,7 +18595,7 @@
       {
         "soldier_id": "9125001293",
         "name": "Sibinović S Tasa",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: 20. Sibinović S. Tasa, 1944. Darkovcu.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: 20. Sibinović S. Tasa, 1944. Darkovcu.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=508",
         "source_page": 536,
         "ref_book": "crna-trava"
@@ -19074,7 +19241,11 @@
       }
     ],
     "death_place": "Bosna",
-    "rank": "borac"
+    "rank": "borac",
+    "death_date": "1944",
+    "borrowed": [
+      "death_date"
+    ]
   },
   {
     "last_name": "Stanimirović",
@@ -19941,7 +20112,7 @@
       {
         "soldier_id": "9125001296",
         "name": "Stefanović Ž Joca",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: 23. Stefanović Ž. Joca, 1944. Kraljevica.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: 23. Stefanović Ž. Joca, 1944. Kraljevica.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=508",
         "source_page": 536,
         "ref_book": "crna-trava"
@@ -25641,7 +25812,7 @@
       {
         "soldier_id": "9125001279",
         "name": "Đorđević M Sotir",
-        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Krstićevo: Đorđević M. Sotir, 1944. Darkovce.",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Darkovce: Đorđević M. Sotir, 1944. Darkovce.",
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=507",
         "source_page": 535,
         "ref_book": "crna-trava"
@@ -26793,6 +26964,13 @@
     "death_place": "Čačak",
     "other_sources": [
       {
+        "soldier_id": "9125001390",
+        "name": "Cvetković V Tihomir",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: 51. Cvetković V. Tihomir, 1944. Beli Potok.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=502",
+        "source_page": 530
+      },
+      {
         "soldier_id": "9025014233",
         "name": "Cvetković (Vlajko) Tihomir",
         "additional_info": "rođen 1926, Kragujevac. Srbin, poginuo 1944. u NOBu, Čačak",
@@ -26808,6 +26986,10 @@
         {
           "date": "30.06.1944",
           "place": "Knjaževac"
+        },
+        {
+          "date": "1944",
+          "place": "Beli Potok"
         }
       ]
     }
@@ -26827,6 +27009,15 @@
     "death_type": "poginuo",
     "death_date": "24.07.1944",
     "death_place": "Bukovik",
+    "other_sources": [
+      {
+        "soldier_id": "9125001347",
+        "name": "Dojčinović J Pejčin",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: Dojčinović J. Pejčin, 1944. četnika Bukovik.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=501",
+        "source_page": 529
+      }
+    ],
     "former_ids": [
       "0122953732"
     ]
@@ -27073,6 +27264,15 @@
     "death_type": "poginuo",
     "death_date": "30.06.1944",
     "death_place": "Knjaževac",
+    "other_sources": [
+      {
+        "soldier_id": "9125001368",
+        "name": "Milosavljević S Miodrag",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: Milosavljević S. Miodrag, 1944. Knjaževac.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=501",
+        "source_page": 529
+      }
+    ],
     "former_ids": [
       "0122953721"
     ]
@@ -27432,6 +27632,13 @@
     "death_date": "1944",
     "death_place": "Beli Potok",
     "other_sources": [
+      {
+        "soldier_id": "9125001349",
+        "name": "Zlatanović D Srebran",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: Zlatanović D. Srebran, 1944. četnika Knjaževac.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=501",
+        "source_page": 529
+      },
       {
         "soldier_id": "9025009538",
         "name": "Zlatanović (Dejan) Srebran",

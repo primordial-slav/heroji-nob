@@ -27879,7 +27879,13 @@
         "source_page": 525,
         "ref_book": "crna-trava"
       }
-    ]
+    ],
+    "death_date": "1944",
+    "borrowed": [
+      "death_date",
+      "death_place"
+    ],
+    "death_place": "Beograd"
   },
   {
     "last_name": "Ivanović",
@@ -29086,7 +29092,7 @@
       "death": [
         {
           "date": "1945",
-          "place": "Đakovo"
+          "place": "Đakovica"
         }
       ]
     }
@@ -108640,6 +108646,14 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=0fa57049-5775-4da5-a8e6-fb3d1a4ecdad/00000001/00000001/00000448&pg_seq=813",
         "source_page": 809,
         "ref_book": "brod-crna-trava"
+      },
+      {
+        "soldier_id": "9125001378",
+        "name": "Spasić Milorad",
+        "additional_info": "Oni koji su u naše danas i sutra ugradili svoje živote, Brod: 39. Spasić Milorad, 1944. dražićevaca Jablanica.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=16413af8-faa0-473d-b37a-f6c31262ee55/00000001/00000001/00006272&pg_seq=502",
+        "source_page": 530,
+        "ref_book": "crna-trava"
       }
     ],
     "ethnicity": "Srbin",
@@ -108647,7 +108661,15 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Pusta Reka"
+    "death_place": "Pusta Reka",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Jablanica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Spasić",
@@ -119240,6 +119262,10 @@
     ],
     "variants": {
       "death": [
+        {
+          "date": "1944",
+          "place": "Kopaonik"
+        },
         {
           "date": "1943",
           "place": "Kopaonik"
