@@ -394,6 +394,14 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0122961304', // Macut Miloša Petar "Pero" of Pješčanica, not in any book: the same sender's missing-fighter
+    // form of 2026-11-21 20:53 (Porodična arhiva 9990000009); of his death only "unclear circumstances" (the user,
+    // 2026-11-21), not the investigation the family heard of
+    text: 'Porodica njegove sestričine pamti da je od oslobođenja Rume, 27. oktobra 1944, bio u OZN-i. Borio se na Sremskom frontu i ranjavan je više puta. Poginuo je verovatno 1945. ili 1946, pod nerazjašnjenim okolnostima.',
+    from: 'D. Dimitrijević, pranećak',
+    date: '2026-11',
+  },
+  {
     soldierId: '0122959606', // Eftimovski Gjore of Sušica (Gostivar), brother of Kiro (Porodična arhiva)
     text: 'Роден е 1925 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете оди на печалба во Белград како општ работник, каде што се запознава со идеите на напредното работничко движење. За време на окупацијата на земјата во Белград е примен за член на СКОЈ, а нешто подоцна и за член на КПЈ. Кон крајот на 1941 година е уапсен од страна на Недиќевата полиција, но заради немање докази набрзо е пуштен на слобода. Особена активност и бестрашност покажува во вршењето на многу одговорни курирски задачи. Во единиците на Народноослободителната војска стапил доброволно во јуни 1943 година, како борец во составот на Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот фашистички окупатор и нешто подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
     from: 'nećak',
