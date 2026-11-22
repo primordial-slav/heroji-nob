@@ -55,6 +55,9 @@ export function lifeYears(soldier: Soldier): string | null {
 const HERO = /narodn(?:i|og|im)\s*heroj(?!i)/i      // the OCR can lose the space ("Narodniheroj")
 const PROPOSED = /predložen\w*\s+za\s+narodnog\s+heroja/gi
 const SPOMENICA = /spomenic/i
+// The title of the Spomenica crnogorskim antifašistima 1941-1945, the roll of Montenegro's fallen, is no Partizanska
+// spomenica 1941: it had given the medal to its 17,369 records, men who joined in 1944 among them (2026-11-22)
+const MONTENEGRIN_ROLL = /spomenic\w*\s+crnogorsk\w*\s+antifa\w*/gi
 const HER_OWN = /proglašena\s+(?:je\s+)?(?:za\s+)?narodn\w*\s*heroj|narodn\w*\s*heroj\w*\s+(?:je\s+)?proglašena|narodn\w*\s+heroin/i
 // A sentence about someone else: a relative, or a man ("koji je proglašen", "poginuo kao komandant")
 const RELATIVE = /(?:^|[^\p{L}])(?:brat\p{L}*|bra-t|braća|sin|sina|sinov\p{L}*|otac|oca|ocem|majk\p{L}*|sestr\p{L}*|muž\p{L}*|supru\p{L}*|kći|kćer\p{L}*|njen\p{L}*|njihov\p{L}*|njegov\p{L}*|njih|stric\p{L}*|ujak\p{L}*|djed\p{L}*|deda)(?![\p{L}])/iu
@@ -87,5 +90,5 @@ export function decorationsOf(soldier: Soldier): { heroj: boolean; spomenica: bo
     heroj = entries.some((e) => HERO_BOOK.test(e.ref_book ?? '')) || sentences.some((s, i) =>
       (HER_OWN.test(s) && !RELATIVE.test(s)) || (HERO.test(s) && !other(s) && !other(sentences[i - 1])))
   }
-  return { heroj, spomenica: SPOMENICA.test(text) }
+  return { heroj, spomenica: SPOMENICA.test(text.replace(MONTENEGRIN_ROLL, '')) }
 }
