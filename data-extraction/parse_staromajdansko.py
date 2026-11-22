@@ -150,8 +150,8 @@ def split_glued(raw: list[dict]) -> list[dict]:
     return raw + late
 
 
-VILLAGES = {'ALIŠIĆI', 'AVCI', 'BATKOVCI', 'BRDARI', 'ČIRKIĆI', 'DEMIŠEVCI', 'DONJI KAMENGRAD', 'DŽEVAR', 'GARAVICA',
-            'GORNJI KAMENGRAD', 'HUSIMOVCI', 'KOPRIVNA', 'MOVCI', 'NIŠTOVCI', 'OKREČ', 'OŠTRA LUKA', 'POBRIJEŽJE', 'PODLUG',
+VILLAGES = {'ALIŠIĆI', 'BATKOVCI', 'BRDARI', 'ČIRKIĆI', 'DEMIŠEVCI', 'DONJI KAMENGRAD', 'DŽEVAR', 'GARAVICA',
+            'GORNJI KAMENGRAD', 'HUSIMOVCI', 'KOPRIVNA', 'NIŠTOVCI', 'OKREČ', 'OŠTRA LUKA', 'POBRIJEŽJE', 'PODLUG',
             'PODVIDAČA', 'RASAVCI', 'STARA RIJEKA', 'STARI MAJDAN', 'SUHAČA', 'USORCI', 'ZECOVI'}
 
 
@@ -166,11 +166,14 @@ def near_village(word: str) -> str:
     return ''
 
 
-# the names-only lists' slips no rule reads, as the line around them shows: four village headings ("U 5 0 R c I-."
-# for USORCI:), a name the OCR ran together or broke with a comma, and letters it misread ("iiije" Ilije, "siipe
-# Peiar" Stipe Petar, as Stara Rijeka's "SEDIC Stipe Mato" in the list before)
+# the names-only lists' slips no rule reads, as the line around them shows: seven village headings ("U 5 0 R c I-."
+# for USORCI:; "R A 5 A V C I'." for RASAVCI, read as "AVCI" until 2026-11-22, a reader's report; "H U S] M 0 V С I:"
+# for HUSIMOVCI, read as "MOVCI", and the living list's "K 0 P R I v N A:", whose names stood under it), a name the
+# OCR ran together or broke with a comma, and letters it misread ("iiije" Ilije, "siipe Peiar" Stipe Petar, as Stara
+# Rijeka's "SEDIC Stipe Mato" in the list before)
 LINE_FIXES = [("PODVIDA'CA:", 'PODVIDAČA:'), ('BATKOVCk', 'BATKOVCI:'), ('PoaRllEžJE-', 'POBRIJEŽJE:'),
               ('U 5 0 R c I-.', 'USORCI:'), ('STARA RIJEKA-.', 'STARA RIJEKA:'), ("VRUL'INIĆ", 'VRUĆINIĆ'),
+              ('R A 5 A V C I', 'RASAVCI'), ('H U S] M 0 V C I:', 'HUSIMOVCI:'), ('K 0 P R I v N A:', 'KOPRIVNA:'),
               ('JAHlĆHuske', 'JAHIĆ Huske'), ('Džanana..Eniz', 'Džanana Eniz'), ('KANTAR, Ilije', 'KANTAR Ilije'),
               ('JOvana', 'Jovana'), ('MiliĆije', 'Milićije'), ('Cvitka JOZO', 'Cvitka Jozo'), ('siipe Peiar', 'Stipe Petar'),
               ('iiije', 'Ilije'), ('Veijko', 'Veljko'), ("V'Ida", 'Vida'), ('Todora, Aleksa', 'Todora Aleksa'),

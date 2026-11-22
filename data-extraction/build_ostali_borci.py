@@ -348,6 +348,11 @@ MERGED_IDS = {
     # terror whose records they had joined are out (Bajince's Petrović M. Milorad, Pavličine's Krstić J. Dušan)
     '0122959818': '0085000362', '0122959827': '0090000345', '0122959853': '0090000341',
     '0122959742': '0136023735', '0122959790': '0138003753',
+    # Staromajdansko's headings read again (2026-11-22, a reader's report): six holders of the spomenica each joined
+    # his entry in the list of 1983, once the village over both was read (Husimovci and Koprivna had been "Movci",
+    # Rasavci "Avci"); Dodik Ilije Petar and Štrbac Koste Lazar to their records of the 6. krajiška
+    '0122953273': '0122953272', '0122953564': '0122953284', '0122953570': '0122953101', '0122953571': '0122953107',
+    '0122953232': '0013010286', '0122953249': '0013011788',
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
