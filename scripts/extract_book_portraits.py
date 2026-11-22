@@ -2276,8 +2276,375 @@ HEROES_1982 = [
     ('0060010170', '9002000205', '977', 167, (205.4, 34.5, 286.9, 140.1), 'by hand: Ćetković Đura Vladimir (Vlado), born 1911; the record: the 8. divizija’s commander 1942-1943, a narodni heroj who fell, as the entry; the photo read from the page'),
     ('0125000749', '9002001305', '978', 381, (107.5, 144.0, 190.0, 252.4), 'by hand: Zupčević Mehmeda Asim, born 1919; the birthplace agrees; the photo read from the page'),
     ('0112000480', '9002001265', '978', 347, (195.8, 30.7, 276.4, 137.2), 'by hand: Vujović Stevana Đuro (Španac), born 1911; the father, the birthplace, the nickname agree; the photo read from the page'),
+    ('0050010003', '9002000019', '977', 36, (120.9, 307.1, 206.3, 423.2), 'by hand: Arsenić Ostoje Borko, the 12. dalmatinska’s commander from 11 October 1943 to 7 January 1945, in its staff list; the brigade’s book (znaci 00001/80_7, p. 19) gives his birth as the entry, 20 July 1917 at Johova by Bosanska Dubica; its own photo of him is washed out, so the hero book’s'),
 ]
 HEROES_1982_CREDIT ='Petar Kačavenda, Narodni heroji Jugoslavije (1982)'
+
+HEROES_1982_ENTRIES = [
+    # 2026-11-22: the same book's portraits for the heroes whose record is in Borci drugih jedinica (122), whom the rows
+    # above (unit records' references) never reached. Keyed by the book's entry and given at each run to the record that
+    # holds it (`holders`): the 122 record now, a unit's record once the man finds his unit. Placed by the rule above,
+    # rebuilt: the photo layer cut into photos (two pieces of one joined, a page number trimmed off), the entry's heading
+    # matched on its own page (the book's page + 4), and a photo taken only between the entry's heading and the very next
+    # heading on the page, which must be the next entry's, and only where the entry holds no other photo; checked against
+    # the rows above (every row both place agrees) and every photo looked at against its heading on contact sheets
+    # (Filipović Stjepan's gallows photo, Ristić Sofija's faded one and two photos the layer had cut left out).
+    # entry, volume, PDF page, the photo's box, the heading as the page prints it
+    ('9002000001', '977', 25, (19.2, 312.9, 104.6, 423.2), 'ABRUĆ Jurta STJEPAN — STEVA'),
+    ('9002000002', '977', 25, (204.4, 311.9, 288.9, 422.3), 'ACEV Donća MIRČE'),
+    ('9002000003', '977', 26, (120.9, 33.6, 205.4, 134.4), 'ACEVA Donča VERA DOSTA'),
+    ('9002000010', '977', 30, (215.0, 32.6, 297.5, 143.0), 'ANDRIĆ Slavka TADI JA'),
+    ('9002000016', '977', 34, (121.9, 31.7, 206.4, 146.9), 'ANTUNOVIĆ Ignjata RISTA BAJA'),
+    ('9002000017', '977', 35, (19.2, 31.7, 103.6, 140.1), 'ANUŠIĆ Ante TADUA'),
+    ('9002000018', '977', 35, (202.5, 33.6, 286.0, 141.1), 'APOSTOLSKI Mite MIHAILO'),
+    ('9002000019', '977', 36, (120.9, 307.1, 206.3, 423.2), 'ARSENIĆ Ostoje BORKO'),
+    ('9002000027', '977', 47, (203.4, 313.8, 287.9, 422.3), 'BABIĆ Đure NIKOLA MIKA'),
+    ('9002000036', '977', 53, (117.1, 310.0, 186.2, 423.2), 'BAIĆ Vaslllja ĐURO'),
+    ('9002000044', '977', 59, (21.1, 31.7, 104.6, 137.2), 'BAKARIĆ Stjepana VLADIMIR'),
+    ('9002000048', '977', 61, (114.2, 242.8, 194.8, 352.2), 'BAKOVIĆ Franje RAJKA'),
+    ('9002000049', '977', 62, (28.8, 143.0, 111.3, 253.4), 'BAKRAČ Ignjatlja ĐURO'),
+    ('9002000051', '977', 63, (20.2, 144.0, 103.6, 253.4), 'BALORDA Doke JANKO'),
+    ('9002000078', '977', 79, (22.1, 32.6, 104.6, 142.0), 'BIJELIĆ Oatoje JOVO'),
+    ('9002000088', '977', 85, (21.1, 189.1, 105.6, 300.5), 'BJELETIĆ Stofana KRSTO'),
+    ('9002000099', '977', 91, (203.4, 311.0, 286.9, 421.3), 'BOBINEC Stjepana STJEPAN ŠUMSKI'),
+    ('9002000100', '977', 92, (120.9, 132.5, 206.3, 243.8), 'BOBNAR Jakoba STANE'),
+    ('9002000101', '977', 93, (111.3, 132.5, 194.8, 243.8), 'BOBOT Krste JOVAN'),
+    ('9002000103', '977', 94, (215.0, 122.8, 298.5, 235.1), 'BOGAVAC Vukailna DRAGOSLAV'),
+    ('9002000109', '977', 98, (27.8, 29.7, 114.2, 141.1), 'BOJOVIĆ R ltte ALEKSA'),
+    ('9002000113', '977', 100, (215.9, 169.9, 297.5, 280.2), 'BOKAN Save NIKOLA'),
+    ('9002000125', '977', 108, (137.2, 206.3, 207.3, 312.9), 'BOŠKOVIĆ Iva MILO'),
+    ('9002000126', '977', 109, (22.1, 201.6, 105.6, 313.0), 'BOŠNJAK Radovana JEFTO'),
+    ('9002000127', '977', 109, (205.4, 204.5, 288.9, 312.0), 'BOŽANIĆ Juraja ANDRIJA'),
+    ('9002000128', '977', 110, (122.8, 30.7, 205.4, 138.2), 'BOŽIĆ Srdana NIKOLA JUG'),
+    ('9002000129', '977', 111, (25.9, 34.5, 103.6, 139.2), 'BOŽINOVSKI Taška PETAR KOĆO'),
+    ('9002000136', '977', 115, (20.2, 312.9, 104.6, 422.3), 'BRAČIČ Ivana MIRKO BRADAČ'),
+    ('9002000137', '977', 115, (205.4, 311.0, 288.9, 421.3), 'BRAJNIK Hinka EDI ŠTEFAN'),
+    ('9002000143', '977', 119, (204.4, 117.1, 288.9, 225.6), 'BRKIĆ Mahmuta HASAN ACO'),
+    ('9002000148', '977', 123, (21.1, 31.7, 104.6, 140.1), 'BRODARIĆ Martlna JANKO'),
+    ('9002000149', '977', 123, (214.0, 34.5, 286.9, 142.0), 'BRONZIĆ Petre ŽIVKO'),
+    ('9002000153', '977', 125, (204.5, 144.0, 289.0, 253.4), 'BUBANJ Franje VIKTOR'),
+    ('9002000154', '977', 126, (213.0, 104.6, 297.5, 216.9), 'BUBIĆ Gostimlra DRAGAN'),
+    ('9002000155', '977', 127, (22.1, 105.6, 105.6, 215.9), 'BUĆ Ibrahlma ADEM'),
+    ('9002000161', '977', 130, (29.7, 314.8, 113.2, 425.2), 'BUKOVEC Franca FRANC'),
+    ('9002000162', '977', 130, (218.8, 313.8, 298.5, 423.2), 'BUKUMIROVIĆ Mllića MIROSLAV'),
+    ('9002000176', '977', 146, (31.7, 334.0, 106.5, 425.2), 'CIPOVSKI Petra TODOR'),
+    ('9002000183', '977', 152, (27.8, 157.4, 110.4, 266.8), 'ČAJAVEC P. RUDI'),
+    ('9002000184', '977', 152, (120.9, 155.5, 206.3, 267.8), 'ĆAJETINAC Svetolika MIODRAG'),
+    ('9002000187', '977', 153, (214.1, 159.3, 280.3, 265.9), 'ĆAVIĆ Dragane MARUAN GRGA'),
+    ('9002000188', '977', 154, (120.9, 29.7, 206.3, 141.1), 'ČAVIĆ Milutina MILOŠ'),
+    ('9002000189', '977', 155, (22.1, 33.6, 104.6, 141.1), 'ĆEĆ Antona TONĆKA OLGA'),
+    ('9002000193', '977', 157, (22.1, 311.9, 103.6, 422.3), 'ĆEVRO Mustafe JLfSUF'),
+    ('9002000200', '977', 162, (215.0, 151.6, 298.5, 261.0), 'ČUPIĆ Sava ĆEDOMIR LJUBO'),
+    ('9002000201', '977', 163, (123.8, 152.6, 183.3, 258.2), 'ĆVORO Arsena MIHAJILO'),
+    ('9002000203', '977', 166, (28.8, 29.8, 114.2, 139.2), 'ĆETKOVIĆ Blagote JELENA'),
+    ('9002000205', '977', 167, (205.4, 35.5, 286.9, 140.1), 'ĆETKOVIĆ Dura VLADIMIR VLADO'),
+    ('9002000224', '977', 186, (215.0, 176.7, 298.6, 278.4), 'DEDEIĆ Stevana BOŠKO POP'),
+    ('9002000227', '977', 188, (215.0, 120.9, 298.5, 225.5), 'DELPIN Petra RASTISLAV'),
+    ('9002000230', '977', 190, (28.8, 315.8, 114.2, 425.2), 'DESTOVNIK Jožela KAREL KAJUH'),
+    ('9002000240', '977', 196, (121.9, 30.7, 205.4, 141.1), 'DOKIĆ Ivana PETAR'),
+    ('9002000243', '977', 198, (27.8, 145.9, 113.2, 257.2), 'DOMAZET Doka NOVICA'),
+    ('9002000248', '977', 200, (214.0, 313.8, 296.5, 422.3), 'DRAGIĆ Moja SIMICA'),
+    ('9002000254', '977', 204, (121.9, 121.9, 206.3, 228.4), 'DRAPŠIN Ilije PETAR'),
+    ('9002000261', '977', 209, (112.3, 46.1, 195.8, 141.1), 'DUDIĆ Jovana DRAGOJLO'),
+    ('9002000265', '977', 212, (28.8, 29.7, 107.5, 139.2), 'DUGANDŽIĆ Jakova JAKŠA'),
+    ('9002000266', '977', 212, (120.9, 29.7, 206.3, 139.2), 'DUGONJIĆ Ilije RATOMIR RATO'),
+    ('9002000269', '977', 214, (28.8, 261.0, 113.2, 348.4), 'DUKIĆ Milana STEVAN'),
+    ('9002000281', '977', 224, (27.8, 29.7, 114.2, 140.1), 'ĐEREK Ive STIPE'),
+    ('9002000282', '977', 224, (121.9, 29.7, 201.5, 140.1), 'ĐILAS Nikole ALEKSA'),
+    ('9002000283', '977', 225, (22.1, 32.6, 103.6, 140.1), 'DOKIĆ Pere DANILO'),
+    ('9002000287', '977', 227, (111.3, 165.1, 195.8, 275.4), 'ĐORDEVIĆ Jovana STEVAN'),
+    ('9002000288', '977', 228, (28.8, 315.8, 114.2, 425.2), 'ĐORDEVIĆ Petra VLADIMIR'),
+    ('9002000302', '977', 237, (20.2, 110.4, 103.6, 220.7), 'ĐURKOVIĆ Alekalja NIKOLA'),
+    ('9002000314', '977', 248, (122.8, 149.7, 207.3, 261.0), 'EYPPER Ernesta ERNEST'),
+    ('9002000315', '977', 249, (21.1, 147.8, 104.6, 259.1), 'ENGEL Aleksandra EUAS'),
+    ('9002000317', '977', 250, (29.7, 123.8, 113.2, 234.2), 'ESTERA Hajma OVADIJA'),
+    ('9002000318', '977', 251, (113.2, 120.0, 193.9, 228.4), 'FERJANĆIĆ Antona ANTON'),
+    ('9002000319', '977', 252, (27.8, 127.6, 111.3, 238.0), 'FETAHAGIĆ Ramadana AHMET'),
+    ('9002000330', '977', 261, (112.3, 163.2, 196.7, 273.5), 'GALJER Franje VILIM'),
+    ('9002000337', '977', 265, (112.3, 32.6, 184.3, 130.5), 'GIGOV Andona STRAHU'),
+    ('9002000344', '977', 269, (113.3, 140.1, 196.8, 243.8), 'GRAHOVAC Vasillja DUKICA'),
+    ('9002000370', '977', 288, (121.9, 186.2, 207.3, 295.6), 'HERLJEVIĆ Franje ALBIN'),
+    ('9002000376', '977', 292, (121.9, 164.1, 207.4, 277.4), 'HOHKRAUT Vlncenca ALOJZ'),
+    ('9002000377', '977', 293, (22.1, 167.0, 107.5, 278.3), 'HOLJEVAC Slave VEĆESLAV'),
+    ('9002000381', '977', 296, (27.8, 201.5, 114.2, 312.9), 'HROVAT Franca ŽAN'),
+    ('9002000387', '977', 302, (120.9, 29.7, 206.3, 140.1), 'ILIĆ Petra SAVO'),
+    ('9002000392', '977', 306, (27.8, 139.2, 111.3, 251.4), 'IVANOVIĆ Pere TOMA'),
+    ('9002000400', '977', 312, (121.9, 159.3, 207.3, 263.0), 'JAKIĆ Jure ANTE'),
+    ('9002000401', '977', 313, (27.8, 158.4, 102.7, 260.1), 'JAKIĆ Mlljana VELIMIR'),
+    ('9002000404', '977', 315, (203.4, 203.5, 286.0, 306.2), 'JANĆAR Simona LIZIKA'),
+    ('9002000407', '977', 317, (113.2, 314.8, 197.7, 423.2), 'JANKEZ Đure GRGA'),
+    ('9002000408', '977', 318, (121.9, 125.7, 206.3, 232.3), 'JANKOV Ganeta BLAGOJA'),
+    ('9002000423', '977', 328, (215.0, 144.9, 298.5, 253.4), 'JELIĆ Lala MILOVAN'),
+    ('9002000424', '977', 329, (20.2, 144.0, 104.6, 251.4), 'JEREB Rada DUŠAN ŠTEFAN'),
+    ('9002000426', '977', 330, (121.9, 144.9, 206.3, 254.3), 'JERKOVIĆ Mata MATE'),
+    ('9002000427', '977', 331, (20.2, 144.9, 103.6, 252.4), 'JERMAN Franca DRAGO MOTAŠO'),
+    ('9002000430', '977', 332, (214.0, 316.7, 297.5, 424.2), 'JEVRIĆ Jara RADULE'),
+    ('9002000435', '977', 336, (121.9, 202.5, 206.3, 312.9), 'JOKSIMOVIĆ Maksima SAVO'),
+    ('9002000436', '977', 337, (116.1, 201.5, 194.8, 310.0), 'JONIĆ Ante AUTE'),
+    ('9002000437', '977', 338, (28.8, 29.8, 113.2, 136.3), 'JOSIFOVSKI Vangela JOSIF'),
+    ('9002000442', '977', 341, (204.4, 172.8, 286.9, 281.3), 'JOVANOVIĆ Mlljana BLAŽO'),
+    ('9002000445', '977', 344, (121.9, 155.5, 207.4, 267.8), 'JOVANOVIĆ Petra JOSIP'),
+    ('9002000458', '977', 352, (214.0, 145.9, 297.5, 257.2), 'JOVANOVSKI Igne ILIJA CVETAN'),
+    ('9002000469', '977', 359, (111.3, 143.0, 196.7, 252.4), 'JUTRIŠA Karla JOSIP JANKO'),
+    ('9002000472', '977', 364, (27.8, 29.8, 113.3, 132.5), 'KADOVIĆ Pere SAVO'),
+    ('9002000477', '977', 367, (111.3, 142.0, 193.9, 248.6), 'KAPETANOVIĆ Sinana ISMET'),
+    ('9002000479', '977', 368, (214.0, 158.4, 297.5, 265.8), 'KARABEGOVIĆ Hasana OSMAN'),
+    ('9002000480', '977', 369, (111.3, 159.3, 195.8, 265.8), 'KARALIĆ Svetozara BOŠKO'),
+    ('9002000481', '977', 370, (27.8, 315.8, 113.2, 425.2), 'KARAMANDI Stavre ELPIDA'),
+    ('9002000482', '977', 370, (120.9, 315.8, 205.4, 425.2), 'KARANGELSKI Angela VASKO'),
+    ('9002000488', '977', 376, (215.0, 164.1, 298.4, 273.5), 'KEBE Franca LOJZE ŠTEFAN'),
+    ('9002000494', '977', 380, (120.9, 150.7, 206.3, 259.1), 'KERENĆIČ Jožeta JO ŽE JANKO'),
+    ('9002000497', '977', 382, (26.9, 202.5, 112.3, 312.9), 'KERŠIĆ Franca FRIC GAL'),
+    ('9002000500', '977', 384, (121.9, 196.8, 206.4, 305.3), 'KIDRIĆ Franca BORIS PETER'),
+    ('9002000501', '977', 385, (112.3, 189.1, 195.8, 296.6), 'KILIBARDA Vukote MILO'),
+    ('9002000512', '977', 392, (121.9, 137.2, 206.3, 247.6), 'KNEŽEVIĆ Gavrila RADOVAN TIHI'),
+    ('9002000519', '977', 396, (215.0, 316.7, 298.5, 422.3), 'KOLMAN Janeza ALOJZ'),
+    ('9002000524', '977', 400, (124.8, 30.7, 207.3, 142.0), 'KONĆAR Nikole DRAGICA'),
+    ('9002000525', '977', 401, (20.2, 30.7, 102.7, 141.1), 'KONĆAR Dmftra MARKO'),
+    ('9002000526', '977', 401, (208.2, 30.7, 280.2, 140.1), 'KONĆAR Gece RADE'),
+    ('9002000527', '977', 402, (214.0, 211.1, 295.6, 319.6), 'KONDIĆ Mihajla RADE'),
+    ('9002000529', '977', 404, (39.3, 321.5, 103.6, 425.2), 'KOPRIVICA Alekse VASILUE'),
+    ('9002000532', '977', 406, (29.7, 193.9, 114.2, 302.3), 'KORICA Ilije ST EVAN LOLA'),
+    ('9002000536', '977', 408, (121.9, 130.5, 207.3, 239.0), 'KOSORIĆ Josipa SVETOZAR'),
+    ('9002000537', '977', 409, (20.2, 132.5, 103.7, 240.0), 'KOSOVEL Ivana IVAN'),
+    ('9002000543', '977', 412, (121.9, 317.7, 205.4, 425.2), 'KOVAČ Antuna MARKO ŠNAJDER'),
+    ('9002000544', '977', 413, (19.2, 313.8, 102.7, 421.3), 'KOVAČ Rudolfa SLAVKO SMELI'),
+    ('9002000560', '977', 425, (204.4, 171.8, 287.9, 281.2), 'KOVAČIČ Martina JOŽE'),
+    ('9002000561', '977', 426, (26.9, 147.8, 111.3, 258.2), 'KOVAČIČ Lucljana OSKAR'),
+    ('9002000562', '977', 427, (20.2, 146.8, 104.6, 256.2), 'KRAJAĆIĆ Ivana IVAN'),
+    ('9002000563', '977', 428, (26.9, 31.7, 112.3, 141.1), 'KRAJGER Alojza BORIS'),
+    ('9002000564', '977', 429, (20.2, 31.7, 104.6, 140.1), 'KRAIGHER Alojza DUŠAN JUG'),
+    ('9002000565', '977', 429, (115.2, 32.6, 194.8, 140.1), 'KRAŠ Valentina JOSIP'),
+    ('9002000566', '977', 430, (27.8, 153.6, 112.3, 263.9), 'KREAĆIĆ Ivana OTMAR KULTURA'),
+    ('9002000577', '977', 436, (26.9, 164.1, 111.3, 274.5), 'KUCLAR Lovra ANTONU A'),
+    ('9002000578', '977', 436, (215.9, 166.0, 298.4, 275.5), 'KUĆ Mlhalla MILAN'),
+    ('9002000581', '977', 438, (214.1, 171.8, 297.6, 279.4), 'KUKIĆ Nikole MILAN'),
+    ('9002000584', '977', 440, (215.0, 129.6, 297.5, 239.0), 'KULIĆ Ilije MARKO'),
+    ('9002000588', '977', 443, (19.2, 163.2, 102.7, 271.6), 'KUŠIĆ Radovana MIUNKO'),
+    ('9002000594', '977', 449, (203.4, 156.4, 286.9, 265.8), 'LAKIĆ Đorđa RADOJKA'),
+    ('9002000599', '977', 452, (214.0, 158.4, 298.5, 267.8), 'LAVĆEVIĆ-LUČIĆ Nikole IVAN'),
+    ('9002000608', '977', 459, (20.2, 118.1, 103.6, 226.5), 'LESKOŠEK Franca FRANC'),
+    ('9002000619', '977', 465, (218.8, 195.8, 282.1, 305.2), 'LOVINĆIĆ Marka IVICA'),
+    ('9002000620', '977', 466, (28.8, 315.8, 114.2, 423.2), 'LOZOVINA Luke JO SIP MOSOR'),
+    ('9002000622', '977', 467, (117.1, 313.8, 203.4, 422.3), 'LUKIĆ Jovana DOJČiN'),
+    ('9002000623', '977', 468, (23.0, 134.4, 107.5, 243.8), 'LUKIĆ Cvljatlna SIMO'),
+    ('9002000658', '977', 498, (215.0, 330.2, 295.6, 422.3), 'MARINKOVIĆ M arke JOVAN'),
+    ('9002000679', '977', 513, (23.0, 148.8, 103.6, 258.2), 'MARUŠIĆ Antona DARKO'),
+    ('9002000686', '977', 518, (121.9, 137.2, 207.3, 245.7), 'MAŠERA Frana SERGEJ'),
+    ('9002000690', '977', 520, (215.0, 137.2, 298.5, 247.6), 'MATEJKA Antona EVGEN'),
+    ('9002000691', '977', 521, (203.4, 141.1, 266.8, 246.7), 'MATERIĆ Jovana DANICA'),
+    ('9002000699', '977', 526, (121.9, 161.2, 206.3, 267.8), 'MATKOVIĆ Krste MIRKO'),
+    ('9002000701', '977', 527, (110.4, 155.5, 195.8, 265.8), 'MAVSAR France LAĐO'),
+    ('9002000702', '977', 528, (29.8, 160.3, 113.3, 266.9), 'MAZALICA Petra CVUO'),
+    ('9002000703', '977', 528, (215.1, 160.3, 298.6, 266.9), 'MAŽAR Nikole DRAGO'),
+    ('9002000704', '977', 529, (203.4, 159.3, 287.9, 266.8), 'MAŽAR Nikole IVICA'),
+    ('9002000706', '977', 531, (216.9, 139.2, 287.9, 242.8), 'MEČAR M. IVAN'),
+    ('9002000709', '977', 533, (203.4, 156.4, 287.9, 265.8), 'MEDE Janeza PAVLA'),
+    ('9002000712', '977', 535, (110.4, 314.8, 195.8, 424.2), 'MENKOV Ilije BORO'),
+    ('9002000717', '977', 537, (203.4, 186.2, 268.7, 291.8), 'MIĆIĆ Marka SLAVKO'),
+    ('9002000725', '977', 542, (39.3, 320.6, 109.4, 423.2), 'MIHAJLOVSKI Mela ZLATE'),
+    ('9002000730', '977', 545, (20.2, 152.6, 103.6, 263.0), 'MIKIN Dušana BORA MARKO'),
+    ('9002000736', '977', 548, (214.0, 147.8, 297.5, 258.2), 'MILENOVIĆ Jeflmlja SINADIN'),
+    ('9002000744', '977', 554, (120.9, 162.2, 206.3, 269.7), 'MILOŠEVIĆ Jeremlje BRANKO'),
+    ('9002000764', '977', 567, (111.3, 149.7, 196.7, 259.1), 'MIODRAGOVIĆ Mlllnka UUBIŠA'),
+    ('9002000782', '977', 579, (203.4, 143.0, 288.9, 251.4), 'MORĐIN Mlhe IVAN CRNI'),
+    ('9002000802', '978', 21, (109.4, 110.4, 190.0, 215.9), 'NACEV Andrefe KIRO FETAK'),
+    ('9002000803', '978', 21, (196.7, 112.3, 278.3, 214.0), 'NACEVA Milana MARA'),
+    ('9002000804', '978', 22, (115.2, 165.1, 197.7, 271.6), 'NAD Stjepana KOŠTA'),
+    ('9002000805', '978', 23, (195.8, 164.1, 278.3, 269.7), 'NAUMOV Vaalla ST EV AN STIV'),
+    ('9002000806', '978', 24, (114.2, 135.3, 191.9, 240.9), 'NAUMOVIĆ Micke NADA'),
+    ('9002000807', '978', 25, (22.1, 131.5, 98.9, 238.1), 'NAUMOVSKI Nikole NAUM BORĆE'),
+    ('9002000808', '978', 25, (107.5, 131.5, 191.0, 237.1), 'NEĆEVSKI Petra VANGEL TUNEL'),
+    ('9002000814', '978', 29, (107.5, 29.7, 191.0, 135.3), 'NEŠIĆ Aleksandre UUBOMIR'),
+    ('9002000821', '978', 34, (24.9, 152.6, 107.5, 260.1), 'NIKOLOV Antona JORDAN ORCE'),
+    ('9002000830', '978', 42, (205.4, 115.2, 286.0, 221.7), 'OBRADOVIĆ Tanaalja DUŠAN'),
+    ('9002000832', '978', 44, (24.9, 30.7, 107.5, 136.3), 'ODADŽIĆ Milana UUBICA'),
+    ('9002000843', '978', 51, (107.5, 140.1, 192.0, 246.6), 'OPSENICA Todora STEVO'),
+    ('9002000844', '978', 52, (115.2, 166.0, 198.6, 272.6), 'OREŠĆANIN Slme BOGDAN'),
+    ('9002000845', '978', 53, (19.2, 165.1, 100.8, 271.6), 'OREŠKOVIĆ Jote MARKO'),
+    ('9002000849', '978', 55, (107.5, 131.5, 190.1, 237.1), 'OROZOVIĆ Petra PAJO BRKO'),
+    ('9002000854', '978', 68, (116.1, 174.7, 198.6, 281.2), 'PAJIC Davida DAVID'),
+    ('9002000855', '978', 69, (19.2, 172.8, 95.0, 279.4), 'PAJIĆ-DAŠIĆ Vata DUŠAN'),
+    ('9002000856', '978', 69, (209.3, 174.7, 271.7, 279.4), 'PAJIĆ-OŽIĆ Bartola VINKO'),
+    ('9002000859', '978', 72, (24.9, 161.2, 108.4, 268.7), 'PALIKUĆA Šerifa IBE'),
+    ('9002000860', '978', 72, (206.3, 162.2, 286.9, 267.8), 'PALKOVUEVIĆ Miloša BOŠKO PINKI'),
+    ('9002000861', '978', 73, (17.3, 162.2, 101.8, 268.8), 'PANIĆ Đorđa TODOR'),
+    ('9002000862', '978', 73, (208.3, 167.0, 267.8, 268.8), 'PAP Henrika PAVLE ŠIUA'),
+    ('9002000863', '978', 74, (204.4, 181.4, 286.0, 287.0), 'PAPIĆ Jove ŽARKO'),
+    ('9002000864', '978', 75, (24.0, 180.5, 99.8, 287.0), 'PARAĆ Đure BRANISLAV REUA'),
+    ('9002000865', '978', 75, (198.7, 180.5, 280.3, 285.1), 'PARENTA Miloša NENAD'),
+    ('9002000866', '978', 76, (205.4, 31.7, 275.4, 138.2), 'PARMAĆ Ante STANKO'),
+    ('9002000868', '978', 77, (195.8, 32.6, 276.4, 136.3), 'PATRNOGIĆ Milana KATARINA'),
+    ('9002000869', '978', 78, (115.2, 162.2, 198.6, 267.8), 'PAUNOVIĆ Milana STANKO VELIKO'),
+    ('9002000872', '978', 80, (205.4, 121.9, 286.0, 228.4), 'PAVLIĆ Danila STJEPAN PIPO'),
+    ('9002000873', '978', 81, (17.3, 118.1, 100.8, 224.6), 'PAVLOVIĆ Mrka DRAGOSLAV'),
+    ('9002000879', '978', 85, (197.7, 148.8, 280.3, 254.4), 'PEĆAR Blaže MAKS'),
+    ('9002000880', '978', 86, (29.7, 148.7, 105.6, 255.3), 'PEĆANAC Stanka ĐURO ĐUREKAN'),
+    ('9002000881', '978', 86, (204.4, 148.7, 286.0, 254.3), 'PEHAĆEK Rudolfa RADO'),
+    ('9002000882', '978', 87, (107.5, 147.8, 191.0, 253.4), 'PEJAK Save SLAVKO'),
+    ('9002000889', '978', 91, (199.7, 129.6, 277.4, 235.1), 'PERC Antona MIRO MAKS'),
+    ('9002000890', '978', 92, (114.2, 30.7, 197.7, 136.3), 'PERIČIN Đoke MARKO'),
+    ('9002000898', '978', 97, (107.5, 165.1, 190.1, 270.6), 'PETROV Dušana OLGA'),
+    ('9002000902', '978', 100, (25.9, 174.7, 108.5, 281.3), 'PETROVIĆ Dragoljuba DUŠAN ŠANE'),
+    ('9002000906', '978', 102, (115.2, 143.0, 198.6, 249.5), 'PETROVIĆ Bože STEVAN'),
+    ('9002000907', '978', 103, (16.3, 140.1, 100.8, 246.7), 'PETRUŠEVSKI Apostola BORO'),
+    ('9002000909', '978', 104, (208.2, 119.0, 286.9, 224.6), 'PIUPOVIĆ Đure MILAN'),
+    ('9002000910', '978', 105, (17.3, 115.2, 100.8, 221.7), 'PINDŽVR Dimltra STRAŠO'),
+    ('9002000911', '978', 105, (196.7, 118.0, 278.3, 222.6), 'PINTAR Mlhaela MIHA'),
+    ('9002000914', '978', 107, (196.7, 32.6, 277.3, 136.3), 'PIVAŠEVIĆ Spasoja NOVAK'),
+    ('9002000915', '978', 108, (115.2, 156.4, 198.6, 263.0), 'POĆUĆA Dane MILE'),
+    ('9002000916', '978', 109, (18.2, 154.5, 101.8, 261.1), 'POGAĆAREVIĆ Mihajla SIMA'),
+    ('9002000917', '978', 109, (197.8, 156.4, 280.3, 261.1), 'POGLAJEN Franca FRANC KRANJC'),
+    ('9002000921', '978', 112, (115.2, 152.6, 197.7, 259.1), 'POPARA Jovana MIROSLAV'),
+    ('9002000933', '978', 121, (106.5, 110.4, 190.0, 215.9), 'POPOVIĆ Krtta NIKOLA'),
+    ('9002000939', '978', 125, (106.5, 156.5, 190.0, 263.0), 'POPOVSKI Lazara PANČE'),
+    ('9002000940', '978', 125, (195.8, 156.5, 279.3, 262.1), 'POŠTIĆ Marka MIRKO'),
+    ('9002000945', '978', 129, (197.8, 155.5, 279.4, 261.1), 'PRELEVIĆ Božine ĐOKO'),
+    ('9002000946', '978', 130, (114.2, 30.7, 197.7, 136.3), 'PREMOVIĆ Marka ĐORĐUE'),
+    ('9002000947', '978', 131, (18.2, 28.8, 100.8, 134.3), 'PREMRL Franca JANKO'),
+    ('9002000948', '978', 131, (196.7, 31.7, 277.3, 136.3), 'PRESKAR Melhhra JOSIP'),
+    ('9002000952', '978', 134, (25.9, 162.2, 109.4, 268.7), 'PRINCIP Jove SLOBODAN SEUO'),
+    ('9002000953', '978', 134, (205.4, 163.2, 286.9, 268.7), 'PRKEV Hrlata VANĆO'),
+    ('9002000956', '978', 136, (115.2, 30.7, 198.6, 136.3), 'PUAČ Stojana DAKO'),
+    ('9002000957', '978', 137, (19.2, 30.7, 102.7, 135.4), 'PUCAR Milana ĐURO - STARI'),
+    ('9002000964', '978', 146, (24.9, 159.3, 97.9, 265.8), 'RADETIĆ Ilije LUKA'),
+    ('9002000967', '978', 148, (24.9, 152.6, 108.4, 259.1), 'RADIĆ Sveloxara LEPA'),
+    ('9002000970', '978', 150, (115.2, 133.4, 198.6, 239.9), 'RADOJEVIĆ Radoja LAZAR'),
+    ('9002000980', '978', 156, (24.9, 159.3, 108.4, 265.8), 'RADOVIĆ Mlhalla DARINKA'),
+    ('9002000983', '978', 158, (25.9, 31.7, 108.4, 137.2), 'RADULOVIĆ Gaja MILOSAV'),
+    ('9002000984', '978', 158, (204.4, 31.7, 286.9, 137.2), 'RADULOVIĆ Dure NIKOLA KOJO'),
+    ('9002000985', '978', 159, (18.2, 29.7, 100.8, 134.3), 'RADULOVIĆ Krtta RADULE'),
+    ('9002000986', '978', 159, (196.7, 33.6, 277.3, 134.3), 'RADULOVIĆ Vellše VEUKO'),
+    ('9002000992', '978', 163, (19.2, 145.9, 101.7, 252.5), 'RAKITA Makelma DUŠAN'),
+    ('9002000998', '978', 167, (108.4, 149.7, 191.0, 255.4), 'RASPOPOVIĆ Iva MILAN'),
+    ('9002001000', '978', 168, (116.1, 139.1, 196.7, 245.7), 'RAŠOVIĆ Radosava MILIJA'),
+    ('9002001007', '978', 173, (19.2, 177.5, 102.7, 284.1), 'RELIĆ Ranka PETAR - ĆEDA'),
+    ('9002001009', '978', 174, (115.2, 140.1, 198.6, 245.7), 'RIBAR Ivana IVO LOLA'),
+    ('9002001013', '978', 177, (18.2, 29.7, 100.8, 134.3), 'RODIĆ Nikole RADIVOJ'),
+    ('9002001014', '978', 177, (195.8, 31.7, 277.3, 135.3), 'RODIĆ Dure SLAVKO'),
+    ('9002001015', '978', 178, (24.9, 155.5, 108.4, 262.0), 'ROJC Rudolfa KARLO'),
+    ('9002001022', '978', 182, (204.4, 142.0, 286.9, 245.7), 'ROZMAN Franca FRANC'),
+    ('9002001023', '978', 183, (107.5, 139.2, 191.0, 245.8), 'ROŽANC Joiefa TINE'),
+    ('9002001030', '978', 187, (107.5, 135.3, 190.1, 241.8), 'RUŽIĆKA Ivana JOSIP'),
+    ('9002001033', '978', 192, (115.2, 145.9, 198.7, 252.5), 'SAUHAGIĆ Bećlra HIMZO'),
+    ('9002001034', '978', 193, (18.2, 145.0, 101.8, 251.5), 'SAVATIĆ Petra LAZAR'),
+    ('9002001036', '978', 194, (115.2, 148.7, 198.6, 256.2), 'SEKIRNIK Josipa JANKO'),
+    ('9002001037', '978', 195, (17.3, 147.8, 100.8, 255.3), 'SEKULIĆ Radovana BAJO'),
+    ('9002001044', '978', 199, (109.4, 144.9, 191.1, 252.4), 'SEVEROVIĆ Jove NIKOLA'),
+    ('9002001045', '978', 199, (197.8, 145.9, 278.4, 252.4), 'SIMEONOVIĆ Slmeona ĐORDE'),
+    ('9002001048', '978', 201, (195.8, 168.0, 276.5, 275.5), 'SIMOVIČ Danila MILAN'),
+    ('9002001049', '978', 202, (117.1, 151.6, 198.6, 260.1), 'SKOĆILIĆ Jakova JOSIP'),
+    ('9002001050', '978', 203, (18.2, 150.7, 100.8, 259.2), 'SKVARĆA Ivana IVAN'),
+    ('9002001052', '978', 204, (26.9, 130.5, 108.4, 237.0), 'SLAVEC Ivana IVO'),
+    ('9002001053', '978', 204, (205.4, 131.5, 286.0, 238.0), 'SMILEVSKI Uroia VIDOE'),
+    ('9002001056', '978', 206, (205.4, 127.6, 286.9, 235.1), 'SOLDATIĆ Pere DANILO'),
+    ('9002001057', '978', 207, (26.9, 125.8, 100.8, 233.3), 'SOTIROVIĆ Bellna MIRKO'),
+    ('9002001059', '978', 208, (122.8, 94.0, 195.8, 202.5), 'SPASIĆ Save MILAN'),
+    ('9002001060', '978', 209, (17.3, 93.1, 99.8, 199.6), 'SPASOJEVIĆ Jevrema LUKA'),
+    ('9002001063', '978', 210, (208.2, 143.0, 284.0, 250.5), 'SRNIĆ Nikole DRAGOSLAV'),
+    ('9002001065', '978', 212, (115.2, 30.7, 196.7, 138.2), 'STAMBOLIĆ Milana PETAR'),
+    ('9002001066', '978', 213, (17.3, 29.7, 98.8, 134.3), 'STAMENKOVIĆ Todora DRAGI'),
+    ('9002001069', '978', 215, (25.9, 184.3, 97.9, 289.8), 'STANĆIR Tome SLAVKO'),
+    ('9002001074', '978', 218, (116.1, 161.2, 197.7, 269.7), 'STANIVUKOVIĆ Paje MILAN'),
+    ('9002001076', '978', 219, (195.8, 160.3, 276.4, 267.8), 'STANKOVIĆ Todora PETAR'),
+    ('9002001077', '978', 220, (25.9, 141.1, 107.5, 247.7), 'STANKOVIĆ Radoja VELIZAR'),
+    ('9002001078', '978', 220, (205.4, 141.1, 286.9, 247.7), 'STANOJLOVIĆ Splre MILORAD'),
+    ('9002001084', '978', 224, (26.9, 304.2, 108.4, 410.8), 'STEVOVIĆ Vellmlra RODOLJUB'),
+    ('9002001086', '978', 224, (204.4, 303.3, 284.0, 408.8), 'STOJANOVIĆ Vukoja BOŽIDAR'),
+    ('9002001089', '978', 226, (206.3, 144.9, 286.0, 253.4), 'STOJANOVIĆ Stojlmlra LAZAR'),
+    ('9002001090', '978', 227, (108.4, 144.0, 190.0, 251.5), 'STOJANOVIĆ Maksima MIHAILO'),
+    ('9002001091', '978', 228, (24.9, 158.3, 107.5, 241.8), 'STOJANOVIĆ Slme MLADEN'),
+    ('9002001094', '978', 230, (26.9, 29.7, 107.5, 137.2), 'STOJĆEVSKI Ilije ĐOCE'),
+    ('9002001095', '978', 230, (205.4, 29.7, 286.0, 138.2), 'STOJKOVIĆ Dure MIĆA'),
+    ('9002001096', '978', 231, (19.2, 30.7, 100.8, 137.2), 'STOJKOVSKI Done TRAJKO BUZO'),
+    ('9002001097', '978', 231, (108.4, 31.7, 190.0, 137.2), 'STOJMENSKI Koca SLAVČO'),
+    ('9002001098', '978', 232, (25.9, 106.5, 102.7, 213.1), 'STOJNIĆ Štovana VEUMIR'),
+    ('9002001102', '978', 234, (26.9, 154.5, 108.4, 263.0), 'STRUGAR Petra ĐURO'),
+    ('9002001108', '978', 238, (26.9, 161.2, 108.4, 269.7), 'SVETINA Leopolda MIRA'),
+    ('9002001114', '978', 244, (25.9, 153.5, 108.4, 260.1), 'ŠARANOVIĆ Mlhalla MILOVAN'),
+    ('9002001116', '978', 245, (106.6, 151.7, 189.1, 260.1), 'ŠARH Ivana ALFONZ'),
+    ('9002001117', '978', 246, (25.9, 152.6, 107.5, 261.0), 'ŠARIĆ Ive ANTE'),
+    ('9002001118', '978', 247, (17.3, 151.7, 99.8, 258.2), 'ŠAŠIĆ Jovana JEFTO'),
+    ('9002001120', '978', 248, (115.2, 159.3, 197.7, 267.8), 'ŠĆEPANOVIĆ Petra JAFTO'),
+    ('9002001124', '978', 251, (108.4, 144.0, 190.0, 236.1), 'ŠERCER Ivana UUBOMIR'),
+    ('9002001125', '978', 252, (26.9, 128.6, 108.4, 237.0), 'ŠERIĆ Mule FADIL'),
+    ('9002001126', '978', 252, (205.4, 128.6, 286.0, 237.0), 'ŠEŠKO Joieta JOŽE CIRIL'),
+    ('9002001137', '978', 260, (206.4, 31.7, 287.0, 139.2), 'ŠKOPRIK Josipa VELIMIR'),
+    ('9002001138', '978', 261, (107.5, 30.7, 189.0, 137.2), 'ŠKUNDRIĆ Strne PETAR'),
+    ('9002001139', '978', 261, (196.7, 32.6, 277.3, 139.1), 'ŠLANDER Alojza SLAVKO ALEŠ'),
+    ('9002001145', '978', 265, (106.6, 153.6, 188.2, 262.1), 'ŠPANOVIĆ Vase TOMICA'),
+    ('9002001146', '978', 265, (195.8, 154.6, 277.4, 262.1), 'ŠPERAC Ivana LOVRO'),
+    ('9002001147', '978', 266, (115.2, 143.0, 197.7, 249.5), 'ŠPIUAK Dragutina MIKA'),
+    ('9002001148', '978', 267, (108.5, 143.0, 188.2, 249.5), 'ŠTAJNBERGER Mavra DRAGO'),
+    ('9002001149', '978', 267, (197.8, 145.9, 264.0, 249.5), 'ŠTEKOVIĆ Pera LAZO'),
+    ('9002001150', '978', 268, (116.1, 30.7, 198.6, 135.3), 'ŠTOKOVAC Antona JOVAN'),
+    ('9002001153', '978', 270, (115.2, 31.7, 196.7, 139.1), 'ŠUMENJAK Stavka SLOBODAN'),
+    ('9002001157', '978', 272, (115.2, 160.3, 197.7, 268.7), 'ŠURAN Jote JOSIP'),
+    ('9002001159', '978', 273, (197.7, 161.2, 278.3, 268.7), 'ŠURKALO Mirjana DINKO'),
+    ('9002001160', '978', 274, (115.2, 147.8, 196.7, 241.8), 'ŠURLAN Marka GOJKO'),
+    ('9002001161', '978', 277, (107.5, 117.1, 190.0, 221.7), 'TALESKI Petra BORKO'),
+    ('9002001164', '978', 279, (107.5, 30.7, 189.1, 137.3), 'TEMELKOVSKI Jovana BORKO'),
+    ('9002001165', '978', 279, (196.8, 32.6, 276.5, 138.2), 'TEPAVĆEVIĆ Filipa PEKO'),
+    ('9002001166', '978', 280, (25.9, 304.2, 107.5, 410.8), 'TEŠIĆ Mirka MILAN'),
+    ('9002001167', '978', 280, (204.4, 303.3, 284.0, 408.8), 'TICA Pantallja MILOŠ'),
+    ('9002001169', '978', 282, (26.9, 161.2, 109.4, 269.7), 'TODOROVIĆ Ilije MIJALKO PLAVI'),
+    ('9002001172', '978', 284, (26.9, 303.3, 108.4, 408.8), 'TODOROVIĆ Zaharija VOJO'),
+    ('9002001173', '978', 284, (116.1, 302.3, 196.7, 408.8), 'TODOROVSKI Petra BLAŽO'),
+    ('9002001174', '978', 284, (204.4, 301.4, 285.0, 407.9), 'TODOROVSKI Vangela HRISTIJAN'),
+    ('9002001177', '978', 286, (205.4, 148.7, 285.0, 256.2), 'TOMAŠEVIĆ Vladlalava DUŠAN'),
+    ('9002001178', '978', 287, (107.5, 147.8, 183.3, 255.3), 'TOMAZINA Virglla SILVIRA'),
+    ('9002001179', '978', 288, (24.9, 156.4, 107.5, 263.0), 'TOMAŽIĆ Josipa JOSIP PINO'),
+    ('9002001180', '978', 288, (205.4, 155.5, 285.0, 262.0), 'TOMIĆ Milana BOŽA'),
+    ('9002001181', '978', 289, (107.5, 153.6, 190.0, 261.1), 'TOMIĆ Pere JANDRIJA ĆIĆ'),
+    ('9002001183', '978', 290, (205.4, 32.6, 286.0, 140.1), 'TOMIĆ Mlladlna MIRKO'),
+    ('9002001184', '978', 291, (111.3, 29.7, 189.0, 136.3), 'TOMOVIĆ Marka BUDIMIR'),
+    ('9002001185', '978', 292, (28.8, 148.7, 107.5, 257.2), 'TOMŠIĆ Mlhalla TONE'),
+    ('9002001186', '978', 293, (107.5, 146.9, 189.1, 255.4), 'TOMŠIČ Ivana VIDA'),
+    ('9002001189', '978', 294, (204.4, 212.1, 285.0, 318.6), 'TRBOVIĆ Ilije ĐURO'),
+    ('9002001191', '978', 295, (195.8, 209.3, 277.4, 317.8), 'TRIFUNOVIĆ Ilije MITAR'),
+    ('9002001195', '978', 298, (116.1, 32.6, 197.7, 140.1), 'TRTNIK Janeza TONE'),
+    ('9002001204', '978', 306, (25.9, 107.5, 107.5, 215.9), 'URDAREVSKI Stojana ALEKSANDAR'),
+    ('9002001208', '978', 308, (204.4, 146.8, 285.0, 248.6), 'UZELAC Stevana SRĐAN'),
+    ('9002001209', '978', 311, (107.5, 115.2, 187.1, 223.6), 'VAJNER Dušana SLAVIŠA'),
+    ('9002001212', '978', 313, (107.5, 29.7, 189.0, 134.3), 'VELESKI Jovana BORKO GORANOV'),
+    ('9002001213', '978', 313, (204.4, 31.7, 277.3, 136.3), 'VELUŠČEK Mlhaela ANTON MATEVŽ'),
+    ('9002001215', '978', 314, (204.4, 137.2, 285.0, 245.7), 'VERDNIK Tomaia MAT U A TOMAŽ'),
+    ('9002001216', '978', 315, (107.5, 134.4, 190.1, 242.9), 'VERGAŠ Nikole DUŠAN'),
+    ('9002001220', '978', 317, (195.8, 161.2, 277.3, 266.8), 'VIDMAR Jožeta TONE'),
+    ('9002001227', '978', 323, (16.3, 108.4, 99.8, 215.9), 'VITOMIR Jefle MILANKO'),
+    ('9002001228', '978', 323, (200.6, 110.4, 277.3, 216.9), 'VIVODA Augusta ARSEN'),
+    ('9002001230', '978', 325, (17.3, 136.3, 96.0, 245.8), 'VLAHOVIĆ Franata JOSIP JOŽA'),
+    ('9002001231', '978', 325, (196.8, 137.3, 278.4, 245.8), 'VLAHOVIĆ Mlllnka VELIMIR VEUKO'),
+    ('9002001238', '978', 330, (115.2, 31.7, 197.7, 139.1), 'VOUĆ Jožeta IGNAC FRIC'),
+    ('9002001239', '978', 331, (16.3, 29.7, 99.8, 136.3), 'VOSTREL Danijela VACLAV'),
+    ('9002001240', '978', 331, (195.8, 31.7, 276.4, 135.3), 'VRANJEŠEVIĆ Đorđa RADA'),
+    ('9002001241', '978', 332, (25.9, 128.6, 107.5, 237.0), 'VRATANAR Antona ANTON'),
+    ('9002001246', '978', 335, (107.5, 130.5, 190.1, 240.0), 'VRHOVNIK Franca MAJDA'),
+    ('9002001249', '978', 337, (195.8, 90.2, 277.3, 195.8), 'VUČIĆ Ivana ANTE'),
+    ('9002001251', '978', 339, (17.3, 146.9, 99.8, 256.3), 'VUČINIĆ Radovana MILICA'),
+    ('9002001254', '978', 340, (204.4, 149.7, 286.0, 257.2), 'VUĆKOVIĆ Marka JOVAN'),
+    ('9002001262', '978', 345, (196.8, 125.7, 278.4, 233.2), 'VUJOŠEVIĆ Jovana RADOJE'),
+    ('9002001263', '978', 346, (205.4, 31.7, 285.0, 139.1), 'VUJOŠEVIĆ Ilije ZARUA'),
+    ('9002001264', '978', 347, (106.5, 29.7, 188.1, 137.2), 'VUJOVIĆ Marka DUŠAN'),
+    ('9002001265', '978', 347, (195.8, 31.7, 276.4, 137.2), 'VUJOVIĆ Štovana ĐURO'),
+    ('9002001277', '978', 355, (106.5, 29.7, 178.5, 133.4), 'VUKMANOVIĆ Nikole SVETOZAR'),
+    ('9002001278', '978', 356, (116.1, 151.6, 197.7, 260.1), 'VUKMIROVIĆ Nikole BORO'),
+    ('9002001279', '978', 357, (17.3, 148.8, 99.8, 258.2), 'VUKOJE Nikole PAVLE'),
+    ('9002001280', '978', 357, (196.7, 150.7, 278.3, 258.2), 'VUKOMANOVIĆ Petra PAVLE'),
+    ('9002001288', '978', 368, (116.1, 98.8, 197.7, 207.3), 'ZAFRED Antona IVAN MIĆA'),
+    ('9002001292', '978', 371, (18.2, 29.7, 99.8, 136.3), 'ZEČAR Toie MILAN'),
+    ('9002001294', '978', 372, (206.3, 149.7, 285.0, 257.2), 'ZEKOVIĆ Sima VEUKO'),
+    ('9002001296', '978', 374, (26.9, 168.0, 108.5, 275.5), 'ZIDANŠEK Jakoba MIHAEL'),
+    ('9002001297', '978', 374, (211.2, 168.9, 275.5, 276.5), 'ZIROJEVIĆ Spasoja ŽIVOJIN'),
+    ('9002001298', '978', 375, (195.8, 165.1, 277.3, 273.5), 'ZUĆIĆ Neđe ĐORĐE CIGA'),
+    ('9002001302', '978', 379, (18.2, 138.2, 100.8, 246.6), 'ZORIĆ Nikole RADE'),
+    ('9002001303', '978', 379, (197.7, 139.2, 278.3, 246.6), 'ZRENJANIN Žive ŽARKO'),
+    ('9002001305', '978', 381, (107.5, 144.0, 190.0, 252.4), 'ZUPĆEVIĆ Mehmeda ASIU'),
+    ('9002001307', '978', 385, (107.5, 117.1, 190.0, 225.5), 'ŽAGAR Ferdinanda STANE'),
+    ('9002001308', '978', 386, (24.9, 124.8, 107.5, 231.3), 'ŽDERO Marka MILOŠ'),
+    ('9002001309', '978', 386, (205.4, 124.8, 286.9, 231.3), 'ŽERJAL Antona TONE TONČEK'),
+    ('9002001315', '978', 391, (16.3, 150.7, 99.8, 257.3), 'ŽUGIĆ Jakova BATRIĆ'),
+]
 
 SAME = [
     # one man under two records that aren't linked, each with a photo of its own (another photo, or another crop),
@@ -2349,6 +2716,32 @@ def commons_file(name: str) -> Path:
         local.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(['curl', '-s', '-f', '-L', '-H', ua, '-o', str(local), ii.get('thumburl') or ii['url']], check=True)
     return local
+
+
+def holders(entry_ids) -> dict:
+    """Each book entry's records: every unit record that holds it among its references, else the Borci drugih jedinica
+    record that data-extraction/ostali_borci_ids.json gives it (while that record exists)."""
+    import re
+    want = set(entry_ids)
+    out: dict = {}
+    units_ts = (ROOT / 'website' / 'app' / 'data' / 'units.ts').read_text(encoding='utf-8')
+    ostali = set()
+    for data_file in re.findall(r"dataFile:\s*'/([^']+)'", units_ts):
+        path = PUBLIC / data_file
+        if not path.exists():
+            continue
+        for s in json.loads(path.read_text(encoding='utf-8')):
+            if data_file == 'ostali-borci.json':
+                ostali.add(s['soldier_id'])
+                continue
+            for o in s.get('other_sources', []):
+                if o.get('soldier_id') in want and o.get('ref_book'):
+                    out.setdefault(o['soldier_id'], []).append(s['soldier_id'])
+    registry = json.loads((ROOT / 'data-extraction' / 'ostali_borci_ids.json').read_text(encoding='utf-8'))
+    for e in want:
+        if e not in out and registry.get(e) in ostali:
+            out[e] = [registry[e]]
+    return out
 
 
 OLD: dict = {}   # with --new: the index as it stands, whose prints are kept rather than made again
@@ -2515,16 +2908,35 @@ def main():
                       'h': f'https://znaci.org/00003/{vol}.pdf#page={page}'}
         n += 1
     print(f'Narodni heroji Jugoslavije (1982): {n} portraits')
-    for sid, name, crop, license, artist, _why in COMMONS:
-        if sid in index:                    # a photo from the unit's own book comes first
-            continue
-        im = Image.open(commons_file(name)).convert('L')
-        if crop:
-            w, h = im.size
-            im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
-        credit = f'Wikimedia Commons ({license})' if license.startswith('CC BY') else 'Wikimedia Commons'
-        credit = f'{artist}, {credit}' if artist else credit
-        index[sid] = {**save(im, sid, credit), 'c': credit, 'h': f'https://commons.wikimedia.org/wiki/File:{name}'}
+    # rows keyed by a book's entry (a 9... id), here and in COMMONS, go to the records that hold the entry
+    held = holders([r[0] for r in HEROES_1982_ENTRIES] + [r[0] for r in COMMONS if r[0].startswith('9')])
+    n = 0
+    for entry, vol, page, box, _head in HEROES_1982_ENTRIES:
+        for sid in held.get(entry, []):
+            if sid in index:                # a photo from the unit's own book, or the row above, comes first
+                continue
+            if vol not in docs:
+                docs[vol] = fitz.open(F.book_pdf(f'00003/{vol}.pdf'))
+            pg = docs[vol][page - 1]
+            hits = [i for i in pg.get_image_info() if fitz.Rect(i['bbox']).intersects(fitz.Rect(box))]
+            dpi = max([DPI] + [round(72 * i['width'] / (i['bbox'][2] - i['bbox'][0])) for i in hits if i['bbox'][2] > i['bbox'][0]])
+            pix = pg.get_pixmap(clip=fitz.Rect(box), dpi=min(dpi, 600), colorspace=fitz.csGRAY)
+            im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+            index[sid] = {**save(im, sid, HEROES_1982_CREDIT), 'c': HEROES_1982_CREDIT,
+                          'h': f'https://znaci.org/00003/{vol}.pdf#page={page}'}
+            n += 1
+    print(f'Narodni heroji Jugoslavije (1982), by entry: {n} portraits')
+    for key, name, crop, license, artist, _why in COMMONS:
+        for sid in (held.get(key, []) if key.startswith('9') else [key]):
+            if sid in index:                # a photo from the unit's own book comes first
+                continue
+            im = Image.open(commons_file(name)).convert('L')
+            if crop:
+                w, h = im.size
+                im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+            credit = f'Wikimedia Commons ({license})' if license.startswith('CC BY') else 'Wikimedia Commons'
+            credit = f'{artist}, {credit}' if artist else credit
+            index[sid] = {**save(im, sid, credit), 'c': credit, 'h': f'https://commons.wikimedia.org/wiki/File:{name}'}
     print(f'Commons: {len(COMMONS)} portraits')
     # Portraits this script doesn't make (the Proleterski bataljon Bosanske krajine's 180, cut beside each bio when
     # its unit came to the site) stay as they are: an entry whose credit is none of this script's sources
