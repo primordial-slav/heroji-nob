@@ -850,6 +850,17 @@ def census_ids_on_disk() -> set[str]:
     return out
 
 
+def unit_ids_on_disk() -> set[str]:
+    """The IDs in the units' files on disk (122's and the census parts' not): their records', and the entries merged
+    into them, whose addresses lead to the record too"""
+    out = set()
+    for code, cfg in BRIGADE_CONFIGS.items():
+        path = ROOT / 'website' / 'public' / cfg['json_file']
+        if code not in OSTALI_CODES and path.exists():
+            out |= set(re.findall(r'"soldier_id": "(\d{10})"', path.read_text(encoding='utf-8')))
+    return out
+
+
 def census_redirects(old_ids: set[str], new_ids: set[str], previous: dict[str, str], census_entry: dict[str, str],
                      holder_of) -> dict[str, str]:
     """Old census record -> the record that holds the man's entry now, for each census record that has left its part:
@@ -1228,15 +1239,19 @@ def main():
         present, moved_now = {r['soldier_id'] for r in parts[CODE]}, {r['soldier_id'] for v in to_units.values() for r in v}
         with_of = {m['soldier_id']: m['_with'] for m in on_site}
 
+        # a reference whose record a merge took away or a delete removed would send the address nowhere: only the
+        # records on the site count (the units' files as on disk, as scripts/backfill_census_redirects.py reads them)
+        live = unit_ids_on_disk() | moved_now
+
         def holder_of(e: str) -> str | None:
-            held = sorted(holders.get(e, ()))
+            held = sorted(r for r in holders.get(e, ()) if r in live)
             if held:
                 return held[0]
             if unit_ids.get(e) in moved_now:
                 return unit_ids[e]
             if ids.get(e) in present:
                 return ids[e]
-            held = sorted(r for w in with_of.get(e, ()) for r in holders.get(w, ()))
+            held = sorted(r for w in with_of.get(e, ()) for r in holders.get(w, ()) if r in live)
             return held[0] if held else None
         census_moved = census_redirects(
             old_ids=census_ids_on_disk(),
