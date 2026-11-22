@@ -3179,6 +3179,132 @@ export const sources: PdfSource[] = [
     description: 'Spisak „Učenici, profesori i bivši učenici užičke Gimnazije poginuli u narodnooslobodilačkoj borbi od 1941. do 1945. godine” (str. 297–317): profesori i drugi radnici Gimnazije i njeni učenici i bivši učenici, sa kratkom biografijom. Spisak broji i one koje su okupator i njegovi pomagači streljali ili koji su umrli u logorima; uneti su i oni koji nisu bili borci, označeni kao aktivisti ili učesnici. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
   },
   {
+    id: 'grahovski-kovacevici',
+    title: 'Grahovski Kovačevići kroz vekove i ratove',
+    author: '',
+    pdfPath: 'poreklo:grahovski-kovacevici',
+    thumbnail: '/images/pdf-thumbs/grahovski-kovacevici.jpg',
+    brigadeName: '',
+    description: 'Hronika bratstva Kovačevića iz Grahova kod Nikšića: Kovačevići poginuli u Drugom svetskom ratu (str. 278–286), sa rođenjem, jedinicom i pogibijom, narodni heroji (str. 286–287) i nosioci Partizanske spomenice 1941. (str. 287). Spisak poginulih broji i četnike, one koje su streljali organi NOP-a i civilne žrtve; uneti su borci i, označeni kao aktivista i učesnik, pozadinski radnik i čovek koji je poginuo prikupljajući oružje 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'piskavica',
+    title: 'Piskavica, moj zavičaj i moji doživljaji',
+    author: 'Nikola Pavić',
+    pdfPath: 'poreklo:piskavica',
+    thumbnail: '/images/pdf-thumbs/piskavica.jpg',
+    brigadeName: '',
+    description: 'Spisak „Poginuli i preživjeli borci u Drugom svjetskom ratu iz Piskavice” (str. 37–53), koji je autor preuzeo iz knjige Timar u Bosanskoj krajini, po selima Piskavica, Radosavska i Niševići kod Ivanjske: poginuli borci sa godinama rođenja i pogibije i jedinicom, preživeli sa godinom rođenja i jedinicom ili dužnošću. Uneti su borci i, označeni kao aktivisti, odbornici NOO-a, skojevci i članice AFŽ-a koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'ostruznica',
+    title: 'Ostružnica',
+    author: '',
+    pdfPath: 'poreklo:ostruznica',
+    thumbnail: '/images/pdf-thumbs/ostruznica.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Ostružnice kod Beograda, spiskovi njenih boraca (str. 260–264): prvoborci, izginuli u borbama 1943–1945, sa godinom stupanja u borbu i mestom pogibije, i preživeli borci, sa mesecom i godinom stupanja i činom. Uneti su borci i, označeni kao aktivisti, politički radnici i oni koji su pomagali NOP. Spiskovi onih koje su streljali okupatori i zaklali četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'srbi-duvna',
+    title: 'Srbi Duvna, život i stradanja',
+    author: '',
+    pdfPath: 'poreklo:srbi-duvna',
+    thumbnail: '/images/pdf-thumbs/srbi-duvna.jpg',
+    brigadeName: '',
+    description: 'Tri spiska boraca iz Duvna: borci bitke na Sutjesci rodom iz Duvna, preuzeti iz knjige Viktora Kučana Borci Sutjeske (str. 369–377), sa biografijom, oficiri i podoficiri NOV-a iz registra SUBNOR-a Duvna (str. 417–418), sa godinom rođenja, danom stupanja u NOV i činom, i tabela poginulih Srba iz Duvna u NOR-u 1941–1945. po selima (str. 421–424), sa godinom i mestom pogibije i jedinicom. Borac koji stoji u dva ili tri spiska jedan je zapis. Spiskovi žrtava fašističkog terora iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'vilusi',
+    title: 'Vilusi (zajednica sela: Balosave, Broćanac, Dolovi, Okolišta, Podbožur, Riječani, Spila)',
+    author: '',
+    pdfPath: 'poreklo:vilusi',
+    thumbnail: '/images/pdf-thumbs/vilusi.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Vilusa kod Grahova, spisak „Poginuli i stradali u Drugom svjetskom ratu 1941–1945. godine” (str. 262–273), sa selom, zanimanjem, učešćem u NOB-u i pogibijom. Spisak broji i četnike, one koje su streljali organi NOP-a i žrtve fašističkog terora; uneti su borci i, označeni kao aktivisti, ljudi pokreta koje spisak broji. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'krusevice',
+    title: 'Kruševice (Svrčuge – Petijevići – Bijelići)',
+    author: 'Vojin S. Murišić',
+    pdfPath: 'poreklo:krusevice',
+    thumbnail: '/images/pdf-thumbs/krusevice.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Kruševica kod Herceg Novog: sastav Kruševičke partizanske čete pri formiranju 1941, komanda i pet vodova (str. 175–180), poginuli u NOR-u po selima Kruševice, Svrčuge, Petijevići i Bijelići, sa biografijom (str. 240–249), i nosioci Spomenice 1941. (str. 251–252). Borac koji stoji u dva spiska jedan je zapis. Žrtve fašističkog terora iz istog poglavlja nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'istocna-tamnava',
+    title: 'Istočna Tamnava – Brgule i okolina',
+    author: '',
+    pdfPath: 'poreklo:istocna-tamnava',
+    thumbnail: '/images/pdf-thumbs/istocna-tamnava.jpg',
+    brigadeName: '',
+    description: 'Hronika osam sela kod Uba (Brgule, Radljevo, Kalenić, Šarbane, Liso Polje, Stublenica, Mali Borak, Skobalj): od spiska poginulih građana 1941–1945. po selima (str. 537–543) uneti su oni koji su poginuli na frontovima NOVJ 1944–1945. (Srem, Slavonija, put do Zagreba i Maribora), i nosioci Partizanske spomenice 1941. (str. 546). Ostali iz istog spiska (taoci, internirci, deca, poginuli kod kuće 1941–1943. za koje se ne kaže na čijoj strani) nisu uneti, kao ni nosioci Albanske spomenice i ratni zarobljenici iz 1941. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'vodice',
+    title: 'Hronika sela Vodice u Donjoj Jasenici',
+    author: 'Nikola Vladisavljević',
+    pdfPath: 'poreklo:vodice',
+    thumbnail: '/images/pdf-thumbs/vodice.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Vodice kod Smederevske Palanke: prvoborci sela, sa biografijom (str. 252–254), i borci koji su stupili u NOVJ u jesen 1944. i poginuli ili umrli od rana i bolesti u borbama za konačno oslobođenje (str. 257–262), sa rođenjem, danom stupanja, jedinicom i pogibijom. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'guca',
+    title: 'Guča kroz vekove',
+    author: '',
+    pdfPath: 'poreklo:guca',
+    thumbnail: '/images/pdf-thumbs/guca.jpg',
+    brigadeName: '',
+    description: 'Spisak poginulih Gučana po godinama, 1941–1945. (str. 109–115), preuzet iz knjige Gorana Davidovića i Miloša Timotijevića Zatamnjena prošlost, sa godinom rođenja, načinom pogibije i stranom na kojoj je ko poginuo. Uneti su oni koje spisak naziva partizanima, borcima NOP-a i NOVJ, i, označeni kao učesnici, simpatizeri NOP-a. Civili, pripadnici JVuO, ZBOR-a, Srpske državne straže i Vojske Kraljevine Jugoslavije iz istog spiska nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'ekonomska-skola',
+    title: '100 godina Prve ekonomske škole „Vladimir Perić Valter” u Beogradu',
+    author: '',
+    pdfPath: 'poreklo:ekonomska-skola',
+    thumbnail: '/images/pdf-thumbs/ekonomska-skola.jpg',
+    brigadeName: '',
+    description: 'Spiskovi učenika i nastavnika Državne trgovačke akademije u Beogradu, sa kratkom biografijom: poginuli u Aprilskom ratu 1941, NOB-u, streljani i umrli u fašističkim logorima (str. 187–195) i preživeli učesnici Aprilskog rata i NOB-a (str. 196–212). Uneti su borci i, označeni kao aktivisti, članovi KPJ i SKOJ-a, ilegalci i oni koji su pomagali NOP. Oni koje spisak beleži samo za Aprilski rat i zarobljeništvo, žrtve okupatora za koje ne kaže da su bili u pokretu i učesnici ratova do 1918. iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'crna-trava',
+    title: 'Crna Trava i Crnotravci',
+    author: 'Radomir Kostadinović',
+    pdfPath: 'poreklo:crna-trava',
+    thumbnail: '/images/pdf-thumbs/crna-trava.jpg',
+    brigadeName: '',
+    description: 'Spiskovi na kraju knjige o Crnoj Travi: narodni heroji ponikli iz Crnotravskog (Drugog južnomoravskog) odreda (str. 524), poginuli „Oni koji su u naše danas i sutra ugradili svoje živote” po selima (str. 525–538), sa godinom i mestom pogibije, od koga su poginuli i jedinicom, i nosioci Spomenice 1941. (str. 539). Žrtve fašističkog terora, koje spisak poginulih po selima navodi posebno, nisu unete. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'trepca',
+    title: 'Trepča kod Andrijevice',
+    author: '',
+    pdfPath: 'poreklo:trepca',
+    thumbnail: '/images/pdf-thumbs/trepca.jpg',
+    brigadeName: '',
+    description: 'Hronika sela Trepče kod Andrijevice: Trepčani u jedinicama Narodnooslobodilačke vojske, po jedinicama u kojima su se borili (str. 273–275), i poginuli borci NOV (str. 275–276), sa zanimanjem, jedinicom, mestom i danom pogibije. Borac koji stoji u oba spiska jedan je zapis. Poginuli od bombardovanja u Aprilskom ratu i taoci koje su streljali Nemci, Italijani i četnici iz iste knjige nisu uneti. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'krbavica',
+    title: 'Krbavica u prošlosti i sadašnjosti',
+    author: '',
+    pdfPath: 'poreklo:krbavica',
+    thumbnail: '/images/pdf-thumbs/krbavica.jpg',
+    brigadeName: '',
+    description: 'U članku Roka Franića Barbe „Prva dalmatinska”: borci Prve dalmatinske čete (Treće čete bataljona „Marko Orešković”), 118 partizana severne Dalmacije koji su u novembru i decembru 1941. otišli u Liku, po grupama i mestima odakle su pošli (str. 357–362), sa imenom oca, nadimkom i dužnošću. Spisak je utvrdio Roko Franić Barba sa SUBNOR-om Šibenika. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
+    id: 'grabovica',
+    title: 'Grabovica u Drobnjaku i porodice u njoj',
+    author: 'Todor Janjić',
+    pdfPath: 'poreklo:grabovica',
+    thumbnail: '/images/pdf-thumbs/grabovica.jpg',
+    brigadeName: '',
+    description: 'U poglavlju „Grabovica u NOR-u 1941–1945” (str. 123–131) ljudi sela Grabovice kod Šavnika koji su učestvovali u NOB-u, po porodicama Janjić i Janković, sa kratkom biografijom: učešćem u Trinaestojulskom ustanku, jedinicama, dužnostima i pogibijom. Uneti su borci i, označeni kao aktivisti, odbornici i oni koji su pomagali NOP. Knjiga nije vezana za jednu jedinicu. Gde je sigurno da je reč o borcu koji je već na sajtu, ono što knjiga piše o njemu dodali smo njegovom zapisu. Ostali su među Borcima drugih jedinica.'
+  },
+  {
     id: 'porodicna-arhiva',
     title: 'Porodična arhiva',
     author: '',

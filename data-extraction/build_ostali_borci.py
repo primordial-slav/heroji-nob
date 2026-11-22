@@ -94,7 +94,9 @@ POSSESSIVE_FATHERS = {'trebinjci-pali', 'spomenica-crnogorskim-antifasistima',
                       'revolucionarno-grahovo', 'bozice',       # (Grahovo's "Mićunov", Božiće's "Desa Veljova")
                       'popovo-polje',                           # (Popovo polje's "Akšam Ilija, Burin")
                       'grahovo-podjele',                        # (Grahovo's rear workers, "Bulajić Simov Mirko")
-                      'ljesnjani'}                              # (Lješnjani's "Blagojević Tomov Andrija")
+                      'ljesnjani',                              # (Lješnjani's "Blagojević Tomov Andrija")
+                      'grahovski-kovacevici',                   # (Grahovo's Kovačevići, "Andrija Gajov")
+                      'vilusi'}                                 # (Vilusi's "Babić Stevana Vidak", "Bulajić Kostov Blagota")
 # books used only as references for men who have a unit record: their unmatched entries make no records; taking a book
 # out of this set adds its unmatched men to Ostali borci (the Spomenica crnogorskim antifašistima was here until the
 # user decided, on 2026-10-14, that every man it names counts as a partisan)
@@ -334,7 +336,9 @@ DEATH_PLACE_READS = {
     '0122925325': '', '0122909592': '', '0122923439': '', '0122943346': '', '0122080817': '', '0122911643': '',
     '0122905597': '', '0122926176': '', '0122926900': '', '0122925147': '', '0122906298': '', '0122913038': '',
     '0122011077': '', '0122110224': '',
+    '0122916882': '', '0122925112': '',            # Nikšić's fallen's "Anrijevica", its "Lika" against two books' Gorski kotar
     # the place his entry names, read by hand
+    '0122924953': 'Meljine',                        # Kruševice's "umire u vojnoj bolnici Meljine" (Herceg Novi's fallen: Kotor)
     '0122090222': 'Valjevo',                        # "Vaijevo"
     '0122926148': 'Zagarač', '0122916270': 'Zagarač', '0122926515': 'Zagarač',     # "u Zagarču"
     '0122915769': 'Sinjajevina',                    # "na Sinjavini"
