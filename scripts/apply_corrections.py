@@ -189,6 +189,9 @@ MANUAL_FIELDS = {}   # soldier_id -> structured fields some correction sets expl
 SET_FIELDS = {}      # soldier_id -> every field some edit or add correction sets
 FAMILY_FIELDS = {}   # soldier_id -> the fields a family's report set (record_sources.FAMILY_REASON): the books' other
                      # versions show after "ili" on the card
+OVERRIDE_MARK = {}   # the same from the overrides of 122 and the census parts (data-extraction/ostali_overrides.json)
+FAMILY_MARK = {}     # soldier_id -> the card rows' fields a family's own report set (record_sources.FAMILY_ONLY): the
+                     # card marks them (`family_fields`, the user's choice of 2026-11-23)
 EDITED_FIELDS = {}   # soldier_id -> fields some edit correction sets
 DELETED = {}         # soldier_id -> the record a delete correction removed in this run
 MERGED_IDS = set()   # ids a merge correction folds into another record: their earlier edits are done (after a re-parse
@@ -646,6 +649,14 @@ def main():
         print("  Use --apply to write changes\n")
 
     print("Loading corrections...")
+    global OVERRIDE_MARK
+    try:
+        overrides = json.loads((Path(__file__).resolve().parents[1] / 'data-extraction' / 'ostali_overrides.json').read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        overrides = {}
+    for v in overrides.values():
+        if record_sources.FAMILY_ONLY.search(v.get('reason') or ''):
+            OVERRIDE_MARK.setdefault(v['for'], set()).update(set(v.get('fields', {})) & record_sources.MARKED_FIELDS)
     corrections = load_corrections(corrections_path)
     print(f"Found {len(corrections)} correction(s)\n")
 
@@ -656,7 +667,11 @@ def main():
             SET_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields)
             if record_sources.FAMILY_REASON.search(c.get('reason') or ''):
                 FAMILY_FIELDS.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields)
-        if 290061 <= c['id'] <= 293060:     # a field the review page's answer leaves empty stays so (scripts/review_fields.py)
+            if record_sources.FAMILY_ONLY.search(c.get('reason') or ''):
+                FAMILY_MARK.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & record_sources.MARKED_FIELDS)
+        # a field the review page's answer leaves empty stays so (scripts/review_fields.py); so does one a family's report
+        # empties: Aničić Dragoljub, whom both his books print fallen and his family knows survived (the user, 2026-11-22)
+        if 290061 <= c['id'] <= 293060 or (c['action'] == 'edit' and record_sources.FAMILY_REASON.search(c.get('reason') or '')):
             for k, v in c.get('fields', {}).items():
                 blanked = structured.BLANKED.setdefault(c['soldier_id'], set())
                 (blanked.add if k in structured.FIELDS and v == '' else blanked.discard)(k)
@@ -844,6 +859,14 @@ def main():
         if json_path.name in live_files:
             for k, n in record_sources.apply(soldiers, by_id, SET_FIELDS, FAMILY_FIELDS).items():
                 told[k] = told.get(k, 0) + n
+        # the rows a family's own report set, marked on the card; a record of 122 or a census part has them from the
+        # overrides' reasons (scripts/patch_record.py)
+        for s in soldiers:
+            marked = FAMILY_MARK.get(s['soldier_id'], set()) | OVERRIDE_MARK.get(s['soldier_id'], set())
+            if marked:
+                s['family_fields'] = sorted(marked)
+            else:
+                s.pop('family_fields', None)
     print(f"\n  Birth days and the books' other years and deaths: {', '.join(f'{k} {n}' for k, n in told.items())}")
 
     for brigade_code, (json_path, original_text, soldiers) in results.items():

@@ -117002,10 +117002,10 @@
   },
   {
     "last_name": "Milošević",
-    "middle_name": "Uubisava",
+    "middle_name": "Ljubisava",
     "first_name": "Bogosav",
-    "fathers_name": "Uubisav",
-    "full_name": "Milošević Uubisava Bogosav",
+    "fathers_name": "Ljubisav",
+    "full_name": "Milošević Ljubisava Bogosav",
     "additional_info": "rođen 1918. u Neprićavi. U NOB-1944. Borac brigade.",
     "birth_year": "1918",
     "pdf_page": 99,
@@ -145484,11 +145484,11 @@
     "pdf_x_end": 364.9
   },
   {
-    "last_name": "Starćević",
-    "middle_name": "Jerotua",
+    "last_name": "Starčević",
+    "middle_name": "Jerotija",
     "first_name": "Radomir",
-    "fathers_name": "Jerotua",
-    "full_name": "Starćević Jerotua Radomir",
+    "fathers_name": "Jerotije",
+    "full_name": "Starčević Jerotija Radomir",
     "additional_info": "rođen 1925. u Donjem Mušiću - Mionica. U NOB-1944. Borac - telefonista.",
     "birth_year": "1925",
     "pdf_page": 155,
@@ -151173,7 +151173,7 @@
     "pdf_y_end": 393.1,
     "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
     "soldier_id": "0003013864",
-    "birth_place": "Ondiću T. Korenica",
+    "birth_place": "Ondić, Titova Korenica",
     "rank": "vodni delegat, general-potpukovnik",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 365.1
@@ -173548,10 +173548,10 @@
   },
   {
     "last_name": "Eror",
-    "middle_name": "",
+    "middle_name": "Petra",
     "first_name": "Geco",
-    "fathers_name": "",
-    "full_name": "Eror Geco",
+    "fathers_name": "Petar",
+    "full_name": "Eror Petra Geco",
     "additional_info": "Borac brigade. Poginuo u Vizićima (Srem) 18. 11. 1944. godine.",
     "pdf_page": 32,
     "pdf_y": 453.9,
@@ -173572,16 +173572,36 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1296",
         "source_page": 1296,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0002002082",
+        "name": "Eror Petra Geco",
+        "additional_info": "1897, Valjevo, poginuo 20. 11. 1944. na sremskom frontu",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 633,
+        "pdf_x": 133.9,
+        "pdf_y": 582.3,
+        "pdf_x_end": 468.9,
+        "pdf_y_end": 591.8,
+        "unit_file": "soldiers.json"
       }
     ],
-    "birth_place": "Valjevo",
+    "birth_year": "1897",
     "borrowed": [
       "birth_place",
       "birth_year",
       "ethnicity"
     ],
+    "birth_place": "Valjevo",
     "ethnicity": "Srbin",
-    "birth_year": "1896"
+    "variants": {
+      "death": [
+        {
+          "date": "20.11.1944",
+          "place": "u Vizićima (Srem)"
+        }
+      ]
+    }
   },
   {
     "last_name": "Eror",

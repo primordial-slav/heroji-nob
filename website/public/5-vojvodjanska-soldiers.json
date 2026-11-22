@@ -24597,7 +24597,29 @@
     "death_date": "07.12.1944",
     "death_place": "Vukovar",
     "rank": "borac",
-    "pdf_x_end": 347.9
+    "pdf_x_end": 347.9,
+    "other_sources": [
+      {
+        "soldier_id": "9025020334",
+        "name": "Janković (Aroh) Nikola",
+        "additional_info": "rođen 1921, Virovac (Mionica). Srbin, poginuo 1945. u NOBu, Vukovar",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=812",
+        "source_page": 812,
+        "ref_book": "zrtve-rata-1964-srb"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Vukovar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Janković",
@@ -83149,11 +83171,11 @@
     "pdf_x_end": 346.5
   },
   {
-    "last_name": "Vesnić",
+    "last_name": "Vesić",
     "middle_name": "",
     "first_name": "Radovan",
     "fathers_name": "",
-    "full_name": "Vesnić Radovan",
+    "full_name": "Vesić Radovan",
     "additional_info": "1924, Virovac, kolubarski srez, zemljoradnik, borac. V'EZIĆ Budimir, 1923, Borovica, kolubarski srez, zemljoradnik, borac.",
     "birth_year": "1924",
     "pdf_page": 145,
@@ -83165,7 +83187,33 @@
     "soldier_id": "0082003677",
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "pdf_x_end": 346.4
+    "pdf_x_end": 346.4,
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001012932",
+        "name": "Vesić Radovan",
+        "additional_info": "1925, Virovac, Mionica, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, II bataljon, borac",
+        "pdf_file": "prva-proleterska-3.pdf",
+        "pdf_page": 314,
+        "pdf_x": 63.5,
+        "pdf_y": 417.9,
+        "pdf_x_end": 370.4,
+        "pdf_y_end": 449.0,
+        "unit_detail": "2. bataljon",
+        "rank": "borac",
+        "since": "1944-10",
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1925"
+      ]
+    }
   },
   {
     "last_name": "Vezilić",

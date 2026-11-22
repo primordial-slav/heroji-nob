@@ -90,7 +90,12 @@ NAME_FIXES = {'9061000128': ('Albahari', 'Nisim', 'Abrahama'),   # Romano's "Avr
               # 752's "Šahinj" given as the Spomenica prints him, so the two entries meet (the text keeps "Šahinj")
               '9095002749': ('Ćorović', 'Zaim', 'Alja'), '9095002750': ('Ćorović', 'Maho', 'Hamida'),
               '9095002751': ('Ćorović', 'Osmo', 'Džema'), '9095002752': ('Ćorović', 'Šahim', 'Šeća'),
-              '9035002206': ('Bulatović', 'Milena', 'Ristova')}   # the Spomenica's "Risgova", т read as г
+              '9035002206': ('Bulatović', 'Milena', 'Ristova'),   # the Spomenica's "Risgova", т read as г
+              # readers' reports of 2026-11-22: the census's "Erov" and "Gror" of Klokoč and Svinica are Erors (the
+              # Krstinja lists print them so), its Zemelj of Dinoša the Spomenica's Kajošević Zejnel, its Jemović the
+              # same census volume's Jemuović printed twice; given as the entry they join, so the two meet
+              '9021052126': ('Eror', 'Miloš', 'Laze'), '9021052903': ('Eror', 'Adam', 'Damjana'),
+              '9023006250': ('Kajošević', 'Zejnel', 'Zekin'), '9025027497': ('Jemuović', 'Dušan', 'Pavle')}
 NO_NICK = {'9035015149'}      # entries whose parser read a given name as a nickname
 # given names an OCR slip spoiled (one letter added, lost or swapped); the entry's text keeps them as printed
 GIVEN_FIXES = {'9010000849': 'Milan', '9013000684': 'Mihailo', '9010000551': 'Milorad', '9013002857': 'Velimir',
@@ -299,6 +304,12 @@ ONE_MAN = [
     # brigade, is the census's Nikolić (Božil) Tihomir of Kozilo (Crna Trava), dead in 1944 in the military hospital of
     # Niš; each lists one Tihomir Nikolić of Crna Trava (the rules had joined Crna Trava's to an Obrenovac man)
     ('9125001262', '9025009722', 'Nikolić Božila Tihomir of Crna Trava, died at Niš in 1944 or 1945'),
+    # readers' reports and a family's form of 2026-11-22 (05; cases in the ops repo)
+    ('9018000466', '9021052126', 'Eror Laze Miloš of Klokoč, born 1909, died of typhus in 1943 (the census: Erov)'),
+    ('9018000686', '9021052903', 'Eror Damjana Adam of Svinica, born 1911, fell 1943 in Montenegro (the census: Gror)'),
+    ('9035014161', '9023006250', 'Kajošević Zekin Zejnel of Dinoši, fell 1944 there (the census: Zeko Zemelj, b. 1915)'),
+    ('9025027497', '9025027498', 'Jemuović Pavla Dušan of Baljevac, fell 1941 at Raška: the census prints him twice'),
+    ('9064010613', '9990000012', 'Orlić Marka Đuro of Vodoteč, b. 1922: his great-grandson\'s form (spomenica, d. 1982)'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -306,6 +317,9 @@ ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 MERGED_IDS = {
     '0122010532': '0122957805',   # Kupres Marka Miloš: the hero book's record, joined to Kožuhe's (2026-11-21)
     # Bijelo Polje's records, joined to the Spomenica's (2026-11-22): the four Ćorović of Lozna and Ivanje, Bulatović Milena
+    # readers' reports of 2026-11-22: U rovovima Srema's "Erar Jovo" is the 1. krajiška's Eror Jeke Jovo (a reference);
+    # the census's Jemuović printed twice
+    '0122130469': '0123000355', '0136027498': '0136027497',
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',
     # the records the Poreklo books 9115-9128 joined to others (2026-11-22): a book's entry agreed with two records of

@@ -9513,10 +9513,10 @@
     "pdf_x_end": 389.0
   },
   {
-    "last_name": "Erof",
+    "last_name": "Eror",
     "middle_name": "Jeke",
     "first_name": "Jovo",
-    "full_name": "Erof Jeke Jovo",
+    "full_name": "Eror Jeke Jovo",
     "additional_info": "borac, rođen 1917, kod Otočca, poginuo 7. IV 1945. kod Brčkog.",
     "birth_year": "1917",
     "pdf_page": 23,
@@ -9558,8 +9558,30 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0123000355",
+        "name": "Eror Jeke Jovo",
+        "additional_info": "rođen 1917. u Babinom Potoku, Otočac, Srbin, radnik, u brigadi od 10. 9. 1944, borac, poginuo 7. 4. 1945. pri napadu na Brčko, gdje je i sahranjen",
+        "pdf_file": "1-krajiska.pdf",
+        "pdf_page": 24,
+        "pdf_x": 91.9,
+        "pdf_y": 489.8,
+        "pdf_x_end": 450.0,
+        "pdf_y_end": 506.7,
+        "rank": "borac",
+        "since": "1944-09-10",
+        "unit_file": "1-krajiska-soldiers.json"
       }
-    ]
+    ],
+    "birth_place": "Babin Potok, Otočac",
+    "borrowed": [
+      "birth_place",
+      "ethnicity",
+      "occupation"
+    ],
+    "ethnicity": "Srbin",
+    "occupation": "radnik"
   },
   {
     "last_name": "Farkaš",

@@ -49965,10 +49965,10 @@
     "soldier_id": "0002002082",
     "last_name": "Eror",
     "middle_name": "Petra",
-    "first_name": "Genzo",
+    "first_name": "Geco",
     "additional_info": "1897, Valjevo, poginuo 20. 11. 1944. na sremskom frontu",
     "fathers_name": "Petar",
-    "full_name": "Eror Petra Genzo",
+    "full_name": "Eror Petra Geco",
     "birth_year": "1897",
     "pdf_page": 633,
     "pdf_y": 582.3,
@@ -49992,8 +49992,29 @@
         "pdf_x_end": 500.6,
         "pdf_y_end": 623.2,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "0003020507",
+        "name": "Eror Petra Geco",
+        "additional_info": "Borac brigade. Poginuo u Vizićima (Srem) 18. 11. 1944. godine.",
+        "pdf_file": "druga-licka-sjecanja-poginuli.pdf",
+        "pdf_page": 32,
+        "pdf_x": 42.0,
+        "pdf_y": 453.9,
+        "pdf_x_end": 202.5,
+        "pdf_y_end": 472.0,
+        "rank": "borac",
+        "unit_file": "druga-licka-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "18.11.1944",
+          "place": "Sremski front"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002002083",
@@ -106296,12 +106317,12 @@
   },
   {
     "soldier_id": "0002004481",
-    "last_name": "Marianović",
+    "last_name": "Marjanović",
     "middle_name": "",
     "first_name": "Borivoje",
     "additional_info": "14. 8. 1911, Markova Crkva, Lajkovac, zemljoradnik, u NOB od 8. 10. 1944, intendantura",
     "fathers_name": "",
-    "full_name": "Marianović Borivoje",
+    "full_name": "Marjanović Borivoje",
     "birth_year": "1911",
     "pdf_page": 722,
     "pdf_y": 291.4,
@@ -131922,25 +131943,6 @@
     "death_place": "Ruma"
   },
   {
-    "soldier_id": "0002005580",
-    "last_name": "Nenadić",
-    "middle_name": "Vlastimira",
-    "first_name": "Miroljub",
-    "additional_info": "16. 7. 1920, Virovac, Mionica, 1. bataljon",
-    "fathers_name": "Vlastimir",
-    "full_name": "Nenadić Vlastimira Miroljub",
-    "birth_year": "1920",
-    "pdf_page": 762,
-    "pdf_y": 429.2,
-    "pdf_x": 133.5,
-    "pdf_y_end": 438.7,
-    "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Virovac, Mionica",
-    "unit_detail": "1. bataljon",
-    "pdf_x_end": 446.1,
-    "birth_date": "16.07.1920"
-  },
-  {
     "soldier_id": "0002005581",
     "last_name": "Nenadić",
     "middle_name": "Todora",
@@ -132169,6 +132171,20 @@
     "birth_place": "Virovac, Mionica",
     "occupation": "zemljoradnik",
     "pdf_x_end": 468.4,
+    "other_sources": [
+      {
+        "soldier_id": "0002005580",
+        "name": "Nenadić Vlastimira Miroljub",
+        "additional_info": "16. 7. 1920, Virovac, Mionica, 1. bataljon",
+        "pdf_file": "prva-licka-proleterska.pdf",
+        "pdf_page": 762,
+        "pdf_x": 133.5,
+        "pdf_y": 429.2,
+        "pdf_x_end": 446.1,
+        "pdf_y_end": 438.7
+      }
+    ],
+    "unit_detail": "1. bataljon",
     "birth_date": "12.08.1920"
   },
   {
@@ -134962,7 +134978,7 @@
     "pdf_x": 119.6,
     "pdf_y_end": 286.5,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Markova Crkva, Mionica",
+    "birth_place": "Ratkovac, Lajkovac",
     "occupation": "zemljoradnik",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 454.9,
@@ -148559,10 +148575,10 @@
     "soldier_id": "0002006264",
     "last_name": "Pavlović",
     "middle_name": "Nikodima",
-    "first_name": "Razmir",
+    "first_name": "Rozomir",
     "additional_info": "8. 12. 1919, Markova Crkva, Lajkovac, zemljoradnik, u NOB od 8. 10. 1944, intendantura",
     "fathers_name": "Nikodima",
-    "full_name": "Pavlović Nikodima Razmir",
+    "full_name": "Pavlović Nikodima Rozomir",
     "birth_year": "1919",
     "pdf_page": 788,
     "pdf_y": 358.4,
@@ -212358,7 +212374,7 @@
     "pdf_x": 130.2,
     "pdf_y_end": 500.2,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Markova Crkva, Lajkovac",
+    "birth_place": "Virovac, Mionica",
     "occupation": "zemljoradnik",
     "pdf_x_end": 465.3,
     "birth_date": "25.07.1926"
@@ -212934,7 +212950,7 @@
     "pdf_x": 130.4,
     "pdf_y_end": 468.7,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Smiljani",
+    "birth_place": "Smiljan",
     "occupation": "đak",
     "unit_detail": "4. bataljon",
     "pdf_x_end": 451.6,
@@ -213303,7 +213319,7 @@
     "pdf_x": 130.8,
     "pdf_y_end": 265.4,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Metak, Gospić",
+    "birth_place": "Medak, Gospić",
     "pdf_x_end": 421.7
   },
   {
@@ -213576,7 +213592,7 @@
     "pdf_x": 131.0,
     "pdf_y_end": 518.9,
     "pdf_file": "prva-licka-proleterska.pdf",
-    "birth_place": "Medek, Gospić",
+    "birth_place": "Medak, Gospić",
     "death_type": "poginuo",
     "death_date": "09.04.1944",
     "death_place": "Brotnja",
@@ -213591,7 +213607,7 @@
     "middle_name": "Busilavov",
     "first_name": "Nikola",
     "additional_info": "26. 3. 1915, Rijeka, trgovac, u NOB od 1. 11. 1944",
-    "fathers_name": "Busilavov",
+    "fathers_name": "Budislav",
     "full_name": "Uzelac Busilavov Nikola",
     "birth_year": "1915",
     "pdf_page": 891,

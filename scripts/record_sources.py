@@ -555,6 +555,13 @@ FAMILY_REASON = re.compile(r"\bfamil(?:y|ies)(?:'s)?\s*(?:\(|biography|report|le
                            r'\b(?:visitor\s+)?form\s+20\d\d-\d\d-\d\d|\bvisitor\s+form\b|'
                            r'\bgrand(?:son|daughter|child)\b|\bgreat-(?:nephew|niece|grand\w+)\b', re.I)
 # (not "the Zakrajšek family above it", "a Livno family", "the family nickname": a book's words, no family's report)
+# a family's own report, not a neighbour's or a reader's form: the card marks the rows it set (the user's choice of
+# 2026-11-23, `family_fields`)
+FAMILY_ONLY = re.compile(r"\bfamil(?:y|ies)(?:'s)?\s*(?:\(|biography|report|letter|papers|says|said|sent|wrote|names)|"
+                         r'\bgrand(?:son|daughter|child)\b|\bgreat-(?:nephew|niece|grand\w+)\b', re.I)
+# the fields each card row shows: only these are marked
+MARKED_FIELDS = {'fathers_name', 'middle_name', 'mothers_name', 'birth_year', 'birth_date', 'birth_place', 'ethnicity',
+                 'occupation', 'unit_detail', 'rank', 'party', 'death_type', 'death_date', 'death_place'}
 
 
 def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = frozenset()) -> dict:

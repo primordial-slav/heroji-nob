@@ -17,7 +17,8 @@ export interface FamilyContribution {
   photoFrom?: string    // where the portrait comes from when not from the sender: 'Vikipedija' (credited under it)
   text?: string         // the story, as sent (lightly edited for spelling only)
   pieces?: FamilyPiece[] // more photos and documents from the same sender
-  from: string          // credit line, e.g. 'Ana Petrović, unuka'
+  from: string          // credit line, e.g. 'Ana Petrović, unuka'; 'iz porodične arhive' when the sender did not allow a name (no
+                        // initial, no relation either: the user's rule, 2026-11-23)
   date: string          // when it was sent, 'YYYY-MM'
   origin?: 'facebook'   // not from the family but from a public Facebook page: the heading says so, `from` names the page
     | 'visitor'         // or from a visitor who is not of the family (a researcher, an anonymous report): "Od posetilaca"
@@ -133,7 +134,7 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122917644', // Kovačević Pajov Dušan of Osječenica (Nikšić), Borci drugih jedinica
     text: 'Rođen 1923. u Osječenici kod Nikšića, a poginuo pri proboju Sremskog fronta, početkom aprila 1945. godine.',
-    from: 'nećak',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
   {
@@ -162,7 +163,7 @@ export const familyContributions: FamilyContribution[] = [
     photoCaption: 'U uniformi',
     // the grandson's forms of 11:51 and 16:23 (the wound and Bari), lightly edited for spelling
     text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika. Tijekom NOB-a teško je ranjen i prebačen u Bari (Italija), u savezničku bolnicu. Kasnije se vratio u borbu.',
-    from: '', // the grandson's later forms (14:21, 16:23) did not allow his name
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
   {
@@ -183,7 +184,7 @@ export const familyContributions: FamilyContribution[] = [
       pages: ['0122959608-3.jpg', '0122959608-4.jpg', '0122959608-5.jpg', '0122959608-6.jpg'],
       caption: 'Njegova ratna sećanja: „Postao sam proleterski borac” (u zborniku Bosanski Petrovac u NOB, knj. V, 1974) i „Na pragu Srbije”',
     }],
-    from: '',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
   {
@@ -411,6 +412,67 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0135001012', // Eftimovski Božo Kiro of Sušica (Gostivar), census part Makedonija
     text: 'Роден е 1923 година во село Сушица. Потекнува од многучлено сиромашно семејство. Уште како дете останал сирак без татко, па бил присилен да оди на печалба во Белград, каде што работи како општ работник. Во слободните мигови постојано е во друштво со напредни работници и младинци, што му дава можност да се запознае со идеите на напредното работничко движење. Во Белград останал до капитулацијата на стара Југославија. Веднаш по капитулацијата се враќа во своето родно место, се приклучува во напредното движење и станал член на Месниот народноослободителен одбор. Бил член и на партискиот актив на селото. Во единиците на Народноослободителната војска стапил доброволно во мај 1944 година, како борец во составот на Првата македонско-косовска бригада. Со својата единица учествувал во сите борби и акции. Загинал на 28 август 1944 година во борбите за ослободување на Кичево. Неговиот брат Ѓоре (роден 1925 година, исто така од Сушица) во јуни 1943 година стапил во Космајскиот народноослободителен одред. Во една акција во 1944 година во Белград е заробен од германскиот окупатор и подоцна стрелан во Бањица. За него постои спомен-обележје на гробиштата на ослободителите на Белград.',
     from: 'nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0021004669', // Spasojević Miloša Milovan of Rušanj, 4. srpska: his grandson's form of 2026-11-22 12:43
+    text: 'Preminuo je 24. decembra 1998. u Rušnju, gde je i sahranjen. Iza sebe je ostavio dve ćerke, četvoro unučadi i osmoro praunučadi.',
+    from: 'B. Nikolić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0018001538', // Sekulić Mane Sava, 2. vojvođanska (the book prints his name alone): a cousin's form of
+    // 2026-11-22 17:36; the census's Sekulić Mane Savo of Žarkovac is the same man
+    text: 'Sava Sekulić je rođen u Dobrincima, srez Ruma, 1922. godine, od oca Mane Sekulića iz sela Tobolić, kotar Slunj, i majke Milije Trbojević iz sela Bugar, kotar Bihać. Od sredine 1920. do početka Drugog svetskog rata Sekulići su živeli u selu Žarkovac kod Rume. Sava se u NOB uključio zajedno sa mlađim bratom Milanom početkom 1943. i poginuo je, prema nekim podacima, 6. maja 1945. kod sela Drljanovci blizu Bjelovara, u završnim operacijama za oslobođenje zemlje. Sused Rade Devrnja se sećao da su u izbeglištvu u Bogatiću, prilikom konačnog oslobođenja 1944, on i otac videli Savu kao člana neke vojvođanske partizanske jedinice i da je Sava viknuo Radinom ocu: „Čika Milane, sloboda, vratićemo se mi u naš Žarkovac!“',
+    from: 'J. Eror, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0136028645', // Kojić Ilije Miodrag of Brusnik, census part Srbija: his grandson's form of 2026-11-22 12:35,
+    // in English (translated); his father's emigration, his brother's death and who may have killed him left out
+    // (about others, a guess); the wedding photo is colourised
+    pieces: [{ kind: 'photo', file: '0136028645-1.jpg', caption: 'Miodrag i Ružica na dan venčanja' }],
+    text: 'Otac mu je bio Ilija, majka Milka, rođena Stojanović, a supruga Ružica, rođena Milošević, svi iz Brusnika. Ćerke Miroslava i Slobodanka bile su premale da ga zapamte. Ružica je išla kod Moše Pijade da traži pomoć da se pronađu Miodragovi posmrtni ostaci u istočnoj Bosni. Primio ju je na tri minuta i obećao da će pomoći, ali do toga nikad nije došlo.',
+    from: 'M. Kojadinović, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138008216', // Ćosić Ilije Bogdan of Bingula, census part Vojvodina: his brother's grandson's form of
+    // 2026-11-22 18:54 with a wartime portrait, in his words; the error report of 18:50 (no sender) is the visitors' note
+    // below (the user, 2026-11-23: the family's apart from the rest)
+    photo: '0138008216-1.jpg',
+    text: 'Bio je komesar i ađutant Peka Dapčevića na rejonu sremskog fronta kod Bingule. Ranjavan je tri puta: prvi put kod Aranđelovca, zatim kod Šarengrada i treći put kod Sesveta kod Zagreba.',
+    from: 'B. Kanja, pranećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138008216', // the same man: the error report of 2026-11-22 18:50, no sender; its words
+    text: 'Nije rođen u Kuzminu nego u Binguli. Bio je poručnik, politički komesar. Preminuo je 1947. godine. Bio je u pokretu otpora u Zemunu, otišao je u Posavski odred, iz Posavskog odreda u 2. šumadijsku brigadu, koja je posle preformirana u 21. srpsku brigadu, a zatim je prešao u 31. srpsku brigadu 21. divizije.',
+    from: 'Ispravka po prijavi',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138006914', // Bućko J Milan of Bingula, census part Vojvodina: the error report of 2026-11-22 18:58, no sender
+    // (fell by Grgurevci, a vodnik: rows by patch_record); the book it names, at the user's word (/pregled, 2026-11-23)
+    text: 'U knjizi „Mladost slobodi darovana” o njemu je priča „Miner Vanja”.',
+    from: 'Ispravka po prijavi',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0054003542', // Zrnić Simo of Turjak, 12. krajiška: his great-grandson's form of 2026-11-22 21:02 (no name for the card); the
+    // prison death after the war shown at the user's word (2026-11-22)
+    text: 'Bio je prvoborac. Posle rata umro je u zatvoru u Zenici; grobno mesto nije poznato.', // the user's own wording (/pregled, 2026-11-23)
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0038000017', // Aničić Ivana Dragoljub of Nepričava, 8. crnogorska: his niece's account through a man of
+    // the next village (form of 2026-11-22 18:30, no name for the card); the user, 2026-11-22: the family's father and
+    // fate on the card, the books' "poginuo kod Račinovaca" in their references
+    text: 'Porodica pamti da mu je otac bio Ivan i da nije poginuo u ratu. Dugo se borio sa administracijom da dokaže da je greškom zaveden kao poginuli borac.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
 ]

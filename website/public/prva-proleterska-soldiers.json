@@ -131675,8 +131675,24 @@
           ]
         ],
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025016715",
+        "name": "Ilić (Dragoslav) Živorad",
+        "additional_info": "rođen 1928, Nepričava (Lajkovac). Srbin, poginuo 1944. u NOBu, Šarengrad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=676",
+        "source_page": 676,
+        "ref_book": "zrtve-rata-1964-srb"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Šarengrad, Vukovar"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0001003814",
@@ -159353,6 +159369,14 @@
         "pdf_x_end": 413.2,
         "pdf_y_end": 518.6,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025016706",
+        "name": "Jovanović (Milorad) Stanko",
+        "additional_info": "rođen 1921, Markova Crkva (Lajkovac). Srbin, poginuo 1945. u NOBu, Zagreb",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=676",
+        "source_page": 676,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ]
   },
@@ -224791,12 +224815,12 @@
   },
   {
     "soldier_id": "0001006516",
-    "last_name": "Marijanović",
+    "last_name": "Marjanović",
     "middle_name": "Stojadina",
-    "first_name": "Savo",
+    "first_name": "Sava",
     "additional_info": "1924, Markova Crkva, Lajkovac, Srbija, Srbin, zemljoradnik, u NOB od septembra 1944, u brigadi od septembra 1944, I bataljon, borac, poginuo 05. 04. 1945, Šarengrad, Vukovar",
     "fathers_name": "Stojadin",
-    "full_name": "Marijanović Stojadina Savo",
+    "full_name": "Marjanović Stojadina Sava",
     "birth_year": "1924",
     "pdf_page": 192,
     "pdf_y": 58.6,
@@ -224814,6 +224838,28 @@
     "pdf_x_end": 372.1,
     "other_sources": [
       {
+        "soldier_id": "0001501192",
+        "name": "Maranović Savo",
+        "additional_info": "u bataljon stupio 1944. godine; rođen Markova Crkva, Valjevo, SRS, zemljoradnik, u NOB od septembra 1944, poginuo 5. aprila 1945. kod Šarengrada, Srem.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 42,
+        "pdf_x": 187.4,
+        "pdf_y": 593.8,
+        "pdf_x_end": 545.6,
+        "pdf_y_end": 610.2
+      },
+      {
+        "soldier_id": "0001501225",
+        "name": "Marjanović Savo",
+        "additional_info": "u bataljon stupio 1944. godine; rođen 1924, Markova Crkva, Valjevo, SRS, u NOB od 15. septembra 1944, poginuo 5. aprila 1945. kod Šarengrada.",
+        "pdf_file": "crnogorski-bataljon.pdf",
+        "pdf_page": 43,
+        "pdf_x": 51.0,
+        "pdf_y": 293.8,
+        "pdf_x_end": 409.5,
+        "pdf_y_end": 310.2
+      },
+      {
         "soldier_id": "9014000550",
         "name": "Marijanović S. Savo",
         "additional_info": "Poginuli borci Prve proleterske brigade: 551. Marijanović S. Savo.",
@@ -224824,6 +224870,14 @@
         "pdf_x_end": 602.2,
         "pdf_y_end": 489.1,
         "ref_book": "sremski-front-poginuli"
+      },
+      {
+        "soldier_id": "9025016707",
+        "name": "Marjanović (Stojadin) Sava",
+        "additional_info": "rođen 1925, Markova Crkva (Lajkovac). Srbin, poginuo 1945. u NOBu, Šarengrad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=676",
+        "source_page": 676,
+        "ref_book": "zrtve-rata-1964-srb"
       }
     ]
   },
@@ -246258,13 +246312,13 @@
     "additional_info": "1928, Miškovci, Derventa, BiH, Srbin, zemljoradnik, u NOB od januara 1943, u brigadi od januara 1943, borac, poginuo 1945, Komarice, Doboj",
     "fathers_name": "Gojko",
     "full_name": "Mihić Gojka Maksim",
-    "birth_year": "1928",
+    "birth_year": "1926",
     "pdf_page": 237,
     "pdf_y": 398.9,
     "pdf_x": 46.3,
     "pdf_y_end": 430.0,
     "pdf_file": "prva-proleterska-2.pdf",
-    "birth_place": "Miškovci, Derventa, BiH",
+    "birth_place": "Čavaš, Ravno",
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
@@ -246301,11 +246355,10 @@
         "unit_file": "14-srednjobosanska-soldiers.json"
       }
     ],
-    "variants": {
-      "born": [
-        "1926"
-      ]
-    }
+    "family_fields": [
+      "birth_place",
+      "birth_year"
+    ]
   },
   {
     "soldier_id": "0001007130",
@@ -246718,12 +246771,12 @@
   },
   {
     "soldier_id": "0001007144",
-    "last_name": "Mijajlović",
-    "middle_name": "",
+    "last_name": "Mijailović",
+    "middle_name": "Dragutina",
     "first_name": "Živojin",
     "additional_info": "1922, Markova Crkva, Lajkovac, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, II bataljon, borac",
-    "fathers_name": "",
-    "full_name": "Mijajlović Živojin",
+    "fathers_name": "Dragutin",
+    "full_name": "Mijailović Dragutina Živojin",
     "birth_year": "1922",
     "pdf_page": 238,
     "pdf_y": 440.2,
@@ -441420,7 +441473,7 @@
     "pdf_x": 61.9,
     "pdf_y_end": 209.3,
     "pdf_file": "prva-proleterska-3.pdf",
-    "birth_place": "S. Pročitelj, Lika",
+    "birth_place": "Počitelj, Lika",
     "ethnicity": "Srbin",
     "occupation": "trgovački pomoćnik",
     "rank": "borac",
@@ -441441,7 +441494,7 @@
     "pdf_x": 62.1,
     "pdf_y_end": 258.0,
     "pdf_file": "prva-proleterska-3.pdf",
-    "birth_place": "Miostran, Cazin, BiH",
+    "birth_place": "Miostrah, Cazin",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
     "rank": "referent saniteta baterije",
@@ -443390,12 +443443,12 @@
   },
   {
     "soldier_id": "0001012932",
-    "last_name": "Vasić",
+    "last_name": "Vesić",
     "middle_name": "",
     "first_name": "Radovan",
     "additional_info": "1925, Virovac, Mionica, Srbija, Srbin, zemljoradnik, u NOB od oktobra 1944, u brigadi od oktobra 1944, II bataljon, borac",
     "fathers_name": "",
-    "full_name": "Vasić Radovan",
+    "full_name": "Vesić Radovan",
     "birth_year": "1925",
     "pdf_page": 314,
     "pdf_y": 417.9,
@@ -443407,7 +443460,27 @@
     "occupation": "zemljoradnik",
     "rank": "borac",
     "unit_detail": "2. bataljon",
-    "pdf_x_end": 370.4
+    "pdf_x_end": 370.4,
+    "other_sources": [
+      {
+        "soldier_id": "0082003677",
+        "name": "Vesić Radovan",
+        "additional_info": "1924, Virovac, kolubarski srez, zemljoradnik, borac. V'EZIĆ Budimir, 1923, Borovica, kolubarski srez, zemljoradnik, borac.",
+        "pdf_file": "5-vojvodjanska.pdf",
+        "pdf_page": 145,
+        "pdf_x": 65.6,
+        "pdf_y": 228.6,
+        "pdf_x_end": 346.4,
+        "pdf_y_end": 247.2,
+        "rank": "borac",
+        "unit_file": "5-vojvodjanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    }
   },
   {
     "soldier_id": "0001012933",
@@ -533236,41 +533309,6 @@
     "pdf_x_end": 542.5
   },
   {
-    "last_name": "Maranović",
-    "middle_name": "",
-    "first_name": "Savo",
-    "fathers_name": "",
-    "full_name": "Maranović Savo",
-    "additional_info": "u bataljon stupio 1944. godine; rođen Markova Crkva, Valjevo, SRS, zemljoradnik, u NOB od septembra 1944, poginuo 5. aprila 1945. kod Šarengrada, Srem.",
-    "birth_year": "",
-    "pdf_page": 42,
-    "pdf_y": 593.8,
-    "pdf_x": 187.4,
-    "pdf_y_end": 610.2,
-    "pdf_file": "crnogorski-bataljon.pdf",
-    "soldier_id": "0001501192",
-    "birth_place": "Markova Crkva, Valjevo",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "05.04.1945",
-    "death_place": "Šarengrad, Srem",
-    "pdf_x_end": 545.6,
-    "other_sources": [
-      {
-        "soldier_id": "9014000543",
-        "name": "Maranović Savo",
-        "additional_info": "Poginuli borci Prve proleterske brigade: 544. Maranović Savo.",
-        "pdf_file": "sremski-front-poginuli.pdf",
-        "pdf_page": 4,
-        "pdf_x": 451.9,
-        "pdf_y": 460.1,
-        "pdf_x_end": 525.4,
-        "pdf_y_end": 469.6,
-        "ref_book": "sremski-front-poginuli"
-      }
-    ]
-  },
-  {
     "last_name": "Marasović",
     "middle_name": "Mate",
     "first_name": "Luka",
@@ -533455,26 +533493,6 @@
     "death_type": "poginuo",
     "death_date": "05.1945",
     "pdf_x_end": 555.3
-  },
-  {
-    "last_name": "Marjanović",
-    "middle_name": "",
-    "first_name": "Savo",
-    "fathers_name": "",
-    "full_name": "Marjanović Savo",
-    "additional_info": "u bataljon stupio 1944. godine; rođen 1924, Markova Crkva, Valjevo, SRS, u NOB od 15. septembra 1944, poginuo 5. aprila 1945. kod Šarengrada.",
-    "birth_year": "1924",
-    "pdf_page": 43,
-    "pdf_y": 293.8,
-    "pdf_x": 51.0,
-    "pdf_y_end": 310.2,
-    "pdf_file": "crnogorski-bataljon.pdf",
-    "soldier_id": "0001501225",
-    "birth_place": "Markova Crkva, Valjevo",
-    "death_type": "poginuo",
-    "death_date": "05.04.1945",
-    "death_place": "Šarengrad",
-    "pdf_x_end": 409.5
   },
   {
     "last_name": "Marković",

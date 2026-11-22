@@ -212864,6 +212864,20 @@
     "birth_place": "Binovce, Surdulica"
   },
   {
+    "soldier_id": "0122961364",
+    "last_name": "Cvetković",
+    "middle_name": "",
+    "first_name": "Milen",
+    "fathers_name": "Dušan",
+    "full_name": "Cvetković Milen",
+    "additional_info": "rođen 1927, Modrica, Kruševac, od oca Dušana. Učesnik NOB-a od 1941, učesnik borbi za očuvanje Užičke republike. Umro 1953, sahranjen na Starom groblju u Kruševcu.",
+    "birth_year": "1927",
+    "source_url": "porodica:9990000010",
+    "birth_place": "Modrica, Kruševac",
+    "death_type": "umro",
+    "death_date": "1953"
+  },
+  {
     "soldier_id": "0122954381",
     "last_name": "Cvetković",
     "middle_name": "Dragutina",
@@ -320630,24 +320644,6 @@
     "death_place": "Zagarač"
   },
   {
-    "soldier_id": "0122130469",
-    "last_name": "Erar",
-    "middle_name": "",
-    "first_name": "Jovo",
-    "fathers_name": "",
-    "full_name": "Erar Jovo",
-    "additional_info": "Prva krajiška udarna brigada, Brčko: Jovo Erar.",
-    "birth_year": "",
-    "pdf_file": "u-rovovima-srema-poginuli.pdf",
-    "pdf_page": 5,
-    "pdf_x": 297.9,
-    "pdf_y": 292.2,
-    "pdf_x_end": 346.4,
-    "pdf_y_end": 301.9,
-    "death_type": "poginuo",
-    "death_place": "Brčko"
-  },
-  {
     "soldier_id": "0122900785",
     "last_name": "Erario",
     "middle_name": "",
@@ -322747,12 +322743,29 @@
     "pdf_y": 146.2,
     "pdf_x_end": 188.6,
     "pdf_y_end": 181.3,
-    "birth_place": "Svinica",
+    "birth_place": "Svinica Krstinjska, Vonjić",
     "ethnicity": "Srbin",
-    "occupation": "seljak",
     "death_type": "poginuo",
     "death_date": "04.1943",
     "death_place": "Crna Gora",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021052903",
+        "name": "Eror Adam",
+        "additional_info": "rođen 1911, Svinica Krstinjska (Vonjić). Srbin, poginuo 1943. u NOBu, Crna gora",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2543",
+        "source_page": 2543
+      }
+    ],
+    "manual_fields": [
+      "last_name"
+    ],
+    "occupation": "seljak",
     "rank": "borac"
   },
   {
@@ -322979,11 +322992,29 @@
     "pdf_y": 172.1,
     "pdf_x_end": 191.9,
     "pdf_y_end": 207.3,
-    "birth_place": "Klokoč",
+    "birth_place": "Klokoč, Vonjić",
     "ethnicity": "Srbin",
-    "occupation": "seljak",
     "death_type": "umro",
-    "death_date": "05.05.1943"
+    "death_date": "05.05.1943",
+    "death_place": "Klokoč",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021052126",
+        "name": "Eror Miloš",
+        "additional_info": "rođen 1909, Klokoč (Vonjić). Srbin, umro 1943. u NOBu, Klokoč",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2509",
+        "source_page": 2509
+      }
+    ],
+    "manual_fields": [
+      "last_name"
+    ],
+    "occupation": "seljak"
   },
   {
     "soldier_id": "0122946026",
@@ -356735,10 +356766,10 @@
   {
     "soldier_id": "0122923339",
     "last_name": "Gojčaj",
-    "middle_name": "Ćonov",
+    "middle_name": "Đonov",
     "first_name": "Ljuca",
-    "fathers_name": "Ćonov",
-    "full_name": "Gojčaj Ćonov Ljuca",
+    "fathers_name": "Đon",
+    "full_name": "Gojčaj Đonov Ljuca",
     "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1896; mjesto rođenja Skorać; godina smrti 1944; mjesto pogibije Dečić Tuzi",
     "birth_year": "1896",
     "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
@@ -356750,7 +356781,11 @@
     "birth_place": "Skorać, Podgorica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Dečić Tuzi"
+    "death_place": "Dečić Tuzi",
+    "manual_fields": [
+      "fathers_name",
+      "middle_name"
+    ]
   },
   {
     "soldier_id": "0122930187",
@@ -488186,9 +488221,9 @@
     "soldier_id": "0122923528",
     "last_name": "Kajošević",
     "middle_name": "Omerov",
-    "first_name": "Šsrif",
+    "first_name": "Šerif",
     "fathers_name": "Omer",
-    "full_name": "Kajošević Omerov Šsrif",
+    "full_name": "Kajošević Omerov Šerif",
     "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1926; mjesto rođenja Tuzi; godina smrti 1944; mjesto pogibije Ribnička Vrela",
     "birth_year": "1926",
     "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
@@ -488200,7 +488235,10 @@
     "birth_place": "Tuzi, Podgorica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Ribnička Vrela"
+    "death_place": "Ribnička Vrela",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122923527",
@@ -488217,10 +488255,20 @@
     "pdf_y": 262.1,
     "pdf_x_end": 452.2,
     "pdf_y_end": 271.3,
-    "birth_place": "Dinoši, Podgorica",
+    "birth_place": "Dinoša, Titograd",
+    "ethnicity": "Albanac",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Dinoši"
+    "death_place": "Dinoša",
+    "other_sources": [
+      {
+        "soldier_id": "9023006250",
+        "name": "Kajošević Zejnel",
+        "additional_info": "rođen 1915, Dinoša (Titograd). Šiptar, poginuo 1944. u NOBu, Dinoša",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=216",
+        "source_page": 216
+      }
+    ]
   },
   {
     "soldier_id": "0122931647",
@@ -614876,10 +614924,13 @@
     "pdf_y": 369.4,
     "pdf_x_end": 456.0,
     "pdf_y_end": 378.9,
-    "birth_place": "Tuzi, Šavnik",
+    "birth_place": "Tuzi, Podgorica",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Cetinje"
+    "death_place": "Cetinje",
+    "manual_fields": [
+      "birth_place"
+    ]
   },
   {
     "soldier_id": "0122919162",
@@ -847585,6 +847636,21 @@
     "rank": "borac"
   },
   {
+    "soldier_id": "0122961365",
+    "last_name": "Nišić",
+    "middle_name": "",
+    "first_name": "Rizah",
+    "fathers_name": "Džafer",
+    "full_name": "Nišić Rizah",
+    "additional_info": "rođen 1922, Živinice, od oca Džafera. Zamjenik komandira 2. čete drugog bataljona 16. muslimanske NOU brigade, u Tuzli oktobra 1943. Poslije demobilizacije 1953. nastanio se u Gračanici, gdje je i preminuo 2004.",
+    "birth_year": "1922",
+    "source_url": "porodica:9990000011",
+    "birth_place": "Živinice",
+    "death_type": "umro",
+    "rank": "zamjenik komandira čete",
+    "unit_detail": "2. četa, 16. muslimanska brigada"
+  },
+  {
     "soldier_id": "0122909791",
     "last_name": "Nišić",
     "middle_name": "Save",
@@ -872452,8 +872518,19 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00010246&pg_seq=481",
     "source_page": 477,
+    "other_sources": [
+      {
+        "soldier_id": "9990000012",
+        "name": "Orlić Marka Đuro",
+        "additional_info": "Đuro Orlić, sin Marka, bio je nosilac Partizanske spomenice 1941. Posle rata službovao u Nišu i Ljubljani. Umro 1982. u Ljubljani.",
+        "source_url": "porodica:9990000012"
+      }
+    ],
     "birth_place": "Vodoteč",
-    "rank": "pukovnik"
+    "rank": "pukovnik",
+    "death_type": "umro",
+    "death_date": "1982",
+    "death_place": "Ljubljana"
   },
   {
     "soldier_id": "0122959246",
@@ -1266238,9 +1266315,12 @@
         "source_page": 511
       }
     ],
+    "birth_place": "Zavođe",
+    "manual_fields": [
+      "birth_place"
+    ],
     "ethnicity": "Srbin",
-    "occupation": "seljak",
-    "birth_place": "Zavode"
+    "occupation": "seljak"
   },
   {
     "soldier_id": "0122944506",
@@ -1267584,7 +1267664,7 @@
     "pdf_y": 652.5,
     "pdf_x_end": 527.6,
     "pdf_y_end": 661.5,
-    "birth_place": "Veliki Badić, Bosanska Krupa",
+    "birth_place": "Veliki Radić, Bosanska Krupa",
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1942",
@@ -1267597,6 +1267677,9 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=798",
         "source_page": 798
       }
+    ],
+    "manual_fields": [
+      "birth_place"
     ]
   },
   {
@@ -1268351,9 +1268434,12 @@
         "source_page": 511
       }
     ],
+    "birth_place": "Zavođe",
+    "manual_fields": [
+      "birth_place"
+    ],
     "ethnicity": "Srbin",
-    "occupation": "seljak",
-    "birth_place": "Zavode"
+    "occupation": "seljak"
   },
   {
     "soldier_id": "0122946514",
