@@ -840,6 +840,32 @@ def unit_registry() -> dict[str, str]:
     return json.loads(UNIT_IDS.read_text(encoding='utf-8')) if UNIT_IDS.exists() else {}
 
 
+def census_ids_on_disk() -> set[str]:
+    """The IDs of the census parts' records as the files on disk hold them (read as text: the parts are large)"""
+    out = set()
+    for code in CENSUS_VOLUMES.values():
+        path = unit_file(code)
+        if path.exists():
+            out |= set(re.findall(r'"soldier_id": "(\d{10})"', path.read_text(encoding='utf-8')))
+    return out
+
+
+def census_redirects(old_ids: set[str], new_ids: set[str], previous: dict[str, str], census_entry: dict[str, str],
+                     holder_of) -> dict[str, str]:
+    """Old census record -> the record that holds the man's entry now, for each census record that has left its part:
+    those on disk less those written now, and the census IDs the redirects had before (followed to the entry's record
+    of today; dropped where the census record is back or no record holds the entry)"""
+    codes = {f'{c:04d}' for c in CENSUS_VOLUMES.values()}
+    out = {}
+    for rid in sorted((old_ids - new_ids) | {k for k in previous if k[:4] in codes}):
+        if rid in new_ids or rid not in census_entry:
+            continue
+        to = holder_of(census_entry[rid])
+        if to:
+            out[rid] = to
+    return out
+
+
 def unit_codes() -> set[int]:
     """the units that hold men this script gave them"""
     return {int(v[:4]) for v in unit_registry().values()}
@@ -907,7 +933,11 @@ def main():
     corrections = json.loads((ROOT / 'corrections.json').read_text(encoding='utf-8'))
     # an entry a record of a unit took (not one of this unit's: those come and go with this script)
     ostali = {f'{c:04d}' for c in OSTALI_CODES}
-    taken = {c['ref_id'] for c in corrections if c['action'] == 'reference' and c['soldier_id'][:4] not in ostali}
+    holders = defaultdict(set)                                # the entry -> the records of units that hold it
+    for c in corrections:
+        if c['action'] == 'reference' and c['soldier_id'][:4] not in ostali:
+            holders[c['ref_id']].add(c['soldier_id'])
+    taken = set(holders)
     entries = []
     for book, es in books().items():
         # the census's volumes are one book, its volume kept for the part of Ostali borci its men go to
@@ -1192,6 +1222,29 @@ def main():
         print(f"  {code}: {len(parts[code])} records")
     print(f'{sum(1 for r in parts[CODE] if int(r["soldier_id"][4:]) >= FIRST_NEW)} records of {CODE} with a new ID')
     if write:
+        # a census record that leaves its part (its entry joined a record of 122 or went to a unit's record) still
+        # opens the man's card: its ID -> the record that holds his entry, read before the parts are written over
+        # (2026-11-22: /borac/0133000764 had gone nowhere since the Poreklo books took 117 and 111 such men)
+        present, moved_now = {r['soldier_id'] for r in parts[CODE]}, {r['soldier_id'] for v in to_units.values() for r in v}
+        with_of = {m['soldier_id']: m['_with'] for m in on_site}
+
+        def holder_of(e: str) -> str | None:
+            held = sorted(holders.get(e, ()))
+            if held:
+                return held[0]
+            if unit_ids.get(e) in moved_now:
+                return unit_ids[e]
+            if ids.get(e) in present:
+                return ids[e]
+            held = sorted(r for w in with_of.get(e, ()) for r in holders.get(w, ()))
+            return held[0] if held else None
+        census_moved = census_redirects(
+            old_ids=census_ids_on_disk(),
+            new_ids={r['soldier_id'] for code in CENSUS_VOLUMES.values() for r in parts.get(code, [])},
+            previous=json.loads(MOVED.read_text(encoding='utf-8')) if MOVED.exists() else {},
+            census_entry={f"{CENSUS_VOLUMES[m['_vol']]:04d}{m['soldier_id'][4:]}": m['soldier_id'] for m in entries if m['_vol']},
+            holder_of=holder_of)
+        print(f'{len(census_moved)} census records that left their part redirect to the record holding the man')
         for code in [CODE, *CENSUS_VOLUMES.values()]:
             path = ROOT / 'website' / 'public' / BRIGADE_CONFIGS[code]['json_file']
             write_text(path, json.dumps(parts.get(code, []), ensure_ascii=False, indent=2))
@@ -1207,9 +1260,10 @@ def main():
         print(f'Written {len(set(to_units) | unit_codes())} unit files')
         write_text(UNIT_IDS, json.dumps(dict(sorted(unit_ids.items())), ensure_ascii=False, indent=0))
         print('Written', UNIT_IDS)
-        # his old address still finds him: old 122 ID -> his record's (website/scripts/prepare-data.ts writes it into
-        # 122's own where-files, and /borac/<old> answers with the new one)
-        write_text(MOVED, json.dumps({**MERGED_IDS, **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}},
+        # his old address still finds him: old 122 or census ID -> his record's (website/scripts/prepare-data.ts writes
+        # each into the where-files of the part that had it, and /borac/<old> answers with the new one)
+        write_text(MOVED, json.dumps({**census_moved, **MERGED_IDS,
+                                      **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}},
                                      ensure_ascii=False, indent=0, sort_keys=True))
         print('Written', MOVED)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the

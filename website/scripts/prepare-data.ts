@@ -112,9 +112,11 @@ function fileHash(manifest: Manifest, seen: Manifest['files'], relative: string)
 }
 
 const unitFile = (unit: Unit) => path.join('public', unit.dataFile)
-// the men Borci drugih jedinica gave to their units (data-extraction/build_ostali_borci.py, 2026-11-20): their old id ->
-// their record's id, so an old link still finds him; read with that unit's shards (writeWhere)
+// the men Borci drugih jedinica gave to their units (data-extraction/build_ostali_borci.py, 2026-11-20), and the census
+// records that left their part for another record (2026-11-22): their old id -> their record's id, so an old link still
+// finds him; read with the shards of the part that had the old id (writeWhere)
 const OSTALI_UNIT = 'ostali-borci'
+const isOstali = (unit: Unit) => unit.id === OSTALI_UNIT || unit.id.startsWith(`${OSTALI_UNIT}-`)
 const MOVED_FILE = path.join('data', 'moved-ids.json')
 const movedIds = (): Record<string, string> =>
   fs.existsSync(path.join(root, MOVED_FILE)) ? JSON.parse(fs.readFileSync(path.join(root, MOVED_FILE), 'utf8')) : {}
@@ -175,13 +177,14 @@ function writeWhere(unit: Unit, soldiers: Soldier[]) {
       }
     }
   })
-  // a man of Borci drugih jedinica now a record of his unit: his old id gives the new one (the address answers only
-  // with it, a 308, so no slice of the other unit is named here)
-  if (unit.id === OSTALI_UNIT) for (const [old, now] of Object.entries(movedIds())) put(old, [0, now])
+  // a man of Borci drugih jedinica or of a census part now on another record (his unit's, or one of 122 his entry
+  // joined): his old id gives the new one, in the where-files of the part that had it (the address answers only with
+  // it, a 308, so no slice of the other unit is named here)
+  const codes = new Set(soldiers.map((s) => s.soldier_id.slice(0, 4)))
+  if (isOstali(unit)) for (const [old, now] of Object.entries(movedIds())) if (codes.has(old.slice(0, 4))) put(old, [0, now])
   // a thousand ids of which none is left leave no file behind
   const dir = path.dirname(publicFile(wherePath('0000000')))
   fs.mkdirSync(dir, { recursive: true })
-  const codes = new Set(soldiers.map((s) => s.soldier_id.slice(0, 4)))
   for (const name of fs.readdirSync(dir)) {
     if (codes.has(name.slice(0, 4)) && !shards.has(name.slice(0, 7))) fs.rmSync(path.join(dir, name))
   }
@@ -319,7 +322,7 @@ async function main() {
     const seen: Manifest['files'] = {}
     const unitHash = (unit: Unit) => {
       const war = fileHash(manifest, seen, warEventsFile(unit))
-      const moved = unit.id === OSTALI_UNIT ? fileHash(manifest, seen, MOVED_FILE) : ''
+      const moved = isOstali(unit) ? fileHash(manifest, seen, MOVED_FILE) : ''
       return sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)), ...(war ? [':', war] : []),
         ...(moved ? [':', moved] : []))
     }
