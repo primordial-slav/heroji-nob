@@ -274,6 +274,10 @@ ONE_MAN = [
     # the Spomenica's "Risgova" (Bijelo Polje 76, the scan's т read as г) is Ristova: Bijelo Polje's 71, her father
     # Risto (a reader's report of 2026-11-22)
     ('9095002071', '9035002206', 'Bulatović Rista Milena of Štitari, born 1905, a political worker, fell 1944 at Lozna'),
+    # Crna Trava's list of the fallen (2026-11-22): its Nikolić B. Tihomir of Bistrica, killed at Niš in 1945 in the 12.
+    # brigade, is the census's Nikolić (Božil) Tihomir of Kozilo (Crna Trava), dead in 1944 in the military hospital of
+    # Niš; each lists one Tihomir Nikolić of Crna Trava (the rules had joined Crna Trava's to an Obrenovac man)
+    ('9125001262', '9025009722', 'Nikolić Božila Tihomir of Crna Trava, died at Niš in 1944 or 1945'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -283,6 +287,27 @@ MERGED_IDS = {
     # Bijelo Polje's records, joined to the Spomenica's (2026-11-22): the four Ćorović of Lozna and Ivanje, Bulatović Milena
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',
+    # the records the Poreklo books 9115-9128 joined to others (2026-11-22): a book's entry agreed with two records of
+    # one man; until then these lived in moved-ids.json alone, and a rebuild dropped them
+    '0122030023': '0122916895', '0122941004': '0122916895', '0122941137': '0122917515', '0122941177': '0122917637',
+    '0122941542': '0122917225', '0122954028': '0122917150', '0122030136': '0126900001',
+    '0122930284': '0122010961',   # Sotirović Velina Mirko: the two hero books' records, joined through Crna Trava's
+    '0122010673': '0122930277',   # Milenović Jeftimije Sinadin: the same
+    # the records whose man a unit's record holds through a Poreklo book's entry (the builder leaves their entries out,
+    # scripts/attach_left_out.py gives them to that record): his record there, each read against it (2026-11-22)
+    '0122924812': '0102000010',   # Bijelić Lukin Petar (1. bokeljska)
+    '0122941037': '0117000096', '0122030100': '0117000096', '0122917026': '0117000096',   # dr Bulajić Novice Jovan
+    '0122941034': '0040020093',   # Bulajić Božov Vlado (4. proleterska)
+    '0122924952': '0102000059',   # Kosić Markov Vojislav (1. bokeljska)
+    '0122917636': '0041010159',   # Kovačević Andrijina Bosa (5. proleterska)
+    '0122941172': '0041000581',   # Kovačević Spasoja Đorđo (5. proleterska; the 7. crnogorska's 0028000154 too)
+    '0122917669': '0125000367',   # Kovačević Petrov Radosav (Mostarski bataljon, its Radoslav)
+    '0122917670': '0001005446',   # Kovačević Stevanov Radosav (Prva proleterska, its Radomir "Rašo")
+    '0122958866': '0102012633',   # Tomašević Novaka Simo (1. bokeljska; Sutorina's footnote names the Kruševice list)
+    '0122941540': '0125000708', '0122917119': '0125000708',   # Vujačić Ilije Simo (Mostarski bataljon)
+    '0122941528': '0001013391',   # Vujičić Mila Jakov (Prva proleterska)
+    '0122917135': '0041001335',   # Vujičić Ristov Krsto (5. proleterska)
+    '0122941526': '0041001338',   # Vujičić Ristov Vaso (5. proleterska)
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
@@ -294,6 +319,23 @@ TWO_MEN = [
                                  'his nephew wrote the site) is not the census\'s Kovačević (Pajo) Dušan of Brestica '
                                  '(Mojkovac), born 1922, dead of wounds in Zagreb'),
     ('9023003762', '9089000148', 'the same, against Revolucionarno Grahovo\'s entry of the Osječenica man'),
+    # Crna Trava's lists give a father's initial, the year and his village; the rules joined them to namesakes of other
+    # lands (2026-11-22, each read against the census, which names one man of the name in Crna Trava or none)
+    ('9125000003', '9025000942', 'the narodni heroj Pavlović Ratko-Ćićko of Berilje (Prokuplje), fallen at Preslap in '
+                                 '1943, is not the census\'s Pavlović (Stanko) Ratko of Trnjane (Aleksinac), killed at '
+                                 'Požega in 1944; his census entry is Pavlović (Veljko) Ratko of Berilje'),
+    ('9125001016', '9022031803', 'Crna Trava\'s Ivanović S. Dušan, dead at Belgrade in 1944, is not the census\'s Ivanović '
+                                 '(Stevan) Dušan of Razboj Župski (Srbac), killed at Banja Luka'),
+    ('9125001067', '9025017281', 'Crna Trava\'s Ristić S. Svetozar, killed at Crna Trava in 1944, is not the census\'s '
+                                 'Ristić (Stojan) Svetozar of Buvce (Lebane), killed at Leskovac'),
+    ('9125001085', '9080000985', 'Crna Trava\'s Stojanović V. Radomir, killed at Crna Trava in 1945, is not Stojanović '
+                                 'Vaska Radomir of Šipačno (Nikšić), killed at Trnovo'),
+    ('9125001085', '9023004516', 'the same, against the census\'s entry of the Šipačno man'),
+    ('9125001262', '9025023258', 'Crna Trava\'s Nikolić B. Tihomir is not the census\'s Nikolić (Bogosav) Tihomir of '
+                                 'Stubline (Obrenovac)'),
+    ('9118000087', '9022020829', 'Savić Miloša Savo of Eminovo Selo (Duvno), killed at Travnik in 1944, is not the '
+                                 'census\'s Savić (Miloš) Savo of Kosjerovo (Laktaši), killed at Doboj; his census entry is '
+                                 'Eminovo Selo\'s'),
 ]
 TWO_MEN_PAIRS = {frozenset(p[:2]) for p in TWO_MEN}
 
@@ -346,6 +388,9 @@ BORN_IN_NOT_HIS = {'moste-polje-spomenica-1941'}
 # entry names, or '' where the census's place stands (the same place garbled: "kod Njubovije", "u Hraliji"; or no place:
 # a man's name, "u Markosovim partizanima", "na putu za Dalmaciju"). His entry stays as printed.
 DEATH_PLACE_READS = {
+    # Sotirović Velina Mirko, the narodni heroj: Crna Trava's list prints "Duga Luka", the census "Duga l., V. Banja"
+    # (2026-11-22, when his census entry joined his record)
+    '0122010961': 'Duga Luka',
     # the census's place: his entry names it garbled, or names no place
     '0122925609': '', '0122926849': '', '0122916381': '', '0122927195': '', '0122010645': '', '0122915799': '',
     '0122927049': '', '0122930320': '', '0122906239': '', '0122906338': '', '0122925180': '', '0122940823': '',

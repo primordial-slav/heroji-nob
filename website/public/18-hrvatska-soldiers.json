@@ -22295,7 +22295,19 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=408",
         "source_page": 404,
         "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014381",
+        "name": "Ljubojević (Jovo) Stevo",
+        "additional_info": "rođen 1915, Podnovlje (Doboj). Srbin, poginuo 1944. u NOBu, Krivaja ozren",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1253",
+        "source_page": 1253,
+        "ref_book": "zrtve-rata-1964-bih"
       }
+    ],
+    "death_place": "Krivaja ozren",
+    "borrowed": [
+      "death_place"
     ]
   },
   {
@@ -37395,7 +37407,7 @@
     "fathers_name": "Jovan",
     "full_name": "Ristić Jovana Dušan",
     "additional_info": "rođen u Bosanskom Suhom Polju, Doboj, SRBiH. Srbin, zemljoradnik. U NOB-u stupio 23. 8. 1941. godine, au Brigadu 15. januara 1944. godine, politički komesar 4. bataljona. Član KPJ od 10. 10. 1943. godine. Poginuo u Čeliću, Lopare, 13. 11. 1944. godine.",
-    "birth_year": "",
+    "birth_year": "1921",
     "pdf_page": 87,
     "pdf_y": 397.0,
     "pdf_x": 129.7,
@@ -37431,9 +37443,28 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=422",
         "source_page": 418,
         "ref_book": "doboj3"
+      },
+      {
+        "soldier_id": "9022014506",
+        "name": "Ristić (Jovan) Dušan",
+        "additional_info": "rođen 1921, Suho Polje (Doboj). Srbin, poginuo 1943. u NOBu, Kreka tuzla",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1258",
+        "source_page": 1258,
+        "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "borrowed": [
+      "birth_year"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Čelić, Lopare"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ristić",
