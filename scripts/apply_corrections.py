@@ -195,37 +195,65 @@ MERGED_IDS = set()   # ids a merge correction folds into another record: their e
                      # they apply before the merge), so a later run finds nothing to edit and that is fine
 
 
+# The unit's records by id, so that an edit or a merge finds its record at once instead of walking the list (2026-11-21:
+# walking it took about a minute of a run over Prva proleterska's 12,000 edits). A merge marks the record it folds in as
+# gone instead of copying the list without it; the list sheds the gone records before any correction that counts or
+# places records (delete, add, split) and after the unit's last correction, so every correction sees the list it saw
+# before.
+_INDEX = {}     # soldier_id -> the records with that id, in the list's order
+_GONE = set()   # id() of the records merges folded in, still in the list until the next _flush
+
+
+def _reindex(soldiers):
+    _INDEX.clear()
+    _GONE.clear()
+    for s in soldiers:
+        _INDEX.setdefault(s.get('soldier_id'), []).append(s)
+
+
+def _first(sid):
+    """The first record with this id that no merge folded in, as a walk through the list would find it."""
+    return next((s for s in _INDEX.get(sid, ()) if id(s) not in _GONE), None)
+
+
+def _flush(soldiers):
+    """The list without the records merges folded in."""
+    if not _GONE:
+        return soldiers
+    soldiers = [s for s in soldiers if id(s) not in _GONE]
+    _reindex(soldiers)
+    return soldiers
+
+
 def apply_edit(soldiers, correction):
     """Apply an edit correction. Returns (soldiers, applied)."""
     sid = correction['soldier_id']
     fields = correction['fields']
 
-    for i, s in enumerate(soldiers):
-        if s.get('soldier_id') == sid:
-            reason = correction.get('reason', '')
-            name_before = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
-            old_info = s.get('additional_info', '')
+    s = _first(sid)
+    if s is not None:
+        reason = correction.get('reason', '')
+        name_before = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
+        old_info = s.get('additional_info', '')
 
-            if any(k in fields for k in POSITION_FIELDS):
-                # the old box belongs to the old position; entry_boxes draws the new one
-                for k in entry_boxes.BOX_FIELDS:
-                    s.pop(k, None)
-            for key, value in fields.items():
-                s[key] = value
-            if 'additional_info' in fields and fields['additional_info'] != old_info:
-                # re-read from the new text below; fields any correction sets for this soldier stay
-                structured.forget_stale(s, old_info, keep=MANUAL_FIELDS.get(sid, set()) | set(fields))
+        if any(k in fields for k in POSITION_FIELDS):
+            # the old box belongs to the old position; entry_boxes draws the new one
+            for k in entry_boxes.BOX_FIELDS:
+                s.pop(k, None)
+        for key, value in fields.items():
+            s[key] = value
+        if 'additional_info' in fields and fields['additional_info'] != old_info:
+            # re-read from the new text below; fields any correction sets for this soldier stay
+            structured.forget_stale(s, old_info, keep=MANUAL_FIELDS.get(sid, set()) | set(fields))
 
-            # Skip birth_year rebuild if correction explicitly sets it
-            skip_birth_year = 'birth_year' in fields
-            s = rebuild_computed_fields(s, skip_birth_year=skip_birth_year)
-            soldiers[i] = s
+        # Skip birth_year rebuild if correction explicitly sets it (the record is changed in place)
+        rebuild_computed_fields(s, skip_birth_year='birth_year' in fields)
 
-            name_after = s.get('full_name', '')
-            print(f"    EDIT {sid}: {name_before} -> {name_after}")
-            if reason:
-                print(f"         Reason: {reason}")
-            return soldiers, True
+        name_after = s.get('full_name', '')
+        print(f"    EDIT {sid}: {name_before} -> {name_after}")
+        if reason:
+            print(f"         Reason: {reason}")
+        return soldiers, True
 
     if sid in MERGED_IDS:
         # merged into another record: its entry's text lives in that record's other_sources (an edit that came
@@ -234,6 +262,8 @@ def apply_edit(soldiers, correction):
         kept = {k: v for k, v in fields.items() if k in ('additional_info', 'pdf_x', 'pdf_y') or k in entry_boxes.BOX_FIELDS}
         if kept:
             for s in soldiers:
+                if id(s) in _GONE:
+                    continue
                 for o in s.get('other_sources', ()):
                     if o.get('soldier_id') == sid and not o.get('unit_file') and any(o.get(k) != v for k, v in kept.items()):
                         o.update(kept)
@@ -248,10 +278,13 @@ def apply_delete(soldiers, correction):
     sid = correction['soldier_id']
     reason = correction.get('reason', '')
 
-    for i, s in enumerate(soldiers):
-        if s.get('soldier_id') == sid:
+    soldiers = _flush(soldiers)
+    target = _first(sid)
+    for i, s in enumerate(soldiers if target is not None else ()):
+        if s is target:
             name = s.get('full_name', f"{s.get('last_name', '')} {s.get('first_name', '')}")
             DELETED[sid] = soldiers.pop(i)
+            _INDEX[sid] = [x for x in _INDEX[sid] if x is not s]
             print(f"    DELETE {sid}: {name}")
             if reason:
                 print(f"         Reason: {reason}")
@@ -279,8 +312,8 @@ def apply_merge(soldiers, correction):
     place on the page), fields soldier_id lacks are taken from it, and the record merge_id is removed.
     Returns (soldiers, applied); once merged, re-applying finds the source already there."""
     sid, mid = correction['soldier_id'], correction['merge_id']
-    keep = next((s for s in soldiers if s.get('soldier_id') == sid), None)
-    gone = next((s for s in soldiers if s.get('soldier_id') == mid), None)
+    keep = _first(sid)
+    gone = _first(mid)
     if keep is None:
         print(f"    WARNING: Soldier {sid} not found for merge")
         return soldiers, False
@@ -311,7 +344,7 @@ def apply_merge(soldiers, correction):
     for k in taken:
         keep[k] = gone[k]
     rebuild_computed_fields(keep, skip_birth_year=True)
-    soldiers = [s for s in soldiers if s is not gone]
+    _GONE.add(id(gone))                                 # out of the list at the next _flush
     print(f"    MERGE {mid} into {sid}: {gone.get('full_name')} -> {keep.get('full_name')}"
           + (f" (took {', '.join(taken)})" if taken else ''))
     if correction.get('reason'):
@@ -460,7 +493,8 @@ def apply_add(soldiers, correction):
     """Apply an add correction. Returns (soldiers, applied). Once new_id exists the add is not applied again, but
     the record gets back the fields the correction sets (restore_added)."""
     new_id = correction['new_id']
-    existing = next((s for s in soldiers if s.get('soldier_id') == new_id), None)
+    soldiers = _flush(soldiers)
+    existing = _first(new_id)
     if existing is not None:
         restore_added(existing, correction)
         return soldiers, False
@@ -477,6 +511,7 @@ def apply_add(soldiers, correction):
 
     anchor = next((i for i, s in enumerate(soldiers) if s.get('soldier_id') == correction['soldier_id']), len(soldiers) - 1)
     soldiers.insert(anchor + 1, record)
+    _reindex(soldiers)
     print(f"    ADD {new_id}: {record['full_name']}")
     if correction.get('reason'):
         print(f"         Reason: {correction['reason']}")
@@ -489,6 +524,7 @@ def apply_split(soldiers, correction):
     into = correction['into']
     reason = correction.get('reason', '')
     brigade_code = get_brigade_code_from_id(sid)
+    soldiers = _flush(soldiers)
 
     # Find the soldier to split
     target_idx = None
@@ -545,6 +581,7 @@ def apply_split(soldiers, correction):
 
     # Replace original with new records
     soldiers[target_idx:target_idx + 1] = new_records
+    _reindex(soldiers)
 
     new_names = [r.get('full_name', '') for r in new_records]
     print(f"    SPLIT {sid}: {original_name} -> {', '.join(new_names)}")
@@ -639,8 +676,14 @@ def main():
         by_brigade.setdefault(brigade_code, []).append(c)
 
     live_files = structured.live_json_files()   # brigades on the site (preview-only brigades are left alone)
-    # which given names are women's, read from every unit's bios (feminine_alias)
-    names = feminine_alias.name_genders([s for _, d in structured.load_live().values() for s in d])
+    # which given names are women's, read from every unit's bios (feminine_alias); the same reading of the files gives
+    # the field reader its kept vocabulary when that is current (extract_structured_fields.build_extractor), else it is
+    # learned when first needed, as before
+    live = structured.load_live()
+    names = feminine_alias.name_genders([s for _, d in live.values() for s in d])
+    if structured.use_kept_vocabulary(live):
+        print("Field reader: the kept vocabulary is current")
+    del live
 
     live_codes = {code for code, cfg in BRIGADE_CONFIGS.items() if cfg['json_file'] in live_files}
     box_cache = entry_boxes.PageCache()
@@ -678,6 +721,7 @@ def main():
         # the fields borrowed from other units' records and the census on the last run go back: the unit's own books
         # are read first, the links and references give them again after (scripts/record_sources.py)
         put_back = record_sources.put_back(soldiers, MANUAL_FIELDS)
+        _reindex(soldiers)
 
         global FILL_ON_MERGE
         FILL_ON_MERGE = json_path.name in live_files
@@ -703,6 +747,7 @@ def main():
             else:
                 total_skipped += 1
 
+        soldiers = _flush(soldiers)
         total_applied += applied_count
         new_count = len(soldiers)
 
