@@ -51,6 +51,11 @@ LOCAL = re.compile(rf'(?:(\d{{1,2}})\s*\.\s*)?([{UP}][{UP}]+(?:\s*[-—]\s*[{UP}
                    rf'(?:([{UP}][{LOW}]+(?:[-—][{UP}][{LOW}]+)?)\s+)?([{UP}]{{2,}}(?:\s*[-—]\s*[{UP}]+)?)(?=\s|$)')
 
 
+# one father in the two lists' two forms: the officers' "Pribić Tode Buca" is the spomenica's "Pribić Todora Buca"
+# (Todo, Todor); found after the numbers were given (2026-11-22), so the officer's number stays unused
+SAME_FATHER = {'Tode': 'Todora'}
+
+
 def fix_d(w: str) -> str:
     """the OCR's D for Đ in the names it sets so ("Dure", "Duro", "Doko")"""
     return re.sub(r'^D(?=ur[aeo]\b|ok[aeo]\b|orđ)', 'Đ', w)
@@ -84,7 +89,8 @@ def local_lists(book) -> list[dict]:
                 given = fix_d(V.given_word(gparts[0]))
                 nick = gparts[1].title() if len(gparts) > 1 else ''
                 printed = f"{seq}. {last} {father + ' ' if father else ''}{given}{' – ' + nick if nick else ''}"
-                same = [e for e in out if e['last_name'] == last and e['first_name'] == given and e['fathers_name'] == father]
+                same = [e for e in out if e['last_name'] == last and e['first_name'] == given and
+                        e['fathers_name'] in (father, SAME_FATHER.get(father))]
                 if same:
                     same[0]['additional_info'] += f' {section}: {printed}.'
                     continue

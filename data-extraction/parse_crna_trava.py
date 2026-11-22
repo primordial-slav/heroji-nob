@@ -91,19 +91,28 @@ def main():
     V.corpus()
     book = load(BOOK)
     entries, counts = [], Counter()
-    # the heroes (scan 496)
-    n = 0
+    # the heroes (scan 496); Živojin Nikolić Brka, whose surname the OCR lost ("Hmm/mh") and whose lines had run into
+    # Pavlović's, was found after the numbers were given (2026-11-22): he is numbered after the last
+    n, late = 0, []
     for t in lines(book, 496):
+        t = t.replace('Hmm/mh', 'Николић').replace('Бићко', 'Ћићко').replace(' љуба,', ' Љуба,')
         m = re.match(rf'^\W*(\d{{1,2}})?\s*\.?\s*([{CU}][{CL}]+)\s+([{CU}][{CL}]+)(?:\s+([{CU}][{CL}]+))?\s*[,.]?\s*(.*)$', t)
         if not m or 'НАРОАНИ' in t or 'поникди' in t:
             if entries and entries[-1]['list'] == HEROES and t and not re.match(r'^\W*\d', t):
                 entries[-1]['_text'] += ' ' + t
             continue
-        n += 1
         given, last, nick = best(m.group(2), 'first'), best(m.group(3), 'last'), latin(m.group(4)) if m.group(4) else ''
-        entries.append({'soldier_id': f'{PREFIX}{n:06d}', 'last_name': last, 'first_name': given, 'nick': nick,
-                        'fathers_name': '', '_text': fix_text(m.group(5)), 'list': HEROES, 'page': 496,
-                        'survived': not re.search(r'[Пп]огин', m.group(5)), 'born_in': ''})
+        e = {'last_name': last, 'first_name': given, 'nick': nick, 'fathers_name': '', '_text': fix_text(m.group(5)),
+             'list': HEROES, 'page': 496, 'born_in': ''}
+        if last == 'Nikolić' and given == 'Živojin':
+            late.append(e)
+        else:
+            n += 1
+            e['soldier_id'] = f'{PREFIX}{n:06d}'
+        entries.append(e)
+    for e in late:
+        n += 1
+        e['soldier_id'] = f'{PREFIX}{n:06d}'
     # the fallen (scan 497-511)
     village, victims, n = MUNICIPALITY, False, 0
     for page in range(497, 512):
@@ -151,12 +160,23 @@ def main():
                             '_text': f"{m.group(1)}. {last_l} {father + '. ' if father else ''}{given_l}",
                             'survived': True, 'born_in': ''})
             counts['spomenica'] += 1
+    for e in entries:
+        if e['list'] == HEROES:
+            e['survived'] = not re.search(r'[Пп]о[–-]?\s*гин', e['_text'])   # the whole paragraph ("По– гинуо")
+    # a hero who fell is in the list of the fallen too ("85. Sotirović V. Mirko, 1943. Duga Luka"): one man, the
+    # second entry joined to his first, its number left unused
+    joined = {}
+    for h in [e for e in entries if e['list'] == HEROES and not e['survived']]:
+        same = [e for e in entries if e['list'] == FALLEN and e['last_name'] == h['last_name'] and
+                e['first_name'] == h['first_name']]
+        if len(same) == 1:
+            joined[same[0]['soldier_id']] = h['soldier_id']
     seen, out = set(), []
     for e in entries:
         if e['soldier_id'] in seen:
             continue
         seen.add(e['soldier_id'])
-        info = e['_text'] if e['list'] != HEROES else V.read_cyr(e['_text'])
+        info = e['_text'] if e['list'] != HEROES else V.read_cyr(e['_text']).strip().rstrip('.')
         d = V.death(info) if e['list'] == HEROES else {}
         born = re.search(r'rođen[a]?\s+(?:\d{1,2}\.\s*\S+\s+)?(1[89]\d\d)', info)
         name = ' '.join(x for x in (e['last_name'], e['fathers_name'], e['first_name']) if x)
@@ -168,6 +188,13 @@ def main():
                     'additional_info': f"{e['list']}{', ' + e['_village'] if e.get('_village') else ''}: {info}.",
                     'list': e['list'], 'book_title': TITLE, 'source_url': viewer_url(book, e['page']),
                     'source_page': e['page'] - OFFSET})
+    by_id = {e['soldier_id']: e for e in out}
+    for fid, hid in joined.items():
+        f, h = by_id.pop(fid), by_id[hid]
+        h['additional_info'] += ' ' + f['additional_info']
+        h['death_year'] = h['death_year'] or f['death_year']
+        counts['fallen joined to a hero'] += 1
+    out = sorted(by_id.values(), key=lambda e: e['soldier_id'])
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
     print(len(out), 'entries ->', OUT.name, dict(counts))
     for e in out:

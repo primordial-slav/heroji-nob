@@ -82,7 +82,13 @@ def best(word: str, part: str) -> str:
 
 def stem(f: str) -> str:
     f = latin(f).lower() if re.search('[а-я]', f) else f.lower()
+    f = re.sub(r'^đurđ(?=[aeu]?$)', 'đur', f)        # Đurđe of the fallen is the company's Đurov (Ćirović Janko)
     return re.sub(r'(?:ova|eva|ina|ov|ev|in|a|e|o|u)$', '', f)
+
+
+# a fallen man found to be a company man after the entries' numbers were given (2026-11-22): joined to him, his own
+# number left unused so that every later number stays put
+LATE_JOINS = {('Ćirović', 'Janko')}
 
 
 def lines(book: dict, pages) -> list[tuple[int, str]]:
@@ -180,6 +186,7 @@ def main():
             counts['victims out'] += 1
             continue
         info = V.read_cyr(r['text']).strip(' ;.')
+        info = re.sub(r'\s*biblioteka\s*\W?\s*HRONIKA\s*S\s*ELA\s*\W?\s+', ' ', info, flags=re.I)   # the page's header
         role = None if re.search(r'borac|partizansk|komandir|komesar|kurir|bolničar|brigad|odred|bataljon', info, re.I) \
             else V.role(info)
         if role == 'out':
@@ -198,6 +205,7 @@ def main():
                       f"{' – ' + nick if nick else ''}, {info}."], 'list': FALLEN, 'page': r['page']}
         if join(e):
             counts['fallen joined'] += 1
+            n += (e['last_name'], e['first_name']) in LATE_JOINS
             continue
         n += 1
         e['soldier_id'] = f'{PREFIX}{1000 + n:06d}'
