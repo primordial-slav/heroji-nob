@@ -211,6 +211,7 @@ export const sl: Messages = {
       party: 'Partija',
     },
     or: 'ali',
+    fromFamily: 'Popravljeno po podatkih družine',
     /** The Igman march: "Kot pripadnik 2. čete 1. bataljona se je udeležil igmanskega marša 27. in 28. januarja 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const where = e.c && e.b ? `${e.c}. čete ${e.b}. bataljona`

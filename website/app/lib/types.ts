@@ -68,6 +68,9 @@ export interface Soldier {
   // that book names (in the record's own spelling where it is the same place), another place in the same year too; a
   // column book may name the place alone, without its date ("ili Ostrog")
   variants?: { born?: string[]; death?: { date?: string; place?: string }[] }
+  // the fields a family's report set (scripts/apply_corrections.py, from the corrections' and the overrides' reasons):
+  // the card marks their rows (the user's choice of 2026-11-23)
+  family_fields?: string[]
   // PDF source position metadata (optional - may not be available for all records)
   pdf_page?: number       // 1-indexed page number in the source PDF
   pdf_y?: number          // Y of the entry's first line, in PDF points from page top

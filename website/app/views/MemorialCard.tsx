@@ -18,6 +18,7 @@ import SoldierPortrait from '@/app/components/SoldierPortrait'
 import { SoldierName } from '@/app/components/SoldierResults'
 import { SoldierMedals, honoursLine } from '@/app/components/Medal'
 import { ArrowLeftIcon, PrintIcon } from '@/app/components/Icons'
+import FamilyMark from '@/app/components/FamilyMark'
 import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
 
 // PDF.js only runs in the browser
@@ -121,6 +122,7 @@ export default function MemorialCard() {
                     {f.lines
                       ? f.lines.map((line) => <span key={line.text} className="memorial-line">{line.text}{line.rest}</span>)
                       : f.value}
+                    {f.family && <FamilyMark title={t.record.fromFamily} />}
                   </dd>
                 </div>
               ))}

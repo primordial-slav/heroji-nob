@@ -213,6 +213,7 @@ export const en: Messages = {
       party: 'Party',
     },
     or: 'or',
+    fromFamily: "Corrected from the family's information",
     /** The Igman march: "As a member of the 2nd Company of the 1st Battalion, he took part in the Igman March of 27–28 January 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const th = (k?: number) => (k === 1 ? '1st' : k === 2 ? '2nd' : k === 3 ? '3rd' : `${k}th`)

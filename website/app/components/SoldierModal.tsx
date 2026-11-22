@@ -18,6 +18,7 @@ import { SoldierMedals, honoursLine } from './Medal'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
+import FamilyMark from './FamilyMark'
 import { contributionsFor } from '@/app/data/family'
 import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './RelationsTree'
 import LifeLine from './LifeLine'
@@ -309,6 +310,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
                             {line.rest}
                           </span>
                         )) : <span>{f.value}</span>}
+                        {f.family && <FamilyMark title={t.record.fromFamily} />}
                         {f.link && (
                           <button type="button" className="record-fact-link" onClick={f.link.open}>
                             {f.link.text}<ChevronRightIcon size={14} />

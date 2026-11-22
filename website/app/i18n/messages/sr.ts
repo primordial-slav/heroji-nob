@@ -242,6 +242,8 @@ export const sr = {
     },
     /** between what two books give otherwise: "Rođen: 1915 ili 1918", "Poginuo: 05.03.1943, kod Gornjeg Vakufa ili 06.1943, Sutjeska" */
     or: 'ili',
+    /** The mark after a row a family's report set (the user's choice of 2026-11-23): its tooltip */
+    fromFamily: 'Ispravka po podacima porodice',
     /**
      * The Igman march (lib/warEvents.ts): "Kao pripadnik 2. čete 1. bataljona, učestvovao je u Igmanskom maršu
      * 27–28. januara 1942."; "najverovatnije" where his company is not certainly in the column (the Posavska četa)

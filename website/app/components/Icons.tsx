@@ -66,6 +66,10 @@ export const CopyIcon = (p: IconProps) => (
   <Svg {...p}><rect x="8" y="8" width="12" height="12" rx="1" /><path d="M16 8V4H4v12h4" /></Svg>
 )
 // A memorial candle: marks the year and place of a death
+/** The mark after a card's row a family's report set (lib/recordFacts.ts, `Fact.family`) */
+export const HomeIcon = (p: IconProps) => (
+  <Svg {...p}><path d="M4 11.5 12 5l8 6.5" /><path d="M6.5 10v9.5h11V10" /><path d="M10.5 19.5v-5h3v5" /></Svg>
+)
 export const CandleIcon = (p: IconProps) => (
   <Svg {...p}><path d="M9.5 20.5V11h5v9.5" /><path d="M12 11V9.5" /><path d="M12 8c-1.4-1.1-1.4-2.9 0-4.5 1.4 1.6 1.4 3.4 0 4.5z" /><path d="M7 20.5h10" /></Svg>
 )

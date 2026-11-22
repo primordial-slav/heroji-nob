@@ -1,0 +1,19 @@
+/* The mark after a card's row a family's report set (the user's choice of 2026-11-23): a small house in the
+   embroidered frames' thread colour, its words in the tooltip and for screen readers */
+.mark {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35em;
+  vertical-align: -0.12em;
+  color: var(--cloth-ink);
+  cursor: help;
+}
+
+.words {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

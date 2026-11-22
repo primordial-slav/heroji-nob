@@ -23,6 +23,21 @@ export interface Fact {
   label: string
   value: string
   lines?: FactLine[]
+  /** A family's report set a field of this row: the card marks it ("Ispravka po podacima porodice") */
+  family?: boolean
+}
+
+/** The record's fields each row shows, for its family mark */
+const ROW_FIELDS: Record<FactKey, string[]> = {
+  father: ['fathers_name', 'middle_name'],
+  mother: ['mothers_name'],
+  born: ['birth_year', 'birth_date', 'birth_place'],
+  ethnicity: ['ethnicity'],
+  occupation: ['occupation'],
+  unit: ['unit_detail'],
+  duty: ['rank'],
+  party: ['party'],
+  death: ['death_type', 'death_date', 'death_place'],
 }
 
 export interface LinkedRecord {
@@ -126,6 +141,14 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string, sh
       ? [[when, ...others.map((d) => d.date)].filter(Boolean).join(or), soldier.death_place].filter(Boolean).join(', ')
       : [[when, soldier.death_place], ...others.map((d) => [d.date, d.place])].map((p) => p.filter(Boolean).join(', ')).join(or)
     add('death', t.life.fate(soldier.death_type, woman), value || t.life.undated)
+  }
+  const family = new Set(soldier.family_fields ?? [])
+  if (family.size) {
+    for (const f of facts) {
+      // the row of several units carries the duty too
+      const fields = f.key === 'unit' && f.lines ? [...ROW_FIELDS.unit, ...ROW_FIELDS.duty] : ROW_FIELDS[f.key]
+      if (fields.some((k) => family.has(k))) f.family = true
+    }
   }
   return facts
 }
