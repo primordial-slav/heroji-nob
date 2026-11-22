@@ -1879,6 +1879,17 @@ def kept_extractor(key: str):
     return None
 
 
+def any_kept_extractor():
+    """The reader from the kept vocabulary whatever it was learned from, for one record's fix (scripts/patch_record.py):
+    a vocabulary a few bios old reads one record as well, and the next full run learns it anew. None if there is none."""
+    try:
+        with open(VOCABULARY_CACHE, 'rb') as f:
+            kept = pickle.load(f)
+        return Extractor(kept['occupations'], kept['places'])
+    except Exception:                           # none kept yet, or of another shape
+        return None
+
+
 def use_kept_vocabulary(brigades) -> bool:
     """For a caller that has read the unit files already (apply_corrections): the reader is made now from the kept
     vocabulary when it is current, so the files need not be read again for it; otherwise it is learned as before, when
@@ -2265,7 +2276,7 @@ def fill(soldiers: list[dict]) -> int:
     ex, n = get_extractor(), 0
     for s in soldiers:
         new = {k: v for k, v in read_all(ex, s, brigade_of(s)).items()
-               if not s.get(k) and k not in BLANKED.get(s.get('soldier_id'), ())}
+               if not s.get(k) and k not in BLANKED.get(s.get('soldier_id'), ()) and k not in (s.get('manual_fields') or ())}
         s.pop('born_in', None)
         if new:
             s.update(new)
@@ -2295,6 +2306,9 @@ def main():
             cols = set(s.get('from_columns') or ())
             new = {k: v for k, v in got.items() if not s.get(k) or (k in cols and v != s[k] and (
                 k != 'death_date' or len(re.findall(r'\d+|[a-zčćžšđ]{3,}', v)) >= len(re.findall(r'\d+|[a-zčćžšđ]{3,}', s[k]))))}
+            # a field set by hand (manual_fields: scripts/patch_record.py) is never read otherwise, nor filled once blanked
+            for k in s.get('manual_fields') or ():
+                new.pop(k, None)
             # and the place, where it says no less than the column's (own_place_first): the census's shows after "ili"
             # where the two lie apart (record_sources.variants)
             if 'death_place' in cols and s.get('death_place') and new.get('death_place') and not own_place_first(

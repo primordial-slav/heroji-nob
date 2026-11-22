@@ -67,6 +67,15 @@ OUT = ROOT / 'website' / 'public' / 'ostali-borci.json'     # not *soldiers.json
 UNIT_IDS = ROOT / 'data-extraction' / 'unit_record_ids.json'
 UNIT_FIRST = 900001
 MOVED = ROOT / 'website' / 'data' / 'moved-ids.json'
+# one man's fix by hand, kept by entry (2026-11-22, the user: "If one soldier changes, we should just change that entry"):
+# {"<entry ID>": {"for": "<record ID>", "fields": {...}, "reason", "by", "date"}}, written by scripts/patch_record.py,
+# which changes the record in place in seconds; this script gives the record the same fields on every full run
+# (apply_overrides), so the two agree
+OVERRIDES = ROOT / 'data-extraction' / 'ostali_overrides.json'
+# what an override may not set: the entry's text stays as printed and a role is a decision (both also decide whether a
+# man goes to a unit, move_to_units), and the fields this script keeps for itself
+OVERRIDE_REFUSED = {'soldier_id', 'additional_info', 'role', 'other_sources', 'from_columns', 'manual_fields',
+                    'former_ids', 'full_name'}
 CENSUS = 'zrtve-rata-1964'                                  # the census's volumes: zrtve-rata-1964-<vol>
 # names a parser read wrong, by entry: the Zbornik's headings "DEMONJ A (NIKOLA)", "RAKOVAC J (OAKIM)" and one whose
 # OCR took a line of the text for the name (Pal Šoti, born 19 January 1916 in Bečej, as Narodni heroji 1982 has him)
@@ -877,6 +886,43 @@ def census_redirects(old_ids: set[str], new_ids: set[str], previous: dict[str, s
     return out
 
 
+def load_overrides() -> dict[str, dict]:
+    """The fixes by hand, by entry (OVERRIDES)"""
+    return json.loads(OVERRIDES.read_text(encoding='utf-8')) if OVERRIDES.exists() else {}
+
+
+def apply_overrides(rec: dict, g: list[dict], overrides: dict[str, dict], family: dict, applied: set[str]) -> None:
+    """The fields set by hand for any of the record's entries, on the record as assembled; marked in manual_fields, so no
+    later step reads them otherwise (the normalizer, the field reader, the places and the one form). A family's field
+    stands over an override of the same field (the user's rule: the family's report wins), which is printed."""
+    manual = set(rec.get('manual_fields') or ())
+    for m in g:
+        o = overrides.get(m['soldier_id'])
+        if not o:
+            continue
+        applied.add(m['soldier_id'])
+        if o.get('for') and o['for'] != rec['soldier_id']:
+            print(f"  OVERRIDE {m['soldier_id']}: written for {o['for']}, now on {rec['soldier_id']}: check it")
+        for k, v in (o.get('fields') or {}).items():
+            if k in OVERRIDE_REFUSED:
+                print(f"  OVERRIDE {m['soldier_id']}: {k} may not be set by hand, left out")
+            elif k in family and family[k] != v:
+                print(f"  OVERRIDE {m['soldier_id']}: {k} {v!r} against the family's {family[k]!r}: the family's stands")
+            else:
+                if v == '':
+                    rec.pop(k, None)
+                else:
+                    rec[k] = v
+                manual.add(k)
+    if manual:
+        rec['manual_fields'] = sorted(manual)
+        cols = [k for k in rec.get('from_columns') or () if k not in manual]
+        if cols:
+            rec['from_columns'] = cols
+        else:
+            rec.pop('from_columns', None)
+
+
 def unit_codes() -> set[int]:
     """the units that hold men this script gave them"""
     return {int(v[:4]) for v in unit_registry().values()}
@@ -1022,6 +1068,7 @@ def main():
         return rid
 
     records, counts, on_site = [], Counter(), []
+    overrides, overridden = load_overrides(), set()       # fixes by hand, by entry (OVERRIDES)
     for members in clusters.values():
         # a cluster that took two entries of one book (not one man it prints twice) is two men: the entries of that
         # book stay apart, and an entry of another book joins the one it agrees with, or the one it agrees with best
@@ -1179,9 +1226,12 @@ def main():
             # hand, what the prose tells that the field reader can't read ("u Prvoj krajiškoj brigadi ... prešao u Treću
             # krajišku", "komesar Fočansko-čelebićkog odreda"): every fact the text gives stands in its row on the card
             # (the user's rule of 2026-11-20)
+            family = {}
             for m in g:
                 if m['_book'] in ('porodicna-arhiva', 'poruke-posetilaca', 'vikipedija'):
                     rec.update(m.get('fields') or {})        # set by hand: over the census's column (Bogavac's Kraljevo)
+                    if m['_book'] == 'porodicna-arhiva':
+                        family.update(m.get('fields') or {})
             if not rec.get('birth_place'):
                 # what the book's parser read of where he is from (often in a case): extract_structured_fields.read_all
                 # takes it where no entry's text names a place, and the reader leaves no trace of it on the record
@@ -1207,9 +1257,17 @@ def main():
             roles = {m.get('role') for m in g}
             if None not in roles:
                 rec['role'] = 'activist' if 'activist' in roles else 'participant'
+            # the fields set by hand for one of his entries (scripts/patch_record.py), last, over every reading above,
+            # and before move_to_units, so a man who goes to his unit takes them along
+            apply_overrides(rec, g, overrides, family, overridden)
             records.append(rec)
             counts[f'{len(g)} book(s)'] += 1
             counts['from ' + first['_book'] + (f" ({first['_vol']})" if first['_vol'] else '')] += 1
+    # an override whose entry made no record (a unit's record holds it, it waits as the same man as an entry on the site,
+    # or it is left out): its fix belongs on that record, as an edit correction
+    for e in sorted(set(overrides) - overridden):
+        print(f"  OVERRIDE {e} ({overrides[e].get('for', '?')}): its entry made no record here; "
+              f"fix the record that holds it with an edit correction")
     n_ids = Counter(r['soldier_id'] for r in records)
     assert max(n_ids.values()) == 1, [i for i, n in n_ids.items() if n > 1][:5]
     parts = defaultdict(list)                                 # code -> its records

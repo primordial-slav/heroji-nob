@@ -716,6 +716,12 @@ def main():
         with open(json_path, 'r', encoding='utf-8') as f:
             original_text = f.read()
         soldiers = json.loads(original_text)
+        # the fields set by hand on a record of Borci drugih jedinica or a census part (manual_fields, kept by entry in
+        # data-extraction/ostali_overrides.json; a man moved to his unit carries them): as a correction's, they stay
+        for s in soldiers:
+            if s.get('manual_fields'):
+                MANUAL_FIELDS.setdefault(s['soldier_id'], set()).update(set(s['manual_fields']) & set(structured.FIELDS))
+                SET_FIELDS.setdefault(s['soldier_id'], set()).update(s['manual_fields'])
         original_count = len(soldiers)
         original_boxes = entry_boxes.box_snapshot(soldiers)
         # the fields borrowed from other units' records and the census on the last run go back: the unit's own books

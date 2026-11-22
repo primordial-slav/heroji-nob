@@ -80,6 +80,17 @@ def process_brigade(json_path, brigade_code, config):
 
         # Normalize
         result = normalize_soldier(soldier, brigade_code)
+        # the fields set by hand (manual_fields: data-extraction/ostali_overrides.json, scripts/patch_record.py) stay as set
+        manual = original.get('manual_fields') or ()
+        if manual:
+            for k in manual:
+                if k in original:
+                    result[k] = original[k]
+                else:
+                    result.pop(k, None)
+            if {'last_name', 'middle_name', 'first_name'} & set(manual):
+                result['full_name'] = ' '.join(p for p in (result.get('last_name'), result.get('middle_name'),
+                                                           result.get('first_name')) if p)
 
         # Extract birth info if not already present, a year a man could be born in: the Lovćenski odred's OCR reads
         # "рођен 1915" as 1515 or 1977 (2026-10-28), and the year then comes from another of his entries below
