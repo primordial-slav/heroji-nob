@@ -626,7 +626,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Brigade',
     description: 'Formirana 28. septembra 1942. kod Lapinja na Kočevskom. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/cankarjeva-brigada.jpg',
-    soldierCount: 2910,
+    soldierCount: 2904,
     dataFile: '/cankarjeva-soldiers.json',
     pdfFiles: ['/pdfs/cankarjeva.pdf', '/pdfs/cankarjeva-kader.pdf']
   },
@@ -636,7 +636,7 @@ export const units: Unit[] = [
     nameEn: 'Gubec Brigade',
     description: 'Formirana 4. septembra 1942. kod Trebelnog iznad Mokronoga. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/gubceva-brigada.jpg',
-    soldierCount: 3003,
+    soldierCount: 3002,
     dataFile: '/gubceva-soldiers.json',
     pdfFiles: ['/pdfs/gubceva.pdf', '/pdfs/gubceva-kader.pdf']
   },
@@ -706,7 +706,7 @@ export const units: Unit[] = [
     nameEn: 'Bračič Brigade',
     description: 'Formirana 23. septembra 1943. u Kneževoj Njivi u Loškoj dolini. Poginuli i preživeli borci.',
     image: '/images/braciceva-brigada.jpg',
-    soldierCount: 2217,
+    soldierCount: 2206,
     dataFile: '/braciceva-soldiers.json',
     pdfFiles: ['/pdfs/braciceva.pdf']
   },
