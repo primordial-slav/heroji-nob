@@ -325,6 +325,9 @@ MERGED_IDS = {
     # the census's Jemuović printed twice
     '0122130469': '0123000355', '0136027498': '0136027497',
     '0122926735': '0122940691',   # Čelebić Ilijin Jovan: the Spomenica's record, joined to the Lovćenski odred's list's (2026-11-23)
+    # records the units held until unit_named's fix of 2026-11-23 found them naming two units on the site: back in 122, their
+    # unit addresses open the record (Janjić Miladinov Božidar, Dizdarević Fehrat, Šuković Venjko; Levi Moric stayed in the 4. krajiška)
+    '0039900251': '0122960088', '0042900015': '0122909160', '0069900001': '0122954956',
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',
     # the records the Poreklo books 9115-9128 joined to others (2026-11-22): a book's entry agreed with two records of

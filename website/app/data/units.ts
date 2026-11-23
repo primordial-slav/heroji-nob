@@ -26,7 +26,7 @@ export const units: Unit[] = [
     nameEn: '1st Proletarian People\'s Liberation Assault Brigade',
     description: 'Formirana 21. decembra 1941.',
     image: '/images/prva-proleterska-brigada.jpg',
-    soldierCount: 17075,
+    soldierCount: 17076,
     dataFile: '/prva-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/prva-proleterska-1.pdf', '/pdfs/prva-proleterska-2.pdf', '/pdfs/prva-proleterska-3.pdf', '/pdfs/borci-sutjeske-prva-proleterska.pdf', '/pdfs/prva-proleterska-stroj-u-rudom.pdf', '/pdfs/beogradski-bataljon.pdf', '/pdfs/dalmatinci-prva-proleterska.pdf', '/pdfs/crnogorski-bataljon.pdf', '/pdfs/rudarska-ceta.pdf', '/pdfs/prva-proleterska-dopunski.pdf', '/pdfs/prva-proleterska-garibaldi.pdf']
   },
@@ -56,7 +56,7 @@ export const units: Unit[] = [
     nameEn: '3rd Proletarian (Sandžak) Brigade',
     description: 'Formirana 5. juna 1942. Spisak je sa dana kad je brigada formirana. Uz njega i borci brigade iz drugih knjiga.',
     image: '/images/treca-proleterska-brigada.jpg',
-    soldierCount: 2605,
+    soldierCount: 2683,
     dataFile: '/treca-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/treca-proleterska-brigada.pdf', '/pdfs/treca-proleterska-poginuli-knj3.pdf', '/pdfs/treca-proleterska-formiranje.pdf', '/pdfs/borci-sutjeske-treca-proleterska.pdf']
   },
@@ -76,7 +76,7 @@ export const units: Unit[] = [
     nameEn: '2nd Dalmatian Proletarian Assault Brigade',
     description: 'Formirana 3. oktobra 1942. Borci brigade i štabovi i komande brigade, bataljona i četa.',
     image: '/images/2-dalmatinska-brigada.jpg',
-    soldierCount: 6017,
+    soldierCount: 6056,
     dataFile: '/2-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/2-dalmatinska-proleterska.pdf', '/pdfs/borci-sutjeske-2-dalmatinska.pdf', '/pdfs/2-dalmatinska-stabovi.pdf']
   },
@@ -106,7 +106,7 @@ export const units: Unit[] = [
     nameEn: '5th Krajina (Kozara) Assault Brigade',
     description: 'Formirana 23. septembra 1942. na Kozari. Poginuli, nestali i umrli borci i starešine. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/peta-kozaracka-brigada.jpg',
-    soldierCount: 1031,
+    soldierCount: 1033,
     dataFile: '/5-kozaracka-soldiers.json',
     pdfFiles: ['/pdfs/5-kozaracka.pdf']
   },
@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, starešine brigade 1942–1943. i borci koji su preživeli rat. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 4147,
+    soldierCount: 4153,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf', '/pdfs/6-krajiska-kadar.pdf']
   },
@@ -146,7 +146,7 @@ export const units: Unit[] = [
     nameEn: '4th Krajina Assault Brigade',
     description: 'Formirana 9. septembra 1942. u Tičevu kod Bosanskog Grahova. Poginuli, umrli i nestali borci i starešine. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/cetvrta-krajiska-brigada.jpg',
-    soldierCount: 1755,
+    soldierCount: 1786,
     dataFile: '/4-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/4-krajiska.pdf']
   },
@@ -176,7 +176,7 @@ export const units: Unit[] = [
     nameEn: '25th Serbian Assault Division',
     description: 'Formirana 21. juna 1944. kod Jošanice u Pustoj reci. Poginuli borci i starešine 16, 18. i 19. srpske brigade. Uz njih i borci divizije iz drugih knjiga.',
     image: '/images/25-srpska-divizija.jpg',
-    soldierCount: 941,
+    soldierCount: 947,
     dataFile: '/25-srpska-divizija-soldiers.json',
     pdfFiles: ['/pdfs/25-srpska-divizija.pdf']
   },
@@ -236,7 +236,7 @@ export const units: Unit[] = [
     nameEn: '19th Birač Brigade',
     description: 'Formirana 24. oktobra 1943. u Vlasenici. Borci brigade.',
     image: '/images/19-bircanska-brigada.jpg',
-    soldierCount: 2039,
+    soldierCount: 2045,
     dataFile: '/19-bircanska-soldiers.json',
     pdfFiles: ['/pdfs/19-bircanska.pdf']
   },
@@ -246,7 +246,7 @@ export const units: Unit[] = [
     nameEn: '2nd Krajina Assault Brigade',
     description: 'Formirana 2. avgusta 1942. Poginuli i umrli borci i starešine. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/2-krajiska-brigada.jpg',
-    soldierCount: 1674,
+    soldierCount: 1688,
     dataFile: '/2-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/2-krajiska.pdf']
   },
@@ -276,7 +276,7 @@ export const units: Unit[] = [
     nameEn: '14th Serbian Assault Brigade',
     description: 'Formirana 17. juna 1944. u Ribarima kod Đunisa. Poginuli borci i starešine Niškog odreda i 14. srpske brigade.',
     image: '/images/14-srpska-brigada.jpg',
-    soldierCount: 1042,
+    soldierCount: 1044,
     dataFile: '/14-srpska-soldiers.json',
     pdfFiles: ['/pdfs/14-srpska.pdf']
   },
@@ -366,7 +366,7 @@ export const units: Unit[] = [
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Formirana 6. septembra 1942. u selu Dobro kod Livna. Borci poginuli u ratu, borci na Sutjesci, žene borci 1944–1945, komandiri i komesari četa i komandni sastav brigade i bataljona. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/1-dalmatinska-brigada.jpg',
-    soldierCount: 3258,
+    soldierCount: 3260,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-monografija.pdf', '/pdfs/zene-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-komandni-sastav.pdf', '/pdfs/1-dalmatinska-formiranje.pdf']
   },
@@ -396,7 +396,7 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 2288,
+    soldierCount: 2294,
     dataFile: '/druga-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf', '/pdfs/pozega-cete.pdf']
   },
@@ -406,7 +406,7 @@ export const units: Unit[] = [
     nameEn: '4th Proletarian Montenegrin Brigade',
     description: 'Formirana 10. juna 1942. Borci na dan formiranja i u bici na Sutjesci, starešine brigade i narodni heroji, i borci i starešine poginuli od 1942. do 1945.',
     image: '/images/4-proleterska-brigada.jpg',
-    soldierCount: 3908,
+    soldierCount: 4146,
     dataFile: '/4-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-4-proleterska.pdf', '/pdfs/4-proleterska-poginuli.pdf', '/pdfs/4-proleterska-formiranje.pdf']
   },
@@ -426,7 +426,7 @@ export const units: Unit[] = [
     nameEn: '6th East Bosnian Proletarian Brigade',
     description: 'Formirana 2. avgusta 1942. u Šekovićima kod Vlasenice. Borci brigade u bici na Sutjesci, maja i juna 1943. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/6-istocnobosanska-brigada.jpg',
-    soldierCount: 1113,
+    soldierCount: 1212,
     dataFile: '/6-istocnobosanska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-6-istocnobosanska.pdf', '/pdfs/6-istocnobosanska-dopuna.pdf']
   },
@@ -436,7 +436,7 @@ export const units: Unit[] = [
     nameEn: '10th Herzegovina Brigade',
     description: 'Formirana 10. avgusta 1942. kod Kupresa. Borci brigade u bici na Sutjesci, maja i juna 1943. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/10-hercegovacka-brigada.jpg',
-    soldierCount: 1559,
+    soldierCount: 1655,
     dataFile: '/10-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-10-hercegovacka.pdf']
   },
@@ -476,7 +476,7 @@ export const units: Unit[] = [
     nameEn: '9th Dalmatian Division',
     description: 'Formirana 11. februara 1943. od 3, 4. i 5. dalmatinske brigade, rasformirana u aprilu iste godine. Poginuli i nestali borci divizije od februara do aprila 1943. Uz njih i borci divizije iz drugih knjiga.',
     image: '/images/9-dalmatinska-divizija.jpg',
-    soldierCount: 516,
+    soldierCount: 517,
     dataFile: '/9-dalmatinska-divizija-soldiers.json',
     pdfFiles: ['/pdfs/9-dalmatinska-divizija.pdf']
   },
@@ -506,7 +506,7 @@ export const units: Unit[] = [
     nameEn: '15th Majevica Brigade',
     description: 'Formirana 11. aprila 1943. Borci brigade, tada 1. majevičke, u bici na Sutjesci, maja i juna 1943. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/15-majevicka-brigada.jpg',
-    soldierCount: 2239,
+    soldierCount: 2240,
     dataFile: '/15-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-15-majevicka.pdf', '/pdfs/15-majevicka-spisak.pdf']
   },
@@ -536,7 +536,7 @@ export const units: Unit[] = [
     nameEn: '18th Croatian East Bosnian Brigade',
     description: 'Formirana 10. oktobra 1943. kod Tuzle, a proglašena 17. oktobra u Husinu. Borci i starešine brigade.',
     image: '/images/18-hrvatska-brigada.jpg',
-    soldierCount: 1839,
+    soldierCount: 1872,
     dataFile: '/18-hrvatska-soldiers.json',
     pdfFiles: ['/pdfs/18-hrvatska.pdf', '/pdfs/18-hrvatska-starjesine.pdf']
   },
@@ -576,7 +576,7 @@ export const units: Unit[] = [
     nameEn: '14th Central Bosnian Brigade',
     description: 'Formirana 17. oktobra 1943. na Ceru kod Prnjavora. Poginuli, umrli i nestali borci, i borci koji su preživeli rat.',
     image: '/images/14-srednjobosanska-brigada.jpg',
-    soldierCount: 2605,
+    soldierCount: 2620,
     dataFile: '/14-srednjobosanska-soldiers.json',
     pdfFiles: ['/pdfs/14-srednjobosanska.pdf']
   },
@@ -706,7 +706,7 @@ export const units: Unit[] = [
     nameEn: 'Bračič Brigade',
     description: 'Formirana 23. septembra 1943. u Kneževoj Njivi u Loškoj dolini. Poginuli i preživeli borci.',
     image: '/images/braciceva-brigada.jpg',
-    soldierCount: 2206,
+    soldierCount: 2205,
     dataFile: '/braciceva-soldiers.json',
     pdfFiles: ['/pdfs/braciceva.pdf']
   },
@@ -826,7 +826,7 @@ export const units: Unit[] = [
     nameEn: '14th Herzegovina Brigade',
     description: 'Formirana 4. septembra 1944. kod Ljubinja, kao omladinska brigada. Svi borci koji su prošli kroz brigadu, poginuli i komandni sastav.',
     image: '/images/14-hercegovacka-brigada.jpg',
-    soldierCount: 1349,
+    soldierCount: 1359,
     dataFile: '/14-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/14-hercegovacka.pdf', '/pdfs/14-hercegovacka-komandni-sastav.pdf']
   },
@@ -836,7 +836,7 @@ export const units: Unit[] = [
     nameEn: '5th Vojvodina Brigade',
     description: 'Formirana 15. novembra 1943. u Obršinama na Majevici. Borci i starešine brigade.',
     image: '/images/5-vojvodjanska-brigada.jpg',
-    soldierCount: 4332,
+    soldierCount: 4333,
     dataFile: '/5-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/5-vojvodjanska.pdf']
   },
@@ -976,7 +976,7 @@ export const units: Unit[] = [
     nameEn: '22nd Division',
     description: 'Formirana maja 1944. na desnoj obali Južne Morave. Poginuli borci 8., 10. i 12. srpske brigade. Uz njih i borci divizije iz drugih knjiga.',
     image: '/images/22-divizija.jpg',
-    soldierCount: 1011,
+    soldierCount: 1012,
     dataFile: '/22-divizija-soldiers.json',
     pdfFiles: ['/pdfs/22-divizija.pdf']
   },
@@ -996,7 +996,7 @@ export const units: Unit[] = [
     nameEn: '4th Sandžak Brigade',
     description: 'Formirana 1. decembra 1943. u Pljevljima. Poginuli i ranjeni borci brigade. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/4-sandzacka-brigada.jpg',
-    soldierCount: 881,
+    soldierCount: 888,
     dataFile: '/4-sandzacka-soldiers.json',
     pdfFiles: ['/pdfs/4-sandzacka.pdf']
   },
@@ -1016,7 +1016,7 @@ export const units: Unit[] = [
     nameEn: '13th Herzegovina Brigade',
     description: 'Formirana 14. maja 1944. u Hercegovini. Poginuli borci i starešine brigade, svi koji su se borili u njoj i starešinski sastav.',
     image: '/images/13-hercegovacka-brigada.jpg',
-    soldierCount: 2093,
+    soldierCount: 2100,
     dataFile: '/13-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/13-hercegovacka.pdf', '/pdfs/13-hercegovacka-starjesine.pdf']
   },
@@ -1026,7 +1026,7 @@ export const units: Unit[] = [
     nameEn: '12th Herzegovina Brigade',
     description: 'Formirana 16. novembra 1943. u Hercegovini, od grupa bataljona 10. hercegovačke. Poginuli borci i starešine brigade. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/12-hercegovacka-brigada.jpg',
-    soldierCount: 287,
+    soldierCount: 295,
     dataFile: '/12-hercegovacka-soldiers.json',
     pdfFiles: ['/pdfs/12-hercegovacka.pdf']
   },
@@ -1076,7 +1076,7 @@ export const units: Unit[] = [
     nameEn: '12th Proletarian Slavonian Brigade',
     description: 'Formirana 11. oktobra 1942. u Budićima kod Pakraca kao 1. slavonska brigada, proleterska od 26. oktobra 1944. Žene borci brigade, poginule, umrle i preživele. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/12-slavonska-brigada.jpg',
-    soldierCount: 133,
+    soldierCount: 137,
     dataFile: '/12-slavonska-soldiers.json',
     pdfFiles: []
   },
@@ -1186,7 +1186,7 @@ export const units: Unit[] = [
     nameEn: '51st Vojvodina Division',
     description: 'Formirana 31. oktobra 1944. u Novom Sadu, od 7, 8. i 12. vojvođanske brigade. Borci divizije poginuli od formiranja do kraja rata, maja 1945, i nestali u Batinskoj bici.',
     image: '/images/51-divizija.jpg',
-    soldierCount: 2087,
+    soldierCount: 2104,
     dataFile: '/51-divizija-soldiers.json',
     pdfFiles: ['/pdfs/51-divizija.pdf', '/pdfs/51-divizija-savic.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 63723,
+    soldierCount: 62993,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },

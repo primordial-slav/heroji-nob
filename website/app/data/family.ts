@@ -585,7 +585,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122926745', // Čelebić Ilije Novak of Štitari (Cetinje), Jovan's brother: their nephew's form of 2026-11-23
+    soldierId: '0007900037', // (was 0122926745 in Borci drugih jedinica; in the 2. dalmatinska since 2026-11-23) Čelebić Ilije Novak of Štitari (Cetinje), Jovan's brother: their nephew's form of 2026-11-23
     // 13:30 (Porodična arhiva 9990000022 joined to his record: the wound and the death of 1946 in his rows)
     text: 'Ranjen je prilikom oslobađanja Cresa 1945, a umro je 1946. u bolnici u Zagrebu od zadobijenih rana. Grob mu je na Cetinju, gdje je prenesen iz Zagreba.',
     from: 'Ž. Čelebić, sinovac',
@@ -740,7 +740,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122961375', // Cvijetić Leke Milorad of Kordovina (Pljevlja), 3. proleterska sandžačka: his son's missing-fighter form of
+    soldierId: '0005900079', // (was 0122961375; in the Treća proleterska since 2026-11-23) Cvijetić Leke Milorad of Kordovina (Pljevlja), 3. proleterska sandžačka: his son's missing-fighter form of
     // 2026-11-23 15:11 (Porodična arhiva 9990000028; no name for the card)
     text: 'Posle rata bio je oficir JNA.',
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
