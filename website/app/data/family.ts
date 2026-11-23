@@ -624,6 +624,145 @@ export const familyContributions: FamilyContribution[] = [
     from: 'Ž. Čelebić, sinovac',
     date: '2026-11',
   },
+  {
+    soldierId: '0122961373', // Siriščević Josip of Split, an illegal shot in Šibenik 22.5.1942 (a man of the movement, Porodična arhiva
+    // 9990000026): his grandson's missing-fighter form of 2026-11-23 14:54 with three photos (after his comment the user passed on)
+    photo: '0122961373-1.jpg',
+    pieces: [
+      { kind: 'photo', file: '0122961373-2.jpg', caption: 'Spomen-kamen u Splitu streljanim splitskim komunistima, 22. svibnja 1942.' },
+      { kind: 'photo', file: '0122961373-3.jpg', caption: 'Spomen-ploča u Spomen-kosturnici na Lovrincu' },
+    ],
+    text: 'Nije bio pripadnik nijedne jedinice. Zbog ilegalnog rada u Splitu uhapsili su ga talijanski okupatori i strijeljali 22. 5. 1942. u Šibeniku, zajedno sa cijelom grupom koju je predvodio Rade Končar. Pokopan je u Spomen-kosturnici na splitskom groblju Lovrinac; ime mu je navedeno i u kosturnici i na spomeniku u Spomen-parku Šubićevac u Šibeniku. Njegov slučaj zabilježen je u dokumentima na stranici Znaci (znaci.org).',
+    from: 'I. Profaca, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0013010439', // Heganović Salih, 6. krajiška (the survivors' list, name alone): his grandson's form of 2026-11-23 14:09
+    text: 'Kao dijete pomagao sam mu pri kupanju, i objašnjavao mi je da su ožiljci na leđima od rane koju je zadobio od ustaša pri napadu partizana na Karlovac. Bio je u 6. krajiškoj brigadi. Poslije rata radio je kao rudar u Kaknju.',
+    from: 'A. Velispahić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0001013150', // Vihtner (the book: Vihner) Rudolfa Gordana, Prva proleterska: her son's forms of 2026-11-23 15:00 and
+    // 15:41 with four photos (the surname, nationality and day of birth by correction 317157); the school photo her portrait
+    photo: '0001013150-1.jpg',
+    photoCaption: 'Đačka fotografija',
+    pieces: [
+      { kind: 'photo', file: '0001013150-2.jpg', caption: 'Sa suprugom Bojanom Belingarom' },
+      { kind: 'photo', file: '0001013150-3.jpg', caption: 'Posle rata' },
+      { kind: 'photo', file: '0001013150-4.jpg', caption: 'Sa sinom' },
+    ],
+    text: 'Rođena je 30. marta 1927. u Beogradu, od oca Rudolfa Vihtnera i majke Miroslave, rođene Predojević. Posle rata udala se za Slovenca Bojana Belingara, takođe partizana. Do penzionisanja radila je u Nuklearnom institutu u Vinči.',
+    from: 'B. Belingar, sin',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0001005586', // Krnić Lovre Mirko of Konjevrate, Prva proleterska: his grandson's form of 2026-11-23 15:07 (from the book
+    // Dalmatinci u Prvoj proleterskoj brigadi); the death by correction 317158
+    photo: '0001005586-1.jpg',
+    text: 'Za NOP radi od druge polovine 1941, član SKOJ-a od proljeća 1942. Početkom listopada 1942. odlazi u partizane i u Ključu stupa u 6. beogradski bataljon 1. proleterske brigade, prvo kao borac, zatim puškomitraljezac. U srpnju 1943. dolazi u Sinjski partizanski odred, gdje je komandir čete, a početkom 1945. radi pri Komandi mjesta Šibenik u KNOJ-u. Umro je 1990. godine.',
+    from: 'L. Krnić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0085000297', // Janković M Živko, 7. srpska: his granddaughter's photo of 2026-11-23 15:13 (no text)
+    pieces: [{ kind: 'photo', file: '0085000297-1.jpg', caption: 'Porodična fotografija' }],
+    from: 'R. Janković, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0021005315', // Tinkić Miodraga Svetozar, 4. srpska: a relative's form of 2026-11-23 15:24 (in Cyrillic); the photo from
+    // Gončin's book, him with comrades in a trench on the Srem front
+    pieces: [{ kind: 'photo', file: '0021005315-1.jpg', caption: 'Sa saborcima u rovu na Sremskom frontu (iz knjige M. Gončina „22. srpska kosmajska brigada”)' }],
+    text: 'Poreklom je iz Ćuprije; ime je dobio po dedi Svetozaru, trgovcu i kafedžiji. Otac Miodrag bio je savetnik Ministarstva finansija. Imao je sestre Veru i Leposavu. Bio je kapetan JA. Sahranjen je sa sestrom Verom na Novom groblju u Beogradu.',
+    from: 'A. Milosavljević Tinkić, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0118900042', // Petković Dane Dragica of Ostrvica, 3. lička: her granddaughter's form of 2026-11-23 15:32 with her wartime
+    // photo (Porodična arhiva 9990000032 referenced, the death by correction 317160)
+    photo: '0118900042-1.jpg',
+    photoCaption: 'U uniformi, sa automatom',
+    text: 'Udala se za Đuru Drobca (Jove). Živela je u Zemunu i Novom Sadu. Nosilac je Partizanske spomenice 1941; u NOV je stupila 1941, a ne marta 1944. Preminula je 13. februara 1991. u Novom Sadu, gde je i sahranjena pored supruga.',
+    from: 'M. Drobac, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0054002338', // Petić Nenad of Mala Žuljevica, 12. krajiška: his nephew's form of 2026-11-23 15:34 (rank by 317161)
+    text: 'Bio je poručnik. Ranjen je kod Srpca, kroz noge. Preživio je rat.',
+    from: 'O. Petić, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132011863', // Sarapa (the census: Savap) Ilije Ljuban of Donji Klasnić, census part Hrvatska, fell 1943 at the
+    // Sutjeska: his grandmother's brother, the form of 2026-11-23 15:35 (the surname by override); his father is 0132011862
+    text: 'Sin je Ilije Sarape, također partizana. Groba nema; tijelo nikada nije nađeno.',
+    from: 'D. Dvanajščak, pranećakinja',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0002001654', // Drobac Jove Đuro of Gračac, Prva lička: his granddaughter's form of 2026-11-23 15:36 with his photos
+    // (Porodična arhiva 9990000033 referenced: the Spomenica); his wife is Petković Dragica (0118900042)
+    photo: '0002001654-1.jpg',
+    photoCaption: 'U oficirskoj uniformi',
+    text: 'Nosilac mnogih odlikovanja i Partizanske spomenice 1941. Supruga mu je bila Dragica, rođena Petković, takođe nosilac Partizanske spomenice.',
+    from: 'M. Drobac, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132011862', // Sarapa Rade Ilija of Donji Klasnić, census part Hrvatska: his great-granddaughter's form of 2026-11-23
+    // 15:41 with his wartime photo (the death by override); Ljuban (0132011863) is his son
+    photo: '0132011862-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    text: 'Iz NOB-a se vratio. S obitelji se preselio s Banije u Šidske Banovce, gdje je ubrzo umro od posljedica ranjavanja. Iza sebe je ostavio ženu Evicu, sina Milana i kćeri Anku i Jelenu.',
+    from: 'D. Dvanajščak, praunuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0091000267', // Milosavljević Ilija of Ćuprija, 20. srpska: a relative's form of 2026-11-23 15:42 (in Cyrillic; father,
+    // day of birth, party, birthplace by correction 317163); the photo from the chronicle "Na Moravi Ćuprija", marked unknown fighter
+    photo: '0091000267-1.jpg',
+    photoCaption: 'Iz hronike „Na Moravi Ćuprija” (D. Đulić, M. Milačić), gde je obeležen kao nepoznati borac',
+    text: 'Rođen je 22. maja 1922. od oca Bogomira I. Milosavljevića Tinkića i majke Stane. U SKOJ je primljen 1940, a u KPJ 1941. U njegovoj kući, kao i u kućama brata Živojina Žikice i sestre Seke, tokom rata su održavani kursevi prve pomoći; oni su izvezli i veliku partijsku zastavu koju su predali Okružnom komitetu SKOJ-a. Poginuo je 28. novembra 1944. Telo mu je vraćeno u Ćupriju i ovde je sahranjen, a ne na mestu pogibije kako piše u knjizi; njegova sahrana bila je navodno najveća u to vreme.',
+    from: 'A. Milosavljević Tinkić, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0002005456', // Mrkonjić Jankov Sava of Gaćeša Selo, Prva lička: his grandson's form of 2026-11-23 15:45 with his photo
+    // (Porodična arhiva 9990000034 referenced for the line; the death by 317165)
+    photo: '0002005456-1.jpg',
+    text: 'U NOB-u od 1941, borac partizanskog odreda „Gaćeša Selo”; od februara 1942. u 3. četi 2. bataljona 1. kordunaškog partizanskog odreda. Kasnije borac 3. bataljona 1. ličke proleterske brigade i 1. bataljona 15. kordunaške brigade. U toku rata jednom je ranjen u nogu, kod Generalskog Stola. Posle rata demobilisan je i nastavio da radi u rudniku kao poslovođa smene. Umro je 1986. u Gaćeša Selu, gde je i sahranjen.',
+    from: 'M. Mrkonjić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961375', // Cvijetić Leke Milorad of Kordovina (Pljevlja), 3. proleterska sandžačka: his son's missing-fighter form of
+    // 2026-11-23 15:11 (Porodična arhiva 9990000028; no name for the card)
+    text: 'Posle rata bio je oficir JNA.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961376', // Jasenovčanin Vase Petar of Jasenovčani (Sisak), 7. banijska divizija: his granddaughter's missing-fighter
+    // form of 2026-11-23 15:18 (Porodična arhiva 9990000029)
+    text: 'U rat je stupio sa 18 godina i cijeli rat bio borac 7. banijske udarne divizije. Ranjen je kod Prozora. Poslije rata bio je komandir milicijske stanice.',
+    from: 'T. Kovačević, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961377', // Radin-Mačukat Ante Ive-Vinko of Vodice: his grandson's missing-fighter form of 2026-11-23 15:24, the text
+    // a page of a book of Vodice he photographed (Porodična arhiva 9990000030; no name for the card)
+    pieces: [{ kind: 'document', file: '0122961377-1.jpg', caption: 'Stranica knjige o Vodicama, njegova natuknica (1045)' }],
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961378', // Kovačević Marko of Slovinci (Sisak), 7. banijska divizija: his granddaughter's missing-fighter form of
+    // 2026-11-23 15:24 (Porodična arhiva 9990000031)
+    text: 'Tokom rata bio je politički komesar u svojoj jedinici. Posle rata radio je kao matičar u Šašu i Sunji. Umro je 1968. godine.',
+    from: 'T. Kovačević, unuka',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

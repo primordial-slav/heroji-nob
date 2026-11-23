@@ -657134,8 +657134,13 @@
     "source_page": 496,
     "birth_place": "Donji Klasnić, Glina",
     "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945"
+    "death_type": "umro",
+    "death_date": "1945",
+    "death_place": "Šidski Banovci",
+    "manual_fields": [
+      "death_place",
+      "death_type"
+    ]
   },
   {
     "soldier_id": "0132012143",
@@ -660828,11 +660833,11 @@
   },
   {
     "soldier_id": "0132011863",
-    "last_name": "Savap",
+    "last_name": "Sarapa",
     "middle_name": "Ilija",
     "first_name": "Ljuban",
     "fathers_name": "Ilija",
-    "full_name": "Savap Ilija Ljuban",
+    "full_name": "Sarapa Ilija Ljuban",
     "additional_info": "rođen 1927, Donji Klasnić (Glina). Srbin, poginuo 1943. u NOBu, Sutjeska",
     "birth_year": "1927",
     "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=496",
@@ -660841,7 +660846,10 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Sutjeska"
+    "death_place": "Sutjeska",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0132003882",

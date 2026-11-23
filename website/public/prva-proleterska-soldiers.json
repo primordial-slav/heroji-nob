@@ -193508,7 +193508,13 @@
         "pdf_y_end": 680.2
       }
     ],
-    "party": "SKOJ 1943, KPJ 1944"
+    "party": "SKOJ 1943, KPJ 1944",
+    "death_type": "umro",
+    "death_date": "1990",
+    "family_fields": [
+      "death_date",
+      "death_type"
+    ]
   },
   {
     "soldier_id": "0001005587",
@@ -451530,12 +451536,12 @@
   },
   {
     "soldier_id": "0001013150",
-    "last_name": "Vihner",
+    "last_name": "Vihtner",
     "middle_name": "Rudolfa",
     "first_name": "Gordana",
     "additional_info": "1927, Beograd, Srbija, Hrvatica, učenica, u NOB od 1944, u brigadi od oktobra 1944, III bataljon, bolničarka",
     "fathers_name": "Rudolf",
-    "full_name": "Vihner Rudolfa Gordana",
+    "full_name": "Vihtner Rudolfa Gordana",
     "birth_year": "1927",
     "pdf_page": 331,
     "pdf_y": 100.6,
@@ -451543,11 +451549,16 @@
     "pdf_y_end": 133.1,
     "pdf_file": "prva-proleterska-3.pdf",
     "birth_place": "Beograd, Srbija",
-    "ethnicity": "Hrvatica",
+    "ethnicity": "Srpkinja",
     "occupation": "učenica",
     "rank": "bolničarka",
     "unit_detail": "3. bataljon",
-    "pdf_x_end": 345.6
+    "pdf_x_end": 345.6,
+    "birth_date": "30.03.1927",
+    "family_fields": [
+      "birth_date",
+      "ethnicity"
+    ]
   },
   {
     "soldier_id": "0001013151",
