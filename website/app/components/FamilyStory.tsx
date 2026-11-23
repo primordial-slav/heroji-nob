@@ -39,8 +39,9 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
   // Blaž's photo in a postwar uniform, kept out of the portrait, had shown nowhere)
   const album = pieces.length > 1 || (pieces.length === 1 && !portrait)
   // Without an album, as before: a story, and a photo that is not the portrait beside its story
+  // (the portrait's caption goes with it: it stands in the portrait's credit line, data/portraits.ts)
   const shown = items
-    .map((item) => (album || item === portrait ? { ...item, photo: undefined } : item))
+    .map((item) => (album || item === portrait ? { ...item, photo: undefined, photoCaption: undefined } : item))
     .filter((item) => item.photo || item.text)
   if (shown.length === 0 && !album) return null
 

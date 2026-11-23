@@ -665,15 +665,19 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0085000297', // Janković M Živko, 7. srpska: his granddaughter's photo of 2026-11-23 15:13 (no text)
+    soldierId: '0085000297', // Janković M Živko, 7. srpska: his granddaughter's photo of 2026-11-23 15:13 (no text); his face cut
+    // from the family photo is his portrait, the whole photo in his album (the user, 2026-11-23: "crop photo")
+    photo: '0085000297-2.jpg',
     pieces: [{ kind: 'photo', file: '0085000297-1.jpg', caption: 'Porodična fotografija' }],
     from: 'R. Janković, unuka',
     date: '2026-11',
   },
   {
     soldierId: '0021005315', // Tinkić Miodraga Svetozar, 4. srpska: a relative's form of 2026-11-23 15:24 (in Cyrillic); the photo from
-    // Gončin's book, him with comrades in a trench on the Srem front
-    pieces: [{ kind: 'photo', file: '0021005315-1.jpg', caption: 'Sa saborcima u rovu na Sremskom frontu (iz knjige M. Gončina „22. srpska kosmajska brigada”)' }],
+    // Gončin's book, him with comrades in a trench on the Srem front, cut to him: his portrait (the user, 2026-11-23: "photo not
+    // added")
+    photo: '0021005315-1.jpg',
+    photoCaption: 'U rovu na Sremskom frontu (iz knjige M. Gončina „22. srpska kosmajska brigada”)',
     text: 'Poreklom je iz Ćuprije; ime je dobio po dedi Svetozaru, trgovcu i kafedžiji. Otac Miodrag bio je savetnik Ministarstva finansija. Imao je sestre Veru i Leposavu. Bio je kapetan JA. Sahranjen je sa sestrom Verom na Novom groblju u Beogradu.',
     from: 'A. Milosavljević Tinkić, rođak',
     date: '2026-11',
