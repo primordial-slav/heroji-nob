@@ -41,15 +41,6 @@ export const NEWS: NewsItem[] = [
   {
     date: '2026-11-23',
     text: {
-      sr: 'Ponovo smo pročitali knjigu o Crnoj Travi i dodali oko 90 boraca koje smo ranije propustili. Kod svakog poginulog sada piše kada je i gde poginuo. Žrtve terora i aprilskog rata, koje knjiga navodi uz borce, više ne vodimo kao borce.',
-      sl: 'Knjigo o Crni Travi smo znova prebrali in dodali okoli 90 borcev, ki smo jih prej spregledali. Pri vsakem padlem je zdaj navedeno, kdaj in kje je padel. Žrtev terorja in aprilske vojne, ki jih knjiga navaja ob borcih, ne vodimo več kot borcev.',
-      mk: 'Повторно ја прочитавме книгата за Црна Трава и додадовме околу 90 борци што претходно ги испуштивме. Кај секој загинат сега пишува кога и каде загинал. Жртвите на теророт и на Априлската војна, што книгата ги наведува заедно со борците, повеќе не ги водиме како борци.',
-      en: 'We have read the book on Crna Trava again and added about 90 fighters we had missed. Each of the fallen now shows when and where he died. Victims of terror and of the April War, whom the book lists alongside the fighters, are no longer counted as fighters.',
-    },
-  },
-  {
-    date: '2026-11-23',
-    text: {
       sr: 'U spiskovima slovenačkih jedinica neki borci su upisani dva ili više puta: u više bataljona, ili i među živima i među poginulima. Spojili smo oko 130 takvih zapisa, pa sada svaki od tih boraca ima jednu karticu sa svime što spiskovi o njemu kažu.',
       sl: 'V seznamih slovenskih enot so nekateri borci vpisani dvakrat ali večkrat: v več bataljonih ali med živimi in med padlimi. Združili smo okoli 130 takih zapisov, zato ima zdaj vsak od teh borcev eno kartico z vsem, kar seznami pišejo o njem.',
       mk: 'Во списоците на словенечките единици некои борци се запишани двапати или повеќе пати: во повеќе баталјони или и меѓу живите и меѓу загинатите. Споивме околу 130 такви записи, па сега секој од тие борци има една картичка со сè што списоците пишуваат за него.',
