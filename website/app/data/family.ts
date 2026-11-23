@@ -877,6 +877,15 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
+  {
+    soldierId: '0028019015', // Vučeraković Petrov Jovan of Krnjice (Bar), 7. crnogorska: a man of his village sent a painted portrait,
+    // form of 2026-11-23 16:53; on the card at the user's word (2026-11-23: "yeah put the drawing on")
+    photo: '0028019015-1.jpg',
+    photoCaption: 'Crtež',
+    from: 'M. Pekić',
+    origin: 'visitor',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
