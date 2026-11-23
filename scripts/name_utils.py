@@ -1699,6 +1699,11 @@ def clean_name_field(name):
     # Remove trailing punctuation again after keyword removal
     name = name.rstrip('.,;:').strip()
 
+    # the scans' LJ read as UU ("UUBOMIR", "UUBISAVA": no name begins with Uu) and IJ as U ("JEROTUA", "AKSENTUA"): a reader's
+    # report of 2026-11-22 put Novaković Uubivoje and Starčević Jerotua right; task 40 (2026-11-23) spreads it to every name
+    name = re.sub(r'^U(?=u[a-zčćžšđ])', 'Lj', name)
+    name = re.sub(r'(?<=[a-zčćžšđ]{3})tua$', 'tija', name)
+
     # Collapse multiple spaces
     name = ' '.join(name.split())
 

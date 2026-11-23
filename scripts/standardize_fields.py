@@ -719,6 +719,11 @@ PLACE_READ = {
     "u Donjim Magnojevićima (Bij^'tó": 'u Donjim Magnojevićima (Bijeljina)', 'u Brčelima (Crmni': 'u Brčelima (Crmnica)', 'u Brčelima (Crmni)': 'u Brčelima (Crmnica)', 'u Celini (Sjetlini': 'u Celini (Sjetlini?)', 'u Celini (Sjetlini)': 'u Celini (Sjetlini?)',
     'u Celini (Sjetlini ?)': 'u Celini (Sjetlini?)', 'kod Vlasotinca. (Po kazivanjima njegovih seljana poginuo': 'kod Vlasotinca', 'kod Ratkovog potoka (nije moglo da se utvrdi': 'kod Ratkovog potoka', 'u Bosni (vjerovatno': 'u Bosni',
     'u Bosni (vjerovatno)': 'u Bosni', 'u Samoboru (javno strijeljan': 'u Samoboru', 'na Lupcu kod Zenice (teško ranjen i umro': 'na Lupcu kod Zenice', 'na Lupcu kod Zenice (teško ranjen i umro)': 'na Lupcu kod Zenice',
+    # villages the readers' reports of 2026-11-22 put right, spread to every record that prints the same slip where it is the same
+    # place (task 40, 2026-11-23; only the village changes, the municipality stays as printed: the user's rule after Ninković)
+    'Zavode': 'Zavođe', 'Zavode, Gospić': 'Zavođe, Gospić', 'Veliki Badić': 'Veliki Radić', 'Veliki Badić, Bosanska Krupa': 'Veliki Radić, Bosanska Krupa',
+    'Smiljani': 'Smiljan', 'Metak, Gospić': 'Medak, Gospić', 'Metak, Lika': 'Medak, Lika', 'Banjane, Ub': 'Banjani, Ub',
+    'Vrhovina, Otočac': 'Vrhovine, Otočac', 'Neprićava': 'Nepričava',
 }
 
 
