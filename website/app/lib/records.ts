@@ -7,6 +7,21 @@ import { isWoman } from './standIn'
 // The older address of a record, /units/<unit>?borac=<soldier id>, which old links still use, and the memorial card's
 export const RECORD_PARAM = 'borac'
 
+// The name the soldier's own entry gives him as "zvani Tonko" / "zvana Mica" (the user, 2026-11-23: shown by the name,
+// in quotes, on the card, the memorial card and in the search's results: Krstulović Ante „Tonko“). The first such name
+// in his own entry; not a place's ("mesto zvano Pređel"), nor one a sentence about a relative gives ("brat mu zvani
+// ..."), nor his first name again.
+const NICKNAME = /(^|[^\p{L}])zvan[ai]\s+[„"»]?([A-ZČĆŽŠĐ][a-zčćžšđ'-]+)/u
+const NOT_HIS = /(?:^|[^\p{L}])(?:brat\p{L}*|sestr\p{L}*|otac|oca|sin|sina|majk\p{L}*|muž\p{L}*|supru\p{L}*|stric\p{L}*|ujak\p{L}*)(?:\s+(?:mu|joj|je))?\s*$/iu
+
+export function nicknameOf(soldier: Pick<Soldier, 'additional_info' | 'first_name'>): string | undefined {
+  const text = soldier.additional_info ?? ''
+  const m = NICKNAME.exec(text)
+  if (!m) return undefined
+  if (NOT_HIS.test(text.slice(Math.max(0, m.index - 24), m.index + m[1].length))) return undefined
+  return m[2] === soldier.first_name ? undefined : m[2]
+}
+
 export function unitByName(name?: string): Unit | undefined {
   return name ? units.find((u) => u.name === name) : undefined
 }

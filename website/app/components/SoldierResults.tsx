@@ -6,17 +6,21 @@ import { ChevronLeftIcon, ChevronRightIcon } from './Icons'
 import { SoldierMedals } from './Medal'
 import RecordLink from './RecordLink'
 import { useLang, useT, useUnitText } from '@/app/i18n/LangContext'
-import { formatNumber } from '@/app/i18n/format'
-import { unitByName } from '@/app/lib/records'
+import { formatNumber, quoted } from '@/app/i18n/format'
+import { nicknameOf, unitByName } from '@/app/lib/records'
 import { PAGE_SIZES } from '@/app/lib/searchIndex'
 
-// Surname first, as the books print it; the surname carries the weight
+// Surname first, as the books print it; the surname carries the weight; the nickname his entry gives after the name,
+// in the language's quotation marks (Krstulović Ante „Tonko“)
 export function SoldierName({ soldier }: { soldier: Soldier }) {
+  const lang = useLang()
   const rest = [soldier.middle_name, soldier.first_name].filter(Boolean).join(' ')
+  const nick = nicknameOf(soldier)
   return (
     <>
       <b>{soldier.last_name}</b>
       {rest && ` ${rest}`}
+      {nick && <span className="soldier-nick"> {quoted(lang, nick)}</span>}
     </>
   )
 }
