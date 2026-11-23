@@ -861,8 +861,13 @@ def main():
 
     # The census's and the column books' columns fill the rows the unit's books and the linked records leave empty
     filled = {}
-    for s, book, e in fills:
-        for k in record_sources.fill_from(s, book, e):
+    for s, book, e in fills:                        # the rows but the death: in the corrections' order
+        for k in record_sources.fill_from(s, book, e, part='rest'):
+            filled[k] = filled.get(k, 0) + 1
+    # the death: a column book's day first, then the census, then the other column books (record_sources.fill_rank; a
+    # stable sort, each rank in the corrections' order)
+    for s, book, e in sorted(fills, key=lambda f: record_sources.fill_rank(f[1], f[2])):
+        for k in record_sources.fill_from(s, book, e, part='death'):
             filled[k] = filled.get(k, 0) + 1
     if filled:
         print(f"\n  Rows filled from the census and the column books: "

@@ -524,6 +524,10 @@ DEATH_PLACE_READS = {
 }
 
 
+EXACT_DAY = re.compile(r'1[89]\d\d-\d\d-\d\d')     # a column book's death_date to the day (ISO), as its parser writes it
+DEATH_KEYS = ('death_type', 'death_date', 'death_place')
+
+
 def column_fields(e: dict) -> dict:
     # a list of officers names who fell and who lived (the XXXI. divizija's staffs): no death for one who lived
     if e.get('survived') and not e.get('death_date'):
@@ -1281,13 +1285,27 @@ def main():
             # the field reader may put the man's own biography first: "Strijeljana od četnika 1942." is streljan, not
             # the Spomenica's "poginuo", and "poginuo 9. juna 1943." the day, not its year (2026-10-28)
             filled = []
+            columns = [m for m in g if is_column(m['_book'], m)]
+            # a column book's day of death goes before the census's bare year, with its place (the user's rule of
+            # 2026-11-23: "yes, if exact date. Family record trumping all of it"): Brod's "Veljković Mika, 15. 5. 1944.,
+            # Plana" had shown the census's "1944, Crna Trava"; the census's year and place then show after "ili" where
+            # they differ (record_sources.variants), and its place fills in only for the same year. A book that gives
+            # the year alone (the Spomenica) still comes after the census
+            exact = next((m for m in columns if EXACT_DAY.fullmatch(m.get('death_date') or '')), None)
+            if exact:
+                for k, v in column_fields(exact).items():
+                    if k in DEATH_KEYS and k not in rec:
+                        rec[k] = v
+                        filled.append(k)
             if census:
-                for k, v in census_fields(census[0]).items():
+                c = census_fields(census[0])
+                if exact and c.get('death_date') and c['death_date'] != exact['death_date'][:4]:
+                    c.pop('death_place', None)               # another year's place: shown with its year after "ili"
+                for k, v in c.items():
                     # his unit from the census's column only where no book's biography tells it (the field reader's)
                     if k not in rec and not (k == 'unit_detail' and len(census) < len(g)):
                         rec[k] = v                           # the census's columns, where a list gave no death
                         filled.append(k)
-            columns = [m for m in g if is_column(m['_book'], m)]
             if columns:
                 for k, v in column_fields(columns[0]).items():
                     if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):

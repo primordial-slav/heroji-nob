@@ -114,9 +114,25 @@ def no_death_lent(s: dict) -> bool:
     return fsd.fate(s) == 'lived' or bool(s.get('death_after_war')) or s.get('death_type') in NOT_DEATHS
 
 
-def fill_from(s: dict, book: str, e: dict) -> list[str]:
-    """Fill s's empty fields from a reference of a census or column book; the fields filled"""
+def fill_rank(book: str, e: dict) -> int:
+    """The order the census and the column books fill a record's empty rows in (the user's rule of 2026-11-23: "yes, if
+    exact date. Family record trumping all of it"): a column book's day of death and its place first, then the census,
+    then the column books that give the year alone (the Spomenica), as build_ostali_borci.py fills Borci drugih jedinica;
+    a family's correction stands over all (fill_from fills empty rows only). It also keeps a record's borrowed death from
+    passing between the census and a column book from one run to the next"""
+    import build_ostali_borci as ob
+    if ob.is_column(book, e) and ob.EXACT_DAY.fullmatch(e.get('death_date') or ''):
+        return 0
+    return 1 if book.startswith(CENSUS_BOOK) else 2
+
+
+def fill_from(s: dict, book: str, e: dict, part: str = '') -> list[str]:
+    """Fill s's empty fields from a reference of a census or column book; the fields filled. part: 'death' for the
+    death's rows alone, 'rest' for the others (apply_corrections.py fills the death in fill_rank's order, the rest in the
+    corrections'), '' for all"""
     import build_ostali_borci
+    if part == 'death' and not (book.startswith(CENSUS_BOOK) or build_ostali_borci.is_column(book, e)):
+        return []
     if not (book.startswith(CENSUS_BOOK) or build_ostali_borci.is_column(book, e)):
         # any other book (or a column book's list printed as text: Crna Trava's heroes): only where he is from, as its
         # parser read it (2026-11-03)
@@ -133,7 +149,9 @@ def fill_from(s: dict, book: str, e: dict) -> list[str]:
     if no_death_lent(s) or (year and other and year.group(0) != other.group(0)):
         # (a death of another year is shown after "ili", variants())
         vals = {k: v for k, v in vals.items() if k not in DEATH_FIELDS}
-    taken =[k for k, v in vals.items() if v and not s.get(k)]
+    if part:
+        vals = {k: v for k, v in vals.items() if (k in DEATH_FIELDS) == (part == 'death')}
+    taken = [k for k, v in vals.items() if v and not s.get(k)]
     for k in taken:
         borrow(s, k, vals[k])
     return taken
