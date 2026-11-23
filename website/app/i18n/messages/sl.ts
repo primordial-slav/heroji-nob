@@ -247,6 +247,11 @@ export const sl: Messages = {
     sending: `Pošiljanje${dots}`,
     sent: 'Hvala, sporočilo je poslano. Zapis bomo preverili v knjigi.',
     failed: 'Sporočilo ni bilo poslano. Preverite internetno povezavo in [poskusite znova].',
+    email: 'Vaš e-naslov',
+    optional: '(ni obvezno)',
+    emailHint: 'Naslov potrebujemo samo zato, da se vam lahko zahvalimo in odgovorimo. Ne bomo ga objavili ali dali nikomur in ne bomo vam pošiljali nezaželene pošte.',
+    mayReply: 'Na ta naslov mi lahko odgovorite',
+    willReply: 'Oglasili se vam bomo na naslov, ki ste ga pustili.',
   },
 
   know: {

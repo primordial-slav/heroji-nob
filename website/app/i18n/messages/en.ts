@@ -250,6 +250,11 @@ export const en: Messages = {
     sending: 'Sending…',
     sent: 'Thank you, your note has been sent. We will check the record against the book.',
     failed: 'Your note was not sent. Check your internet connection and [try again].',
+    email: 'Your email',
+    optional: '(optional)',
+    emailHint: 'We use your address only to thank you and reply. We never publish it or share it, and there will be no spam.',
+    mayReply: 'You may reply to me at this address',
+    willReply: 'We will get back to you at the address you left.',
   },
 
   know: {

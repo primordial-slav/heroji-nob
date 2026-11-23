@@ -93,6 +93,9 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
 
   const [showReportForm, setShowReportForm] = useState(false)
   const [reportText, setReportText] = useState('')
+  // the sender's address, optional, and whether we may answer there (on by default: the user, 2026-11-23)
+  const [reportEmail, setReportEmail] = useState('')
+  const [reportMayReply, setReportMayReply] = useState(true)
   const [reportStatus, setReportStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const dialogRef = useRef<HTMLDivElement>(null)
   const pageRef = useRef<HTMLElement>(null)
@@ -195,6 +198,9 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
           Jedinica: unit || '',
           Jezik: LANG_NAMES[lang].name,
           'Opis greške': reportText,
+          'Email pošiljaoca': reportEmail.trim(),
+          'Dozvola za odgovor': reportEmail.trim() ? (reportMayReply ? 'Da' : 'Ne') : '',
+          ...(reportEmail.trim() && reportMayReply ? { _replyto: reportEmail.trim() } : {}),
         }),
       })
       setReportStatus((await wasDelivered(res)) ? 'sent' : 'error')
@@ -391,13 +397,33 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
               rows={3}
               maxLength={2000}
             />
+            <label htmlFor="report-email" className="report-email-label">
+              {t.report.email} <span className="know-optional">{t.report.optional}</span>
+            </label>
+            <input
+              id="report-email"
+              className="report-email"
+              type="email"
+              value={reportEmail}
+              onChange={(e) => setReportEmail(e.target.value)}
+              maxLength={160}
+              autoComplete="email"
+            />
+            {/* by its field, and only once an address is there: without one there is nobody to answer */}
+            {reportEmail.trim() && (
+              <label className="report-check">
+                <input type="checkbox" checked={reportMayReply} onChange={(e) => setReportMayReply(e.target.checked)} />
+                <span>{t.report.mayReply}</span>
+              </label>
+            )}
+            <p className="know-hint report-hint">{t.report.emailHint}</p>
             <div className="report-actions">
               <button className="btn btn-primary" onClick={handleReport} disabled={!reportText.trim()}>
                 {t.report.send}
               </button>
               <button
                 className="btn btn-secondary"
-                onClick={() => { setShowReportForm(false); setReportText('') }}
+                onClick={() => { setShowReportForm(false); setReportText(''); setReportEmail(''); setReportMayReply(true) }}
               >
                 {t.report.cancel}
               </button>
@@ -407,7 +433,10 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
 
         {reportStatus === 'sending' && <p className="report-status">{t.report.sending}</p>}
         {reportStatus === 'sent' && (
-          <p className="report-status report-success">{t.report.sent}</p>
+          <p className="report-status report-success">
+            {t.report.sent}
+            {reportEmail.trim() && reportMayReply && ` ${t.report.willReply}`}
+          </p>
         )}
         {reportStatus === 'error' && (
           <p className="report-status report-error-msg">

@@ -285,6 +285,12 @@ export const sr = {
     sending: 'Slanje…',
     sent: 'Hvala, prijava je poslata. Proverićemo zapis u knjizi.',
     failed: 'Prijava nije poslata. Proverite internet vezu i [pokušajte ponovo].',
+    /** The sender's address, optional: to thank and answer them (the user, 2026-11-23); the tick is on by default */
+    email: 'Vaš email',
+    optional: '(nije obavezno)',
+    emailHint: 'Adresa nam služi samo da vam zahvalimo i odgovorimo. Ne objavljujemo je, ne delimo ni sa kim i neće biti nikakvog spama.',
+    mayReply: 'Smete da mi odgovorite na ovu adresu',
+    willReply: 'Javićemo vam se na adresu koju ste ostavili.',
   },
 
   know: {
