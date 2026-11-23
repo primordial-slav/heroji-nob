@@ -505,6 +505,69 @@ export const familyContributions: FamilyContribution[] = [
     from: 'V. Mihić, sinovac',
     date: '2026-11',
   },
+  {
+    soldierId: '0122961365', // Nišić Džafera Rizah of Živinice, 16. muslimanska, not in any book: his grandson's
+    // missing-fighter form of 2026-11-22 20:24 (Porodična arhiva 9990000011); the column under the banner is in his album
+    pieces: [{ kind: 'photo', file: '0122961365-1.jpg', caption: 'U stroju u Tuzli, oktobra 1943. Rizah Nišić je zamjenik komandira 2. čete drugog bataljona 16. muslimanske NOU brigade.' }],
+    text: 'Poslije demobilizacije 1953. nastanio se u Gračanici, gdje je i preminuo 2004. godine.',
+    from: 'S. Nišić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132046220', // Krstulović Ivana Zdravko of Split, census part Hrvatska (fell 1943 at Kalinovik): the form of
+    // 2026-11-23 02:53 by his brother's grandson (the brother is Krstulović Ante "Tonko", Porodična arhiva 9990000016); the
+    // census's year stands, the grave's 1944 is in the note; the photo of the grave in his album
+    pieces: [{ kind: 'photo', file: '0132046220-1.jpg', caption: 'Grob na splitskom Lovrincu' }],
+    text: 'Po obiteljskim pričama poginuo je za vrijeme Pete ofanzive, ali na njegovom grobu u Splitu piše 1944. Poslije rata braća su otišla po njegove posmrtne ostatke i pokopala ga na splitskom Lovrincu, pored majke Mile.',
+    from: 'A. Krstulović, pranećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036100433', // Ivanišević-Andrijić Jerka Vjera "Vesna" of Split, 1. dalmatinska: a photo alone, form of
+    // 2026-11-23 08:28 (no name for the card); her wartime portrait
+    photo: '0036100433-1.jpg',
+    photoCaption: 'U uniformi',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0018000298', // Divljak Milorada Živko of Novi Karlovci, 2. vojvođanska: his grandson's form of 2026-11-23 08:45
+    // (Porodična arhiva 9990000019 referenced, for the wound and the death in his rows)
+    text: 'Učesnik je bitke na Sutjesci, gde je ranjen na dva mesta. Posle rata bio je upravnik sirotišta u Savinom Selu. Zatim se s porodicom preselio u Zrenjanin, gde je radio kao sekretar u „Luxolu“. Posle teškog infarkta penzionisan je. Umro je u Zrenjaninu 1990. godine.',
+    from: 'S. Tuba, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0033000126', // Dvorski Josip of Herešin, 53. srednjobosanska divizija: his brother's grandson's form of 2026-11-23
+    // 10:20 (the father Mijo by correction 317147); the brother is Dvorski Mije Martin (Porodična arhiva 9990000018)
+    text: 'Brat je Martina Dvorskog iz Herešina, borca 21. slavonske udarne brigade.',
+    from: 'D. Švalek, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961368', // Krstulović Ivana Ante "Tonko" of Split, not in any book: his grandson's missing-fighter form of
+    // 2026-11-23 03:11 (Porodična arhiva 9990000016); Zdravko (0132046220) is his brother
+    text: 'Bio je prvoborac 1941. godine, pripadnik splitskih udarnih grupa koje su 1941. bacile bombe na talijansku vojnu glazbu u Splitu. Talijani su ga uhapsili i poslali na robiju u Italiju. Poslije kapitulacije Italije uspio se pridružiti slovenskim partizanima. Umro je u Splitu 1996. godine.',
+    from: 'A. Krstulović, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961369', // Ivančić Paško of Split, not in any book: the same sender's missing-fighter form of 2026-11-23 08:24
+    // (Porodična arhiva 9990000017)
+    text: 'Od 1944. bio je borac, puškomitraljezac 20. dalmatinske divizije. Sudjelovao je u borbama za oslobođenje Knina, Gospića, Rijeke i Trsta. Po završetku rata, 1946. godine, izgubio je nogu pri čišćenju minskih polja u Sloveniji. Umro je u Splitu 1998. godine.',
+    from: 'A. Krstulović, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961370', // Dvorski Mije Martin of Herešin, 21. slavonska, not in any book: his grandson's missing-fighter
+    // form of 2026-11-23 10:17 (Porodična arhiva 9990000018); the photo in uniform, from a document, is his portrait;
+    // Josip (0033000126) is his brother
+    photo: '0122961370-1.jpg',
+    photoCaption: 'U uniformi',
+    text: 'U 21. slavonsku udarnu brigadu stupio je dragovoljno 18. novembra 1943. Dva puta je ranjen 1944. godine u okolici Slavonske Požege. Nakon liječenja bio je u Glavnom štabu Hrvatske, a zatim u 1. bataljonu 2. autopuka 2. jugoslavenske armije.',
+    from: 'D. Švalek, unuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

@@ -724,6 +724,9 @@ PLACE_READ = {
     'Zavode': 'Zavođe', 'Zavode, Gospić': 'Zavođe, Gospić', 'Veliki Badić': 'Veliki Radić', 'Veliki Badić, Bosanska Krupa': 'Veliki Radić, Bosanska Krupa',
     'Smiljani': 'Smiljan', 'Metak, Gospić': 'Medak, Gospić', 'Metak, Lika': 'Medak, Lika', 'Banjane, Ub': 'Banjani, Ub',
     'Vrhovina, Otočac': 'Vrhovine, Otočac', 'Neprićava': 'Nepričava',
+    # the 5. srpska's "Sindija" (Panić Zlatomir, Pavlović Slobodan): Sirdija of Osečina, as the census prints them (a
+    # reader's report of 2026-11-23 08:01)
+    'Sindija': 'Sirdija',
 }
 
 
