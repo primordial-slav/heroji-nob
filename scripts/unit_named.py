@@ -60,8 +60,9 @@ ORD = [('dvadeset', 20), ('trideset', 30), ('cetrdeset', 40), ('pedeset', 50), (
        ('cetvrt', 4), ('pet', 5), ('sest', 6), ('sedm', 7), ('osm', 8), ('devet', 9), ('deset', 10)]
 ROMAN = {'i': 1, 'ii': 2, 'iii': 3, 'iv': 4, 'v': 5, 'vi': 6, 'vii': 7, 'viii': 8, 'ix': 9, 'x': 10, 'xi': 11,
          'xii': 12, 'xiii': 13, 'xiv': 14, 'xv': 15, 'xvi': 16, 'xvii': 17, 'xviii': 18, 'xix': 19, 'xx': 20}
-ORD_WORD = (r'(?:dvadeset|trideset|cetrdeset|pedeset|jedanaest|dvanaest|trinaest|cetrnaest|petnaest|sesnaest|'
-            r'sedamnaest|osamnaest|devetnaest|prv|drug|trec|cetvrt|pet|sest|sedm|osm|devet|deset)[a-z]*')
+# (with the diacritics too: WB reads the text as written, "Treće proleterske sandžačke brigade", 2026-11-23)
+ORD_WORD = (r'(?:dvadeset|trideset|[cč]etrdeset|pedeset|jedanaest|dvanaest|trinaest|[cč]etrnaest|petnaest|[sš]esnaest|'
+            r'sedamnaest|osamnaest|devetnaest|prv|drug|tre[cć]|[cč]etvrt|pet|[sš]est|sedm|osm|devet|deset)[a-zčćžšđ]*')
 
 
 def ord_value(words: list[str]) -> int | None:
@@ -137,7 +138,11 @@ def tables() -> dict:
         # banijska brigada 7. divizija")
         name = re.sub(r'\b(?:od|do)\s+(?:\d{1,2}\.\s*)?(?:[IVX]{1,4}\b\.?|[a-zčćžšđ]+)?\s*\'?\d{2,4}\.?', ' ', name)
         name = re.sub(r'\d{1,2}\.\s*(?:operativne\s+zone|divizij\w*|korpus\w*)[^,;()]*', ' ', name)
-        for seg in re.split(r'[(),;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', name):
+        inline = re.sub(r'\(([^()\d]*)\)', r' \1 ', name)
+        segs = re.split(r'[(),;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', name)
+        if inline != name:
+            segs += re.split(r'[,;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', inline)[:1]
+        for seg in segs:
             w = re.findall(r'[a-z0-9]+', fold(seg))
             num = ord_value(w[:2]) if w else None
             if key == ('brigades', 76) and num == 20:
@@ -275,8 +280,16 @@ def mentions(t: str) -> list[tuple]:
             out.append((site[key], 'brigade of its division by number', m.group(0)))
         else:
             out.append((None, 'brigade of a division, unsure', m.group(0)))
+    def again(rx):
+        pos = 0
+        while True:
+            m = rx.search(t, pos)
+            if not m:
+                return
+            pos = m.start() + 1
+            yield m
     for rx in (NB, WB):
-        for m in rx.finditer(t):
+        for m in again(rx):
             if any(s <= m.start() < e for s, e in used) or ENEMY.search(near(m)):
                 continue
             num = ord_value(re.findall(r'[a-z0-9]+', fold(m.group(1))))
@@ -285,6 +298,11 @@ def mentions(t: str) -> list[tuple]:
                 continue
             key, n = brigade_by_name(num, words)
             used.append(m.span())
+            if key and key not in site:
+                dsite = {site[('divisions', d)] for d in tb['div_of'].get(key, ()) if ('divisions', d) in site}
+                if len(tb['div_of'].get(key, ())) == 1 and len(dsite) == 1 and not dsite & STAFF_ONLY:
+                    out.append((dsite.pop(), 'division of the brigade by name', m.group(0)))
+                    continue
             if key:
                 out.append((site.get(key), 'brigade by name' if key in site else 'brigade not on the site', m.group(0)))
             elif any(not w.startswith(('prol', 'omlad', 'udar')) for w in words):
