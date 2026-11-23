@@ -606,6 +606,17 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
+    soldierId: '0043000203', // Buturović Ahmeta Fadil of Prozor, 10. hercegovačka (linked with the Mostarski bataljon's
+    // 0125000128, 317155): a post of the Facebook page "Bitka na Sutjesci" the user sent, 2026-11-23; the portrait cut from
+    // it (tinted); the death by correction 317156
+    photo: '0043000203-1.jpg',
+    photoCaption: 'U uniformi',
+    text: 'Komunist, borac 10. hercegovačke brigade na Neretvi i Sutjesci. Ubijen je 1993. godine u Sarajevu, za vreme opsade grada.',
+    from: '„Bitka na Sutjesci”',
+    origin: 'facebook',
+    date: '2026-11',
+  },
+  {
     soldierId: '0040011900', // Čelebić Ilijin Joko of Štitari, 4. proleterska ("poginuo decembra 1942" in its two lists): his
     // nephew's missing-fighter form of 2026-11-23 13:36 for "Čelebić Đoko" is he, the family wins (the user, 2026-11-23);
     // Porodična arhiva 9990000023 referenced, the rows by correction 317154
