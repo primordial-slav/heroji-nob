@@ -465,8 +465,10 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122961366', // Mijanović Nikole Milutin "Mošo" of Cetinje, Lovćenski odred, not in any book: his nephew's
     // missing-fighter form of 2026-11-22 23:01 (Porodična arhiva 9990000014); his career after the war at the user's word
-    // (2026-11-22); the portrait is from after the war, so in his album
-    pieces: [{ kind: 'photo', file: '0122961366-1.jpg', caption: 'Posle rata' }],
+    // (2026-11-22); the portrait is from after the war: his card's portrait at the user's word (2026-11-23, "Milutin add
+    // photo as profile"), not among the home page's wartime portraits (wartimePortraits.ts)
+    photo: '0122961366-1.jpg',
+    photoCaption: 'Posle rata',
     text: 'Nosilac je Partizanske spomenice. Teško je ranjen u borbama protiv četnika u blizini Čeva u ljeto 1944. godine i zarobljen. Pobjegao je iz cetinjske bolnice, gdje je liječen da bi mu se sudilo. Poslije rata završio je studije srpskog jezika i jugoslovenske književnosti na beogradskom Filozofskom fakultetu. Bio je direktor Izdavačkog preduzeća „Narodna knjiga“ na Cetinju, sekretar Opštinskog komiteta SK Cetinje i direktor Narodnog muzeja SR Crne Gore. Umro je u Beogradu 1989. godine, gdje je i sahranjen.',
     from: 'I. Mijanović, sinovac',
     date: '2026-11',
