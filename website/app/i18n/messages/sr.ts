@@ -244,6 +244,8 @@ export const sr = {
     or: 'ili',
     /** The mark after a row a family's report set (the user's choice of 2026-11-23): its tooltip */
     fromFamily: 'Ispravka po podacima porodice',
+    /** The card's dot after the name, a family having added to it (the user's choice of 2026-11-23): its tooltip */
+    familyDot: 'Dopunjeno podacima porodice',
     /**
      * The Igman march (lib/warEvents.ts): "Kao pripadnik 2. čete 1. bataljona, učestvovao je u Igmanskom maršu
      * 27–28. januara 1942."; "najverovatnije" where his company is not certainly in the column (the Posavska četa)

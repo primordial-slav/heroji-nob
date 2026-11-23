@@ -227,6 +227,8 @@ export const mk: Messages = {
     },
     or: 'или',
     fromFamily: 'Исправено според податоците на семејството',
+    /** The card's dot after the name, a family having added to it (the user's choice of 2026-11-23): its tooltip */
+    familyDot: 'Дополнето со податоци од семејството',
     /** The Igman march: "Како припадник на 2-рата чета од 1-виот баталјон, учествувал во Игманскиот марш на 27 и 28 јануари 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const where = e.c && e.b ? `${mkOrdinalDefinite(e.c, true)} чета од ${mkOrdinalDefinite(e.b)} баталјон`

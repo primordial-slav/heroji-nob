@@ -18,7 +18,7 @@ import { SoldierMedals, honoursLine } from './Medal'
 import { wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
-import FamilyMark from './FamilyMark'
+import FamilyMark, { FamilyDot } from './FamilyMark'
 import { contributionsFor } from '@/app/data/family'
 import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './RelationsTree'
 import LifeLine from './LifeLine'
@@ -288,7 +288,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
         <div className="modal-head">
           <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" framed />
           <div>
-            <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
+            <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /><FamilyDot soldier={soldier} title={t.record.familyDot} /></h2>
             {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => (u === soldier.unit_name ? u : shownUnitName(u, lang, unitText))).join(' · ')}</p>}
             {honours && <p className="modal-honours">{honours}</p>}
             {portrait && (

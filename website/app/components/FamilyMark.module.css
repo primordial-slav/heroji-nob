@@ -17,3 +17,16 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* The card's dot after the name, a family having added to it (the user's choice D of 2026-11-23): barely there */
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 0.32em;
+  vertical-align: 0.32em;
+  border-radius: 50%;
+  background: var(--cloth-ink);
+  opacity: 0.6;
+  cursor: help;
+}

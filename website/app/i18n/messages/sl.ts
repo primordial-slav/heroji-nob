@@ -212,6 +212,8 @@ export const sl: Messages = {
     },
     or: 'ali',
     fromFamily: 'Popravljeno po podatkih družine',
+    /** The card's dot after the name, a family having added to it (the user's choice of 2026-11-23): its tooltip */
+    familyDot: 'Dopolnjeno s podatki družine',
     /** The Igman march: "Kot pripadnik 2. čete 1. bataljona se je udeležil igmanskega marša 27. in 28. januarja 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const where = e.c && e.b ? `${e.c}. čete ${e.b}. bataljona`

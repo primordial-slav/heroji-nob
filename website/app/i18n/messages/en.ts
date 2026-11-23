@@ -214,6 +214,8 @@ export const en: Messages = {
     },
     or: 'or',
     fromFamily: "Corrected from the family's information",
+    /** The card's dot after the name, a family having added to it (the user's choice of 2026-11-23): its tooltip */
+    familyDot: 'Updated with information from the family',
     /** The Igman march: "As a member of the 2nd Company of the 1st Battalion, he took part in the Igman March of 27–28 January 1942." */
     igman: (e: WarEvent, woman: boolean) => {
       const th = (k?: number) => (k === 1 ? '1st' : k === 2 ? '2nd' : k === 3 ? '3rd' : `${k}th`)
