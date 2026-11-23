@@ -430,7 +430,9 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0136028645', // Kojić Ilije Miodrag of Brusnik, census part Srbija: his grandson's form of 2026-11-22 12:35,
     // in English (translated); his father's emigration, his brother's death and who may have killed him left out
-    // (about others, a guess); the wedding photo is colourised
+    // (about others, a guess); the wedding photo is colourised; his face cut from it is his portrait (the user, 2026-11-23)
+    photo: '0136028645-2.jpg',
+    photoCaption: 'Na dan venčanja',
     pieces: [{ kind: 'photo', file: '0136028645-1.jpg', caption: 'Miodrag i Ružica na dan venčanja' }],
     text: 'Otac mu je bio Ilija, majka Milka, rođena Stojanović, a supruga Ružica, rođena Milošević, svi iz Brusnika. Ćerke Miroslava i Slobodanka bile su premale da ga zapamte. Ružica je išla kod Moše Pijade da traži pomoć da se pronađu Miodragovi posmrtni ostaci u istočnoj Bosni. Primio ju je na tri minuta i obećao da će pomoći, ali do toga nikad nije došlo.',
     from: 'M. Kojadinović, unuk',
