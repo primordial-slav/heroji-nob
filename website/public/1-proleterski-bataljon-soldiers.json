@@ -2302,16 +2302,70 @@
   },
   {
     "last_name": "Dejanović",
-    "middle_name": "",
+    "middle_name": "Mile",
     "first_name": "Dušan",
-    "fathers_name": "",
-    "full_name": "Dejanović Dušan",
+    "fathers_name": "Mile",
+    "full_name": "Dejanović Mile Dušan",
     "additional_info": "1919, Široka Rijeka, Vojnić.",
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=289",
     "source_page": 265,
     "soldier_id": "0120000080",
-    "birth_place": "Široka Rijeka, Vojnić"
+    "birth_place": "Široka Rijeka, Vojnić",
+    "other_sources": [
+      {
+        "soldier_id": "9990000020",
+        "name": "Dejanović Dušan",
+        "additional_info": "Poginuo 1943. u Grmeču.",
+        "source_url": "porodica:9990000020",
+        "ref_book": "porodicna-arhiva"
+      },
+      {
+        "soldier_id": "0002900114",
+        "name": "Dejanović Mile Dušan",
+        "additional_info": "Mracelj, općina Krstinja: 1918, radnik, Srbin. Stupio u NOV 27. 7. 1941. Borac-radnik partizanske radionice 1. brig. 6. div. Poginuo u Grmeču 10. 12. 1942.",
+        "pdf_file": "hak-19-vojnic.pdf",
+        "pdf_page": 26,
+        "pdf_x": 201.9,
+        "pdf_y": 172.9,
+        "pdf_x_end": 369.9,
+        "pdf_y_end": 216.9,
+        "rank": "borac",
+        "unit_file": "soldiers.json"
+      },
+      {
+        "soldier_id": "9021052639",
+        "name": "Dejanović (Mile) Dušan",
+        "additional_info": "rođen 1918, Mracelj (Vonjić). Srbin, poginuo 1942. u NOBu, Sušna Palanka",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2531",
+        "source_page": 2531,
+        "unit_file": "soldiers.json"
+      }
+    ],
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation"
+    ],
+    "occupation": "radnik",
+    "death_type": "poginuo",
+    "death_date": "10.12.1942",
+    "death_place": "Grmeč",
+    "variants": {
+      "born": [
+        "1918"
+      ],
+      "death": [
+        {
+          "date": "1943",
+          "family": true,
+          "place": "Grmeč"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dejanović",

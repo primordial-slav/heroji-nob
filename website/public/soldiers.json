@@ -190062,7 +190062,7 @@
     "other_sources": [
       {
         "soldier_id": "0003013511",
-        "name": "Stanisić Jerotua Dragoljub",
+        "name": "Stanisić Jerotija Dragoljub",
         "additional_info": "rođen 1923. u Valjevu. U NOB-1944. Borac I. bataljona. Živi u Valjevu.",
         "pdf_file": "druga-licka-sjecanja-prezivjeli.pdf",
         "pdf_page": 153,
@@ -212801,7 +212801,7 @@
     "other_sources": [
       {
         "soldier_id": "0006008332",
-        "name": "Ulanec Marijan",
+        "name": "Ulanec Rudolfa Marijan",
         "additional_info": "1925. Stenjevac, Zagreb. Nestao 26. VI1944. u selu Kosanovići u Bosni.",
         "pdf_file": "13-proleterska-spisak.pdf",
         "pdf_page": 98,
@@ -231352,13 +231352,40 @@
         "additional_info": "rođen 1918, Mracelj (Vonjić). Srbin, poginuo 1942. u NOBu, Sušna Palanka",
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2531",
         "source_page": 2531
+      },
+      {
+        "soldier_id": "9990000020",
+        "name": "Dejanović Dušan",
+        "additional_info": "Poginuo 1943. u Grmeču.",
+        "source_url": "porodica:9990000020",
+        "ref_book": "porodicna-arhiva"
+      },
+      {
+        "soldier_id": "0120000080",
+        "name": "Dejanović Mile Dušan",
+        "additional_info": "1919, Široka Rijeka, Vojnić.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00009291&pg_seq=289",
+        "source_page": 265,
+        "unit_file": "1-proleterski-bataljon-soldiers.json"
       }
     ],
     "former_ids": [
       "0122908516"
     ],
     "occupation": "radnik",
-    "rank": "borac"
+    "rank": "borac",
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "1943",
+          "family": true,
+          "place": "Grmeč"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002900130",

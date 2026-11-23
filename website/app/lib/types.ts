@@ -67,7 +67,7 @@ export interface Soldier {
   // (scripts/record_sources.py): other birth years ("1918", or "05.03.1918" with the day), other deaths with the place
   // that book names (in the record's own spelling where it is the same place), another place in the same year too; a
   // column book may name the place alone, without its date ("ili Ostrog")
-  variants?: { born?: string[]; death?: { date?: string; place?: string }[] }
+  variants?: { born?: string[]; death?: { date?: string; place?: string; family?: boolean }[] } // family: a family's account (Porodična arhiva), the row marked
   // the fields a family's report set (scripts/apply_corrections.py, from the corrections' and the overrides' reasons):
   // the card marks their rows (the user's choice of 2026-11-23)
   family_fields?: string[]

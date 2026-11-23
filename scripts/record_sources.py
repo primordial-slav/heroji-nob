@@ -534,6 +534,14 @@ def sources(s: dict, by_id: dict, ex, own: bool = False) -> list[dict]:
     out = [own_facts(s, code, ex)] if own else []
     for o in s.get('other_sources', ()):
         oid = o.get('soldier_id') or ''
+        if o.get('ref_book') == 'porodicna-arhiva':
+            # a family's account referenced on the record where no correction set the fields from it: its death after
+            # "ili", the row marked as the family's (the user, 2026-11-23, Dejanović Dušan: "keep the exact date, then
+            # 1943 next to it with house"); where a family's correction set them, they stand alone (variants)
+            f = {k: v for k, v in entry_facts(o, 122, ex).items() if k in ('death_date', 'death_place')}
+            if f:
+                out.append({**f, 'family': True})
+            continue
         if o.get('ref_book'):
             col = column_facts(o)
             if col:
@@ -619,6 +627,8 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
         if not (other_day or other_place):
             continue
         d = {'date': f['death_date']} if f.get('death_date') else {}
+        if f.get('family'):
+            d['family'] = True
         if place:
             # the record's own spelling where the two name one place, so the card can say it once
             d['place'] = here if here and one_place(here, place, unit) else place
@@ -633,6 +643,8 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
             like['date'] = d['date']
         if 'place' in d and 'place' not in like:
             like['place'] = d['place']
+        if d.get('family'):
+            like['family'] = True
     if deaths and not family & set(DEATH_FIELDS):
         out['death'] = deaths
     return out

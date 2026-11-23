@@ -150,5 +150,10 @@ export function recordFacts(soldier: Soldier, t: Messages, unitName?: string, sh
       if (fields.some((k) => family.has(k))) f.family = true
     }
   }
+  // a family's date after "ili", beside the book's day: the death row marked too (Dejanović Dušan, the user, 2026-11-23)
+  if (soldier.variants?.death?.some((d) => d.family)) {
+    const death = facts.find((f) => f.key === 'death')
+    if (death) death.family = true
+  }
   return facts
 }
