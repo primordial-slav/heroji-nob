@@ -472,8 +472,10 @@ def middle_steps(events: list[dict]) -> int:
 
 
 def shows_line(events: list[dict]) -> bool:
-    """The dialog draws the line from three steps on (birth, one step, death), or two steps between them"""
-    return len(events) >= 3 or middle_steps(events) >= 2
+    """The dialog draws the line from two dated steps on (birth and joining the NOB, or a step and the death): the user,
+    2026-11-23, after Jasenovčanin Petar (born 1923, in the NOB from 1941, his wound at Prozor without a year), "draw from
+    two dates"; until then it took three steps, or two between birth and death"""
+    return len(events) >= 2
 
 
 def unit_events(code: int, data: list[dict]) -> dict[str, list[dict]]:
