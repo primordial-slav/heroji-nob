@@ -313,6 +313,7 @@ ONE_MAN = [
     # forms of 2026-11-23: the Spomenica's (under Šavnik) and the Lovćenski odred's list's Čelebić Ilijin Jovan of Štitari
     # (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja: one man (his nephew's form and a report of his village)
     ('9035017817', '9084000711', 'Čelebić Ilije Jovan of Štitari (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja'),
+    ('9084000716', '9990000022', "Čelebić Ilije Novak of Štitari: his nephew's form (wounded at Cres 1945, died 1946 in Zagreb)"),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -1281,7 +1282,9 @@ def main():
                     rec['born_in'] = seen
             # the place too (2026-11-19): Sekulić Mane Miloš's own "u Žumberku 10. 9. 1944." over the census's
             # "Bosiljevo slove"; the census's place then shows after "ili" where it lies far off (record_sources.variants)
-            death_cols = [k for k in ('death_type', 'death_date', 'death_place') if k in filled]
+            # (not those a family's papers set: the family's stand, and the field reader must not put a book's first, 2026-11-23,
+            # Čelebić Ilije Novak's 1946 against the Lovćenski list's 1945)
+            death_cols = [k for k in ('death_type', 'death_date', 'death_place') if k in filled and k not in family]
             read = DEATH_PLACE_READS.get(rid)
             if read is not None and 'death_place' in death_cols:
                 death_cols.remove('death_place')         # the census's place stands, or the place read by hand

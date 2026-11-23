@@ -93360,6 +93360,25 @@
     "death_place": "u Staroj Kršlji"
   },
   {
+    "soldier_id": "0122961371",
+    "last_name": "Bjeljac",
+    "middle_name": "",
+    "first_name": "Dušan",
+    "fathers_name": "Milan",
+    "full_name": "Bjeljac Dušan",
+    "additional_info": "Učesnik NOB-a; poginuo na Šatoru ili u Podgrmeču.",
+    "birth_year": "",
+    "source_url": "porodica:9990000024",
+    "death_type": "poginuo",
+    "death_place": "Šator ili Podgrmeč",
+    "manual_fields": [
+      "death_place"
+    ],
+    "family_fields": [
+      "death_place"
+    ]
+  },
+  {
     "soldier_id": "0122907954",
     "last_name": "Bjeljac",
     "middle_name": "Sime",
@@ -93381,6 +93400,25 @@
     "death_date": "03.05.1943",
     "death_place": "Zbjeg",
     "rank": "borac"
+  },
+  {
+    "soldier_id": "0122961372",
+    "last_name": "Bjeljac",
+    "middle_name": "",
+    "first_name": "Zorka",
+    "fathers_name": "Milan",
+    "full_name": "Bjeljac Zorka",
+    "additional_info": "Učesnica NOB-a; poginula na Šatoru ili u Podgrmeču.",
+    "birth_year": "",
+    "source_url": "porodica:9990000025",
+    "death_type": "poginuo",
+    "death_place": "Šator ili Podgrmeč",
+    "manual_fields": [
+      "death_place"
+    ],
+    "family_fields": [
+      "death_place"
+    ]
   },
   {
     "soldier_id": "0122930650",
@@ -177545,7 +177583,7 @@
     "pdf_y": 349.7,
     "pdf_x_end": 473.4,
     "pdf_y_end": 359.9,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1941",
     "death_place": "Makedonija"
@@ -177565,7 +177603,7 @@
     "pdf_y": 478.4,
     "pdf_x_end": 459.5,
     "pdf_y_end": 488.3,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "01.12.1941",
     "death_place": "Pljevlja",
@@ -177629,10 +177667,14 @@
         "source_page": 199
       }
     ],
-    "occupation": "učenik",
+    "party": "SKOJ",
+    "rank": "bombaš",
     "manual_fields": [
-      "birth_place"
-    ]
+      "birth_place",
+      "party",
+      "rank"
+    ],
+    "occupation": "učenik"
   },
   {
     "soldier_id": "0122942610",
@@ -177672,7 +177714,7 @@
     "pdf_y": 439.5,
     "pdf_x_end": 469.7,
     "pdf_y_end": 449.7,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "streljan",
     "death_date": "01.1943",
     "death_place": "Podgorica",
@@ -177719,7 +177761,7 @@
     "pdf_x_end": 307.0,
     "pdf_y_end": 163.2,
     "pdf_x_left": 171.4,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "streljan",
     "death_date": "21.01.1943",
     "death_place": "Zabjelo, Podgorica",
@@ -177785,14 +177827,12 @@
     "pdf_x_end": 306.8,
     "pdf_y_end": 202.6,
     "pdf_x_left": 171.4,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "umro",
-    "death_date": "1945",
+    "death_date": "1946",
     "death_place": "Zagreb",
     "from_columns": [
-      "death_type",
-      "death_date",
-      "death_place"
+      "death_type"
     ],
     "other_sources": [
       {
@@ -177807,6 +177847,12 @@
         "pdf_y_end": 500.8
       },
       {
+        "soldier_id": "9990000022",
+        "name": "Čelebić Ilije Novak",
+        "additional_info": "Ranjen 1945. prilikom oslobađanja Cresa; umro 1946. u bolnici u Zagrebu od posljedica ranjavanja. Grob mu je na Cetinju, gdje je prenesen iz Zagreba.",
+        "source_url": "porodica:9990000022"
+      },
+      {
         "soldier_id": "9112000214",
         "name": "Čelebić Ilijin Novak",
         "additional_info": "Poginuli u NOR-u: 213. Čelebić Ilijin Novak, rođen 1922. u Štitarima. Umro 1945. u Zagrebu od posljedica ranjavanja u 2. dalmatinskoj brigadi.",
@@ -177815,14 +177861,10 @@
       }
     ],
     "occupation": "radnik",
-    "variants": {
-      "death": [
-        {
-          "date": "1946",
-          "place": "Zagreb"
-        }
-      ]
-    }
+    "family_fields": [
+      "death_date",
+      "death_place"
+    ]
   },
   {
     "soldier_id": "0122926736",
@@ -177955,7 +177997,7 @@
     "pdf_x_end": 163.0,
     "pdf_y_end": 195.9,
     "pdf_x_left": 31.4,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "ljeto 1944",
     "death_place": "Andrijevica",
@@ -183976,7 +184018,7 @@
     "pdf_y": 554.7,
     "pdf_x_end": 470.2,
     "pdf_y_end": 564.9,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Podgorica"
@@ -183996,7 +184038,7 @@
     "pdf_y": 516.5,
     "pdf_x_end": 463.5,
     "pdf_y_end": 526.5,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Štitari"
@@ -184047,7 +184089,7 @@
     "pdf_x_end": 306.0,
     "pdf_y_end": 304.1,
     "pdf_x_left": 171.1,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "01.12.1941",
     "death_place": "Pljevlja",
@@ -297794,11 +297836,10 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "06.04.1945",
-    "death_place": "kod Kule u Bosni",
+    "death_place": "Odžak",
     "from_columns": [
       "death_type",
-      "death_date",
-      "death_place"
+      "death_date"
     ],
     "other_sources": [
       {
@@ -297809,8 +297850,14 @@
         "source_page": 42
       }
     ],
+    "manual_fields": [
+      "death_place"
+    ],
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "family_fields": [
+      "death_place"
+    ]
   },
   {
     "soldier_id": "0122918922",
@@ -666864,7 +666911,10 @@
     "birth_place": "Pješčanica",
     "death_type": "poginuo",
     "death_date": "1945 ili 1946",
-    "rank": "borac"
+    "rank": "borac",
+    "family_fields": [
+      "death_date"
+    ]
   },
   {
     "soldier_id": "0122932067",
@@ -923650,7 +923700,7 @@
     "pdf_y": 443.7,
     "pdf_x_end": 451.8,
     "pdf_y_end": 453.9,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Cetinje"
@@ -1004070,7 +1004120,10 @@
     "source_url": "porodica:9990000005",
     "birth_place": "Počekovina, Trstenik",
     "unit_detail": "XVI jastrebački odred",
-    "birth_date": "27.03.1929"
+    "birth_date": "27.03.1929",
+    "family_fields": [
+      "unit_detail"
+    ]
   },
   {
     "soldier_id": "0122950899",
@@ -1339302,7 +1339355,7 @@
     "pdf_y": 444.0,
     "pdf_x_end": 502.8,
     "pdf_y_end": 454.0,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Štitari"
@@ -1339323,7 +1339376,7 @@
     "pdf_x_end": 163.0,
     "pdf_y_end": 147.6,
     "pdf_x_left": 31.0,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "streljan",
     "death_date": "21.01.1943",
     "death_place": "Zabjelo, Podgorica",
@@ -1339370,7 +1339423,7 @@
     "pdf_x_end": 162.5,
     "pdf_y_end": 179.6,
     "pdf_x_left": 30.7,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "01.12.1941",
     "death_place": "Pljevlja",
@@ -1341457,7 +1341510,7 @@
     "pdf_y": 534.5,
     "pdf_x_end": 457.5,
     "pdf_y_end": 544.4,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1941",
     "death_place": "Pljevlja"
@@ -1341625,7 +1341678,7 @@
     "pdf_y": 231.6,
     "pdf_x_end": 501.6,
     "pdf_y_end": 241.3,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "streljan",
     "death_place": "Čajetina",
     "from_columns": [
@@ -1342674,7 +1342727,7 @@
     "pdf_x_end": 164.0,
     "pdf_y_end": 113.6,
     "pdf_x_left": 31.2,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "streljan",
     "death_date": "21.01.1943",
     "death_place": "Zabjelo, Podgorica",
@@ -1342856,7 +1342909,7 @@
     "pdf_y": 456.7,
     "pdf_x_end": 502.8,
     "pdf_y_end": 466.7,
-    "birth_place": "Štitari, Šavnik",
+    "birth_place": "Štitari, Cetinje",
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Štitari"

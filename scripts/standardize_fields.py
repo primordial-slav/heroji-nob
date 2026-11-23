@@ -727,6 +727,9 @@ PLACE_READ = {
     # the 5. srpska's "Sindija" (Panić Zlatomir, Pavlović Slobodan): Sirdija of Osečina, as the census prints them (a
     # reader's report of 2026-11-23 08:01)
     'Sindija': 'Sirdija',
+    # the Spomenica crnogorska prints the men of Štitari (Cetinje) under its Šavnik heading: the Lovćenski odred's list and a
+    # reader's report of 2026-11-23 ("Štitari, srez Cetinjski, opština Cetinje") put them under Cetinje (18 records)
+    'Štitari, Šavnik': 'Štitari, Cetinje',
 }
 
 

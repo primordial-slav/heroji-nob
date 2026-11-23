@@ -114972,9 +114972,9 @@
   {
     "last_name": "Čelebić",
     "middle_name": "Ilijin",
-    "first_name": "Joko",
+    "first_name": "Đoko",
     "fathers_name": "Ilija",
-    "full_name": "Čelebić Ilijin Joko",
+    "full_name": "Čelebić Ilijin Đoko",
     "additional_info": "rođen 1925. u Štitarima, zemljoradnik, borac, poginuo decembra 1942. u području Livna.",
     "birth_year": "1925",
     "pdf_page": 11,
@@ -114983,11 +114983,11 @@
     "pdf_y_end": 222.4,
     "pdf_file": "4-proleterska-poginuli.pdf",
     "soldier_id": "0040011900",
-    "birth_place": "Štitari",
+    "birth_place": "Štitari, Cetinje",
     "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "12.1942",
-    "rank": "borac",
+    "death_type": "nestao",
+    "death_date": "1949",
+    "rank": "komesar",
     "pdf_x_end": 352.5,
     "other_sources": [
       {
@@ -115000,11 +115000,26 @@
         "pdf_y": 243.5,
         "pdf_x_end": 485.8,
         "pdf_y_end": 252.5
+      },
+      {
+        "soldier_id": "9990000023",
+        "name": "Čelebić Ilije Đoko",
+        "additional_info": "Za vrijeme rata komesar u X crnogorskoj udarnoj brigadi. Nestao 1949. kao pilot JRV, u padu aviona u Dunav.",
+        "source_url": "porodica:9990000023",
+        "ref_book": "porodicna-arhiva"
       }
     ],
-    "unit_detail": "1. četa",
-    "death_place": "Livno",
-    "party": "KPJ"
+    "unit_detail": "1. četa; X crnogorska udarna brigada",
+    "death_place": "Dunav",
+    "party": "KPJ",
+    "family_fields": [
+      "birth_place",
+      "death_date",
+      "death_place",
+      "death_type",
+      "rank",
+      "unit_detail"
+    ]
   },
   {
     "last_name": "Čelebić",

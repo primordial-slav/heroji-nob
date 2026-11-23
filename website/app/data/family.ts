@@ -582,6 +582,35 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
+  {
+    soldierId: '0122926745', // Čelebić Ilije Novak of Štitari (Cetinje), Jovan's brother: their nephew's form of 2026-11-23
+    // 13:30 (Porodična arhiva 9990000022 joined to his record: the wound and the death of 1946 in his rows)
+    text: 'Ranjen je prilikom oslobađanja Cresa 1945, a umro je 1946. u bolnici u Zagrebu od zadobijenih rana. Grob mu je na Cetinju, gdje je prenesen iz Zagreba.',
+    from: 'Ž. Čelebić, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122905539', // Đukić Borivoja Vidoje of Mirosaljci (Arilje), 38. divizija: his nephew's form of 2026-11-23 13:38
+    // (the place of death Odžak by override, as the census has it)
+    text: 'Poginuo je u Bosni, u Posavini, u bici kod Odžaka, u borbi protiv dobro utvrđenih ustaških formacija. Sahranjen je zajedno sa više palih drugova kod Kule u Zvorniku.',
+    from: 'M. Đukić, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0045000441', // Nevajda Luke Vasilj of Vlahović (Glina), 8. banijska: his grandson's form of 2026-11-23 13:46 (no
+    // name for the card)
+    text: 'Pobjegao je sa strijeljanja u Banskom Grabovcu; jedan je od nekolicine preživjelih.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0040011900', // Čelebić Ilijin Joko of Štitari, 4. proleterska ("poginuo decembra 1942" in its two lists): his
+    // nephew's missing-fighter form of 2026-11-23 13:36 for "Čelebić Đoko" is he, the family wins (the user, 2026-11-23);
+    // Porodična arhiva 9990000023 referenced, the rows by correction 317154
+    text: 'Za vrijeme rata bio je komesar u X crnogorskoj udarnoj brigadi. Nestao je 1949. godine kao pilot JRV, u padu aviona u Dunav.',
+    from: 'Ž. Čelebić, sinovac',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

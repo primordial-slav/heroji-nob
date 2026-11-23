@@ -657,6 +657,19 @@ def main():
     for v in overrides.values():
         if record_sources.FAMILY_ONLY.search(v.get('reason') or ''):
             OVERRIDE_MARK.setdefault(v['for'], set()).update(set(v.get('fields', {})) & record_sources.MARKED_FIELDS)
+    # a family's papers (Porodična arhiva) joined to a record of 122 by the builder: the fields its entry sets are the
+    # family's, alone on the card (no "ili") and marked, as a family's correction's are (Čelebić Ilije Novak's 1946, 2026-11-23)
+    root = Path(__file__).resolve().parents[1]
+    try:
+        registry = json.loads((root / 'data-extraction' / 'ostali_borci_ids.json').read_text(encoding='utf-8'))
+        family_entries = json.loads((root / 'data-extraction' / 'porodica' / 'porodicna-arhiva-entries.json').read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        registry, family_entries = {}, []
+    for e in family_entries:
+        rid, fields = registry.get(e.get('soldier_id')), set(e.get('fields') or {})
+        if rid and fields:
+            FAMILY_FIELDS.setdefault(rid, set()).update(fields)
+            FAMILY_MARK.setdefault(rid, set()).update(fields & record_sources.MARKED_FIELDS)
     corrections = load_corrections(corrections_path)
     print(f"Found {len(corrections)} correction(s)\n")
 
