@@ -59,7 +59,9 @@ PARTS = {
     'srebren': 'Srebrenica', 'koprivni': 'Koprivnica', 'hrvatsk': 'Hrvatska', 'kičev': 'Kičevo', 'bjeljev': 'Bjelajevci', 'romanij': 'Romanija',
 }
 # whole values no rule reads
-WHOLE = {'Han-pjesak': 'Han Pijesak', 'Han-pijesak': 'Han Pijesak', 'Srem.front': 'Sremski front', 'Srem-front': 'Sremski front', 'Srem front': 'Sremski front', 'Blato-korčula': 'Blato, Korčula', 'Ivan-planina': 'Ivan-planina', 'Ivan-sedlo': 'Ivan-sedlo', 'Nov-ci': 'Novci',
+WHOLE = {'Babino Polje-ml': 'Babino Polje, Mljet',  # the entry: "poginuo n Mljetu" (0036001759; the lead, 2026-11-23)
+         'Vlaške njive-zv': 'Vlaške njive, Zvornik',  # the user, 2026-11-23 (0096000637's census entry)
+         'Han-pjesak': 'Han Pijesak', 'Han-pijesak': 'Han Pijesak', 'Srem.front': 'Sremski front', 'Srem-front': 'Sremski front', 'Srem front': 'Sremski front', 'Blato-korčula': 'Blato, Korčula', 'Ivan-planina': 'Ivan-planina', 'Ivan-sedlo': 'Ivan-sedlo', 'Nov-ci': 'Novci',
          'Šar-planina': 'Šar-planina', 'Šator-planina': 'Šator-planina', 'Zelen-gora': 'Zelengora', 'Šaren-grad': 'Šarengrad', 'Cetin-grad': 'Cetingrad', 'Oslobađ.bgd-a': 'Beograd'}
 # a Slovene name's second word is small by its own rule
 KEEP_SMALL = re.compile(rf'(?:\bNovo mesto\b|\s(?:vas|trg|gorica|dolina)$)')

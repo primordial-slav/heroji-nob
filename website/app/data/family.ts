@@ -161,8 +161,8 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0122959607', // Krnić Ive Blaž of Konjevrate (Šibenik), survived; his photo in uniform is his portrait (the user's choice, 2026-11-19)
     photo: '9990000003-1.jpg',
     photoCaption: 'U uniformi',
-    // the grandson's forms of 11:51 and 16:23 (the wound and Bari), lightly edited for spelling
-    text: 'Prošao je bitke na Neretvi i Sutjesci, a učestvovao je i u borbama za oslobođenje Knina i Šibenika. Tijekom NOB-a teško je ranjen i prebačen u Bari (Italija), u savezničku bolnicu. Kasnije se vratio u borbu.',
+    // the grandson's form of 16:23 (the wound and Bari), lightly edited for spelling
+    text: 'Tijekom NOB-a teško je ranjen i prebačen u Bari (Italija), u savezničku bolnicu. Kasnije se vratio u borbu.', // the 16:23 form alone: the battles are his Porodična arhiva entry's (the user, 2026-11-23)
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
@@ -460,6 +460,24 @@ export const familyContributions: FamilyContribution[] = [
     text: 'U knjizi „Mladost slobodi darovana” o njemu je priča „Miner Vanja”.',
     from: 'Ispravka po prijavi',
     origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961366', // Mijanović Nikole Milutin "Mošo" of Cetinje, Lovćenski odred, not in any book: his nephew's
+    // missing-fighter form of 2026-11-22 23:01 (Porodična arhiva 9990000014); his career after the war at the user's word
+    // (2026-11-22); the portrait is from after the war, so in his album
+    pieces: [{ kind: 'photo', file: '0122961366-1.jpg', caption: 'Posle rata' }],
+    text: 'Nosilac je Partizanske spomenice. Teško je ranjen u borbama protiv četnika u blizini Čeva u ljeto 1944. godine i zarobljen. Pobjegao je iz cetinjske bolnice, gdje je liječen da bi mu se sudilo. Poslije rata završio je studije srpskog jezika i jugoslovenske književnosti na beogradskom Filozofskom fakultetu. Bio je direktor Izdavačkog preduzeća „Narodna knjiga“ na Cetinju, sekretar Opštinskog komiteta SK Cetinje i direktor Narodnog muzeja SR Crne Gore. Umro je u Beogradu 1989. godine, gdje je i sahranjen.',
+    from: 'I. Mijanović, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961367', // Mijanović Nikole Vladimir of Cetinje, Lovćenski odred, Milutin's brother, not in any book:
+    // the same nephew's form of 2026-11-22 23:14 (Porodična arhiva 9990000015); his photo in uniform is his portrait
+    photo: '0122961367-1.jpg',
+    photoCaption: 'U uniformi',
+    text: 'Rođen je 1924. godine na Cetinju, gdje je završio gimnaziju. Bio je predratni član SKOJ-a i nosilac Partizanske spomenice 1941, borac Lovćenskog partizanskog odreda. Zarobljen je 1942. godine od strane nacionalista Krsta Popovića i interniran u Italiju, odakle je pobjegao u septembru 1943, vratio se u Crnu Goru i ponovo se priključio NOP-u. Kraj rata dočekao je kao obavještajni oficir. Poslije rata završio je Ekonomski fakultet. Bio je sekretar Okružnog komiteta KPJ za Cetinje, direktor ATP „Tara“ i generalni direktor EI „Obod“. Umro je u Beogradu 2013. godine i sahranjen na Cetinju.',
+    from: 'I. Mijanović, sinovac',
     date: '2026-11',
   },
   {

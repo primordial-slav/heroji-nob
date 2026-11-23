@@ -351,7 +351,8 @@ MERGED_IDS = {
     # Staromajdansko's headings read again (2026-11-22, a reader's report): six holders of the spomenica each joined
     # his entry in the list of 1983, once the village over both was read (Husimovci and Koprivna had been "Movci",
     # Rasavci "Avci"); Dodik Ilije Petar and Štrbac Koste Lazar to their records of the 6. krajiška
-    '0122953273': '0122953272', '0122953564': '0122953284', '0122953570': '0122953101', '0122953571': '0122953107',
+    # Radinović Ostoje Đurađ of Koprivna: his 1983 entry and the Spomenica's meet in the Spomenica's record (05's chain, 2026-11-23)
+    '0122953273': '0122935348', '0122953272': '0122935348', '0122953564': '0122953284', '0122953570': '0122953101', '0122953571': '0122953107',
     '0122953232': '0013010286', '0122953249': '0013011788',
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
