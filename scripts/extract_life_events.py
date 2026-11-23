@@ -441,9 +441,12 @@ def life_events(s: dict, code: int) -> list[dict]:
                     break
             steps.append(step)
     steps += war_steps(s, code, entries)
-    # one of each kind that happens once: the soldier's own entry wins over another book's
+    # one of each kind that happens once: a family's account wins (Porodična arhiva: the user's rule that the family's
+    # report wins on the card, 2026-11-21; Petković Dragica's "U NOB od 1941" over a book's "marta 1944", 2026-11-23),
+    # then the soldier's own entry over another book's
+    family = {i for i, e in enumerate(entries) if e.get('ref_book') == 'porodicna-arhiva'}
     kept, seen = [], set()
-    for st in sorted(steps, key=lambda st: (st['s'], st.get('_at', 0))):
+    for st in sorted(steps, key=lambda st: (st['s'] not in family, st['s'], st.get('_at', 0))):
         key = st['k'] if st['k'] in ONCE else (st['k'], st['d'], st.get('x'))
         if key in seen:
             continue
