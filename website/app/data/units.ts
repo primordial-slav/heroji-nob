@@ -626,7 +626,7 @@ export const units: Unit[] = [
     nameEn: 'Cankar Brigade',
     description: 'Formirana 28. septembra 1942. kod Lapinja na Kočevskom. Štabovi brigade i bataljona, poginuli i preživeli borci.',
     image: '/images/cankarjeva-brigada.jpg',
-    soldierCount: 2904,
+    soldierCount: 2903,
     dataFile: '/cankarjeva-soldiers.json',
     pdfFiles: ['/pdfs/cankarjeva.pdf', '/pdfs/cankarjeva-kader.pdf']
   },
@@ -656,7 +656,7 @@ export const units: Unit[] = [
     nameEn: 'Gradnik Brigade',
     description: 'Formirana u aprilu 1943. na Golobaru kod Bovca. Poginuli borci i ostali borci brigade, njen štab i narodni heroji.',
     image: '/images/gradnikova-brigada.jpg',
-    soldierCount: 3644,
+    soldierCount: 3636,
     dataFile: '/gradnikova-soldiers.json',
     pdfFiles: ['/pdfs/gradnikova.pdf', '/pdfs/gradnikova-kader.pdf']
   },
@@ -696,7 +696,7 @@ export const units: Unit[] = [
     nameEn: 'West Lower Carniola Detachment',
     description: 'Formiran krajem juna 1942. na Dolenjskom. Poginuli i ostali borci odreda.',
     image: '/images/zapadnodolenjski-odred.jpg',
-    soldierCount: 828,
+    soldierCount: 827,
     dataFile: '/zapadnodolenjski-odred-soldiers.json',
     pdfFiles: ['/pdfs/zapadnodolenjski-odred.pdf']
   },
@@ -716,7 +716,7 @@ export const units: Unit[] = [
     nameEn: 'Tomšič Brigade',
     description: 'Formirana 16. jula 1942. na Cesti na Kočevskom. Borci jedinica iz kojih je nastala i borci brigade do kraja rata.',
     image: '/images/tomsiceva-brigada.jpg',
-    soldierCount: 5974,
+    soldierCount: 5972,
     dataFile: '/tomsiceva-soldiers.json',
     pdfFiles: ['/pdfs/tomsiceva-2.pdf', '/pdfs/tomsiceva-3.pdf', '/pdfs/tomsiceva-4.pdf', '/pdfs/tomsiceva-1.pdf']
   },
@@ -1476,7 +1476,7 @@ export const units: Unit[] = [
     nameEn: 'Ninth (Kočevje) Brigade',
     description: 'Formirana 14. septembra 1943. od bataljona Zapadnodolenjskog odreda, u sastavu 18. divizije. Štabovi brigade i bataljona; borci brigade: godina i mesto rođenja, a poginuli i gde su pali.',
     image: '/images/pdf-thumbs/deveta.jpg',
-    soldierCount: 2329,
+    soldierCount: 2327,
     dataFile: '/deveta-soldiers.json',
     pdfFiles: ['/pdfs/deveta.pdf', '/pdfs/deveta-kader.pdf']
   },
