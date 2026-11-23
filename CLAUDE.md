@@ -20,13 +20,15 @@ This file is the core: what every session needs. The rest is in `docs/claude/`, 
 | `docs/claude/site.md` | the home page's news and icons, languages, unit photos, band posters, medals, the map and unit pages, server search, data files, a record's own address | work on the site |
 | `docs/claude/portraits.md` | soldiers' portraits: every source and how it was paired, the gallery, the rails, the embroidered frames | adding or moving portraits |
 | `docs/claude/email.md` | the contact account and its forward, reading and sending mail, the user's rules for mail, the forms' mail, notes to families, the outreach letters and their replies | reading, answering or drafting any mail |
+| `docs/claude/releases.md` | when the site goes live (the 21:00 window, the lanes, who pushes) and its version X.Y.Z | committing anything meant for the live site |
 
 **Sessions, the board, the people.** Each session's own file (its job, what it owns, its rules), the board of tasks, the daily handover log, everyone who reported something, the letters sent and the reply templates are in the private local repo `E:\Projects\knjiga-boraca-ops` (local git only, never pushed: it holds names and addresses). Read its README and your session's file when you start; commit there what you change there (2026-11-22, the user's request).
 
 Other docs: `VOICE.md` (the site's text), `DESIGN.md` (how it looks), `docs/ZNACI_ORG_SOLDIER_LIST_CATALOG.md` (which books on znaci.org have soldier lists), `docs/NEW_BRIGADE_PARSER_STATUS.md` (the parsers on the scaffold), `docs/UNIT_PHOTOS.md` (each unit photo's source).
 
 ## Git
-- **Two remotes**: `origin` and `prod` — always push to both
+- **Two remotes**: `origin` and `prod` — a release goes to both
+- **Releases**: only the lead pushes, at the daily 21:00 window (large runs on Sundays), at once for an emergency, or on the user's word; each is tagged `vX.Y.Z` by how serious it is (`docs/claude/releases.md`). Every other session commits and tells the lead
 - **Branch**: `main` only
 
 ## Data Pipeline
@@ -38,7 +40,7 @@ When fixing parsing bugs or adding brigades, run these steps in order:
 3. **Extract positions**: `python data-extraction/extract_pdf_positions.py --brigade <name>` — matches soldiers to PDF page/Y coordinates for the viewer
 4. **Apply corrections**: `python scripts/apply_corrections.py --apply` — applies individual record fixes from `corrections.json` (edits, deletes, splits, adds). Also auto-updates soldierCount in `units.ts`, then writes a woman's nickname clause as "zvana X;" rather than "zvani" (`scripts/feminine_alias.py`, which tells women's records by the bio's word forms, a married or maiden name ("por. Ciglar", "roj. Leban"), or the given name; the site's `isWoman` in `lib/standIn.ts`, for "Rođena", "Poginula" and the stand-in portrait, reads the same rule from the name lists it writes to `website/app/data/name-genders.json`), then fills empty structured fields from each bio, then puts a birthplace or place of death that resolved through a case in the nominative ("Resolved places", `docs/claude/places.md`), then gives the fields one form ("Standardized fields", `docs/claude/fields.md`), then recomputes every unit's entry boxes ("Entry boxes", `docs/claude/pdfs.md`), then checks the fields against their entries ("Field checks", `docs/claude/fields.md`), and last checks every answer given on the two review pages against the data ("Your answers", `docs/claude/corrections.md`). `--brigade N [N ...]` limits it to those units (e.g. while another session is re-parsing a different one).
 5. **Build**: `cd website && npm run build` — verify no errors
-6. **Push**: `git push origin main && git push prod main`
+6. **Release**: not by the session that made the change: the lead pushes at the 21:00 window (`docs/claude/releases.md`)
 
 Corrections run LAST before build so they always win over automated pipeline output.
 
