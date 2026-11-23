@@ -15,6 +15,48 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: '2026-11-23',
+    title: {
+      sr: 'Ispravke po vašim prijavama',
+      sl: 'Popravki po vaših prijavah',
+      mk: 'Поправки според вашите пријави',
+      en: 'Corrections from your reports',
+    },
+    text: {
+      sr: 'Po prijavama koje ste poslali sa kartica boraca ispravili smo oko 90 kartica: mesta rođenja, imena očeva i prezimena koja je skeniranje pokvarilo, a zapise istog borca iz više knjiga spojili smo u jedan. Isto pogrešno pročitano selo ili ime ispravili smo i kod još oko 170 boraca. Podatak ispravljen po podacima porodice sada na kartici ima znak kućice.',
+      sl: 'Po prijavah, ki ste jih poslali s kartic borcev, smo popravili okoli 90 kartic: kraje rojstva, očetova imena in priimke, ki so se pri skeniranju popačili, zapise istega borca iz več knjig pa smo združili v enega. Enako napačno prebrano vas ali ime smo popravili tudi pri okoli 170 drugih borcih. Podatek, popravljen po podatkih družine, ima zdaj na kartici znak hišice.',
+      mk: 'Според пријавите што ни ги испративте од картичките на борците, поправивме околу 90 картички: места на раѓање, имиња на татковци и презимиња што беа искривени при скенирањето, а записите за ист борец од повеќе книги ги споивме во еден. Истото погрешно прочитано село или име го поправивме и кај уште околу 170 борци. Податокот поправен според податоците на семејството сега на картичката има знак куќичка.',
+      en: 'From the reports you sent from fighters’ cards, we have corrected about 90 cards: places of birth, fathers’ names and surnames the scanning had spoiled, and records of the same fighter from several books now stand as one. Where the same village or name was misread elsewhere, we have corrected it for about 170 more fighters. A detail corrected from the family’s information now carries a small house on the card.',
+    },
+  },
+  {
+    date: '2026-11-23',
+    text: {
+      sr: 'Kod oko 7.000 boraca popis poginulih iz 1964. navodi drugu godinu rođenja nego knjiga. Sada na kartici stoje obe, sa „ili” između. Gde knjiga navodi tačan datum rođenja ili je godinu dala porodica, stoji samo taj podatak.',
+      sl: 'Pri okoli 7.000 borcih popis padlih iz leta 1964 navaja drugo leto rojstva kot knjiga. Zdaj sta na kartici obe letnici, med njima »ali«. Kjer knjiga navaja točen datum rojstva ali je letnico sporočila družina, je naveden samo ta podatek.',
+      mk: 'Кај околу 7.000 борци пописот на загинатите од 1964 година наведува друга година на раѓање од книгата. Сега на картичката стојат двете, со „или“ меѓу нив. Каде што книгата го наведува точниот датум на раѓање или годината ја дало семејството, стои само тој податок.',
+      en: 'For about 7,000 fighters, the 1964 census of the fallen gives another year of birth than the book. Both now show on the card, with “or” between them. Where a book gives the exact date of birth, or the family gave the year, only that shows.',
+    },
+  },
+  {
+    date: '2026-11-23',
+    text: {
+      sr: 'Knjigu o Crnoj Travi pročitali smo ponovo. Kod poginulih sada piše kada i gde su poginuli, dodali smo oko 90 boraca koje smo ranije propustili, a sklonili smo žrtve terora i aprilskog rata, koje knjiga navodi zajedno s borcima.',
+      sl: 'Knjigo o Crni Travi smo znova prebrali. Pri padlih je zdaj navedeno, kdaj in kje so padli, dodali smo okoli 90 borcev, ki smo jih prej spregledali, odstranili pa smo žrtve terorja in aprilske vojne, ki jih knjiga navaja skupaj z borci.',
+      mk: 'Книгата за Црна Трава ја прочитавме повторно. Кај загинатите сега пишува кога и каде загинале, додадовме околу 90 борци што претходно ги испуштивме, а ги тргнавме жртвите на теророт и на Априлската војна, што книгата ги наведува заедно со борците.',
+      en: 'We have read the book on Crna Trava again. Its fallen now show when and where they died; we have added about 90 fighters we had missed, and taken out the victims of terror and of the April War, whom the book lists with the fighters.',
+    },
+  },
+  {
+    date: '2026-11-23',
+    text: {
+      sr: 'U spiskovima slovenačkih jedinica neki borci stoje dva ili više puta, pod više bataljona ili i među živima i među poginulima. Spojili smo oko 130 takvih zapisa, pa sada svaki od tih boraca ima jednu karticu, na kojoj stoji sve što spiskovi o njemu pišu.',
+      sl: 'V seznamih slovenskih enot so nekateri borci navedeni dvakrat ali večkrat, pod več bataljoni ali med živimi in med padlimi. Združili smo okoli 130 takih zapisov, zato ima zdaj vsak od teh borcev eno kartico z vsem, kar seznami pišejo o njem.',
+      mk: 'Во списоците на словенечките единици некои борци се наведени двапати или повеќе, под повеќе баталјони или и меѓу живите и меѓу загинатите. Споивме околу 130 такви записи, па сега секој од тие борци има една картичка со сè што списоците пишуваат за него.',
+      en: 'In the rolls of the Slovene units, some fighters are listed twice or more: under several battalions, or among both the living and the fallen. We have joined about 130 such records, so each of these fighters now has one card with everything the rolls say about him.',
+    },
+  },
+  {
     date: '2026-11-19',
     title: {
       sr: 'Porodice mogu da pošalju šta znaju o borcu',
