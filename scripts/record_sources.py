@@ -126,10 +126,10 @@ def fill_rank(book: str, e: dict) -> int:
     return 1 if book.startswith(CENSUS_BOOK) else 2
 
 
-def fill_from(s: dict, book: str, e: dict, part: str = '') -> list[str]:
+def fill_from(s: dict, book: str, e: dict, part: str = '', fixed: set = frozenset()) -> list[str]:
     """Fill s's empty fields from a reference of a census or column book; the fields filled. part: 'death' for the
     death's rows alone, 'rest' for the others (apply_corrections.py fills the death in fill_rank's order, the rest in the
-    corrections'), '' for all"""
+    corrections'), '' for all. fixed: the fields corrections set (a family's report among them), which stay"""
     import build_ostali_borci
     if part == 'death' and not (book.startswith(CENSUS_BOOK) or build_ostali_borci.is_column(book, e)):
         return []
@@ -152,6 +152,12 @@ def fill_from(s: dict, book: str, e: dict, part: str = '') -> list[str]:
     if part:
         vals = {k: v for k, v in vals.items() if (k in DEATH_FIELDS) == (part == 'death')}
     taken = [k for k, v in vals.items() if v and not s.get(k)]
+    # a column book's day of the year the record's own book prints alone takes its place (the user's "yes, if exact
+    # date", 2026-11-23, as 00-TEAM LEAD read it for a unit's record: Badovinac S Branko's "1943, Ludbreg" is Ludbreg's
+    # list's 3. 10. 1943): the same year only, never over a value a correction set, nor over a year another record lent
+    if (vals.get('death_date') and fill_rank(book, e) == 0 and year and re.fullmatch(r'1[89]\d\d\.?', s['death_date'])
+            and year.group(0) == other.group(0) and 'death_date' not in fixed | borrowed(s)):
+        taken.append('death_date')
     for k in taken:
         borrow(s, k, vals[k])
     return taken

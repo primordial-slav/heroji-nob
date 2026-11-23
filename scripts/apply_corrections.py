@@ -867,7 +867,7 @@ def main():
     # the death: a column book's day first, then the census, then the other column books (record_sources.fill_rank; a
     # stable sort, each rank in the corrections' order)
     for s, book, e in sorted(fills, key=lambda f: record_sources.fill_rank(f[1], f[2])):
-        for k in record_sources.fill_from(s, book, e, part='death'):
+        for k in record_sources.fill_from(s, book, e, part='death', fixed=MANUAL_FIELDS.get(s['soldier_id'], set())):
             filled[k] = filled.get(k, 0) + 1
     if filled:
         print(f"\n  Rows filled from the census and the column books: "
