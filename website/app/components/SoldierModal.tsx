@@ -15,7 +15,7 @@ import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
 import EntryStrip from './EntryStrip'
 import { SoldierMedals, honoursLine } from './Medal'
-import { wasDelivered } from '@/app/lib/formsubmit'
+import { looksLikeEmail, wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import FamilyMark, { FamilyDot } from './FamilyMark'
@@ -202,7 +202,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
           // the address only when we may answer there: one we may not use is not kept (00's review, 2026-11-23)
           'Email pošiljaoca': reportEmail.trim() && reportMayReply ? reportEmail.trim() : '',
           'Dozvola za odgovor': reportEmail.trim() ? (reportMayReply ? 'Da' : 'Ne') : '',
-          ...(reportEmail.trim() && reportMayReply ? { _replyto: reportEmail.trim() } : {}),
+          ...(reportMayReply && looksLikeEmail(reportEmail) ? { _replyto: reportEmail.trim() } : {}),
         }),
       })
       setReportStatus((await wasDelivered(res)) ? 'sent' : 'error')

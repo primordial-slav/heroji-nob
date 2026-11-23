@@ -257,6 +257,18 @@ export const sl: Messages = {
   },
 
   know: {
+
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+
+    required: '(obvezno)',
+
+    needName: 'Vpišite svoje ime in priimek.',
+
+    needStory: 'Napišite, kaj veste o borcu, ali dodajte fotografijo.',
+
+    fallback: (address: string) => `Če še vedno ne gre, pošljite isto po e-pošti na ${address}.`,
+
+    openMail: 'Odpri e-pošto s tem besedilom',
     prompt: 'Imate fotografijo ali veste kaj o tem borcu?',
     open: 'Vem kaj o tem borcu',
     title: 'Vem kaj o tem borcu',
@@ -297,6 +309,13 @@ export const sl: Messages = {
 
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+    required: '(obvezno)',
+    needName: 'Vpišite svoje ime in priimek.',
+    needSoldier: 'Vpišite ime in priimek borca.',
+    needSomething: 'Dodajte vsaj nekaj o borcu: kaj veste, enoto, kraj rojstva ali fotografijo.',
+    fallback: (address: string) => `Če še vedno ne gre, pošljite isto po e-pošti na ${address}.`,
+    openMail: 'Odpri e-pošto s tem besedilom',
     prompt: 'Borca ni v knjigah na strani? Pošljite nam, kar veste o njem ali njej.',
     ask: 'Ne najdete svojega borca?',
     askLink: 'Pošljite nam, kar veste o njem ali njej',

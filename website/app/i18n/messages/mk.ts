@@ -272,6 +272,18 @@ export const mk: Messages = {
   },
 
   know: {
+
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+
+    required: '(задолжително)',
+
+    needName: 'Внесете го вашето име и презиме.',
+
+    needStory: 'Напишете што знаете за борецот или додајте фотографија.',
+
+    fallback: (address: string) => `Ако и понатаму не оди, испратете го истото по е-пошта на ${address}.`,
+
+    openMail: 'Отвори е-пошта со овој текст',
     prompt: 'Имате фотографија или знаете нешто за овој борец?',
     open: 'Знам нешто за овој борец',
     title: 'Знам нешто за овој борец',
@@ -312,6 +324,13 @@ export const mk: Messages = {
 
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+    required: '(задолжително)',
+    needName: 'Внесете го вашето име и презиме.',
+    needSoldier: 'Внесете го името и презимето на борецот.',
+    needSomething: 'Додајте барем нешто за борецот: што знаете, единицата, местото на раѓање или фотографија.',
+    fallback: (address: string) => `Ако и понатаму не оди, испратете го истото по е-пошта на ${address}.`,
+    openMail: 'Отвори е-пошта со овој текст',
     prompt: 'Борецот го нема во книгите на сајтот? Испратете ни што знаете за него или за неа.',
     ask: 'Не го наоѓате својот борец?',
     askLink: 'Испратете ни што знаете за него или за неа',

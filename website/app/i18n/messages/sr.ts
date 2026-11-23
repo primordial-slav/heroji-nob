@@ -296,6 +296,18 @@ export const sr = {
   },
 
   know: {
+
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+
+    required: '(obavezno)',
+
+    needName: 'Upišite vaše ime i prezime.',
+
+    needStory: 'Napišite šta znate o borcu ili dodajte fotografiju.',
+
+    fallback: (address: string) => `Ako i dalje ne ide, pošaljite isto mejlom na ${address}.`,
+
+    openMail: 'Otvori mejl sa ovim tekstom',
     prompt: 'Imate fotografiju ili znate nešto o ovom borcu?',
     open: 'Znam ovog borca',
     title: 'Znam ovog borca',
@@ -337,6 +349,13 @@ export const sr = {
 
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+    required: '(obavezno)',
+    needName: 'Upišite vaše ime i prezime.',
+    needSoldier: 'Upišite ime i prezime borca.',
+    needSomething: 'Dodajte bar nešto o borcu: šta znate, jedinicu, mesto rođenja ili fotografiju.',
+    fallback: (address: string) => `Ako i dalje ne ide, pošaljite isto mejlom na ${address}.`,
+    openMail: 'Otvori mejl sa ovim tekstom',
     prompt: 'Borca nema u knjigama na sajtu? Pošaljite nam šta znate o njemu ili njoj.',
     /** Under the home search field, after the count: "508.897 imena · Nema vašeg borca? Pošaljite nam šta znate o njemu" */
     ask: 'Nema vašeg borca?',

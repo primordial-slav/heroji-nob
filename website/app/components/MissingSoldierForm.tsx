@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { shrinkPhoto } from '@/app/lib/images'
-import { wasDelivered } from '@/app/lib/formsubmit'
+import { looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
 import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
@@ -59,6 +59,8 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
   const fileInput = useRef<HTMLInputElement>(null)
 
   const canSend = soldier.trim() && name.trim() && (story.trim() || files.length > 0 || unit.trim() || birthplace.trim())
+  // what is missing, said when "Pošalji" is pressed, not a grey button that says nothing (2026-11-23)
+  const [missing, setMissing] = useState('')
 
   const addFiles = (chosen: FileList | null) => {
     setFileError('')
@@ -74,7 +76,14 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
   }
 
   const send = async () => {
-    if (!canSend) return
+    if (!canSend) {
+      const [which, words] = !soldier.trim() ? ['missing-soldier', t.needSoldier]
+        : !name.trim() ? ['missing-name', t.needName] : ['missing-story', t.needSomething]
+      setMissing(words)
+      document.getElementById(which)?.focus()
+      return
+    }
+    setMissing('')
     setStatus('sending')
     const fields: Record<string, string> = {
       _subject: `Borac kojeg nema na sajtu: ${soldier.trim()}`,
@@ -95,7 +104,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
       Jezik: LANG_NAMES[lang].name,
       Prilozi: files.length ? `${files.length}, stižu u posebnim porukama („Prilog: …“)` : 'nema',
     }
-    if (email.trim()) fields._replyto = email.trim()
+    if (looksLikeEmail(email)) fields._replyto = email.trim()
 
     try {
       const blobs: Blob[] = []
@@ -178,7 +187,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
       <h3>{t.title}</h3>
       <p className="know-hint">{t.intro}</p>
 
-      <label htmlFor="missing-soldier">{t.soldier}</label>
+      <label htmlFor="missing-soldier">{t.soldier} <span className="know-optional">{t.required}</span></label>
       <input ref={firstField} id="missing-soldier" value={soldier} onChange={(e) => setSoldier(e.target.value)} maxLength={160} autoComplete="off" />
 
       <div className={s.row}>
@@ -234,7 +243,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
 
       <div className={s.row}>
         <div>
-          <label htmlFor="missing-name">{t.name}</label>
+          <label htmlFor="missing-name">{t.name} <span className="know-optional">{t.required}</span></label>
           <input id="missing-name" value={name} onChange={(e) => setName(e.target.value)} maxLength={120} autoComplete="name" />
         </div>
         <div>
@@ -260,10 +269,19 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
         {t.consentName}
       </label>
 
-      {status === 'error' && <p className="know-error">{t.error}</p>}
+      {missing && status !== 'sending' && <p className="know-error" role="alert">{missing}</p>}
+      {status === 'error' && (
+        <p className="know-error" role="alert">
+          {t.error}{' '}{t.fallback(process.env.NEXT_PUBLIC_REPORT_EMAIL ?? '')}{' '}
+          <a href={mailtoHref(`Borac kojeg nema na sajtu: ${soldier.trim()}`, [
+            ['Borac', soldier], ['Ime oca', father], ['Godina rođenja', born], ['Mesto rođenja', birthplace], ['Jedinica', unit],
+            ['Šta zna', story], ['Ime pošiljaoca', name], ['Veza sa borcem', relation], ['Email pošiljaoca', email],
+          ])}>{t.openMail}</a>
+        </p>
+      )}
 
       <div className="report-actions">
-        <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
+        <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
           {status === 'sending' ? (sendingFile ? t.sendingFile(...sendingFile) : t.sending) : t.send}
         </button>
         <button type="button" className="btn btn-secondary" onClick={() => { setStatus('closed'); onClose?.() }}>{t.cancel}</button>

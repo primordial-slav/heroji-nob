@@ -5,7 +5,7 @@ import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import { shrinkPhoto } from '@/app/lib/images'
-import { wasDelivered } from '@/app/lib/formsubmit'
+import { looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
 import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
@@ -39,6 +39,9 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   const fileInput = useRef<HTMLInputElement>(null)
 
   const canSend = (story.trim() || files.length > 0) && name.trim()
+  // what is missing, said when "Pošalji" is pressed (2026-11-23: the button stayed grey without saying why, and people
+  // took the form for broken)
+  const [missing, setMissing] = useState('')
 
   const addFiles = (chosen: FileList | null) => {
     setFileError('')
@@ -54,7 +57,13 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
   }
 
   const send = async () => {
-    if (!canSend) return
+    if (!canSend) {
+      const which = !name.trim() ? 'know-name' : 'know-story'
+      setMissing(!name.trim() ? t.needName : t.needStory)
+      document.getElementById(which)?.focus()
+      return
+    }
+    setMissing('')
     setStatus('sending')
     const link = new URL(recordPath(soldier.soldier_id, lang), window.location.origin).toString()
     const fields: Record<string, string> = {
@@ -72,7 +81,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       'Dozvola za objavu teksta i fotografija': mayPublish ? 'Da' : 'Ne',
       'Dozvola za objavu imena pošiljaoca': mayPublish && mayShowName ? 'Da, prvo slovo imena, prezime i srodstvo' : 'Ne',
     }
-    if (email.trim()) fields._replyto = email.trim()
+    if (looksLikeEmail(email)) fields._replyto = email.trim()
 
     try {
       const blobs: Blob[] = []
@@ -212,7 +221,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
 
       <div className="know-pair">
         <div>
-          <label htmlFor="know-name">{t.name}</label>
+          <label htmlFor="know-name">{t.name} <span className="know-optional">{t.required}</span></label>
           <input id="know-name" value={name} onChange={(e) => setName(e.target.value)} maxLength={120} autoComplete="name" />
         </div>
         <div>
@@ -241,12 +250,19 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
         {t.consentName}
       </label>
 
+      {missing && status !== 'sending' && <p className="know-error" role="alert">{missing}</p>}
       {status === 'error' && (
-        <p className="know-error">{t.error}</p>
+        <p className="know-error" role="alert">
+          {t.error}{' '}{t.fallback(process.env.NEXT_PUBLIC_REPORT_EMAIL ?? '')}{' '}
+          <a href={mailtoHref(`Znam ovog borca: ${soldier.full_name} (${soldier.soldier_id})`, [
+            ['Borac', soldier.full_name ?? ''], ['ID', soldier.soldier_id], ['Veza sa borcem', relation], ['Šta zna', story],
+            ['Ime pošiljaoca', name], ['Email pošiljaoca', email],
+          ])}>{t.openMail}</a>
+        </p>
       )}
 
       <div className="report-actions">
-        <button type="submit" className="btn btn-primary" disabled={!canSend || status === 'sending'}>
+        <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
           {status === 'sending' ? (sendingFile ? t.sendingFile(...sendingFile) : t.sending) : t.send}
         </button>
         <button type="button" className="btn btn-secondary" onClick={() => setStatus('closed')}>

@@ -260,6 +260,18 @@ export const en: Messages = {
   },
 
   know: {
+
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+
+    required: '(required)',
+
+    needName: 'Please enter your name.',
+
+    needStory: 'Please write what you know about him or her, or add a photo.',
+
+    fallback: (address: string) => `If it still doesn't work, please send the same by email to ${address}.`,
+
+    openMail: 'Open an email with this text',
     prompt: 'Do you have a photograph of this Partisan, or know something about them?',
     open: 'I know about this Partisan',
     title: 'I know about this Partisan',
@@ -300,6 +312,13 @@ export const en: Messages = {
 
   /** A fighter not on the site: the form under an empty search and under the results (MissingSoldierForm) */
   missing: {
+    /** the form says what is missing when sent incomplete, and gives the address when it can't reach us (2026-11-23) */
+    required: '(required)',
+    needName: 'Please enter your name.',
+    needSoldier: "Please enter the fighter's name.",
+    needSomething: 'Please add something about the fighter: what you know, the unit, the place of birth or a photo.',
+    fallback: (address: string) => `If it still doesn't work, please send the same by email to ${address}.`,
+    openMail: 'Open an email with this text',
     prompt: 'Not in any of the books here? Send us what you know about him or her.',
     ask: 'Can’t find your fighter?',
     askLink: 'Send us what you know about him or her',
