@@ -870,7 +870,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122961381', // Vučković Frane Nikola of Brnaze, 16. slavonska omladinska: his grandson's missing-fighter form of
+    soldierId: '0008002961', // (his family's record 0122961381 joined to this one, the user's word of 2026-11-23: both units) Vučković Frane Nikola of Brnaze, 4. splitska and 16. slavonska omladinska: his grandson's missing-fighter form of
     // 2026-11-23 16:28 with his wartime photo (Porodična arhiva 9990000038; no name for the card)
     photo: '0122961381-1.jpg',
     photoCaption: 'U partizanskoj uniformi',
@@ -884,6 +884,25 @@ export const familyContributions: FamilyContribution[] = [
     photoCaption: 'Crtež',
     from: 'M. Pekić',
     origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961384', // Zadnik Jože of Pregarje, intendant of the 3. prekomorska brigada: his grandson's message the user passed on,
+    // 2026-11-23 (Porodična arhiva 9990000044; a new record, the user's answer: not the Tomšičeva's Jože of 1904); his wartime photo
+    photo: '0122961384-1.jpg',
+    photoCaption: 'U uniformi prekomorskih brigada',
+    text: 'Rođen je 1901. u Pregarju. Bio je intendant 3. prekomorske brigade. Preživio je rat, a umro je 1964.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0133029946', // Samardžić (Vlado) Ives, census part BiH: Ivanka "Ives" Samardžić, a post of the Facebook page „Bitka na
+    // Sutjesci” the user sent (2026-11-23); the rows by override; her portrait cut from the post
+    photo: '0133029946-1.jpg',
+    photoFrom: '„Bitka na Sutjesci”',
+    text: 'Ivanka Ives Samardžić rođena je u Mostaru 25. januara 1925. Završila je osmi razred gimnazije u Sarajevu. Članica SKOJ-a bila je od 1943. Ustaše su je uhapsile 24. marta 1945. i posle nekoliko dana obesile tokom masovnog pogubljenja na Marijin Dvoru u Sarajevu. Prema izvorima, na suđenju se ponašala dostojanstveno.',
+    from: '„Bitka na Sutjesci”',
+    origin: 'facebook',
     date: '2026-11',
   },
 ]
