@@ -732,6 +732,7 @@ PLACE_READ = {
     'Štitari, Šavnik': 'Štitari, Cetinje',
     # the 20. srpska's scan reads Ć as B: "Buprija" is Ćuprija (a family's form of 2026-11-23, Milosavljević Ilija); 36 records,
     # the villages as printed
+    'Krnjicc, Bar': 'Krnjice, Bar',   # a reader's report of 2026-11-23 (Pekić Boža Špiro)
     'Buprija': 'Ćuprija', 'Krušar, Buprija': 'Krušar, Ćuprija', 'Batinac, Buprija': 'Batinac, Ćuprija', 'Senje, Buprija': 'Senje, Ćuprija', 'Poljane, Buprija': 'Poljane, Ćuprija', 'Poljana, Buprija': 'Poljana, Ćuprija', 'Paljina, Buprija': 'Paljina, Ćuprija', 'Pločnik, Buprija': 'Pločnik, Ćuprija', 'Baginac, Buprija': 'Baginac, Ćuprija', 'Bigrenica, Buprija': 'Bigrenica, Ćuprija', 'Virine, Buprija': 'Virine, Ćuprija',
 }
 

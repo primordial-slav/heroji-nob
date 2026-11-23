@@ -767,6 +767,116 @@ export const familyContributions: FamilyContribution[] = [
     from: 'T. Kovačević, unuka',
     date: '2026-11',
   },
+  {
+    soldierId: '0004000147', // Belingar Bojan of Ljubljana, Ljubljanska brigada: his son's form of 2026-11-23 16:02 with three files
+    // (Porodična arhiva 9990000043 referenced; rows by 317169); his wife is Vihtner Gordana (0001013150)
+    photo: '0004000147-1.jpg',
+    photoCaption: 'U uniformi',
+    pieces: [
+      {
+        kind: 'document',
+        file: '0004000147-2.jpg',
+        caption: 'Uprava SVPB-B, 7. 3. 1945: čin poručnika',
+        transcripts: ['Uprava S V P B - B. Položaj 7.3.1945. Ekonomatu S V P B - B. Glavni štab NOV in POJ Slovenije, Personalni odsek je z aktom štev 510. z dne 20.2.1945. odobril rang poročnika politkomisarju Belingarju Bojanu! Iskreno čestitamo! Smrt fašizmu - svoboda narodu! Politkomisar: [potpis]. Upravnik poročnik: dr. [potpis]'],
+      },
+      { kind: 'photo', file: '0004000147-3.jpg', caption: 'Na susretu boraca, u kasnijim godinama' },
+    ],
+    text: 'Rođen je 30. jula 1927. u Ljubljani, od oca Petera i majke Zinke, rođene Kolar. Ceo radni vek, do penzionisanja 1976, proveo je u Saveznom sekretarijatu za unutrašnje poslove u Beogradu. Supruga mu je bila Gordana, rođena Vihtner, takođe partizanka. Umro je 5. avgusta 2011.',
+    from: 'B. Belingar, sin',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0070101809', // Kolar Stane, dr., Tomšičeva brigada: his grandmother's brother, the form of 2026-11-23 16:30 with his
+    // officer's portrait and a newspaper obituary (the day of birth and of death by 317170: the obituary's 1944, the form's 1945)
+    photo: '0070101809-1.jpg',
+    photoCaption: 'U oficirskoj uniformi, pre rata',
+    pieces: [{ kind: 'document', file: '0070101809-2.jpg', caption: 'Iz novina: dr. Stane Kolar' }],
+    text: 'Rođen je 14. februara 1903. u Gornjoj Radgoni, od oca Ivana Kolara i majke Marije, rođene Kovač. Sa 23 godine završio je medicinu, a zatim radio kao vojni lekar u Bihaću i Ljubljani. Godine 1937. oženio se Banjalučankom Mirom Stojanović, profesorkom nemačkog. Poginuo je 23. marta sa još 22 partizana u mestu Češnjice iznad Blagovice kod Domžala. Posle rata njegovi posmrtni ostaci preneti su u porodičnu grobnicu Kolarovih na groblju Žale u Ljubljani.',
+    from: 'B. Belingar, pranećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132038452', // Španja Ante Sime of Vodice, census part Hrvatska: his great-grandson's form of 2026-11-23 16:22
+    text: 'Okružen talijansko-četničkim formacijama, bacio je bombu pod sebe.',
+    from: 'L. Španja, praunuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132038451', // Španja Ante Luce of Vodice, census part Hrvatska: the same great-grandson's missing-fighter form of
+    // 2026-11-23 16:28 ("Španja Lujo", the verbs feminine: she); the death by override
+    text: 'Bila je borac Prve primorske čete. Izdali su je domaći izdajnici iz takozvane AKM (antikomunističke milicije, četnici); strijeljana je na Srimskoj lokvi zajedno s ostalim drugovima.',
+    from: 'L. Španja, praunuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0053000943', // Gradac Mate Ante of Zapadna Plina, 11. dalmatinska: a photo, form of 2026-11-23 16:27
+    photo: '0053000943-1.jpg',
+    photoCaption: 'Sa harmonikom',
+    from: 'D. Gradac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0005000052', // Musić Seid "Sejdo" of Nova Varoš, Treća proleterska: his grandson's form of 2026-11-23 16:53 (no name)
+    text: 'Po saznanju porodice, umro je u Sarajevu.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0162000182', // Studen Miloš, 1. tenkovski bataljon: his grandson's form of 2026-11-23 17:03 (Porodična arhiva 9990000041
+    // referenced; rows by 317172)
+    text: 'Rođen je 1921. U partizanima je od 1942, borac Prvog tenkovskog bataljona 8. kordunaške udarne divizije. Učestvovao je u borbama za Trst. Posle rata, na osnovu sporazuma Tita i Envera Hodže, bio je instruktor tenkovskih jedinica u Valoni. Kasnije je radio u šumskom gospodarstvu kao vozač kamiona. Preminuo je 2007. godine.',
+    from: 'Č. Studen, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036001847', // Srzić I Marica of Makarska, 1. dalmatinska: her grandmother's sister's great-nephew, form of 2026-11-23
+    // 17:21 (no name; Porodična arhiva 9990000042, the death by 317174)
+    text: 'Poginula je na Krekovima, na Sutjesci. Kad su svi oko nje poginuli, uzela je mitraljez i nastavila pucati dok nije poginula; navodno je bila vrlo uspješna s mitraljezom. Ranije, kad su joj rekli da joj je poginuo brat, rekla je: „Svi koji su poginuli su moja braća.” Vrtić u Makarskoj nosio je njeno ime.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036001845', // Srzić S Frane of Makarska, 1. dalmatinska: the same sender, form of 2026-11-23 17:25 (no name; 317175)
+    text: 'Ranjen je u borbama za Jajce i sakriven s ostalim ranjenicima u jednoj štali. Ustaše su uhvatile nekoga tko im je odao gdje se ranjenici nalaze, pa su ih žive zapalili zajedno sa štalom.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
+  {
+    soldierId: '0131011230', // Fijačko Franc Andrej of Brezovec (Ptuj), census part Slovenija: his nephew's form of 2026-11-23 17:32
+    text: 'Obitelj je protjerana sa svog ognjišta u logore Jasenovac i Stara Gradiška, a zatim internirana u Srijem (Irig, Ruma, Futog). Sudjelovao je u proboju Srijemskog fronta, ranjen je u glavu, izgubio oko i od posljedica umro.',
+    from: 'J. Sušić Jurić, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0025000514', // Kreco Dimitrijin Krsto of Tuzla, Tuzlanski odred: his granddaughter's form of 2026-11-23 17:44
+    text: 'Njegov grob nikada nije pronađen.',
+    from: 'A. Savić, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0035104016', // Iveković Albina Svetozar of Klanjec, 32. divizija: his grandson's form of 2026-11-23 17:47 (317176)
+    text: 'Umro je 2003. u Varaždinu.',
+    from: 'B. Iveković, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961379', // Kovač Arsena Mirko of Donje Žešče, 4. armija: his grandson's missing-fighter form of 2026-11-23 15:58
+    // (Porodična arhiva 9990000036); his face cut from the family photo is the portrait, the whole photo in the album
+    photo: '0122961379-1.jpg',
+    photoCaption: 'U kasnijim godinama',
+    pieces: [{ kind: 'photo', file: '0122961379-2.jpg', caption: 'S porodicom' }],
+    text: 'U partizane je stupio 1943, kao vrlo mlad. Učestvovao je u oslobađanju Dalmacije i Trsta. Posle rata upućen je u školu za milicionere, ali je izbačen zbog nediscipline. Iz Bosne se preselio u Vojvodinu, u selo Orlovat, sa ženom, njenim sestrama i prvim detetom.',
+    from: 'D. Kovač, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961381', // Vučković Frane Nikola of Brnaze, 16. slavonska omladinska: his grandson's missing-fighter form of
+    // 2026-11-23 16:28 with his wartime photo (Porodična arhiva 9990000038; no name for the card)
+    photo: '0122961381-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

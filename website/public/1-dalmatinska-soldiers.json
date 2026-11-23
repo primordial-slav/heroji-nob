@@ -76935,6 +76935,10 @@
         "pdf_x_end": 413.8,
         "pdf_x_left": 59.4
       }
+    ],
+    "death_type": "ubijen",
+    "family_fields": [
+      "death_type"
     ]
   },
   {
@@ -77004,8 +77008,8 @@
     "soldier_id": "0036001847",
     "birth_place": "Makarska",
     "death_type": "poginuo",
-    "death_date": "03.1943",
-    "death_place": "Nevesinje",
+    "death_date": "1943",
+    "death_place": "Krekovi, Sutjeska",
     "rank": "bolničarka",
     "other_sources": [
       {
@@ -77065,6 +77069,13 @@
         "ref_book": "zrtve-rata-1964-hrv"
       },
       {
+        "soldier_id": "9990000042",
+        "name": "Srzić I Marica",
+        "additional_info": "Poginula u bici na Sutjesci, na Krekovima: kad su svi oko nje poginuli, uzela je mitraljez i pucala dok nije poginula.",
+        "source_url": "porodica:9990000042",
+        "ref_book": "porodicna-arhiva"
+      },
+      {
         "soldier_id": "0046001021",
         "name": "Srzić Ivana Marica",
         "additional_info": "borac 1. bataljona, rođena 1923, Makarska, radnica, Hrvatica, u NOB od jula 1942, član SKOJ-a, poginula u Sandžaku kod Pljevalja 22. maja 1943. godine.",
@@ -77095,14 +77106,10 @@
     "occupation": "radnica",
     "unit_detail": "3. bataljon",
     "party": "SKOJ",
-    "variants": {
-      "death": [
-        {
-          "date": "22.05.1943",
-          "place": "Sutjeska"
-        }
-      ]
-    }
+    "family_fields": [
+      "death_date",
+      "death_place"
+    ]
   },
   {
     "last_name": "Srzić",
