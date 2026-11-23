@@ -140,6 +140,8 @@ def tables() -> dict:
         for seg in re.split(r'[(),;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', name):
             w = re.findall(r'[a-z0-9]+', fold(seg))
             num = ord_value(w[:2]) if w else None
+            if key == ('brigades', 76) and num == 20:
+                num = 21      # the table's "Dvadesetprva slavonska" in one word: the 21. slavonska (2026-11-23, Dvorski Martin)
             if not num:
                 continue
             rest = frozenset(x for x in w if x not in FILLER and not x.isdigit() and not re.fullmatch(ORD_WORD, x)

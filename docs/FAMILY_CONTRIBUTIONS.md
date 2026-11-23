@@ -18,6 +18,19 @@ mentions spomenica add spomenica"), even where the wording leaves room and even 
 the fact alone): a Porodična arhiva entry "Nosilac Partizanske spomenice 1941." referenced on the record (a unit's), or
 joined by `ONE_MAN` (122 and the census); the medal comes from the entries' text, not from the note.
 
+What a family tells of the war goes into the card's life line (the user, 2026-11-23, Divljak Živko: "uvesti to pravilo od
+porodicnih feedbackova"): the battles, wounds, joining, capture or prison, the units. The line reads only the Porodična
+arhiva entry (never the note), and only in the reader's phrasing (`scripts/extract_life_events.py`): "U NOB od 1941.",
+"U 21. slavonsku brigadu stupio 18. 11. 1943.", "Ranjen 1944. kod ...", "Zarobljen 1942.", "Umro 1996. u Splitu."; a
+battle of the Sutjeska as "Učesnik bitke na Sutjesci" (`make_war_events.FAMILY_SUTJESKA`). Put "U NOB od 1941." before
+"Partizanske spomenice 1941." (a date after the Spomenica is no step). Life after the war stays out of the entry's
+steps (the note keeps it); the line needs three steps (birth, one more, death) or two between them.
+
+When a family names the man's unit, the card shows it, under the name and in the rows, not "Borci drugih jedinica"
+(the user, 2026-11-23, Ivančić Paško): a unit on the site takes the record (the entry names it so `scripts/unit_named.py`
+reads it: "U 21. slavonsku brigadu stupio ..."; the builder moves it there, `move_to_units`); a unit not on the site goes
+into the entry's `fields` as `unit_name` (the line under the name) and `unit_detail` (the row).
+
 1. Save the photo as `website/public/porodica/<soldier_id>-1.jpg` (`-2.jpg` for a second one).
    Keep it under ~500 KB; crop away scanner borders, don't retouch.
 2. Add an entry to `familyContributions` in `website/app/data/family.ts`:

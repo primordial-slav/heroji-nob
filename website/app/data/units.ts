@@ -346,7 +346,7 @@ export const units: Unit[] = [
     nameEn: '21st Slavonian Brigade',
     description: 'Formirana 17. maja 1943. u Orljavcu kod Slavonske Požege. Poginuli, umrli i nestali borci i starešine.',
     image: '/images/21-slavonska-brigada.jpg',
-    soldierCount: 1136,
+    soldierCount: 1139,
     dataFile: '/21-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/21-slavonska.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 63720,
+    soldierCount: 63717,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },

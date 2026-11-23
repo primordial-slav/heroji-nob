@@ -91,6 +91,7 @@ export interface Soldier {
   // A man of Borci drugih jedinica whose entries name his unit, now its record: his old id there (old links still find
   // him through it: scripts/prepare-data.ts)
   former_ids?: string[]
+  unit_name?: string // a unit a family's report names that isn't on the site: under the name, for "Borci drugih jedinica" (the user, 2026-11-23)
   // Set on the home page for a soldier linked across units: the other units he is listed in
   also_units?: string[]
   // The dated steps of his life, in order, where there are three or more (website/data/life-events/, merged in by

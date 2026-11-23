@@ -104,7 +104,7 @@ export default function MemorialCard() {
           <div className="memorial-head has-portrait">
             <SoldierPortrait soldier={soldier} unitId={unit.id} portrait={portrait} className="memorial-portrait" framed />
             <div>
-              <p className="memorial-unit">{unitText.name(unit)}</p>
+              <p className="memorial-unit">{soldier.unit_name || unitText.name(unit)}</p>
               <h1 className="memorial-name"><SoldierName soldier={soldier} /></h1>
               {years && <p className="memorial-years">{years}</p>}
               {honours && <p className="memorial-honours">{honours}</p>}

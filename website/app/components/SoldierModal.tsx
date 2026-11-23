@@ -84,7 +84,8 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
   const portrait = portraitFor(soldier)
   // the units of the soldier's entries from other units' books (a link): he is listed in each of them
   const unitOf = (e: SoldierSource) => units.find((u) => u.dataFile === `/${e.unit_file}`)?.name
-  const allUnits = [unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
+  // a unit the family names that isn't on the site stands for "Borci drugih jedinica" (the user, 2026-11-23, Ivančić Paško)
+  const allUnits = [soldier.unit_name || unit, ...entries.map((e) => (e.unit_file ? unitOf(e) : undefined))]
     .filter((u, i, list): u is string => Boolean(u) && list.indexOf(u) === i)
   const hasLine = (soldier.life_events?.length ?? 0) > 0
   // With the printed lines shown, the page they come from folds, as the comrades do, till it is asked for
@@ -288,7 +289,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
           <SoldierPortrait soldier={soldier} unitId={unitRecord?.id} portrait={portrait} className="modal-portrait" framed />
           <div>
             <h2 className="modal-title" id="soldier-name"><SoldierName soldier={soldier} /></h2>
-            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => shownUnitName(u, lang, unitText)).join(' · ')}</p>}
+            {allUnits.length > 0 && <p className="modal-unit">{allUnits.map((u) => (u === soldier.unit_name ? u : shownUnitName(u, lang, unitText))).join(' · ')}</p>}
             {honours && <p className="modal-honours">{honours}</p>}
             {portrait && (
               <p className="modal-portrait-credit">

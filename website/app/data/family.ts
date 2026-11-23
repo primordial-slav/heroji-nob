@@ -559,7 +559,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122961370', // Dvorski Mije Martin of Herešin, 21. slavonska, not in any book: his grandson's missing-fighter
+    soldierId: '0034900003', // Dvorski Mije Martin of Herešin, 21. slavonska (in the unit since 2026-11-23: the family names it; was 0122961370), not in any book: his grandson's missing-fighter
     // form of 2026-11-23 10:17 (Porodična arhiva 9990000018); the photo in uniform, from a document, is his portrait;
     // Josip (0033000126) is his brother
     photo: '0122961370-1.jpg',

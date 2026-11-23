@@ -15,6 +15,7 @@ from __future__ import annotations
 from safe_write import write_text
 
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -31,9 +32,17 @@ OUT = ROOT / 'website' / 'data' / 'events'
 SUTJESKA_BOOK = 'borci-sutjeske-'
 
 
+# a family's account that he fought at the Sutjeska (Porodična arhiva, the record's own entry or a reference): what a
+# family tells of the war goes into the card's line (the user, 2026-11-23, Divljak Živko: "dodati ucesnik bitke na
+# sutjesci u zivotni put, uvesti to pravilo od porodicnih feedbackova")
+FAMILY_SUTJESKA = re.compile(r'\b(?:bitk|bic|bitc|borb)\w*\s+na\s+(?:\w+\s+i\s+)?Sutjesc', re.I)
+
+
 def at_sutjeska(s: dict) -> bool:
     entries = [s] + list(s.get('other_sources') or [])
-    return any((e.get('pdf_file') or '').startswith(SUTJESKA_BOOK) for e in entries)
+    return any((e.get('pdf_file') or '').startswith(SUTJESKA_BOOK) or
+               ((e.get('source_url') or '').startswith('porodica:') and FAMILY_SUTJESKA.search(e.get('additional_info') or ''))
+               for e in entries)
 
 
 def main():

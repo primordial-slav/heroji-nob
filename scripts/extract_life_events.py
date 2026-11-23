@@ -423,7 +423,11 @@ def life_events(s: dict, code: int) -> list[dict]:
             steps.append({'k': kind, 'd': iso(when[0]), 's': 0, '_at': 10 ** 6})
     if s.get('death_date') and kind == 'death':
         when = parse_when(s['death_date'])
-        if when and 1941 <= when[0][0] <= 2000:
+        y20 = re.fullmatch(r'(?:\d{1,2}\.){0,2}(20[0-2]\d)', s['death_date'].strip())
+        if not when and y20:
+            when = ((int(y20.group(1)), 0, 0), None)                    # a family's death of our century (Y reads 19xx)
+        # (a family's report gives deaths up to our day: Nišić Rizah 2004, Mijanović Vladimir 2013, 2026-11-23)
+        if when and 1941 <= when[0][0] <= 2030:
             step = {'k': 'death', 'd': iso(when[0]), 's': 0, '_at': 10 ** 6}
             if when[1]:
                 step['e'] = iso(when[1])                                 # fell between two days: "3—8. juna 1943"
