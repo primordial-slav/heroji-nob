@@ -1516,7 +1516,7 @@ export const units: Unit[] = [
     nameEn: 'Kokra Detachment',
     description: 'Formiran 18. juna 1942. na Kališču pod Storžičem, a drugi put 27. avgusta 1944. u Dragi kod Begunja. Borci prvog odreda s biografijama i spisak drugog po štabovima, službama i četama. Uz njih i borci odreda iz drugih knjiga.',
     image: '/images/kokrski-odred.jpg',
-    soldierCount: 1357,
+    soldierCount: 1257,
     dataFile: '/kokrski-odred-soldiers.json',
     pdfFiles: ['/pdfs/kokrski-odred.pdf', '/pdfs/kokrski-odred-1.pdf']
   },
