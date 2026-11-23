@@ -495,6 +495,16 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
+  {
+    soldierId: '0001007129', // Mihić Gojka Maksim of Čavaš (Ravno), Prva proleterska, linked with his records in the 53.
+    // srednjobosanska divizija and the 14. srednjobosanska (0033000402, 0056001266): his nephew's four forms of 2026-11-21/22 (permission for text, photos and
+    // the name as initial, surname and relation); the photo the forms announced never came through, the user found it on
+    // the family's site (mihici.com, which the nephew's form links) and gave it, 2026-11-23
+    photo: '0001007129-1.jpg',
+    text: 'Rođen je 1926. u hercegovačkom selu Čavaš, danas u opštini Ravno. Porodica se 1934. preselila u Miškovce kod Dervente.',
+    from: 'V. Mihić, sinovac',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
