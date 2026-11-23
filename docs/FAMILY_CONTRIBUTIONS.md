@@ -13,6 +13,11 @@ Nothing is published automatically.
 Only publish when the sender ticked **Dozvola za objavu: Da**. Corrections to the record itself go into
 `corrections.json` as usual.
 
+A family that mentions the Partizanska spomenica gets it on the card (the user's rule, 2026-11-23: "If family member
+mentions spomenica add spomenica"), even where the wording leaves room and even without permission to publish (then
+the fact alone): a Porodična arhiva entry "Nosilac Partizanske spomenice 1941." referenced on the record (a unit's), or
+joined by `ONE_MAN` (122 and the census); the medal comes from the entries' text, not from the note.
+
 1. Save the photo as `website/public/porodica/<soldier_id>-1.jpg` (`-2.jpg` for a second one).
    Keep it under ~500 KB; crop away scanner borders, don't retouch.
 2. Add an entry to `familyContributions` in `website/app/data/family.ts`:

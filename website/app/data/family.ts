@@ -568,6 +568,20 @@ export const familyContributions: FamilyContribution[] = [
     from: 'D. Švalek, unuk',
     date: '2026-11',
   },
+  {
+    soldierId: '0122940691', // Čelebić Ilije Jovan of Štitari (Cetinje), fell 1. 12. 1941 at Pljevlja: his nephew's form of
+    // 2026-11-23 13:21 (on the Spomenica's record 0122926735, joined to this one the same day)
+    text: 'Sahranjen je u spomen-kosturnici spomenika palima u Pljevaljskoj bici, na Stražici u Pljevljima.',
+    from: 'Ž. Čelebić, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132008320', // Kontić Ivan Joso of Trbounje (Drniš), census part Hrvatska: his niece's form of 2026-11-23 13:02
+    // (text yes, no name for the card); the party by override
+    text: 'Kao mlad bio je član KPJ i 1941. otišao je u partizane. Poginuo je u oslobađanju Rijeke, ali se ne zna gdje se sve borio.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

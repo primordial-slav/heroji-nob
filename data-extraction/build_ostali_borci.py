@@ -310,6 +310,9 @@ ONE_MAN = [
     ('9035014161', '9023006250', 'Kajošević Zekin Zejnel of Dinoši, fell 1944 there (the census: Zeko Zemelj, b. 1915)'),
     ('9025027497', '9025027498', 'Jemuović Pavla Dušan of Baljevac, fell 1941 at Raška: the census prints him twice'),
     ('9064010613', '9990000012', 'Orlić Marka Đuro of Vodoteč, b. 1922: his great-grandson\'s form (spomenica, d. 1982)'),
+    # forms of 2026-11-23: the Spomenica's (under Šavnik) and the Lovćenski odred's list's Čelebić Ilijin Jovan of Štitari
+    # (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja: one man (his nephew's form and a report of his village)
+    ('9035017817', '9084000711', 'Čelebić Ilije Jovan of Štitari (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -320,6 +323,7 @@ MERGED_IDS = {
     # readers' reports of 2026-11-22: U rovovima Srema's "Erar Jovo" is the 1. krajiška's Eror Jeke Jovo (a reference);
     # the census's Jemuović printed twice
     '0122130469': '0123000355', '0136027498': '0136027497',
+    '0122926735': '0122940691',   # Čelebić Ilijin Jovan: the Spomenica's record, joined to the Lovćenski odred's list's (2026-11-23)
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',
     # the records the Poreklo books 9115-9128 joined to others (2026-11-22): a book's entry agreed with two records of
