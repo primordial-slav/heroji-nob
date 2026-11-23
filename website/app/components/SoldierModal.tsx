@@ -198,7 +198,8 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
           Jedinica: unit || '',
           Jezik: LANG_NAMES[lang].name,
           'Opis greške': reportText,
-          'Email pošiljaoca': reportEmail.trim(),
+          // the address only when we may answer there: one we may not use is not kept (00's review, 2026-11-23)
+          'Email pošiljaoca': reportEmail.trim() && reportMayReply ? reportEmail.trim() : '',
           'Dozvola za odgovor': reportEmail.trim() ? (reportMayReply ? 'Da' : 'Ne') : '',
           ...(reportEmail.trim() && reportMayReply ? { _replyto: reportEmail.trim() } : {}),
         }),
