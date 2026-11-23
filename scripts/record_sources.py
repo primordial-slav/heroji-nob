@@ -190,7 +190,14 @@ def column_facts(o: dict) -> dict | None:
     if out.get('death_place'):
         out['death_place'] = death_place_of(out['death_place'])
     # (marked: never lent to a man the record has living, no_death_lent)
-    return {**out, 'columns': True} if out.get('death_date') or out.get('death_place') else {}
+    out = {**out, 'columns': True} if out.get('death_date') or out.get('death_place') else {}
+    # the census's year of birth, after "ili" where it differs (the user's rule of 2026-11-23, after Mulić Ramiz's 1927
+    # and the census's 1929: "census birth year should be ili unless stated by family which trumps all"); a year of
+    # birth only, never lent to the record
+    born = re.match(r'\s*rođen[a]?\s+(1[89]\d\d)\b', e.get('additional_info') or '') if book == CENSUS_BOOK else None
+    if born:
+        out['birth_year'], out['census_birth'] = born.group(1), True
+    return out
 
 
 # ── what the books say otherwise ────────────────────────────────────────────
@@ -580,8 +587,12 @@ def variants(s: dict, by_id: dict, ex, family: set = frozenset(), fixed: set = f
     out = {}
     year = (s.get('birth_year') or '')[:4]
     born, seen = [], {year}
-    for f in facts:
+    # the census's years after the books', so a book's day of the same year is the one shown ("08.05.1923", not "1923")
+    for f in sorted(facts, key=lambda f: bool(f.get('census_birth'))):
         if f is own and not own_birth:
+            continue
+        # the census's year only beside a year: where a book prints the day, the day stands alone (the user, 2026-11-23)
+        if f.get('census_birth') and s.get('birth_date'):
             continue
         y = (f.get('birth_year') or '')[:4]
         if y and y not in seen and year and plausible_birth(int(y), s):
