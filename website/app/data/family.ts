@@ -1042,6 +1042,66 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-11',
   },
+  {
+    soldierId: '0122961393', // Race Franca Boris "Žarko" of Hrpelje: his great-nephew's missing-fighter form of 2026-11-24 10:05 with his photo
+    // (text and name allowed; Porodična arhiva 9990000056, role activist: an illegal worker, no unit); the dates from the lexicon
+    // Obrazi slovenskih pokrajin the sender gave
+    photo: '0122961393-1.jpg',
+    photoCaption: 'U kasnijim godinama',
+    text: 'Vodio je ilegalnu štampariju i bio nosilac Partizanske spomenice 1941. Prema leksikonu „Obrazi slovenskih pokrajin”: od decembra 1941. bio je u tehnici CK KP Slovenije, od avgusta 1942. do aprila 1943. vodio je tehniku Petrač; uhapšen je i u junu 1943. osuđen na 30 godina, a iz zatvora u Parmi pušten je u decembru 1943. Od januara 1944. bio je partizanski učitelj u Hrpeljama, zatim je vodio tehniku Slavnik u Brkinima. Posle rata bio je građevinski preduzetnik u Trstu i od 1964. do 1987. predsednik Slovenske kulturno-gospodarske zveze. Umro je u Trstu 26. aprila 1995.',
+    from: 'A. Race, pranećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961394', // Kruc Dragutin of Zagreb, Kalnička brigada: his grandson's missing-fighter form of 2026-11-24 10:39 (text yes,
+    // name no; Porodična arhiva 9990000057)
+    text: 'Kao skojevac u Zagrebu nosio je oružje i materijal na vezu na Medvednicu. U partizane je otišao sa 19 godina; bio je borac Kalničke brigade 10. zagrebačkog korpusa, a zatim u sanitetu. Preživio je rat.',
+    from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation
+    date: '2026-11',
+  },
+  {
+    soldierId: '0108000481', // Lapčević Stevo of Bišćanovo (Glina), 3. banijska brigada: his grandson's plain mail of 2026-11-24 10:18
+    // (the form wouldn't send; no permission lines: no name) with four photos (Porodična arhiva 9990000058; rows by 317188)
+    photo: '0108000481-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    pieces: [
+      { kind: 'photo', file: '0108000481-5.jpg', caption: 'U partizanskoj uniformi, cela fotografija' },
+      { kind: 'photo', file: '0108000481-2.jpg', caption: 'Kao oficir, posle rata' },
+      { kind: 'photo', file: '0108000481-3.jpg', caption: 'Sa odlikovanjima' },
+      { kind: 'photo', file: '0108000481-4.jpg', caption: 'U oficirskoj uniformi' },
+    ],
+    text: 'Rođen je 1925. u Bišćanovu kod Gline. Posle rata završio je školu KOV i KNOJ u Kragujevcu i službovao po Srbiji; penzionisan je krajem pedesetih kao kapetan. Umro je 2008. u Sremskoj Mitrovici, gde je i sahranjen.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138007909', // Petrenj Stevan Mara of Bosut, census part Vojvodina: form of 2026-11-24 10:04 (text and name allowed;
+    // "unuk" on all three Petrenj forms); unit by override
+    text: 'Bila je u Trećoj vojvođanskoj brigadi. Grob joj je u Maloj Moštanici, gde ima i spomenik.',
+    from: 'V. Petrenj, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138007908', // Petrenj Stevan Adam of Bosut, census part Vojvodina: form of 2026-11-24 10:06; the death by override
+    text: 'Pobegao je iz Jasenovca. Nije poginuo: umro je od tifusa u Birču.',
+    from: 'V. Petrenj, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138007910', // Petrenj Stevan Stevan of Bosut, census part Vojvodina: form of 2026-11-24 10:07; the death by override
+    text: 'Poginuo je na Sremskom frontu.',
+    from: 'V. Petrenj, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0010101525', // Žujić-Torbica Milana Zora of Brekinja, 3. krajiška proleterska: her grandson's form of 2026-11-24 10:51
+    // with her photo (text and name allowed; Porodična arhiva 9990000059 referenced)
+    photo: '0010101525-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    text: 'Učestvovala je u bici na Neretvi i u borbama za oslobođenje Beograda. Krajem rata bila je politički komesar čete za vezu (Savo O. Trikić, „Treća krajiška proleterska brigada”, str. 352). O njoj je pisao i Yugopapir, u članku „Zora Žujić, 19-godišnja Kozarčanka”.',
+    from: 'A. Torbica, unuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
