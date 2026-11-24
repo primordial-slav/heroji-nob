@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server'
 import { units, type Unit } from '@/app/data/units'
+import { contributionsFor } from '@/app/data/family'
 import { portraitFor } from '@/app/data/portraits'
 import { messagesFor } from '@/app/i18n'
 import { FINISHED_LANGS, HTML_LANG, OG_LOCALE, localePath, type Lang } from '@/app/i18n/config'
@@ -110,13 +111,24 @@ function plainRecord(soldier: Soldier, unit: Unit, lang: Lang): { html: string; 
   const { heroj, spomenica } = decorationsOf(soldier)
   const honours = [heroj && t.medals.heroj, spomenica && t.medals.spomenica].filter(Boolean) as string[]
   const told = facts.filter((f) => f.key === 'born' || f.key === 'duty' || f.key === 'death').map((f) => `${f.label}: ${f.value}`)
-  const description = [name, ...honours, ...told].join(' · ').slice(0, LONGEST_DESCRIPTION)
+  // what a family or a visitor sent, as the dialog shows it (components/FamilyStory.tsx): its text and credit, and the
+  // unit its report names where that unit isn't on the site, under the name in place of "Borci drugih jedinica"
+  // (SoldierModal's modal-unit; 05's note of 2026-11-24 on Zadnik Jože and Perkov Ante)
+  const notes = contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id)).filter((c) => c.text)
+  const noteHeading = notes.every((c) => c.origin === 'facebook') ? t.family.titleFacebook
+    : notes.every((c) => c.origin) ? t.family.titleVisitor : notes.some((c) => c.origin) ? t.family.titleMixed : t.family.title
+  const shownUnit = soldier.unit_name || name
+  const description = [shownUnit, ...honours, ...told, ...notes.map((c) => c.text!)].join(' · ').slice(0, LONGEST_DESCRIPTION)
   const entries = entriesOf(soldier).filter((e) => e.additional_info)
   const html = [
     `<div id="record-plain" class="record-plain container">`,
     `<h1>${esc(soldier.full_name)}</h1>`,
-    `<p><a href="${localePath(lang, `/units/${unit.id}`)}">${esc(name)}</a></p>`,
+    soldier.unit_name
+      ? `<p>${esc(soldier.unit_name)} · <a href="${localePath(lang, `/units/${unit.id}`)}">${esc(name)}</a></p>`
+      : `<p><a href="${localePath(lang, `/units/${unit.id}`)}">${esc(name)}</a></p>`,
     honours.length ? `<p>${esc(honours.join(' · '))}</p>` : '',
+    notes.length ? `<h2>${esc(noteHeading)}</h2>` : '',
+    ...notes.map((c) => `<blockquote><p>${esc(c.text!)}</p><footer>${esc(c.from)}</footer></blockquote>`),
     facts.length ? `<dl>${facts.map((f) => `<dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd>`).join('')}</dl>` : '',
     entries.length ? `<h2>${esc(t.record.references)}</h2>` : '',
     ...entries.map((e) => {
