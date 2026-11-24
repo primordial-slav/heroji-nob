@@ -49,6 +49,11 @@ SITE_LINKS_MORE = {('brigades', 3): 123, ('brigades', 31): 124, ('brigades', 171
 STAFF_ONLY = {113, 114, 115, 116}
 # the table's KNOJ brigades ("brigada NO" after the word, "divizije NO", the Slovene and Croatian security troops), and a
 # text that names KNOJ: the army's "NO udarna brigada" has NO before the word
+# the table's misprints (novj/brigades.json, OCR of Anić et al.), mended before its names are read: "Peta proterska (cr
+# nogorska)" hid the 5. proleterska crnogorska, "Treća krajška" the 3. krajiška (05, 2026-11-24, Lekić Mahmut)
+TABLE_MENDS = [(r'\bproterska\b', 'proleterska'), (r'\bcr nogorsk', 'crnogorsk'), (r'\bkrajšk', 'krajišk'),
+               (r'\bbrgad', 'brigad'), (r'\bdivizje\b', 'divizije'), (r'\bdiVizij', 'divizij'), (r'\budama\b', 'udarna'),
+               (r'\bproterske\b', 'proleterske')]
 KNOJ_NAME = re.compile(r'\bbri?gad\w*\s+NO\b|\bdi[vV]iz\w*\s+NO\b|državne varnosti|zaštitu naroda')  # the table's "brgada", "divizje"
 KNOJ_TEXT = re.compile(r'KNOJ|[Nn]arodne odbrane|\bbrigad\w*\s+NO\b')
 
@@ -134,6 +139,8 @@ def tables() -> dict:
     for b in brig:
         key = ('brigades', b['no'])
         name = b['name'].replace('\n', ' ')
+        for wrong, right in TABLE_MENDS:
+            name = re.sub(wrong, right, name)
         if KNOJ_NAME.search(name):
             knoj.add(key)
         for m in re.finditer(r'(\d{1,2})\.\s*(?:NOU\s+|NO\s+|udarna\s+)?brigad\w*\s+(\d{1,2})\.\s*divizij', name):
