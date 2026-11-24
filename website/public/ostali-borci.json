@@ -372110,6 +372110,24 @@
     "birth_place": "Radosavska"
   },
   {
+    "soldier_id": "0122961410",
+    "last_name": "Grujić",
+    "middle_name": "",
+    "first_name": "Đuro",
+    "fathers_name": "Vaso",
+    "full_name": "Grujić Đuro",
+    "additional_info": "Brdo Utinjsko, od oca Vase. U NOB od 1941; borac odreda „Gaćeša Selo”, kasnije 3. kordunaške brigade. Preživio rat.",
+    "birth_year": "",
+    "source_url": "porodica:9990000080",
+    "unit_name": "3. kordunaška brigada",
+    "unit_detail": "odred „Gaćeša Selo”; 3. kordunaška brigada",
+    "birth_place": "Brdo Utinjsko",
+    "rank": "borac",
+    "family_fields": [
+      "unit_detail"
+    ]
+  },
+  {
     "soldier_id": "0122912908",
     "last_name": "Grujić",
     "middle_name": "Mijajlov",
@@ -483281,6 +483299,35 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Ugnji"
+  },
+  {
+    "soldier_id": "0122961409",
+    "last_name": "Kanazir",
+    "middle_name": "",
+    "first_name": "Jasna",
+    "fathers_name": "Špiro",
+    "full_name": "Kanazir Jasna",
+    "additional_info": "Kći Špire Kanazira iz Splita; s bratom Maksimom i sestrom Nedjeljkom u ilegali, zatim u partizanskoj jedinici, 26. dalmatinskoj diviziji 8. korpusa. Udana Vasić.",
+    "birth_year": "",
+    "source_url": "porodica:9990000079",
+    "unit_name": "26. dalmatinska divizija",
+    "unit_detail": "26. dalmatinska divizija, 8. korpus",
+    "birth_place": "Split",
+    "family_fields": [
+      "unit_detail"
+    ]
+  },
+  {
+    "soldier_id": "0122961408",
+    "last_name": "Kanazir",
+    "middle_name": "",
+    "first_name": "Nedjeljka",
+    "fathers_name": "Špiro",
+    "full_name": "Kanazir Nedjeljka",
+    "additional_info": "Kći Špire Kanazira iz Splita; s bratom Maksimom i sestrom Jasnom u ilegali, zatim u partizanskoj jedinici. Udana Barić.",
+    "birth_year": "",
+    "source_url": "porodica:9990000078",
+    "birth_place": "Split"
   },
   {
     "soldier_id": "0122942578",
@@ -675506,6 +675553,19 @@
     "death_place": "Bugojno"
   },
   {
+    "soldier_id": "0122961412",
+    "last_name": "Marelj",
+    "middle_name": "",
+    "first_name": "Smilja",
+    "fathers_name": "Dušan",
+    "full_name": "Marelj Smilja",
+    "additional_info": "rođena 1925, Sreflije (Bosanska Dubica), od oca Dušana. Borac jedne slavonske jedinice. Preživjela rat.",
+    "birth_year": "1925",
+    "source_url": "porodica:9990000082",
+    "birth_place": "Sreflije (Bosanska Dubica)",
+    "rank": "borac"
+  },
+  {
     "soldier_id": "0122942472",
     "last_name": "Marelja",
     "middle_name": "",
@@ -796428,13 +796488,45 @@
     "pdf_y": 167.3,
     "pdf_x_end": 378.7,
     "pdf_y_end": 210.9,
-    "birth_place": "Gaćeša Selo",
+    "birth_place": "Gaćeša Selo, Utinja",
     "ethnicity": "Srbin",
-    "occupation": "seljak",
-    "death_type": "ubijen",
+    "death_type": "poginuo",
     "death_date": "10.04.1942",
-    "death_place": "Plaški",
-    "rank": "komesar voda"
+    "death_place": "Ruj kod Plaškog",
+    "unit_name": "1. kordunaški partizanski odred",
+    "unit_detail": "odred „Gaćeša Selo”; 3. četa, 2. bataljon, 1. kordunaški partizanski odred",
+    "rank": "komandir čete",
+    "other_sources": [
+      {
+        "soldier_id": "9990000075",
+        "name": "Mrkonjić Jovana Ilija",
+        "additional_info": "Komandir odreda „Gaćeša Selo”; od februara 1942. komandir voda u 3. četi 2. bataljona 1. kordunaškog partizanskog odreda, a od početka aprila 1942. komandir iste čete. Poginuo nesrećnim slučajem 10. 4. 1942. na Ruju kod Plaškog, od rafala vlastitog puškomitraljesca.",
+        "source_url": "porodica:9990000075"
+      },
+      {
+        "soldier_id": "9021051919",
+        "name": "Mrkonjić (Jovan) Ilija",
+        "additional_info": "rođen 1902, Gačeša-selo (Vonjić). Srbin, poginuo 1942. u NOBu, Plaški",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2496",
+        "source_page": 2496
+      }
+    ],
+    "occupation": "seljak",
+    "family_fields": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "rank",
+      "unit_detail"
+    ],
+    "manual_fields": [
+      "birth_place"
+    ],
+    "variants": {
+      "born": [
+        "1902"
+      ]
+    }
   },
   {
     "soldier_id": "0122950083",
@@ -1050160,6 +1050252,22 @@
     "birth_date": "04.01.1920"
   },
   {
+    "soldier_id": "0122961414",
+    "last_name": "Runtić",
+    "middle_name": "",
+    "first_name": "Ante",
+    "fathers_name": "",
+    "full_name": "Runtić Ante",
+    "additional_info": "Ogorje; lučki radnik u Splitu. U partizane otišao istog dana kad su talijanski fašisti ušli u Split; u NOB-u do kraja rata. Preživio rat.",
+    "birth_year": "",
+    "source_url": "porodica:9990000084",
+    "occupation": "lučki radnik",
+    "birth_place": "Ogorje",
+    "family_fields": [
+      "occupation"
+    ]
+  },
+  {
     "soldier_id": "0122905325",
     "last_name": "Rupar",
     "middle_name": "",
@@ -1140806,6 +1140914,23 @@
     "death_type": "poginuo"
   },
   {
+    "soldier_id": "0122961413",
+    "last_name": "Stanković",
+    "middle_name": "",
+    "first_name": "Mihajlo",
+    "fathers_name": "",
+    "full_name": "Stanković Mihajlo",
+    "additional_info": "Iz Begaljice (Grocka). Poginuo na Sremskom frontu.",
+    "birth_year": "",
+    "source_url": "porodica:9990000083",
+    "death_type": "poginuo",
+    "death_place": "Sremski front",
+    "family_fields": [
+      "death_place",
+      "death_type"
+    ]
+  },
+  {
     "soldier_id": "0122132879",
     "last_name": "Stanković",
     "middle_name": "",
@@ -1153918,6 +1154043,73 @@
     "death_date": "16.03.1944",
     "death_place": "na Javomici",
     "rank": "borac"
+  },
+  {
+    "soldier_id": "0122961406",
+    "last_name": "Stipeč",
+    "middle_name": "",
+    "first_name": "Ivan",
+    "fathers_name": "Ljudevit",
+    "full_name": "Stipeč Ivan",
+    "additional_info": "Nosilac Partizanske spomenice 1941. Najmlađi borac iz Bribira. Pokopan na partizanskom groblju u Bribiru.",
+    "birth_year": "1924",
+    "source_url": "porodica:9990000076",
+    "birth_place": "Bribir, Crikvenica",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Otočac",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021003534",
+        "name": "Stipeć (Ljudevit) Ivan",
+        "additional_info": "rođen 1924, Bribir (Crikvenica). Hrvat, poginuo 1942. u NOBu, Otočac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=144",
+        "source_page": 144
+      }
+    ],
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
+  },
+  {
+    "soldier_id": "0122961407",
+    "last_name": "Stipeč",
+    "middle_name": "",
+    "first_name": "Mihovil",
+    "fathers_name": "Ljudevit",
+    "full_name": "Stipeč Mihovil",
+    "additional_info": "Nosilac Partizanske spomenice 1941. Pokopan na partizanskom groblju u Bribiru.",
+    "birth_year": "1925",
+    "source_url": "porodica:9990000077",
+    "birth_place": "Bribir, Crikvenica",
+    "ethnicity": "Hrvat",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Drežnica",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021003535",
+        "name": "Stipeć (Ljudevit) Mihovil",
+        "additional_info": "rođen 1925, Bribir (Crikvenica). Hrvat, poginuo 1943. u NOBu, Drežnica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=144",
+        "source_page": 144
+      }
+    ],
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122950389",

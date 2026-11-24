@@ -319,6 +319,10 @@ ONE_MAN = [
     ('9027007909', '9990000060', 'Petrenj Stevana Mara of Bosut, b. 1924, fell 1944 (Mala Moštanica): her family names the 3. vojvođanska'),
     # form of 2026-11-24 11:36: Lekić Muratov Mahmut of Tuzi, the Spomenica's (Podgorica), fell 1944 at Crkvine near Kolašin (Mateševo)
     ('9035014250', '9990000061', 'Lekić Muratov Mahmut of Tuzi, b. 1917, fell 1944: his relative names the 5. proleterska crnogorska'),
+    # forms of 2026-11-24 evening: Mrkonjić Ilija's grandson; the Stipeč brothers' niece (the Spomenica, the census's "Stipeć")
+    ('9018000893', '9990000075', 'Mrkonjić Jovana Ilija of Gaćeša Selo, killed by accident 10. 4. 1942 near Plaški'),
+    ('9021003534', '9990000076', 'Stipeč Ljudevita Ivan of Bribir, b. 1924, fell 1942 (Otočac): his niece (the Spomenica)'),
+    ('9021003535', '9990000077', 'Stipeč Ljudevita Mihovil of Bribir, b. 1925, fell 1943 (Drežnica): his niece (the Spomenica)'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID

@@ -44201,7 +44201,7 @@
     "last_name": "Benić",
     "middle_name": "Matija",
     "first_name": "Ante",
-    "fathers_name": "Matija",
+    "fathers_name": "Josip",
     "full_name": "Benić Matija Ante",
     "additional_info": "rođen 1924, Senj. Hrvat, poginuo 1945. u NOBu, Rijeka-katarina",
     "birth_year": "1924",
@@ -44211,7 +44211,11 @@
     "ethnicity": "Hrvat",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Rijeka, Katarina"
+    "death_place": "Rijeka, Katarina",
+    "manual_fields": [
+      "birth_date",
+      "fathers_name"
+    ]
   },
   {
     "soldier_id": "0132056682",
@@ -327591,7 +327595,7 @@
     "last_name": "Knifić",
     "middle_name": "Štefo",
     "first_name": "Neda",
-    "fathers_name": "Štefo",
+    "fathers_name": "Stjepan",
     "full_name": "Knifić Štefo Neda",
     "additional_info": "rođena 1925, Senj. Hrvatica, poginula 1944. u NOBu, Sv.martin",
     "birth_year": "1925",
@@ -327600,8 +327604,16 @@
     "birth_place": "Senj",
     "ethnicity": "Hrvatica",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Sv. Martin"
+    "death_date": "03.05.1944",
+    "death_place": "Strp, Šumber",
+    "party": "SKOJ",
+    "manual_fields": [
+      "birth_date",
+      "death_date",
+      "death_place",
+      "fathers_name",
+      "party"
+    ]
   },
   {
     "soldier_id": "0132019680",
@@ -498291,23 +498303,6 @@
     "death_place": "Kozarac"
   },
   {
-    "soldier_id": "0132051919",
-    "last_name": "Mrkonjić",
-    "middle_name": "Jovan",
-    "first_name": "Ilija",
-    "fathers_name": "Jovan",
-    "full_name": "Mrkonjić Jovan Ilija",
-    "additional_info": "rođen 1902, Gačeša-selo (Vonjić). Srbin, poginuo 1942. u NOBu, Plaški",
-    "birth_year": "1902",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2496",
-    "source_page": 2496,
-    "birth_place": "Gačeša-selo, Vonjić",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Plaški"
-  },
-  {
     "soldier_id": "0132051920",
     "last_name": "Mrkonjić",
     "middle_name": "Milić",
@@ -522623,7 +522618,10 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Mušćenica"
+    "death_place": "Mošćenica",
+    "manual_fields": [
+      "death_place"
+    ]
   },
   {
     "soldier_id": "0132014548",
@@ -716372,40 +716370,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Goljak"
-  },
-  {
-    "soldier_id": "0132003534",
-    "last_name": "Stipeć",
-    "middle_name": "Ljudevit",
-    "first_name": "Ivan",
-    "fathers_name": "Ljudevit",
-    "full_name": "Stipeć Ljudevit Ivan",
-    "additional_info": "rođen 1924, Bribir (Crikvenica). Hrvat, poginuo 1942. u NOBu, Otočac",
-    "birth_year": "1924",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=144",
-    "source_page": 144,
-    "birth_place": "Bribir, Crikvenica",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Otočac"
-  },
-  {
-    "soldier_id": "0132003535",
-    "last_name": "Stipeć",
-    "middle_name": "Ljudevit",
-    "first_name": "Mihovil",
-    "fathers_name": "Ljudevit",
-    "full_name": "Stipeć Ljudevit Mihovil",
-    "additional_info": "rođen 1925, Bribir (Crikvenica). Hrvat, poginuo 1943. u NOBu, Drežnica",
-    "birth_year": "1925",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=144",
-    "source_page": 144,
-    "birth_place": "Bribir, Crikvenica",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Drežnica"
   },
   {
     "soldier_id": "0132024630",

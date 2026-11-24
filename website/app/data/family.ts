@@ -1205,6 +1205,100 @@ export const familyContributions: FamilyContribution[] = [
     from: 'T. Krilić, rođak',
     date: '2026-11',
   },
+  {
+    soldierId: '0053002696', // Srhoj Jure Petar, 11. dalmatinska: his nephew's form of 2026-11-24 20:22 (text and name allowed)
+    text: 'Više puta je ranjavan u borbama. Poslije rata bio je neko vrijeme u vojsci, a zatim je otišao u mirovinu. Živio je u Trpnju, gdje smo se viđali svakodnevno. Bio je izuzetno vedra duha.',
+    from: 'D. Srhoj, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122908678', // Mrkonjić Jovana Ilija of Gaćeša Selo: his grandson's form of 2026-11-24 20:09 (Porodična arhiva 9990000075
+    // joined; the family wins over the book's "komesar voda ... nehotično ubijen od bratića Save Mrkonjića")
+    text: 'Bio je komandir odreda „Gaćeša Selo”. Od februara 1942. bio je komandir voda u 3. četi 2. bataljona 1. kordunaškog partizanskog odreda, a od početka aprila 1942. komandir iste čete. Poginuo je nesrećnim slučajem 10. aprila 1942, od rafala vlastitog puškomitraljesca, na Ruju kod Plaškog.',
+    from: 'M. Mrkonjić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0055000868', // Vojvodić Milutin of Novo Momčilovo, 17. srpska: his nephew's form of 2026-11-24 19:03 (text yes, name no)
+    text: 'U partizane je otišao sa 16 godina, kao učenik gimnazije u Prokuplju. Datum pogibije je tačan, ali njegovo telo nikada nije pronađeno. Na seoskom groblju u Novom Momčilovu postoji grob s njegovim imenom, ali on tu nije sahranjen.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132031085', // Opalić Dragan Miloš of Gornja Pastuša, census part Hrvatska: his nephew's two forms of 2026-11-24 18:53, 19:03
+    text: 'Poginuo je kod Mošćenice, mesta između Petrinje i Siska. Sahranjen je na seoskom groblju u Gornjoj Pastuši.',
+    from: 'D. Opalić, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961406', // Stipeč Ljudevita Ivan of Bribir (the census's "Stipeć"): his niece's form of 2026-11-24 18:48 (text yes,
+    // name no; Porodična arhiva 9990000076 joined to his census entry; 0132003534 redirects)
+    text: 'Nosilac je Partizanske spomenice i najmlađi borac iz Bribira. Pokopan je na partizanskom groblju u Bribiru.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961407', // Stipeč Ljudevita Mihovil of Bribir: the same niece's form of 2026-11-24 18:54 (9990000077; 0132003535 redirects)
+    text: 'Nosilac je Partizanske spomenice. Pokopan je na partizanskom groblju u Bribiru.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0168001650', // Kanazir Spire Maksim of Split, 4. pomorski sektor: his nephew's form and two mails of 2026-11-24 19:42-19:49
+    // (text and name allowed); a list and a photo promised; his sisters 0122961408-09
+    text: 'Sin Špire Kanazira, koji je 1909. iz Kotora došao u Split. Od sedmoro djece Špire Kanazira i njegove supruge Anke troje je bilo u ilegali i u partizanima: Maksim i njegove sestre Nedjeljka, udana Barić, i Jasna, udana Vasić.',
+    from: 'J. Kanazir, sinovac',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961408', // Kanazir Špire Nedjeljka (married Barić): her nephew's mail of 2026-11-24 19:42 (9990000078)
+    text: 'Sestra Maksima Kanazira; s njim i sestrom Jasnom bila je u ilegali i u partizanima.',
+    from: 'J. Kanazir, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961409', // Kanazir Špire Jasna (married Vasić), 26. dalmatinska divizija: the same mail (9990000079)
+    text: 'Sestra Maksima Kanazira; s njim i sestrom Nedjeljkom bila je u ilegali i u partizanima, u 26. dalmatinskoj diviziji 8. korpusa.',
+    from: 'J. Kanazir, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961410', // Grujić Vase Đuro of Brdo Utinjsko: a relative's missing-fighter form of 2026-11-24 19:42 (9990000080)
+    text: 'Borac od 1941. godine, u odredu „Gaćeša Selo”, a kasnije u 3. kordunaškoj brigadi.',
+    from: 'M. Mrkonjić, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961412', // Marelj Dušana Smilja of Sreflije: her niece's form and mail of 2026-11-24 19:21-19:26 (text yes, name no:
+    // "objavite samo njene podatke"; 9990000082); her face cut from the group photo, the whole photo in the album
+    photo: '0122961412-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    pieces: [{ kind: 'photo', file: '0122961412-2.jpg', caption: 'Cela fotografija' }],
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961414', // Runtić Ante of Ogorje: his grandson's mails of 2026-11-24 14:58 and 18:06, in answer to the user's questions
+    // (plain mail, no permission lines: no name; 9990000084)
+    text: 'Bio je lučki radnik u Splitu i u partizane je otišao istog dana kad su talijanski fašisti ušli u grad. Supruga Ivka ostala je sama s dvoje djece i otišla u zbjeg, „vlakom bez voznog reda”, u selo Markušicu u Slavoniji, gdje su ih do kraja rata zbrinuli domaći Srbi. Cijeli rat nisu znali jedno za drugo. U NOB-u je bio do zadnjeg dana, a zatim se dugo raspitivao i napokon ih pronašao.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132035715', // Benić Matija Ante of Senj, census part Hrvatska: a reader's error report of 2026-11-24 19:05 (M. Tomljanović)
+    text: 'Prema crkvenom stališu duša, Antun Benić rođen je 19. svibnja 1924; otac mu je bio Josip, a majka Matija. Vjerojatno su ga zvali Ante.',
+    from: 'Ispravka po prijavi',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132035722', // Knifić Štefo Neda of Senj, census part Hrvatska: a reader's error report of 2026-11-24 19:25 (M. Tomljanović)
+    // giving the page of Antifašistički vjesnik's calendar (3. 5. 1944)
+    text: 'Prema „Antifašističkom vjesniku”: rođena je 22. studenoga 1925. u Senju, od oca Stjepana. Od lipnja 1942. bila je partizanska učiteljica i skojevska rukovoditeljica u Istri i Hrvatskom primorju. Poginula je 3. svibnja 1944. u neprijateljskoj zasjedi kod Strpa ispod Šumbera; teško ranjena, sama si je oduzela život da ne padne neprijatelju u ruke. Pokopana je na groblju u Sv. Martinu.',
+    from: 'Ispravka po prijavi',
+    origin: 'visitor',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
