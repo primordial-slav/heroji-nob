@@ -168,6 +168,7 @@ export const en: Messages = {
     exchanged: () => 'Exchanged',
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Igman March',
+    neretva: 'Battle of the Neretva',
     sutjeska: 'Battle of the Sutjeska',
     fate: (type: string | undefined) =>
       ({ poginuo: 'Killed in action', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed', zarobljen: 'Captured' } as Record<string, string>)[type ?? ''] ?? 'Died',
@@ -228,6 +229,7 @@ export const en: Messages = {
       return where ? `As a member of ${where}, ${did}` : `${woman ? 'She' : 'He'} took part in the Igman March of 27–28 January 1942.`
     },
     /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
+    neretva: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of the Neretva, February–March 1943.`,
     sutjeska: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of the Sutjeska, May–June 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,

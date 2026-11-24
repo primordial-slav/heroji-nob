@@ -176,6 +176,7 @@ export const mk: Messages = {
     exchanged: (woman: boolean) => (woman ? 'Разменета' : 'Разменет'),
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Игмански марш',
+    neretva: 'Битка на Неретва',
     sutjeska: 'Битка на Сутјеска',
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
@@ -240,6 +241,7 @@ export const mk: Messages = {
       return where ? `Како ${woman ? 'припадничка' : 'припадник'} на ${where}, ${did}` : `${woman ? 'Учествувала' : 'Учествувал'} во Игманскиот марш на 27 и 28 јануари 1942.`
     },
     /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
+    neretva: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во битката на Неретва во февруари и март 1943.`,
     sutjeska: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во битката на Сутјеска во мај и јуни 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, стр. ${page}` : ''}. Книга на борците, запис ${id}.`,

@@ -237,17 +237,19 @@ GATE = {
              'zastav', 'general', 'pukov', 'major', 'kapetan', 'poručn'),
 }
 
-ORDER = ['born', 'skoj', 'kpj', 'nob', 'unit', 'duty', 'moved', 'igman', 'sutjeska', 'wounded', 'ill', 'captured',
+ORDER = ['born', 'skoj', 'kpj', 'nob', 'unit', 'duty', 'moved', 'igman', 'neretva', 'sutjeska', 'wounded', 'ill', 'captured',
          'exchanged', 'left', 'death']
-ONCE = {'born', 'skoj', 'kpj', 'nob', 'unit', 'death', 'igman', 'sutjeska'}     # one step of these per soldier
+ONCE = {'born', 'skoj', 'kpj', 'nob', 'unit', 'death', 'igman', 'neretva', 'sutjeska'}     # one step of these per soldier
 
 # The war's events his unit was part of (scripts/make_war_events.py, website/data/events/): a step of the line each
 # (the user's wish of 2026-10-30), dated as the record's line under the facts says it, and pointing at the entry it
 # comes from: the Rudo line-up's (or the one that names the march) for Igman, Borci Sutjeske's for the Sutjeska
 WAR_EVENTS = ROOT / 'website' / 'data' / 'events'
-WAR_DATES = {'igman': ('1942-01-27', '1942-01-28'), 'sutjeska': ('1943-05', '1943-06')}
-WAR_BOOK = {'igman': re.compile(r'^prva-proleterska-stroj-u-rudom\.pdf$'), 'sutjeska': re.compile(r'^borci-sutjeske-')}
-WAR_NAMED = {'igman': re.compile(r'Igmansk\w*\s+marš|Igmanac|Igmanc\w*', re.I), 'sutjeska': re.compile(r'$^')}
+WAR_DATES = {'igman': ('1942-01-27', '1942-01-28'), 'neretva': ('1943-02', '1943-03'), 'sutjeska': ('1943-05', '1943-06')}
+WAR_BOOK = {'igman': re.compile(r'^prva-proleterska-stroj-u-rudom\.pdf$'), 'neretva': re.compile(r'$^'),
+            'sutjeska': re.compile(r'^borci-sutjeske-')}
+WAR_NAMED = {'igman': re.compile(r'Igmansk\w*\s+marš|Igmanac|Igmanc\w*', re.I), 'neretva': re.compile(r'Neretv|ranjenike', re.I),
+             'sutjeska': re.compile(r'$^')}
 _war_cache: dict[int, dict] = {}
 
 

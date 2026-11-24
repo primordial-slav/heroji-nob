@@ -4,6 +4,7 @@ The war's events each soldier was part of, for the line under the facts in his r
 soldier_id -> [WarEvent, ...] in the order they happened, which scripts/prepare-data.ts merges into the records.
 
   - igman: the Prva proleterska's column on Igman, 27-28 January 1942 (scripts/make_igman_list.py, build()).
+  - neretva: the battle of the Neretva, February and March 1943: every man an entry of whose says he was in it (NERETVA).
   - sutjeska: the battle of the Sutjeska, May and June 1943: every man an entry of Viktor Kučan's Borci Sutjeske holds
     (borci-sutjeske-<unit>.pdf), his own, merged into his record, or his record's in another unit he is linked to.
     The book is the roll of everyone in the battle, so it is sure.
@@ -38,6 +39,17 @@ SUTJESKA_BOOK = 'borci-sutjeske-'
 FAMILY_SUTJESKA = re.compile(r'\b(?:bitk|bic|bitc|borb)\w*\s+na\s+(?:\w+\s+i\s+)?Sutjesc', re.I)
 
 
+# the battle of the Neretva, February and March 1943 (the user, 2026-11-24, Žujić-Torbica Zora: "add bitka na neretvi
+# just like we have for sutjeska igmanski mars"): an entry of his that says he was in it, a family's account or a
+# book's ("Učestvovala u bici na Neretvi", "učesnik bitke na Neretvi", "u bitkama na Neretvi i Sutjesci"); no roll of
+# the battle exists, so a unit's being there is not enough
+NERETVA = re.compile(r'\b(?:bitk|bic|bitc|bitak)\w*\s+(?:na|za)\s+Neretv|\bBitk\w*\s+za\s+ranjenike', re.I)
+
+
+def at_neretva(s: dict) -> bool:
+    return any(NERETVA.search(e.get('additional_info') or '') for e in [s] + list(s.get('other_sources') or []))
+
+
 def at_sutjeska(s: dict) -> bool:
     entries = [s] + list(s.get('other_sources') or [])
     return any((e.get('pdf_file') or '').startswith(SUTJESKA_BOOK) or
@@ -60,6 +72,9 @@ def main():
                 events.setdefault(sid, []).append(e)
                 counts['igman'] += 1
         for s in soldiers:
+            if at_neretva(s):
+                events.setdefault(s['soldier_id'], []).append({'e': 'neretva', 'sure': True})
+                counts['neretva'] += 1
             if at_sutjeska(s):
                 events.setdefault(s['soldier_id'], []).append({'e': 'sutjeska', 'sure': True})
                 counts['sutjeska'] += 1
@@ -76,7 +91,7 @@ def main():
             extract_life_events._war_cache.pop(code, None)
             lines = extract_life_events.write_events({code: (name, soldiers)})
             counts['lines'] += lines.get(name, 0)
-    print(f"igman {counts['igman']}, sutjeska {counts['sutjeska']}, in {len(written)} unit files ({OUT.relative_to(ROOT)}); "
+    print(f"igman {counts['igman']}, neretva {counts['neretva']}, sutjeska {counts['sutjeska']}, in {len(written)} unit files ({OUT.relative_to(ROOT)}); "
           f"life lines rewritten for those units: {counts['lines']} soldiers")
 
 

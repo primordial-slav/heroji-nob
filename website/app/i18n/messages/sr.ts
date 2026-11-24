@@ -177,6 +177,7 @@ export const sr = {
     exchanged: (woman: boolean): string => (woman ? 'Razmenjena' : 'Razmenjen'),
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Igmanski marš',
+    neretva: 'Bitka na Neretvi',
     sutjeska: 'Bitka na Sutjesci',
     /** the death as the record has it (death_type): poginuo, umro, nestao, streljan, ubijen */
     fate: (type: string | undefined, woman: boolean): string => {
@@ -261,6 +262,8 @@ export const sr = {
       const did = `${e.sure ? `${verb} je` : `najverovatnije je ${verb}`} u Igmanskom maršu 27–28. januara 1942.`
       return where ? `Kao ${woman ? 'pripadnica' : 'pripadnik'} ${where}, ${did}` : `${woman ? 'Učestvovala' : 'Učestvovao'} je u Igmanskom maršu 27–28. januara 1942.`
     },
+    /** The battle of the Neretva (lib/warEvents.ts): an entry of his says he was in it */
+    neretva: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Neretvi, februara i marta 1943.`,
     /** The battle of the Sutjeska (lib/warEvents.ts): everyone Borci Sutjeske lists */
     sutjeska: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Sutjesci, maja i juna 1943.`,
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */

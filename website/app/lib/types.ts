@@ -27,8 +27,8 @@ export interface SoldierSource {
 export type LifeEventKind =
   | 'born' | 'skoj' | 'kpj' | 'nob' | 'unit' | 'duty' | 'moved' | 'wounded' | 'ill' | 'captured' | 'exchanged' | 'left'
   | 'death'
-  // the war's events his unit was part of (WarEvent, scripts/make_war_events.py): Igman, the Sutjeska
-  | 'igman' | 'sutjeska'
+  // the war's events he was part of (WarEvent, scripts/make_war_events.py): Igman, the Neretva, the Sutjeska
+  | 'igman' | 'neretva' | 'sutjeska'
 
 export interface LifeEvent {
   k: LifeEventKind
@@ -110,8 +110,9 @@ export interface Soldier {
  */
 export interface WarEvent {
   /** igman: the Prva proleterska's column on Igman, 27-28 January 1942; sutjeska: the battle, May-June 1943 (every
-   *  man Kučan's Borci Sutjeske lists, always sure, no company) */
-  e: 'igman' | 'sutjeska'
+   *  man Kučan's Borci Sutjeske lists, always sure, no company); neretva: the battle, February-March 1943 (an entry of
+   *  his says he was in it: a book's or a family's, always sure) */
+  e: 'igman' | 'neretva' | 'sutjeska'
   sure: boolean
   b?: number
   c?: number

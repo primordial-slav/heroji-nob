@@ -6,5 +6,6 @@ import { isWoman } from './standIn'
  *  the memorial card (scripts/make_war_events.py) */
 export function eventLines(soldier: Soldier, t: Messages): string[] {
   const woman = isWoman(soldier)
-  return (soldier.events ?? []).map((e) => (e.e === 'igman' ? t.record.igman(e, woman) : t.record.sutjeska(woman)))
+  return (soldier.events ?? []).map((e) => (e.e === 'igman' ? t.record.igman(e, woman)
+    : e.e === 'neretva' ? t.record.neretva(woman) : t.record.sutjeska(woman)))
 }
