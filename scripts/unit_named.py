@@ -379,9 +379,9 @@ def own_books(code: int) -> frozenset:
 
 
 def unit_of(texts: list[str]) -> tuple:
-    """the one unit on the site the texts name, and how; (None, why) where they name none, two, or one with another
-    (a name of several odreds, "Gerilski odred", says nothing against it). A brigade and the division it served in are
-    the brigade."""
+    """the unit on the site the texts name, and how; (None, why) where they name none on the site. Two on the site or
+    more: the first named; one on the site and another: the one on the site (the user, 2026-11-24). A name of several
+    odreds ("Gerilski odred") says nothing. A brigade and the division it served in are the brigade."""
     import extract_structured_fields as esf
     tb = tables()
     # (the next man's entry glued on after his is not his: "Ubile ga ustaše u Cetingradu 20. 4. 1942. JASIKA Milića
@@ -402,8 +402,32 @@ def unit_of(texts: list[str]) -> tuple:
             units = {br}
     if len(units) == 1 and not others:
         return units.pop(), '; '.join(f'{h}: {txt}' for c, h, txt in ms)
-    if len(units) >= 2:
-        return None, 'names two units on the site'
     if units:
-        return None, 'names a unit on the site and another'
+        # two units on the site or more: the first his entries name, the others stand in his row; one on the site and
+        # another: the one on the site (the user, 2026-11-24, on Janković Radoš, "1, and count", "for both groups";
+        # docs/claude/feedback-rules.md). The first by where it stands in the text, the record's own entry first
+        order = []
+        for i, t in enumerate(texts):
+            for c, h, txt in mentions(t):
+                if c in units:
+                    order.append(((i, t.find(txt)), c, h, txt))
+        order.sort(key=lambda x: x[0])
+        first = order[0][1]
+        rest = sorted({txt for _, c, _, txt in order if c != first} | {txt for _, _, txt in others})
+        return first, (f'first of the units named: {order[0][3]}' + (f'; also: {", ".join(rest)}' if rest else ''))
     return None, 'names no unit on the site'
+
+
+def others_named(texts: list[str], code: int) -> list[str]:
+    """The units the texts name besides the one the record went to (unit_of), as printed, in the order they stand:
+    they belong in his row (unit_detail), as both of Vučković's do"""
+    import extract_structured_fields as esf
+    texts = [esf.GLUED_RE.split(strip_heading(t or ''), maxsplit=1)[0] for t in texts]
+    seen, out = set(), []
+    for i, t in enumerate(texts):
+        for c, h, txt in sorted(mentions(t), key=lambda m: t.find(m[2])):
+            # (not the division of the brigade he went to: "4. splitske brigade 9. divizije" is one unit)
+            if c != code and txt not in seen and not h.startswith(('odred, ', 'division')):
+                seen.add(txt)
+                out.append(txt)
+    return out
