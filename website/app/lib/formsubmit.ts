@@ -1,3 +1,12 @@
+// Where the forms send: FormSubmit's key for the site's address, the random string it gave when knjigaboraca.org was
+// activated (2026-11-21), in place of the plain address. FormSubmit limits each key on its own: from 2026-11-23 17:49
+// UTC it refused every message sent to the plain address ("Rate limit exceeded", HTTP 429, still so on 11-24 at 08:44,
+// after about 190 messages in 30 hours, one a photo), while the same inbox took them through this key at once. The
+// key also keeps the address out of the page's code. The plain address stays for mail (mailtoHref, the footer).
+export const FORMSUBMIT_KEY = process.env.NEXT_PUBLIC_FORMSUBMIT_KEY || 'e6a56b1ed6120f60d362de85980a7682'
+export const FORMSUBMIT_AJAX = `https://formsubmit.co/ajax/${FORMSUBMIT_KEY}`
+export const FORMSUBMIT_POST = `https://formsubmit.co/${FORMSUBMIT_KEY}`
+
 // FormSubmit answers 200 even when it did not deliver the message (e.g. "This form needs Activation"),
 // with {"success": "false", "message": ...} in the body; only "success": "true" means it was sent.
 export async function wasDelivered(res: Response): Promise<boolean> {

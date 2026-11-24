@@ -15,7 +15,7 @@ import { photoPosition } from '@/app/data/photoFocus'
 import RecordActions from './RecordActions'
 import EntryStrip from './EntryStrip'
 import { SoldierMedals, honoursLine } from './Medal'
-import { looksLikeEmail, wasDelivered } from '@/app/lib/formsubmit'
+import { FORMSUBMIT_AJAX, looksLikeEmail, wasDelivered } from '@/app/lib/formsubmit'
 import KnowSoldierForm from './KnowSoldierForm'
 import FamilyStory from './FamilyStory'
 import FamilyMark, { FamilyDot } from './FamilyMark'
@@ -189,7 +189,7 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
     if (!reportText.trim()) return
     setReportStatus('sending')
     try {
-      const res = await fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`, {
+      const res = await fetch(FORMSUBMIT_AJAX, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({

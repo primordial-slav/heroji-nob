@@ -2,13 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { shrinkPhoto } from '@/app/lib/images'
-import { looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
+import { FORMSUBMIT_AJAX, looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
 import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
 import s from './MissingSoldierForm.module.css'
 
-const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // As in KnowSoldierForm: the text goes through FormSubmit's AJAX endpoint (so we know it arrived), each file after it in
 // a message of its own, through the site's /api/prilog, which waits for FormSubmit's answer (lib/attachments.ts).
 const MAX_FILE_BYTES = 9_500_000
@@ -117,7 +116,7 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
         }
         blobs.push(blob)
       }
-      const res = await fetch(ENDPOINT, {
+      const res = await fetch(FORMSUBMIT_AJAX, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(fields),

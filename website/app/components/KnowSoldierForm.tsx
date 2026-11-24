@@ -5,12 +5,11 @@ import type { Soldier } from '@/app/lib/types'
 import type { Unit } from '@/app/data/units'
 import { recordPath } from '@/app/lib/records'
 import { shrinkPhoto } from '@/app/lib/images'
-import { looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
+import { FORMSUBMIT_AJAX, looksLikeEmail, mailtoHref, wasDelivered } from '@/app/lib/formsubmit'
 import { sendAttachments, type Attachment } from '@/app/lib/attachments'
 import { useLang, useT } from '@/app/i18n/LangContext'
 import { LANG_NAMES } from '@/app/i18n/config'
 
-const ENDPOINT = `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
 // The text goes through FormSubmit's AJAX endpoint (so we know it arrived), each file after it in a message of its own,
 // through the site's /api/prilog, which waits for FormSubmit's answer (lib/attachments.ts).
 // The form service takes at most 10 MB per message (a PDF over 4.3 MB goes to it straight)
@@ -97,7 +96,7 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
       }
       if (files.length) fields['Prilozi'] = `${files.length}, stižu u posebnim porukama („Fotografija: …“)`
 
-      const res = await fetch(ENDPOINT, {
+      const res = await fetch(FORMSUBMIT_AJAX, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(fields),

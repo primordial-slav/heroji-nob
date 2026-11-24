@@ -7,11 +7,12 @@
 // 2026-11-20) or a redirect to _next; anything else (an activation or spam page, an error) is a failure.
 // Vercel takes at most 4.5 MB in a request: the forms shrink photos below MAX_BYTES (lib/images.ts) and send a larger
 // PDF straight to FormSubmit (lib/attachments.ts).
+import { FORMSUBMIT_POST } from '@/app/lib/formsubmit'
+
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 export const maxDuration = 30
 
-const TO = process.env.NEXT_PUBLIC_REPORT_EMAIL
 const MAX_BYTES = 4_400_000
 // what the message may carry besides the file: the names the forms give their fields
 const FIELDS = ['Borac', 'ID', 'Ime pošiljaoca', 'Pošiljalac']
@@ -20,7 +21,6 @@ const FILE_FIELDS = ['Fotografija', 'Prilog']
 const answer = (ok: boolean, status: number) => Response.json({ ok }, { status })
 
 export async function POST(request: Request) {
-  if (!TO) return answer(false, 503)
   // only the site's own pages may send through it
   const origin = request.headers.get('origin')
   const host = request.headers.get('host')
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
   out.append(field, file, filename)
 
   try {
-    const res = await fetch(`https://formsubmit.co/${TO}`, {
+    const res = await fetch(FORMSUBMIT_POST, {
       method: 'POST',
       body: out,
       // as the form's own page would send it: FormSubmit ties the address's activation to the site

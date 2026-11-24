@@ -7,8 +7,10 @@
 // Vercel takes at most 4.5 MB in a request: photos are shrunk below ROUTE_MAX_BYTES (lib/images.ts); only a larger PDF
 // still goes straight to FormSubmit, where only a broken connection shows as a failure.
 
+import { FORMSUBMIT_POST } from './formsubmit'
+
 export const ROUTE_MAX_BYTES = 4_300_000
-const DIRECT = `https://formsubmit.co/${process.env.NEXT_PUBLIC_REPORT_EMAIL}`
+const DIRECT = FORMSUBMIT_POST
 const TRIES = 3
 
 export interface Attachment {
