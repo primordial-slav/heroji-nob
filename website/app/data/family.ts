@@ -968,7 +968,7 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0122961385', // Ujević Ante Zdravko of Krivodol, Biokovski odred: his grandson's mail of 2026-11-24 08:21 (the site's mail
     // fallback, no permission lines: no name; Porodična arhiva 9990000045); his photo with his brother Mate, his face the portrait
     photo: '0122961385-1.jpg',
-    photoCaption: 'Sa bratom Matom',
+    photoCaption: 'U partizanskoj uniformi',
     pieces: [{ kind: 'photo', file: '0122961385-2.jpg', caption: 'Sa bratom Matom Ujevićem, narodnim herojem' }],
     text: 'Godine 1943. s majkom Mareškom odlazi u Biokovo, zbog opasnosti od kazne po okružnici 3C, jer su ostali u obitelji, brat Mate i sestre Nediljka (kasnije udana Radivčić) i Antica (kasnije udana Kujundžić, supruga Nedjeljka Kujundžića, autora knjige „Imotska krajina u NOB”), već bili u partizanima; sve troje sudjelovali su u bitkama na Neretvi i Sutjesci. Pridružuje se kao kurir partizanskom odredu na području Kozice. Sudjeluje u borbama i teško je ranjen u borbi s Nijemcima na Korčuli 1944, kod Blata. Odatle je prebačen na Vis, a kasnije u savezničku bolnicu u Italiji. Završava srednju školu za djecu borce na Hvaru, a zatim u Zagrebu Pravni fakultet.',
     from: 'iz porodične arhive',
@@ -1015,7 +1015,7 @@ export const familyContributions: FamilyContribution[] = [
     // (no name; Porodična arhiva 9990000054 referenced, the Neretva and the Sutjeska); the user's note on /pregled 67b0185984;
     // the family's photo of him with his brother is his portrait (cut to him), the whole photo in his album
     photo: '0007005370-1.jpg',
-    photoCaption: 'Sa bratom Zdravkom',
+    photoCaption: 'U partizanskoj uniformi',
     pieces: [{ kind: 'photo', file: '0007005370-2.jpg', caption: 'Sa bratom Zdravkom Ujevićem' }],
     text: 'Po obiteljskom sjećanju, sudjelovao je u bitkama na Neretvi i Sutjesci, kao i sestre Nediljka i Antica. Mlađi brat Zdravko bio je kurir Biokovskog odreda.',
     from: 'iz porodične arhive',
