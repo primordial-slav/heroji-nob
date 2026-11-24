@@ -1299,6 +1299,13 @@ export const familyContributions: FamilyContribution[] = [
     origin: 'visitor',
     date: '2026-11',
   },
+  {
+    soldierId: '0046000452', // Jurković Ivana Jakov of Kotišina, 3. dalmatinska: his great-niece's form of 2026-11-24 20:54 by mail, with his
+    // photo (text and name allowed; born 4. 2. 1914 by 317466)
+    photo: '0046000452-1.jpg',
+    from: 'Ž. Lovreta-Ujević, pranećakinja',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
