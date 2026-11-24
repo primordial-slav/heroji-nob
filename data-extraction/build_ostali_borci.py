@@ -317,6 +317,8 @@ ONE_MAN = [
     # form of 2026-11-24 10:04: Petrenj Stevan Mara of Bosut (census Vojvodina) of the 3. vojvođanska, her grave at Mala Moštanica;
     # joined so that the family's unit takes her there (the user's rule, the lead's word of 2026-11-24)
     ('9027007909', '9990000060', 'Petrenj Stevana Mara of Bosut, b. 1924, fell 1944 (Mala Moštanica): her family names the 3. vojvođanska'),
+    # form of 2026-11-24 11:36: Lekić Muratov Mahmut of Tuzi, the Spomenica's (Podgorica), fell 1944 at Crkvine near Kolašin (Mateševo)
+    ('9035014250', '9990000061', 'Lekić Muratov Mahmut of Tuzi, b. 1917, fell 1944: his relative names the 5. proleterska crnogorska'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -331,6 +333,7 @@ MERGED_IDS = {
     # records the units held until unit_named's fix of 2026-11-23 found them naming two units on the site: back in 122, their
     # unit addresses open the record (Janjić Miladinov Božidar, Dizdarević Fehrat, Šuković Venjko; Levi Moric stayed in the 4. krajiška)
     '0039900251': '0122960088', '0042900015': '0122909160', '0069900001': '0122954956',
+    '0038900030': '0122960096',   # Janković Radoš: the 8. crnogorska, then the 5. proleterska, two units on the site once the table's misprints were mended (2026-11-24)
     '0122961381': '0008002961',   # Vučković Frane Nikola: his family's record, joined to the 4. splitska's Nikola of Brnaze (the user, 2026-11-23)
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',

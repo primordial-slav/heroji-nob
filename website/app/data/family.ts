@@ -132,7 +132,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122917644', // Kovačević Pajov Dušan of Osječenica (Nikšić), Borci drugih jedinica
+    soldierId: '0041900005', // Kovačević Pajov Dušan of Osječenica (Nikšić), Borci drugih jedinica
     text: 'Rođen 1923. u Osječenici kod Nikšića, a poginuo pri proboju Sremskog fronta, početkom aprila 1945. godine.',
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
@@ -952,7 +952,7 @@ export const familyContributions: FamilyContribution[] = [
         transcripts: ['BANDOV, Matin, SREĆKO, iz Grgurića, rođen 1923, zemljoradnik, Hrvat, u NOB stupio jula 1942, puškomitraljezac, poginuo u sastavu 10. hercegovačke brigade aprila 1943. kod Stoca.'],
       },
     ],
-    text: 'Pravo prezime je Bandov; Bondova u tom kraju nema.',
+    text: 'Prezime mu je Bandov, a ne Bondov, kako piše u popisu žrtava rata iz 1964; Bondova u tom kraju nema. Tako ga navodi i knjiga „Livanjski kraj u revolucionarnom radničkom pokretu i NOB”.',
     from: 'S. Brešić',
     origin: 'visitor',
     date: '2026-11',
@@ -960,7 +960,7 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0140001000', // Valtrović Đ Relja, 42. vazduhoplovna divizija: his son's mail of 2026-11-24 00:39 (the site's mail fallback,
     // no permission lines: no name); father, birth and occupation by 317183
-    text: 'Divan suprug i otac, i profesor koga su volele generacije đaka.',
+    text: 'Bio je divan suprug i otac, i profesor kog su voljele generacije đaka.',
     from: 'iz porodične arhive',
     date: '2026-11',
   },
@@ -977,7 +977,7 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122961386', // Arslanagić Hasana Mustafa of Arslanagića Most (Trebinje): his nephew's mail of 2026-11-24 (the site's mail
     // fallback, no permission lines: no name; Porodična arhiva 9990000046)
-    text: 'Kao gimnazijalac u Trebinju bio je član SKOJ-a. Obitelj se preselila u Dubrovnik, gdje je radio ilegalno. Talijani su ga uhapsili i zatvorili na Mamuli, a zatim prebacili u Bari ili Brindisi. Nakon kapitulacije Italije talijanski komunisti su ga vratili, navodno u Istru, gdje je, navodno, bio politički komesar. Nosilac je Partizanske spomenice 1941. Poslije rata bio je inspektor Jugoslavenskih željeznica i završio višu prometnu školu. Partijsku knjižicu oduzeli su mu 1945, a vratili 1948; sam ju je vratio 1983. Živio je i umro u Dubrovniku, devedesetih godina.',
+    text: 'Kao gimnazijalac u Trebinju bio je član SKOJ-a. Obitelj se preselila u Dubrovnik, gdje je radio ilegalno. Talijani su ga uhapsili i zatvorili na Mamuli, a zatim prebacili u Bari ili Brindisi. Nakon kapitulacije Italije talijanski komunisti su ga vratili, prema obiteljskom sjećanju u Istru, gdje je bio politički komesar. Nosilac je Partizanske spomenice 1941. Poslije rata bio je inspektor Jugoslavenskih željeznica i završio višu prometnu školu. Partijsku knjižicu oduzeli su mu 1945, a vratili 1948; sam ju je vratio 1983. Živio je i umro u Dubrovniku, devedesetih godina.',
     from: 'iz porodične arhive',
     date: '2026-11',
   },
@@ -989,7 +989,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122961388', // Kolundžija Petra Mile of Krnjeuša (Bosanski Petrovac): the same daughter's mail of 2026-11-24 (no permission
+    soldierId: '0010900051', // Kolundžija Petra Mile of Krnjeuša (Bosanski Petrovac): the same daughter's mail of 2026-11-24 (no permission
     // lines: no name; Porodična arhiva 9990000048; born "12.07.2024" in the mail, read as 1924)
     text: 'U partizanima je bio od prvog dana ustanka, borac 3. krajiške brigade. Bio je vijećnik Prvog i Drugog zasjedanja ZAVNOBiH-a. Posle rata radio je u SKOJ-u, a kasnije u Beogradu.',
     from: 'iz porodične arhive',
@@ -998,7 +998,7 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122961389', // Krišto Ante Ivo "Ivić" of Dobro (Livno): his missing-fighter form of 2026-11-23 22:14, sent as a screenshot
     // by mail (FormSubmit refused it); a comrade's son and neighbour, text and name allowed (Porodična arhiva 9990000049)
-    text: 'Nosilac Partizanske spomenice 1941. U NOB-u od 1941.',
+    text: 'U NOB-u je bio od 1941. i nosilac je Partizanske spomenice 1941.',
     from: 'S. Brešić, sin očevog druga i komšija',
     origin: 'visitor',
     date: '2026-11',
@@ -1048,7 +1048,7 @@ export const familyContributions: FamilyContribution[] = [
     // Obrazi slovenskih pokrajin the sender gave
     photo: '0122961393-1.jpg',
     photoCaption: 'U kasnijim godinama',
-    text: 'Vodio je ilegalnu štampariju i bio nosilac Partizanske spomenice 1941. Prema leksikonu „Obrazi slovenskih pokrajin”: od decembra 1941. bio je u tehnici CK KP Slovenije, od avgusta 1942. do aprila 1943. vodio je tehniku Petrač; uhapšen je i u junu 1943. osuđen na 30 godina, a iz zatvora u Parmi pušten je u decembru 1943. Od januara 1944. bio je partizanski učitelj u Hrpeljama, zatim je vodio tehniku Slavnik u Brkinima. Posle rata bio je građevinski preduzetnik u Trstu i od 1964. do 1987. predsednik Slovenske kulturno-gospodarske zveze. Umro je u Trstu 26. aprila 1995.',
+    text: 'Vodio je ilegalnu štampariju i bio nosilac Partizanske spomenice 1941. Prema leksikonu „Obrazi slovenskih pokrajin”: od decembra 1941. bio je u tehnici (ilegalnoj štampariji) CK KP Slovenije, od avgusta 1942. do aprila 1943. vodio je tehniku Petrač; uhapšen je i u junu 1943. osuđen na 30 godina, a iz zatvora u Parmi pušten je u decembru 1943. Od januara 1944. bio je partizanski učitelj u Hrpeljama, zatim je vodio tehniku Slavnik u Brkinima. Posle rata bio je građevinski preduzetnik u Trstu i od 1964. do 1987. predsednik Slovenske kulturno-gospodarske zveze. Umro je u Trstu 26. aprila 1995.',
     from: 'A. Race, pranećak',
     date: '2026-11',
   },
@@ -1101,6 +1101,58 @@ export const familyContributions: FamilyContribution[] = [
     photoCaption: 'U partizanskoj uniformi',
     text: 'Učestvovala je u bici na Neretvi i u borbama za oslobođenje Beograda. Krajem rata bila je politički komesar čete za vezu (Savo O. Trikić, „Treća krajiška proleterska brigada”, str. 352). O njoj je pisao i Yugopapir, u članku „Zora Žujić, 19-godišnja Kozarčanka”.',
     from: 'A. Torbica, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0041900178', // Lekić Muratov Mahmut of Tuzi (the Spomenica's, Podgorica): his relative's form of 2026-11-24 11:36 (text and
+    // name allowed; Porodična arhiva 9990000061 joined, ONE_MAN); the photo the form announced never arrived
+    text: 'Bio je pekarski radnik iz Tuzi. Bio je jedan od organizatora SKOJ-a u Skadru i istaknuti partizan u rejonu Skadra, Tirane, Drača i Tuzi; blisko je sarađivao s Blažom Jovanovićem tokom njegove misije u Albaniji. Poginuo je u proljeće 1944. na Crkvinama kod Kolašina, kao komandir izviđačkog voda Pete proleterske crnogorske brigade. Grob mu nije poznat.',
+    from: 'M. A., rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961396', // Šuran Bortola Marčelo: his grandson's missing-fighter form of 2026-11-24 11:51 (sent twice; Porodična arhiva 9990000062)
+    text: 'Poginuo je negde na Gomancima, blizu Ilirske Bistrice, 1944. ili 1945. godine.',
+    from: 'A. Šuran, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961397', // Miljenović Božo of Trupinjak (Krnjak): his granddaughter's missing-fighter form of 2026-11-24 12:07 (text yes,
+    // name no; Porodična arhiva 9990000063); her brothers unnamed, as she wrote (the user, 2026-11-24)
+    text: 'Bio je prvoborac, u odredu Trupinjska kosa. Iz rata je izašao kao kapetan, a kasnije postao major. Tri njegova brata poginula su u partizanima.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961398', // Brajdić Antun of Zagreb: his grandson's missing-fighter form of 2026-11-24 12:00 (text yes, name no; Porodična
+    // arhiva 9990000064); his brothers Rafael (0122961399) and Tomo (0122961400) at the user's word
+    text: 'Bio je ilegalac u Zagrebu, a zatim otišao u partizane, s trojicom ili četvoricom braće; poznata su imena dvojice, Rafaela i Tome. Jedan od braće ranjen je tako da je izgubio vid, pa su ga ostali sve vreme vodili sa sobom. Svi su preživeli rat.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961399', // Brajdić Rafael, Antun's brother (9990000065): the same form; the user: "rafael and tomo for antun brajdic too"
+    text: 'Brat Antuna Brajdića. Iz Zagreba je s braćom otišao u partizane; svi su preživeli rat.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961400', // Brajdić Tomo, Antun's brother (9990000066): the same form
+    text: 'Brat Antuna Brajdića. Iz Zagreba je s braćom otišao u partizane; svi su preživeli rat.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0010000573', // Jeličić Mile Jovo of Vodenica, 3. krajiška: his grandson's form of 2026-11-24 12:55 (Porodična arhiva
+    // 9990000067 referenced; the death by 317191: the family wins over the books' Sutjeska and Jasenovac)
+    text: 'Ranjen je u bici za Drvar, kao borac Titovog bataljona. Avionom RAF-a evakuisan je u Italiju, u Bari, gde je podlegao ranama.',
+    from: 'B. Jeličić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0053003096', // Zaknić Franka Marko "Kutlić" of Blato, 11. dalmatinska: his grandson's form of 2026-11-24 12:45 (317192)
+    text: 'Bio je kamenoklesar. Umro je 11. studenog 2010; grob mu je u Blatu na Korčuli.',
+    from: 'D. Žaknić, unuk',
     date: '2026-11',
   },
 ]
