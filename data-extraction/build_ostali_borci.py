@@ -526,6 +526,19 @@ DEATH_PLACE_READS = {
 
 EXACT_DAY = re.compile(r'1[89]\d\d-\d\d-\d\d')     # a column book's death_date to the day (ISO), as its parser writes it
 DEATH_KEYS = ('death_type', 'death_date', 'death_place')
+# a word that says how he died, in the entry's text or its list's title ("Poginuli 1941-1945.", "koji su poginuli u
+# Ludbregu", "Padel je", "umro", "streljan")
+DEATH_WORD = re.compile(r'\b(?:pogin|umr|ubi[jt]|nesta|stre?ljan|strijeljan|obeš|obješ|pao\b|pala\b|zaklan|spaljen|'
+                        r'padel|padl|ustrel|ustrijel)', re.I)
+
+
+def type_stated(e: dict) -> bool:
+    """A death type the entry states (a death word in its text, or a type other than poginuo, which the parsers and
+    column_fields give where the entry says nothing: Crna Trava's list of the fallen prints no verb), as against a
+    default (00-TEAM LEAD's rule of 2026-11-24: a stated type beats a default; the census's "umro" for Nikolić B Tihomir,
+    whom Crna Trava's list gives "23. 4. 1945. Četnika Niš")"""
+    t = e.get('death_type')
+    return bool(t and t != 'poginuo') or bool(DEATH_WORD.search(e.get('additional_info') or ''))
 
 
 def column_fields(e: dict) -> dict:
@@ -1294,6 +1307,8 @@ def main():
             exact = next((m for m in columns if EXACT_DAY.fullmatch(m.get('death_date') or '')), None)
             if exact:
                 for k, v in column_fields(exact).items():
+                    if k == 'death_type' and census and not type_stated(exact) and type_stated(census[0]):
+                        continue                         # the census's stated type, over the list's default
                     if k in DEATH_KEYS and k not in rec:
                         rec[k] = v
                         filled.append(k)

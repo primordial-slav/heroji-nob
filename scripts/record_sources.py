@@ -163,6 +163,48 @@ def fill_from(s: dict, book: str, e: dict, part: str = '', fixed: set = frozense
     return taken
 
 
+def fill_death(s: dict, refs: list, fixed: set = frozenset()) -> list[str]:
+    """A unit record's death from its census and column book references (book, entry), in fill_rank's order; the fields
+    filled. Then 00-TEAM LEAD's two rules of 2026-11-24 (board 36):
+    - a type a column book doesn't state (its parser's poginuo where the list prints no verb: Crna Trava's) gives way to
+      the type the census states, of any year: a stated type beats a default (build_ostali_borci.type_stated);
+    - the census's place where the map can't put it ("Krivašije", "Kod Podgoricaa", its column cut and misspelt) gives
+      way to the place of a column book of the year alone, of the same year (the 1. bokeljska's Obilović V Božo:
+      "Crkvice", not the census's "Krivašije", though the map knows neither); the census's then shows after "ili" only
+      where it says otherwise (variants)"""
+    import build_ostali_borci as ob
+    refs = sorted(refs, key=lambda r: fill_rank(*r))
+    taken, lent = [], {}
+    for book, e in refs:
+        for k in fill_from(s, book, e, part='death', fixed=fixed):
+            taken.append(k)
+            lent[k] = (book, e)
+    census = [(b, e) for b, e in refs if b.startswith(CENSUS_BOOK) and ob.type_stated(e)]
+    src = lent.get('death_type')
+    if src and not src[0].startswith(CENSUS_BOOK) and not ob.type_stated(src[1]) and census:
+        kind = column_values(*census[0]).get('death_type')
+        if kind and kind != s.get('death_type'):
+            borrow(s, 'death_type', kind)
+    src = lent.get('death_place')
+    if src and src[0].startswith(CENSUS_BOOK) and not points_of(s['death_place'], unit_file(s)):
+        year = re.search(r'1[89]\d\d', s.get('death_date') or '')
+        for book, e in refs:
+            if fill_rank(book, e) != 2 or not ob.is_column(book, e):
+                continue
+            vals = column_values(book, e)
+            other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
+            if vals.get('death_place') and year and other and year.group(0) == other.group(0):
+                borrow(s, 'death_place', vals['death_place'])
+                break
+    return taken
+
+
+def unit_file(s: dict) -> str:
+    """The record's unit's file name, which tells points_of the region a name of several places is likeliest in"""
+    cfg = BRIGADE_CONFIGS.get(int(s['soldier_id'][:4]))
+    return cfg['json_file'] if cfg else ''
+
+
 # the census's line, as parse_zrtve_rata_1964.py writes it after the birth: "Srbin, poginuo 1944. u NOBu, Bosiljevo
 # slove", "Hrvat, poginuo od ustaša 1942. u NOBu, Glina", "Srbin, umro 1945. kao zarobljenik prip. NOV i POJ, Jasenovac"
 CENSUS_LINE = re.compile(r'(?P<year>1[89]\d\d)\.\s+(?:u NOBu|u NORu|kao zarobljenik prip\. NOV i POJ)(?:,\s*(?P<place>.*))?$')
