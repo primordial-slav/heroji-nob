@@ -1155,6 +1155,13 @@ export const familyContributions: FamilyContribution[] = [
     from: 'D. Žaknić, unuk',
     date: '2026-11',
   },
+  {
+    soldierId: '0122961402', // Ćirković Sava of Kozare (Vlasotince): his grandson's missing-fighter form of 2026-11-24 13:21 (text and name
+    // allowed; Porodična arhiva 9990000070); forced into the chetniks, then a partisan to the war's end: a record (the rules)
+    text: 'Rat ga je zatekao na odsluženju vojnog roka u Zagrebu. Krenuo je pešice kući, u selo Kozare kod Vlasotinca; na putu je uhapšen i neko vreme proveo u zatvoru u Višegradu. Na putu ka kući ponovo je uhvaćen i odveden u logor u Rumuniji, iz kojeg je pušten jer je Kozare tada bilo pod bugarskom kontrolom. Kod kuće su ga četnici prisilno mobilisali; po raspadu te jedinice priključio se partizanima i u njima ostao do kraja rata. Učestvovao je u oslobađanju Beograda. Umro je početkom devedesetih.',
+    from: 'Z. Ćirković, unuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
