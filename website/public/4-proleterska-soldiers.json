@@ -133792,6 +133792,32 @@
     "occupation": "zemljoradnik"
   },
   {
+    "soldier_id": "0040900250",
+    "last_name": "Bogovič-Tepsić",
+    "middle_name": "Ante",
+    "first_name": "Janko",
+    "fathers_name": "Ante",
+    "full_name": "Bogovič-Tepsić Ante Janko",
+    "additional_info": "Mracelj, općina Krstinja: 1923, seljak, Srbin. Stupio u NOV 1. 7. 1942. Borac 4. crnogorske brig. 2. div. Poginuo u Crnoj Gori 1942.",
+    "birth_year": "1923",
+    "pdf_file": "hak-19-vojnic.pdf",
+    "pdf_page": 26,
+    "pdf_x": 202.6,
+    "pdf_y": 132.6,
+    "pdf_x_end": 370.1,
+    "pdf_y_end": 167.7,
+    "former_ids": [
+      "0122908515"
+    ],
+    "birth_place": "Mracelj",
+    "ethnicity": "Srbin",
+    "occupation": "seljak",
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Crna Gora",
+    "rank": "borac"
+  },
+  {
     "soldier_id": "0040900057",
     "last_name": "Bokić",
     "middle_name": "Milinka",
@@ -134812,6 +134838,62 @@
     ]
   },
   {
+    "soldier_id": "0040900248",
+    "last_name": "Ćuruvija",
+    "middle_name": "Sime",
+    "first_name": "Mladen",
+    "fathers_name": "Simo",
+    "full_name": "Ćuruvija Sime Mladen",
+    "additional_info": "Gornje Primišlje, općina Primišlje: 1925, seljak, Srbin. Stupio u NOV 1. 6. 1942, borac 4. cmogor. brig. Poginuo na Sutjesci 5. 6. 1943.",
+    "birth_year": "1925",
+    "pdf_file": "hak-18-slunj-veljun.pdf",
+    "pdf_page": 18,
+    "pdf_x": 90.2,
+    "pdf_y": 514.0,
+    "pdf_x_end": 264.9,
+    "pdf_y_end": 549.2,
+    "birth_place": "Gornje Primišlje, Slunj",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "05.06.1943",
+    "death_place": "Sutjeska",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9105000024",
+        "name": "Ćuruvija Sime Mladen",
+        "additional_info": "Pali borci općine Primišlje 1941—1945., Gornje Primišlje: 24. Ćuruvija Sime Mladen, (Rakićev) rođen 1925, u NOV od 16.9.1942, borac IV. crnogorske brigade, poginuo 6.5.1943. u Crnoj Gori.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071&pg_seq=178",
+        "source_page": 178
+      },
+      {
+        "soldier_id": "9021043504",
+        "name": "Ćuruvija (Simo) Mladen",
+        "additional_info": "rođen 1925, Gornje Primišlje (Slunj). Srbin, poginuo 1943. u NOBu, Sutjeska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2099",
+        "source_page": 2099
+      }
+    ],
+    "former_ids": [
+      "0122907747"
+    ],
+    "occupation": "seljak",
+    "rank": "borac",
+    "unit_detail": "4. cmogor. brig.",
+    "variants": {
+      "death": [
+        {
+          "date": "06.05.1943",
+          "place": "Crna Gora"
+        }
+      ]
+    }
+  },
+  {
     "soldier_id": "0040900014",
     "last_name": "Cvijai",
     "middle_name": "Ile",
@@ -134893,6 +134975,51 @@
     "former_ids": [
       "0122953924"
     ]
+  },
+  {
+    "soldier_id": "0040900251",
+    "last_name": "Dejanović",
+    "middle_name": "Nikole",
+    "first_name": "Milovan",
+    "fathers_name": "Nikola",
+    "full_name": "Dejanović Nikole Milovan",
+    "additional_info": "Mracelj, općina Krstinja: 1921, seljak, Srbin. Stupio u NOV 1. 7. 1942. Borac 4. crnog. brig. 2. div. Poginuo kod Duvna 1943.",
+    "birth_year": "1921",
+    "pdf_file": "hak-19-vojnic.pdf",
+    "pdf_page": 26,
+    "pdf_x": 200.6,
+    "pdf_y": 271.0,
+    "pdf_x_end": 368.4,
+    "pdf_y_end": 306.4,
+    "birth_place": "Mracelj, Vonjić",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Duvno",
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021052640",
+        "name": "Dejanović (Nikola) Milovan",
+        "additional_info": "rođen 1922, Mracelj (Vonjić). Srbin, poginuo 1943. u NOBu, Livno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2531",
+        "source_page": 2531
+      }
+    ],
+    "former_ids": [
+      "0122908518"
+    ],
+    "occupation": "seljak",
+    "rank": "borac",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "soldier_id": "0040900207",
@@ -135537,6 +135664,42 @@
     ]
   },
   {
+    "soldier_id": "0040900249",
+    "last_name": "Graora",
+    "middle_name": "Bože",
+    "first_name": "Nikola",
+    "fathers_name": "Božo",
+    "full_name": "Graora Bože Nikola",
+    "additional_info": "Gornje Primišlje, općina Primišlje: 1921, seljak, Srbin. Stupio u NOV 10. 10. 1942, vodnik 4. prolet. brig. 2. div. Poginuo u Crnoj Gori 21. 10. 1944.",
+    "birth_year": "1921",
+    "pdf_file": "hak-18-slunj-veljun.pdf",
+    "pdf_page": 19,
+    "pdf_x": 120.5,
+    "pdf_y": 153.3,
+    "pdf_x_end": 295.5,
+    "pdf_y_end": 188.5,
+    "other_sources": [
+      {
+        "soldier_id": "9105000041",
+        "name": "Graora Bože Nikola",
+        "additional_info": "Pali borci općine Primišlje 1941—1945., Gornje Primišlje: 41. Graora Bože Nikola, rođen 1921, u NOV od 10.10.1942, vodnik voda u I. proleterskoj brigadi, poginuo 1944. u Crnoj Gori.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6ab00107-1260-432c-bfa7-1985de4dbafc/00000001/00000001/00003071&pg_seq=179",
+        "source_page": 179
+      }
+    ],
+    "former_ids": [
+      "0122907752"
+    ],
+    "birth_place": "Gornje Primišlje",
+    "ethnicity": "Srbin",
+    "occupation": "seljak",
+    "death_type": "poginuo",
+    "death_date": "21.10.1944",
+    "death_place": "Crna Gora",
+    "rank": "vodnik",
+    "unit_detail": "I. proleterska brigada"
+  },
+  {
     "soldier_id": "0040900050",
     "last_name": "Grubač",
     "middle_name": "Markov",
@@ -136036,6 +136199,45 @@
     "former_ids": [
       "0122940133"
     ]
+  },
+  {
+    "soldier_id": "0040900246",
+    "last_name": "Janković",
+    "middle_name": "Miletin",
+    "first_name": "Čedomir",
+    "fathers_name": "Miletin",
+    "full_name": "Janković Miletin Čedomir",
+    "additional_info": "Iz porodice Janković, učestvovali u NOB-u: Čedomir Miletin, borac bataljona \"Vojvoda Momčilo\" Durmitorskog odreda od početka 1942. do kraja maja iste godine. Ujesen 1942. mobilisan od četnika u jurišni bataljon Pavla Đurišića. Posle njihovog razbijanja na Neretvi razoružan u Kolašinu i interniran. Ubrzo je oslobođen kao maloljetan i došao kući. Početkom novembra 1943. godine stupio u Četvrtu proletersku brigadu, gdje je ispoljio veliku hrabrost. Poginuo na Jadovniku – Zapadna Srbija od njemačkog bombardovanja. · Jovan Miletin stupio u Dopunski bataljon Drugog udarnog korpusa u ljeto 1944., a zatim u Drugu proletersku brigadu. Poginuo septembra ili oktobra 1944. kod Užičke Požege.",
+    "birth_year": "",
+    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00009740&pg_seq=139",
+    "source_page": 128,
+    "former_ids": [
+      "0122960092"
+    ],
+    "death_type": "poginuo",
+    "death_date": "ljeto 1944",
+    "rank": "borac",
+    "birth_place": "Grabovica, Šavnik",
+    "unit_detail": "Durmitorski odred; Druga proleterska brigada"
+  },
+  {
+    "soldier_id": "0040900247",
+    "last_name": "Janković",
+    "middle_name": "Jankov",
+    "first_name": "Jovan",
+    "fathers_name": "Jankov",
+    "full_name": "Janković Jankov Jovan",
+    "additional_info": "Iz porodice Janković, učestvovali u NOB-u: Jovan Jankov, član SKOJ–a od ljeta 1941. godine član Komunističke partije od 1943. g. Učestvovao je u 13-julskom ustanku u oslobođenju Šavnika i Pljevaljskoj bici. Od početka \"1942. godine bio je borac samostalne čete Durmitorskog odreda, koja je dejstvovala na području Pljevalja i Čajniča, a zatim na sinjajevinskom sektoru, do povlačenja partizanskih snaga za Bosnu. Vratio se na teren i jedno vrijeme bio u ilegali, a zatim se prijavio i legalizovao. Utoku četničke vladavine, aktivno radio za NOP. U zimu 1943. mobilisan u četnike. Prebjegao u proleterske brigade na Neretvi, u Četvrtu proletersku brigadu. Vratio se sa Sutjeske u G rabovicu, zbog iscrpljenosti. U septembru 1943. stupio u Posadnu četu Komande mjesta, zatim u 3 bataljon Durmitorskog odreda, koji je otišao u popunu Pete proleterske brigade u decembru 1943. godine u koju je ostao do kraja rata, kao komandir čete.",
+    "birth_year": "",
+    "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=55e279d0-448d-4fab-84e8-84b9d0c27681/00000001/00000001/00009740&pg_seq=141",
+    "source_page": 130,
+    "former_ids": [
+      "0122960104"
+    ],
+    "rank": "komandir čete",
+    "unit_detail": "3. bataljon; Durmitorski odred; Peta proleterska brigada",
+    "birth_place": "Grabovica, Šavnik",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0040900096",

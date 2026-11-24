@@ -333,7 +333,6 @@ MERGED_IDS = {
     # records the units held until unit_named's fix of 2026-11-23 found them naming two units on the site: back in 122, their
     # unit addresses open the record (Janjić Miladinov Božidar, Dizdarević Fehrat, Šuković Venjko; Levi Moric stayed in the 4. krajiška)
     '0039900251': '0122960088', '0042900015': '0122909160', '0069900001': '0122954956',
-    '0038900030': '0122960096',   # Janković Radoš: the 8. crnogorska, then the 5. proleterska, two units on the site once the table's misprints were mended (2026-11-24)
     '0122961381': '0008002961',   # Vučković Frane Nikola: his family's record, joined to the 4. splitska's Nikola of Brnaze (the user, 2026-11-23)
     '0122954911': '0122913485', '0122954912': '0122913486', '0122954913': '0122913487', '0122954914': '0122913488',
     '0122954539': '0122912799',

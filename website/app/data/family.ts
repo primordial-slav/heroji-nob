@@ -138,7 +138,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122907839', // Sekulić Mane Miloš of Zbjeg (Slunj), Borci drugih jedinica
+    soldierId: '0097900021', // Sekulić Mane Miloš of Zbjeg (Slunj), Borci drugih jedinica
     photo: '0122907839-1.jpg',
     text: 'Ime mu se u izvorima razlikuje: knjige ga upisuju i kao Miloša, sina Manina, i kao Manu, sina Milošev. Znamo da je bio komesar i da je poginuo negde na Žumberku. Spasio je od streljanja svog sestrića Manojla Manu Kosanovića, koji je poginuo na Ilirskoj Bistrici goneći ustaše.',
     from: 'B. Batalo, praunuk',
@@ -173,7 +173,7 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0122959608', // Ćulibrk Svetko of Risovac (Porodična arhiva 9990000004); the granddaughter's form of 2026-11-20 15:51
+    soldierId: '0010900056', // Ćulibrk Svetko of Risovac (Porodična arhiva 9990000004); the granddaughter's form of 2026-11-20 15:51
     photo: '0122959608-1.jpg',
     // she sent his two war memoirs as a typed PDF (the first was printed as "U Trećoj krajiškoj brigadi" in Bosanski
     // Petrovac u NOB, zbornik sjećanja, knj. V, 1974, pp. 235-239, which she sent whole) and allowed text and photos,
