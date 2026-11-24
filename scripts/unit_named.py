@@ -47,6 +47,10 @@ SITE_LINKS_MORE = {('brigades', 3): 123, ('brigades', 31): 124, ('brigades', 171
 # the division pages that hold only the staff and its services at Sutjeska ("Štab divizije, njegove službe i prateće
 # jedinice u bici na Sutjesci"): no brigade's man goes there (2026-11-20)
 STAFF_ONLY = {113, 114, 115, 116}
+# the table's KNOJ brigades ("brigada NO" after the word, "divizije NO", the Slovene and Croatian security troops), and a
+# text that names KNOJ: the army's "NO udarna brigada" has NO before the word
+KNOJ_NAME = re.compile(r'\bbri?gad\w*\s+NO\b|\bdi[vV]iz\w*\s+NO\b|državne varnosti|zaštitu naroda')  # the table's "brgada", "divizje"
+KNOJ_TEXT = re.compile(r'KNOJ|[Nn]arodne odbrane|\bbrigad\w*\s+NO\b')
 
 
 def fold(t: str) -> str:
@@ -126,9 +130,12 @@ def tables() -> dict:
     site.update(SITE_LINKS_MORE)
     brig = json.loads((NOVJ / 'brigades.json').read_text(encoding='utf-8'))
     aliases, in_div, div_of, num_of = [], defaultdict(set), defaultdict(set), defaultdict(set)
+    knoj = set()                                  # KNOJ's brigades: "Treća brigada 7. divizije NO (3. vojvođanska brigada NO)"
     for b in brig:
         key = ('brigades', b['no'])
         name = b['name'].replace('\n', ' ')
+        if KNOJ_NAME.search(name):
+            knoj.add(key)
         for m in re.finditer(r'(\d{1,2})\.\s*(?:NOU\s+|NO\s+|udarna\s+)?brigad\w*\s+(\d{1,2})\.\s*divizij', name):
             in_div[(int(m.group(1)), int(m.group(2)))].add(key)
         for p in b.get('periods') or ():
@@ -184,18 +191,21 @@ def tables() -> dict:
             w = re.findall(r'[a-z]+', fold(seg))
             if w and w[0] not in ('odred', 'nop', 'partizanski'):
                 det_stem[re.sub(r'(ski|ki)$', '', w[0])[:7]].add(('detachments', d['no']))
-    return {'site': site, 'aliases': aliases, 'in_div': in_div, 'div_of': div_of, 'num_of': num_of,
+    return {'site': site, 'aliases': aliases, 'in_div': in_div, 'div_of': div_of, 'num_of': num_of, 'knoj': knoj,
             'members': members, 'div_num': div_num, 'knoj_num': knoj_num, 'div_words': div_words, 'det_stem': det_stem}
 
 
-def brigade_by_name(num: int, words: list[str]):
+def brigade_by_name(num: int, words: list[str], knoj: bool = False):
     """the one brigade of the war of this number whose name has these words: the same words first, else a name holding
     them (a region's word among them); (key or None, how many fit)"""
     words = [w for w in words if w not in FILLER]
     region = [w for w in words if not w.startswith(('prol', 'omlad', 'udar'))]
     if not words:
         return None, 0
-    cands = [(set(a), k) for n, a, k in tables()['aliases'] if n == num]
+    # KNOJ's brigades share the army's numbers and names (its 3. vojvođanska of December 1944 and the army's): one counts
+    # only where the text says KNOJ or "narodne odbrane", as with its divisions (2026-11-24, Petrenj Mara)
+    t = tables()
+    cands = [(set(a), k) for n, a, k in t['aliases'] if n == num and (k in t['knoj']) == knoj]
     exact = {k for a, k in cands if len(a) == len(words) and all(any(wmatch(t, x) for x in a) for t in words)}
     if len(exact) == 1:
         return exact.pop(), 1
@@ -309,7 +319,7 @@ def mentions(t: str) -> list[tuple]:
             words = words_of(m.group(2))
             if not num or not words or any(w.startswith(('bat', 'cet', 'vod', 'div', 'korp', 'odel')) for w in words):
                 continue
-            key, n = brigade_by_name(num, words)
+            key, n = brigade_by_name(num, words, knoj=bool(KNOJ_TEXT.search(near(m))))
             used.append(m.span())
             if key and key not in site:
                 dsite = {site[('divisions', d)] for d in tb['div_of'].get(key, ()) if ('divisions', d) in site}
