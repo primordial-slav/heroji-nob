@@ -1162,6 +1162,49 @@ export const familyContributions: FamilyContribution[] = [
     from: 'Z. Ćirković, unuk',
     date: '2026-11',
   },
+  {
+    soldierId: '0060900390', // Kvočka Mile Petar of Broćanac: his grandson's missing-fighter form of 2026-11-24 02:32 by the site's mail fallback
+    // (no permission lines: no name; Porodična arhiva 9990000071); born "1930" as the form gives it
+    text: 'Učestvovao je u osnivanju 6. ličke brigade početkom novembra 1942. u Bihaću, a posle je prešao u 8. kordunašku diviziju. Preživeo je rat. Penzionisan je 1963, a umro je 2013. u Beogradu.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0040900252', // Anđelković Milana Dragiša of Gari (Kruševac), 4. crnogorska: his grandson's missing-fighter form of 2026-11-24 14:58
+    // with a photo (text and name allowed; Porodična arhiva 9990000072); the portrait cut to him, the whole photo in the album
+    photo: '0040900252-1.jpg',
+    pieces: [{ kind: 'photo', file: '0040900252-2.jpg', caption: 'Cela fotografija' }],
+    text: 'Bio je puškomitraljezac u ovoj jedinici. U borbama za oslobođenje Kraljeva, u novembru 1944, ranio ga je nemački snajper na mrtvoj straži. Posle rata je proveo par godina u Bosni i Hercegovini, učestvujući u hvatanju preostalih četničkih odmetnika. Zatim je bio u službi Narodne milicije u selu Vrdila kod Kraljeva i u Mataruškoj Banji. Penzionisan je 1968. Nosilac je Medalje za hrabrost.',
+    from: 'N. Vuksanović, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961405', // Gutić Petra Petar of Vinalić (Vrlika): his great-grandson's missing-fighter form of 2026-11-24 16:18 (sent twice;
+    // text yes, name no; Porodična arhiva 9990000073)
+    text: 'Bio je oficir u partizanima.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0048011477', // Kilim Muje Smajo, 7. krajiška: his grandson's form of 2026-11-24 15:26 by the site's mail fallback (no
+    // permission lines: no name; Porodična arhiva 9990000074 referenced; rows by 317457)
+    text: 'Nije bio zemljoradnik, nego je radio u pilani. Bio je skojevac, u NOB-u od 1941, i borio se na Sutjesci. Sahranjen je u Jajcu, gdje je i živio.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0001005557', // Krilić Tome Nedo of Baćina, Prva proleterska: his father Toma's grandson's form and mail of 2026-11-24
+    // 15:48 and 16:12 (text and name allowed); the father, a civilian, has no record (the user's rule)
+    text: 'Otac Toma Krilić, rođen 1888, zarobljen je 1942. od Talijana i mučen u Gracu, jer su mu djeca, Nedo i Ivka, bila u partizanima; zatim je odveden u zatvor na Mamuli, gdje je ostao do kapitulacije Italije.',
+    from: 'T. Krilić, rođak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036000960', // Krilić T Ivka of Gradac (Ploče), 1. dalmatinska: the same form and mail
+    text: 'Otac Toma Krilić, rođen 1888, zarobljen je 1942. od Talijana i mučen u Gracu, jer su mu djeca, Nedo i Ivka, bila u partizanima; zatim je odveden u zatvor na Mamuli, gdje je ostao do kapitulacije Italije.',
+    from: 'T. Krilić, rođak',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
