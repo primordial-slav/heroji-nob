@@ -68,7 +68,7 @@ const sl: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3. krajiška proletarska udarna brigada',
-    description: 'Ustanovljena 22. avgusta 1942 v Kamenici pri Drvarju. Borci brigade od ustanovitve do konca vojne.',
+    description: 'Ustanovljena 22. avgusta 1942 v Kamenici pri Drvarju. Borci brigade od ustanovitve do konca vojne. Poleg njih še borci brigade iz drugih knjig.',
   },
   '17-slavonska-brigada': {
     name: '17. slavonska udarna brigada',
@@ -182,7 +182,7 @@ const sl: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5. proletarska črnogorska brigada',
     description:
-      'Ustanovljena 12. junija 1942 v Smriječnu pri Šavniku. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter partizanke brigade.',
+      'Ustanovljena 12. junija 1942 v Smriječnu pri Šavniku. Borci brigade v bitki na Sutjeski, maja in junija 1943, ter partizanke brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '6-istocnobosanska-brigada': {
     name: '6. vzhodnobosanska proletarska brigada',
@@ -821,7 +821,7 @@ const mk: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3-та краишка пролетерска ударна бригада',
-    description: 'Формирана на 22 август 1942 во Каменица кај Дрвар. Борците на бригадата од формирањето до крајот на војната.',
+    description: 'Формирана на 22 август 1942 во Каменица кај Дрвар. Борците на бригадата од формирањето до крајот на војната. Покрај нив и борците на бригадата од други книги.',
   },
   '17-slavonska-brigada': {
     name: '17-та славонска ударна бригада',
@@ -939,7 +939,7 @@ const mk: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5-та пролетерска црногорска бригада',
     description:
-      'Формирана на 12 јуни 1942 во Смријечно кај Шавник. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и партизанките на бригадата.',
+      'Формирана на 12 јуни 1942 во Смријечно кај Шавник. Борците на бригадата во битката на Сутјеска, мај и јуни 1943, и партизанките на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '6-istocnobosanska-brigada': {
     name: '6-та источнобосанска пролетерска бригада',
@@ -1579,7 +1579,7 @@ const en: Record<string, UnitText> = {
   },
   '3-krajiska-proleterska-brigada': {
     name: '3rd Krajina Proletarian Assault Brigade',
-    description: 'Formed on 22 August 1942 in Kamenica near Drvar. Partisans of the brigade from its formation to the end of the war.',
+    description: 'Formed on 22 August 1942 in Kamenica near Drvar. Partisans of the brigade from its formation to the end of the war. Also fighters of the brigade named in other books.',
   },
   '17-slavonska-brigada': {
     name: '17th Slavonian Assault Brigade',
@@ -1698,7 +1698,7 @@ const en: Record<string, UnitText> = {
   '5-proleterska-brigada': {
     name: '5th Proletarian Montenegrin Brigade',
     description:
-      'Formed on 12 June 1942 in Smriječno near Šavnik. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and the brigade’s women Partisans.',
+      'Formed on 12 June 1942 in Smriječno near Šavnik. Partisans of the brigade in the Battle of the Sutjeska, May and June 1943, and the brigade’s women Partisans. Also fighters of the brigade named in other books.',
   },
   '6-istocnobosanska-brigada': {
     name: '6th East Bosnian Proletarian Brigade',
