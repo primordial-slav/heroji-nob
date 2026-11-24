@@ -44,7 +44,7 @@ const sl: Record<string, UnitText> = {
   },
   'prva-vojvodjanska-brigada': {
     name: 'Prva vojvodinska brigada',
-    description: 'Ustanovljena 11. aprila 1943 v Brđanih na Majevici. Borci brigade.',
+    description: 'Ustanovljena 11. aprila 1943 v Brđanih na Majevici. Borci brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '5-kozaracka-brigada': {
     name: '5. krajiška (kozaraška) udarna brigada',
@@ -52,7 +52,7 @@ const sl: Record<string, UnitText> = {
   },
   '2-vojvodjanska-brigada': {
     name: '2. vojvodinska udarna brigada',
-    description: 'Ustanovljena 20. aprila 1943 na Majevici. Borci in poveljniki od ustanovitve do konca vojne.',
+    description: 'Ustanovljena 20. aprila 1943 na Majevici. Borci in poveljniki od ustanovitve do konca vojne. Poleg njih še borci brigade iz drugih knjig.',
   },
   '8-krajiska-brigada': {
     name: '8. krajiška udarna brigada',
@@ -93,7 +93,7 @@ const sl: Record<string, UnitText> = {
   '4-srpska-brigada': {
     name: '4. srbska udarna brigada',
     description:
-      'Ustanovljena 20. novembra 1943 v Bucih pri Kruševcu. Borci brigade, med njimi tudi tujci in borci, katerih imena niso znana.',
+      'Ustanovljena 20. novembra 1943 v Bucih pri Kruševcu. Borci brigade, med njimi tudi tujci in borci, katerih imena niso znana. Poleg njih še borci brigade iz drugih knjig.',
   },
   '7-vojvodjanska-brigada': {
     name: '7. vojvodinska udarna brigada',
@@ -237,7 +237,7 @@ const sl: Record<string, UnitText> = {
   '3-makedonska-brigada': {
     name: '3. makedonska brigada',
     description:
-      'Ustanovljena 26. februarja 1944 v vasi Žegljane pri Kumanovu. Padli borci.',
+      'Ustanovljena 26. februarja 1944 v vasi Žegljane pri Kumanovu. Padli borci. Poleg njih še borci brigade iz drugih knjig.',
   },
   '18-hrvatska-brigada': {
     name: '18. hrvaška vzhodnobosanska brigada',
@@ -267,7 +267,7 @@ const sl: Record<string, UnitText> = {
   '3-vojvodjanska-brigada': {
     name: '3. vojvodinska brigada',
     description:
-      'Ustanovljena 15. maja 1943 v Sremu. Padli borci in poveljniki, tisti, katerih usoda ni znana, in preživeli.',
+      'Ustanovljena 15. maja 1943 v Sremu. Padli borci in poveljniki, tisti, katerih usoda ni znana, in preživeli. Poleg njih še borci brigade iz drugih knjig.',
   },
   'kalnicki-odred': {
     name: 'Kalniški partizanski odred',
@@ -797,7 +797,7 @@ const mk: Record<string, UnitText> = {
   },
   'prva-vojvodjanska-brigada': {
     name: 'Прва војводинска бригада',
-    description: 'Формирана на 11 април 1943 во Брѓани на Мајевица. Борци на бригадата.',
+    description: 'Формирана на 11 април 1943 во Брѓани на Мајевица. Борци на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '5-kozaracka-brigada': {
     name: '5-та краишка (козарачка) ударна бригада',
@@ -805,7 +805,7 @@ const mk: Record<string, UnitText> = {
   },
   '2-vojvodjanska-brigada': {
     name: '2-ра војводинска ударна бригада',
-    description: 'Формирана на 20 април 1943 на Мајевица. Борци и старешини од формирањето до крајот на војната.',
+    description: 'Формирана на 20 април 1943 на Мајевица. Борци и старешини од формирањето до крајот на војната. Покрај нив и борците на бригадата од други книги.',
   },
   '8-krajiska-brigada': {
     name: '8-ма краишка ударна бригада',
@@ -847,7 +847,7 @@ const mk: Record<string, UnitText> = {
   '4-srpska-brigada': {
     name: '4-та српска ударна бригада',
     description:
-      'Формирана на 20 ноември 1943 во Буци кај Крушевац. Борци на бригадата, меѓу нив и странци и борци чие име не е утврдено.',
+      'Формирана на 20 ноември 1943 во Буци кај Крушевац. Борци на бригадата, меѓу нив и странци и борци чие име не е утврдено. Покрај нив и борците на бригадата од други книги.',
   },
   '7-vojvodjanska-brigada': {
     name: '7-ма војводинска ударна бригада',
@@ -994,7 +994,7 @@ const mk: Record<string, UnitText> = {
   '3-makedonska-brigada': {
     name: '3-та македонска бригада',
     description:
-      'Формирана на 26 февруари 1944 во селото Жеглане кај Куманово. Загинати борци.',
+      'Формирана на 26 февруари 1944 во селото Жеглане кај Куманово. Загинати борци. Покрај нив и борците на бригадата од други книги.',
   },
   '18-hrvatska-brigada': {
     name: '18-та хрватска источнобосанска бригада',
@@ -1024,7 +1024,7 @@ const mk: Record<string, UnitText> = {
   '3-vojvodjanska-brigada': {
     name: '3-та војводинска бригада',
     description:
-      'Формирана на 15 мај 1943 во Срем. Загинати борци и старешини, оние чија судбина остана неутврдена, и преживеаните.',
+      'Формирана на 15 мај 1943 во Срем. Загинати борци и старешини, оние чија судбина остана неутврдена, и преживеаните. Покрај нив и борците на бригадата од други книги.',
   },
   'kalnicki-odred': {
     name: 'Калнички партизански одред',
@@ -1554,7 +1554,7 @@ const en: Record<string, UnitText> = {
   },
   'prva-vojvodjanska-brigada': {
     name: '1st Vojvodina Brigade',
-    description: 'Formed on 11 April 1943 in Brđani on Mount Majevica. Members of the brigade.',
+    description: 'Formed on 11 April 1943 in Brđani on Mount Majevica. Members of the brigade. Also fighters of the brigade named in other books.',
   },
   '5-kozaracka-brigada': {
     name: '5th Krajina (Kozara) Assault Brigade',
@@ -1562,7 +1562,7 @@ const en: Record<string, UnitText> = {
   },
   '2-vojvodjanska-brigada': {
     name: '2nd Vojvodina Assault Brigade',
-    description: 'Formed on 20 April 1943 on Mount Majevica. Partisans and officers from its formation to the end of the war.',
+    description: 'Formed on 20 April 1943 on Mount Majevica. Partisans and officers from its formation to the end of the war. Also fighters of the brigade named in other books.',
   },
   '8-krajiska-brigada': {
     name: '8th Krajina Assault Brigade',
@@ -1605,7 +1605,7 @@ const en: Record<string, UnitText> = {
   '4-srpska-brigada': {
     name: '4th Serbian Assault Brigade',
     description:
-      'Formed on 20 November 1943 in Buci near Kruševac. Members of the brigade, among them foreigners and Partisans whose names were never established.',
+      'Formed on 20 November 1943 in Buci near Kruševac. Members of the brigade, among them foreigners and Partisans whose names were never established. Also fighters of the brigade named in other books.',
   },
   '7-vojvodjanska-brigada': {
     name: '7th Vojvodina Assault Brigade',
@@ -1753,7 +1753,7 @@ const en: Record<string, UnitText> = {
   '3-makedonska-brigada': {
     name: '3rd Macedonian Brigade',
     description:
-      'Formed on 26 February 1944 in the village of Žegljane near Kumanovo. The fallen.',
+      'Formed on 26 February 1944 in the village of Žegljane near Kumanovo. The fallen. Also fighters of the brigade named in other books.',
   },
   '18-hrvatska-brigada': {
     name: '18th Croatian East Bosnian Brigade',
@@ -1783,7 +1783,7 @@ const en: Record<string, UnitText> = {
   '3-vojvodjanska-brigada': {
     name: '3rd Vojvodina Brigade',
     description:
-      'Formed on 15 May 1943 in Srem. Partisans and officers who were killed, those whose fate remains unknown, and the survivors.',
+      'Formed on 15 May 1943 in Srem. Partisans and officers who were killed, those whose fate remains unknown, and the survivors. Also fighters of the brigade named in other books.',
   },
   'kalnicki-odred': {
     name: 'Kalnik Partisan Detachment',
