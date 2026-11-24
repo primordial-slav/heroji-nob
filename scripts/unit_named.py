@@ -257,6 +257,13 @@ UNITWORD = re.compile(r'\b(?:brig|bat|čet|cet|vod|odred|korp|odelj|odjelj)', re
 # a unit's name that is a street's, a square's, a school's or what a place is named after, right before it with nothing
 # but spaces or a quote between: "danas Ul. VI istočnobosanske brigade" (Tuzla) is no unit he served in (05, 2026-11-24,
 # Bektić Šefko and Teufik, who joined the XVI muslimanska); "završio školu, zatim u 6. brigadi" still counts
+# a unit named in a clause whose subject is a relative is the relative's: "a sestra Mujesira borac Tuzlanskog NOP odreda"
+# (05, 2026-11-24, Bektić Teufik, himself of the XVI muslimanska). The relative as subject, in the nominative only: "zajedno
+# sa starijim bratom Šefkom, postao borac XVI muslimanske" is about him too. The clause runs back to a stop, a comma, or
+# "a" / "dok"
+KIN_SUBJECT = re.compile(r'\b(?:brat|sestra|otac|majka|sin|kći|kćerka|kćer|suprug|supruga|muž|žena|stric|ujak|djed|deda|'
+                         r'braća|sinovi|kćeri)\b', re.I)
+CLAUSE_START = re.compile(r'.*(?:[.;,:]|\ba\b|\bdok\b)', re.S)
 NAMED_FOR = re.compile(r'\b(?:ul\.|ulic\w*|trg\w*|škol\w*|kasarn\w*|naselj\w*|bulevar\w*|park\w*|spomen\w*|nosi\s+ime|'
                        r'ime\s+nosi|nazvan\w*\s+(?:je\s+)?po|imena)\s*[„"«]?\s*$', re.I)
 # (a Roman number in capitals only: "i u X krajišku brigadu" is the 10. krajiška, not the "i" of a 1.)
@@ -297,7 +304,11 @@ def mentions(t: str) -> list[tuple]:
         return t[max(0, m.start() - 25):m.end() + 25]
 
     def named_for(m):
-        return bool(NAMED_FOR.search(t[max(0, m.start() - 30):m.start()]))
+        before = t[max(0, m.start() - 120):m.start()]
+        if NAMED_FOR.search(before[-30:]):
+            return True
+        clause = before[CLAUSE_START.match(before).end():] if CLAUSE_START.match(before) else before
+        return bool(KIN_SUBJECT.search(clause))          # a relative's unit, not his
     for m in BD.finditer(t):
         if ENEMY.search(near(m)) or UNITWORD.search(m.group(3)) or named_for(m):
             continue
