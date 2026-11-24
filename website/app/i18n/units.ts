@@ -40,7 +40,7 @@ const sl: Record<string, UnitText> = {
   },
   '4-splitska-brigada': {
     name: '4. splitska udarna brigada',
-    description: 'Ustanovljena septembra 1943. Padli in preživeli borci.',
+    description: 'Ustanovljena septembra 1943. Padli in preživeli borci. Poleg njih še borci brigade iz drugih knjig.',
   },
   'prva-vojvodjanska-brigada': {
     name: 'Prva vojvodinska brigada',
@@ -793,7 +793,7 @@ const mk: Record<string, UnitText> = {
   },
   '4-splitska-brigada': {
     name: '4-та сплитска ударна бригада',
-    description: 'Формирана во септември 1943. Загинати и преживеани борци.',
+    description: 'Формирана во септември 1943. Загинати и преживеани борци. Покрај нив и борците на бригадата од други книги.',
   },
   'prva-vojvodjanska-brigada': {
     name: 'Прва војводинска бригада',
@@ -1550,7 +1550,7 @@ const en: Record<string, UnitText> = {
   },
   '4-splitska-brigada': {
     name: '4th Split Assault Brigade',
-    description: 'Formed in September 1943. The fallen and the survivors.',
+    description: 'Formed in September 1943. The fallen and the survivors. Also fighters of the brigade named in other books.',
   },
   'prva-vojvodjanska-brigada': {
     name: '1st Vojvodina Brigade',

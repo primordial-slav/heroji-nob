@@ -84,7 +84,7 @@ export const units: Unit[] = [
     id: '4-splitska-brigada',
     name: '4. splitska udarna brigada',
     nameEn: '4th Split Assault Brigade',
-    description: 'Formirana u septembru 1943. Poginuli i preživeli borci.',
+    description: 'Formirana u septembru 1943. Poginuli i preživeli borci. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/4-splitska-brigada.jpg',
     soldierCount: 3114,
     dataFile: '/4-splitska-soldiers.json',
