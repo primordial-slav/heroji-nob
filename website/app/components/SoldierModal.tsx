@@ -23,7 +23,7 @@ import { contributionsFor } from '@/app/data/family'
 import RelationsTree, { type KinCounts, type KinPart, type KinRequest } from './RelationsTree'
 import LifeLine from './LifeLine'
 import SoldierPortrait from './SoldierPortrait'
-import { portraitFor } from '@/app/data/portraits'
+import { portraitFor, replacedPortrait } from '@/app/data/portraits'
 import { useLang, useLocalePath, useT, useUnitText, type UnitNames } from '@/app/i18n/LangContext'
 import { LANG_NAMES, type Lang } from '@/app/i18n/config'
 import { quoteMarks } from '@/app/i18n/format'
@@ -300,7 +300,8 @@ export default function SoldierModal({ soldier, unitName, onOpen, walk, onClose 
             )}
           </div>
         </div>
-        <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))} />
+        <FamilyStory items={contributionsFor(soldier.soldier_id, (soldier.other_sources ?? []).map((o) => o.soldier_id))}
+          earlier={replacedPortrait(soldier)} />
 
         <div className="record-body">
           {(facts.length > 0 || events.length > 0) && (

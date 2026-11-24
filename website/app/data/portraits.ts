@@ -39,3 +39,13 @@ export function portraitFor(soldier: Soldier): ShownPortrait | null {
     ? { src: `/portreti/${own.f}`, large: own.v && `/portreti/${own.v}`, credit: own.c, href: own.h, focus: own.y ?? 30 }
     : null
 }
+
+/** The book's portrait a family's photo took the place of at the top of the record: it stays in the card's album, under
+ *  the family's pieces, with the book's credit (the user, 2026-11-24, Antolović Josip: "leave the previous picture in the
+ *  gallery"); the Galerija keeps it too, since it shows the books' portraits only */
+export function replacedPortrait(soldier: Soldier): { file: string; large?: string; credit: string } | null {
+  const ids = [soldier.soldier_id, ...(soldier.other_sources ?? []).map((o) => o.soldier_id)].filter(Boolean) as string[]
+  if (!contributionsFor(soldier.soldier_id, ids.slice(1)).some((c) => c.photo)) return null
+  const own = ids.map((id) => PORTRAITS[id]).find(Boolean)
+  return own ? { file: own.f, large: own.v, credit: own.c } : null
+}

@@ -20,9 +20,13 @@ interface ShownPiece extends FamilyPiece {
   all: string[]
   from: string
   date: string
+  dir?: 'portreti'   // a book's portrait the family's photo replaced (data/portraits.ts, replacedPortrait), not the family's
 }
 
-export default function FamilyStory({ items }: { items: FamilyContribution[] }) {
+export default function FamilyStory({ items, earlier }: {
+  items: FamilyContribution[]
+  earlier?: { file: string; large?: string; credit: string } | null
+}) {
   const t = useT().family
   const [open, setOpen] = useState<{ piece: number; page: number } | null>(null)
   const sentOn = (date: string) => {
@@ -34,6 +38,9 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
     ...(item.photo ? [{ kind: 'photo' as const, file: item.photo, caption: item.photoCaption, all: [item.photo], from: item.from, date: item.date }] : []),
     ...(item.pieces ?? []).map((p) => ({ ...p, all: [p.file, ...(p.pages ?? [])], from: item.from, date: item.date })),
   ])
+  if (earlier && pieces.length) {
+    pieces.push({ kind: 'photo', file: earlier.file, caption: earlier.credit, all: [earlier.large ?? earlier.file], from: '', date: '', dir: 'portreti' })
+  }
   const portrait = items.find((item) => item.photo)
   // an album when there is more than the portrait: two pieces or more, or a single piece that isn't the portrait (Krnić
   // Blaž's photo in a postwar uniform, kept out of the portrait, had shown nowhere)
@@ -73,7 +80,7 @@ export default function FamilyStory({ items }: { items: FamilyContribution[] }) 
               <button type="button" className={s.piece} data-kind={piece.kind} onClick={() => setOpen({ piece: i, page: 0 })}
                 aria-label={t.open(piece.caption ?? t.kind[piece.kind])}>
                 <span className={s.image}>
-                  <img src={`/porodica/${piece.file}`} alt="" loading="lazy" />
+                  <img src={`/${piece.dir ?? 'porodica'}/${piece.file}`} alt="" loading="lazy" />
                   {piece.all.length > 1 && <span className={s.pages}>{t.pages(piece.all.length)}</span>}
                 </span>
                 <span className={s.caption}>{piece.caption ?? t.kind[piece.kind]}</span>
@@ -121,7 +128,7 @@ function FamilyViewer({ pieces, at, onMove, onClose, sentOn }: {
           <button type="button" className={s.arrow} onClick={() => step(-1)} disabled={here <= 0} aria-label={t.previous}>
             <ChevronLeftIcon size={20} />
           </button>
-          <img key={piece.all[at.page]} className={s.big} data-kind={piece.kind} src={`/porodica/${piece.all[at.page]}`} alt={what} />
+          <img key={piece.all[at.page]} className={s.big} data-kind={piece.kind} src={`/${piece.dir ?? 'porodica'}/${piece.all[at.page]}`} alt={what} />
           <button type="button" className={s.arrow} onClick={() => step(1)} disabled={here >= steps.length - 1} aria-label={t.next}>
             <ChevronRightIcon size={20} />
           </button>
@@ -131,7 +138,7 @@ function FamilyViewer({ pieces, at, onMove, onClose, sentOn }: {
           <p className={s.meta}>
             {t.kind[piece.kind]}
             {piece.all.length > 1 && <> · {t.page(at.page + 1, piece.all.length)}</>}
-            {' · '}{piece.from && `${piece.from} · `}{sentOn(piece.date)}
+            {piece.date && <>{' · '}{piece.from && `${piece.from} · `}{sentOn(piece.date)}</>}
           </p>
           {transcript && (
             <div className={s.transcript}>
