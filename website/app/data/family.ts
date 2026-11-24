@@ -1010,6 +1010,38 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-11',
   },
+  {
+    soldierId: '0007005370', // Ujević Ante Mate, narodni heroj, 2. dalmatinska: his brother Zdravko's grandson's mail of 2026-11-24 08:21
+    // (no name; Porodična arhiva 9990000054 referenced, the Neretva and the Sutjeska); the user's note on /pregled 67b0185984;
+    // the family's photo of him with his brother is his portrait (cut to him), the whole photo in his album
+    photo: '0007005370-1.jpg',
+    photoCaption: 'Sa bratom Zdravkom',
+    pieces: [{ kind: 'photo', file: '0007005370-2.jpg', caption: 'Sa bratom Zdravkom Ujevićem' }],
+    text: 'Po obiteljskom sjećanju, sudjelovao je u bitkama na Neretvi i Sutjesci, kao i sestre Nediljka i Antica. Mlađi brat Zdravko bio je kurir Biokovskog odreda.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0007005371', // Ujević-Radovčić Ante Nediljka, 2. dalmatinska: her brother Zdravko's grandson's mail of 2026-11-24 08:21
+    // (no name; Porodična arhiva 9990000055 referenced); the user's note on /pregled 67b0185984
+    text: 'Po obiteljskom sjećanju, sudjelovala je u bitkama na Neretvi i Sutjesci, kao i brat Mate i sestra Antica.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961392', // Ujević Ante Antica of Krivodol, later Kujundžić: her brother Zdravko's grandson's mail of 2026-11-24 08:21
+    // (no name; Porodična arhiva 9990000053); the user's note on /pregled 67b0185984
+    text: 'Bila je u partizanima prije 1943. i sudjelovala u bitkama na Neretvi i Sutjesci, kao i brat Mate i sestra Nediljka. Kasnije se udala za Nedjeljka Kujundžića, autora knjige „Imotska krajina u NOB”.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961391', // Perkov Filicije Mladin of Primošten Burnji: his brother Ante's nephew's son's mail of 2026-11-24 (no name;
+    // Porodična arhiva 9990000052); the user's note on /pregled 3fb351d5a4
+    text: 'U partizane je otišao prije brata Ante, koji mu se pridružio kad se krajem 1942. vratio iz Njemačke, nakon što im je otac Filicijo strijeljan u pokolju na području Primoštena. Obojica su poginula 1943.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
