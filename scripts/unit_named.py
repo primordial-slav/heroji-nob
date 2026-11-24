@@ -254,6 +254,11 @@ ADJ = r'(?:[A-Za-zČĆŽŠĐčćžšđ][A-Za-zČĆŽŠĐčćžšđ-]*\.?\s+){0,4
 ENEMY = re.compile(r'\bSS\b|legion|njema|nema[cč]k|talijan|italijan|usta[sš]|domobran|[cč]etni|bugar|ma[dđ]ar|wehrm|'
                    r'nijem', re.I)
 UNITWORD = re.compile(r'\b(?:brig|bat|čet|cet|vod|odred|korp|odelj|odjelj)', re.I)
+# a unit's name that is a street's, a square's, a school's or what a place is named after, right before it with nothing
+# but spaces or a quote between: "danas Ul. VI istočnobosanske brigade" (Tuzla) is no unit he served in (05, 2026-11-24,
+# Bektić Šefko and Teufik, who joined the XVI muslimanska); "završio školu, zatim u 6. brigadi" still counts
+NAMED_FOR = re.compile(r'\b(?:ul\.|ulic\w*|trg\w*|škol\w*|kasarn\w*|naselj\w*|bulevar\w*|park\w*|spomen\w*|nosi\s+ime|'
+                       r'ime\s+nosi|nazvan\w*\s+(?:je\s+)?po|imena)\s*[„"«]?\s*$', re.I)
 # (a Roman number in capitals only: "i u X krajišku brigadu" is the 10. krajiška, not the "i" of a 1.)
 BD = re.compile(r'(?<![\d.])(\d{1,2})\.\s*brig(?:ad\w*|\.)?\s*,?\s*(\d{1,2}\.|(?-i:[IVX]{1,5})\.?)\s*(' + ADJ +
                 r')(?:div\w*\.?|D[A-ZŠ]{1,3}\b)', re.I)
@@ -290,8 +295,11 @@ def mentions(t: str) -> list[tuple]:
 
     def near(m):
         return t[max(0, m.start() - 25):m.end() + 25]
+
+    def named_for(m):
+        return bool(NAMED_FOR.search(t[max(0, m.start() - 30):m.start()]))
     for m in BD.finditer(t):
-        if ENEMY.search(near(m)) or UNITWORD.search(m.group(3)):
+        if ENEMY.search(near(m)) or UNITWORD.search(m.group(3)) or named_for(m):
             continue
         b, d = int(m.group(1)), ord_value([fold(m.group(2)).rstrip('.')])
         if not d:
@@ -320,7 +328,7 @@ def mentions(t: str) -> list[tuple]:
             yield m
     for rx in (NB, WB):
         for m in again(rx):
-            if any(s <= m.start() < e for s, e in used) or ENEMY.search(near(m)):
+            if any(s <= m.start() < e for s, e in used) or ENEMY.search(near(m)) or named_for(m):
                 continue
             num = ord_value(re.findall(r'[a-z0-9]+', fold(m.group(1))))
             words = words_of(m.group(2))
@@ -338,7 +346,7 @@ def mentions(t: str) -> list[tuple]:
             elif any(not w.startswith(('prol', 'omlad', 'udar')) for w in words):
                 out.append((None, f'brigade by name, {n} fit', m.group(0)))
     for m in DV.finditer(t):
-        if any(s <= m.start() < e for s, e in used) or ENEMY.search(near(m)) or UNITWORD.search(m.group(2)):
+        if any(s <= m.start() < e for s, e in used) or ENEMY.search(near(m)) or UNITWORD.search(m.group(2)) or named_for(m):
             continue
         keys = division(int(m.group(1)), m.group(2), near(m))
         if len(keys) == 1:
@@ -349,6 +357,8 @@ def mentions(t: str) -> list[tuple]:
             else:
                 out.append((code, 'division' if code else 'division not on the site', m.group(0)))
     for m in OD.finditer(t):
+        if named_for(m):
+            continue
         stem = re.sub(r'(skog|skom|skoga|ski|ški|škog|škom|sko)$', '', fold(m.group(1)).split('-')[0])[:7]
         if len(stem) < 4 or stem in ('partiz', 'gerils', 'borac', 'narodn', 'udarn'):
             continue
