@@ -1003,6 +1003,13 @@ export const familyContributions: FamilyContribution[] = [
     origin: 'visitor',
     date: '2026-11',
   },
+  {
+    soldierId: '0122961390', // Sučić Stjepana Ivan of Plaški: his daughter's missing-fighter form of 2026-11-24 09:02 by the site's mail
+    // fallback (no permission lines: no name; Porodična arhiva 9990000051; "7. kordunaška divizija" as she writes it)
+    text: 'U rat je otišao 1943, kao kurir 7. kordunaške divizije. Poslije rata sudjelovao je na omladinskim radnim akcijama Brčko–Banovići i Šamac–Sarajevo, a kasnije radio na željeznici, gdje je i umirovljen. Bio je korisnik boračke mirovine. Umro je 2018. i sahranjen u Plaškom.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

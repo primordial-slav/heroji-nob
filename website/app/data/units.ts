@@ -86,7 +86,7 @@ export const units: Unit[] = [
     nameEn: '4th Split Assault Brigade',
     description: 'Formirana u septembru 1943. Poginuli i preživeli borci.',
     image: '/images/4-splitska-brigada.jpg',
-    soldierCount: 3084,
+    soldierCount: 3114,
     dataFile: '/4-splitska-soldiers.json',
     pdfFiles: ['/pdfs/4-splitska-brigada.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 63003,
+    soldierCount: 62974,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
