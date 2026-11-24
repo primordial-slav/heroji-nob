@@ -296,7 +296,7 @@ export const units: Unit[] = [
     nameEn: '17th Majevica Brigade',
     description: 'Formirana 10. oktobra 1943. u okolini Tuzle. Poginuli i umrli borci Trećeg majevičkog odreda i 17. majevičke brigade. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/17-majevicka-brigada.jpg',
-    soldierCount: 955,
+    soldierCount: 954,
     dataFile: '/17-majevicka-soldiers.json',
     pdfFiles: ['/pdfs/17-majevicka.pdf']
   },
@@ -426,7 +426,7 @@ export const units: Unit[] = [
     nameEn: '6th East Bosnian Proletarian Brigade',
     description: 'Formirana 2. avgusta 1942. u Šekovićima kod Vlasenice. Borci brigade u bici na Sutjesci, maja i juna 1943. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/6-istocnobosanska-brigada.jpg',
-    soldierCount: 1259,
+    soldierCount: 1257,
     dataFile: '/6-istocnobosanska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-6-istocnobosanska.pdf', '/pdfs/6-istocnobosanska-dopuna.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 62342,
+    soldierCount: 62345,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
