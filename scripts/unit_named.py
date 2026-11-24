@@ -139,12 +139,25 @@ def tables() -> dict:
         name = re.sub(r'\b(?:od|do)\s+(?:\d{1,2}\.\s*)?(?:[IVX]{1,4}\b\.?|[a-zčćžšđ]+)?\s*\'?\d{2,4}\.?', ' ', name)
         name = re.sub(r'\d{1,2}\.\s*(?:operativne\s+zone|divizij\w*|korpus\w*)[^,;()]*', ' ', name)
         inline = re.sub(r'\(([^()\d]*)\)', r' \1 ', name)
-        segs = re.split(r'[(),;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', name)
+        # a name the brigade had before or after, without its number, is the same brigade's ("Osma dalmatinska brigada
+        # (udarna) pri formiranju šibenska brigada": "8. šibenska brigada" is the 8. dalmatinska; 2026-11-24, Perkov Ante)
+        later = set()
+        segs = []
+        for i, part in enumerate(re.split(r'\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', name)):
+            pieces = re.split(r'[(),;]', part)
+            if i:
+                later.add(len(segs))
+            segs += pieces
         if inline != name:
             segs += re.split(r'[,;]|\bpri formiranju\b|\bkasnije\b|\bformirana kao\b', inline)[:1]
-        for seg in segs:
+        first = None
+        for n_seg, seg in enumerate(segs):
             w = re.findall(r'[a-z0-9]+', fold(seg))
             num = ord_value(w[:2]) if w else None
+            if num and first is None:
+                first = num
+            if not num and n_seg in later and first:
+                num = first
             if key == ('brigades', 76) and num == 20:
                 num = 21      # the table's "Dvadesetprva slavonska" in one word: the 21. slavonska (2026-11-23, Dvorski Martin)
             if not num:
