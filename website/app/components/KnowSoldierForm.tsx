@@ -256,6 +256,8 @@ export default function KnowSoldierForm({ soldier, unit }: { soldier: Soldier; u
           <a href={mailtoHref(`Znam ovog borca: ${soldier.full_name} (${soldier.soldier_id})`, [
             ['Borac', soldier.full_name ?? ''], ['ID', soldier.soldier_id], ['Veza sa borcem', relation], ['Šta zna', story],
             ['Ime pošiljaoca', name], ['Email pošiljaoca', email],
+            ['Dozvola za objavu teksta i fotografija', mayPublish ? 'Da' : 'Ne'],
+            ['Dozvola za objavu imena pošiljaoca', mayPublish && mayShowName ? 'Da, prvo slovo imena, prezime i srodstvo' : 'Ne'],
           ])}>{t.openMail}</a>
         </p>
       )}

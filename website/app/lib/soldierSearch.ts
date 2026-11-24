@@ -9,7 +9,8 @@ import type { Soldier } from './types'
 // is worth depends first on how it matches, then on where:
 //
 //   how:   the whole word, 1  >  another case of it ("Krsto" for "Krste", "Divoš" for "u Divošu"; father and entry
-//          only), 0.92  >  a letter the scans misread ("Jeiić"), 0.7  >  the start of a word, 0.55  >  a typo, 0.45
+//          only), 0.92  >  another form of the given name ("Mato" for Mate, NAME_VARIANTS), 0.9  >  a letter the scans
+//          misread ("Jeiić"), 0.7  >  the start of a word, 0.55  >  a typo, 0.45
 //          (two in a long word, 0.3)  >  inside another word ("Bijelić" for "Jelić"), 0.05
 //   where: surname 1  >  given name 0.9  >  nickname 0.85  >  father 0.75  >  the unit's name (when it has every
 //          word typed) 0.65  >  birth year, entry 0.6 (a word of three letters 0.45, of two 0.3)
@@ -92,6 +93,8 @@ const WHOLE = 1
 const FORM = 0.92
 const START = [0, 0.4, 0.45, 0.55] // by the letters typed: one, two, three or more
 const MISREAD = 0.7
+/** Another form of the same given name, as families and books write it ("Mato" for Mate, "Ive" for Ivo) */
+const VARIANT = 0.9
 const TYPO = 0.45
 const TWO_TYPOS = 0.3
 const INSIDE = 0.05
@@ -109,6 +112,20 @@ function nicknames(soldier: SearchFields): string[] {
   }
   return found
 }
+
+// One given name as families and books write it, folded as the search folds (č→c, đ→d): a family's "Mato Ujević" finds
+// the book's Ujević Mate first (the user, 2026-11-24: "mato ujevic missing on website?"; docs/claude/feedback-rules.md,
+// rule 3). Only forms of one name, not a name and its pet names (Mile is Milan's, Milorad's, Milovan's...)
+const NAME_VARIANT_GROUPS = [
+  ['mate', 'mato'], ['ive', 'ivo', 'ivan'], ['jure', 'juraj'], ['sime', 'simun'], ['mladen', 'mladin'],
+  ['nedeljka', 'nediljka', 'nedjeljka'], ['ante', 'anto', 'antun', 'anton'], ['josip', 'jozo', 'joso'],
+  ['stjepan', 'stipan', 'stipe', 'stjepo'], ['jovan', 'jovo'], ['stevan', 'stevo'], ['sava', 'savo'],
+  ['frane', 'frano', 'franjo'], ['lovre', 'lovro'], ['tome', 'tomo'], ['grgo', 'grga', 'grgur'], ['jakov', 'jakob'],
+  ['spiro', 'spiridon'], ['vaso', 'vasilije', 'vasilj'], ['mijo', 'miho', 'mihovil'], ['petar', 'pero'],
+  ['nikola', 'nikolaj'], ['ilija', 'ilijas'], ['marijan', 'marjan'],
+]
+const NAME_VARIANTS = new Map<string, string[]>()
+for (const group of NAME_VARIANT_GROUPS) for (const name of group) NAME_VARIANTS.set(name, group.filter((n) => n !== name))
 
 // Words a query may hold that say nothing of the soldier: they count only where they match, for a tenth
 const MINOR = new Set(['i', 'u', 'iz', 'od', 'do', 'na', 'kod', 'sa', 's', 'za', 'v', 'pri', 'in', 'sin', 'kci', 'roden', 'rodena', 'r'])
@@ -424,6 +441,10 @@ function wordsMatching(index: SoldierIndex, typed: string, wholeOnly: boolean): 
         const w = ids.get(form)
         if (w !== undefined) asFather.set(w, FORM)
       }
+    }
+    for (const variant of NAME_VARIANTS.get(typed) ?? []) {
+      const w = ids.get(variant)
+      if (w !== undefined) keep(inName, w, VARIANT)
     }
     startingWith(index, index.nameWords, typed, START[Math.min(typed.length, 3)], inName)
     const max = allowed(typed)

@@ -275,6 +275,8 @@ export default function MissingSoldierForm({ query, unitName, startOpen = false,
           <a href={mailtoHref(`Borac kojeg nema na sajtu: ${soldier.trim()}`, [
             ['Borac', soldier], ['Ime oca', father], ['Godina rođenja', born], ['Mesto rođenja', birthplace], ['Jedinica', unit],
             ['Šta zna', story], ['Ime pošiljaoca', name], ['Veza sa borcem', relation], ['Email pošiljaoca', email],
+            ['Dozvola za objavu teksta i fotografija', mayPublish ? 'Da' : 'Ne'],
+            ['Dozvola za objavu imena pošiljaoca', mayPublish && mayShowName ? 'Da, prvo slovo imena, prezime i srodstvo' : 'Ne'],
           ])}>{t.openMail}</a>
         </p>
       )}
