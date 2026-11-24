@@ -12,11 +12,11 @@ import { unitDescriptionIn, unitNameIn, unitShortNameIn, type UnitText } from '.
 const sl: Record<string, UnitText> = {
   'prva-licka-brigada': {
     name: 'Prva liška proletarska brigada "Marko Orešković"',
-    description: 'Ustanovljena 8. julija 1942 pri izviru Mrežnice.',
+    description: 'Ustanovljena 8. julija 1942 pri izviru Mrežnice. Poleg njih še borci brigade iz drugih knjig.',
   },
   'prva-proleterska-brigada': {
     name: 'Prva proletarska narodnoosvobodilna udarna brigada',
-    description: 'Ustanovljena 21. decembra 1941.',
+    description: 'Ustanovljena 21. decembra 1941. Poleg njih še borci brigade iz drugih knjig.',
   },
   'ljubljanska-brigada': {
     name: '10. slovenska narodnoosvobodilna udarna brigada "Ljubljanska"',
@@ -24,7 +24,7 @@ const sl: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: 'Druga liška proletarska brigada',
-    description: 'Ustanovljena 18. avgusta 1942 v Laudonovem gaju. Padli, umrli in pogrešani borci, tisti, ki so vojno preživeli, ter starešine štaba brigade in bataljonov.',
+    description: 'Ustanovljena 18. avgusta 1942 v Laudonovem gaju. Padli, umrli in pogrešani borci, tisti, ki so vojno preživeli, ter starešine štaba brigade in bataljonov. Poleg njih še borci brigade iz drugih knjig.',
   },
   'treca-proleterska-brigada': {
     name: 'Tretja proletarska (sandžaška) brigada',
@@ -36,7 +36,7 @@ const sl: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2. dalmatinska proletarska udarna brigada',
-    description: 'Ustanovljena 3. oktobra 1942. Borci brigade ter štabi in poveljstva brigade, bataljonov in čet.',
+    description: 'Ustanovljena 3. oktobra 1942. Borci brigade ter štabi in poveljstva brigade, bataljonov in čet. Poleg njih še borci brigade iz drugih knjig.',
   },
   '4-splitska-brigada': {
     name: '4. splitska udarna brigada',
@@ -72,7 +72,7 @@ const sl: Record<string, UnitText> = {
   },
   '17-slavonska-brigada': {
     name: '17. slavonska udarna brigada',
-    description: 'Ustanovljena 30. decembra 1942 pri Voćinu. Padli in preživeli borci, po občinah.',
+    description: 'Ustanovljena 30. decembra 1942 pri Voćinu. Padli in preživeli borci, po občinah. Poleg njih še borci brigade iz drugih knjig.',
   },
   '25-srpska-divizija': {
     name: '25. srbska udarna divizija',
@@ -102,7 +102,7 @@ const sl: Record<string, UnitText> = {
   },
   '19-bircanska-brigada': {
     name: '19. birčanska brigada',
-    description: 'Ustanovljena 24. oktobra 1943 v Vlasenici. Borci brigade.',
+    description: 'Ustanovljena 24. oktobra 1943 v Vlasenici. Borci brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '2-krajiska-brigada': {
     name: '2. krajiška udarna brigada',
@@ -110,7 +110,7 @@ const sl: Record<string, UnitText> = {
   },
   'tuzlanski-odred': {
     name: 'Tuzelski partizanski odred',
-    description: 'Ustanovljen 24. oktobra 1943 v Tuzli. Borci odreda, mnogi tudi s fotografijo.',
+    description: 'Ustanovljen 24. oktobra 1943 v Tuzli. Borci odreda, mnogi tudi s fotografijo. Poleg njih še borci odreda iz drugih knjig.',
   },
   'uzicki-odred': {
     name: 'Užiški partizanski odred "Dimitrije Tucović"',
@@ -118,7 +118,7 @@ const sl: Record<string, UnitText> = {
   },
   '14-srpska-brigada': {
     name: '14. srbska udarna brigada',
-    description: 'Ustanovljena 17. junija 1944 v Ribarah pri Đunisu. Padli borci in poveljniki Niškega odreda in 14. srbske brigade.',
+    description: 'Ustanovljena 17. junija 1944 v Ribarah pri Đunisu. Padli borci in poveljniki Niškega odreda in 14. srbske brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '7-crnogorska-brigada': {
     name: '7. črnogorska mladinska brigada "Budo Tomović"',
@@ -167,7 +167,7 @@ const sl: Record<string, UnitText> = {
   },
   '8-crnogorska-brigada': {
     name: '8. črnogorska brigada',
-    description: 'Ustanovljena 25. februarja 1944 v Beranah. Padli borci in poveljniki ter dopolnilni seznam padlih iz Uba.',
+    description: 'Ustanovljena 25. februarja 1944 v Beranah. Padli borci in poveljniki ter dopolnilni seznam padlih iz Uba. Poleg njih še borci brigade iz drugih knjig.',
   },
   'druga-proleterska-brigada': {
     name: 'Druga proletarska brigada',
@@ -177,7 +177,7 @@ const sl: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4. proletarska črnogorska brigada',
     description:
-      'Ustanovljena 10. junija 1942. Borci na dan ustanovitve in v bitki na Sutjeski, poveljniki brigade in narodni heroji ter borci in poveljniki, padli od 1942 do 1945.',
+      'Ustanovljena 10. junija 1942. Borci na dan ustanovitve in v bitki na Sutjeski, poveljniki brigade in narodni heroji ter borci in poveljniki, padli od 1942 do 1945. Poleg njih še borci brigade iz drugih knjig.',
   },
   '5-proleterska-brigada': {
     name: '5. proletarska črnogorska brigada',
@@ -242,12 +242,12 @@ const sl: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18. hrvaška vzhodnobosanska brigada',
     description:
-      'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci in poveljniki brigade.',
+      'Ustanovljena 10. oktobra 1943 pri Tuzli, razglašena 17. oktobra v Husinu. Borci in poveljniki brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '11-dalmatinska-brigada': {
     name: '11. dalmatinska brigada',
     description:
-      'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci ter starešine štabov in poveljstev.',
+      'Ustanovljena 2. oktobra 1943 na Biokovu. Padli, pogrešani in preživeli borci ter starešine štabov in poveljstev. Poleg njih še borci brigade iz drugih knjig.',
   },
   '12-krajiska-brigada': {
     name: '12. krajiška brigada',
@@ -262,7 +262,7 @@ const sl: Record<string, UnitText> = {
   '14-srednjobosanska-brigada': {
     name: '14. srednjebosanska brigada',
     description:
-      'Ustanovljena 17. oktobra 1943 na Ceru pri Prnjavorju. Padli, umrli in pogrešani borci ter borci, ki so vojno preživeli.',
+      'Ustanovljena 17. oktobra 1943 na Ceru pri Prnjavorju. Padli, umrli in pogrešani borci ter borci, ki so vojno preživeli. Poleg njih še borci brigade iz drugih knjig.',
   },
   '3-vojvodjanska-brigada': {
     name: '3. vojvodinska brigada',
@@ -332,7 +332,7 @@ const sl: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Tomšičeva brigada',
     description:
-      'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci enot, iz katerih je nastala, in borci brigade do konca vojne.',
+      'Ustanovljena 16. julija 1942 na Cesti na Kočevskem. Borci enot, iz katerih je nastala, in borci brigade do konca vojne. Poleg njih še borci brigade iz drugih knjig.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1. slovenska artilerijska brigada',
@@ -377,7 +377,7 @@ const sl: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19. severnodalmatinska divizija',
     description:
-      'Ustanovljena 11. oktobra 1943 v Biovičinem Selu v Bukovici. Komandanti in komisarji divizije in brigad, narodni heroji ter padli in umrli borci divizije.',
+      'Ustanovljena 11. oktobra 1943 v Biovičinem Selu v Bukovici. Komandanti in komisarji divizije in brigad, narodni heroji ter padli in umrli borci divizije. Poleg njih še borci divizije iz drugih knjig.',
   },
   '21-srpska-brigada': {
     name: '21. srbska brigada',
@@ -387,7 +387,7 @@ const sl: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14. hercegovska brigada',
     description:
-      'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, padli in poveljstvo.',
+      'Ustanovljena 4. septembra 1944 pri Ljubinju kot mladinska brigada. Vsi borci, ki so šli skozi brigado, padli in poveljstvo. Poleg njih še borci brigade iz drugih knjig.',
   },
   '5-vojvodjanska-brigada': {
     name: '5. vojvodinska brigada',
@@ -432,12 +432,12 @@ const sl: Record<string, UnitText> = {
   '12-srpska-brigada': {
     name: '12. srbska brigada',
     description:
-      'Ustanovljena 22. maja 1944 na Ostrozubu južno od Bistrice. Padli in umrli borci in starešine brigade.',
+      'Ustanovljena 22. maja 1944 na Ostrozubu južno od Bistrice. Padli in umrli borci in starešine brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '20-srpska-brigada': {
     name: '20. srbska brigada',
     description:
-      'Ustanovljena 19. avgusta 1944 nad vasjo Bučje pri Knjaževcu. Padli in umrli borci in starešine brigade.',
+      'Ustanovljena 19. avgusta 1944 nad vasjo Bučje pri Knjaževcu. Padli in umrli borci in starešine brigade. Poleg njih še borci brigade iz drugih knjig.',
   },
   '1-konjicka-brigada': {
     name: '1. konjeniška brigada',
@@ -467,7 +467,7 @@ const sl: Record<string, UnitText> = {
   '34-divizija': {
     name: '34. divizija',
     description:
-      'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad ter poveljniški sestav.',
+      'Ustanovljena 30. januarja 1944 na Žumberku in v Pokuplju. Padli borci in starešine divizije in njenih brigad ter poveljniški sestav. Poleg njih še borci divizije iz drugih knjig.',
   },
   '4-sandzacka-brigada': {
     name: '4. sandžaška brigada',
@@ -517,12 +517,12 @@ const sl: Record<string, UnitText> = {
   'zagrebacki-odred': {
     name: 'Zagrebški partizanski odred',
     description:
-      'Ustanovljen 13. septembra 1943 na Zagrebški gori. Seznam borcev odreda: vas, občina in usoda.',
+      'Ustanovljen 13. septembra 1943 na Zagrebški gori. Seznam borcev odreda: vas, občina in usoda. Poleg njih še borci odreda iz drugih knjig.',
   },
   'mosorski-odred': {
     name: 'Mosorski partizanski odred',
     description:
-      'Ustanovljen 21. februarja 1942 na Mosorju, znova 11. oktobra 1943, razpuščen 10. novembra 1944. Vsi borci odreda 1942–1944, s kratkimi življenjepisi, in vodstvo odreda.',
+      'Ustanovljen 21. februarja 1942 na Mosorju, znova 11. oktobra 1943, razpuščen 10. novembra 1944. Vsi borci odreda 1942–1944, s kratkimi življenjepisi, in vodstvo odreda. Poleg njih še borci odreda iz drugih knjig.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Turopoljsko-posavski partizanski odred',
@@ -547,7 +547,7 @@ const sl: Record<string, UnitText> = {
   '11-krajiska-brigada': {
     name: '11. krajiška (kozaraška) brigada',
     description:
-      'Ustanovljena 23. avgusta 1943 na Kozari iz Kozarskega NOP odreda. Padli borci brigade po občinah in seznam bork.',
+      'Ustanovljena 23. avgusta 1943 na Kozari iz Kozarskega NOP odreda. Padli borci brigade po občinah in seznam bork. Poleg njih še borci brigade iz drugih knjig.',
   },
   '3-banijska-brigada': {
     name: '3. banijska brigada',
@@ -557,7 +557,7 @@ const sl: Record<string, UnitText> = {
   'macvanski-odred': {
     name: 'Mačvanski (Podrinjski) partizanski odred',
     description:
-      'Ustanovljen 16. julija 1941 na Bubanji pri Glušcih v Mačvi; od avgusta Podrinjski partizanski odred. Borci odreda od julija 1941 do marca 1942, po krajih, iz katerih so prišli.',
+      'Ustanovljen 16. julija 1941 na Bubanji pri Glušcih v Mačvi; od avgusta Podrinjski partizanski odred. Borci odreda od julija 1941 do marca 1942, po krajih, iz katerih so prišli. Poleg njih še borci odreda iz drugih knjig.',
   },
   'posavski-odred': {
     name: 'Posavski partizanski odred',
@@ -567,7 +567,7 @@ const sl: Record<string, UnitText> = {
   '51-divizija': {
     name: '51. vojvodinska divizija',
     description:
-      'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli od ustanovitve do konca vojne, maja 1945, in pogrešani v bitki pri Batini.',
+      'Ustanovljena 31. oktobra 1944 v Novem Sadu iz 7., 8. in 12. vojvodinske brigade. Borci divizije, padli od ustanovitve do konca vojne, maja 1945, in pogrešani v bitki pri Batini. Poleg njih še borci divizije iz drugih knjig.',
   },
   'vrhovni-stab': {
     name: 'Vrhovni štab NOV in POJ',
@@ -701,7 +701,7 @@ const sl: Record<string, UnitText> = {
   },
   'cacanski-odred': {
     name: 'Čačanski partizanski odred "dr. Dragiša Mišović"',
-    description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh.',
+    description: 'Ustanovljen 6. julija 1941 v Kulinovcih pri Čačku. Padli borci odreda, po pokrajinah in vaseh. Poleg njih še borci odreda iz drugih knjig.',
   },
   'mostarski-bataljon': {
     name: 'Mostarski bataljon',
@@ -765,11 +765,11 @@ const sl: Record<string, UnitText> = {
 const mk: Record<string, UnitText> = {
   'prva-licka-brigada': {
     name: 'Прва личка пролетерска бригада "Марко Орешковиќ"',
-    description: 'Формирана на 8 јули 1942 кај изворот на Мрежница.',
+    description: 'Формирана на 8 јули 1942 кај изворот на Мрежница. Покрај нив и борците на бригадата од други книги.',
   },
   'prva-proleterska-brigada': {
     name: 'Прва пролетерска народноослободителна ударна бригада',
-    description: 'Формирана на 21 декември 1941.',
+    description: 'Формирана на 21 декември 1941. Покрај нив и борците на бригадата од други книги.',
   },
   'ljubljanska-brigada': {
     name: '10-та словенечка народноослободителна ударна бригада "Љубљанска"',
@@ -777,7 +777,7 @@ const mk: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: 'Втора личка пролетерска бригада',
-    description: 'Формирана на 18 август 1942 во Лаудонов Гај. Загинати, починати и исчезнати борци, оние што ја преживеаја војната, и старешините на штабот на бригадата и на баталјоните.',
+    description: 'Формирана на 18 август 1942 во Лаудонов Гај. Загинати, починати и исчезнати борци, оние што ја преживеаја војната, и старешините на штабот на бригадата и на баталјоните. Покрај нив и борците на бригадата од други книги.',
   },
   'treca-proleterska-brigada': {
     name: 'Трета пролетерска (санџачка) бригада',
@@ -789,7 +789,7 @@ const mk: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2-ра далматинска пролетерска ударна бригада',
-    description: 'Формирана на 3 октомври 1942. Борци на бригадата и штабовите и командите на бригадата, баталјоните и четите.',
+    description: 'Формирана на 3 октомври 1942. Борци на бригадата и штабовите и командите на бригадата, баталјоните и четите. Покрај нив и борците на бригадата од други книги.',
   },
   '4-splitska-brigada': {
     name: '4-та сплитска ударна бригада',
@@ -825,7 +825,7 @@ const mk: Record<string, UnitText> = {
   },
   '17-slavonska-brigada': {
     name: '17-та славонска ударна бригада',
-    description: 'Формирана на 30 декември 1942 кај Воќин. Загинати и преживеани борци, по општини.',
+    description: 'Формирана на 30 декември 1942 кај Воќин. Загинати и преживеани борци, по општини. Покрај нив и борците на бригадата од други книги.',
   },
   '25-srpska-divizija': {
     name: '25-та српска ударна дивизија',
@@ -856,7 +856,7 @@ const mk: Record<string, UnitText> = {
   },
   '19-bircanska-brigada': {
     name: '19-та бирчанска бригада',
-    description: 'Формирана на 24 октомври 1943 во Власеница. Борци на бригадата.',
+    description: 'Формирана на 24 октомври 1943 во Власеница. Борци на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '2-krajiska-brigada': {
     name: '2-ра краишка ударна бригада',
@@ -864,7 +864,7 @@ const mk: Record<string, UnitText> = {
   },
   'tuzlanski-odred': {
     name: 'Тузлански партизански одред',
-    description: 'Формиран на 24 октомври 1943 во Тузла. Борците на одредот, многумина со фотографија.',
+    description: 'Формиран на 24 октомври 1943 во Тузла. Борците на одредот, многумина со фотографија. Покрај нив и борците на одредот од други книги.',
   },
   'uzicki-odred': {
     name: 'Ужички партизански одред "Димитрије Туцовиќ"',
@@ -873,7 +873,7 @@ const mk: Record<string, UnitText> = {
   '14-srpska-brigada': {
     name: '14-та српска ударна бригада',
     description:
-      'Формирана на 17 јуни 1944 во Рибаре кај Ѓунис. Загинати борци и старешини од Нишкиот одред и од 14-та српска бригада.',
+      'Формирана на 17 јуни 1944 во Рибаре кај Ѓунис. Загинати борци и старешини од Нишкиот одред и од 14-та српска бригада. Покрај нив и борците на бригадата од други книги.',
   },
   '7-crnogorska-brigada': {
     name: '7-ма црногорска младинска бригада "Будо Томовиќ"',
@@ -924,7 +924,7 @@ const mk: Record<string, UnitText> = {
   },
   '8-crnogorska-brigada': {
     name: '8-ма црногорска бригада',
-    description: 'Формирана на 25 февруари 1944 во Беране. Загинати борци и старешини, и дополнителен список на загинатите од Уб.',
+    description: 'Формирана на 25 февруари 1944 во Беране. Загинати борци и старешини, и дополнителен список на загинатите од Уб. Покрај нив и борците на бригадата од други книги.',
   },
   'druga-proleterska-brigada': {
     name: 'Втора пролетерска бригада',
@@ -934,7 +934,7 @@ const mk: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4-та пролетерска црногорска бригада',
     description:
-      'Формирана на 10 јуни 1942. Борците на денот на формирањето и во битката на Сутјеска, старешините на бригадата и народните херои, и борци и старешини загинати од 1942 до 1945.',
+      'Формирана на 10 јуни 1942. Борците на денот на формирањето и во битката на Сутјеска, старешините на бригадата и народните херои, и борци и старешини загинати од 1942 до 1945. Покрај нив и борците на бригадата од други книги.',
   },
   '5-proleterska-brigada': {
     name: '5-та пролетерска црногорска бригада',
@@ -999,12 +999,12 @@ const mk: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18-та хрватска источнобосанска бригада',
     description:
-      'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци и старешини на бригадата.',
+      'Формирана на 10 октомври 1943 кај Тузла, а прогласена на 17 октомври во Хусино. Борци и старешини на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '11-dalmatinska-brigada': {
     name: '11-та далматинска бригада',
     description:
-      'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци и старешините на штабовите и командите.',
+      'Формирана на 2 октомври 1943 на Биоково. Загинати, исчезнати и преживеани борци и старешините на штабовите и командите. Покрај нив и борците на бригадата од други книги.',
   },
   '12-krajiska-brigada': {
     name: '12-та краишка бригада',
@@ -1019,7 +1019,7 @@ const mk: Record<string, UnitText> = {
   '14-srednjobosanska-brigada': {
     name: '14-та среднобосанска бригада',
     description:
-      'Формирана на 17 октомври 1943 на Цер кај Прњавор. Загинати, починати и исчезнати борци, и борци што ја преживеаја војната.',
+      'Формирана на 17 октомври 1943 на Цер кај Прњавор. Загинати, починати и исчезнати борци, и борци што ја преживеаја војната. Покрај нив и борците на бригадата од други книги.',
   },
   '3-vojvodjanska-brigada': {
     name: '3-та војводинска бригада',
@@ -1089,7 +1089,7 @@ const mk: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Томшичева бригада',
     description:
-      'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на единиците од кои настана и борци на бригадата до крајот на војната.',
+      'Формирана на 16 јули 1942 во Цеста во Кочевско. Борци на единиците од кои настана и борци на бригадата до крајот на војната. Покрај нив и борците на бригадата од други книги.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1-ва словенечка артилериска бригада',
@@ -1134,7 +1134,7 @@ const mk: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19-та севернодалматинска дивизија',
     description:
-      'Формирана на 11 октомври 1943 во Биовичино Село во Буковица. Командантите и комесарите на дивизијата и бригадите, народните херои и загинатите и починатите борци на дивизијата.',
+      'Формирана на 11 октомври 1943 во Биовичино Село во Буковица. Командантите и комесарите на дивизијата и бригадите, народните херои и загинатите и починатите борци на дивизијата. Покрај нив и борците на дивизијата од други книги.',
   },
   '21-srpska-brigada': {
     name: '21-ва српска бригада',
@@ -1144,7 +1144,7 @@ const mk: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14-та херцеговска бригада',
     description:
-      'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата, загинатите и командниот состав.',
+      'Формирана на 4 септември 1944 кај Љубиње, како младинска бригада. Сите борци што поминале низ бригадата, загинатите и командниот состав. Покрај нив и борците на бригадата од други книги.',
   },
   '5-vojvodjanska-brigada': {
     name: '5-та војводинска бригада',
@@ -1189,12 +1189,12 @@ const mk: Record<string, UnitText> = {
   '12-srpska-brigada': {
     name: '12-та српска бригада',
     description:
-      'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и починатите борци и раководители на бригадата.',
+      'Формирана на 22 мај 1944 на Острозуб, јужно од Бистрица. Загинатите и починатите борци и раководители на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '20-srpska-brigada': {
     name: '20-та српска бригада',
     description:
-      'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и починатите борци и раководители на бригадата.',
+      'Формирана на 19 август 1944 над селото Бучје кај Књажевац. Загинатите и починатите борци и раководители на бригадата. Покрај нив и борците на бригадата од други книги.',
   },
   '1-konjicka-brigada': {
     name: '1-ва коњаничка бригада',
@@ -1224,7 +1224,7 @@ const mk: Record<string, UnitText> = {
   '34-divizija': {
     name: '34-та дивизија',
     description:
-      'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади и командниот состав.',
+      'Формирана на 30 јануари 1944 на Жумберак и во Покупље. Загинатите борци и раководители на дивизијата и нејзините бригади и командниот состав. Покрај нив и борците на дивизијата од други книги.',
   },
   '4-sandzacka-brigada': {
     name: '4-та санџачка бригада',
@@ -1274,12 +1274,12 @@ const mk: Record<string, UnitText> = {
   'zagrebacki-odred': {
     name: 'Загрепски партизански одред',
     description:
-      'Формиран на 13 септември 1943 на Загрепска Гора. Список на борците на одредот: село, општина и судбина.',
+      'Формиран на 13 септември 1943 на Загрепска Гора. Список на борците на одредот: село, општина и судбина. Покрај нив и борците на одредот од други книги.',
   },
   'mosorski-odred': {
     name: 'Мосорски партизански одред',
     description:
-      'Формиран на 21 февруари 1942 на Мосор, повторно на 11 октомври 1943, расформиран на 10 ноември 1944. Сите борци на одредот 1942–1944, со кратки биографии, и раководниот кадар на одредот.',
+      'Формиран на 21 февруари 1942 на Мосор, повторно на 11 октомври 1943, расформиран на 10 ноември 1944. Сите борци на одредот 1942–1944, со кратки биографии, и раководниот кадар на одредот. Покрај нив и борците на одредот од други книги.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Туропољско-посавски партизански одред',
@@ -1304,7 +1304,7 @@ const mk: Record<string, UnitText> = {
   '11-krajiska-brigada': {
     name: '11-та краишка (козарачка) бригада',
     description:
-      'Формирана на 23 август 1943 на Козара, од Козарскиот НОП одред. Загинатите борци на бригадата, по општини, и список на борките.',
+      'Формирана на 23 август 1943 на Козара, од Козарскиот НОП одред. Загинатите борци на бригадата, по општини, и список на борките. Покрај нив и борците на бригадата од други книги.',
   },
   '3-banijska-brigada': {
     name: '3-та банијска бригада',
@@ -1314,7 +1314,7 @@ const mk: Record<string, UnitText> = {
   'macvanski-odred': {
     name: 'Мачвански (Подрински) партизански одред',
     description:
-      'Формиран на 16 јули 1941 на Бубања кај Глушци во Мачва; од август Подрински партизански одред. Борците на одредот од јули 1941 до март 1942, по местата од кои дошле.',
+      'Формиран на 16 јули 1941 на Бубања кај Глушци во Мачва; од август Подрински партизански одред. Борците на одредот од јули 1941 до март 1942, по местата од кои дошле. Покрај нив и борците на одредот од други книги.',
   },
   'posavski-odred': {
     name: 'Посавски партизански одред',
@@ -1324,7 +1324,7 @@ const mk: Record<string, UnitText> = {
   '51-divizija': {
     name: '51-ва војводинска дивизија',
     description:
-      'Формирана на 31 октомври 1944 во Нови Сад, од 7-ма, 8-ма и 12-та војводинска бригада. Борците на дивизијата загинати од формирањето до крајот на војната, мај 1945, и исчезнати во Батинската битка.',
+      'Формирана на 31 октомври 1944 во Нови Сад, од 7-ма, 8-ма и 12-та војводинска бригада. Борците на дивизијата загинати од формирањето до крајот на војната, мај 1945, и исчезнати во Батинската битка. Покрај нив и борците на дивизијата од други книги.',
   },
   'vrhovni-stab': {
     name: 'Врховен штаб на НОВ и ПОЈ',
@@ -1458,7 +1458,7 @@ const mk: Record<string, UnitText> = {
   },
   'cacanski-odred': {
     name: 'Чачански партизански одред „Д-р Драгиша Мишовиќ“',
-    description: 'Формиран на 6 јули 1941 во Кулиновци кај Чачак. Загинатите борци на одредот, по краеви и села.',
+    description: 'Формиран на 6 јули 1941 во Кулиновци кај Чачак. Загинатите борци на одредот, по краеви и села. Покрај нив и борците на одредот од други книги.',
   },
   'mostarski-bataljon': {
     name: 'Мостарски баталјон',
@@ -1522,11 +1522,11 @@ const mk: Record<string, UnitText> = {
 const en: Record<string, UnitText> = {
   'prva-licka-brigada': {
     name: '1st Lika Proletarian Brigade "Marko Orešković"',
-    description: 'Formed on 8 July 1942 at the source of the Mrežnica.',
+    description: 'Formed on 8 July 1942 at the source of the Mrežnica. Also fighters of the brigade named in other books.',
   },
   'prva-proleterska-brigada': {
     name: '1st Proletarian People’s Liberation Assault Brigade',
-    description: 'Formed on 21 December 1941.',
+    description: 'Formed on 21 December 1941. Also fighters of the brigade named in other books.',
   },
   'ljubljanska-brigada': {
     name: '10th Slovene People’s Liberation Assault Brigade "Ljubljanska"',
@@ -1534,7 +1534,7 @@ const en: Record<string, UnitText> = {
   },
   'druga-licka-brigada': {
     name: '2nd Lika Proletarian Brigade',
-    description: 'Formed on 18 August 1942 in Laudonov Gaj. Partisans who were killed, died or went missing, those who survived the war, and the officers of the brigade and battalion staffs.',
+    description: 'Formed on 18 August 1942 in Laudonov Gaj. Partisans who were killed, died or went missing, those who survived the war, and the officers of the brigade and battalion staffs. Also fighters of the brigade named in other books.',
   },
   'treca-proleterska-brigada': {
     name: '3rd Proletarian (Sandžak) Brigade',
@@ -1546,7 +1546,7 @@ const en: Record<string, UnitText> = {
   },
   '2-dalmatinska-brigada': {
     name: '2nd Dalmatian Proletarian Assault Brigade',
-    description: 'Formed on 3 October 1942. Members of the brigade, and the staffs and commands of the brigade, its battalions and companies.',
+    description: 'Formed on 3 October 1942. Members of the brigade, and the staffs and commands of the brigade, its battalions and companies. Also fighters of the brigade named in other books.',
   },
   '4-splitska-brigada': {
     name: '4th Split Assault Brigade',
@@ -1583,7 +1583,7 @@ const en: Record<string, UnitText> = {
   },
   '17-slavonska-brigada': {
     name: '17th Slavonian Assault Brigade',
-    description: 'Formed on 30 December 1942 near Voćin. The fallen and the survivors, by municipality.',
+    description: 'Formed on 30 December 1942 near Voćin. The fallen and the survivors, by municipality. Also fighters of the brigade named in other books.',
   },
   '25-srpska-divizija': {
     name: '25th Serbian Assault Division',
@@ -1614,7 +1614,7 @@ const en: Record<string, UnitText> = {
   },
   '19-bircanska-brigada': {
     name: '19th Birač Brigade',
-    description: 'Formed on 24 October 1943 in Vlasenica. Members of the brigade.',
+    description: 'Formed on 24 October 1943 in Vlasenica. Members of the brigade. Also fighters of the brigade named in other books.',
   },
   '2-krajiska-brigada': {
     name: '2nd Krajina Assault Brigade',
@@ -1622,7 +1622,7 @@ const en: Record<string, UnitText> = {
   },
   'tuzlanski-odred': {
     name: 'Tuzla Partisan Detachment',
-    description: 'Formed on 24 October 1943 in Tuzla. Members of the detachment, many with a photograph.',
+    description: 'Formed on 24 October 1943 in Tuzla. Members of the detachment, many with a photograph. Also fighters of the detachment named in other books.',
   },
   'uzicki-odred': {
     name: 'Užice Partisan Detachment "Dimitrije Tucović"',
@@ -1631,7 +1631,7 @@ const en: Record<string, UnitText> = {
   '14-srpska-brigada': {
     name: '14th Serbian Assault Brigade',
     description:
-      'Formed on 17 June 1944 in Ribare near Đunis. Fallen Partisans and officers of the Niš Detachment and the 14th Serbian Brigade.',
+      'Formed on 17 June 1944 in Ribare near Đunis. Fallen Partisans and officers of the Niš Detachment and the 14th Serbian Brigade. Also fighters of the brigade named in other books.',
   },
   '7-crnogorska-brigada': {
     name: '7th Montenegrin Youth Brigade "Budo Tomović"',
@@ -1683,7 +1683,7 @@ const en: Record<string, UnitText> = {
   },
   '8-crnogorska-brigada': {
     name: '8th Montenegrin Brigade',
-    description: 'Formed on 25 February 1944 in Berane. Fallen Partisans and officers, and a further list of the fallen from Ub.',
+    description: 'Formed on 25 February 1944 in Berane. Fallen Partisans and officers, and a further list of the fallen from Ub. Also fighters of the brigade named in other books.',
   },
   'druga-proleterska-brigada': {
     name: '2nd Proletarian Brigade',
@@ -1693,7 +1693,7 @@ const en: Record<string, UnitText> = {
   '4-proleterska-brigada': {
     name: '4th Proletarian Montenegrin Brigade',
     description:
-      'Formed on 10 June 1942. Partisans on the day it was formed and in the Battle of the Sutjeska, the brigade’s officers and People’s Heroes, and Partisans and officers killed from 1942 to 1945.',
+      'Formed on 10 June 1942. Partisans on the day it was formed and in the Battle of the Sutjeska, the brigade’s officers and People’s Heroes, and Partisans and officers killed from 1942 to 1945. Also fighters of the brigade named in other books.',
   },
   '5-proleterska-brigada': {
     name: '5th Proletarian Montenegrin Brigade',
@@ -1758,12 +1758,12 @@ const en: Record<string, UnitText> = {
   '18-hrvatska-brigada': {
     name: '18th Croatian East Bosnian Brigade',
     description:
-      'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members and officers of the brigade.',
+      'Formed on 10 October 1943 near Tuzla and proclaimed on 17 October in Husino. Members and officers of the brigade. Also fighters of the brigade named in other books.',
   },
   '11-dalmatinska-brigada': {
     name: '11th Dalmatian Brigade',
     description:
-      'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived, and the officers of its staffs and companies.',
+      'Formed on 2 October 1943 on Biokovo. Partisans who were killed, went missing or survived, and the officers of its staffs and companies. Also fighters of the brigade named in other books.',
   },
   '12-krajiska-brigada': {
     name: '12th Krajina Brigade',
@@ -1778,7 +1778,7 @@ const en: Record<string, UnitText> = {
   '14-srednjobosanska-brigada': {
     name: '14th Central Bosnian Brigade',
     description:
-      'Formed on 17 October 1943 on Cer near Prnjavor. Partisans who were killed, died or went missing, and those who survived the war.',
+      'Formed on 17 October 1943 on Cer near Prnjavor. Partisans who were killed, died or went missing, and those who survived the war. Also fighters of the brigade named in other books.',
   },
   '3-vojvodjanska-brigada': {
     name: '3rd Vojvodina Brigade',
@@ -1848,7 +1848,7 @@ const en: Record<string, UnitText> = {
   'tomsiceva-brigada': {
     name: 'Tomšič Brigade',
     description:
-      'Formed on 16 July 1942 at Cesta in the Kočevje region. Partisans of the units it grew from, and the brigade’s members to the end of the war.',
+      'Formed on 16 July 1942 at Cesta in the Kočevje region. Partisans of the units it grew from, and the brigade’s members to the end of the war. Also fighters of the brigade named in other books.',
   },
   '1-slovenska-artilerijska-brigada': {
     name: '1st Slovene Artillery Brigade',
@@ -1893,7 +1893,7 @@ const en: Record<string, UnitText> = {
   '19-sjevernodalmatinska-divizija': {
     name: '19th North Dalmatian Division',
     description:
-      'Formed on 11 October 1943 at Biovičino Selo in Bukovica. The commanders and commissars of the division and its brigades, its People’s Heroes, and its Partisans who were killed or died.',
+      'Formed on 11 October 1943 at Biovičino Selo in Bukovica. The commanders and commissars of the division and its brigades, its People’s Heroes, and its Partisans who were killed or died. Also fighters of the division named in other books.',
   },
   '21-srpska-brigada': {
     name: '21st Serbian Brigade',
@@ -1903,7 +1903,7 @@ const en: Record<string, UnitText> = {
   '14-hercegovacka-brigada': {
     name: '14th Herzegovina Brigade',
     description:
-      'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, its fallen, and its command.',
+      'Formed on 4 September 1944 near Ljubinje as a youth brigade. Everyone who served in it, its fallen, and its command. Also fighters of the brigade named in other books.',
   },
   '5-vojvodjanska-brigada': {
     name: '5th Vojvodina Brigade',
@@ -1948,12 +1948,12 @@ const en: Record<string, UnitText> = {
   '12-srpska-brigada': {
     name: '12th Serbian Brigade',
     description:
-      'Formed on 22 May 1944 on Mount Ostrozub, south of Bistrica. The brigade’s soldiers and officers who were killed or died.',
+      'Formed on 22 May 1944 on Mount Ostrozub, south of Bistrica. The brigade’s soldiers and officers who were killed or died. Also fighters of the brigade named in other books.',
   },
   '20-srpska-brigada': {
     name: '20th Serbian Brigade',
     description:
-      'Formed on 19 August 1944 above the village of Bučje near Knjaževac. The brigade’s soldiers and officers who were killed or died.',
+      'Formed on 19 August 1944 above the village of Bučje near Knjaževac. The brigade’s soldiers and officers who were killed or died. Also fighters of the brigade named in other books.',
   },
   '1-konjicka-brigada': {
     name: '1st Cavalry Brigade',
@@ -1983,7 +1983,7 @@ const en: Record<string, UnitText> = {
   '34-divizija': {
     name: '34th Division',
     description:
-      'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades, and its command.',
+      'Formed on 30 January 1944 in Žumberak and Pokuplje. The fallen soldiers and officers of the division and its brigades, and its command. Also fighters of the division named in other books.',
   },
   '4-sandzacka-brigada': {
     name: '4th Sandžak Brigade',
@@ -2033,12 +2033,12 @@ const en: Record<string, UnitText> = {
   'zagrebacki-odred': {
     name: 'Zagreb Partisan Detachment',
     description:
-      'Formed on 13 September 1943 on Zagrebačka Gora. The roll of its fighters: village, municipality and fate.',
+      'Formed on 13 September 1943 on Zagrebačka Gora. The roll of its fighters: village, municipality and fate. Also fighters of the detachment named in other books.',
   },
   'mosorski-odred': {
     name: 'Mosor Partisan Detachment',
     description:
-      'Formed on 21 February 1942 on Mosor, again on 11 October 1943, disbanded on 10 November 1944. All its fighters, 1942–1944, with short lives, and its leaders.',
+      'Formed on 21 February 1942 on Mosor, again on 11 October 1943, disbanded on 10 November 1944. All its fighters, 1942–1944, with short lives, and its leaders. Also fighters of the detachment named in other books.',
   },
   'turopoljsko-posavski-odred': {
     name: 'Turopolje-Posavina Partisan Detachment',
@@ -2063,7 +2063,7 @@ const en: Record<string, UnitText> = {
   '11-krajiska-brigada': {
     name: '11th Krajina (Kozara) Brigade',
     description:
-      'Formed on 23 August 1943 on Kozara, from the Kozara Partisan Detachment. The brigade’s fallen, by municipality, and a list of its women fighters.',
+      'Formed on 23 August 1943 on Kozara, from the Kozara Partisan Detachment. The brigade’s fallen, by municipality, and a list of its women fighters. Also fighters of the brigade named in other books.',
   },
   '3-banijska-brigada': {
     name: '3rd Banija Brigade',
@@ -2073,7 +2073,7 @@ const en: Record<string, UnitText> = {
   'macvanski-odred': {
     name: 'Mačva (Podrinje) Partisan Detachment',
     description:
-      'Formed on 16 July 1941 at Bubanja near Glušci in Mačva; from August the Podrinje Partisan Detachment. Its fighters from July 1941 to March 1942, by the place they came from.',
+      'Formed on 16 July 1941 at Bubanja near Glušci in Mačva; from August the Podrinje Partisan Detachment. Its fighters from July 1941 to March 1942, by the place they came from. Also fighters of the detachment named in other books.',
   },
   'posavski-odred': {
     name: 'Posavina Partisan Detachment',
@@ -2083,7 +2083,7 @@ const en: Record<string, UnitText> = {
   '51-divizija': {
     name: '51st Vojvodina Division',
     description:
-      'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen from its formation to the end of the war, May 1945, and its missing in the Battle of Batina.',
+      'Formed on 31 October 1944 in Novi Sad, from the 7th, 8th and 12th Vojvodina Brigades. The division’s fallen from its formation to the end of the war, May 1945, and its missing in the Battle of Batina. Also fighters of the division named in other books.',
   },
   'vrhovni-stab': {
     name: 'Supreme Headquarters of the NOV and POJ',
@@ -2217,7 +2217,7 @@ const en: Record<string, UnitText> = {
   },
   'cacanski-odred': {
     name: 'Čačak Partisan Detachment “Dr Dragiša Mišović”',
-    description: 'Formed on 6 July 1941 at Kulinovci near Čačak. The detachment’s fallen, by district and village.',
+    description: 'Formed on 6 July 1941 at Kulinovci near Čačak. The detachment’s fallen, by district and village. Also fighters of the detachment named in other books.',
   },
   'mostarski-bataljon': {
     name: 'Mostar Battalion',
