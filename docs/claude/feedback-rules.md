@@ -71,3 +71,23 @@ Each is a task on the ops board (51-61); this list says what each one does once 
    until then the lead does it at the window.
 11. **Questions and corrections in plain mail**: a mail that asks (Rubeša's "Podatak") is labelled "waiting for an answer"
    with a drafted reply, apart from one that corrects a card.
+
+## State of the eleven (2026-11-24)
+
+- **1, 2, 9, 11 on /pregled**: `quality/pregled_predlozi.py` (local, with `make_pregled.py`) adds rows to "Pomenuto u
+  formama", each with its "Prihvatam" tick: Predlog (a field: added where the card is empty, put first where the family
+  differs, a duty or unit added to the card's), Životni put (a dated step), Bitka (a war event, which make_war_events then
+  writes by itself), Jedinica (into a unit on the site, or under the name: rule 9 for a brigade, division, odred or
+  corps), Rodbina (each relative looked up through the site's search on :3000; "isti otac" first; a civilian gets no
+  record), Pitanje (a mail that asks). Only his own sentences are read for his fields and battles: a sentence naming a
+  relative tells of the relative. Test forms (TEST, PROBA, "(Claude)") are left out. Applying stays 05's.
+- **3**: in the site's search (`lib/soldierSearch.ts`, NAME_VARIANTS, 4cc0b214); matching (`find_identities.py`,
+  `match_references.py`) not yet.
+- **4**: in the forms (4cc0b214), live with the next release.
+- **5**: `make_war_events.py` (3c534cf4): kozara, neretva, sutjeska, drvar, beograd, srem, trst; the data at 05's chain.
+- **6**: in Pošta (`posta.popravi_slova`, `popravi_godinu`, claude/admin-posta e4edf7b5).
+- **7**: a ticked rule's "Ista greška još u N zapisa" on /pregled is filled through the site's search (needs :3000);
+  applying the fixes stays 05's.
+- **8**: not yet (04-PHOTOS's).
+- **10**: the label moves are a step of the release window (ops `releases/README.md`); the panel moving them itself waits
+  for the user's Google permission to change labels.
