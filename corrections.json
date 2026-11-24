@@ -2047231,5 +2047231,39 @@
       "birth_place": "Kovanj, Rogatica"
     },
     "reason": "The entry prints \"aprila 1945. godine poginuo na Sremskom frontu\" and \"u selu Kovanju nadomak Rogatice\": the reader missed the date before the verb and kept the village in its case (the user's note on /pregled d4151b41ea)"
+  },
+  {
+    "id": 317181,
+    "action": "reference",
+    "soldier_id": "0109000032",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000050",
+    "ref_name": "Antolović Josip",
+    "reason": "Mail 2026-11-24 01:01, family (unuk, no name for the card): commander of the 12. slavonska proleterska udarna brigada 10.2.1943-1.2.1944, then of the 33. divizija of the X. zagrebački korpus from January 1944; d. 28.1.1999 in Zagreb; his photo on Psunj"
+  },
+  {
+    "id": 317182,
+    "action": "edit",
+    "soldier_id": "0109000032",
+    "fields": {
+      "rank": "desetar, vodnik, komandir čete, komandant brigade, komandant divizije",
+      "unit_detail": "12. slavonska proleterska udarna brigada; 33. divizija",
+      "death_type": "umro",
+      "death_date": "28.01.1999",
+      "death_place": "Zagreb"
+    },
+    "reason": "Mail 2026-11-24 01:01, family (unuk, no name for the card): the same"
+  },
+  {
+    "id": 317183,
+    "action": "edit",
+    "soldier_id": "0140001000",
+    "fields": {
+      "fathers_name": "Božidar",
+      "birth_year": "1924",
+      "birth_place": "Zemun",
+      "occupation": "profesor"
+    },
+    "reason": "Mail 2026-11-24 00:39 (the site's mail fallback), family (sin, no name for the card): Relja Valtrović of the 42. vazduhoplovna divizija, father Božidar (the book prints \"Đ\"), b. 1924 in Zemun, a teacher after the war"
   }
 ]

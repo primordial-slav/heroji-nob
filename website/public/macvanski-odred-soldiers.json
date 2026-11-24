@@ -603,8 +603,12 @@
     "source_url": "https://znaci.org/00001/48_102.htm",
     "soldier_id": "0109000032",
     "ethnicity": "Hrvat",
-    "rank": "desetar, vodnik, komandir čete",
+    "rank": "desetar, vodnik, komandir čete, komandant brigade, komandant divizije",
     "party": "KPJ",
+    "unit_detail": "12. slavonska proleterska udarna brigada; 33. divizija",
+    "death_type": "umro",
+    "death_date": "28.01.1999",
+    "death_place": "Zagreb",
     "other_sources": [
       {
         "soldier_id": "9002000013",
@@ -613,9 +617,23 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=32",
         "source_page": 28,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9990000050",
+        "name": "Antolović Josip",
+        "additional_info": "Komandant 12. slavonske proleterske udarne brigade od 10. 2. 1943. do 1. 2. 1944, zatim od januara 1944. komandant 33. divizije 10. zagrebačkog korpusa. Umro 28. 1. 1999. u Zagrebu.",
+        "source_url": "porodica:9990000050",
+        "ref_book": "porodicna-arhiva"
       }
     ],
-    "birth_date": "05.03.1916"
+    "birth_date": "05.03.1916",
+    "family_fields": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "rank",
+      "unit_detail"
+    ]
   },
   {
     "last_name": "Antonić",

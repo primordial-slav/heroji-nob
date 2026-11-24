@@ -354,8 +354,18 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0069002027', // Čolnik Karel of Rošpoh (Maribor), Bračičeva brigada; a historian's form of 2026-11-21 08:23
     // (author of "Anzac Guerrillas", co-author of "The Greatest Escape"), sent in English, translated here; his three
-    // photos (a portrait from the 1950 Australian immigration file, the standing photo cut from Jože Petek's photograph
-    // of the escape, that whole photograph) were lost by the form's /api/prilog on Vercel and never arrived
+    // photos (lost by the form's /api/prilog on Vercel) came again by mail on 2026-11-23: a portrait from the 1950 Australian
+    // immigration file, the standing photo cut from Jože Petek's photograph of the escape, that whole photograph
+    photo: '0069002027-1.jpg',
+    photoCaption: 'Iz australijskog useljeničkog dosijea, 1950',
+    pieces: [
+      { kind: 'photo', file: '0069002027-2.jpg', caption: 'Isečak sa fotografije Jože Peteka, septembar 1944' },
+      {
+        kind: 'photo',
+        file: '0069002027-3.jpg',
+        caption: 'Kolona odbeglih ratnih zarobljenika i partizanske pratnje, boraca pohorske čete Lackovog odreda, na putu kroz Savinjsku dolinu. Fotografija: Jože Petek',
+      },
+    ],
     text: 'Bio je u pratnji pod komandom Franca Grudna koja je od 1. do 7. septembra 1944. sprovela 105 odbeglih ratnih zarobljenika iz zemalja Komonvelta i Francuske sa Pohorja do Save. Sa suprugom Anicom iselio se 1950. u Melburn, u Australiji. Godine 1985. pojavio se u dokumentarnom filmu Televizije Ljubljana i australijskog SBS-a „Pot k svobodi” („March to Freedom”).',
     from: 'E. Goldrick, istoričar',
     origin: 'visitor',
@@ -903,6 +913,94 @@ export const familyContributions: FamilyContribution[] = [
     text: 'Ivanka Ives Samardžić rođena je u Mostaru 25. januara 1925. Završila je osmi razred gimnazije u Sarajevu. Članica SKOJ-a bila je od 1943. Ustaše su je uhapsile 24. marta 1945. i posle nekoliko dana obesile tokom masovnog pogubljenja na Marijin Dvoru u Sarajevu. Prema izvorima, na suđenju se ponašala dostojanstveno.',
     from: '„Bitka na Sutjesci”',
     origin: 'facebook',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0109000032', // Antolović Josip "Joka Hrvat", narodni heroj, Mačvanski odred: his grandson's mail of 2026-11-24 01:01
+    // (no name given; Porodična arhiva 9990000050 referenced; rows by 317182); his photo on Psunj, never online
+    photo: '0109000032-1.jpg',
+    photoCaption: 'Na obroncima Psunja, kao komandant 12. slavonske brigade',
+    pieces: [{ kind: 'photo', file: '0109000032-2.jpg', caption: 'Na obroncima Psunja' }],
+    text: 'Od 10. veljače 1943. do 1. veljače 1944. bio je zapovjednik 12. slavonske proleterske udarne brigade, a od siječnja 1944. zapovjednik 33. divizije X. zagrebačkog korpusa. Njemu osobno najviše je značila upravo 12. slavonska, jer je u nju dao najviše. Umro je 28. siječnja 1999. u Zagrebu.',
+    from: 'iz porodične arhive', // no name in the mail: no name, no relation
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132037115', // Perkov Filicije Ante of Primošten Burnji, census part Hrvatska: his nephew's son's mail of 2026-11-24
+    // (the site's mail fallback, no permission lines: no name); a book's entry and his portrait; rows by override
+    photo: '0132037115-1.jpg',
+    pieces: [
+      {
+        kind: 'document',
+        file: '0132037115-2.jpg',
+        caption: 'Iz knjige',
+        transcripts: ['PERKOV ANTE Filicija — rođen 1918. u Dragi — Burnji Primošten, zemljoradnik, Hrvat. U Skoj primljen 1942, član KP 1943. Odlaskom u NOV 1943. stupio u sastav 8. šibenske brigade 20. divizije. Te godine poginuo kao borac iste brigade u borbama kod Livna.'],
+      },
+    ],
+    text: 'Prema obiteljskoj predaji, do kraja 1942. radio je u Njemačkoj, u tvornici Mercedesa. Kad je čuo za pokolj na području Primoštena, u kojem mu je strijeljan otac Filicijo, vratio se i s bratom Mladinom otišao u partizane. Obojica su poginula 1943.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0133021194', // Bandov (census: Bondov) Mato Srećko of Grgurići (Livno), census part BiH: a reader's mail of 2026-11-23
+    // 21:46 with the entry of Brčić and Bogovac's book (no "Bondov" family in that region); surname, unit and death by override
+    pieces: [
+      {
+        kind: 'document',
+        file: '0133021194-1.jpg',
+        caption: 'Rafael Brčić, Mile Bogovac, „Livanjski kraj u revolucionarnom radničkom pokretu i NOB”, Sarajevo 1979, spisak poginulih boraca',
+        transcripts: ['BANDOV, Matin, SREĆKO, iz Grgurića, rođen 1923, zemljoradnik, Hrvat, u NOB stupio jula 1942, puškomitraljezac, poginuo u sastavu 10. hercegovačke brigade aprila 1943. kod Stoca.'],
+      },
+    ],
+    text: 'Pravo prezime je Bandov; Bondova u tom kraju nema.',
+    from: 'S. Brešić',
+    origin: 'visitor',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0140001000', // Valtrović Đ Relja, 42. vazduhoplovna divizija: his son's mail of 2026-11-24 00:39 (the site's mail fallback,
+    // no permission lines: no name); father, birth and occupation by 317183
+    text: 'Divan suprug i otac, i profesor koga su volele generacije đaka.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961385', // Ujević Ante Zdravko of Krivodol, Biokovski odred: his grandson's mail of 2026-11-24 08:21 (the site's mail
+    // fallback, no permission lines: no name; Porodična arhiva 9990000045); his photo with his brother Mate, his face the portrait
+    photo: '0122961385-1.jpg',
+    photoCaption: 'Sa bratom Matom',
+    pieces: [{ kind: 'photo', file: '0122961385-2.jpg', caption: 'Sa bratom Matom Ujevićem, narodnim herojem' }],
+    text: 'Godine 1943. s majkom Mareškom odlazi u Biokovo, zbog opasnosti od kazne po okružnici 3C, jer su ostali u obitelji, brat Mate i sestre Nediljka (kasnije udana Radivčić) i Antica (kasnije udana Kujundžić, supruga Nedjeljka Kujundžića, autora knjige „Imotska krajina u NOB”), već bili u partizanima; sve troje sudjelovali su u bitkama na Neretvi i Sutjesci. Pridružuje se kao kurir partizanskom odredu na području Kozice. Sudjeluje u borbama i teško je ranjen u borbi s Nijemcima na Korčuli 1944, kod Blata. Odatle je prebačen na Vis, a kasnije u savezničku bolnicu u Italiji. Završava srednju školu za djecu borce na Hvaru, a zatim u Zagrebu Pravni fakultet.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961386', // Arslanagić Hasana Mustafa of Arslanagića Most (Trebinje): his nephew's mail of 2026-11-24 (the site's mail
+    // fallback, no permission lines: no name; Porodična arhiva 9990000046)
+    text: 'Kao gimnazijalac u Trebinju bio je član SKOJ-a. Obitelj se preselila u Dubrovnik, gdje je radio ilegalno. Talijani su ga uhapsili i zatvorili na Mamuli, a zatim prebacili u Bari ili Brindisi. Nakon kapitulacije Italije talijanski komunisti su ga vratili, navodno u Istru, gdje je, navodno, bio politički komesar. Nosilac je Partizanske spomenice 1941. Poslije rata bio je inspektor Jugoslavenskih željeznica i završio višu prometnu školu. Partijsku knjižicu oduzeli su mu 1945, a vratili 1948; sam ju je vratio 1983. Živio je i umro u Dubrovniku, devedesetih godina.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961387', // Kolundžija (Zdujić) Petka Dušanka of Prizren: her daughter's mail of 2026-11-24 (the site's mail fallback, no
+    // permission lines: no name; Porodična arhiva 9990000047; born "8.11.2025" in the mail, read as 1925)
+    text: 'Rođena je kao Dušanka Zdujić. Sa porodicom je radila ilegalno u okupiranom Prizrenu, a početkom 1943. otišla je u partizansku jedinicu u Drenici. Posle rata radila je u CK SKOJ-a, a zatim u socijalnoj i zdravstvenoj zaštiti.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961388', // Kolundžija Petra Mile of Krnjeuša (Bosanski Petrovac): the same daughter's mail of 2026-11-24 (no permission
+    // lines: no name; Porodična arhiva 9990000048; born "12.07.2024" in the mail, read as 1924)
+    text: 'U partizanima je bio od prvog dana ustanka, borac 3. krajiške brigade. Bio je vijećnik Prvog i Drugog zasjedanja ZAVNOBiH-a. Posle rata radio je u SKOJ-u, a kasnije u Beogradu.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961389', // Krišto Ante Ivo "Ivić" of Dobro (Livno): his missing-fighter form of 2026-11-23 22:14, sent as a screenshot
+    // by mail (FormSubmit refused it); a comrade's son and neighbour, text and name allowed (Porodična arhiva 9990000049)
+    text: 'Nosilac Partizanske spomenice 1941. U NOB-u od 1941.',
+    from: 'S. Brešić, sin očevog druga i komšija',
+    origin: 'visitor',
     date: '2026-11',
   },
 ]
