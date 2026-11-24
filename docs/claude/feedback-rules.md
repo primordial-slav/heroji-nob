@@ -11,6 +11,9 @@ A new rule the user gives goes here, with its date and the user's words.
 - A unit an entry names that is on the site takes the record into it; not on the site, it stands under the name
   (`unit_name`) in place of "Borci drugih jedinica" (`scripts/unit_named.py`, the builder of 122; the user, 2026-11-20 and
   2026-11-23). KNOJ's brigades count only where KNOJ is named; the order of battle's misprints are mended (2026-11-24).
+  An entry naming two units on the site or more goes to the first it names, the others in his row (unit_detail); one
+  naming a unit on the site and another goes to the one on the site, the other in his row (the user, 2026-11-24, on
+  Janković Radoš: "1, and count", "for both groups"; `unit_named.unit_of`, `others_named`).
 - What a family tells of a battle is a step of the life line and a line under the facts: Sutjeska, Neretva (any entry
   that says he was in it), Igman (`scripts/make_war_events.py`; the user, 2026-11-23 and 2026-11-24).
 - A life line is drawn from two dated steps (`extract_life_events.shows_line`; 2026-11-23).
