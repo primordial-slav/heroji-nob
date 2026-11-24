@@ -61,7 +61,7 @@ export default function LifeLine({ soldier, entries, unitName, pageOf, onShow }:
       case 'captured': return [t.captured(woman), e.x]
       case 'exchanged': return [t.exchanged(woman), e.x]
       case 'igman': return [t.igman]
-      case 'neretva': return [t.neretva]
+      case 'kozara': case 'neretva': case 'drvar': case 'beograd': case 'srem': case 'trst': return [t[e.k]]
       case 'sutjeska': return [t.sutjeska]
       default: return e.x && t.printedLabels ? [capital(e.x)] : [t[e.k], e.x]   // duty, moved, ill, left
     }

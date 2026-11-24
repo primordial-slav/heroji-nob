@@ -177,7 +177,12 @@ export const sr = {
     exchanged: (woman: boolean): string => (woman ? 'Razmenjena' : 'Razmenjen'),
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Igmanski marš',
+    kozara: 'Bitka na Kozari',
     neretva: 'Bitka na Neretvi',
+    drvar: 'Desant na Drvar',
+    beograd: 'Oslobođenje Beograda',
+    srem: 'Sremski front',
+    trst: 'Borbe za Trst',
     sutjeska: 'Bitka na Sutjesci',
     /** the death as the record has it (death_type): poginuo, umro, nestao, streljan, ubijen */
     fate: (type: string | undefined, woman: boolean): string => {
@@ -264,6 +269,11 @@ export const sr = {
     },
     /** The battle of the Neretva (lib/warEvents.ts): an entry of his says he was in it */
     neretva: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Neretvi, februara i marta 1943.`,
+    kozara: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Kozari, juna i jula 1942.`,
+    drvar: (woman: boolean) => `${woman ? 'Bila' : 'Bio'} je u Drvaru za vreme nemačkog desanta 25. maja 1944.`,
+    beograd: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u oslobođenju Beograda, oktobra 1944.`,
+    srem: (woman: boolean) => `${woman ? 'Borila' : 'Borio'} se na Sremskom frontu, 1944–1945.`,
+    trst: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u borbama za Trst, aprila i maja 1945.`,
     /** The battle of the Sutjeska (lib/warEvents.ts): everyone Borci Sutjeske lists */
     sutjeska: (woman: boolean) => `${woman ? 'Učestvovala' : 'Učestvovao'} je u bici na Sutjesci, maja i juna 1943.`,
     /** "Petrović Milan. Prva lička proleterska brigada, Rajko Šarenac (ur.), str. 42. Knjiga boraca, zapis 0002000042." */

@@ -176,7 +176,12 @@ export const mk: Messages = {
     exchanged: (woman: boolean) => (woman ? 'Разменета' : 'Разменет'),
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Игмански марш',
+    kozara: 'Битка на Козара',
     neretva: 'Битка на Неретва',
+    drvar: 'Десант на Дрвар',
+    beograd: 'Ослободување на Белград',
+    srem: 'Сремски фронт',
+    trst: 'Борби за Трст',
     sutjeska: 'Битка на Сутјеска',
     fate: (type: string | undefined, woman: boolean) => {
       const words: Record<string, [string, string]> = {
@@ -242,6 +247,11 @@ export const mk: Messages = {
     },
     /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
     neretva: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во битката на Неретва во февруари и март 1943.`,
+    kozara: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во битката на Козара во јуни и јули 1942.`,
+    drvar: (woman: boolean) => `За време на германскиот десант на 25 мај 1944 ${woman ? 'била' : 'бил'} во Дрвар.`,
+    beograd: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во ослободувањето на Белград во октомври 1944.`,
+    srem: (woman: boolean) => `Се ${woman ? 'борела' : 'борел'} на Сремскиот фронт 1944–1945.`,
+    trst: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во борбите за Трст во април и мај 1945.`,
     sutjeska: (woman: boolean) => `${woman ? 'Учествувала' : 'Учествувал'} во битката на Сутјеска во мај и јуни 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, стр. ${page}` : ''}. Книга на борците, запис ${id}.`,

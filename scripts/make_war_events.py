@@ -5,6 +5,8 @@ soldier_id -> [WarEvent, ...] in the order they happened, which scripts/prepare-
 
   - igman: the Prva proleterska's column on Igman, 27-28 January 1942 (scripts/make_igman_list.py, build()).
   - neretva: the battle of the Neretva, February and March 1943: every man an entry of whose says he was in it (NERETVA).
+  - kozara (June-July 1942), drvar (the raid of 25 May 1944), beograd (its liberation, October 1944), srem (the Srem
+    front, October 1944 - April 1945), trst (the fighting for Trieste, April-May 1945): the same, by TEXT_EVENTS.
   - sutjeska: the battle of the Sutjeska, May and June 1943: every man an entry of Viktor Kučan's Borci Sutjeske holds
     (borci-sutjeske-<unit>.pdf), his own, merged into his record, or his record's in another unit he is linked to.
     The book is the roll of everyone in the battle, so it is sure.
@@ -45,9 +47,37 @@ FAMILY_SUTJESKA = re.compile(r'\b(?:bitk|bic|bitc|borb)\w*\s+na\s+(?:\w+\s+i\s+)
 # the battle exists, so a unit's being there is not enough
 NERETVA = re.compile(r'\b(?:bitk|bic|bitc|bitak)\w*\s+(?:na|za)\s+Neretv|\bBitk\w*\s+za\s+ranjenike', re.I)
 
+# More of the war's events, the same way: an entry of his that says he took part (the user adopted them 2026-11-24,
+# docs/claude/feedback-rules.md, rule 5), in the order they happened. Belgrade and Trieste count only where he was in
+# the fighting, not "po oslobođenju Beograda vraćen ..." (AFTER)
+TEXT_EVENTS = {
+    'kozara': re.compile(r'\b(?:bitk|bic|bitc|borb|ofanziv)\w*\s+na\s+Kozar|\bkozarsk\w+\s+(?:ofanziv|bitk|bic|epope|proboj)'
+                         r'|\bproboj\w*\s+(?:iz\s+)?(?:neprijateljskog\s+)?(?:obruč\w*\s+)?(?:na|sa|s)\s+Kozar', re.I),
+    'neretva': NERETVA,
+    'drvar': re.compile(r'\bdesant\w*\s+na\s+Drvar|\bdrvarsk\w*\s+desant|\bodbran\w*\s+(?:Vrhovnog\s+štaba\s+)?(?:u|na|kod)\s+Drvar',
+                        re.I),
+    'beograd': re.compile(r'\b(?:oslobođenj|oslobodjenj|oslobađanj|oslobadjanj|borb|bitk|bic|bitc)\w*\s+(?:za\s+)?'
+                          r'(?:oslobođenje\s+|oslobodjenje\s+)?Beograd|\bBeogradsk\w+\s+operacij', re.I),
+    'srem': re.compile(r'\bSremsk\w*\s+front', re.I),
+    'trst': re.compile(r'\b(?:oslobođenj|oslobodjenj|borb|bitk|bic|bitc)\w*\s+(?:za\s+)?(?:oslobođenje\s+|oslobodjenje\s+)?Trst'
+                       r'|\bTr[šs][ćč]ansk\w+\s+operacij', re.I),
+}
+AFTER = re.compile(r'\b(?:po|posle|poslije|nakon|do|od|prije|pre|pred|iza)\s+$', re.I)
+# every event, in the order they happened (a soldier's list is in this order)
+EVENT_ORDER = ['igman', 'kozara', 'neretva', 'sutjeska', 'drvar', 'beograd', 'srem', 'trst']
+
+
+def at_event(s: dict, rx: re.Pattern) -> bool:
+    for e in [s] + list(s.get('other_sources') or []):
+        text = e.get('additional_info') or ''
+        for m in rx.finditer(text):
+            if not AFTER.search(text[max(0, m.start() - 12):m.start()]):
+                return True
+    return False
+
 
 def at_neretva(s: dict) -> bool:
-    return any(NERETVA.search(e.get('additional_info') or '') for e in [s] + list(s.get('other_sources') or []))
+    return at_event(s, NERETVA)
 
 
 def at_sutjeska(s: dict) -> bool:
@@ -72,12 +102,12 @@ def main():
                 events.setdefault(sid, []).append(e)
                 counts['igman'] += 1
         for s in soldiers:
-            if at_neretva(s):
-                events.setdefault(s['soldier_id'], []).append({'e': 'neretva', 'sure': True})
-                counts['neretva'] += 1
+            found = [k for k, rx in TEXT_EVENTS.items() if at_event(s, rx)]
             if at_sutjeska(s):
-                events.setdefault(s['soldier_id'], []).append({'e': 'sutjeska', 'sure': True})
-                counts['sutjeska'] += 1
+                found.append('sutjeska')
+            for kind in sorted(found, key=EVENT_ORDER.index):
+                events.setdefault(s['soldier_id'], []).append({'e': kind, 'sure': True})
+                counts[kind] += 1
         path = OUT / name
         had = path.exists()
         if events:
@@ -91,7 +121,7 @@ def main():
             extract_life_events._war_cache.pop(code, None)
             lines = extract_life_events.write_events({code: (name, soldiers)})
             counts['lines'] += lines.get(name, 0)
-    print(f"igman {counts['igman']}, neretva {counts['neretva']}, sutjeska {counts['sutjeska']}, in {len(written)} unit files ({OUT.relative_to(ROOT)}); "
+    print(', '.join(f'{k} {counts[k]}' for k in EVENT_ORDER) + f", in {len(written)} unit files ({OUT.relative_to(ROOT)}); "
           f"life lines rewritten for those units: {counts['lines']} soldiers")
 
 

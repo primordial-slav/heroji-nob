@@ -168,7 +168,12 @@ export const en: Messages = {
     exchanged: () => 'Exchanged',
     /** the steps of the war's events his unit was part of (lib/warEvents.ts) */
     igman: 'Igman March',
+    kozara: 'Battle of Kozara',
     neretva: 'Battle of the Neretva',
+    drvar: 'Raid on Drvar',
+    beograd: 'Liberation of Belgrade',
+    srem: 'Syrmian Front',
+    trst: 'Battle for Trieste',
     sutjeska: 'Battle of the Sutjeska',
     fate: (type: string | undefined) =>
       ({ poginuo: 'Killed in action', umro: 'Died', nestao: 'Missing', streljan: 'Shot', ubijen: 'Killed', zarobljen: 'Captured' } as Record<string, string>)[type ?? ''] ?? 'Died',
@@ -230,6 +235,11 @@ export const en: Messages = {
     },
     /** The battle of the Sutjeska: everyone Borci Sutjeske lists */
     neretva: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of the Neretva, February–March 1943.`,
+    kozara: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of Kozara, June–July 1942.`,
+    drvar: (woman: boolean) => `${woman ? 'She' : 'He'} was in Drvar during the German airborne raid of 25 May 1944.`,
+    beograd: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the liberation of Belgrade, October 1944.`,
+    srem: (woman: boolean) => `${woman ? 'She' : 'He'} fought on the Syrmian Front, 1944–1945.`,
+    trst: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the fighting for Trieste, April–May 1945.`,
     sutjeska: (woman: boolean) => `${woman ? 'She' : 'He'} took part in the Battle of the Sutjeska, May–June 1943.`,
     citation: (name: string, where: string, page: number | null, id: string) =>
       `${name}. ${where}${page != null ? `, p. ${page}` : ''}. Knjiga boraca, record ${id}.`,
