@@ -60,6 +60,29 @@ def fold(text: str) -> str:
     return re.sub(r'[^a-z ]', '', (text or '').translate(FOLD).lower().replace('dj', 'd')).strip()
 
 
+# Forms of one given name as families and books write them (feedback rule 3, docs/claude/feedback-rules.md; the same
+# groups as the site's search, lib/soldierSearch.ts NAME_VARIANTS), folded as fold() folds. A record found only through
+# such a form carries the doubt "given?" (see grade): sure only with birth year, birthplace and death, else for review
+NAME_VARIANT_GROUPS = [
+    ['mate', 'mato'], ['ive', 'ivo', 'ivan'], ['jure', 'juraj'], ['sime', 'simun'], ['mladen', 'mladin'],
+    ['nedeljka', 'nediljka', 'nedjeljka'], ['ante', 'anto', 'antun', 'anton'], ['josip', 'jozo', 'joso'],
+    ['stjepan', 'stipan', 'stipe', 'stjepo'], ['jovan', 'jovo'], ['stevan', 'stevo'], ['sava', 'savo'],
+    ['frane', 'frano', 'franjo'], ['lovre', 'lovro'], ['tome', 'tomo'], ['grgo', 'grga', 'grgur'], ['jakov', 'jakob'],
+    ['spiro', 'spiridon'], ['vaso', 'vasilije', 'vasilj'], ['mijo', 'miho', 'mihovil'], ['petar', 'pero'],
+    ['nikola', 'nikolaj'], ['ilija', 'ilijas'], ['marijan', 'marjan'],
+]
+NAME_VARIANTS = {n: set(g) - {n} for g in NAME_VARIANT_GROUPS for n in g}
+
+
+def candidates(index: dict, ref: dict, lasts: set) -> list[tuple[dict, bool]]:
+    """The records of the entry's surnames under its given name, its nickname, or another form of the given name; each
+    with whether only such a form found it"""
+    names = {fold(ref['first_name'])} | ({fold(ref['nick'])} if ref.get('nick') else set())
+    variants = {v for n in names for v in NAME_VARIANTS.get(n, ())} - names
+    return ([(s, False) for l in lasts for n in names for s in index.get((l, n), [])] +
+            [(s, True) for l in lasts for n in variants for s in index.get((l, n), [])])
+
+
 def stem(word: str) -> str:
     w = fold(word).replace(' ', '')
     return w[:5] if len(w) >= 5 else w
@@ -180,11 +203,14 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
 
 
 def grade(agree: list[str], clash: list[str]) -> str | None:
-    if [c for c in clash if c != 'father?']:
+    if [c for c in clash if c not in ('father?', 'given?')]:
         return None
+    if 'father?' in clash and 'given?' in clash:
+        return None                                     # another form of the name and a father not clearly his: no
     a = set(agree)
     core = a & {'birth year', 'birthplace', 'death year'}
-    if 'father?' in clash:
+    if 'father?' in clash or 'given?' in clash:
+        # (a given name in another form, "Mato" for Mate, weighs the same: feedback rule 3)
         # a father not clearly the same: sure only with all three of birth year, birthplace and death, or a hero on
         # the site and one more (Ilić Miloša Nikola, alive, is not the Ilić Mile Nikola who fell near Gračac)
         if len(core) == 3 or ('hero on the site' in a and core):
@@ -226,12 +252,12 @@ def main():
             index[(fold(s.get('last_name')), fold(s.get('first_name')))].append(own_only(s))
     found, grades, every = [], Counter(), {}
     for ref in refs:
-        names = {fold(ref['first_name'])} | ({fold(ref['nick'])} if ref.get('nick') else set())
         # a woman the book gives two surnames (married, maiden) may be on the site under either
         lasts = {fold(ref['last_name'])} | {fold(x) for x in ref.get('also', ())}
-        cands = [s for l in lasts for n in names for s in index.get((l, n), [])]
-        for s in cands:
+        for s, variant in candidates(index, ref, lasts):
             agree, clash = evidence(ref, s)
+            if variant:
+                clash.append('given?')
             g = grade(agree, clash)
             pair = {'grade': g, 'agree': agree, 'record': s['soldier_id'], 'record_name': s.get('full_name'),
                     'ref': ref['soldier_id'], 'ref_name': ref['name'], 'ref_info': ref['additional_info'][:160],

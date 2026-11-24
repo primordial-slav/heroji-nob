@@ -99,10 +99,11 @@ def match(book: str, index: dict) -> list[dict]:
             r['hero'] = True
     found = []
     for ref in refs:
-        names = {M.fold(ref['first_name'])} | ({M.fold(ref['nick'])} if ref.get('nick') else set())
         lasts = {M.fold(ref['last_name'])} | {M.fold(x) for x in ref.get('also', ())}
-        for s in (s for l in lasts for n in names for s in index.get((l, n), [])):
+        for s, variant in M.candidates(index, ref, lasts):       # with another form of the given name (rule 3)
             agree, clash = M.evidence(ref, s)
+            if variant:
+                clash.append('given?')
             g = M.grade(agree, clash)
             if g:                                          # as match_references --json writes it (the selectors read it)
                 found.append({'grade': g, 'agree': agree, 'record': s['soldier_id'], 'record_name': s.get('full_name'),
