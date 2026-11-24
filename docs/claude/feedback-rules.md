@@ -42,6 +42,10 @@ A new rule the user gives goes here, with its date and the user's words.
 - **A family-named unit** on the site: the record moves into it (a census record too); not on the site: under the name.
 - **Relatives** a form names who fought get a record if they have none (Perkov Mladin, Ujević Antica); civilians,
   deserters and traitors get none.
+- **No field from nowhere.** Before committing forms, `python quality/check_form_fields.py` (local) lists every field of
+  a card a family or visitor touched whose words no text of the card, the family's note or the form itself says
+  (the Brajdićs had Zagreb as a birthplace no form gave; the user, 2026-11-24: "make sure no stupid mistakes like
+  mesto rođenja mistake"). A value it lists is fixed or explained before the commit.
 - **A living person's office** is dated ("predsednik ... u novembru 2026"), never "sada".
 - **A place correction ticked "Koristi kao pravilo"** on /pregled is kept in `quality/pregled-pravila.json` (so far
   Sindija → Sirdija).
