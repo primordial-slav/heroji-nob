@@ -81,13 +81,18 @@ Each is a task on the ops board (51-61); this list says what each one does once 
   corps), Rodbina (each relative looked up through the site's search on :3000; "isti otac" first; a civilian gets no
   record), Pitanje (a mail that asks). Only his own sentences are read for his fields and battles: a sentence naming a
   relative tells of the relative. Test forms (TEST, PROBA, "(Claude)") are left out. Applying stays 05's.
-- **3**: in the site's search (`lib/soldierSearch.ts`, NAME_VARIANTS, 4cc0b214); matching (`find_identities.py`,
-  `match_references.py`) not yet.
+- **3**: in the site's search (`lib/soldierSearch.ts`, NAME_VARIANTS, 4cc0b214) and in matching (`match_references.py`
+  `candidates`, used by `rematch_references.py` and so the identity pass): a find through another form of the name
+  carries the doubt "given?", weighed like "father?" (sure only with birth year, birthplace and death; else review).
 - **4**: in the forms (4cc0b214), live with the next release.
 - **5**: `make_war_events.py` (3c534cf4): kozara, neretva, sutjeska, drvar, beograd, srem, trst; the data at 05's chain.
 - **6**: in Pošta (`posta.popravi_slova`, `popravi_godinu`, claude/admin-posta e4edf7b5).
 - **7**: a ticked rule's "Ista greška još u N zapisa" on /pregled is filled through the site's search (needs :3000);
   applying the fixes stays 05's.
-- **8**: not yet (04-PHOTOS's).
+- **8**: `quality/predlog_isecaka.py` (local; run with the Python 3.7 that has OpenCV) finds the faces in every photo a
+  form brought and writes a head-and-shoulders crop for each (a face with an eye, or high in the picture, first: a
+  stain on the trousers is often larger than a full-length man's face) and the album's photo without a plain margin,
+  or a full-length man's figure inside a torn edge, to `%USERPROFILE%\.knjiga-boraca\posta\predlozi-isecaka`; /pregled
+  shows them as thumbnails in a "Fotografija" row (route `/pregled/isecak/...`). A fixer chooses and copies.
 - **10**: the label moves are a step of the release window (ops `releases/README.md`); the panel moving them itself waits
   for the user's Google permission to change labels.
