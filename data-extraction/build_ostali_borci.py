@@ -314,6 +314,9 @@ ONE_MAN = [
     # (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja: one man (his nephew's form and a report of his village)
     ('9035017817', '9084000711', 'Čelebić Ilije Jovan of Štitari (Cetinje), b. 1921, fell 1. 12. 1941 at Pljevlja'),
     ('9084000716', '9990000022', "Čelebić Ilije Novak of Štitari: his nephew's form (wounded at Cres 1945, died 1946 in Zagreb)"),
+    # form of 2026-11-24 10:04: Petrenj Stevan Mara of Bosut (census Vojvodina) of the 3. vojvođanska, her grave at Mala Moštanica;
+    # joined so that the family's unit takes her there (the user's rule, the lead's word of 2026-11-24)
+    ('9027007909', '9990000060', 'Petrenj Stevana Mara of Bosut, b. 1924, fell 1944 (Mala Moštanica): her family names the 3. vojvođanska'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID

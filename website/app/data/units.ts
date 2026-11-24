@@ -96,7 +96,7 @@ export const units: Unit[] = [
     nameEn: '1st Vojvodina Brigade',
     description: 'Formirana 11. aprila 1943. u Brđanima na Majevici. Borci brigade.',
     image: '/images/prva-vojvodjanska-brigada.jpg',
-    soldierCount: 1593,
+    soldierCount: 1601,
     dataFile: '/prva-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/prva-vojvodjanska.pdf']
   },
@@ -116,7 +116,7 @@ export const units: Unit[] = [
     nameEn: '2nd Vojvodina Assault Brigade',
     description: 'Formirana 20. aprila 1943. na Majevici. Borci i starešine od formiranja do kraja rata.',
     image: '/images/druga-vojvodjanska-brigada.jpg',
-    soldierCount: 2149,
+    soldierCount: 2153,
     dataFile: '/2-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/2-vojvodjanska.pdf']
   },
@@ -216,7 +216,7 @@ export const units: Unit[] = [
     nameEn: '4th Serbian Assault Brigade',
     description: 'Formirana 20. novembra 1943. u Bucima kod Kruševca. Borci brigade, među njima i stranci i borci čije ime nije utvrđeno.',
     image: '/images/4-srpska-brigada.jpg',
-    soldierCount: 6331,
+    soldierCount: 6335,
     dataFile: '/4-srpska-soldiers.json',
     pdfFiles: ['/pdfs/4-srpska.pdf']
   },
@@ -396,7 +396,7 @@ export const units: Unit[] = [
     nameEn: '2nd Proletarian Brigade',
     description: 'Formirana 1. marta 1942. u Čajniču. Poginuli, umrli i nestali borci, po mestu i danu pogibije, od Sutjeske do Sremskog fronta. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/druga-proleterska-brigada.jpg',
-    soldierCount: 2294,
+    soldierCount: 2295,
     dataFile: '/druga-proleterska-soldiers.json',
     pdfFiles: ['/pdfs/druga-proleterska.pdf', '/pdfs/borci-sutjeske-druga-proleterska.pdf', '/pdfs/pozega-cete.pdf']
   },
@@ -526,7 +526,7 @@ export const units: Unit[] = [
     nameEn: '3rd Macedonian Brigade',
     description: 'Formirana 26. februara 1944. u selu Žegljane kod Kumanova. Poginuli borci.',
     image: '/images/3-makedonska-brigada.jpg',
-    soldierCount: 231,
+    soldierCount: 234,
     dataFile: '/3-makedonska-soldiers.json',
     pdfFiles: ['/pdfs/3-makedonska.pdf']
   },
@@ -586,7 +586,7 @@ export const units: Unit[] = [
     nameEn: '3rd Vojvodina Brigade',
     description: 'Formirana 15. maja 1943. u Sremu. Poginuli borci i starešine, oni čija je sudbina ostala neutvrđena, i preživeli.',
     image: '/images/3-vojvodjanska-brigada.jpg',
-    soldierCount: 4240,
+    soldierCount: 4248,
     dataFile: '/3-vojvodjanska-soldiers.json',
     pdfFiles: ['/pdfs/3-vojvodjanska.pdf']
   },
@@ -616,7 +616,7 @@ export const units: Unit[] = [
     nameEn: '8th Kordun Division',
     description: 'Formirana 22. novembra 1942. u Crevarskoj Strani na Petrovoj gori. Štabovi divizije, brigada i bataljona i poginuli borci divizije. Uz njih i borci divizije iz drugih knjiga.',
     image: '/images/8-kordunaska-divizija.jpg',
-    soldierCount: 3218,
+    soldierCount: 3220,
     dataFile: '/8-kordunaska-divizija-soldiers.json',
     pdfFiles: ['/pdfs/8-kordunaska-divizija.pdf', '/pdfs/8-kordunaska-divizija-kadar.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 62978,
+    soldierCount: 62949,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
@@ -1625,7 +1625,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units – Vojvodina',
     description: 'Poginuli i umrli borci iz popisa žrtava rata iz 1964, sa područja Vojvodine, čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 9706,
+    soldierCount: 9705,
     dataFile: '/ostali-borci-vojvodina.json',
     pdfFiles: []
   }

@@ -1075,8 +1075,8 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0138007909', // Petrenj Stevan Mara of Bosut, census part Vojvodina: form of 2026-11-24 10:04 (text and name allowed;
-    // "unuk" on all three Petrenj forms); unit by override
+    soldierId: '0057900008', // Petrenj Stevan Mara of Bosut, 3. vojvođanska (from the census, joined to her family's entry 9990000060): form of 2026-11-24 10:04 (text and name allowed;
+    // "unuk" on all three Petrenj forms)
     text: 'Bila je u Trećoj vojvođanskoj brigadi. Grob joj je u Maloj Moštanici, gde ima i spomenik.',
     from: 'V. Petrenj, rođak',
     date: '2026-11',
