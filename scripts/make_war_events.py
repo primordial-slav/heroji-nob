@@ -54,8 +54,10 @@ TEXT_EVENTS = {
     'kozara': re.compile(r'\b(?:bitk|bic|bitc|borb|ofanziv)\w*\s+na\s+Kozar|\bkozarsk\w+\s+(?:ofanziv|bitk|bic|epope|proboj)'
                          r'|\bproboj\w*\s+(?:iz\s+)?(?:neprijateljskog\s+)?(?:obruč\w*\s+)?(?:na|sa|s)\s+Kozar', re.I),
     'neretva': NERETVA,
-    'drvar': re.compile(r'\bdesant\w*\s+na\s+Drvar|\bdrvarsk\w*\s+desant|\bodbran\w*\s+(?:Vrhovnog\s+štaba\s+)?(?:u|na|kod)\s+Drvar',
-                        re.I),
+    'drvar': re.compile(r'\bdesant\w*\s+na\s+Drvar|\bdrvarsk\w*\s+desant|\bodbran\w*\s+(?:Vrhovnog\s+štaba\s+)?(?:u|na|kod)\s+Drvar'
+                        # "Ranjen 1944. u bici za Drvar" (Jeličić's family, 05, 2026-11-24): only with 1944 in its sentence,
+                        # since Drvar was fought over in 1941-1942 too (SENTENCE_NEEDS)
+                        r'|\b(?:bitk|bic|bitc|borb)\w*\s+(?:za|kod|oko|na|u)\s+Drvar', re.I),
     'beograd': re.compile(r'\b(?:oslobođenj|oslobodjenj|oslobađanj|oslobadjanj|borb|bitk|bic|bitc)\w*\s+(?:za\s+)?'
                           r'(?:oslobođenje\s+|oslobodjenje\s+)?Beograd|\bBeogradsk\w+\s+operacij', re.I),
     'srem': re.compile(r'\bSremsk\w*\s+front', re.I),
@@ -67,12 +69,24 @@ AFTER = re.compile(r'\b(?:po|posle|poslije|nakon|do|od|prije|pre|pred|iza)\s+$',
 EVENT_ORDER = ['igman', 'kozara', 'neretva', 'sutjeska', 'drvar', 'beograd', 'srem', 'trst']
 
 
-def at_event(s: dict, rx: re.Pattern) -> bool:
+# a battle of a place fought over more than once counts only where its sentence names the year of the event, unless the
+# phrase itself is the event's ("desant na Drvar")
+SENTENCE_NEEDS = {'drvar': (re.compile(r'desant|drvarsk', re.I), re.compile(r'1944'))}
+
+
+def at_event(s: dict, rx: re.Pattern, kind: str = '') -> bool:
+    own, need = SENTENCE_NEEDS.get(kind, (None, None))
     for e in [s] + list(s.get('other_sources') or []):
         text = e.get('additional_info') or ''
         for m in rx.finditer(text):
-            if not AFTER.search(text[max(0, m.start() - 12):m.start()]):
-                return True
+            if AFTER.search(text[max(0, m.start() - 12):m.start()]):
+                continue
+            if need and not own.search(m.group(0)):
+                start = max(text.rfind('.', 0, m.start() - 6) + 1, 0)      # (not the "1944." just before it)
+                end = text.find('.', m.end())
+                if not need.search(text[max(0, start - 8):end if end > 0 else len(text)]):
+                    continue
+            return True
     return False
 
 
@@ -102,7 +116,7 @@ def main():
                 events.setdefault(sid, []).append(e)
                 counts['igman'] += 1
         for s in soldiers:
-            found = [k for k, rx in TEXT_EVENTS.items() if at_event(s, rx)]
+            found = [k for k, rx in TEXT_EVENTS.items() if at_event(s, rx, k)]
             if at_sutjeska(s):
                 found.append('sutjeska')
             for kind in sorted(found, key=EVENT_ORDER.index):
