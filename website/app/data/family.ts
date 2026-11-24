@@ -1065,7 +1065,8 @@ export const familyContributions: FamilyContribution[] = [
     photo: '0108000481-1.jpg',
     photoCaption: 'U partizanskoj uniformi',
     pieces: [
-      { kind: 'photo', file: '0108000481-5.jpg', caption: 'U partizanskoj uniformi, cela fotografija' },
+      // the whole print cut to his figure, cap to boots, without its torn edge (the user's note on /pregled, 2026-11-24: "better crop")
+      { kind: 'photo', file: '0108000481-6.jpg', caption: 'U partizanskoj uniformi, cela figura' },
       { kind: 'photo', file: '0108000481-2.jpg', caption: 'Kao oficir, posle rata' },
       { kind: 'photo', file: '0108000481-3.jpg', caption: 'Sa odlikovanjima' },
       { kind: 'photo', file: '0108000481-4.jpg', caption: 'U oficirskoj uniformi' },
