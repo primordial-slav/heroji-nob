@@ -117,6 +117,21 @@ const unitFile = (unit: Unit) => path.join('public', unit.dataFile)
 // finds him; read with the shards of the part that had the old id (writeWhere)
 const OSTALI_UNIT = 'ostali-borci'
 const isOstali = (unit: Unit) => unit.id === OSTALI_UNIT || unit.id.startsWith(`${OSTALI_UNIT}-`)
+// the redirects away from a unit's own ids (a man of a unit sent back to 122 or on to another record), as a hash, so its
+// where-files change with them alone and not with every move of Borci drugih jedinica; '' when it has none. The unit's
+// four digits are read from the start of its data file
+function movedFrom(unit: Unit): string {
+  const file = path.join(root, unitFile(unit))
+  if (!fs.existsSync(file)) return ''
+  const fd = fs.openSync(file, 'r')
+  const head = Buffer.alloc(4096)
+  const n = fs.readSync(fd, head, 0, head.length, 0)
+  fs.closeSync(fd)
+  const prefix = /"soldier_id"\s*:\s*"(\d{4})/.exec(head.toString('utf8', 0, n))?.[1]
+  if (!prefix) return ''
+  const own = Object.entries(movedIds()).filter(([old]) => old.startsWith(prefix)).sort()
+  return own.length ? sha1(JSON.stringify(own)) : ''
+}
 const MOVED_FILE = path.join('data', 'moved-ids.json')
 const movedIds = (): Record<string, string> =>
   fs.existsSync(path.join(root, MOVED_FILE)) ? JSON.parse(fs.readFileSync(path.join(root, MOVED_FILE), 'utf8')) : {}
@@ -177,11 +192,12 @@ function writeWhere(unit: Unit, soldiers: Soldier[]) {
       }
     }
   })
-  // a man of Borci drugih jedinica or of a census part now on another record (his unit's, or one of 122 his entry
-  // joined): his old id gives the new one, in the where-files of the part that had it (the address answers only with
-  // it, a 308, so no slice of the other unit is named here)
+  // a man now on another record (one of Borci drugih jedinica or a census part gone to his unit or joined to a record
+  // of 122, or one of a unit sent back to 122: Bektić Šefko, 2026-11-25): his old id gives the new one, in the
+  // where-files of the unit or part that had it (the address answers only with it, a 308, so no slice of the other unit
+  // is named here). A record of the id itself wins: put() keeps what it has
   const codes = new Set(soldiers.map((s) => s.soldier_id.slice(0, 4)))
-  if (isOstali(unit)) for (const [old, now] of Object.entries(movedIds())) if (codes.has(old.slice(0, 4))) put(old, [0, now])
+  for (const [old, now] of Object.entries(movedIds())) if (codes.has(old.slice(0, 4))) put(old, [0, now])
   // a thousand ids of which none is left leave no file behind
   const dir = path.dirname(publicFile(wherePath('0000000')))
   fs.mkdirSync(dir, { recursive: true })
@@ -322,7 +338,7 @@ async function main() {
     const seen: Manifest['files'] = {}
     const unitHash = (unit: Unit) => {
       const war = fileHash(manifest, seen, warEventsFile(unit))
-      const moved = isOstali(unit) ? fileHash(manifest, seen, MOVED_FILE) : ''
+      const moved = isOstali(unit) ? fileHash(manifest, seen, MOVED_FILE) : movedFrom(unit)
       return sha1(fileHash(manifest, seen, unitFile(unit)), ':', fileHash(manifest, seen, eventsFile(unit)), ...(war ? [':', war] : []),
         ...(moved ? [':', moved] : []))
     }
