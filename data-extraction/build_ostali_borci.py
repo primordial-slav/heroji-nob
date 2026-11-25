@@ -50,7 +50,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from match_references import ENTRY_DIRS, HERO_BOOKS, fold, same_father, stem  # noqa: E402
 from extract_structured_fields import NAME_LISTS, fix_place  # noqa: E402
 from name_utils import (BRIGADE_CONFIGS, CENSUS_VOLUMES, OSTALI_CODES, REGIONAL_GENITIVES, clean_name_field,  # noqa: E402
-                        genitive_to_nominative, to_title_case)
+                        genitive_to_nominative, normalize_soldier, to_title_case)
 import convert_fathers_genitive as fathers_genitive  # noqa: E402
 from safe_write import write_text  # noqa: E402  (E: can refuse a write for a moment, OSError 22: it stopped a rebuild 2026-11-19)
 
@@ -1033,6 +1033,20 @@ def move_to_units(recs: list[dict], ids: dict[str, str]) -> tuple[dict, dict, Co
     return moved, registry_, why
 
 
+def full_name(rec: dict, code: int) -> str:
+    """The name scripts/normalize_all_json.py (step 2 of the chain) gives the record in its unit: the names as it cleans
+    them, a name set by hand (manual_fields) as set. This script writes all nine files and every unit that holds moved
+    men, and a chain run over fewer of them left the others' names empty: on 2026-11-25 the run over 122 and the batch's
+    units left every census record nameless, and Banović Ivan Ljubo 0132024064, kept from that run for his override,
+    lost his name on the site's card"""
+    out = normalize_soldier(rec, code)
+    names = ('last_name', 'middle_name', 'first_name')
+    manual = set(rec.get('manual_fields') or ()) & set(names)
+    if not manual:
+        return out['full_name']
+    return ' '.join(p for p in (rec.get(n) if n in manual else out.get(n) for n in names) if p)
+
+
 def source_entry(e: dict) -> dict:
     out = {'soldier_id': e['soldier_id'], 'name': e['name'], 'additional_info': e['additional_info']}
     out.update({k: e[k] for k in SOURCE_FIELDS if e.get(k) not in (None, '')})
@@ -1334,6 +1348,9 @@ def main():
         parts[int(r['soldier_id'][:4])].append(r)
     # the men whose entries name their unit on the site go to it (move_to_units)
     to_units, unit_ids, why = move_to_units(parts[CODE], ids)
+    for code, recs in [*parts.items(), *to_units.items()]:
+        for r in recs:
+            r['full_name'] = full_name(r, code)     # never empty, whichever files the chain then takes (full_name)
     by_name = lambda r: (fold(r['last_name']), fold(r['first_name']), fold(r['middle_name']), r['soldier_id'])  # noqa: E731
     for recs in list(parts.values()) + list(to_units.values()):
         recs.sort(key=by_name)
