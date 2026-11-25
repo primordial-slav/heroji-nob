@@ -23,6 +23,16 @@ A new rule the user gives goes here, with its date and the user's words.
 - A book's portrait a family's photo replaced stays on the card, last in the album (`portraits.replacedPortrait`; 2026-11-24).
 - A form that came by mail is a form, with its fields (Pošta, `posta.forma_mejlom`; 2026-11-24).
 - A card a family added to carries the family's dot (`components/FamilyMark.tsx`; 2026-11-23).
+- **The life line's joinings** (`extract_life_events.py`): a joining of the NOB, SKOJ or KPJ dated after the death gives
+  way to another entry's that fits (2026-11-25); a joining of the NOB dated after the day the same entry has him join his
+  unit ("u brigadi od") gives way too, and with none that fits the unit's step stands alone (the user, 2026-11-26).
+  `fields.md`, "Life events".
+- **A field a correction empties** stays empty where the record's text would read another man's value back into it
+  (`"keep_blank": true` on an edit: Bućan Aleksandar's brother's death; a family's or review answer's empty field
+  stays so by itself). **A birth day set by hand** (`patch_record.py`) on a record of 122 or a census part stays.
+- **Addresses follow the man**: a record moved to another unit, back to Borci drugih jedinica or joined to another
+  record keeps its old address, which forwards (`moved-ids.json`, `prepare-data.ts`), and references to a record merged
+  away follow to the record it joined; the builder of 122 writes every record's name (2026-11-25).
 
 ## By hand (05-ENTRY FIXES, form by form)
 
@@ -49,6 +59,34 @@ A new rule the user gives goes here, with its date and the user's words.
 - **A living person's office** is dated ("predsednik ... u novembru 2026"), never "sada".
 - **A place correction ticked "Koristi kao pravilo"** on /pregled is kept in `quality/pregled-pravila.json` (so far
   Sindija → Sirdija).
+
+## Adopted 2026-11-26, strictly, for feedback, new records and edits of old ones
+
+The lead's list of the day's practices (2026-11-25), which the user adopted on 2026-11-26: "aside from point 7, enforce
+all the others strictly when getting feedback and adding new names and editing previous entries". Every session that
+reads a form or a mail, adds a record or edits one keeps them.
+
+- **What the family isn't sure of is a note, not a fact.** "Imala je informaciju", "kažu", "mislim da", "navodno": the
+  words go in the family's note as theirs; the card's fields keep what the books give. No date or place is made from a
+  memory (Pavlović Veljko Dušan's "Mama je imala informaciju da je poginuo na Sutjesci": the census's 1944 stays, the
+  Sutjeska in the note; Runtić Ante "went to the partisans the day the Italians entered Split": no joining date; Vuletić
+  Bruno "first across the Neretva bridge": a neighbour's memory).
+- **Someone who isn't family is signed as who they are**: "sused" (Vuletić Bruno), the reader's initial and surname
+  with no relation (A. Krstulović on Lukin Branko), "E. Goldrick, istoričar" (Čolnik Karel). With the name tick "Ne", a
+  neighbour is still signed by what they are ("sused"), not "iz porodične arhive", which is for family alone.
+- **A paper they send counts more than what they type.** A book's clip, a booklet, a certificate or a letter of the time
+  wins over the form's own words, and goes on the card as a paper (Bilandžić Filip: the form swapped him and his father,
+  the clip prints "pok. Ivana FILIP"; Šiliegović-Vučković Milka's Spomenica booklet; Babić Rade's Gračac book, which a
+  reader pointed to).
+- **A report asking for what the card already shows changes nothing**, and the reply says where it is (Črv Ivan: "Anton
+  is his father", already printed between surname and name; Čelebić Jovan: "you have him twice", already joined; Bubrić
+  Ante: the census already had him).
+- **A plain mail without permission lines** gets the facts and an unsigned note, "iz porodične arhive"; the reply offers
+  to sign it with the sender's credit (Runtić Ante, Ujević Zdravko, Perkov Ante).
+
+Not adopted: "probably changes nothing" (the lead's point 7). The user took both of S. Gojkov's "verovatno" surnames
+(Bermanov Jova is Đermanov, Bukin Milan is Đukić, 6bb3bc3d), so a sender's "verovatno" about a name does not by itself
+hold the change back (the entry stays as printed, as always).
 
 ## Adopted 2026-11-24, to make the reading automatic
 

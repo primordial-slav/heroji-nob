@@ -20,6 +20,14 @@ before they are told). What happens at each window, step by step, is in the priv
     They stay on their branches during the week and the lead merges them on Sunday before the window; the Dopune item
     for them is drafted on Saturday for the user to read.
 - **The user's word overrides all of it.** "Push now" from the user goes at once, whatever the window or the lane.
+- **When memory is short** (under 3 GB free, too little for the production build check): a release whose site code is
+  unchanged since the last build check that passed, only data (`website/public`, `website/data`, `website/app/data`),
+  goes out on a light check instead: every changed JSON file parses, every changed data `.ts` file passes TypeScript's
+  syntax check, and `quality/sanity_release.py` finds no problems (ops `tools/release/light_check.py`). Code changed
+  and memory short: no release until memory frees. Vercel never promotes a failed build, so the live site stays as it
+  was if a light check missed something (the user, 2026-11-26; v1.2.2 and v1.2.3 went so).
+- **The live check is made in a browser** (the built-in browser pane): since 2026-11-25 Vercel answers scripted
+  requests (curl) with its bot challenge, 429.
 
 ## Version: X.Y.Z, by how serious the release is
 

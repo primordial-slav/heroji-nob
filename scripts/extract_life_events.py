@@ -400,13 +400,16 @@ def phrase_of(s: dict, e: dict) -> str:
 NOT_DEATHS = {'zarobljen': 'captured', 'ranjen': 'wounded'}       # death_type: no death, as lib/deathDay.ts
 
 
-def after_death(st: dict, death: dict) -> bool:
-    """The step falls after the death (its last day, when it is a span), at the precision both give: 1944-10 is after
+def after(st: dict, other: dict) -> bool:
+    """The step falls after the other (its last day, when it is a span), at the precision both give: 1944-10 is after
     1944-01-18, 1944 is not after 1944-01"""
-    for a, b in zip(st['d'].split('-'), (death.get('e') or death['d']).split('-')):
+    for a, b in zip(st['d'].split('-'), (other.get('e') or other['d']).split('-')):
         if a != b:
             return int(a) > int(b)
     return False
+
+
+after_death = after
 
 
 def life_events(s: dict, code: int) -> list[dict]:
@@ -460,6 +463,21 @@ def life_events(s: dict, code: int) -> list[dict]:
                     break
             steps.append(step)
     steps += war_steps(s, code, entries)
+    # a joining of the NOB dated after the day the same entry has him join his unit (brigade, odred, division) gives way:
+    # he was a partisan by the day he came to a partisan unit. Rakić Živa 0001010404 "u NOB od novembra 1945, u brigadi od
+    # novembra 1944" (05's idea, the user's rule of 2026-11-26). Any entry's joining later than that unit's day goes, and
+    # another's that fits stands (one of a book across units when no entry read gives one); where none fits, the unit's
+    # step alone stays, with no joining made up from it. A family's joining stays whatever its day (the family wins)
+    family = {i for i, e in enumerate(entries) if e.get('ref_book') == 'porodicna-arhiva'}
+    units = [st for st in steps if st['k'] == 'unit']
+    bound = min((u for st in steps if st['k'] == 'nob' and st['s'] not in family
+                 for u in units if u['s'] == st['s'] and after(st, u)), key=lambda u: u['d'], default=None)
+    if bound:
+        fits = [st for st in steps if st['k'] == 'nob' and (st['s'] in family or not after(st, bound))]
+        if not fits:
+            fits = [dict(st, s=i) for i, e in enumerate(entries) if e.get('ref_book') and e['ref_book'] != 'porodicna-arhiva'
+                    for st in read_entry(e.get('additional_info') or '') if st['k'] == 'nob' and not after(st, bound)][:1]
+        steps = [st for st in steps if st['k'] != 'nob'] + fits
     # a joining (nob, skoj, kpj) dated after the death gives way to another entry's that fits, and when no entry read
     # above gives one, to a book across units' (otherwise not read here): Babić Rade's own "borac od 18. 10. 1944"
     # against his HAK's "stupio u NOV 9. 10. 1942", fell 14. 1. 1944 (05's case, 2026-11-25). Where none fits, the step
@@ -479,7 +497,6 @@ def life_events(s: dict, code: int) -> list[dict]:
     # one of each kind that happens once: a family's account wins (Porodična arhiva: the user's rule that the family's
     # report wins on the card, 2026-11-21; Petković Dragica's "U NOB od 1941" over a book's "marta 1944", 2026-11-23),
     # then the soldier's own entry over another book's
-    family = {i for i, e in enumerate(entries) if e.get('ref_book') == 'porodicna-arhiva'}
     kept, seen = [], set()
     for st in sorted(steps, key=lambda st: (st['s'] not in family, st['s'], st.get('_at', 0))):
         key = st['k'] if st['k'] in ONCE else (st['k'], st['d'], st.get('x'))
