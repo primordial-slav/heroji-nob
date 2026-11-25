@@ -336,7 +336,7 @@ MERGED_IDS = {
     '0122926735': '0122940691',   # Čelebić Ilijin Jovan: the Spomenica's record, joined to the Lovćenski odred's list's (2026-11-23)
     # records the units held until unit_named's fix of 2026-11-23 found them naming two units on the site: back in 122, their
     # unit addresses open the record (Janjić Miladinov Božidar, Dizdarević Fehrat, Šuković Venjko; Levi Moric stayed in the 4. krajiška)
-    '0039900251': '0122960088', '0042900015': '0122909160', '0069900001': '0122954956',
+    '0069900001': '0122954956',   # (0039900251 and 0042900015 went back into their units: their entries dropped, 2026-11-25)
     # back in 122 (2026-11-24): a street named after a brigade, a relative's unit (unit_named 1a019796, d2d4b015)
     '0042900188': '0122909100', '0042900189': '0122909101', '0029900027': '0122909264',
     '0122961381': '0008002961',   # Vučković Frane Nikola: his family's record, joined to the 4. splitska's Nikola of Brnaze (the user, 2026-11-23)
@@ -1394,9 +1394,16 @@ def main():
         print('Written', UNIT_IDS)
         # his old address still finds him: old 122 or census ID -> his record's (website/scripts/prepare-data.ts writes
         # each into the where-files of the part that had it, and /borac/<old> answers with the new one)
-        write_text(MOVED, json.dumps({**census_moved, **MERGED_IDS,
-                                      **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}},
-                                     ensure_ascii=False, indent=0, sort_keys=True))
+        moved = {**census_moved, **MERGED_IDS, **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}}
+        # an old ID goes straight to the man's record of today: a chain (old -> an ID that moved on -> today's) is followed
+        # to its end, and an entry that would lead back to itself is dropped (2026-11-25, the lead's check of the live site)
+        def follow(k):
+            seen, v = {k}, moved[k]
+            while v in moved and v not in seen:
+                seen.add(v); v = moved[v]
+            return None if v in seen else v
+        moved = {k: t for k in moved for t in [follow(k)] if t and t != k}
+        write_text(MOVED, json.dumps(moved, ensure_ascii=False, indent=0, sort_keys=True))
         print('Written', MOVED)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
         # records that hold its man (2026-10-31: they had shown nowhere)
