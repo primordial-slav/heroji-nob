@@ -4736,6 +4736,9 @@
     "occupation": "žandarm",
     "rank": "borac",
     "pdf_x_end": 452.9,
+    "death_date": "14.01.1944",
+    "death_place": "Grabež, Mrkonjić Grad",
+    "death_type": "poginuo",
     "other_sources": [
       {
         "soldier_id": "9010000645",
@@ -4760,15 +4763,17 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Mrkonjić Grad",
-    "birth_date": "30.05.1914"
+    "birth_date": "30.05.1914",
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Grabež, Mrkonjić Grad"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0002000205",

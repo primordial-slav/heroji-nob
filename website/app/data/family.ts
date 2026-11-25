@@ -1188,6 +1188,8 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0048011477', // Kilim Muje Smajo, 7. krajiška: his grandson's form of 2026-11-24 15:26 by the site's mail fallback (no
     // permission lines: no name; Porodična arhiva 9990000074 referenced; rows by 317457)
+    // his photo by a form of 2026-11-25 13:16 (D. Ribić, no name)
+    photo: '0048011477-1.jpg',
     text: 'Nije bio zemljoradnik, nego je radio u pilani. Bio je skojevac, u NOB-u od 1941, i borio se na Sutjesci. Sahranjen je u Jajcu, gdje je i živio.',
     from: 'iz porodične arhive',
     date: '2026-11',
@@ -1390,6 +1392,86 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0036900010', // Perera-Matić Davida Izidor, 1. dalmatinska: a reader's form of 2026-11-25 08:24 (A. Krstulović) with his photo
     photo: '0036900010-1.jpg',
     from: 'A. Krstulović',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122051265', // Sarač Mileta Stevo of Kurjak: his grandson's form of 2026-11-25 09:14 (text and name allowed; death patched)
+    text: 'Preminuo je u Beogradu 2012. godine. Počiva u Vrtu sećanja na Novom groblju u Beogradu.',
+    from: 'M. Perić, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0138003640', // Pavlović Veljko Dušan of Bukovac, census part Vojvodina: a cousin's form of 2026-11-25 10:53 with his photo,
+    // giving his niece's words (text yes, name no); the census's death (1944) stays: "Mama je imala informaciju"
+    photo: '0138003640-1.jpg',
+    text: 'Njegova sestričina piše: „Mama je imala informaciju da je poginuo na Sutjesci. Mama je podigla spomenik njemu, deda Veljku i baba Kristini u Bukovcu. Deda Veljko je streljan u Jasenovcu.”',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0007003292', // Matković Mate Stipe, 2. dalmatinska: his nephew's form of 2026-11-25 11:03 with two photos (no name): his
+    // face as the nephew cut it, and the whole photo of veterans at the Sutjeska memorial on Tjentište
+    photo: '0007003292-1.jpg',
+    photoCaption: 'Kod spomenika na Tjentištu',
+    pieces: [{ kind: 'photo', file: '0007003292-2.jpg', caption: 'Sa saborcima kod spomenika na Tjentištu' }],
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0022000431', // Đukić (the book's "Bukin") Radivoj of Gospođinci, 7. vojvođanska: his nephew's form of 2026-11-25 11:03
+    // (text yes, name no; surname by 317484); a photo and more offered
+    text: 'Prezime mu nije Bukin, nego Đukić. Rođen je 1927. u Gospođincima.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0022000432', // Đukić (the book's "Bukin") Stevan of Gospođinci, 7. vojvođanska: a grandnephew's form of 2026-11-25 11:07
+    // (text yes, name no; surname by 317485)
+    text: 'Prezime mu nije Bukin, nego Đukić; zvali su ga Bugar. Bio je mlađi brat mog dede po majci, rođenog 1900.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0007005706', // Vuletić Petra Bruno, 2. dalmatinska: his neighbour's form of 2026-11-25 11:29 (text yes, name no; not family)
+    text: 'Pamtimo ga po tome što je prvi prešao most na Neretvi; o tom događaju govori Jovo Kapičić u jednom intervjuu.',
+    from: 'sused',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132024064', // Banović Ivan Ljubo of Zaostrog, census part Hrvatska: his niece's two forms of 2026-11-25 13:08, 13:10
+    // (text yes, name no; death_type patched to "ubijen")
+    text: 'Ubile su ga ustaše.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132020206', // Pavić Nikola Antun of Baćin, census part Hrvatska: his mother's cousin's form of 2026-11-25 14:41 with his
+    // photo (text yes, name no)
+    photo: '0132020206-1.jpg',
+    photoCaption: 'U uniformi',
+    text: 'Na spomen-obilježju žrtvama fašizma u Hrvatskoj Dubici, podignutom u doba socijalizma, uklesano je, između ostalih, i njegovo ime.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961418', // Samardžić Šimuna Stipan of Grab (Trilj), 10. dalmatinska: his grandson's missing-fighter form of 2026-11-25
+    // 09:46 (text yes, name no; Porodična arhiva 9990000093)
+    text: 'U rujnu 1946. otišao je s obitelji na kolonizaciju u Vojvodinu i trajno se nastanio u Stanišiću kraj Sombora, gdje je odgojio petoro djece. Umro je 6. ožujka 1978. i pokopan u Stanišiću.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0147900027', // Sušec Nikola of Novo Mjesto (Zelina), Zagrebački odred: his grandson's two missing-fighter forms of 2026-11-25
+    // 11:24 and 11:32 (text yes, name no; Porodična arhiva 9990000094, moved to the odred from 0122961419)
+    text: 'Mobiliziran je 1943. U ratu je bio telegrafist i preživio je tifus. Imao je krojački zanat i poslije rata radio je kao krojač. Umro je 1996.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961420', // Vrdoljak Pavao of Bila (Livno): his grandson's missing-fighter form of 2026-11-25 12:55 (text and name allowed;
+    // Porodična arhiva 9990000095)
+    text: 'Španjolski borac, ranjen u Španjolskoj. Nositelj Partizanske spomenice 1941.',
+    from: 'J. Brdar, unuk',
     date: '2026-11',
   },
 ]

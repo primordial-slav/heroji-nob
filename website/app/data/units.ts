@@ -1086,7 +1086,7 @@ export const units: Unit[] = [
     nameEn: 'Zagreb Partisan Detachment',
     description: 'Formiran 13. septembra 1943. na Zagrebačkoj gori. Popis boraca odreda: selo, opština i sudbina. Uz njih i borci odreda iz drugih knjiga.',
     image: '/images/zagrebacki-odred.jpg',
-    soldierCount: 1298,
+    soldierCount: 1299,
     dataFile: '/zagrebacki-odred-soldiers.json',
     pdfFiles: ['/pdfs/zagrebacki-odred.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 62347,
+    soldierCount: 62349,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },
