@@ -1474,6 +1474,49 @@ export const familyContributions: FamilyContribution[] = [
     from: 'J. Brdar, unuk',
     date: '2026-11',
   },
+  {
+    soldierId: '0131014939', // Črv (Anton) Ivan of Šentviška Gora (Tolmin), census part Slovenija: his grandson's form of 2026-11-25
+    // 19:08 (text yes, name no; birth, unit and death by override); his error report of 19:01 asked that Anton be read as his father
+    text: 'U zapisima 3. prekomorske brigade zaveden je kao Ivan Čero. Živeo je u Pečinama kod Tolmina. Poginuo je na koti 684 na Planinici iznad Mostara i sahranjen je u spomen-kosturnici u Gorancima.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0006006033', // Saftić Andrije Juraj of Bribir, 13. proleterska: his grandson's form of 2026-11-25 20:00 (text and name
+    // allowed, his first name only; Porodična arhiva 9990000104; rows by 317509)
+    text: 'Umro je prirodnom smrću 1999. Pokopan je u Bribiru.',
+    from: 'L., unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961421', // Bilandžić Ivana Filip of Maljkovo (Sinj), 10. dalmatinska: his relative's missing-fighter form of 2026-11-25
+    // 18:47 with a book's entry (text yes, name no; Porodična arhiva 9990000096). The form had "Ivan Bilandžić, father Filip"; the
+    // entry it sent prints "BILANDŽIĆ pok. Ivana FILIP", and the record follows the book
+    pieces: [
+      {
+        kind: 'document',
+        file: '0122961421-1.jpg',
+        caption: 'Iz knjige',
+        transcripts: ['BILANDŽIĆ pok. Ivana FILIP, borac 1. bataljona, rođen 1909. u s. Maljkovu—Sinj, poginuo 28. I 1945. Suho polje.'],
+      },
+    ],
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0034900004', // Bilandžić Dušan of Maljkovo (Sinj), 21. slavonska: his relative's missing-fighter form of 2026-11-25 20:35
+    // (text yes, name no; Porodična arhiva 9990000097, moved to the brigade from 0122961422)
+    text: 'Od 1942. bio je u NOB-u i član KPJ. Obnašao je dužnosti borca i političkog komesara čete i bataljona. Nakon rata bio je na vojnim dužnostima, a JNA je napustio 1960. u činu pukovnika.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961423', // Roca Ive Mile of Vodice: his daughter's missing-fighter form of 2026-11-25 19:05 (text and name allowed;
+    // Porodična arhiva 9990000098)
+    text: 'Preživio je rat i radio na obnovi zemlje. Poslije je završio vojnu školu u Divuljama i postao oficir JNA.',
+    from: 'V. Roca Šestanović, kći',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

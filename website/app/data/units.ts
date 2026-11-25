@@ -136,7 +136,7 @@ export const units: Unit[] = [
     nameEn: '6th Krajina Assault Brigade',
     description: 'Formirana 14. oktobra 1942. od jedinica Prvog krajiškog odreda. Poginuli i umrli borci i starešine, starešine brigade 1942–1943. i borci koji su preživeli rat. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/sesta-krajiska-brigada.jpg',
-    soldierCount: 4154,
+    soldierCount: 4156,
     dataFile: '/6-krajiska-soldiers.json',
     pdfFiles: ['/pdfs/6-krajiska.pdf', '/pdfs/6-krajiska-prezivjeli.pdf', '/pdfs/6-krajiska-kadar.pdf']
   },
@@ -346,7 +346,7 @@ export const units: Unit[] = [
     nameEn: '21st Slavonian Brigade',
     description: 'Formirana 17. maja 1943. u Orljavcu kod Slavonske Požege. Poginuli, umrli i nestali borci i starešine.',
     image: '/images/21-slavonska-brigada.jpg',
-    soldierCount: 1139,
+    soldierCount: 1140,
     dataFile: '/21-slavonska-soldiers.json',
     pdfFiles: ['/pdfs/21-slavonska.pdf']
   },
@@ -1537,7 +1537,7 @@ export const units: Unit[] = [
     nameEn: 'Fighters of other units',
     description: 'Borci iz spomen-knjiga, hronika sela i zbornika narodnih heroja čija jedinica još nije na sajtu.',
     image: '/images/ostali-borci.jpg',
-    soldierCount: 62349,
+    soldierCount: 62351,
     dataFile: '/ostali-borci.json',
     pdfFiles: []
   },

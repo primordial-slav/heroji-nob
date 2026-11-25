@@ -659,8 +659,10 @@ def apply(soldiers: list[dict], by_id: dict, manual: dict | None = None, family:
     for s in soldiers:
         sid = s['soldier_id']
         # a day a family's report sets stays (his own papers: Radenković Živan's autobiography, 2026-11-20); the day
-        # older corrections set (units 2 and 7, "31. 7. 1907.") is still read again from the entries
-        if 'birth_date' not in family.get(sid, ()):
+        # older corrections set (units 2 and 7, "31. 7. 1907.") is still read again from the entries; so does a day set by
+        # hand on a record of 122 or a census part (manual_fields, scripts/patch_record.py): Benić Antun's 19. 5. 1924 from
+        # the parish register and Črv Ivan's 15. 2. 1915 from his grandson had been dropped on every run (05, 2026-11-25)
+        if 'birth_date' not in family.get(sid, ()) and 'birth_date' not in (s.get('manual_fields') or ()):
             s.pop('birth_date', None)
         s.pop('variants', None)
         day = None if s.get('birth_date') else birth_day(s)

@@ -3062,6 +3062,14 @@
       }
     ],
     "party": "SKOJ 1942, KPJ 1943",
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "1971",
+    "death_place": "Trogir",
     "birth_date": "20.07.1921"
   },
   {
@@ -16265,7 +16273,24 @@
     "birth_place": "Vela Luka, Korčula",
     "occupation": "domaćica",
     "unit_detail": "5. bataljon",
-    "birth_date": "20.11.1926"
+    "death_type": "umro",
+    "death_date": "2008",
+    "death_place": "Trogir",
+    "other_sources": [
+      {
+        "soldier_id": "9990000102",
+        "name": "Dragojević-Barada-Cesar Luke Ivka",
+        "additional_info": "Preživjela rat. Umrla 2008. u Trogiru.",
+        "source_url": "porodica:9990000102",
+        "ref_book": "porodicna-arhiva"
+      }
+    ],
+    "birth_date": "20.11.1926",
+    "family_fields": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ]
   },
   {
     "last_name": "Dragojević",

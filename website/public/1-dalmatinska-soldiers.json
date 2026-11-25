@@ -91983,6 +91983,13 @@
     "party": "SKOJ 1942, KPJ 1943",
     "other_sources": [
       {
+        "soldier_id": "9990000103",
+        "name": "Barada Jure Jozo",
+        "additional_info": "Preživio rat. Umro 1971. u Trogiru.",
+        "source_url": "porodica:9990000103",
+        "ref_book": "porodicna-arhiva"
+      },
+      {
         "soldier_id": "0053000123",
         "name": "Barada Jure Jozo",
         "additional_info": "komandir 2. č. 1. bat., r. 20. 7. 1921, Seget, Trogir, radnik, u NOB od novembra 1942, član SKOJ-a od 1942, član KPJ od 1943.",
@@ -92009,7 +92016,15 @@
         "unit_file": "11-dalmatinska-soldiers.json"
       }
     ],
-    "birth_date": "20.07.1921"
+    "death_type": "umro",
+    "death_date": "1971",
+    "death_place": "Trogir",
+    "birth_date": "20.07.1921",
+    "family_fields": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ]
   },
   {
     "last_name": "Barada",

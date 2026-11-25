@@ -2050116,5 +2050116,93 @@
     },
     "reason": "Survived the war: Dalmatinci u Prvoj proleterskoj have him at the Komanda mjesta Bosansko Grahovo at its end; \"ljeto 1942\" is his brother Tomo's death (\"od kojih je Tomo poginuo u ljeto 1942\") (05, 2026-11-25)",
     "keep_blank": true
+  },
+  {
+    "id": 317502,
+    "action": "reference",
+    "soldier_id": "0013010199",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000101",
+    "ref_name": "Ciganović Laze Milan",
+    "reason": "Form 2026-11-25 19:13, family (N. Ciganović, rođak): survived the war, b. 1925 in Bihać, father Lazo"
+  },
+  {
+    "id": 317503,
+    "action": "edit",
+    "soldier_id": "0013010199",
+    "fields": {
+      "fathers_name": "Lazo",
+      "birth_year": "1925",
+      "birth_place": "Bihać"
+    },
+    "reason": "Form 2026-11-25 19:13, family (N. Ciganović, rođak): b. 1925 in Bihać, father Lazo (the list prints his name alone)"
+  },
+  {
+    "id": 317504,
+    "action": "reference",
+    "soldier_id": "0053000649",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000102",
+    "ref_name": "Dragojević-Barada-Cesar Luke Ivka",
+    "reason": "Forms 2026-11-25 19:50 and 19:56, family (A. Barada, unuka): \"Umrla 2008, Trogir\""
+  },
+  {
+    "id": 317505,
+    "action": "edit",
+    "soldier_id": "0053000649",
+    "fields": {
+      "death_type": "umro",
+      "death_date": "2008",
+      "death_place": "Trogir"
+    },
+    "reason": "Forms 2026-11-25 19:50 and 19:56, family (A. Barada, unuka): died 2008 in Trogir"
+  },
+  {
+    "id": 317506,
+    "action": "reference",
+    "soldier_id": "0036100079",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000103",
+    "ref_name": "Barada Jure Jozo",
+    "reason": "Forms 2026-11-25 19:50 and 19:56, family (A. Barada, unuka): \"Umro 1971, Trogir\" (his 11. dalmatinska record 0053000123 is linked)"
+  },
+  {
+    "id": 317507,
+    "action": "edit",
+    "soldier_id": "0036100079",
+    "fields": {
+      "death_type": "umro",
+      "death_date": "1971",
+      "death_place": "Trogir"
+    },
+    "reason": "Forms 2026-11-25 19:50 and 19:56, family (A. Barada, unuka): died 1971 in Trogir"
+  },
+  {
+    "id": 317508,
+    "action": "reference",
+    "soldier_id": "0006006033",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000104",
+    "ref_name": "Saftić Andrije Juraj",
+    "reason": "Form 2026-11-25 20:00, family (L., unuk): \"Umro prirodnom smrcu 1999 godine. Pokopan u Bribiru\""
+  },
+  {
+    "id": 317509,
+    "action": "edit",
+    "soldier_id": "0006006033",
+    "fields": {
+      "death_type": "umro",
+      "death_date": "1999"
+    },
+    "reason": "Form 2026-11-25 20:00, family (L., unuk): died a natural death in 1999, buried in Bribir"
+  },
+  {
+    "id": 317510,
+    "action": "edit",
+    "soldier_id": "0034900004",
+    "fields": {
+      "birth_place": "Maljkovo, Sinj"
+    },
+    "reason": "Form 2026-11-25 20:35, family (no name): born at Maljkovo, Sinj (the site's form for a village and its municipality)"
   }
 ]
