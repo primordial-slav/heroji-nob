@@ -1245,7 +1245,19 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0168001650', // Kanazir Spire Maksim of Split, 4. pomorski sektor: his nephew's form and two mails of 2026-11-24 19:42-19:49
-    // (text and name allowed); a list and a photo promised; his sisters 0122961408-09
+    // (text and name allowed); his photo at a ship's gun and his service written out by hand came by mail at 23:07 and 23:22
+    // (Porodična arhiva 9990000086 referenced; rows by 317471); his sisters 0122961408-09
+    photo: '0168001650-1.jpg',
+    photoCaption: 'Na brodu, uz top',
+    pieces: [
+      { kind: 'photo', file: '0168001650-2.jpg', caption: 'Na brodu, uz top, cela fotografija' },
+      {
+        kind: 'document',
+        file: '0168001650-3.jpg',
+        caption: 'Njegova služba, ispisana rukom',
+        transcripts: ['KANAZIR MAKS (Špiro), 27. X. 1923 – SPLIT. Legitimacija Jugoslavenske mornarice broj 14/1944 [...]. Stupio u NOVJ: 09. 09. 1943. – Demobiliziran u XI/1946. – Čin vodnika I. kl. 1944. – Od 14. 05. 1944. na službi kod IV. pom. oblast štab. Brodovi: NB „Enare[?]”, mitraljezac od poč. 1943. do potapanja 23/IV/43[?]; brod NB-11 „Crvena zvijezda”, artiljerac na bredi 20 mm; brod „Kornat” NB-8 do 24/7/1944; „Lalan – Partizanka”, jahta Vrhovnog štaba na čelu s drugom Titom i Nacionalnog komiteta oslobođenja Jugoslavije. Odlikovanja: Prezidijum Nar. skupštine FNRJ – dodjela Ordena zasluge za narod br. 71238, ukaz I 325 od 24. VI. 1946; Komanda Jug. ratne mornarice – Medalja za hrabrost, pov. br. 1245/22. 04. 1946; Jug. ratna mornarica 10. 09. 1978. dodjeljuje brončanu plaketu RM za učešće u NOB-i na moru na NB-11 „Crvena zvijezda” i doprinos jačanju [...]. Mnogo knjiga posvećenih naoružanim brodovima mornarice NOV.'],
+      },
+    ],
     text: 'Sin Špire Kanazira, koji je 1909. iz Kotora došao u Split. Od sedmoro djece Špire Kanazira i njegove supruge Anke troje je bilo u ilegali i u partizanima: Maksim i njegove sestre Nedjeljka, udana Barić, i Jasna, udana Vasić.',
     from: 'J. Kanazir, sinovac',
     date: '2026-11',
@@ -1304,6 +1316,37 @@ export const familyContributions: FamilyContribution[] = [
     // photo (text and name allowed; born 4. 2. 1914 by 317466)
     photo: '0046000452-1.jpg',
     from: 'Ž. Lovreta-Ujević, pranećakinja',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961383', // Aleksić Ivana Miroslav: his grandson's form of 2026-11-24 23:42 with a photo (text yes, name no); the photo his
+    // son's form of 11-23 announced never arrived; his face cut from the photo, the whole photo in the album
+    photo: '0122961383-1.jpg',
+    photoCaption: 'U El Šatu',
+    pieces: [{ kind: 'photo', file: '0122961383-2.jpg', caption: 'U El Šatu, sa suprugom i sinom' }],
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122961416', // Aleksić Ivana Dobrila, née Šeparović "Šćerban", of Blato: her son's missing-fighter form of 2026-11-24 22:37 with
+    // her photo (text and name allowed; Porodična arhiva 9990000087)
+    photo: '0122961416-1.jpg',
+    text: 'Borac od 1941, u Biokovskom odredu i 1. mornaričkom odredu. Poslije rata do oko 1960. bila je domaćica, a zatim je do mirovine prodavala kruh.',
+    from: 'R. Kačić-Alesić, sin',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0006007690', // Vulelija Slavko, 13. proleterska: his granddaughter's form of 2026-11-24 22:00 with his photo (no name)
+    photo: '0006007690-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0117000621', // Vulelija-Morožin Nikole Marija, Centralna bolnica: the same granddaughter's form of 2026-11-24 21:57 (no name)
+    photo: '0117000621-1.jpg',
+    photoCaption: 'U partizanskoj uniformi',
+    from: 'iz porodične arhive',
     date: '2026-11',
   },
 ]
