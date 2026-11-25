@@ -1349,6 +1349,49 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-11',
   },
+  {
+    soldierId: '0043001432', // Šiliegović-Vučković Milka Njegoslava, 10. hercegovačka: her granddaughter's form of 2026-11-24 21:52 with
+    // her Spomenica booklet (text and name allowed; Porodična arhiva 9990000088); her photo cut from the booklet, the booklet a paper.
+    // The booklet reads "Vučković Milana Njegi": the father left to the user (the record's "Milka"/"Milko")
+    photo: '0043001432-1.jpg',
+    photoCaption: 'Iz knjižice Partizanske spomenice 1941, 1962.',
+    pieces: [{
+      kind: 'document',
+      file: '0043001432-2.jpg',
+      caption: 'Knjižica Partizanske spomenice 1941, br. 27290',
+      transcripts: ['Na osnovu člana 7 Zakona o „Partizanskoj spomenici 1941” i člana 71 Ustavnog zakona o osnovama društvenog i političkog uređenja FNRJ i saveznim organima vlasti, izdaje se Vučković Milana Njegi knjižica „Partizanske spomenice 1941”. Broj 27290. [...] 62. god. Državni sekretar za poslove Narodne odbrane, general armije [potpis]. Svojeručni potpis nosioca Spomenice: [potpis]'],
+    }],
+    text: 'Posle rata kolonizirala u Gajdobru. Nosilac Partizanske spomenice. Umrla 1999.',
+    from: 'M. Lugonja, unuka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0035109359', // Radotović (the book's "Radatović") Milana Stevo, 32. zagorska: his granddaughter's form and error report
+    // of 2026-11-25 08:54, 08:57 (text yes, name no; Porodična arhiva 9990000089; rows by 317474)
+    text: 'Umro je 1982. Prezime mu nije Radatović, nego Radotović, a rodom je iz Tvrde Reke.',
+    from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036001071', // Lukin I Branko, 1. dalmatinska: a reader's form of 2026-11-25 08:19 (A. Krstulović, no relation given);
+    // the two screenshots from Borci Sutjeske he announced never arrived; his Vrhovni štab entry there is linked (317475-317476)
+    text: 'Bio je kurir Vrhovnog štaba tijekom bitke na Sutjesci. Njegovo ime nalazi se na spomeniku borcima 1. dalmatinske brigade na otoku Šolti.',
+    from: 'A. Krstulović',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0148002261', // Pivčević Frane Ivan, Mosorski odred: a reader's form of 2026-11-25 08:23 (A. Krstulović) with his photo
+    photo: '0148002261-1.jpg',
+    photoCaption: 'Iz knjige „Dva rođenja 9. dalmatinske divizije”',
+    from: 'A. Krstulović',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0036900010', // Perera-Matić Davida Izidor, 1. dalmatinska: a reader's form of 2026-11-25 08:24 (A. Krstulović) with his photo
+    photo: '0036900010-1.jpg',
+    from: 'A. Krstulović',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

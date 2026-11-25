@@ -102297,7 +102297,7 @@
     "fathers_name": "Petar",
     "full_name": "Bolšec Petra August",
     "additional_info": "Hrvat",
-    "birth_year": "",
+    "birth_year": "1927",
     "unit_detail": "brigada Matija Gubec",
     "pdf_page": 93,
     "pdf_y": 182.1,
@@ -102316,10 +102316,35 @@
         "pdf_y": 361.7,
         "pdf_x_end": 451.9,
         "pdf_y_end": 371.2
+      },
+      {
+        "soldier_id": "9990000090",
+        "name": "Bolšec Petra August",
+        "additional_info": "rođen 1927, Stari Golubovec, od oca Petra. Preživio rat.",
+        "source_url": "porodica:9990000090",
+        "ref_book": "porodicna-arhiva"
+      },
+      {
+        "soldier_id": "0058000239",
+        "name": "Bolšec Petra August",
+        "additional_info": "r.1927; Novi Marof; u KPO od lipnja 1944.",
+        "pdf_file": "kalnicki-odred.pdf",
+        "pdf_page": 8,
+        "pdf_x": 312.6,
+        "pdf_y": 166.3,
+        "pdf_x_end": 467.3,
+        "pdf_y_end": 185.4,
+        "since": "1944-06",
+        "unit_file": "kalnicki-odred-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
-    "pdf_x_end": 229.0
+    "pdf_x_end": 229.0,
+    "birth_place": "Stari Golubovec",
+    "family_fields": [
+      "birth_place",
+      "birth_year"
+    ]
   },
   {
     "last_name": "Boniek",
@@ -342307,11 +342332,11 @@
     "pdf_x_end": 387.9
   },
   {
-    "last_name": "Radatović",
-    "middle_name": "",
+    "last_name": "Radotović",
+    "middle_name": "Milana",
     "first_name": "Stevo",
-    "fathers_name": "",
-    "full_name": "Radatović Stevo",
+    "fathers_name": "Milan",
+    "full_name": "Radotović Milana Stevo",
     "additional_info": "Milana r. 1927, s. Tura Rijeka-Kapela, Bjelovar, Srbin, poljopriv., čl. SKOJ-a, NOV 1944.",
     "birth_year": "1927",
     "unit_detail": "udarna brigada Braća Radić",
@@ -342332,12 +342357,29 @@
         "pdf_y": 209.8,
         "pdf_x_end": 429.9,
         "pdf_y_end": 219.3
+      },
+      {
+        "soldier_id": "9990000089",
+        "name": "Radotović Stevo",
+        "additional_info": "Tvrda Reka (Kapela, Bjelovar). Preživio rat. Umro 1982.",
+        "source_url": "porodica:9990000089",
+        "ref_book": "porodicna-arhiva"
       }
     ],
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
     "pdf_x_end": 446.8,
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "birth_place": "Tvrda Reka, Kapela, Bjelovar",
+    "family_fields": [
+      "birth_place",
+      "death_date",
+      "death_type",
+      "fathers_name",
+      "middle_name"
+    ],
+    "death_type": "umro",
+    "death_date": "1982"
   },
   {
     "last_name": "Radatović",

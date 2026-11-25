@@ -2049875,5 +2049875,108 @@
       "unit_detail": "NB-11 „Crvena zvijezda”; NB-8 „Kornat”; „Partizanka”; štab IV. pomorske oblasti"
     },
     "reason": "Mails 2026-11-24 23:07 and 23:22, family (J. Kanazir, sinovac): his service written out by hand, and his photo: the same"
+  },
+  {
+    "id": 317472,
+    "action": "reference",
+    "soldier_id": "0043001432",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000088",
+    "ref_name": "Šiliegović-Vučković Njegoslava",
+    "reason": "Form 2026-11-24 21:52, family (M. Lugonja, unuka): Partizanska spomenica 1941 (her booklet no. 27290 of 1962, sent as a photo), colonist in Gajdobra after the war, died 1999"
+  },
+  {
+    "id": 317473,
+    "action": "reference",
+    "soldier_id": "0035109359",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000089",
+    "ref_name": "Radotović Stevo",
+    "reason": "Forms 2026-11-25 08:54 and 08:57, family (unuka, no name): died 1982; the surname is Radotović; born in Tvrda Reka, not \"Tura Rijeka\""
+  },
+  {
+    "id": 317474,
+    "action": "edit",
+    "soldier_id": "0035109359",
+    "fields": {
+      "last_name": "Radotović",
+      "middle_name": "Milana",
+      "fathers_name": "Milan",
+      "birth_place": "Tvrda Reka, Kapela, Bjelovar"
+    },
+    "reason": "Forms 2026-11-25 08:54 and 08:57, family (unuka, no name): the surname Radotović and the village Tvrda Reka (village only, Kapela and Bjelovar as printed); the father Milan as the entry prints him (\"Milana r. 1927\"); the entry stays as printed"
+  },
+  {
+    "id": 317475,
+    "action": "link",
+    "soldier_id": "0036001071",
+    "link_id": "0112000234",
+    "link_name": "Lukin Ive Branko",
+    "reason": "Same soldier in 1. Dalmatinska and Vrhovni štab (Borci Sutjeske): of Iž, Zadar, company commander in the 1. bataljon of the 1. dalmatinska, killed on Šolta in 1944; a reader's form of 2026-11-25 08:19 (A. Krstulović): courier of the Vrhovni štab at the Sutjeska"
+  },
+  {
+    "id": 317476,
+    "action": "link",
+    "soldier_id": "0036001071",
+    "link_id": "0007002941",
+    "link_name": "Lukin Ive Branko",
+    "reason": "Same soldier in 1. Dalmatinska and 2. Dalmatinska Proleterska: Mali Iž, Zadar; \"Poginuo kao komandir čete u 1. dalm. brigadi 1944. na o. Šolti\""
+  },
+  {
+    "id": 317477,
+    "action": "link",
+    "soldier_id": "0035101007",
+    "link_id": "0058000239",
+    "link_name": "Bolšec August",
+    "reason": "Form 2026-11-25 06:48, family (V. Bolšec, sin): \"imate ga u evidenciji dva puta a radi se o istoj osobi\", b. 1927 Stari Golubovec, father Petar, survived"
+  },
+  {
+    "id": 317478,
+    "action": "reference",
+    "soldier_id": "0035101007",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000090",
+    "ref_name": "Bolšec Petra August",
+    "reason": "Form 2026-11-25 06:48, family (V. Bolšec, sin): \"imate ga u evidenciji dva puta a radi se o istoj osobi\", b. 1927 Stari Golubovec, father Petar, survived"
+  },
+  {
+    "id": 317479,
+    "action": "edit",
+    "soldier_id": "0035101007",
+    "fields": {
+      "birth_place": "Stari Golubovec",
+      "birth_year": "1927"
+    },
+    "reason": "Form 2026-11-25 06:48, family (V. Bolšec, sin): \"imate ga u evidenciji dva puta a radi se o istoj osobi\", b. 1927 Stari Golubovec, father Petar, survived"
+  },
+  {
+    "id": 317480,
+    "action": "edit",
+    "soldier_id": "0058000239",
+    "fields": {
+      "birth_place": "Stari Golubovec",
+      "fathers_name": "Petar"
+    },
+    "reason": "Form 2026-11-25 06:48, family (V. Bolšec, sin): \"imate ga u evidenciji dva puta a radi se o istoj osobi\", b. 1927 Stari Golubovec, father Petar, survived (the entry's \"Novi Marof\" stays as printed)"
+  },
+  {
+    "id": 317481,
+    "action": "edit",
+    "soldier_id": "0043001432",
+    "fields": {
+      "death_type": "umro",
+      "death_date": "1999"
+    },
+    "reason": "Form 2026-11-24 21:52, family (M. Lugonja, unuka): \"Umrla 1999.\""
+  },
+  {
+    "id": 317482,
+    "action": "edit",
+    "soldier_id": "0035109359",
+    "fields": {
+      "death_type": "umro",
+      "death_date": "1982"
+    },
+    "reason": "Form 2026-11-25 08:54, family (unuka, no name): \"Umro je 1982.\""
   }
 ]
