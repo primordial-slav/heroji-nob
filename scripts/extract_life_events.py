@@ -399,6 +399,16 @@ def phrase_of(s: dict, e: dict) -> str:
 
 NOT_DEATHS = {'zarobljen': 'captured', 'ranjen': 'wounded'}       # death_type: no death, as lib/deathDay.ts
 
+
+def after_death(st: dict, death: dict) -> bool:
+    """The step falls after the death (its last day, when it is a span), at the precision both give: 1944-10 is after
+    1944-01-18, 1944 is not after 1944-01"""
+    for a, b in zip(st['d'].split('-'), (death.get('e') or death['d']).split('-')):
+        if a != b:
+            return int(a) > int(b)
+    return False
+
+
 def life_events(s: dict, code: int) -> list[dict]:
     entries = [s] + list(s.get('other_sources') or [])
     steps: list[dict] = []
@@ -450,6 +460,22 @@ def life_events(s: dict, code: int) -> list[dict]:
                     break
             steps.append(step)
     steps += war_steps(s, code, entries)
+    # a joining (nob, skoj, kpj) dated after the death gives way to another entry's that fits, and when no entry read
+    # above gives one, to a book across units' (otherwise not read here): Babić Rade's own "borac od 18. 10. 1944"
+    # against his HAK's "stupio u NOV 9. 10. 1942", fell 14. 1. 1944 (05's case, 2026-11-25). Where none fits, the step
+    # stays as printed: the slip may be the death's (Milošević Ratko "poginuo 12. aprila 1944 ... Sremski front"), and
+    # the card goes on the list of joinings after the death
+    death = next((st for st in steps if st['k'] == 'death'), None)
+    for k in ('nob', 'skoj', 'kpj') if death else ():
+        mine = [st for st in steps if st['k'] == k]
+        fits = [st for st in mine if not after_death(st, death)]
+        if len(fits) == len(mine):
+            continue
+        if not fits:
+            fits = [dict(st, s=i) for i, e in enumerate(entries) if e.get('ref_book') and e['ref_book'] != 'porodicna-arhiva'
+                    for st in read_entry(e.get('additional_info') or '') if st['k'] == k and not after_death(st, death)][:1]
+        if fits:
+            steps = [st for st in steps if st['k'] != k] + fits
     # one of each kind that happens once: a family's account wins (Porodična arhiva: the user's rule that the family's
     # report wins on the card, 2026-11-21; Petković Dragica's "U NOB od 1941" over a book's "marta 1944", 2026-11-23),
     # then the soldier's own entry over another book's
