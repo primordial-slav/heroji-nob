@@ -1403,7 +1403,7 @@ def main():
                 seen.add(v); v = moved[v]
             return None if v in seen else v
         moved = {k: t for k in moved for t in [follow(k)] if t and t != k}
-        write_text(MOVED, json.dumps(moved, ensure_ascii=False, indent=0, sort_keys=True))
+        write_text(MOVED, json.dumps(moved, ensure_ascii=False, indent=0, sort_keys=True) + '\n')
         print('Written', MOVED)
         # the entries left out, with the entries on the site they go with: scripts/attach_left_out.py gives each to the
         # records that hold its man (2026-10-31: they had shown nowhere)

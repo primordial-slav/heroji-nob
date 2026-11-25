@@ -103,7 +103,7 @@ def main():
     for k in list(new)[:8]:
         print('  ', k, '->', new[k])
     if write and new:
-        write_text(MOVED, json.dumps({**moved, **new}, ensure_ascii=False, indent=0, sort_keys=True))
+        write_text(MOVED, json.dumps({**moved, **new}, ensure_ascii=False, indent=0, sort_keys=True) + '\n')
         print('Written', MOVED)
 
 
