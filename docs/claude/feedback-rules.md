@@ -56,6 +56,13 @@ A new rule the user gives goes here, with its date and the user's words.
   a card a family or visitor touched whose words no text of the card, the family's note or the form itself says
   (the Brajdićs had Zagreb as a birthplace no form gave; the user, 2026-11-24: "make sure no stupid mistakes like
   mesto rođenja mistake"). A value it lists is fixed or explained before the commit.
+- **Names' diacritics.** `check_form_fields.py` also lists a name (surname, father, given name) that another spelling on
+  the card prints with a mark it lacks, in an entry, another book, the family's note or the form ("Spire" beside "od oca
+  Špire"), or a father as printed whose marks disagree with his nominative (Spire / Špiro). It is mended only where the
+  scan prints the mark or a family or another book gives it; the entry stays as printed. `--all` lists the same over
+  every unit for review, in `quality/name-diacritics-all.json` (2,420 names on 2026-11-26, none mended unseen). The
+  user, 2026-11-26: "make a check or rule for future to not make the špiro spiro mistake again" (Kanazir Špire Maksim,
+  and 19 more of the 4. pomorski sektor by the scan, d7996a69).
 - **A living person's office** is dated ("predsednik ... u novembru 2026"), never "sada".
 - **A place correction ticked "Koristi kao pravilo"** on /pregled is kept in `quality/pregled-pravila.json` (so far
   Sindija → Sirdija).
