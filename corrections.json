@@ -41572,14 +41572,9 @@
       "first_name": "Živojin",
       "birth_date": "4. 6. 1924",
       "birth_place": "Ostrvica, Niš",
-      "occupation": "zemljoradnik",
-      "unit_detail": "1. bataljon",
-      "rank": "mitraljezac",
-      "death_date": "16. 8. 1944",
-      "death_place": "Zelengora",
-      "death_type": "poginuo"
+      "occupation": "zemljoradnik"
     },
-    "reason": "Fix first_name diacritics (Zivojin->Živojin); extract fields. Note: additional_info contains merged data from JOKIĆ entry"
+    "reason": "Fix first_name diacritics (Zivojin->Živojin); extract fields. Note: additional_info contains merged data from JOKIĆ entry; the battalion, duty and death were the glued Jokić's (0002009835) and are off (05, 2026-11-25)"
   },
   {
     "id": 3317,
@@ -628628,14 +628623,6 @@
     "reason": "Same soldier in 2. Dalmatinska Proleterska and 1. Dalmatinska; same birth year, birthplace"
   },
   {
-    "id": 60102,
-    "action": "link",
-    "soldier_id": "0007000891",
-    "link_id": "0036000365",
-    "link_name": "Cetinić A Ante",
-    "reason": "Same soldier in 2. Dalmatinska Proleterska and 1. Dalmatinska; same father initial, birthplace"
-  },
-  {
     "id": 60103,
     "action": "link",
     "soldier_id": "0007000922",
@@ -931236,14 +931223,6 @@
     "reason": "Same soldier in Prva Proleterska and 3. Dalmatinska; same father, birth year, birthplace, death year"
   },
   {
-    "id": 93775,
-    "action": "link",
-    "soldier_id": "0001008669",
-    "link_id": "0079000822",
-    "link_name": "Opačić Tode Savo",
-    "reason": "Same soldier in Prva Proleterska and 19. Sjevernodalmatinska divizija; same father, birthplace"
-  },
-  {
     "id": 93776,
     "action": "link",
     "soldier_id": "0001008674",
@@ -1158996,14 +1158975,6 @@
     "reason": "Same soldier in 3. Krajiška Proleterska and 1. Krajiška proleterska; same father, birth year. Checked with the new units' lists"
   },
   {
-    "id": 150143,
-    "action": "link",
-    "soldier_id": "0010204125",
-    "link_id": "0126000889",
-    "link_name": "Radovanović Dragiše Momčilo",
-    "reason": "Same soldier in 3. Krajiška Proleterska and Čačanski odred; same father, birth year. Checked with the new units' lists"
-  },
-  {
     "id": 150144,
     "action": "link",
     "soldier_id": "0010205490",
@@ -1159314,14 +1159285,6 @@
     "link_id": "0123001989",
     "link_name": "Čubrilo Luke Nikola",
     "reason": "Same soldier in 6. Krajiška and 1. Krajiška proleterska; same father, birth year. Checked with the new units' lists"
-  },
-  {
-    "id": 150183,
-    "action": "link",
-    "soldier_id": "0015000068",
-    "link_id": "0127000188",
-    "link_name": "Janković Milojka Milisav",
-    "reason": "Same soldier in 1. Šumadijska and 5. Srpska; same father, birth year. Checked with the new units' lists"
   },
   {
     "id": 150184,
@@ -1437737,14 +1437700,6 @@
     "reason": "Same soldier in https://znaci.org/00001/32_1.htm and 1-dalmatinska-monografija.pdf; same duty. Žene Hrvatske u NOB, the brigade's list of its women"
   },
   {
-    "id": 227231,
-    "action": "merge",
-    "soldier_id": "0036001380",
-    "merge_id": "0036020048",
-    "merge_name": "Oreb Ivica",
-    "reason": "Same soldier in https://znaci.org/00001/32_1.htm and zene-1-dalmatinska.pdf; same birth year. Žene Hrvatske u NOB, the brigade's list of its women"
-  },
-  {
     "id": 227232,
     "action": "merge",
     "soldier_id": "0036001509",
@@ -1468967,15 +1468922,6 @@
     "ref_id": "9025000930",
     "ref_name": "Babić (Slavitelj) Dragica",
     "reason": "Babić Slavitelja Dragica is the Babić (Slavitelj) Dragica of the book; same father, birth year, birthplace; census:sure"
-  },
-  {
-    "id": 230982,
-    "action": "reference",
-    "soldier_id": "0127000188",
-    "ref_book": "zrtve-rata-1964-srb",
-    "ref_id": "9025029272",
-    "ref_name": "Janković (Milovan) Milisav",
-    "reason": "Janković Milojka Milisav is the Janković (Milovan) Milisav of the book; same birth year, birthplace, death year, death place; census:sure"
   },
   {
     "id": 230983,
@@ -2050047,5 +2049993,128 @@
       "birth_place": "Novo Mjesto, Zelina"
     },
     "reason": "The birthplace in the site's one form (village, municipality), not in parentheses: Sušec Nikola, a grandson's forms of 2026-11-25 11:24 and 11:32 (9990000094)"
+  },
+  {
+    "id": 317490,
+    "action": "edit",
+    "soldier_id": "0048012984",
+    "fields": {
+      "death_type": "poginuo",
+      "death_date": "04.1944",
+      "death_place": "Fojnica"
+    },
+    "reason": "His own entry prints \"PO-GINUO aprila 1944. kod Fojnice\" (the scan's hyphen kept the reader from it), joined September 1943; the census's 1941 and M. Grad had stood in its place (05, joinings after the death, 2026-11-25)"
+  },
+  {
+    "id": 317491,
+    "action": "edit",
+    "soldier_id": "0011001079",
+    "fields": {
+      "death_type": "poginuo",
+      "death_date": "05.04.1945",
+      "death_place": "Brezovo Polje, Brčko"
+    },
+    "reason": "His own entry prints \"pogpnuo 5. IV 1945. kod sela Brezovog Polja, Brčko\" (the scan's slip kept the reader from it; U rovovima Srema has him at Brezovo Polje too), joined 10. 1. 1945; the census's 1944 had stood in its place (05, 2026-11-25)"
+  },
+  {
+    "id": 317492,
+    "action": "edit",
+    "soldier_id": "0001009731",
+    "fields": {
+      "death_date": "19.04.1945"
+    },
+    "reason": "Fell at Pleternica 19. 4. 1945 as the 3. krajiška prints it (0010001416); the Crnogorski bataljon's \"poginuo 19. aprila 1944\" falls before its own \"u NOB od 15. oktobra 1944\" (05, 2026-11-25)"
+  },
+  {
+    "id": 317493,
+    "action": "edit",
+    "soldier_id": "0059001374",
+    "fields": {
+      "death_date": "10.08.1944"
+    },
+    "reason": "Fell on Monj 10. 8. 1944 as the 18. hrvatska prints it (0052001198: in the brigade from 5. 6. 1944); the odred's \"poginuo 10. 8. 1943\" falls before its own \"u odredu od 16. 9. 1943\" (05, 2026-11-25)"
+  },
+  {
+    "id": 317494,
+    "action": "edit",
+    "soldier_id": "0096000316",
+    "fields": {
+      "death_date": "12.04.1945"
+    },
+    "reason": "Fell crossing the Spačva 12. 4. 1945 as the 10. srpska prints it (0088009003: in the NOB from September 1944); the division's list's \"12. IV 1944\" is a year off (the Spačva was forced in April 1945) (05, 2026-11-25)"
+  },
+  {
+    "id": 317495,
+    "action": "edit",
+    "soldier_id": "0096000993",
+    "fields": {
+      "death_date": "03.03.1945"
+    },
+    "reason": "Fell attacking Gradina by Srebrenica 3. 3. 1945 as the 10. srpska prints it (0088000372: in the NOB from September 1944); the division's list's \"3. III 1944\" is a year off (05, 2026-11-25)"
+  },
+  {
+    "id": 317496,
+    "action": "edit",
+    "soldier_id": "0036000519",
+    "fields": {
+      "death_date": "10.05.1944",
+      "death_place": "Grohote, Šolta"
+    },
+    "reason": "Borci Sutjeske print \"poginuo na ostrvu Šolti, kod sela Grohote, 10. maja 1944\" and the census Šolta 1944; the monograph's \"na Pelješcu novembra 1943\" falls before his KPJ of March 1944 (05, 2026-11-25)"
+  },
+  {
+    "id": 317497,
+    "action": "edit",
+    "soldier_id": "0036000097",
+    "fields": {
+      "death_date": "1943"
+    },
+    "reason": "Fell at the Sutjeska (\"u V ofanzivi\", Borci Sutjeske \"poginuo u bici na Sutjesci\"), in the NOB from January 1943; the census's 1942 had stood in its place (05, 2026-11-25)"
+  },
+  {
+    "id": 317498,
+    "action": "edit",
+    "soldier_id": "0036000973",
+    "fields": {
+      "death_date": "1943"
+    },
+    "reason": "Fell at the Sutjeska (\"u V ofanzivi\", Borci Sutjeske \"poginuo u bici na Sutjesci\"), in the NOB from 1942; the census's 1941 had stood in its place (05, 2026-11-25)"
+  },
+  {
+    "id": 317499,
+    "action": "edit",
+    "soldier_id": "0079000822",
+    "fields": {
+      "death_type": "poginuo",
+      "death_date": "20.09.1944",
+      "death_place": "Radučić",
+      "party": "",
+      "birth_year": ""
+    },
+    "reason": "His entry in the 19. sjevernodalmatinska's list of the fallen: \"iz Plavna, u borbi kod Raduoića [Radučića], 20. IX 1944\"; the death his link to Opačić Tome Savo lent (his brother Tomo's \"ljeto 1942\") goes with the link (05, 2026-11-25); the year 1918 and the KPJ 1944 the link lent are Opačić Tome Savo's"
+  },
+  {
+    "id": 317500,
+    "action": "edit",
+    "soldier_id": "0001001269",
+    "fields": {
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Survived the war: Dalmatinci u Prvoj proleterskoj end \"Kraj rata ga je zatekao na dužnosti komandira 1. čete Inžinjerijskog bataljona ... danas je rezervni major u penziji\"; the death read was a brother's (\"od kojih je jedan poginuo\", 1943) (05, joinings after the death, 2026-11-25)",
+    "keep_blank": true
+  },
+  {
+    "id": 317501,
+    "action": "edit",
+    "soldier_id": "0001008669",
+    "fields": {
+      "death_type": "",
+      "death_date": "",
+      "death_place": ""
+    },
+    "reason": "Survived the war: Dalmatinci u Prvoj proleterskoj have him at the Komanda mjesta Bosansko Grahovo at its end; \"ljeto 1942\" is his brother Tomo's death (\"od kojih je Tomo poginuo u ljeto 1942\") (05, 2026-11-25)",
+    "keep_blank": true
   }
 ]

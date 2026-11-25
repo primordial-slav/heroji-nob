@@ -18046,14 +18046,14 @@
     "pdf_file": "11-dalmatinska.pdf",
     "soldier_id": "0053000721",
     "pdf_x_end": 273.0,
-    "death_date": "1943",
-    "death_place": "Konjic",
     "party": "KPJ 1944",
     "birth_place": "Rudine, Hvar",
     "occupation": "zemljoradnik",
-    "death_type": "poginuo",
     "rank": "vodnik",
     "unit_detail": "2. četa, 2. bataljon",
+    "death_type": "poginuo",
+    "death_date": "02.12.1944",
+    "death_place": "na Crnoj glavici ispred Knina",
     "other_sources": [
       {
         "soldier_id": "0036000478",
@@ -18078,7 +18078,15 @@
         "unit_file": "1-dalmatinska-soldiers.json"
       }
     ],
-    "birth_date": "12.04.1919"
+    "birth_date": "12.04.1919",
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Konjic"
+        }
+      ]
+    }
   },
   {
     "last_name": "Dumanić",

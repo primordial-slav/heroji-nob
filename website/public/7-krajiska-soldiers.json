@@ -38370,9 +38370,6 @@
         "pdf_y_end": 611.4
       }
     ],
-    "death_type": "poginuo",
-    "death_date": "08.1943",
-    "death_place": "Mujcići",
     "party": "SKOJ 1942, KPJ 1944"
   },
   {
@@ -97844,6 +97841,9 @@
     "rank": "borac",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 288.1,
+    "death_date": "04.1944",
+    "death_place": "Fojnica",
+    "death_type": "poginuo",
     "other_sources": [
       {
         "soldier_id": "9022023761",
@@ -97854,14 +97854,14 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_type": "poginuo",
-    "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type"
-    ],
-    "death_date": "1941",
-    "death_place": "M. Grad"
+    "variants": {
+      "death": [
+        {
+          "date": "1941",
+          "place": "M. Grad"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ćurić",

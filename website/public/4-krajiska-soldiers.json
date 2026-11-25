@@ -38480,6 +38480,9 @@
     "rank": "borac",
     "unit_detail": "2. bataljon",
     "pdf_x_end": 343.5,
+    "death_date": "05.04.1945",
+    "death_place": "Brezovo Polje, Brčko",
+    "death_type": "poginuo",
     "other_sources": [
       {
         "soldier_id": "9025021111",
@@ -38514,14 +38517,14 @@
         "ref_book": "u-rovovima-srema-poginuli"
       }
     ],
-    "death_type": "poginuo",
-    "borrowed": [
-      "death_date",
-      "death_place",
-      "death_type"
-    ],
-    "death_date": "1944",
-    "death_place": "Na sremskom fro"
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Na sremskom fro"
+        }
+      ]
+    }
   },
   {
     "last_name": "Purić",

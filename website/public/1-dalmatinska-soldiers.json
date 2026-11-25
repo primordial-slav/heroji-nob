@@ -4237,10 +4237,15 @@
     "occupation": "zemljoradnik",
     "death_place": "Sutjeska",
     "party": "SKOJ",
-    "death_date": "1942",
-    "borrowed": [
-      "death_date"
-    ]
+    "death_date": "1943",
+    "variants": {
+      "death": [
+        {
+          "date": "1942",
+          "place": "Crna Gora"
+        }
+      ]
+    }
   },
   {
     "last_name": "Barbarić",
@@ -15764,9 +15769,6 @@
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036000365",
     "birth_place": "Blato, Korčula",
-    "death_type": "poginuo",
-    "death_date": "03.1943",
-    "death_place": "Vis",
     "ethnicity": "Hrvat",
     "occupation": "brijač",
     "other_sources": [
@@ -15781,21 +15783,11 @@
         "pdf_y_end": 458.7,
         "pdf_x_end": 384.9,
         "pdf_x_left": 26.8
-      },
-      {
-        "soldier_id": "0007000891",
-        "name": "Cetinić Ante Ante",
-        "additional_info": "1. 7. 1924. Blato, Korčula. Hrvat, brijač. U NOV od 1. 7. 1944. u 2. dalm. brigadi.",
-        "pdf_file": "2-dalmatinska-proleterska.pdf",
-        "pdf_page": 31,
-        "pdf_x": 141.7,
-        "pdf_y": 254.3,
-        "pdf_x_end": 463.3,
-        "pdf_y_end": 270.3,
-        "unit_file": "2-dalmatinska-soldiers.json"
       }
     ],
-    "birth_date": "01.07.1924"
+    "death_type": "poginuo",
+    "death_date": "03.1943",
+    "death_place": "Vis"
   },
   {
     "last_name": "Cetinić",
@@ -22077,8 +22069,8 @@
     "soldier_id": "0036000519",
     "birth_place": "Šibenik",
     "death_type": "poginuo",
-    "death_date": "11.1943",
-    "death_place": "Pelješac",
+    "death_date": "10.05.1944",
+    "death_place": "Grohote, Šolta",
     "rank": "vodni delegat",
     "unit_detail": "1. bataljon",
     "other_sources": [
@@ -22120,8 +22112,8 @@
     "variants": {
       "death": [
         {
-          "date": "10.05.1944",
-          "place": "Šolta"
+          "date": "11.1943",
+          "place": "Pelješac"
         }
       ]
     }
@@ -40951,13 +40943,15 @@
     "occupation": "radnik",
     "death_place": "Sutjeska",
     "party": "SKOJ",
-    "death_date": "1941",
-    "borrowed": [
-      "death_date"
-    ],
+    "death_date": "1943",
     "variants": {
       "born": [
         "1924"
+      ],
+      "death": [
+        {
+          "date": "1941"
+        }
       ]
     }
   },
@@ -58295,12 +58289,6 @@
     "birth_year": "1921",
     "source_url": "https://znaci.org/00001/32_1.htm",
     "soldier_id": "0036001380",
-    "birth_place": "V. Luka, Korčula",
-    "death_type": "poginuo",
-    "death_date": "02.1944",
-    "death_place": "Široki Brijeg",
-    "rank": "delegat voda",
-    "unit_detail": "4. bataljon",
     "other_sources": [
       {
         "soldier_id": "0036011479",
@@ -58313,20 +58301,33 @@
         "pdf_y_end": 498.6,
         "pdf_x_end": 385.9,
         "pdf_x_left": 27.8
-      },
-      {
-        "soldier_id": "0036020048",
-        "name": "Oreb Ivica",
-        "additional_info": "vodna boln.; rođena 27. XII. 1921. Velaluka; u NOV od 20. IV. 1944.; Kao bolničarka vrlo dobra, poslušna i disciplinovana",
-        "pdf_file": "zene-1-dalmatinska.pdf",
-        "pdf_page": 3,
-        "pdf_x": 320.5,
-        "pdf_y": 445.62149999999997,
-        "pdf_y_end": 461.2,
-        "pdf_x_end": 654.5,
-        "pdf_x_left": 261.0
       }
     ],
+    "birth_place": "V. Luka, Korčula",
+    "death_type": "poginuo",
+    "death_date": "02.1944",
+    "death_place": "Široki Brijeg",
+    "rank": "delegat voda",
+    "unit_detail": "4. bataljon"
+  },
+  {
+    "soldier_id": "0036020048",
+    "last_name": "Oreb",
+    "middle_name": "",
+    "first_name": "Ivica",
+    "fathers_name": "",
+    "additional_info": "vodna boln.; rođena 27. XII. 1921. Velaluka; u NOV od 20. IV. 1944.; Kao bolničarka vrlo dobra, poslušna i disciplinovana",
+    "pdf_file": "zene-1-dalmatinska.pdf",
+    "pdf_page": 3,
+    "pdf_x": 320.5,
+    "pdf_y": 445.62149999999997,
+    "pdf_x_end": 654.5,
+    "pdf_y_end": 461.2,
+    "pdf_x_left": 261.0,
+    "birth_year": "1921",
+    "full_name": "Oreb Ivica",
+    "birth_place": "Velaluka",
+    "rank": "bolničarka",
     "birth_date": "27.12.1921"
   },
   {

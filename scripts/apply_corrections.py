@@ -683,8 +683,11 @@ def main():
             if record_sources.FAMILY_ONLY.search(c.get('reason') or ''):
                 FAMILY_MARK.setdefault(c.get('new_id') or c['soldier_id'], set()).update(set_fields & record_sources.MARKED_FIELDS)
         # a field the review page's answer leaves empty stays so (scripts/review_fields.py); so does one a family's report
-        # empties: Aničić Dragoljub, whom both his books print fallen and his family knows survived (the user, 2026-11-22)
-        if 290061 <= c['id'] <= 293060 or (c['action'] == 'edit' and record_sources.FAMILY_REASON.search(c.get('reason') or '')):
+        # empties: Aničić Dragoljub, whom both his books print fallen and his family knows survived (the user, 2026-11-22);
+        # and one an edit marked keep_blank empties, where an entry still reads another man's value: Bućan Aleksandar,
+        # whose merged bio's "od kojih je jedan poginuo" (a brother, 1943) was read as his death (05, 2026-11-25)
+        if 290061 <= c['id'] <= 293060 or (c['action'] == 'edit' and (
+                c.get('keep_blank') or record_sources.FAMILY_REASON.search(c.get('reason') or ''))):
             for k, v in c.get('fields', {}).items():
                 blanked = structured.BLANKED.setdefault(c['soldier_id'], set())
                 (blanked.add if k in structured.FIELDS and v == '' else blanked.discard)(k)

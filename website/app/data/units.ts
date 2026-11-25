@@ -366,7 +366,7 @@ export const units: Unit[] = [
     nameEn: '1st Dalmatian Proletarian Brigade',
     description: 'Formirana 6. septembra 1942. u selu Dobro kod Livna. Borci poginuli u ratu, borci na Sutjesci, žene borci 1944–1945, komandiri i komesari četa i komandni sastav brigade i bataljona. Uz njih i borci brigade iz drugih knjiga.',
     image: '/images/1-dalmatinska-brigada.jpg',
-    soldierCount: 3263,
+    soldierCount: 3264,
     dataFile: '/1-dalmatinska-soldiers.json',
     pdfFiles: ['/pdfs/borci-sutjeske-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-monografija.pdf', '/pdfs/zene-1-dalmatinska.pdf', '/pdfs/1-dalmatinska-komandni-sastav.pdf', '/pdfs/1-dalmatinska-formiranje.pdf']
   },
