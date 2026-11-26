@@ -1419,8 +1419,8 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0022000431', // Đukić (the book's "Bukin") Radivoj of Gospođinci, 7. vojvođanska: his nephew's form of 2026-11-25 11:03
-    // (text yes, name no; surname by 317484); a photo and more offered
-    text: 'Prezime mu nije Bukin, nego Đukić. Rođen je 1927. u Gospođincima.',
+    // (text yes, name no; surname by 317484); a photo and more offered; his second form of 2026-11-26 08:35 (death by 318546)
+    text: 'Prezime mu nije Bukin, nego Đukić. Rođen je 1927. u Gospođincima. Preminuo je 2002.',
     from: 'iz porodične arhive',
     date: '2026-11',
   },
