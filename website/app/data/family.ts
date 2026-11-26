@@ -1544,10 +1544,11 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0018001234', // Pavlović Steva (the book prints Света, 318554), 2. vojvođanska: his relative's form of 2026-11-26 13:27
     // (text, photos and name allowed; Porodična arhiva 9990000110); of her two photos only the second came: him in uniform,
-    // his face cut as the portrait, the whole photo in the album
+    // his face cut as the portrait, the whole photo in the album; her missing-fighter form of 2026-11-25 14:02 ("Pavović", b. 1923,
+    // Bukovac, d. 1962) is the same man (birthplace by 318556); what she says of his living daughters is left out
     photo: '0018001234-1.jpg',
     pieces: [{ kind: 'photo', file: '0018001234-2.jpg', caption: 'U uniformi' }],
-    text: 'Bio je politički komesar Druge fruškogorske brigade. Živeo je u Bukovcu kod Novog Sada, pre i posle rata. Bio je oženjen i imao dve ćerke. Ubio se jer nije mogao da savlada ratne posledice. Sahranjen je u Bukovcu.',
+    text: 'Rođen je 1923. u Bukovcu kod Novog Sada. Bio je politički komesar Druge fruškogorske brigade. Posle rata vratio se u Bukovac, oženio se i imao dve ćerke. Ubio se 1962. jer nije mogao da savlada ratne posledice. Sahranjen je u Bukovcu.',
     from: 'M. Milošević, rođaka',
     date: '2026-11',
   },
