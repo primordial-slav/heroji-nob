@@ -2055250,5 +2055250,34 @@
     "ref_id": "9990000114",
     "ref_name": "Volf Antuna Branko",
     "reason": "Form 2026-11-26 20:12, family (S. Brozović, his sister's son; text, photos and name allowed), with his portrait: \"Nosilac Partizanske spomenice\""
+  },
+  {
+    "id": 318558,
+    "action": "reference",
+    "soldier_id": "0006007422",
+    "ref_book": "zrtve-rata-1964-hrv",
+    "ref_id": "9021002965",
+    "ref_name": "Volf (Antun) Zvonko",
+    "reason": "Volf Antona Zvonimir of Tršće (the book: 1923, \"Nestao, poginuo\") is the census's Volf (Antun) Zvonko of Tršće, b. 1924, fell 1944 at Mlinište: the same father and village, Zvonko for Zvonimir, and his family's form of 2026-11-26 20:22 gives his death on 1. 1. 1944 at Mrkonjić, beside Mlinište; the sender names three sons of Antun of Tršće (Bogdan, Branko, Zvonimir), one of each name"
+  },
+  {
+    "id": 318559,
+    "action": "reference",
+    "soldier_id": "0006007422",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000115",
+    "ref_name": "Volf Antona Zvonimir",
+    "reason": "Form 2026-11-26 20:22, family (S. Brozović, his sister's son; text, photos and name allowed), with his portrait: \"Poginuo 1.1.1944, Mrkonjić, Bosna, nosilac Partizanske spomenice\""
+  },
+  {
+    "id": 318560,
+    "action": "edit",
+    "soldier_id": "0006007422",
+    "fields": {
+      "death_type": "poginuo",
+      "death_date": "01.01.1944",
+      "death_place": "Mrkonjić Grad"
+    },
+    "reason": "Form 2026-11-26 20:22, family (S. Brozović, nećak): \"Poginuo 1.1.1944, Mrkonjić, Bosna\" (the book: \"Nestao, poginuo\"; the census: 1944, Mlinište); the family's death wins (docs/claude/feedback-rules.md)"
   }
 ]

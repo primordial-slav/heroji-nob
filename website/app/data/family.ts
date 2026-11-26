@@ -1589,6 +1589,14 @@ export const familyContributions: FamilyContribution[] = [
     from: 'S. Brozović, nećak',
     date: '2026-11',
   },
+  {
+    soldierId: '0006007422', // Volf Antona Zvonimir of Tršće, 13. proleterska: his mother's brother, form of 2026-11-26 20:22 (the
+    // Spomenica, his death on 1. 1. 1944 at Mrkonjić: 318559-318560; the census's Zvonko joined by 318558). His sister Nevenka
+    // Volf's form (20:32) makes a new record at Sunday's chain (9990000116): her photo waits in quality/held-photos
+    photo: '0006007422-1.jpg',
+    from: 'S. Brozović, nećak',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

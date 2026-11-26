@@ -158425,7 +158425,7 @@
       },
       {
         "soldier_id": "0097001200",
-        "name": "Valečić Mijo",
+        "name": "Valečić Mije Mijo",
         "additional_info": "borac, ŽB, 1919. Purgarija, Jastrebarsko, poginuo Goli Vrh, 1943",
         "pdf_file": "34-divizija.pdf",
         "pdf_page": 28,
@@ -164129,8 +164129,41 @@
     "pdf_y_end": 355.8,
     "pdf_file": "13-proleterska-spisak.pdf",
     "birth_place": "Tršće, Čabar",
-    "death_type": "nestao",
-    "pdf_x_end": 466.0
+    "death_type": "poginuo",
+    "pdf_x_end": 466.0,
+    "death_date": "01.01.1944",
+    "death_place": "Mrkonjić Grad",
+    "other_sources": [
+      {
+        "soldier_id": "9021002965",
+        "name": "Volf (Antun) Zvonko",
+        "additional_info": "rođen 1924, Tršće (Čabar). Hrvat, poginuo 1944. u NOBu, Mlinište",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=110",
+        "source_page": 110,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9990000115",
+        "name": "Volf Antona Zvonimir",
+        "additional_info": "Poginuo 1. 1. 1944, Mrkonjić, Bosna. Nosilac Partizanske spomenice.",
+        "source_url": "porodica:9990000115",
+        "ref_book": "porodicna-arhiva"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "born": [
+        "1924"
+      ]
+    },
+    "family_fields": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ]
   },
   {
     "last_name": "Volk",
