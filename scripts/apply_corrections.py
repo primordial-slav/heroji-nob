@@ -397,6 +397,12 @@ def apply_references(refs, units, fills=None):
     return applied
 
 
+# links skipped because the linked record's name is no longer the correction's link_name: a rename (one caron) drops
+# the link on both records with no other sign, so --apply stops on them unless --allow-link-skips (05, 2026-11-26:
+# the diacritics batch's first apply lost 23 links this way)
+LINK_NAME_SKIPPED = []
+
+
 def apply_links(links, units):
     """The same soldier in two units' books: each record keeps its place in its own unit and gets the other units'
     entries in other_sources (with unit_file, the other unit's data file; that record's own merged entries come
@@ -431,6 +437,7 @@ def apply_links(links, units):
         if name and rec.get('full_name') != name and not (name.startswith(rec.get('last_name') or '\0')
                                                          and name.endswith(rec.get('first_name') or '\0')):
             print(f"    WARNING: {c['link_id']} is {b[1].get('full_name')!r}, not {c['link_name']!r}; link skipped")
+            LINK_NAME_SKIPPED.append((c['id'], c['soldier_id'], c['link_id'], rec.get('full_name'), name))
             continue
         parent[root(c['soldier_id'])] = root(c['link_id'])
         applied += 1
@@ -635,6 +642,8 @@ def main():
                         help='Actually write changes (default: dry run)')
     parser.add_argument('--brigade', type=int, nargs='+',
                         help='Only these units (default: every unit with corrections and every unit on the site)')
+    parser.add_argument('--allow-link-skips', action='store_true',
+                        help="Write even if a link is skipped because the linked record's name is not its link_name")
     args = parser.parse_args()
 
     # Find project root
@@ -858,6 +867,15 @@ def main():
         print(f"\n  Links between units: {n} applied")
         total_applied += n
         total_skipped += len(links) - n
+        if LINK_NAME_SKIPPED:
+            print(f"\n  !!! {len(LINK_NAME_SKIPPED)} link(s) SKIPPED: the linked record's name is not the correction's "
+                  f"link_name, so both records lose the link. A rename? Give the link corrections the new name "
+                  f"(link_name, merge_name), then apply over every unit they touch:")
+            for cid, sid, lid, now, was in LINK_NAME_SKIPPED:
+                print(f"      correction {cid}: {sid} - {lid}: {lid} is {now!r}, link_name {was!r}")
+            if args.apply and not args.allow_link_skips:
+                print("\n  Nothing written (--allow-link-skips to write anyway).")
+                sys.exit(2)
 
     # The census's and the column books' columns fill the rows the unit's books and the linked records leave empty
     filled = {}
