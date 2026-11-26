@@ -2115,7 +2115,8 @@ PLACE_PREPS = {'u', 'v', 'na', 'kod', 'pri', 'iz', 'od', 'do', 's', 'selo', 'sel
                'okolini', 'okolina', 'podrucju', 'i'}
 
 
-def own_place_first(own: str, column: str, date: str, own_date: str, unit: str = 'ostali-borci.json') -> bool:
+def own_place_first(own: str, column: str, date: str, own_date: str, unit: str = 'ostali-borci.json',
+                    day: bool = False) -> bool:
     """Borci drugih jedinica: the place of death his own entries give (own, the reader's) before the census's or a
     column book's (column, from_columns; 2026-11-20, Sekulić Mane Miloš's "u Žumberku" over the census's "Bosiljevo
     slove"), unless it says less: a region or a land where the column names a place ("Bosna" for Tuzla, "Lika" for
@@ -2124,9 +2125,13 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     of another year than the date the record keeps (date). Two forms of one place (a word in common): his entries' only
     where it says more and the map knows it ("Mokronoge, Priboj" for Priboj, "Jadovnik, Sjenica"), or mends a column
     the map can't place ("Preboj": Prijeboj, "Bos krupa"); else the column's, in the census's one form and on the map
-    ("Šumane, Pljevlja", not "Pljevlja"; "Luštica", not "Luštici"; "Kanjski Most", not "na Kanjskom mostu")"""
-    from record_sources import (REGIONS, fold, place_words, points_of, region as loose_region,  # (it imports this
-                                words_match)                                                    # module: not at the top)
+    ("Šumane, Pljevlja", not "Pljevlja"; "Luštica", not "Luštici"; "Kanjski Most", not "na Kanjskom mostu"). His
+    entries' where they name a village before the column's town (record_sources.names_more: "na Biću kod Priboja" for
+    the Spomenica's "Priboj na Limu", "na Crkvima kod Kolašina" for Kolašin), and where his place is that of the book that
+    gives the day (day, read_all's) and the map knows neither form, unless his is in a case after a preposition
+    (board 36's order; board 67: Jovanović Steva Novak's "u Kučima" of 15. 10. 1944, not the Spomenica's "Koći Kuči")"""
+    from record_sources import (REGIONS, fold, names_more, place_words, points_of,          # (it imports this
+                                region as loose_region, words_match)                       # module: not at the top)
 
     def forms(x):                   # a region's word in its cases: "Srijemu", "sremskom frontu", "Crnoj Gori", "Lici"
         return {x, x + 'u', x + 'a', x + 'om', x + 'e', x + 'i'} | {x[:-1] + e for e in ('i', 'e', 'u', 'om', 'oj', 'og', 'em')}
@@ -2141,11 +2146,15 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     if (region(own) and not loose_region(place_words(column))) or SCAN_GARBLE_RE.search(own):
         return False
     if words_match(place_words(own), place_words(column)):
+        if names_more(own, column):
+            return True
         def named(v):
             return [w for w in re.findall(r'[a-z]+', fold(v)) if w not in PLACE_PREPS]
         mine, theirs = bool(points_of(own, unit)), bool(points_of(column, unit))
         def prep(v):
             return bool(set(re.findall(r'[a-z]+', fold(v))) & {'u', 'v', 'na', 'kod', 'pri', 'blizu', 'kraj', 'izmedu'})
+        if day and not mine and not theirs and not prep(own):
+            return True
         a, b = named(own), named(column)
         # (as many words: the fuller spelling, "Bosanska Krupa" for "Bos krupa", "Donja Kupčina" for the census's cut
         # "Donja kupčin"; not the same words in a case after a preposition, "u Krtolima" for Krtoli, "kod Tounja")
@@ -2175,9 +2184,10 @@ def unit_on_its_page(unit: str, code: int) -> str:
     return sub
 
 
-def read_all(ex: Extractor, s: dict, code: int) -> dict:
+def read_all(ex: Extractor, s: dict, code: int, told: dict | None = None) -> dict:
     """The fields the soldier's bio gives, then those only the entries of other books merged into the record
-    (other_sources) give."""
+    (other_sources) give. told, where given, gets 'day': True where the place of death is the one the book that gives
+    the day gives, or one place with it (own_place_first)"""
     unit_code, code = code, read_code(s, code)
     got, village, orgs = {}, '', {}
     day_place = {}          # a death's day -> the place the first entry that gives that day gives, unspoilt by the scan
@@ -2230,6 +2240,8 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
         spot, here = day_place[got['death_date']], got.get('death_place') or ''
         if not (here and words_match(place_words(here), place_words(spot)) and not says_more(spot, here)):
             got['death_place'] = spot
+        if told is not None:
+            told['day'] = True
     if village and not got.get('birth_place'):
         got['birth_place'] = village
     if s.get('born_in') and not got.get('birth_place'):
@@ -2316,7 +2328,8 @@ def main():
             continue
         filled, samples, touched = Counter(), [], 0
         for s in d:
-            got = read_all(ex, s, code)
+            told = {}
+            got = read_all(ex, s, code, told)
             # Ostali borci: a death the builder took from the census's or a column book's table (from_columns) yields
             # to the man's own biography ("Strijeljana od četnika 1942." is streljan; "poginuo 9. juna 1943." the day)
             cols = set(s.get('from_columns') or ())
@@ -2329,7 +2342,7 @@ def main():
             # where the two lie apart (record_sources.variants)
             if 'death_place' in cols and s.get('death_place') and new.get('death_place') and not own_place_first(
                     new['death_place'], s['death_place'], new.get('death_date', s.get('death_date')), got.get('death_date'),
-                    BRIGADE_CONFIGS[code]['json_file']):
+                    BRIGADE_CONFIGS[code]['json_file'], told.get('day', False)):
                 del new['death_place']
             if args.apply:
                 s.pop('born_in', None)

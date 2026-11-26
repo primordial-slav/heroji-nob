@@ -239,8 +239,9 @@ def in_words(spot: str, region_name: str) -> bool:
 
 
 # the small words of a place that name no part of it, in telling which of two forms of one place says more
-FORM_FILLER = {'kod', 'u', 'v', 'na', 'pri', 'iz', 'selo', 'selu', 'sela', 'blizu', 'kraj', 'okolini', 'okolina',
-               'okolici', 'podrucju', 'mesto', 'mjesto', 'mestu', 'mjestu', 'grad', 'gradu'}
+FORM_FILLER = {'kod', 'u', 'v', 'na', 'pri', 'iz', 'pod', 'ispod', 'iznad', 'izmedu', 'izmedju', 'preko', 'selo', 'selu',
+               'sela', 'blizu', 'kraj', 'okolini', 'okolina', 'okolici', 'podrucju', 'mesto', 'mjesto', 'mestu', 'mjestu',
+               'grad', 'gradu', 'polozaju', 'polozaj'}
 
 
 def _form_words(v: str) -> list[tuple[str, str]]:
@@ -294,9 +295,10 @@ def _spellings():
 
 
 def names_more(a: str, b: str) -> bool:
-    """a names a place before the one both name, which b gives alone: the census's village before its municipality
-    ("Plana kod bileć" for Bileća, "Roda g. vakuf" for Gornji Vakuf, "Žuma nikšić" for Nikšić), not the village b
-    names in a's form ("Lubnice-ivangra" for Lubnice)"""
+    """a names a place before the one b names first: the census's village before its municipality ("Plana kod bileć"
+    for Bileća, "Roda g. vakuf" for Gornji Vakuf, "Žuma nikšić" for Nikšić), a book's village before its town
+    ("na Biću kod Priboja" for "Priboj na Limu", "Gornje Selo, Pljevalja" for Pljevlja: extract_structured_fields.
+    own_place_first), not the village b names in a's form ("Lubnice-ivangra" for Lubnice)"""
     # (b's "Donji", "Gornji", "Novi" say which of two places of the name, not that it is another: "Doljani kod lap"
     # for Donji Lapac)
     wa, wb = [w for w, _ in _form_words(a)], [w for w, _ in _form_words(b) if w not in PLACE_FILLER]
@@ -304,7 +306,7 @@ def names_more(a: str, b: str) -> bool:
     def match(x, y):
         return same_word(x, y) or (min(len(x), len(y)) <= 3 and (x.startswith(y) or y.startswith(x)))
     hits = [i for i, x in enumerate(wa) if any(match(x, y) for y in wb)]
-    return bool(hits) and 0 not in hits and all(any(match(x, y) for x in wa) for y in wb)
+    return bool(hits) and 0 not in hits and bool(wb) and any(match(x, wb[0]) for x in wa)
 
 
 def scan_split(v: str, other: str) -> bool:
