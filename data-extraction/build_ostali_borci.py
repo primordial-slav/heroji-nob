@@ -544,6 +544,22 @@ DEATH_PLACE_READS = {
     '0122956157': 'Žljebovi, Sokolac',              # not "Žljebovi"
     '0122910454': 'Krivajci, Maslovare',            # not "Krivaja, Bosna"
     '0122957410': 'Bašel',                          # not "nad Bašljem pod Storžičem"
+    # ... and where a full chain on board 67's code gives his entry's phrase, a case form or a garble that main's data
+    # never held (the Slovene session's rerun on board 68, 2026-11-26): the place his entries name, in its one form
+    '0122030230': 'Turija, Tuzla',                  # Dokić Ivanov Petar: "kod Turije, Tuzla", not "Turje, Tuzla"
+    '0122910069': 'Dotršćina, Zagreb',              # Filković Dragutina Stjepan: "u Dotršćini kod Zagreba"
+    '0122925875': 'Rokoči, Grahovo',                # Knežević Đura Nikola: "u Rokočima kod Grahova", not "Rokoči"
+    '0122911803': 'Bari, Italija',                  # Nikić Jovana Vasilije: "u Bariju u Italiji"
+    '0122911807': 'Sozina, Bar',                    # Niklan Ilije Milo: "na Sozini", the Spomenica's "Sozina-Bar"
+    '0122959145': '',                               # Nikšić M Mate: the census's "Čoviće-otočac", not "u Čoviću"
+    '0122070770': 'Drenovača, Kamensko',            # Novković Mane Dušan: "na Drenovači kod Kamenskog"
+    '0122913246': 'Užice',                          # Novović Nikov Jovo: "u Užicama", not the census's "T.užice"
+    '0122923870': 'Broćanac',                       # Pejović Lazarev Nikola: "kod Broćanca", the Spomenica's "Braćanac"
+    '0122070102': 'Pećani, Udbina',                 # Radaković Đure Dmitar: "u s. Pećani", the census's "Pećani kod udbi"
+    '0122924036': 'Trnovo, Sarajevo',               # Radulović Joka Savo: "kod Trnova, blizu Sarajeva"
+    '0122915951': 'Sajmište, Beograd',              # Simonović Milovana Manojle: "na Sajmištu u Beogradu"
+    '0122010963': 'Brajkovac',                      # Spasojević Jevrema Luka: "u Brajkovcu", not "Selo brajkovac"
+    '0122926706': 'Gornji Orahovac',                # Tomašević Marka Radovan: "u Gornjem Orahovcu"
 }
 
 
