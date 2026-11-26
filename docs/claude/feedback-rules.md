@@ -42,6 +42,13 @@ A new rule the user gives goes here, with its date and the user's words.
   family (<credit>): ...").
 - **The family wins** and stands alone on the card, no "ili <book>"; "ili" only where books disagree and no family spoke.
   Death: the family's > a book's exact date and place > the census's year and place.
+- **The family's form of his name.** Where the family, a paper they send (a booklet, a certificate) or another book that
+  holds the same man writes his given name or surname in another form of the same name, the card's name fields take that
+  form: Josip for the Osječka book's Josif, the common form where he lived (Vujnovac Mate Josip, the user, 2026-11-26:
+  "make it josip and idk how that isnt a rule yet specifically for a common name like Josip, and another book naming it
+  that way"). The entry stays as printed; links and merges naming the record are renamed with it ("A rename and its
+  links", `corrections.md`). `check_form_fields.py` lists a card whose family entry gives a given name or surname the card
+  doesn't hold ("name form").
 - **The Spomenica** a family mentions goes on the card.
 - **Photos.** A family's photo of the man himself is his portrait, cut from a group or family photo; a postwar photo, other
   people, graves and documents go in the album. The portrait is head and shoulders; the album's whole photo is trimmed of

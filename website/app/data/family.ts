@@ -1518,9 +1518,9 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '0104001691', // Vujnovac Mate Josif of Habjanovci, Osječka udarna brigada: his grandson's form of 2026-11-26 12:05 with his
+    soldierId: '0104001691', // Vujnovac Mate Josip of Habjanovci, Osječka udarna brigada: his grandson's form of 2026-11-26 12:05 with his
     // photo and two pages of his military booklet (text, photos and name allowed; Porodična arhiva 9990000108; rows by 318549). The
-    // booklet and the family write Josip; the book prints Josif, which stays
+    // booklet and the family write Josip, which the card takes (318550; the book prints Josif)
     photo: '0104001691-1.jpg',
     photoCaption: 'Fotografija iz vojne knjižice',
     pieces: [
