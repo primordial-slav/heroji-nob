@@ -2700,6 +2700,13 @@
     "rank": "politički komesar, poručnik",
     "death_type": "umro",
     "death_date": "05.08.2011",
+    "family_fields": [
+      "birth_date",
+      "death_date",
+      "death_type",
+      "fathers_name",
+      "rank"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000043",
@@ -2708,13 +2715,6 @@
         "source_url": "porodica:9990000043",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "birth_date",
-      "death_date",
-      "death_type",
-      "fathers_name",
-      "rank"
     ]
   },
   {
@@ -3831,7 +3831,7 @@
     "pdf_file": "ljubljanska-brigada.pdf",
     "pdf_x_end": 287.3,
     "pdf_x_left": 155.7,
-    "birth_place": "Uubljana",
+    "birth_place": "Ljubljana",
     "death_type": "poginuo",
     "death_date": "12.06.1944",
     "death_place": "Zagorice, St. Vid"
