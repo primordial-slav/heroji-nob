@@ -57,8 +57,12 @@ CACHE = ROOT / 'data-extraction' / '.cache' / 'identities'
 QUEUE = CACHE / 'queue.json'
 ANSWERS = ('same', 'different', 'unsure')
 CHECK_SAMPLE = 60                   # pairs already made, offered for spot checks each run
-WEIGHT = {'father': 3, 'birthplace': 3, 'death place': 3, 'death day': 3, 'unit': 2, 'hero on the site': 2, 'duty': 2,
-          'birth year': 1, 'death year': 1, 'father initial': 1}
+WEIGHT = {'father': 3, 'birthplace': 3, 'death place': 3, 'death day': 3, 'nickname': 3, 'unit': 2, 'hero on the site': 2,
+          'duty': 2, 'birth year': 1, 'death year': 1, 'father initial': 1}
+# Pairs a person should see that the rules don't offer (2026-11-26: the Slovene units' pairs of one unit that agree on
+# one fact, and the merges --kinds held back): [{kind, a, b, note, by, date}], offered in the queue on every run until
+# answered, while both records stand
+OFFERS = ROOT / 'data-extraction' / 'identity_offers.json'
 
 # A unit's lists of its staffs and commands (the id's unit code and list number): their entries give a name and a post,
 # its rolls often a name and little more, so a pair of them is mostly 'name' (the only one of the name in each list,
@@ -760,6 +764,50 @@ def names_of(k: str) -> tuple[str, str]:
     return record(a), record(b)
 
 
+def offered(units, decisions, review, auto) -> list[dict]:
+    """The queue items of OFFERS not answered, not in the queue or taken already, whose two records still stand"""
+    if not OFFERS.exists():
+        return []
+    recs = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
+    have = {q['key'] for q in review} | {key(x[0], x[1], x[2], x[3]) for x in auto}
+    out = []
+    for o in json.loads(OFFERS.read_text(encoding='utf-8')):
+        k = key(o['kind'], o['a'], o['b'])
+        if k in decisions or k in have or o['a'] not in recs or o['b'] not in recs:
+            continue
+        a, b = recs[o['a']], recs[o['b']]
+        agree, clash = F.evidence(a, b)
+        out.append({'key': k, 'kind': o['kind'], 'a': record_side(a), 'b': record_side(b), 'grade': 'offered',
+                    'agree': agree, 'clash': clash, 'note': o.get('note') or '', 'score': score(agree, clash)})
+        have.add(k)
+    return out
+
+
+def held_back(auto, review, units, kinds, codes):
+    """--kinds and --units: the pairs to write, and the review queue with the pairs of the other kinds that the rules
+    take, for a person (2026-11-26: the Slovene units' merges inside a unit are the user's to answer). A pair that
+    touches none of the units is left for a later run, neither written nor queued."""
+    kinds = set(kinds.split(',')) if kinds else {'merge', 'link', 'reference'}
+    codes = {f'{int(c):04d}' for c in codes.split(',')} if codes else None
+    recs = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
+    keep, held = [], Counter()
+    for x in auto:
+        kind, a, b, _, why, agree, _ = x
+        if codes is not None and a[:4] not in codes and (kind == 'reference' or b[:4] not in codes):
+            held['other units'] += 1
+        elif kind in kinds:
+            keep.append(x)
+        elif kind in ('merge', 'link') and a in recs and b in recs:
+            review.append({'key': key(kind, a, b), 'kind': kind, 'a': record_side(recs[a]), 'b': record_side(recs[b]),
+                           'grade': 'sure', 'agree': list(agree), 'clash': [], 'score': score(agree, []) + 10,
+                           'note': f'the rules take it ({why}); held for a person'})
+            held[f'{kind}, to review'] += 1
+        else:
+            held[f'{kind}, not written'] += 1
+    print(f'held back: {dict(held)}')
+    return keep, review
+
+
 def main():
     global TITLES_PDF, TITLES_ID
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -769,6 +817,10 @@ def main():
     ap.add_argument('--answer', nargs=2, metavar=('KEY', 'ANSWER'), help='keep an answer: same, different, unsure, clear')
     ap.add_argument('--note', default='')
     ap.add_argument('--by', default='claude')
+    ap.add_argument('--kinds', help="with --write, write only these kinds (merge,link,reference); the other kinds' pairs "
+                                    "the rules take go to the review queue, for a person (merges inside a unit: the user's)")
+    ap.add_argument('--units', help='with --write, write only the pairs that touch a record of these units (codes, '
+                                    'comma-separated); the rest wait for a later run')
     args = ap.parse_args()
     if args.answer:
         k, answer = args.answer
@@ -787,6 +839,10 @@ def main():
     units = units_on_site()
     corr = json.loads(M.CORRECTIONS.read_text(encoding='utf-8'))
     auto, review, stale = find_pairs(units, corr, decisions)
+    every = auto                                       # auto.json keeps them all
+    if args.kinds or args.units:
+        auto, review = held_back(auto, review, units, args.kinds, args.units)
+    review += offered(units, decisions, review, auto)
     review.sort(key=lambda x: (-x['score'], x['kind'], x['key']))
     checks = spot_checks(units, corr, decisions)
     unsure = [] if args.unsure else unsure_items(units, decisions)
@@ -805,7 +861,7 @@ def main():
     for k, d in decisions.items():
         if d['answer'] == 'different' and d['kind'] == 'link' and d['a'] in linked and linked.get(d['a']) == linked.get(d['b']):
             print(f"  {k} ({d['a_name']} / {d['b_name']}) answered 'different', but links join them through another record")
-    (CACHE / 'auto.json').write_text(json.dumps(auto, ensure_ascii=False, indent=1), encoding='utf-8')
+    (CACHE / 'auto.json').write_text(json.dumps(every, ensure_ascii=False, indent=1), encoding='utf-8')
     if args.write:
         write(auto, load_decisions(), corr, units, args.start)
 

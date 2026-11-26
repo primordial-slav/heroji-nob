@@ -179,6 +179,30 @@ def name_of(head: str) -> tuple[str, str, str, str]:
     return first, last, nick, rest.strip(' ,')
 
 
+# where a bio says he was born ("roj. 19. 2. 1924 v Šenčurju", "na Lužah"), in the nominative: the municipality's
+# villages and the others its bios name
+LOCATIVES = {'Šenčurju': 'Šenčur', 'Srednji vasi': 'Srednja vas', 'Miljah': 'Milje', 'Lužah': 'Luže', 'Visokem': 'Visoko',
+             'Hotemažah': 'Hotemaže', 'Olševku': 'Olševek', 'Vogljah': 'Voglje', 'Voklem': 'Voklo',
+             'Prebačevem': 'Prebačevo', 'Hrastju': 'Hrastje', 'Trbojah': 'Trboje', 'Praprotni Polici': 'Praprotna Polica',
+             'Primskovem': 'Primskovo', 'Črnem Vrhu': 'Črni Vrh', 'Tupaličah': 'Tupaliče', 'Ljubljani': 'Ljubljana',
+             'Bodeščeh pri Bledu': 'Bodešče pri Bledu', 'Velesovem': 'Velesovo', 'Podborštu': 'Podboršt',
+             'Velikem Vrhu': 'Veliki Vrh', 'Srednjih Bitnjah': 'Srednje Bitnje', 'Ravnici pri Gorici': 'Ravnica pri Gorici'}
+BORN_AT = re.compile(r'roj\.\s*(?:\d{1,2}\.\s?[\dl]{1,2}\.\s?)?(?:1[89]\d\d)?\s*(?:v|na)\s+('
+                     + '|'.join(sorted(map(re.escape, LOCATIVES), key=len, reverse=True)) + r')\b')
+HOME = re.compile(rf'^[{U}][{L}]+(?: (?:pri|na|ob|v) [{U}][{L}]+| [{U}][{L}]+)*$')    # "Duplje", "Orehek pri Kranju"
+
+
+def born_in(bio: str, home: str) -> str:
+    """Where he was born, as the bio says, else the village he is listed under (the dead), or the home the company's
+    list gives first ("Duplje, v četi od 15. 12. 1941"): the entry's own place, so that the builder meets the census's
+    entry of the man by it (2026-11-26: "Pušavec Jakob, 1899" under Voglje stood beside the census's Pušavec (Jernej)
+    Jakob of Voglje, both fallen in 1945, the entry agreeing on the year alone)"""
+    m = BORN_AT.search(bio)
+    if m:
+        return LOCATIVES[m.group(1)]
+    return home if HOME.match(home or '') else ''
+
+
 def years(text: str) -> tuple[str, str]:
     born = re.search(r'roj\.\s*(?:\d{1,2}\.\s?[\dl]{1,2}\.\s?)?(1[89]\d\d)', text)
     death = ''
@@ -222,6 +246,7 @@ def main():
                 rec['role'] = role
             rec['_key'] = (last, rest)
             rec['_home'] = bio.split(',')[0] if company else e['village']       # "Visoko pri Šenčurju", "Visoko"
+            rec['born_in'] = born_in(bio, rec['_home'])
             out.append(rec)
             counts[f"{'company' if company else 'dead'}: {role or 'fighter'}"] += 1
     # a man of the company who is among the dead too is one entry, the dead list's, with the company's line after it

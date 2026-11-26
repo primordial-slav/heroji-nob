@@ -144,8 +144,10 @@ def is_column(book: str, e: dict) -> bool:
     return book in COLUMN_BOOKS and (book not in COLUMN_LISTS or e.get('list') == COLUMN_LISTS[book])
 # books that print one man in more than one of their chapters: the Spomenica lists the dead by municipality, and a man
 # born in one and living or killed in another can stand in two or three ("Ivović Momčilo" under Bar, Pljevlja and
-# Podgorica); its entries of one name are one man when they agree as printed_twice says (the census never: each volume
-# lists its dead once, and two of its entries of one name and village are as often two cousins)
+# Podgorica); its entries of one name are one man when they agree as printed_twice says. The census prints a man twice
+# too, now and then (often side by side, the father once in the genitive: "Kasalica (Boja) Radoš" and "(Bojo) Radoš",
+# 1921, Komarnica, fell 1943 at Kolašin), but two of its entries of one name and village are as often two cousins, so
+# it has a stricter rule of its own (census_twice)
 PRINTS_TWICE = {'spomenica-crnogorskim-antifasistima'}
 
 
@@ -723,6 +725,8 @@ def printed_twice(a: dict, b: dict) -> bool:
         return False
     if frozenset((a['soldier_id'], b['soldier_id'])) in ONE_MAN_PAIRS:
         return True
+    if a['_book'] == CENSUS:
+        return census_twice(a, b)
     if a['_book'] not in PRINTS_TWICE:
         return False
     fa, fb = father_forms(a), father_forms(b)
@@ -739,6 +743,51 @@ def printed_twice(a: dict, b: dict) -> bool:
     # fell at Pljevlja in 1941; not "Jovanović Veselin", Marko's or Mirko's)
     return (abs(ya - yb) == 1 and a.get('opstina') != b.get('opstina') and
             any(fathers_agree(x, y) for x in fa for y in fb))
+
+
+QUALIFIERS = {'gornji': 'g', 'gornja': 'g', 'gornje': 'g', 'gor': 'g', 'donji': 'd', 'donja': 'd', 'donje': 'd',
+              'veliki': 'v', 'velika': 'v', 'veliko': 'v', 'vel': 'v', 'mali': 'm', 'mala': 'm', 'malo': 'm',
+              'zgornji': 'g', 'zgornja': 'g', 'zgornje': 'g', 'spodnji': 'd', 'spodnja': 'd', 'spodnje': 'd',
+              'stari': 's', 'stara': 's', 'staro': 's', 'novi': 'n', 'nova': 'n', 'novo': 'n'}
+
+
+def qualifier(e: dict) -> str:
+    """The village's Gornja/Donja, Velika/Mala, Stari/Novi ("Japra Donja" and "Japra Gornja" are two villages)"""
+    words = fold((e.get('born_in') or '').split(',')[0]).split()
+    return next((QUALIFIERS[w] for w in words if w in QUALIFIERS), '')
+
+
+def census_twice(a: dict, b: dict) -> bool:
+    """Two entries of one census volume that are one man (2026-11-26, for the lead's review; measured over the eight
+    volumes: 249 pairs, 43 more left apart by the guards): the father (in another case, or a letter off: "Boja" and
+    "Bojo"), the exact birth year and the year of death agree, and the place of death; or the village, where the two
+    stand side by side in the volume or one gives no place of death; or, born a year apart, under two municipalities
+    with the father in full and the same place of death. Never two villages a Gornja/Donja or Velika/Mala apart (two
+    cousins as often). Two volumes (one name, father and year in two republics are as often two men) only with the
+    exact birth year and the same place of death (11 pairs; 6 more across volumes left for review)."""
+    fa, fb = father_forms(a), father_forms(b)
+    if not (fa and fb):
+        return False
+    full = any(fathers_agree(x, y) for x in fa for y in fb)
+    if not (full or any(one_slip(x, y) for x in fa for y in fb)):
+        return False
+    ya, yb, sa, sb = year(a, 'birth_year'), year(b, 'birth_year'), death_years(a), death_years(b)
+    if not (ya and yb and sa and sa == sb):
+        return False
+    qa, qb = qualifier(a), qualifier(b)
+    if qa and qb and qa != qb:
+        return False
+    place = overlap(death_places(a), death_places(b))
+    if a.get('_vol') != b.get('_vol'):
+        return ya == yb and place
+    if ya != yb:
+        municipality = lambda e: (e.get('born_in') or '').split(',')[-1].strip()
+        return abs(ya - yb) == 1 and full and place and municipality(a) != municipality(b)
+    if place:
+        return True
+    side_by_side = a['soldier_id'][:4] == b['soldier_id'][:4] and abs(int(a['soldier_id'][4:]) - int(b['soldier_id'][4:])) == 1
+    no_place = not (a.get('death_place') and b.get('death_place'))
+    return overlap(village(a), village(b)) and (side_by_side or no_place)
 
 
 def tied(members: list[dict]) -> list[list[dict]]:

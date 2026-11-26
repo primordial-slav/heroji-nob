@@ -161,6 +161,9 @@ def same_place(a: str, b: str) -> bool | None:
 
 
 SURVIVED = re.compile(r'kraj rata (?:je )?do[cč]ekao|pre[zž]ivio|\bživ(?:i|e)?\b|demobili|umro (?:je )?(?:posle|poslije|nakon) rata', re.I)
+# a death after the war, as the Slovene lists print it: "† po osvoboditvi", "† po vojni", "umrl po vojni" (a year after
+# 1945 is read from death_date in fate)
+POSTWAR = re.compile(r'\bpo (?:osvoboditvi|vojni)\b', re.I)
 
 
 # lists of only the fallen, or only those who lived to the end of the war: every entry's fate, said or not
@@ -208,8 +211,13 @@ def fate(s: dict) -> str:
         return LIST_FATE[s['pdf_file']]
     if list_of(s) in LIST_FATE:
         return LIST_FATE[list_of(s)]
+    # a death after the war is no death in it: the Slovene lists' "† 1982" (death_type 'umro'), 1,444 records of the
+    # Slovene units on 2026-11-26, read till then as fallen, so a survivors' list never met them
+    died = year(s.get('death_date'))
+    if died and died >= 1946:
+        return 'lived'
     info = ' '.join([s.get('additional_info') or ''] + [o.get('additional_info') or '' for o in s.get('other_sources', ())])
-    if SURVIVED.search(info) or SURVIVED_SUTJESKA.search(info):
+    if SURVIVED.search(info) or SURVIVED_SUTJESKA.search(info) or POSTWAR.search(info):
         return 'lived'
     if s.get('death_type') or re.search(r'\b(?:po\w?gin|umr|strelj|strijelj|nestao|nestala)', info):     # "Pojginuo"
         return 'fell'
@@ -267,7 +275,35 @@ def evidence(a: dict, b: dict) -> tuple[list[str], list[str]]:
         clash.append('one lived')
     if duties(a) & duties(b):                       # a duty both name (a list of leaders gives nothing else)
         agree.append('duty')
+    if nickname(a) and nickname(a) == nickname(b):  # "zvani Januš" in both (two nicknames apart are no clash)
+        agree.append('nickname')
     return agree, clash
+
+
+def nickname(s: dict) -> str:
+    """The nickname a record's text gives ("zvani Januš;", "zvana Darinka;"), folded, its first word"""
+    m = re.search(r'\bzvan[ia]\s+([^;,]+)', s.get('additional_info') or '')
+    return fold(m.group(1).split()[0]) if m and m.group(1).split() else ''
+
+
+# Slovene forms of a given name and their Serbo-Croatian ones, folded (2026-11-26: the Slovene lists write Tone and
+# Anton, Lojze and Alojz, Stane and Stanislav, Janez and Ivan, Jože and Jožef, and the census its own form). A pair
+# found only through such a form needs more than an exact name: see matches() and across_units(); match_references
+# adds them to its own forms (NAME_VARIANTS), with the doubt "given?"
+GIVEN_FORMS = [
+    ('janez', 'ivan', 'johan'), ('joze', 'jozef', 'josip'), ('anton', 'tone', 'antun'), ('alojz', 'alojzij', 'lojze'),
+    ('stanislav', 'stane', 'stanko'), ('franc', 'franjo', 'francisek'), ('stefan', 'stjepan'), ('karel', 'karlo', 'karol'),
+    ('ludvik', 'ljudevit'), ('vincenc', 'vinko'), ('andrej', 'andrija'), ('matija', 'matevz'), ('jakob', 'jakov'),
+    ('peter', 'petar'), ('pavel', 'pavao'), ('mihael', 'miha', 'mihajlo'), ('lovrenc', 'lovro'), ('tomaz', 'toma'),
+    ('viljem', 'vilim'), ('ignac', 'ignacij'), ('avgust', 'august'), ('rudolf', 'rudi'), ('jurij', 'juraj'),
+    ('florijan', 'florjan'), ('jozefa', 'josipa'), ('franciska', 'franja'),
+]
+GIVEN_FORM = {n: g[0] for g in GIVEN_FORMS for n in g}
+
+
+def given_form(name: str) -> str:
+    """A folded given name's group, the name itself where it has no other form"""
+    return GIVEN_FORM.get(name, name)
 
 
 # the letters fold() writes as two: Đ, Lj, Nj, Dž ("Đ." folds to 'dj', so an initial is not always one letter)
@@ -324,15 +360,22 @@ def matches(soldiers: list[dict], rank: dict) -> list[dict]:
         for i, a in enumerate(group):
             for b in group[i + 1:]:
                 consider(a, b, 'name')
-    # a given name that differs slightly, with the father or birth year agreeing
+    # a given name that differs slightly, or another form of it (Tone and Anton), with the father or birth year agreeing
     for group in by_surname.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
                 ga, gb = fold(a['first_name']), fold(b['first_name'])
-                if ga != gb and min(len(ga), len(gb)) >= 4 and one_letter_apart(ga, gb):
-                    agree, clash = evidence(a, b)
-                    if agree and not clash:
-                        consider(a, b, 'given name differs')
+                if ga == gb:
+                    continue
+                if min(len(ga), len(gb)) >= 4 and one_letter_apart(ga, gb):
+                    how = 'given name differs'
+                elif given_form(ga) == given_form(gb):
+                    how = 'given name form'
+                else:
+                    continue
+                agree, clash = evidence(a, b)
+                if agree and not clash:
+                    consider(a, b, how)
     # each record's candidates in each other list: one, or one that agrees where all the others disagree
     sides = defaultdict(list)
     for p in pairs.values():
@@ -391,7 +434,8 @@ def across_units(units: dict[int, list[dict]]) -> list[dict]:
         for s in soldiers:
             s['_unit'] = code
             if fold(s['last_name']) and fold(s['first_name']):
-                by_name[(fold(s['last_name']), fold(s['first_name']))].append(s)
+                # another form of the given name in the same group (Tone and Anton: GIVEN_FORMS)
+                by_name[(fold(s['last_name']), given_form(fold(s['first_name'])))].append(s)
     pairs = []
     for group in by_name.values():
         if len({s['_unit'] for s in group}) < 2:
@@ -401,7 +445,8 @@ def across_units(units: dict[int, list[dict]]) -> list[dict]:
                 if a['_unit'] != b['_unit']:
                     a, b = (a, b) if a['_unit'] < b['_unit'] else (b, a)
                     agree, clash = evidence(a, b)
-                    pairs.append({'keep': a, 'merge': b, 'how': 'name', 'agree': agree, 'clash': clash})
+                    how = 'name' if fold(a['first_name']) == fold(b['first_name']) else 'given name form'
+                    pairs.append({'keep': a, 'merge': b, 'how': how, 'agree': agree, 'clash': clash})
     sides = defaultdict(list)
     for p in pairs:
         sides[(p['keep']['soldier_id'], p['merge']['_unit'])].append(p)
@@ -414,11 +459,15 @@ def across_units(units: dict[int, list[dict]]) -> list[dict]:
     for p in pairs:
         alone = (chosen(p, sides[(p['keep']['soldier_id'], p['merge']['_unit'])])
                  and chosen(p, sides[(p['merge']['soldier_id'], p['keep']['_unit'])]))
-        # a common name with an initial and a year is not enough: a place or the father's name must agree too
-        strong = {'birthplace', 'death place', 'father'} & set(p['agree'])
-        p['grade'] = 'sure' if alone and len(p['agree']) >= 2 and strong and not p['clash'] else 'review'
+        # a common name with an initial and a year is not enough: a place, the father's name or the nickname must
+        # agree too; another form of the given name (Tone, Anton) needs the birth year or the nickname besides
+        strong = {'birthplace', 'death place', 'father', 'nickname'} & set(p['agree'])
+        form_ok = p['how'] == 'name' or {'birth year', 'nickname'} & set(p['agree'])
+        p['grade'] = 'sure' if alone and len(p['agree']) >= 2 and strong and form_ok and not p['clash'] else 'review'
         if not alone:
             p['note'] = 'several candidates'
+        elif p['how'] != 'name':
+            p['note'] = 'another form of the given name'
     return sorted(pairs, key=lambda p: (p['grade'], p['keep']['soldier_id']))
 
 

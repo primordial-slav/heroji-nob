@@ -35,6 +35,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.path.insert(0, str(Path(__file__).parent))
 import extract_structured_fields as structured  # noqa: E402
+import find_source_duplicates as F  # noqa: E402
 from name_utils import OSTALI_CODES  # noqa: E402
 from extract_life_events import iso, parse_when  # noqa: E402
 
@@ -71,7 +72,23 @@ NAME_VARIANT_GROUPS = [
     ['spiro', 'spiridon'], ['vaso', 'vasilije', 'vasilj'], ['mijo', 'miho', 'mihovil'], ['petar', 'pero'],
     ['nikola', 'nikolaj'], ['ilija', 'ilijas'], ['marijan', 'marjan'],
 ]
-NAME_VARIANTS = {n: set(g) - {n} for g in NAME_VARIANT_GROUPS for n in g}
+BOOK_VARIANTS = {n: set(g) - {n} for g in NAME_VARIANT_GROUPS for n in g}
+# and the Slovene forms (find_source_duplicates.GIVEN_FORMS: Janez and Ivan, Jože and Jožef, Tone and Anton; 2026-11-26),
+# for the matchers only: the site's search doesn't know them yet. A name in two groups ("ivan") has the forms of both
+NAME_VARIANTS: dict[str, set] = defaultdict(set)
+for _group in NAME_VARIANT_GROUPS + [list(g) for g in F.GIVEN_FORMS]:
+    for _n in _group:
+        NAME_VARIANTS[_n] |= set(_group) - {_n}
+NAME_VARIANTS = dict(NAME_VARIANTS)
+
+
+def slovene_form_only(a: dict, b: dict) -> bool:
+    """Two given names that are one name only by the Slovene forms (GIVEN_FORMS), not the books' forms above: such a
+    pair is taken by the strict grade alone, never by rematch_references.same_man's rules, which were measured on
+    exact names (2026-11-26: Gutman Jožef of Sarajevo and the census's Gutman Jože of Dolenjske Toplice, on "a rare
+    name and the death")"""
+    x, y = F.fold(a.get('first_name')), F.fold(b.get('first_name'))
+    return x != y and F.given_form(x) == F.given_form(y) and fold(y) not in BOOK_VARIANTS.get(fold(x), ())
 
 
 def candidates(index: dict, ref: dict, lasts: set) -> list[tuple[dict, bool]]:

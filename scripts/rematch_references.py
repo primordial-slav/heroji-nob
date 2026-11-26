@@ -398,7 +398,10 @@ def same_man(a: dict, b: dict) -> str | None:
     """Two entries of one name that no one needs to read: what makes them one man, or None. Measured on every answer
     given (identity_decisions.json, 2026-11-01, after the user found the queue "way too obvious"; the counts are answers
     same/different/unsure). Another father, another fate or a death two years off part them, and a birth year off by
-    more than three unless the father, the village and the death agree; the rest stay for a person."""
+    more than three unless the father, the village and the death agree; the rest stay for a person. Another Slovene
+    form of the given name (Jože, Jožef) is not one name here: such a pair needs the strict grade."""
+    if M.slovene_form_only(a, b):
+        return None
     for x, y in ((a, b), (b, a)):
         since = ROSTER_FROM.get(x.get('pdf_file'))
         if since:
