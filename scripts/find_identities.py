@@ -474,18 +474,36 @@ def find_pairs(units, corr, decisions, log=print):
         if book not in entries:
             entries[book] = {e['soldier_id']: e for e in json.loads(M.entries_path(book).read_text(encoding='utf-8'))}
         return entries[book][ref]
+    # an entry a record holds already is never its reference, nor another's: a moved man's lead entry
+    # (unit_record_ids.json, entry -> his record in the unit; it isn't in other_sources with a ref_book, so rematch
+    # didn't see it) or an entry merged into the record. 2026-11-26: 6,880 of the 7,729 references the rules took gave
+    # a moved man his own entry, and the builder then counts the entry taken and drops his record (Kolić Asima Bebin,
+    # 0144900001; the Vukalović case of 2026-11-22)
+    moved_entry = json.loads((ROOT / 'data-extraction' / 'unit_record_ids.json').read_text(encoding='utf-8'))
+    held_refs = Counter()
+
+    def held(record: str, ref: str) -> bool:
+        if ref in moved_entry:
+            held_refs['a moved man\'s own entry' if moved_entry[ref] == record else 'another moved man\'s entry'] += 1
+            return True
+        if any(o.get('soldier_id') == ref for o in (recs.get(record) or {}).get('other_sources', ())):
+            held_refs['merged into the record'] += 1
+            return True
+        return False
     for p in new:
+        if held(p['record'], p['ref']):
+            continue
         auto.append(('reference', p['record'], p['ref'], p['book'],
                      f"{p['record_name']} is the {p['ref_name']} of the book"
                      + (f"; same {', '.join(p['agree'])}" if p['agree'] else '')
                      + (f"; {p['why']}" if p['why'] else ''), p['agree'], p['ref_name']))
     for f in rev:
         k = key('reference', f['record'], f['ref'], f['book'])
-        if k in answered:
+        if k in answered or held(f['record'], f['ref']):
             continue
         offer('reference', record_side(recs[f['record']]), entry_side(entry(f['book'], f['ref']), f['book']), k,
               f.get('grade', ''), f.get('agree', []), f.get('clash', []), f.get('note', ''))
-    log(f"references: {{'auto': {len(new)}, 'review': {len(rev)}}}")
+    log(f"references: {{'auto': {len(new)}, 'review': {len(rev)}}}; left out, held by a record already: {dict(held_refs)}")
 
     # an answer 'same' not made yet is taken; one whose names don't fit the records any more is stale
     stale = []
