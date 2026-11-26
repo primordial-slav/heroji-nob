@@ -186,17 +186,57 @@ def fill_death(s: dict, refs: list, fixed: set = frozenset()) -> list[str]:
         if kind and kind != s.get('death_type'):
             borrow(s, 'death_type', kind)
     src = lent.get('death_place')
-    if src and src[0].startswith(CENSUS_BOOK) and not points_of(s['death_place'], unit_file(s)):
+    if src and src[0].startswith(CENSUS_BOOK):
+        # and 00-TEAM LEAD's two of 2026-11-26, in the same spirit (the census's place gives way where it says less):
+        # - a census's place that names a region alone ("Dolenjsko", "Srem", "Lika") gives way to a column book's
+        #   settlement of the same year (Strah Franc of the Cankarjeva: Brezovica); the census lends its region only
+        #   where no book gives a place;
+        # - where the census's place and a column book's of the same year are one place (one_spot: "Bos Petrovac" and
+        #   "Bos. Petrovac", "Konjica" and Konjic, "Crnomelj" and Črnomelj), the book's printed form shows
+        place, unit = s['death_place'], unit_file(s)
+        off_map, wide = not points_of(place, unit), region_only(place)
         year = re.search(r'1[89]\d\d', s.get('death_date') or '')
         for book, e in refs:
             if fill_rank(book, e) != 2 or not ob.is_column(book, e):
                 continue
             vals = column_values(book, e)
             other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
-            if vals.get('death_place') and year and other and year.group(0) == other.group(0):
-                borrow(s, 'death_place', vals['death_place'])
+            spot = vals.get('death_place')
+            if not (spot and year and other and year.group(0) == other.group(0)):
+                continue
+            if off_map or (wide and settlement(spot, unit)) or (spot != place and not wide and one_spot(place, spot, unit)):
+                borrow(s, 'death_place', spot)
                 break
     return taken
+
+
+# the regions a census's place may name alone, for fill_death: REGIONS with the Slovene lands' other forms
+# ("Dolenjsko", "Štajersko", "Koroško"), word for word (not region()'s spellings: "Šumane" is no Šumadija, "Zagorač"
+# no Zagorje)
+WIDE = {'bela krajina', 'belokrajina', 'dolenjsko', 'gorenjsko', 'stajersko', 'primorsko', 'notranjsko', 'korosko'}
+
+
+def region_only(v: str) -> bool:
+    """A place that names a region, a land or a country alone ("Dolenjsko", "Srem", "Lika", "Sandžak")"""
+    words = place_words(v)
+    return bool(words) and ' '.join(words) in REGIONS | WIDE
+
+
+def settlement(v: str, unit: str = '') -> bool:
+    """A place that is no region and no area the map knows (a mountain, a river): a village or a town, or a name the
+    map doesn't know"""
+    return bool(place_words(v)) and not region_only(v) and not any(p[2] for p in points_of(v, unit))
+
+
+def one_spot(a: str, b: str, unit: str = '') -> bool:
+    """Two forms of one place (00-TEAM LEAD, 2026-11-26): the same once dots, spaces and case are dropped ("Bos
+    Petrovac", "Bos. Petrovac"), or both as written put by the map at one point, a settlement ("Konjica" and Konjic;
+    not "Grebice, Nikšić" and Nikšić, which only its municipality puts there)"""
+    if re.sub(r'[\s.]', '', a).lower() == re.sub(r'[\s.]', '', b).lower():
+        return True
+    pa = _points(a, unit) or _points(death_place_of(a), unit)
+    pb = _points(b, unit) or _points(death_place_of(b), unit)
+    return any(km(x, y) < 1 for x in pa for y in pb if not x[2] and not y[2])
 
 
 def unit_file(s: dict) -> str:
