@@ -527,6 +527,22 @@ DEATH_PLACE_READS = {
     '0122010866': 'Šćepan Polje',                   # "u Sćepan Polju"
     '0122906658': 'Zaselje',                        # "u Zaeelju"
     '0122100540': 'Ilirska Bistrica',               # "u Novoj Kročini kod Ilirske Bistrice"
+    # board 67 (2026-11-26, 00-TEAM LEAD): the place the new rules gave, set by hand where it is a phrase or a case form
+    '0122917333': 'Ubli, Čevo',                     # Denda Dragov Mirko: "u Ublima Čevskim"
+    '0122070132': 'Ranovac, Žabari',                # Vujnović Laze Đuro: "u s. Ranovcu /Žabari/"
+    '0122955354': 'Obodnik, Kotor Varoš',           # Novaković Jefto: "Obodnik", the census's "Obadnik kotor v"
+    '0122953854': 'Žljebovi, Sokolac',              # Pušonja Save Savo: the municipality the census gives
+    '0122955697': 'Bubanj, Niš',                    # Tomić Lazara Nadežda: "Bubnja" is a case form
+    '0122947464': 'Podgorje Bistričko',             # Papić Petra Pavao: the census's "Pogorje bistrič" (by Marija Bistrica)
+    '0122910081': 'Novoselec, Križ',                # Gašparinčić Stjepana Stjepan: "Novoselec Križ"
+    # ... and where the place the rules gave says less than main's (a municipality dropped, a region for a village)
+    # or garbles it: main's place stands
+    '0122911489': 'Trnovo, Sarajevo', '0122911957': 'Trnovo, Sarajevo',          # not "Trnovo, Bosna"
+    '0122910195': 'Jakopovac, Bilogora',            # not "Bilogora"
+    '0122910246': 'Dubrovica, Klan',                # not "Dubravica"
+    '0122956157': 'Žljebovi, Sokolac',              # not "Žljebovi"
+    '0122910454': 'Krivajci, Maslovare',            # not "Krivaja, Bosna"
+    '0122957410': 'Bašel',                          # not "nad Bašljem pod Storžičem"
 }
 
 
