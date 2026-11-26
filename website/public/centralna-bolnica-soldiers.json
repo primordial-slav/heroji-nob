@@ -3485,12 +3485,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_date": "1943",
+    "birth_year": "1923",
     "borrowed": [
       "birth_year",
       "death_date"
     ],
-    "birth_year": "1923",
+    "death_date": "1943",
     "variants": {
       "death": [
         {
@@ -9856,12 +9856,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Kreševo",
+    "birth_year": "1916",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1916"
+    "death_place": "Kreševo"
   },
   {
     "last_name": "Lazić",
@@ -18765,7 +18765,33 @@
     "occupation": "šumski radnik",
     "rank": "borac",
     "pdf_x_end": 220.2,
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "other_sources": [
+      {
+        "soldier_id": "0013011549",
+        "name": "Vojvodić Milana Vid",
+        "additional_info": "zvani Vico",
+        "pdf_file": "6-krajiska-prezivjeli.pdf",
+        "pdf_page": 3,
+        "pdf_x": 106.0,
+        "pdf_y": 283.5,
+        "pdf_x_end": 245.2,
+        "pdf_y_end": 293.4,
+        "unit_file": "6-krajiska-soldiers.json"
+      },
+      {
+        "soldier_id": "0013020511",
+        "name": "Vojvodić Vid",
+        "additional_info": "Spisak ratnog kadra Šeste krajiške NOU brigade 1942—1943: Ostali kadar",
+        "pdf_file": "6-krajiska-kadar.pdf",
+        "pdf_page": 7,
+        "pdf_x": 304.3,
+        "pdf_y": 543.5,
+        "pdf_x_end": 364.6,
+        "pdf_y_end": 553.2,
+        "unit_file": "6-krajiska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Vokić",

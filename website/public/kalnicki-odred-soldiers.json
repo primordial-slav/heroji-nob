@@ -4119,9 +4119,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1906",
     "death_date": "1945",
-    "death_place": "Grđevac mali",
-    "birth_year": "1906"
+    "death_place": "Grđevac mali"
   },
   {
     "last_name": "Benček",
@@ -5592,9 +5592,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1919",
     "death_date": "1943",
-    "death_place": "Prijedor, Bosna",
-    "birth_year": "1919"
+    "death_place": "Prijedor, Bosna"
   },
   {
     "last_name": "Bobetić",
@@ -5649,9 +5649,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1906",
     "death_date": "1944",
-    "death_place": "Barč mađarska",
-    "birth_year": "1906"
+    "death_place": "Barč mađarska"
   },
   {
     "last_name": "Bobinac",
@@ -6010,6 +6010,10 @@
     "soldier_id": "0058000239",
     "pdf_x_end": 467.3,
     "birth_place": "Stari Golubovec",
+    "family_fields": [
+      "birth_place",
+      "fathers_name"
+    ],
     "ethnicity": "Hrvat",
     "borrowed": [
       "ethnicity"
@@ -6040,10 +6044,6 @@
         "pdf_y_end": 371.2,
         "unit_file": "32-divizija-soldiers.json"
       }
-    ],
-    "family_fields": [
-      "birth_place",
-      "fathers_name"
     ]
   },
   {
@@ -18151,7 +18151,39 @@
     "pdf_file": "kalnicki-odred.pdf",
     "soldier_id": "0058000700",
     "pdf_x_end": 467.0,
-    "rank": "intendant"
+    "rank": "intendant",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035103152",
+        "name": "Habajec Josip",
+        "additional_info": "zvani Joža; Hrvat",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 183,
+        "pdf_x": 299.5,
+        "pdf_y": 615.6,
+        "pdf_x_end": 389.2,
+        "pdf_y_end": 622.6,
+        "unit_detail": "I udarna zagorska brigada",
+        "rank": "intendant",
+        "unit_file": "32-divizija-soldiers.json"
+      },
+      {
+        "soldier_id": "0035200147",
+        "name": "Habajec Josip",
+        "additional_info": "Komandni sastav 32. divizije i njenih brigada: intendant 2. bataljona 1. zagorske brigade.",
+        "pdf_file": "32-divizija-kadar.pdf",
+        "pdf_page": 10,
+        "pdf_x": 249.4,
+        "pdf_y": 148.6,
+        "pdf_x_end": 311.2,
+        "pdf_y_end": 158.1,
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Habek",
@@ -23239,9 +23271,9 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1910",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "birth_year": "1910"
+    "death_date": "1944"
   },
   {
     "last_name": "Hunjadi",
@@ -24400,12 +24432,12 @@
         "unit_file": "32-divizija-soldiers.json"
       }
     ],
-    "death_place": "Lastavica",
+    "birth_year": "1925",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1925"
+    "death_place": "Lastavica"
   },
   {
     "last_name": "Iveković",
@@ -24442,6 +24474,14 @@
     "ethnicity": "Hrvat",
     "occupation": "učenik",
     "party": "SKOJ, KPJ",
+    "death_type": "umro",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "2003",
+    "death_place": "Varaždin",
     "other_sources": [
       {
         "soldier_id": "0035104016",
@@ -24505,10 +24545,10 @@
       "ethnicity"
     ],
     "ethnicity": "Hrvat",
+    "birth_year": "1923",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Ludbreš.ivanec",
-    "birth_year": "1923"
+    "death_place": "Ludbreš.ivanec"
   },
   {
     "last_name": "Ivić",
@@ -32782,6 +32822,34 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007644&pg_seq=398",
         "source_page": 394,
         "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "0097010177",
+        "name": "Komljenović Stojan",
+        "additional_info": "zvani Čoka; Vojno i političko-partijsko rukovodstvo 34. udarne divizije: komandant bataljona 16. omladinske brigade »Joža Vlahović«.",
+        "pdf_file": "34-divizija-kadar.pdf",
+        "pdf_page": 4,
+        "pdf_x": 428.3,
+        "pdf_y": 686.1,
+        "pdf_x_end": 539.1,
+        "pdf_y_end": 696.6,
+        "pdf_rects": [
+          [
+            428.3,
+            686.1,
+            539.1,
+            696.6
+          ],
+          [
+            369.7,
+            698.6,
+            402.1,
+            709.1
+          ]
+        ],
+        "unit_detail": "16. omladinska brigada »Joža Vlahović«",
+        "rank": "komandant bataljona",
+        "unit_file": "34-divizija-soldiers.json"
       }
     ]
   },
@@ -35157,9 +35225,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1922",
     "death_date": "1943",
-    "death_place": "Varaždin.toplic",
-    "birth_year": "1922"
+    "death_place": "Varaždin.toplic"
   },
   {
     "last_name": "Koštutić",
@@ -35457,7 +35525,6 @@
     "pdf_x_end": 468.0,
     "birth_place": "Struga, Ludbreg",
     "death_type": "poginuo",
-    "death_date": "03.10.1943",
     "rank": "delegat voda",
     "ethnicity": "Hrvat",
     "occupation": "učenik",
@@ -35490,6 +35557,7 @@
       }
     ],
     "party": "SKOJ, KPJ",
+    "death_date": "03.10.1943",
     "death_place": "Šemovec",
     "borrowed": [
       "death_date",
@@ -43408,12 +43476,12 @@
       }
     ],
     "party": "SKOJ",
-    "death_place": "Selo radešić",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1922"
+    "death_place": "Selo radešić"
   },
   {
     "last_name": "Markulinčić",
@@ -54574,9 +54642,9 @@
       "ethnicity"
     ],
     "ethnicity": "Hrvatica",
+    "birth_year": "1922",
     "death_date": "1943",
-    "death_place": "Kalnik",
-    "birth_year": "1922"
+    "death_place": "Kalnik"
   },
   {
     "last_name": "Perošić",
@@ -64694,7 +64762,6 @@
     "pdf_x_end": 467.0,
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
-    "death_date": "03.10.1943",
     "other_sources": [
       {
         "soldier_id": "9021022929",
@@ -64747,9 +64814,7 @@
     "birth_place": "Bolfan, Ludbreg",
     "death_type": "poginuo",
     "death_place": "Semovac, Varaždin",
-    "borrowed": [
-      "death_date"
-    ]
+    "death_date": "03.10.1943"
   },
   {
     "last_name": "Severović",
@@ -67413,7 +67478,31 @@
     "soldier_id": "0058002584",
     "pdf_x_end": 458.4,
     "birth_place": "Donji Mihaljevec, Čakovec",
-    "rank": "vodnik"
+    "rank": "vodnik",
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0035114016",
+        "name": "Strbad Ivana Anton",
+        "additional_info": "r. 1919, s. Donji Mihaljevec, Čakovec, Hrvat, NOV 1943.",
+        "pdf_file": "32-divizija-borci.pdf",
+        "pdf_page": 74,
+        "pdf_x": 291.2,
+        "pdf_y": 162.6,
+        "pdf_x_end": 442.8,
+        "pdf_y_end": 179.0,
+        "unit_detail": "udarna brigada Braća Radić",
+        "unit_file": "32-divizija-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1919"
+      ]
+    }
   },
   {
     "last_name": "Strbad",
@@ -67693,7 +67782,6 @@
     "pdf_x_end": 459.0,
     "birth_place": "Mokrice, Donja Stubica",
     "death_type": "poginuo",
-    "death_date": "03.10.1943",
     "rank": "borac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
@@ -67758,6 +67846,7 @@
       }
     ],
     "party": "SKOJ",
+    "death_date": "03.10.1943",
     "death_place": "Šemovec",
     "borrowed": [
       "death_date",
@@ -72002,9 +72091,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1918",
     "death_date": "1944",
-    "death_place": "Koprivnica",
-    "birth_year": "1918"
+    "death_place": "Koprivnica"
   },
   {
     "last_name": "Vađon",
@@ -74998,10 +75087,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1913",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Kalnik, Drenovac",
-    "birth_year": "1913"
+    "death_place": "Kalnik, Drenovac"
   },
   {
     "last_name": "Vrbanec-Korunek",
@@ -75509,9 +75598,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1903",
     "death_date": "1944",
-    "death_place": "Mala rasinja",
-    "birth_year": "1903"
+    "death_place": "Mala rasinja"
   },
   {
     "last_name": "Vugrinčić",
@@ -79049,9 +79138,9 @@
       "ethnicity"
     ],
     "ethnicity": "Hrvat",
+    "birth_year": "1912",
     "death_date": "1943",
-    "death_place": "Kalnik",
-    "birth_year": "1912"
+    "death_place": "Kalnik"
   },
   {
     "last_name": "Čižmešua",
@@ -79552,10 +79641,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1920",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Kalnik",
-    "birth_year": "1920"
+    "death_place": "Kalnik"
   },
   {
     "last_name": "Čuček-Vrbinšek",
@@ -82840,9 +82929,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1904",
     "death_date": "1943",
-    "death_place": "Kalnički Partizanski",
-    "birth_year": "1904"
+    "death_place": "Kalnički Partizanski"
   },
   {
     "last_name": "Štagar",

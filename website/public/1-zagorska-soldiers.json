@@ -4722,6 +4722,14 @@
     "ethnicity": "Slovenac",
     "other_sources": [
       {
+        "soldier_id": "9020011391",
+        "name": "Kokot (Ivan) Franc",
+        "additional_info": "rođen 1913, Turški Vrh (Ptuj). Slovenac, poginuo 1944. u NOBu, Daruvar",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=408",
+        "source_page": 408,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
         "soldier_id": "0035105031",
         "name": "Kokot Franjo",
         "additional_info": "r. 1913, s. Turski Vrh, Ptuj, Slovenac, NOV 1943, poginuo 1944.",
@@ -4734,7 +4742,15 @@
         "unit_detail": "I udarna zagorska brigada",
         "unit_file": "32-divizija-soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Daruvar"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kokot",

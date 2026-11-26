@@ -158855,8 +158855,8 @@
       "birth_year",
       "death_place"
     ],
-    "death_place": "Duvanjsko Polje",
-    "birth_year": "1900"
+    "birth_year": "1900",
+    "death_place": "Duvanjsko Polje"
   },
   {
     "last_name": "Zjalić",
@@ -169879,12 +169879,12 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "Jasenovac",
+    "birth_year": "1924",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1924"
+    "death_place": "Jasenovac"
   },
   {
     "last_name": "Vojinović",
@@ -171707,12 +171707,11 @@
   },
   {
     "last_name": "Grubišić",
-    "middle_name": "",
+    "middle_name": "Ante",
     "first_name": "Mirko",
-    "fathers_name": "",
-    "full_name": "Grubišić Mirko",
+    "fathers_name": "Ante",
+    "full_name": "Grubišić Ante Mirko",
     "additional_info": "zvani Milan; Pregled štabova i komandi 2. dalmatinske brigade: politički komesar 2. bataljona.",
-    "birth_year": "",
     "pdf_page": 6,
     "pdf_y": 330.2,
     "pdf_x": 52.9,
@@ -171721,7 +171720,49 @@
     "unit_detail": "2. bataljon",
     "pdf_x_end": 152.2,
     "soldier_id": "0007010120",
-    "rank": "politički komesar"
+    "rank": "politički komesar",
+    "birth_year": "1915",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Solin, Split",
+    "ethnicity": "Hrvat",
+    "occupation": "radnik",
+    "party": "KPJ 1938",
+    "other_sources": [
+      {
+        "soldier_id": "0008001379",
+        "name": "Grubišić Ante Mirko",
+        "additional_info": "zvani Milan; 1915, Solin, Split, 3. bat, komesar; ranjen 22. 7. 1944, Čolakuša",
+        "pdf_file": "4-splitska-brigada.pdf",
+        "pdf_page": 42,
+        "pdf_x": 41.5,
+        "pdf_y": 163.2,
+        "pdf_x_end": 368.6,
+        "pdf_y_end": 180.6,
+        "unit_detail": "3. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "4-splitska-soldiers.json"
+      },
+      {
+        "soldier_id": "0041000338",
+        "name": "Grubišić Ante Mirko",
+        "additional_info": "politički komesar 1. čete 4. bataljona, rođen 1915, Solin, Split, radnik, Hrvat, u NOB od 1941, član KPJ od 1938, krajem rata politički komesar bataljona.",
+        "pdf_file": "borci-sutjeske-5-proleterska.pdf",
+        "pdf_page": 23,
+        "pdf_x": 227.5,
+        "pdf_y": 230.9,
+        "pdf_x_end": 397.7,
+        "pdf_y_end": 283.3,
+        "unit_detail": "1. četa, 4. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "5-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ivas",
@@ -171851,12 +171892,11 @@
   },
   {
     "last_name": "Jurlin",
-    "middle_name": "",
+    "middle_name": "Anta",
     "first_name": "Ante",
-    "fathers_name": "",
-    "full_name": "Jurlin Ante",
+    "fathers_name": "Ante",
+    "full_name": "Jurlin Anta Ante",
     "additional_info": "zvani Marko; Pregled štabova i komandi 2. dalmatinske brigade: politički komesar brigade, od 3. X 1942. do 11. V 1943.",
-    "birth_year": "",
     "pdf_page": 1,
     "pdf_y": 414.5,
     "pdf_x": 33.9,
@@ -171865,7 +171905,40 @@
     "unit_detail": "štab brigade",
     "pdf_x_end": 251.5,
     "soldier_id": "0007010146",
-    "rank": "politički komesar brigade"
+    "rank": "politički komesar brigade",
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Prvić Luka, Šibenik",
+    "ethnicity": "Hrvat",
+    "occupation": "moler",
+    "death_type": "poginuo",
+    "death_date": "13.06.1943",
+    "death_place": "Sutjeska, Tjentište",
+    "party": "KPJ 1928",
+    "other_sources": [
+      {
+        "soldier_id": "0115000051",
+        "name": "Jurlin Anta Ante",
+        "additional_info": "zvani Marko; politički radnik u štabu divizije (pred početak pete ofanzive bio je politički komesar 2. dalmatinske brigade), rođen 1909, Prvić Luka, Šibenik, moler, Hrvat, u NOB od 1941, član KPJ od 1928, pred rat bio sekretar Okružnog komiteta KPJ Šibenik, poginuo na Sutjesci kod Tjentišta 13. juna 1943.",
+        "pdf_file": "borci-sutjeske-3-udarna-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 196.8,
+        "pdf_y": 101.1,
+        "pdf_x_end": 367.4,
+        "pdf_y_end": 196.7,
+        "rank": "politički komesar",
+        "unit_file": "3-udarna-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kaioper-Longo",
@@ -173124,12 +173197,12 @@
         "source_page": 364
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 2. dalmatinska proleterska brigada",
     "former_ids": [
       "0122030005"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0007900047",
@@ -173142,14 +173215,14 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=182",
     "source_page": 159,
+    "former_ids": [
+      "0122030775"
+    ],
     "birth_place": "Pović Luka, Šibenik",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "zamjenik komandira čete",
-    "unit_detail": "2. četa, 1. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030775"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0007900028",
@@ -173217,6 +173290,9 @@
         "source_page": 93
       }
     ],
+    "former_ids": [
+      "0122915353"
+    ],
     "occupation": "zemljoradnik",
     "rank": "borac",
     "party": "SKOJ 1943",
@@ -173224,10 +173300,7 @@
       "born": [
         "1920"
       ]
-    },
-    "former_ids": [
-      "0122915353"
-    ]
+    }
   },
   {
     "soldier_id": "0007900048",
@@ -173240,14 +173313,14 @@
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=182",
     "source_page": 159,
+    "former_ids": [
+      "0122030777"
+    ],
     "birth_place": "Kaštel Kambelovac, Split",
     "death_type": "poginuo",
     "death_date": "15.07.1944",
     "rank": "zastavnik",
-    "unit_detail": "3. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030777"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0007900065",
@@ -173262,14 +173335,14 @@
     "pdf_page": 28,
     "pdf_x": 294.7,
     "pdf_y": 409.0,
-    "pdf_x_end": 461.3,
-    "pdf_y_end": 453.2,
-    "occupation": "student",
-    "birth_place": "Šibenik",
-    "rank": "borac",
+    "pdf_x_end": 462.6,
+    "pdf_y_end": 669.9,
     "former_ids": [
       "0122927633"
-    ]
+    ],
+    "occupation": "student",
+    "birth_place": "Šibenik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900004",
@@ -173331,12 +173404,12 @@
         "source_page": 685
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "party": "SKOJ",
     "former_ids": [
       "0122915364"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0007900058",
@@ -173349,14 +173422,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=191",
     "source_page": 168,
+    "former_ids": [
+      "0122030847"
+    ],
     "birth_place": "Obradov",
     "death_type": "poginuo",
     "death_date": "15.06.1944",
     "rank": "borac",
-    "unit_detail": "3. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030847"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0007900049",
@@ -173369,15 +173442,15 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=183",
     "source_page": 160,
-    "birth_place": "Selište",
+    "former_ids": [
+      "0122030785"
+    ],
+    "birth_place": "Selišta",
     "death_type": "poginuo",
     "death_date": "14.09.1944",
     "death_place": "Šćenica, Bobani",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030785"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0007900050",
@@ -173390,14 +173463,14 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=183",
     "source_page": 160,
+    "former_ids": [
+      "0122030786"
+    ],
     "birth_place": "Biskupija, Knin",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "poručnik",
-    "unit_detail": "2. četa, 1. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030786"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0007900001",
@@ -173496,14 +173569,18 @@
         "source_page": 199
       }
     ],
-    "occupation": "radnik",
-    "family_fields": [
-      "death_date",
-      "death_place"
-    ],
     "former_ids": [
       "0122926745"
-    ]
+    ],
+    "occupation": "radnik",
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Zagreb"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0007900039",
@@ -173542,12 +173619,12 @@
         "source_page": 365
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 2. dalmatinska proleterska brigada",
     "former_ids": [
       "0122030734"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0007900060",
@@ -173560,14 +173637,14 @@
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=196",
     "source_page": 173,
+    "former_ids": [
+      "0122030884"
+    ],
     "birth_place": "Maovice, Vrlika, Sinj",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "stariji vodnik",
-    "unit_detail": "1. četa, 1. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030884"
-    ]
+    "unit_detail": "1. četa, 1. bataljon"
   },
   {
     "soldier_id": "0007900064",
@@ -173584,16 +173661,16 @@
     "pdf_y": 396.9,
     "pdf_x_end": 577.4,
     "pdf_y_end": 421.9,
+    "former_ids": [
+      "0122910757"
+    ],
     "birth_place": "Zagvozd",
     "ethnicity": "Hrvat",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "15.02.1945",
     "death_place": "Široki Brijeg",
-    "rank": "borac",
-    "former_ids": [
-      "0122910757"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900052",
@@ -173606,14 +173683,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=186",
     "source_page": 163,
+    "former_ids": [
+      "0122030809"
+    ],
     "death_type": "poginuo",
     "death_date": "13.05.1944",
     "rank": "borac",
-    "unit_detail": "5. bataljon, 2. dalmatinska proleterska brigada",
-    "birth_place": "Makarska",
-    "former_ids": [
-      "0122030809"
-    ]
+    "unit_detail": "5. bataljon",
+    "birth_place": "Makarska"
   },
   {
     "soldier_id": "0007900040",
@@ -173635,16 +173712,16 @@
         "source_page": 421
       }
     ],
+    "former_ids": [
+      "0122030235"
+    ],
     "death_type": "poginuo",
     "death_date": "12.10.1944",
     "rank": "referent saniteta",
-    "unit_detail": "2. bataljon, 2. dalmatinska brigada",
+    "unit_detail": "2. bataljon",
     "birth_place": "Belenići",
     "death_place": "u Ključnici kod Poljica",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030235"
-    ]
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0007900044",
@@ -173657,14 +173734,14 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=93",
     "source_page": 88,
+    "former_ids": [
+      "0122030706"
+    ],
     "birth_place": "Konjsko",
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
-    "unit_detail": "3. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030706"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0007900045",
@@ -173677,15 +173754,15 @@
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=93",
     "source_page": 88,
+    "former_ids": [
+      "0122030708"
+    ],
     "birth_place": "Konjsko, Zubci",
     "occupation": "najamni radnik",
     "death_type": "poginuo",
     "death_date": "15.02.1945",
     "rank": "borac",
-    "unit_detail": "1. četa, 3. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030708"
-    ]
+    "unit_detail": "1. četa, 3. bataljon"
   },
   {
     "soldier_id": "0007900021",
@@ -173725,14 +173802,14 @@
     "pdf_x_end": 317.8,
     "pdf_y_end": 435.9,
     "pdf_x_left": 182.6,
+    "former_ids": [
+      "0122940923"
+    ],
     "birth_place": "Herceg Novi",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "15.02.1945",
-    "death_place": "Mostar",
-    "former_ids": [
-      "0122940923"
-    ]
+    "death_place": "Mostar"
   },
   {
     "soldier_id": "0007900006",
@@ -173791,12 +173868,12 @@
         "source_page": 2639
       }
     ],
-    "occupation": "radnik",
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 2. dalmatinska proleterska brigada",
     "former_ids": [
       "0122030713"
-    ]
+    ],
+    "occupation": "radnik",
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0007900053",
@@ -173809,14 +173886,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=187",
     "source_page": 164,
+    "former_ids": [
+      "0122030814"
+    ],
     "birth_place": "Ilijin",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 2. dalmatinska brigada",
-    "former_ids": [
-      "0122030814"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0007900054",
@@ -173829,14 +173906,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=187",
     "source_page": 164,
+    "former_ids": [
+      "0122030815"
+    ],
     "birth_place": "Jovanov",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "borac",
-    "unit_detail": "3. četa, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030815"
-    ]
+    "unit_detail": "3. četa"
   },
   {
     "soldier_id": "0007900016",
@@ -173892,15 +173969,15 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=187",
     "source_page": 164,
+    "former_ids": [
+      "0122030817"
+    ],
     "birth_place": "Piljevu, Zrmanja, Lika",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "zastavnik",
-    "unit_detail": "1. četa, 1. bataljon, 2. dalmatinska proleterska brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030817"
-    ]
+    "unit_detail": "1. četa, 1. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0007900002",
@@ -173998,14 +174075,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=188",
     "source_page": 165,
+    "former_ids": [
+      "0122030829"
+    ],
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
-    "unit_detail": "5. bataljon, 2. dalmatinska proleterska brigada",
-    "birth_place": "Dubrovnik",
-    "former_ids": [
-      "0122030829"
-    ]
+    "unit_detail": "5. bataljon",
+    "birth_place": "Dubrovnik"
   },
   {
     "soldier_id": "0007900015",
@@ -174103,11 +174180,11 @@
         "source_page": 2650
       }
     ],
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 2. dalmatinska proleterska brigada",
     "former_ids": [
       "0122030372"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0007900029",
@@ -174218,14 +174295,14 @@
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=189",
     "source_page": 166,
+    "former_ids": [
+      "0122030834"
+    ],
     "birth_place": "Betina Murter",
     "death_type": "poginuo",
     "death_date": "21.07.1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030834"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0007900017",
@@ -174344,15 +174421,15 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=69",
     "source_page": 64,
+    "former_ids": [
+      "0122030477"
+    ],
     "birth_place": "Hrupjedima, Trebinje",
     "occupation": "stolarski radnik",
     "death_type": "poginuo",
     "death_date": "28.10.1944",
     "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030477"
-    ]
+    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "soldier_id": "0007900011",
@@ -174457,15 +174534,15 @@
         "source_page": 48
       }
     ],
+    "former_ids": [
+      "0122926348"
+    ],
     "occupation": "zemljoradnik",
     "variants": {
       "born": [
         "1924"
       ]
-    },
-    "former_ids": [
-      "0122926348"
-    ]
+    }
   },
   {
     "soldier_id": "0007900018",
@@ -174565,11 +174642,11 @@
         "source_page": 1243
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "former_ids": [
       "0122957703"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900034",
@@ -174604,11 +174681,11 @@
         "source_page": 713
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "former_ids": [
       "0122915876"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900012",
@@ -174670,14 +174747,14 @@
         "source_page": 768
       }
     ],
-    "occupation": "zidar",
-    "rank": "borac",
-    "unit_detail": "3. bataljon, 2. dalmatinska proleterska brigada",
-    "party": "SKOJ 1942",
-    "birth_date": "02.10.1923",
     "former_ids": [
       "0122910663"
-    ]
+    ],
+    "occupation": "zidar",
+    "rank": "borac",
+    "unit_detail": "3. bataljon",
+    "party": "SKOJ 1942",
+    "birth_date": "02.10.1923"
   },
   {
     "soldier_id": "0007900063",
@@ -174694,6 +174771,9 @@
     "pdf_y": 333.1,
     "pdf_x_end": 413.3,
     "pdf_y_end": 415.5,
+    "former_ids": [
+      "0122910664"
+    ],
     "birth_place": "Prološac Donji",
     "ethnicity": "Srpkinja",
     "occupation": "domaćica",
@@ -174701,11 +174781,8 @@
     "death_date": "12.06.1943",
     "death_place": "na Sutjesci-Zelengora",
     "rank": "bolničarka",
-    "unit_detail": "4. bataljon, 2. dalmatinska proleterska brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122910664"
-    ]
+    "unit_detail": "4. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0007900035",
@@ -174718,14 +174795,14 @@
     "birth_year": "1910",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=1a30d6f1-5c88-4f72-b96a-2e0ec4b61bd9/00000001/00000001/00001484&pg_seq=362",
     "source_page": 717,
+    "former_ids": [
+      "0122953960"
+    ],
     "birth_place": "Trmanje, Rovca",
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "komandir čete",
-    "party": "KPJ",
-    "former_ids": [
-      "0122953960"
-    ]
+    "party": "KPJ"
   },
   {
     "soldier_id": "0007900061",
@@ -174742,16 +174819,16 @@
     "pdf_y": 756.9,
     "pdf_x_end": 574.9,
     "pdf_y_end": 790.5,
+    "former_ids": [
+      "0122091044"
+    ],
     "birth_place": "Neteka",
     "ethnicity": "Srbin",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Zelengora",
-    "rank": "borac",
-    "former_ids": [
-      "0122091044"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900023",
@@ -174819,13 +174896,13 @@
     "pdf_x": 146.0,
     "pdf_y": 621.0,
     "pdf_x_end": 314.4,
-    "pdf_y_end": 639.5,
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "rank": "borac",
+    "pdf_y_end": 683.7,
     "former_ids": [
       "0122929763"
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "rank": "borac"
   },
   {
     "soldier_id": "0007900014",
@@ -174866,13 +174943,13 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=196",
     "source_page": 173,
+    "former_ids": [
+      "0122030881"
+    ],
     "birth_place": "Šipuranima, Šibenik",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "komesar čete",
-    "former_ids": [
-      "0122030881"
-    ]
+    "rank": "komesar čete"
   },
   {
     "soldier_id": "0007900024",
@@ -174907,14 +174984,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=184",
     "source_page": 161,
+    "former_ids": [
+      "0122030790"
+    ],
     "death_type": "poginuo",
     "death_date": "31.05.1944",
     "rank": "borac",
-    "unit_detail": "4. bataljon, 2. dalmatinska proleterska brigada",
-    "birth_place": "Šibenik",
-    "former_ids": [
-      "0122030790"
-    ]
+    "unit_detail": "4. bataljon",
+    "birth_place": "Šibenik"
   },
   {
     "soldier_id": "0007900033",
@@ -174960,6 +175037,9 @@
         "source_page": 691
       }
     ],
+    "former_ids": [
+      "0122923210"
+    ],
     "occupation": "zemljoradnik",
     "rank": "komandir čete",
     "party": "KPJ 1944",
@@ -174967,10 +175047,7 @@
       "born": [
         "1918"
       ]
-    },
-    "former_ids": [
-      "0122923210"
-    ]
+    }
   },
   {
     "soldier_id": "0007900067",
@@ -175010,10 +175087,10 @@
         "pdf_y_end": 392.3
       }
     ],
-    "occupation": "službenik",
     "former_ids": [
       "0122925394"
-    ]
+    ],
+    "occupation": "službenik"
   },
   {
     "soldier_id": "0007900041",
@@ -175035,16 +175112,16 @@
         "source_page": 429
       }
     ],
+    "former_ids": [
+      "0122030157"
+    ],
     "birth_place": "Trebimlja, Popovo polje",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "15.11.1944",
     "death_place": "Dubrovnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 5. bataljon, 2. dalmatinska proleterska brigada",
-    "former_ids": [
-      "0122030157"
-    ]
+    "unit_detail": "2. četa, 5. bataljon"
   },
   {
     "soldier_id": "0007900020",

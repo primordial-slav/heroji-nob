@@ -23634,10 +23634,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1925",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Maglaj",
-    "birth_year": "1925"
+    "death_place": "Maglaj"
   },
   {
     "last_name": "Lazić",
@@ -25249,8 +25249,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Vlatkovci",
-    "birth_year": "1915"
+    "birth_year": "1915",
+    "death_place": "Vlatkovci"
   },
   {
     "last_name": "Maksić",
@@ -28496,8 +28496,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Topola, Banja Luka",
-    "birth_year": "1924"
+    "birth_year": "1924",
+    "death_place": "Topola, Banja Luka"
   },
   {
     "last_name": "Miladinović",
@@ -30363,7 +30363,22 @@
     "death_date": "26.10.1944",
     "death_place": "Veliki Prnjavor, Doboj",
     "rank": "borac",
-    "unit_detail": "1. bataljon"
+    "unit_detail": "1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0033000433",
+        "name": "Mrčela Ivana Antun",
+        "additional_info": "rođen 1912, Privlaka Vinkovci, 1. bataljon 14. brigade, poginuo, 26. X 1944, Vel. Prnjavor, sahranjen: V. Sočanica",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 38,
+        "pdf_x": 12.5,
+        "pdf_y": 225.8,
+        "pdf_x_end": 652.8,
+        "pdf_y_end": 250.6,
+        "unit_detail": "1. bataljon, 14. brigada",
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Milić",
@@ -34775,10 +34790,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1901",
     "death_type": "umro",
     "death_date": "1943",
-    "death_place": "Petrovac",
-    "birth_year": "1901"
+    "death_place": "Petrovac"
   },
   {
     "last_name": "Petrović",
@@ -47754,7 +47769,34 @@
     "birth_place": "Kukujevci, Sid",
     "death_type": "poginuo",
     "death_date": "08.03.1945",
-    "rank": "borac"
+    "rank": "borac",
+    "death_place": "Ritešić",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0033000662",
+        "name": "Tomić Stjepana Anton",
+        "additional_info": "rođen 1912, Kukujevci Šid, Tehn. četa 14. brigade, nestao, 8. IV 1945, Ritešić",
+        "pdf_file": "53-srednjobosanska-divizija.pdf",
+        "pdf_page": 57,
+        "pdf_x": 8.1,
+        "pdf_y": 307.6,
+        "pdf_x_end": 518.2,
+        "pdf_y_end": 332.4,
+        "unit_detail": "14. brigada",
+        "unit_file": "53-srednjobosanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.04.1945",
+          "place": "Ritešić"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tomić",
@@ -52388,10 +52430,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1927",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Banja Luka",
-    "birth_year": "1927"
+    "death_place": "Banja Luka"
   },
   {
     "last_name": "Vučko",
@@ -55884,8 +55926,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Sarajevo",
-    "birth_year": "1929"
+    "birth_year": "1929",
+    "death_place": "Sarajevo"
   },
   {
     "last_name": "Škorić",
@@ -56683,7 +56725,7 @@
     "last_name": "Bajić",
     "middle_name": "Tede",
     "first_name": "Bordo",
-    "fathers_name": "Tede",
+    "fathers_name": "Tedo",
     "full_name": "Bajić Tede Bordo",
     "additional_info": "Poginuli borci narodnooslobodilačkog rata, Brestovo: Bajić Tede Bordo, 1927, Brestovo, Doboj, Srbin, zemljoradnik, u NOB-u od jula 1944. u 14. srednjobosanskoj NOU brigadi, kao borac poginuo 26. septembra 1944. na Čemernici, Kotor Varoš.",
     "birth_year": "1927",
@@ -56912,10 +56954,10 @@
         "source_page": 1683
       }
     ],
-    "rank": "borac",
     "former_ids": [
       "0122955254"
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900037",
@@ -57092,14 +57134,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=348",
     "source_page": 348,
+    "former_ids": [
+      "0122955405"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "08.1944",
     "death_place": "u Vitkovcima. kod Doboja",
-    "rank": "borac",
-    "former_ids": [
-      "0122955405"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900010",
@@ -57223,14 +57265,14 @@
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=340",
     "source_page": 340,
+    "former_ids": [
+      "0122955315"
+    ],
     "birth_place": "Gornji Obodnik",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Strupine, Novi Šeher",
-    "rank": "borac",
-    "former_ids": [
-      "0122955315"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900017",
@@ -57264,11 +57306,11 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=334",
     "source_page": 334,
-    "birth_place": "Grabovica",
-    "rank": "borac",
     "former_ids": [
       "0122955243"
-    ]
+    ],
+    "birth_place": "Grabovica",
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900048",
@@ -57281,14 +57323,14 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=348",
     "source_page": 348,
+    "former_ids": [
+      "0122955410"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Kotor-Varoš",
-    "rank": "borac",
-    "former_ids": [
-      "0122955410"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900004",
@@ -57323,14 +57365,14 @@
     "birth_year": "1911",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=348",
     "source_page": 348,
+    "former_ids": [
+      "0122955412"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "na Perković-Henu",
-    "rank": "borac",
-    "former_ids": [
-      "0122955412"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900044",
@@ -57362,10 +57404,10 @@
         "source_page": 1687
       }
     ],
-    "rank": "borac",
     "former_ids": [
       "0122955352"
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900050",
@@ -57378,14 +57420,14 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=349",
     "source_page": 349,
+    "former_ids": [
+      "0122955416"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Derventa",
-    "rank": "komandir čete",
-    "former_ids": [
-      "0122955416"
-    ]
+    "rank": "komandir čete"
   },
   {
     "soldier_id": "0056900030",
@@ -57716,14 +57758,14 @@
     "birth_year": "1916",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=338",
     "source_page": 338,
+    "former_ids": [
+      "0122959229"
+    ],
     "death_type": "poginuo",
     "death_date": "27.01.1944",
     "death_place": "Rudanka, Doboj",
     "rank": "borac",
-    "birth_place": "Krusevo brdo",
-    "former_ids": [
-      "0122959229"
-    ]
+    "birth_place": "Krusevo brdo"
   },
   {
     "soldier_id": "0056900015",
@@ -57944,14 +57986,14 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=343",
     "source_page": 343,
+    "former_ids": [
+      "0122955356"
+    ],
     "birth_place": "Večići",
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "na Solilama",
-    "rank": "borac",
-    "former_ids": [
-      "0122955356"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900036",
@@ -57985,14 +58027,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=343",
     "source_page": 343,
+    "former_ids": [
+      "0122955357"
+    ],
     "birth_place": "Vrbanjci",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Banjaluka",
-    "rank": "politički komesar čete",
-    "former_ids": [
-      "0122955357"
-    ]
+    "rank": "politički komesar čete"
   },
   {
     "soldier_id": "0056900054",
@@ -58097,14 +58139,14 @@
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=353",
     "source_page": 353,
-    "birth_place": "Solajima",
+    "former_ids": [
+      "0122955467"
+    ],
+    "birth_place": "Solaji",
     "death_type": "poginuo",
     "death_date": "01.1944",
     "death_place": "Bubnja, Prnjavor",
-    "rank": "komandir čete",
-    "former_ids": [
-      "0122955467"
-    ]
+    "rank": "komandir čete"
   },
   {
     "soldier_id": "0056900035",
@@ -58153,13 +58195,13 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=350",
     "source_page": 350,
+    "former_ids": [
+      "0122955427"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac",
-    "former_ids": [
-      "0122955427"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900052",
@@ -58172,14 +58214,14 @@
     "birth_year": "1918",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=350",
     "source_page": 350,
+    "former_ids": [
+      "0122955430"
+    ],
     "birth_place": "Imljani",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Vijačani, Prnjavor",
-    "rank": "borac",
-    "former_ids": [
-      "0122955430"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0056900031",

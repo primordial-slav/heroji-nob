@@ -27327,10 +27327,27 @@
         "pdf_y": 387.3,
         "pdf_x_end": 272.3,
         "pdf_y_end": 453.7
+      },
+      {
+        "soldier_id": "0004002245",
+        "name": "Raca Gliše Gliša",
+        "additional_info": "1914, Bravsko, Bosanski Petrovac, SR BiH, umrl 1982",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 432,
+        "pdf_x": 152.9,
+        "pdf_y": 233.3,
+        "pdf_x_end": 261.4,
+        "pdf_y_end": 256.4,
+        "unit_file": "ljubljanska-soldiers.json"
       }
     ],
     "rank": "komandant bataljona",
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "variants": {
+      "born": [
+        "1914"
+      ]
+    }
   },
   {
     "last_name": "Raca",
@@ -64154,11 +64171,11 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Bugojno",
     "borrowed": [
       "birth_year",
       "death_place"
-    ]
+    ],
+    "death_place": "Bugojno"
   },
   {
     "last_name": "Janković",
@@ -69510,6 +69527,10 @@
     "unit_detail": "3. četa, 4. bataljon",
     "pdf_x_end": 463.8,
     "party": "SKOJ",
+    "family_fields": [
+      "occupation",
+      "party"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000074",
@@ -69518,10 +69539,6 @@
         "source_url": "porodica:9990000074",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "occupation",
-      "party"
     ]
   },
   {

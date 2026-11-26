@@ -3917,14 +3917,14 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_date": "1944",
+    "birth_year": "1923",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
-    "death_place": "Crni kuk",
-    "birth_year": "1923"
+    "death_date": "1944",
+    "death_place": "Crni kuk"
   },
   {
     "last_name": "Bjelogrlić",
@@ -20630,16 +20630,16 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_type": "poginuo",
+    "birth_year": "1907",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place",
       "death_type"
     ],
+    "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Rasadnik nevesi",
-    "birth_year": "1907"
+    "death_place": "Rasadnik nevesi"
   },
   {
     "last_name": "Masleša",
@@ -20880,14 +20880,14 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_date": "1943",
+    "birth_year": "1920",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
-    "death_place": "Nevesinje",
-    "birth_year": "1920"
+    "death_date": "1943",
+    "death_place": "Nevesinje"
   },
   {
     "last_name": "Mastilović",
@@ -25929,12 +25929,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Kruščica konjic",
+    "birth_year": "1926",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1926"
+    "death_place": "Kruščica konjic"
   },
   {
     "last_name": "Padalović",
@@ -26754,12 +26754,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Nevesinje",
+    "birth_year": "1920",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1920"
+    "death_place": "Nevesinje"
   },
   {
     "last_name": "Pažin",
@@ -37209,12 +37209,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Nevesinje",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1922"
+    "death_place": "Nevesinje"
   },
   {
     "last_name": "Vuković",
@@ -40784,7 +40784,7 @@
     "other_sources": [
       {
         "soldier_id": "0125000800",
-        "name": "Šarenac Đure Špiro",
+        "name": "Šarenac Špiro",
         "additional_info": "rođen 1918, Donji Davidovići, Bileća, zemljoradnik, član KPJ od 1941, u Bataljonu od januara 1942, borac.",
         "pdf_file": "mostarski-bataljon.pdf",
         "pdf_page": 29,
@@ -40981,6 +40981,10 @@
     "party": "SKOJ 1942, KPJ 1944",
     "death_type": "umro",
     "death_date": "1999",
+    "family_fields": [
+      "death_date",
+      "death_type"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000088",
@@ -40989,10 +40993,6 @@
         "source_url": "porodica:9990000088",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "death_date",
-      "death_type"
     ]
   },
   {
@@ -42331,11 +42331,11 @@
         "source_page": 2631
       }
     ],
-    "occupation": "službenik",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030019"
-    ]
+    ],
+    "occupation": "službenik",
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900019",
@@ -42395,13 +42395,13 @@
         "source_page": 2633
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 10. hercegovačka brigada",
-    "death_place": "Nevesinje",
-    "party": "SKOJ",
     "former_ids": [
       "0122030003"
     ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 4. bataljon",
+    "death_place": "Nevesinje",
+    "party": "SKOJ",
     "variants": {
       "death": [
         {
@@ -42507,14 +42507,14 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=18",
     "source_page": 13,
+    "former_ids": [
+      "0122030006"
+    ],
     "birth_place": "Gornje Vrbno, Trebinje",
     "death_type": "poginuo",
     "death_date": "27.10.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030006"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900062",
@@ -42546,13 +42546,13 @@
         "source_page": 2648
       }
     ],
-    "occupation": "radnik",
-    "rank": "komandir voda",
-    "unit_detail": "2. četa, 5. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030015"
     ],
+    "occupation": "radnik",
+    "rank": "komandir voda",
+    "unit_detail": "2. četa, 5. bataljon",
+    "party": "KPJ",
     "variants": {
       "born": [
         "1913"
@@ -42621,14 +42621,14 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=42",
     "source_page": 37,
-    "birth_place": "Orahovac, Aasgva",
+    "former_ids": [
+      "0122030245"
+    ],
+    "birth_place": "Orahovcu, Aasgva",
     "death_type": "poginuo",
     "death_date": "13.02.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030245"
-    ]
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900036",
@@ -42688,12 +42688,12 @@
         "source_page": 380
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030029"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 6. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900064",
@@ -42706,15 +42706,15 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=20",
     "source_page": 15,
+    "former_ids": [
+      "0122030031"
+    ],
     "birth_place": "Klobuk, Lastva",
     "death_type": "poginuo",
     "death_date": "28.10.1944",
     "rank": "borac",
-    "unit_detail": "3. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030031"
-    ]
+    "unit_detail": "3. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900022",
@@ -42769,11 +42769,11 @@
         "source_page": 2646
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030033"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900066",
@@ -42786,14 +42786,14 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=21",
     "source_page": 16,
+    "former_ids": [
+      "0122030041"
+    ],
     "birth_place": "Orahovac, Lastva",
     "death_type": "poginuo",
     "death_date": "14.02.1945",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030041"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900067",
@@ -42825,12 +42825,12 @@
         "source_page": 2648
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030051"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900037",
@@ -42861,14 +42861,14 @@
     "birth_year": "1907",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=91",
     "source_page": 86,
+    "former_ids": [
+      "0122030689"
+    ],
     "birth_place": "Drijenjani, Popovo polje",
     "death_type": "poginuo",
     "death_date": "29.09.1943",
     "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030689"
-    ]
+    "unit_detail": "2. četa, 6. bataljon"
   },
   {
     "soldier_id": "0043900034",
@@ -42927,11 +42927,11 @@
         "source_page": 233
       }
     ],
-    "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030784"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900070",
@@ -42944,16 +42944,16 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=25",
     "source_page": 20,
+    "former_ids": [
+      "0122030087"
+    ],
     "birth_place": "Vlaška",
     "death_type": "umro",
     "death_date": "29.03.1945",
     "death_place": "Mostar",
     "rank": "delegat voda",
-    "unit_detail": "3. vod, 2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030087"
-    ]
+    "unit_detail": "3. vod, 2. četa, 3. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900071",
@@ -42985,11 +42985,11 @@
         "source_page": 2634
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030092"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900039",
@@ -43042,14 +43042,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=91",
     "source_page": 86,
+    "former_ids": [
+      "0122030686"
+    ],
     "birth_place": "Zasad, Trebinje",
     "death_type": "poginuo",
     "death_date": "13.02.1945",
     "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030686"
-    ]
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0043900127",
@@ -43062,15 +43062,15 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=97",
     "source_page": 92,
+    "former_ids": [
+      "0122030729"
+    ],
     "birth_place": "Cibrijan",
     "occupation": "grafički radnik",
     "death_type": "poginuo",
     "death_date": "09.1943",
     "rank": "intendant",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030729"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900012",
@@ -43151,11 +43151,11 @@
         "source_page": 2648
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030727"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900083",
@@ -43168,16 +43168,16 @@
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=42",
     "source_page": 37,
+    "former_ids": [
+      "0122030246"
+    ],
     "birth_place": "Pridvorci, Trebinje",
     "occupation": "željeznički radnik",
     "death_type": "poginuo",
     "death_date": "04.04.1944",
     "rank": "komandir voda",
-    "unit_detail": "4. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030246"
-    ]
+    "unit_detail": "4. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900045",
@@ -43216,12 +43216,12 @@
         "source_page": 2648
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030228"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900068",
@@ -43234,14 +43234,14 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=23",
     "source_page": 18,
+    "former_ids": [
+      "0122030066"
+    ],
     "birth_place": "Krtinje",
     "death_type": "poginuo",
     "death_date": "05.04.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030066"
-    ]
+    "unit_detail": "3. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900069",
@@ -43254,14 +43254,14 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=24",
     "source_page": 19,
+    "former_ids": [
+      "0122030067"
+    ],
     "birth_place": "Krtinje",
     "death_type": "poginuo",
     "death_date": "19.02.1944",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030067"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900001",
@@ -43340,11 +43340,11 @@
         "source_page": 2655
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030231"
     ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 3. bataljon",
     "variants": {
       "born": [
         "1923"
@@ -43362,14 +43362,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=93",
     "source_page": 88,
+    "former_ids": [
+      "0122030701"
+    ],
     "death_type": "poginuo",
     "death_date": "13.02.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
-    "birth_place": "Lijepa Dola, Željevo, Zubci, Trebinje",
-    "former_ids": [
-      "0122030701"
-    ]
+    "unit_detail": "3. četa, 4. bataljon",
+    "birth_place": "Lijepa Dola, Željevo, Zubci, Trebinje"
   },
   {
     "soldier_id": "0043900125",
@@ -43382,15 +43382,15 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=93",
     "source_page": 88,
+    "former_ids": [
+      "0122030702"
+    ],
     "birth_place": "Konjsko, Zubci",
     "death_type": "umro",
     "death_date": "18.01.1945",
     "death_place": "Dubrovnik",
     "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030702"
-    ]
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900081",
@@ -43403,15 +43403,15 @@
     "birth_year": "1912",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=41",
     "source_page": 36,
+    "former_ids": [
+      "0122030241"
+    ],
     "birth_place": "Ugarci, Ljubomir",
     "death_type": "poginuo",
     "death_date": "20.11.1943",
     "rank": "komandir voda",
-    "unit_detail": "8. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030241"
-    ]
+    "unit_detail": "8. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900079",
@@ -43443,12 +43443,12 @@
         "source_page": 2633
       }
     ],
-    "rank": "vodni delegat",
-    "unit_detail": "2. vod, 3. četa, 2. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030179"
-    ]
+    ],
+    "rank": "vodni delegat",
+    "unit_detail": "2. vod, 3. četa, 2. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900046",
@@ -43487,13 +43487,13 @@
         "source_page": 2633
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030181"
     ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "2. četa, 6. bataljon",
+    "party": "SKOJ",
     "variants": {
       "death": [
         {
@@ -43540,12 +43540,12 @@
         "source_page": 2633
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030196"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900126",
@@ -43558,15 +43558,15 @@
     "birth_year": "1918",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=95",
     "source_page": 90,
+    "former_ids": [
+      "0122030718"
+    ],
     "birth_place": "Mostaći, Trebinje",
     "occupation": "obućarski radnik",
     "death_type": "poginuo",
     "death_date": "13.10.1942",
     "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030718"
-    ]
+    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900132",
@@ -43579,14 +43579,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=187",
     "source_page": 164,
+    "former_ids": [
+      "0122030811"
+    ],
     "birth_place": "Gornji Drežanj",
     "death_type": "poginuo",
     "death_date": "10.1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030811"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900085",
@@ -43599,16 +43599,16 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=48",
     "source_page": 43,
+    "former_ids": [
+      "0122030289"
+    ],
     "occupation": "željeznički radnik",
     "death_type": "poginuo",
     "death_date": "17.05.1944",
     "rank": "vodnik, zastavnik",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
+    "unit_detail": "2. četa, 1. bataljon",
     "birth_place": "Dubočani, Trebinje",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030289"
-    ]
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900023",
@@ -43689,7 +43689,7 @@
     "former_ids": [
       "0122030821"
     ],
-    "birth_place": "Tasovčićima, Čapljina",
+    "birth_place": "Tasovčići, Čapljina",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "komandir čete",
@@ -43728,14 +43728,14 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=50",
     "source_page": 45,
+    "former_ids": [
+      "0122030308"
+    ],
     "birth_place": "Tuli, Zubci",
     "death_type": "poginuo",
     "death_date": "28.10.1944",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030308"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900017",
@@ -43834,16 +43834,16 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=53",
     "source_page": 48,
+    "former_ids": [
+      "0122030346"
+    ],
     "birth_place": "Kunja Glavica, Zubci",
     "occupation": "stolarski radnik",
     "death_type": "umro",
     "death_place": "Jelašce, Kalinovik",
     "rank": "komandir voda, komandir čete",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030346"
-    ]
+    "unit_detail": "3. četa, 2. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900014",
@@ -43906,15 +43906,15 @@
         "source_page": 423
       }
     ],
+    "former_ids": [
+      "0122030353"
+    ],
     "birth_place": "Orašje",
     "death_type": "poginuo",
     "death_date": "23.11.1943",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
-    "death_place": "u Dolima ispod Viduše",
-    "former_ids": [
-      "0122030353"
-    ]
+    "unit_detail": "3. četa, 4. bataljon",
+    "death_place": "u Dolima ispod Viduše"
   },
   {
     "soldier_id": "0043900088",
@@ -43927,14 +43927,14 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=54",
     "source_page": 49,
+    "former_ids": [
+      "0122030354"
+    ],
     "birth_place": "Ograde, Zubci",
     "death_type": "poginuo",
     "death_date": "10.11.1944",
     "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030354"
-    ]
+    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900089",
@@ -43966,12 +43966,12 @@
         "source_page": 332
       }
     ],
-    "rank": "komandir voda, komandir čete",
-    "unit_detail": "1. četa, 3. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030368"
-    ]
+    ],
+    "rank": "komandir voda, komandir čete",
+    "unit_detail": "1. četa, 3. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900013",
@@ -44051,11 +44051,11 @@
         "source_page": 2442
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030373"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900026",
@@ -44109,13 +44109,13 @@
         "source_page": 2644
       }
     ],
-    "occupation": "trgovački pomoćnik",
-    "rank": "zamjenik političkog komesara čete",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030395"
-    ]
+    ],
+    "occupation": "trgovački pomoćnik",
+    "rank": "zamjenik političkog komesara čete",
+    "unit_detail": "1. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900090",
@@ -44147,11 +44147,11 @@
         "source_page": 2644
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030383"
     ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 2. bataljon",
     "variants": {
       "born": [
         "1920"
@@ -44169,15 +44169,15 @@
     "birth_year": "1913",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=59",
     "source_page": 54,
+    "former_ids": [
+      "0122030386"
+    ],
     "birth_place": "Strujići, Popovo polje",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "06.05.1945",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030386"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900091",
@@ -44190,14 +44190,14 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=59",
     "source_page": 54,
+    "former_ids": [
+      "0122030389"
+    ],
     "birth_place": "Strujićnma, Popovo polje",
     "death_type": "poginuo",
     "death_date": "22.02.1945",
     "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030389"
-    ]
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900092",
@@ -44210,14 +44210,14 @@
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=60",
     "source_page": 55,
+    "former_ids": [
+      "0122030394"
+    ],
     "birth_place": "Bogojević selo, Zubci",
     "death_type": "umro",
     "death_date": "08.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030394"
-    ]
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900027",
@@ -44274,12 +44274,12 @@
         "source_page": 2631
       }
     ],
-    "rank": "vodni delegat",
-    "unit_detail": "5. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030454"
-    ]
+    ],
+    "rank": "vodni delegat",
+    "unit_detail": "5. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900051",
@@ -44301,14 +44301,14 @@
         "source_page": 424
       }
     ],
+    "former_ids": [
+      "0122030457"
+    ],
     "birth_place": "Čavaš",
     "death_type": "umro",
     "death_date": "14.04.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030457"
-    ]
+    "unit_detail": "3. četa, 2. bataljon"
   },
   {
     "soldier_id": "0043900052",
@@ -44347,11 +44347,11 @@
         "source_page": 2650
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 5. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030456"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 5. bataljon"
   },
   {
     "soldier_id": "0043900094",
@@ -44364,14 +44364,14 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=61",
     "source_page": 56,
+    "former_ids": [
+      "0122030403"
+    ],
     "birth_place": "Turmenti, Zubci",
     "death_type": "poginuo",
     "death_date": "10.12.1944",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030403"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900095",
@@ -44403,12 +44403,12 @@
         "source_page": 2652
       }
     ],
-    "occupation": "radnik",
-    "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030405"
     ],
+    "occupation": "radnik",
+    "rank": "borac",
+    "unit_detail": "1. bataljon",
     "variants": {
       "born": [
         "1915"
@@ -44471,16 +44471,16 @@
         "source_page": 424
       }
     ],
+    "former_ids": [
+      "0122030418"
+    ],
     "birth_place": "Veličani, Popovo polje",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "26.10.1943",
     "rank": "komandir voda",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "death_place": "Udrežnje, Nevesinje",
-    "former_ids": [
-      "0122030418"
-    ]
+    "unit_detail": "2. četa, 6. bataljon",
+    "death_place": "Udrežnje, Nevesinje"
   },
   {
     "soldier_id": "0043900016",
@@ -44540,13 +44540,13 @@
         "source_page": 2646
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "komandir voda, zastavnik",
-    "unit_detail": "1. četa, 8. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030436"
     ],
+    "occupation": "zemljoradnik",
+    "rank": "komandir voda, zastavnik",
+    "unit_detail": "1. četa, 8. bataljon",
+    "party": "KPJ",
     "variants": {
       "born": [
         "1909"
@@ -44564,15 +44564,15 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=65",
     "source_page": 60,
+    "former_ids": [
+      "0122030445"
+    ],
     "birth_place": "Zubci",
     "death_type": "umro",
     "death_date": "02.10.1945",
     "death_place": "Mostar",
     "rank": "komandir voda",
-    "unit_detail": "2. četa, 2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030445"
-    ]
+    "unit_detail": "2. četa, 2. bataljon"
   },
   {
     "soldier_id": "0043900098",
@@ -44604,12 +44604,12 @@
         "source_page": 2652
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030446"
     ],
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
     "variants": {
       "death": [
         {
@@ -44697,15 +44697,15 @@
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=67",
     "source_page": 62,
+    "former_ids": [
+      "0122030462"
+    ],
     "birth_place": "Dubočani, Trebinje",
     "death_type": "poginuo",
     "death_date": "17.05.1944",
     "rank": "zamjenik političkog komesara čete",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030462"
-    ]
+    "unit_detail": "1. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900101",
@@ -44718,14 +44718,14 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=68",
     "source_page": 63,
+    "former_ids": [
+      "0122030464"
+    ],
     "death_type": "poginuo",
     "death_date": "30.04.1945",
     "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "birth_place": "Nikontovići, Trebinjska brda",
-    "former_ids": [
-      "0122030464"
-    ]
+    "unit_detail": "2. četa, 3. bataljon",
+    "birth_place": "Nikontovići, Trebinjska brda"
   },
   {
     "soldier_id": "0043900102",
@@ -44738,14 +44738,14 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=68",
     "source_page": 63,
+    "former_ids": [
+      "0122030467"
+    ],
     "birth_place": "Donje Vrbno, Trebinje",
     "death_type": "poginuo",
     "death_date": "01.03.1945",
     "rank": "desetar",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030467"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900054",
@@ -44784,11 +44784,11 @@
         "source_page": 2642
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030478"
     ],
+    "rank": "borac",
+    "unit_detail": "2. bataljon",
     "variants": {
       "death": [
         {
@@ -44809,16 +44809,16 @@
     "birth_year": "1927",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=70",
     "source_page": 65,
+    "former_ids": [
+      "0122030479"
+    ],
     "occupation": "gimnazijalac",
     "birth_place": "Ivanjica, Trebinje",
     "death_type": "poginuo",
     "death_date": "24.10.1944",
     "rank": "omladinski rukovodilac",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030479"
-    ]
+    "unit_detail": "2. četa, 1. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900015",
@@ -44903,11 +44903,11 @@
         "source_page": 369
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030492"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900105",
@@ -44939,11 +44939,11 @@
         "source_page": 2652
       }
     ],
-    "rank": "borac",
-    "unit_detail": "4. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030493"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "4. bataljon"
   },
   {
     "soldier_id": "0043900032",
@@ -44997,11 +44997,11 @@
         "source_page": 1935
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030850"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900055",
@@ -45040,13 +45040,13 @@
         "source_page": 2656
       }
     ],
-    "occupation": "đak",
-    "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030499"
     ],
+    "occupation": "đak",
+    "rank": "borac",
+    "unit_detail": "2. četa, 6. bataljon",
+    "party": "KPJ",
     "variants": {
       "born": [
         "1926"
@@ -45115,12 +45115,12 @@
         "source_page": 2633
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030501"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 6. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900004",
@@ -45188,12 +45188,12 @@
         "source_page": 2655
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030512"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900134",
@@ -45225,11 +45225,11 @@
         "source_page": 1429
       }
     ],
-    "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030854"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900137",
@@ -45291,12 +45291,12 @@
         "source_page": 2655
       }
     ],
-    "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030530"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "1. četa, 2. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900005",
@@ -45350,14 +45350,14 @@
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=193",
     "source_page": 170,
+    "former_ids": [
+      "0122030857"
+    ],
     "birth_place": "Podgorje",
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030857"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900108",
@@ -45370,14 +45370,14 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=77",
     "source_page": 72,
-    "birth_place": "Šćenici",
+    "former_ids": [
+      "0122030554"
+    ],
+    "birth_place": "Šćenica",
     "death_type": "poginuo",
     "death_date": "23.07.1943",
     "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030554"
-    ]
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900109",
@@ -45390,15 +45390,15 @@
     "birth_year": "1908",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=79",
     "source_page": 74,
+    "former_ids": [
+      "0122030570"
+    ],
     "birth_place": "Konjsko, Zubci",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "13.02.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030570"
-    ]
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900110",
@@ -45430,12 +45430,12 @@
         "source_page": 2651
       }
     ],
-    "occupation": "učenica",
-    "rank": "referent saniteta",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030579"
     ],
+    "occupation": "učenica",
+    "rank": "referent saniteta",
+    "unit_detail": "3. četa, 2. bataljon",
     "variants": {
       "born": [
         "1929"
@@ -45453,15 +45453,15 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=80",
     "source_page": 75,
+    "former_ids": [
+      "0122030580"
+    ],
     "birth_place": "Trebinje",
     "death_type": "umro",
     "death_date": "13.03.1945",
     "death_place": "Dubrovnik",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030580"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900057",
@@ -45500,11 +45500,11 @@
         "source_page": 369
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030585"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "soldier_id": "0043900112",
@@ -45517,15 +45517,15 @@
     "birth_year": "1915",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=81",
     "source_page": 76,
+    "former_ids": [
+      "0122030590"
+    ],
     "birth_place": "Dračevo, Popovo polje",
     "death_type": "umro",
     "death_date": "1945",
     "death_place": "Trebinje",
     "rank": "vodni delegat",
-    "unit_detail": "4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030590"
-    ]
+    "unit_detail": "4. bataljon"
   },
   {
     "soldier_id": "0043900038",
@@ -45607,16 +45607,16 @@
         "source_page": 428
       }
     ],
+    "former_ids": [
+      "0122030598"
+    ],
     "birth_place": "Ravno",
     "death_type": "poginuo",
     "death_date": "05.03.1945",
     "rank": "kurir",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
+    "unit_detail": "2. četa, 6. bataljon",
     "death_place": "Ivan-sedlo, Konjic",
-    "party": "KPJ",
-    "former_ids": [
-      "0122030598"
-    ]
+    "party": "KPJ"
   },
   {
     "soldier_id": "0043900011",
@@ -45672,13 +45672,13 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=194",
     "source_page": 171,
+    "former_ids": [
+      "0122030861"
+    ],
     "death_type": "poginuo",
     "death_date": "17.10.1944",
     "rank": "komandant bataljona",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030861"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900113",
@@ -45691,13 +45691,13 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=84",
     "source_page": 79,
+    "former_ids": [
+      "0122030615"
+    ],
     "birth_place": "Gorogaše, Bobani",
     "death_type": "umro",
     "rank": "borac",
-    "unit_detail": "1. četa, 2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030615"
-    ]
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0043900114",
@@ -45710,16 +45710,16 @@
     "birth_year": "1910",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=85",
     "source_page": 80,
+    "former_ids": [
+      "0122030625"
+    ],
     "birth_place": "Grab, Zubci",
     "occupation": "zemljoradnik",
     "death_type": "umro",
     "death_date": "30.12.1944",
     "death_place": "Trebinje",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030625"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0043900006",
@@ -45792,12 +45792,12 @@
         "source_page": 2652
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 5. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ",
     "former_ids": [
       "0122030771"
     ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 5. bataljon",
+    "party": "KPJ",
     "variants": {
       "born": [
         "1923"
@@ -45815,15 +45815,15 @@
     "birth_year": "1913",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=88",
     "source_page": 83,
+    "former_ids": [
+      "0122030651"
+    ],
     "occupation": "metalski radnik",
     "death_type": "poginuo",
     "death_date": "09.10.1943",
     "rank": "komandir voda, komandir čete",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
-    "birth_place": "Dolovi, Zagora, Trebinje",
-    "former_ids": [
-      "0122030651"
-    ]
+    "unit_detail": "2. četa, 3. bataljon",
+    "birth_place": "Dolovi, Zagora, Trebinje"
   },
   {
     "soldier_id": "0043900116",
@@ -45836,15 +45836,15 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=89",
     "source_page": 84,
+    "former_ids": [
+      "0122030663"
+    ],
     "birth_place": "Konjsko, Zubci",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "30.03.1945",
     "rank": "borac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030663"
-    ]
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900117",
@@ -45857,15 +45857,15 @@
     "birth_year": "1915",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=89",
     "source_page": 84,
+    "former_ids": [
+      "0122030667"
+    ],
     "birth_place": "Domaševo, Ljubomir",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1943",
     "rank": "komandir voda",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030667"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900118",
@@ -45878,14 +45878,14 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=89",
     "source_page": 84,
+    "former_ids": [
+      "0122030671"
+    ],
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Konjic",
     "rank": "borac",
-    "unit_detail": "3. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030671"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0043900007",
@@ -45917,16 +45917,16 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=28",
     "source_page": 23,
+    "former_ids": [
+      "0122030118"
+    ],
     "birth_place": "Grab, Zubci",
     "death_type": "umro",
     "death_date": "1942",
     "death_place": "u Glamoču",
     "rank": "omladinski rukovodilac",
-    "unit_detail": "3. četa, 1. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030118"
-    ]
+    "unit_detail": "3. četa, 1. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900041",
@@ -45972,13 +45972,13 @@
         "source_page": 224
       }
     ],
-    "occupation": "podoficir",
-    "rank": "zamjenik komandanta bataljona, komandir čete",
-    "unit_detail": "2. bataljon, 10. hercegovačka brigada",
-    "party": "KPJ 1942",
     "former_ids": [
       "0122030129"
     ],
+    "occupation": "podoficir",
+    "rank": "zamjenik komandanta bataljona, komandir čete",
+    "unit_detail": "2. bataljon",
+    "party": "KPJ 1942",
     "birth_date": "15.06.1920",
     "variants": {
       "death": [
@@ -46018,11 +46018,11 @@
         "source_page": 2655
       }
     ],
-    "rank": "mitraljezac",
-    "unit_detail": "3. četa, 4. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030131"
-    ]
+    ],
+    "rank": "mitraljezac",
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900078",
@@ -46054,11 +46054,11 @@
         "source_page": 2642
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030177"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0043900040",
@@ -46094,7 +46094,7 @@
     "former_ids": [
       "0122958667"
     ],
-    "birth_place": "Junčevićima",
+    "birth_place": "Junčevići",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1946",
@@ -46111,13 +46111,13 @@
     "birth_year": "",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=184",
     "source_page": 161,
+    "former_ids": [
+      "0122030794"
+    ],
     "death_type": "poginuo",
     "death_date": "1944",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030794"
-    ]
+    "unit_detail": "1. bataljon"
   },
   {
     "soldier_id": "0043900121",
@@ -46130,14 +46130,14 @@
     "birth_year": "1914",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=92",
     "source_page": 87,
+    "former_ids": [
+      "0122030693"
+    ],
     "birth_place": "Veličani, Popovo polje",
     "death_type": "poginuo",
     "death_date": "20.09.1943",
     "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030693"
-    ]
+    "unit_detail": "2. četa, 6. bataljon"
   },
   {
     "soldier_id": "0043900122",
@@ -46150,14 +46150,14 @@
     "birth_year": "1919",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=92",
     "source_page": 87,
+    "former_ids": [
+      "0122030694"
+    ],
     "birth_place": "Veličani, Popovo polje",
     "death_type": "poginuo",
     "death_date": "20.09.1943",
     "rank": "komandir čete",
-    "unit_detail": "6. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030694"
-    ]
+    "unit_detail": "6. bataljon"
   },
   {
     "soldier_id": "0043900123",
@@ -46170,15 +46170,15 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=92",
     "source_page": 87,
+    "former_ids": [
+      "0122030696"
+    ],
     "birth_place": "Šćenica, Ljubomir",
     "death_type": "poginuo",
     "death_date": "06.1943",
     "rank": "borac",
-    "unit_detail": "1. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030696"
-    ]
+    "unit_detail": "1. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900074",
@@ -46191,16 +46191,16 @@
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=30",
     "source_page": 25,
+    "former_ids": [
+      "0122030137"
+    ],
     "birth_place": "Bogojević Selo, Zubci",
     "occupation": "gimnazijalac",
     "death_type": "poginuo",
     "death_date": "17.11.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030137"
-    ]
+    "unit_detail": "2. četa, 4. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900075",
@@ -46213,14 +46213,14 @@
     "birth_year": "1930",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=30",
     "source_page": 25,
+    "former_ids": [
+      "0122030141"
+    ],
     "birth_place": "Gorogaše, Bobani",
     "death_type": "poginuo",
     "death_date": "12.11.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030141"
-    ]
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "soldier_id": "0043900059",
@@ -46259,11 +46259,11 @@
         "source_page": 2656
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030142"
     ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 3. bataljon",
     "variants": {
       "born": [
         "1926"
@@ -46281,14 +46281,14 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=31",
     "source_page": 26,
+    "former_ids": [
+      "0122030149"
+    ],
     "birth_place": "Zasad, Trebinje",
     "death_type": "poginuo",
     "death_date": "25.04.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon, 10. hercegovačka brigada",
-    "former_ids": [
-      "0122030149"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0043900077",
@@ -46301,15 +46301,15 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=32",
     "source_page": 27,
+    "former_ids": [
+      "0122030160"
+    ],
     "birth_place": "Jušići, Trebinjska šuma",
     "death_type": "poginuo",
     "death_date": "04.04.1945",
     "rank": "komandir čete",
-    "unit_detail": "5. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
-    "former_ids": [
-      "0122030160"
-    ]
+    "unit_detail": "5. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900060",
@@ -46326,7 +46326,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "29.09.1943",
-    "death_place": "Šćenica, Ljubomir",
+    "death_place": "Šćenica",
     "from_columns": [
       "death_type",
       "death_date",
@@ -46348,12 +46348,12 @@
         "source_page": 2644
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 6. bataljon, 10. hercegovačka brigada",
-    "party": "SKOJ",
     "former_ids": [
       "0122030252"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 6. bataljon",
+    "party": "SKOJ"
   },
   {
     "soldier_id": "0043900084",
@@ -46385,11 +46385,11 @@
         "source_page": 2637
       }
     ],
-    "rank": "borac",
-    "unit_detail": "3. četa, 2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030271"
     ],
+    "rank": "borac",
+    "unit_detail": "3. četa, 2. bataljon",
     "variants": {
       "born": [
         "1914"
@@ -46432,10 +46432,10 @@
         "source_page": 1413
       }
     ],
-    "rank": "borac",
-    "unit_detail": "2. četa, 2. bataljon, 10. hercegovačka brigada",
     "former_ids": [
       "0122030810"
-    ]
+    ],
+    "rank": "borac",
+    "unit_detail": "2. četa, 2. bataljon"
   }
 ]

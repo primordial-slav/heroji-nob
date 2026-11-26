@@ -292,7 +292,21 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000017",
     "pdf_x_end": 398.3,
-    "birth_place": "Hrastnik"
+    "birth_place": "Hrastnik",
+    "other_sources": [
+      {
+        "soldier_id": "0061000054",
+        "name": "Ačkun Stane",
+        "additional_info": "1912, Hrastnik",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 1,
+        "pdf_x": 147.1,
+        "pdf_y": 310.1,
+        "pdf_x_end": 268.2,
+        "pdf_y_end": 320.1,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Ažnoh",
@@ -628,6 +642,20 @@
           ]
         ],
         "unit_file": "deveta-soldiers.json"
+      },
+      {
+        "soldier_id": "0171000046",
+        "name": "Bele Alojzij",
+        "additional_info": "zvani Tičko; 1918, komandant; Spisek moštva 1. bataljona, September 1944-marec 1945",
+        "pdf_file": "kokrski-odred.pdf",
+        "pdf_page": 13,
+        "pdf_x": 26.8,
+        "pdf_y": 258.9,
+        "pdf_x_end": 174.7,
+        "pdf_y_end": 269.0,
+        "unit_detail": "1. bataljon",
+        "rank": "komandant",
+        "unit_file": "kokrski-odred-soldiers.json"
       }
     ]
   },
@@ -1552,7 +1580,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000075",
     "pdf_x_end": 396.1,
-    "birth_place": "Slovenj Gradec"
+    "birth_place": "Slovenj Gradec",
+    "other_sources": [
+      {
+        "soldier_id": "9020014112",
+        "name": "Breznik (Rudolf) Rudolf",
+        "additional_info": "rođen 1919, Šmartno pri Slov Gradcu (Slovenj Gradec). Slovenac, poginuo 1944. u NOBu, Dolenjska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=495",
+        "source_page": 495,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Dolenjska"
   },
   {
     "last_name": "Brezovnik",
@@ -4319,7 +4363,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000204",
     "pdf_x_end": 371.1,
-    "birth_place": "Selo, Vransko"
+    "birth_place": "Selo, Vransko",
+    "other_sources": [
+      {
+        "soldier_id": "9020017235",
+        "name": "Goričan (Jakob) Miha",
+        "additional_info": "rođen 1903, Selo pri Vranskem (Žalec). Slovenac, poginuo 1944. u NOBu, Trebnje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=604",
+        "source_page": 604,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Trebnje"
   },
   {
     "last_name": "Gorjup",
@@ -5789,7 +5849,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000279",
     "pdf_x_end": 370.8,
-    "birth_place": "Sv. Jurij, Hrastnik"
+    "birth_place": "Sv. Jurij, Hrastnik",
+    "other_sources": [
+      {
+        "soldier_id": "9020002689",
+        "name": "Hribšek (Ivan) Ivan",
+        "additional_info": "rođen 1924, Gore (Hrastnik). Slovenac, poginuo 1944. u NOBu, Braslovče",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=102",
+        "source_page": 102,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Braslovče"
   },
   {
     "last_name": "Hrovat",
@@ -6314,7 +6390,59 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000303",
     "pdf_x_end": 535.2,
-    "birth_place": "Bled"
+    "birth_place": "Bled",
+    "other_sources": [
+      {
+        "soldier_id": "0171000257",
+        "name": "Jan Ivan",
+        "additional_info": "zvani Srečko; 1921, pomočnik politkomisarja; Spisek moštva 1. bataljona, September 1944-marec 1945",
+        "pdf_file": "kokrski-odred.pdf",
+        "pdf_page": 13,
+        "pdf_x": 27.1,
+        "pdf_y": 276.0,
+        "pdf_x_end": 223.6,
+        "pdf_y_end": 286.1,
+        "unit_detail": "1. bataljon",
+        "rank": "pomočnik politkomisarja",
+        "unit_file": "kokrski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0171000255",
+        "name": "Jan Ivan",
+        "additional_info": "zvani Srečko; od 8. 1. 1945 do 25. 4. 1945; Štab 1. bataljona, namestniki (pomočniki) politkomisarja",
+        "pdf_file": "kokrski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 44.8,
+        "pdf_y": 144.3,
+        "pdf_x_end": 229.3,
+        "pdf_y_end": 154.0,
+        "unit_file": "kokrski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0171000256",
+        "name": "Jan Ivan",
+        "additional_info": "zvani Srečko; od 10. 10. 1944 do 12. 5. 1945; Štab 2. bataljona, politkomisarji",
+        "pdf_file": "kokrski-odred.pdf",
+        "pdf_page": 3,
+        "pdf_x": 44.3,
+        "pdf_y": 319.5,
+        "pdf_x_end": 258.5,
+        "pdf_y_end": 329.2,
+        "unit_file": "kokrski-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0171000258",
+        "name": "Jan Ivan",
+        "additional_info": "zvani Srečko; 1921, politkomisar; Spisek moštva 2. bataljona septembra in konec 1944",
+        "pdf_file": "kokrski-odred.pdf",
+        "pdf_page": 16,
+        "pdf_x": 41.2,
+        "pdf_y": 420.2,
+        "pdf_x_end": 188.3,
+        "pdf_y_end": 430.3,
+        "unit_file": "kokrski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Janet",
@@ -11163,7 +11291,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000536",
     "pdf_x_end": 527.5,
-    "birth_place": "Loke, Zalec"
+    "birth_place": "Loke, Zalec",
+    "other_sources": [
+      {
+        "soldier_id": "9020017111",
+        "name": "Malovšek (Rudolf) Rudolf",
+        "additional_info": "rođen 1915, Male Braslovče (Žalec). Slovenac, poginuo 1944. u NOBu, Lukovica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=600",
+        "source_page": 600,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Lukovica"
   },
   {
     "last_name": "Marinič",
@@ -12664,8 +12808,25 @@
         "pdf_y_end": 502.0,
         "source_page": 284,
         "ref_book": "korosko-zdravstvo"
+      },
+      {
+        "soldier_id": "9002000836",
+        "name": "Okrogar Antona Anton (Nestl)",
+        "additional_info": "Rođen je 3. februara 1923. godine u Zagorju, Trbovlje, Slovenije, u porodici rudara. … Narodnim herojem proglašen je 21. jula 1953. godine.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00007645&pg_seq=46",
+        "source_page": 42,
+        "ref_book": "narodni-heroji-1982"
+      },
+      {
+        "soldier_id": "9001000760",
+        "name": "Okrogar Antona Anton (Nestl)",
+        "additional_info": "Rođen 3-II-1923 u Zagorju, Trbovlje, Slovenija. Bravar. Član KPJ od avgusta 1942. U NOB stupio 1941. Od posledica ratnih rana umro 13-II-1955 u Črniju, Koruška. Za narodnog heroja proglašen 22-VII-1953.",
+        "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=594",
+        "source_page": 572,
+        "ref_book": "zbornik-heroja-1957"
       }
-    ]
+    ],
+    "birth_date": "03.02.1923"
   },
   {
     "last_name": "Opaškar",
@@ -14271,7 +14432,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000703",
     "pdf_x_end": 513.0,
-    "birth_place": "Ljubno"
+    "birth_place": "Ljubno",
+    "other_sources": [
+      {
+        "soldier_id": "9020008821",
+        "name": "Podlesnik (Franc) Janez",
+        "additional_info": "rođen 1920, Primož pri Ljubnem (Mozirje). Slovenac, poginuo 1944. u NOBu, Mozirje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=318",
+        "source_page": 318,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Mozirje"
   },
   {
     "last_name": "Podlesnik",
@@ -16490,7 +16667,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000817",
     "pdf_x_end": 541.4,
-    "birth_place": "Graška gora"
+    "birth_place": "Graška gora",
+    "other_sources": [
+      {
+        "soldier_id": "9020014016",
+        "name": "Rotovnik (Fontanand) Jožef",
+        "additional_info": "rođen 1917, Graška Gora (Slovenj Gradec). Slovenac, poginuo 1944. u NOBu, Sv anton",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=492",
+        "source_page": 492,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Sv anton"
   },
   {
     "last_name": "Rozman",
@@ -17850,7 +18043,27 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000893",
     "pdf_x_end": 535.9,
-    "birth_place": "Podgrad, Oplotnica"
+    "birth_place": "Podgrad, Oplotnica",
+    "other_sources": [
+      {
+        "soldier_id": "9020014251",
+        "name": "Strnad (Marko) Janez",
+        "additional_info": "rođen 1912, Podgrad (Slovenska Bistrica). Slovenac, poginuo od Italijana 1944. u NOBu, Špitalič",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=499",
+        "source_page": 499,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Špitalič"
   },
   {
     "last_name": "Stvarnik",
@@ -18377,7 +18590,42 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000921",
     "pdf_x_end": 381.3,
-    "birth_place": "Savina, Ljubno"
+    "birth_place": "Savina, Ljubno",
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0070104177",
+        "name": "Trbovšek Janez",
+        "additional_info": "* 1911 Planina Ljubno ob Savinji † po vojni",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 43,
+        "pdf_x": 136.2,
+        "pdf_y": 330.1,
+        "pdf_x_end": 366.9,
+        "pdf_y_end": 338.1,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070104178",
+        "name": "Trbovšek Janez",
+        "additional_info": "* 1911 Planina pri Ljubnem † po osvoboditvi",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 99,
+        "pdf_x": 133.2,
+        "pdf_y": 226.2,
+        "pdf_y_end": 234.2,
+        "pdf_x_end": 368.9,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "variants": {
+      "born": [
+        "1911"
+      ]
+    }
   },
   {
     "last_name": "Trbovšek",
@@ -19512,7 +19760,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065000978",
     "pdf_x_end": 377.0,
-    "birth_place": "Gradišče, Slov"
+    "birth_place": "Gradišče, Slov",
+    "other_sources": [
+      {
+        "soldier_id": "9020014038",
+        "name": "Vinarnik (Miha) Martin",
+        "additional_info": "rođen 1918, Legen (Slovenj Gradec). Slovenac, poginuo 1944. u NOBu, Planina na Poho",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=493",
+        "source_page": 493,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Planina na Pohorju"
   },
   {
     "last_name": "Vindiš",
@@ -21968,7 +22232,23 @@
     "pdf_file": "zidanskova.pdf",
     "soldier_id": "0065001099",
     "pdf_x_end": 396.3,
-    "birth_place": "Troblje, Slov"
+    "birth_place": "Troblje, Slov",
+    "other_sources": [
+      {
+        "soldier_id": "9020014155",
+        "name": "Šavc (Agust) Tone",
+        "additional_info": "rođen 1924, Troblje (Slovenj Gradec). Slovenac, ubijen od Nemaca 1944. kao zarobljenik prip. NOV i POJ, Nemački logor",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=496",
+        "source_page": 496,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Nemački logor"
   },
   {
     "last_name": "Šavc",

@@ -11060,12 +11060,12 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_place": "Zelengora",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1922"
+    "death_place": "Zelengora"
   },
   {
     "last_name": "Grujić",
@@ -42636,7 +42636,49 @@
     "death_date": "30.05.1962",
     "rank": "zamjenik komesara bataljona",
     "pdf_x_end": 349.6,
-    "party": "KPJ"
+    "party": "KPJ",
+    "death_place": "Beograd",
+    "borrowed": [
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0052001469",
+        "name": "Tolpa Radovana Miloš",
+        "additional_info": "rođen 1920. godine u Visokom, SRBiH, Srbin, bravar. U NOB-u stupio 7. 11.1941. godine, a u Brigadu jula 1944. godine, pomoćnik političkog komesara 4. bataljona. Član KPJ od 1940. godine. Nosilac PARTIZANSKE SPOMENICE 1941. GODINE«. Umro u Beogradu. 1963. godine.",
+        "pdf_file": "18-hrvatska.pdf",
+        "pdf_page": 104,
+        "pdf_x": 152.2,
+        "pdf_y": 165.0,
+        "pdf_x_end": 477.3,
+        "pdf_y_end": 215.7,
+        "pdf_x_left": 122.2,
+        "unit_detail": "4. bataljon",
+        "rank": "pomoćnik političkog komesara",
+        "since": "1944-07",
+        "unit_file": "18-hrvatska-soldiers.json"
+      },
+      {
+        "soldier_id": "0052010295",
+        "name": "Tolpa Miloš",
+        "additional_info": "Spisak starješinskog sastava 18. hrvatske brigade: Štab II bataljona, pomoćnici političkog komesara; Štab IV bataljona, pomoćnici političkog komesara",
+        "pdf_file": "18-hrvatska-starjesine.pdf",
+        "pdf_page": 3,
+        "pdf_x": 286.9,
+        "pdf_y": 529.6,
+        "pdf_x_end": 338.5,
+        "pdf_y_end": 538.1,
+        "unit_file": "18-hrvatska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1963",
+          "place": "Beograd"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tomanić",

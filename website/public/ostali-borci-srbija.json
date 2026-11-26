@@ -9420,7 +9420,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Otoka, Selo nemci"
+    "death_place": "Otoka, Selo nemc"
   },
   {
     "soldier_id": "0136023621",
@@ -13646,7 +13646,7 @@
     "ethnicity": "Srbin",
     "death_type": "umro",
     "death_date": "1945",
-    "death_place": "Niš, Vojna bolnica"
+    "death_place": "Niš, Vojna bolni"
   },
   {
     "soldier_id": "0136017827",
@@ -32388,23 +32388,6 @@
     "death_place": "Niš"
   },
   {
-    "soldier_id": "0136032448",
-    "last_name": "Bojović",
-    "middle_name": "Svetozar",
-    "first_name": "Gojko",
-    "fathers_name": "Svetozar",
-    "full_name": "Bojović Svetozar Gojko",
-    "additional_info": "rođen 1922, Titovo Užice. Srbin, poginuo 1941. u NOBu, Užička Požega",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1225",
-    "source_page": 1225,
-    "birth_place": "Titovo Užice",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Užička Požega"
-  },
-  {
     "soldier_id": "0136021966",
     "last_name": "Bojović",
     "middle_name": "Miloš",
@@ -44084,7 +44067,16 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Aleksandrovo"
+    "death_place": "Aleksandrovo",
+    "other_sources": [
+      {
+        "soldier_id": "9024004746",
+        "name": "Cicmilović (Obren) Milan",
+        "additional_info": "rođen 1925, Udovo (Valandovo). Crnogorac, ubijen 1944. u NOBu, Aleksandrovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Mak.pdf#page=268",
+        "source_page": 268
+      }
+    ]
   },
   {
     "soldier_id": "0136032300",
@@ -57454,24 +57446,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Moravić, Šid"
-  },
-  {
-    "soldier_id": "0136032481",
-    "last_name": "Davidovac",
-    "middle_name": "Živko",
-    "first_name": "Nenad",
-    "fathers_name": "Živko",
-    "full_name": "Davidovac Živko Nenad",
-    "additional_info": "rođen 1927, Titovo Užice. Srbin, poginuo 1945. u NOBu, Tovarnik",
-    "birth_year": "1927",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
-    "source_page": 1226,
-    "birth_place": "Titovo Užice",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Tovarnik"
+    "death_place": "Moravić, Šid",
+    "other_sources": [
+      {
+        "soldier_id": "9025032481",
+        "name": "Davidovac (Živko) Nenad",
+        "additional_info": "rođen 1927, Titovo Užice. Srbin, poginuo 1945. u NOBu, Tovarnik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1226",
+        "source_page": 1226
+      }
+    ]
   },
   {
     "soldier_id": "0136028378",
@@ -60917,24 +60901,16 @@
     "ethnicity": "Slovenac",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Bačka Palanka"
-  },
-  {
-    "soldier_id": "0136012561",
-    "last_name": "Deželak",
-    "middle_name": "Janez",
-    "first_name": "Franc",
-    "fathers_name": "Janez",
-    "full_name": "Deželak Janez Franc",
-    "additional_info": "rođen 1914, Kladovo. Slovenac, poginuo 1945. u NOBu, Šid",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=469",
-    "source_page": 469,
-    "birth_place": "Kladovo",
-    "ethnicity": "Slovenac",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Šid"
+    "death_place": "Bačka Palanka",
+    "other_sources": [
+      {
+        "soldier_id": "9025012561",
+        "name": "Deželak (Janez) Franc",
+        "additional_info": "rođen 1914, Kladovo. Slovenac, poginuo 1945. u NOBu, Šid",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=469",
+        "source_page": 469
+      }
+    ]
   },
   {
     "soldier_id": "0136026134",
@@ -62481,39 +62457,6 @@
     "death_type": "umro",
     "death_date": "1945",
     "death_place": "Starčevo"
-  },
-  {
-    "soldier_id": "0136025396",
-    "last_name": "Dimitrijević",
-    "middle_name": "Ž",
-    "first_name": "Božidar",
-    "fathers_name": "Ž",
-    "full_name": "Dimitrijević Ž Božidar",
-    "additional_info": "rođen 1914, Požarevac. Srbin, ubijen 1944. u NOBu, Petka",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=978",
-    "source_page": 978,
-    "birth_place": "Požarevac",
-    "ethnicity": "Srbin",
-    "death_type": "ubijen",
-    "death_date": "1944",
-    "death_place": "Petka"
-  },
-  {
-    "soldier_id": "0136025397",
-    "last_name": "Dimitrijević",
-    "middle_name": "Živan",
-    "first_name": "Božidar",
-    "fathers_name": "Živan",
-    "full_name": "Dimitrijević Živan Božidar",
-    "additional_info": "rođen 1914, Požarevac. Srbin, poginuo 1944. u NOBu, Nepoznato",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=978",
-    "source_page": 978,
-    "birth_place": "Požarevac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944"
   },
   {
     "soldier_id": "0136032182",
@@ -70519,23 +70462,6 @@
     "death_place": "Spišić"
   },
   {
-    "soldier_id": "0136010140",
-    "last_name": "Dončev",
-    "middle_name": "Vasil",
-    "first_name": "Angel",
-    "fathers_name": "Vasil",
-    "full_name": "Dončev Vasil Angel",
-    "additional_info": "rođen 1920, Bačevo (Dimitrovgrad). ostalo, poginuo 1944. u NOBu, Drina",
-    "birth_year": "1920",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=397",
-    "source_page": 397,
-    "birth_place": "Bačevo, Dimitrovgrad",
-    "ethnicity": "ostalo",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Drina"
-  },
-  {
     "soldier_id": "0136010141",
     "last_name": "Dončev",
     "middle_name": "Vasilev",
@@ -70550,7 +70476,16 @@
     "ethnicity": "ostalo",
     "death_type": "poginuo",
     "death_date": "1944",
-    "unit_detail": "8. krajiška brigada"
+    "unit_detail": "8. krajiška brigada",
+    "other_sources": [
+      {
+        "soldier_id": "9025010140",
+        "name": "Dončev (Vasil) Angel",
+        "additional_info": "rođen 1920, Bačevo (Dimitrovgrad). ostalo, poginuo 1944. u NOBu, Drina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=397",
+        "source_page": 397
+      }
+    ]
   },
   {
     "soldier_id": "0136002667",
@@ -72414,7 +72349,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Sel. Liovac, Kruševac"
+    "death_place": "Sel. Liovac, Kruš"
   },
   {
     "soldier_id": "0136021997",
@@ -82024,24 +81959,16 @@
     "ethnicity": "Hrvat",
     "death_type": "umro",
     "death_date": "1944",
-    "death_place": "Drnjiš"
-  },
-  {
-    "soldier_id": "0136004272",
-    "last_name": "Drinković",
-    "middle_name": "Stipe",
-    "first_name": "Nikola",
-    "fathers_name": "Stipe",
-    "full_name": "Drinković Stipe Nikola",
-    "additional_info": "rođen 1906, Beograd-Palilula i Karabu (Beograd Palilula). Hrvat, poginuo 1944. u NOBu, Okolina splita",
-    "birth_year": "1906",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=129",
-    "source_page": 129,
-    "birth_place": "Beograd",
-    "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Okolina splita"
+    "death_place": "Drnjiš",
+    "other_sources": [
+      {
+        "soldier_id": "9025004272",
+        "name": "Drinković (Stipe) Nikola",
+        "additional_info": "rođen 1906, Beograd-Palilula i Karabu (Beograd Palilula). Hrvat, poginuo 1944. u NOBu, Okolina splita",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=129",
+        "source_page": 129
+      }
+    ]
   },
   {
     "soldier_id": "0136005662",
@@ -90091,7 +90018,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Kukavica, Planin"
+    "death_place": "Kukavica planina"
   },
   {
     "soldier_id": "0136015332",
@@ -90689,26 +90616,6 @@
     "death_place": "K. Boka"
   },
   {
-    "soldier_id": "0136027575",
-    "last_name": "Džodić",
-    "middle_name": "Tadija",
-    "first_name": "Radoš",
-    "fathers_name": "Tadija",
-    "full_name": "Džodić Tadija Radoš",
-    "additional_info": "rođen 1921, Plešin (Raška). Srbin, poginuo 1945. u NOBu, Dramić-n.pazar",
-    "birth_year": "1921",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1079",
-    "source_page": 1079,
-    "birth_place": "Plešin, Raška",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Dramić, N. Pazar",
-    "manual_fields": [
-      "last_name"
-    ]
-  },
-  {
     "soldier_id": "0136039815",
     "last_name": "Džaferović",
     "middle_name": "Rečko",
@@ -91114,6 +91021,26 @@
     "death_type": "poginuo",
     "death_date": "1941",
     "death_place": "Sjenica"
+  },
+  {
+    "soldier_id": "0136027575",
+    "last_name": "Džodić",
+    "middle_name": "Tadija",
+    "first_name": "Radoš",
+    "fathers_name": "Tadija",
+    "full_name": "Džodić Tadija Radoš",
+    "additional_info": "rođen 1921, Plešin (Raška). Srbin, poginuo 1945. u NOBu, Dramić-n.pazar",
+    "birth_year": "1921",
+    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1079",
+    "source_page": 1079,
+    "birth_place": "Plešin, Raška",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Dramić, N. Pazar",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0136022531",
@@ -112991,40 +112918,6 @@
     "death_place": "Zaječar"
   },
   {
-    "soldier_id": "0136019590",
-    "last_name": "Ignjatović",
-    "middle_name": "Dragutin",
-    "first_name": "Miloje",
-    "fathers_name": "Dragutin",
-    "full_name": "Ignjatović Dragutin Miloje",
-    "additional_info": "rođen 1914, Donji Bučumet (Medvedja). Srbin, poginuo 1942. u NOBu, Magaš lebane",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=791",
-    "source_page": 791,
-    "birth_place": "Donji Bučumet, Medvedja",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Magaš lebane"
-  },
-  {
-    "soldier_id": "0136031777",
-    "last_name": "Ignjatović",
-    "middle_name": "Dragutin",
-    "first_name": "Miloje",
-    "fathers_name": "Dragutin",
-    "full_name": "Ignjatović Dragutin Miloje",
-    "additional_info": "rođen 1914, Bučum (Svrljig). Srbin, poginuo 1942. u NOBu, S. magaš",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1208",
-    "source_page": 1208,
-    "birth_place": "Bučum, Svrljig",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "S. magaš"
-  },
-  {
     "soldier_id": "0136017520",
     "last_name": "Ignjatović",
     "middle_name": "Aleksa",
@@ -114703,24 +114596,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Leskovac"
-  },
-  {
-    "soldier_id": "0136022013",
-    "last_name": "Ilić",
-    "middle_name": "Dušan",
-    "first_name": "Branimir",
-    "fathers_name": "Dušan",
-    "full_name": "Ilić Dušan Branimir",
-    "additional_info": "rođen 1924, Niš. Srbin, poginuo 1944. u NOBu, Leskovac",
-    "birth_year": "1924",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
-    "source_page": 869,
-    "birth_place": "Niš",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Leskovac"
+    "death_place": "Leskovac",
+    "other_sources": [
+      {
+        "soldier_id": "9025022013",
+        "name": "Ilić (Dušan) Branimir",
+        "additional_info": "rođen 1924, Niš. Srbin, poginuo 1944. u NOBu, Leskovac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
+        "source_page": 869
+      }
+    ]
   },
   {
     "soldier_id": "0136035056",
@@ -114975,40 +114860,6 @@
     "death_type": "umro",
     "death_date": "1945",
     "death_place": "Na moru"
-  },
-  {
-    "soldier_id": "0136022015",
-    "last_name": "Ilić",
-    "middle_name": "Naće",
-    "first_name": "Čedomir",
-    "fathers_name": "Naće",
-    "full_name": "Ilić Naće Čedomir",
-    "additional_info": "rođen 1911, Niš. Srbin, poginuo 1944. u NOBu, Užička Požega",
-    "birth_year": "1911",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
-    "source_page": 869,
-    "birth_place": "Niš",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Užička Požega"
-  },
-  {
-    "soldier_id": "0136022016",
-    "last_name": "Ilić",
-    "middle_name": "Naćo",
-    "first_name": "Čedomir",
-    "fathers_name": "Naćo",
-    "full_name": "Ilić Naćo Čedomir",
-    "additional_info": "rođen 1911, Niš. Srbin, poginuo 1944. u NOBu, Užička Požega",
-    "birth_year": "1911",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=869",
-    "source_page": 869,
-    "birth_place": "Niš",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Užička Požega"
   },
   {
     "soldier_id": "0136025829",
@@ -129505,7 +129356,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Partizani, Aranđ"
+    "death_place": "Partizani, Aranđelovac"
   },
   {
     "soldier_id": "0136001335",
@@ -139395,6 +139246,23 @@
     "death_place": "Kod zagreba"
   },
   {
+    "soldier_id": "0136027579",
+    "last_name": "Jemuović",
+    "middle_name": "Vukašin",
+    "first_name": "Dragutin",
+    "fathers_name": "Vukašin",
+    "full_name": "Jemuović Vukašin Dragutin",
+    "additional_info": "rođen 1905, Pobrđe (Raška). Srbin, poginuo 1941. u NOBu, Užice",
+    "birth_year": "1905",
+    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1079",
+    "source_page": 1079,
+    "birth_place": "Pobrđe, Raška",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1941",
+    "death_place": "Užice"
+  },
+  {
     "soldier_id": "0136027497",
     "last_name": "Jemuović",
     "middle_name": "Pavle",
@@ -139422,23 +139290,6 @@
     "manual_fields": [
       "last_name"
     ]
-  },
-  {
-    "soldier_id": "0136027579",
-    "last_name": "Jemuović",
-    "middle_name": "Vukašin",
-    "first_name": "Dragutin",
-    "fathers_name": "Vukašin",
-    "full_name": "Jemuović Vukašin Dragutin",
-    "additional_info": "rođen 1905, Pobrđe (Raška). Srbin, poginuo 1941. u NOBu, Užice",
-    "birth_year": "1905",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1079",
-    "source_page": 1079,
-    "birth_place": "Pobrđe, Raška",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Užice"
   },
   {
     "soldier_id": "0136027578",
@@ -145704,24 +145555,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Sremski front"
-  },
-  {
-    "soldier_id": "0136010708",
-    "last_name": "Jocić",
-    "middle_name": "Milivoje",
-    "first_name": "Vasilije",
-    "fathers_name": "Milivoje",
-    "full_name": "Jocić Milivoje Vasilije",
-    "additional_info": "rođen 1915, Šebet (Gadžin Han). Srbin, poginuo 1945. u NOBu, Djakovo",
-    "birth_year": "1915",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=411",
-    "source_page": 411,
-    "birth_place": "Šebet, Gadžin Han",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Djakovo"
+    "death_place": "Sremski front",
+    "other_sources": [
+      {
+        "soldier_id": "9025010708",
+        "name": "Jocić (Milivoje) Vasilije",
+        "additional_info": "rođen 1915, Šebet (Gadžin Han). Srbin, poginuo 1945. u NOBu, Djakovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=411",
+        "source_page": 411
+      }
+    ]
   },
   {
     "soldier_id": "0136021920",
@@ -148879,23 +148722,6 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Čukajevac"
-  },
-  {
-    "soldier_id": "0136025059",
-    "last_name": "Jotić",
-    "middle_name": "Ilija",
-    "first_name": "Sokol",
-    "fathers_name": "Ilija",
-    "full_name": "Jotić Ilija Sokol",
-    "additional_info": "rođen 1905, Rsovci (Pirot). Srbin, poginuo 1944. u NOBu, Bukoč",
-    "birth_year": "1905",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=968",
-    "source_page": 968,
-    "birth_place": "Rsovci, Pirot",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Bukoč"
   },
   {
     "soldier_id": "0136025316",
@@ -153920,24 +153746,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Šabac"
-  },
-  {
-    "soldier_id": "0136007166",
-    "last_name": "Jovanović",
-    "middle_name": "Nedeljko",
-    "first_name": "Lazar",
-    "fathers_name": "Nedeljko",
-    "full_name": "Jovanović Nedeljko Lazar",
-    "additional_info": "rođen 1919, Bogatić. Srbin, poginuo 1941. u NOBu, Šabac",
-    "birth_year": "1919",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=293",
-    "source_page": 293,
-    "birth_place": "Bogatić",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Šabac"
+    "death_place": "Šabac",
+    "other_sources": [
+      {
+        "soldier_id": "9025007166",
+        "name": "Jovanović (Nedeljko) Lazar",
+        "additional_info": "rođen 1919, Bogatić. Srbin, poginuo 1941. u NOBu, Šabac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=293",
+        "source_page": 293
+      }
+    ]
   },
   {
     "soldier_id": "0136039464",
@@ -154652,23 +154470,6 @@
     "death_place": "Oko vinkovaca"
   },
   {
-    "soldier_id": "0136039036",
-    "last_name": "Jovanović",
-    "middle_name": "Jefta",
-    "first_name": "Marko",
-    "fathers_name": "Jefta",
-    "full_name": "Jovanović Jefta Marko",
-    "additional_info": "rođen 1911, Zaječar. Srbin, poginuo od ustaša 1941. u NOBu, Zaječar",
-    "birth_year": "1911",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1410",
-    "source_page": 1410,
-    "birth_place": "Zaječar",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Zaječar"
-  },
-  {
     "soldier_id": "0136039037",
     "last_name": "Jovanović",
     "middle_name": "Jevta",
@@ -154683,7 +154484,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Sumrakovac"
+    "death_place": "Sumrakovac",
+    "other_sources": [
+      {
+        "soldier_id": "9025039036",
+        "name": "Jovanović (Jefta) Marko",
+        "additional_info": "rođen 1911, Zaječar. Srbin, poginuo od ustaša 1941. u NOBu, Zaječar",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1410",
+        "source_page": 1410
+      }
+    ]
   },
   {
     "soldier_id": "0136012976",
@@ -182391,7 +182201,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Dorkovce, Vlasin"
+    "death_place": "Dorkovce, Vlasina"
   },
   {
     "soldier_id": "0136031854",
@@ -184635,23 +184445,6 @@
     "death_place": "Drinić, Bosna"
   },
   {
-    "soldier_id": "0136014298",
-    "last_name": "Kovanović",
-    "middle_name": "Kovan",
-    "first_name": "Radoje",
-    "fathers_name": "Kovan",
-    "full_name": "Kovanović Kovan Radoje",
-    "additional_info": "rođen 1921, Kragujevac. Srbin, poginuo 1944. u NOBu, Branetići",
-    "birth_year": "1921",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=530",
-    "source_page": 530,
-    "birth_place": "Kragujevac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Branetići"
-  },
-  {
     "soldier_id": "0136014299",
     "last_name": "Kovanović",
     "middle_name": "Kovan",
@@ -184666,7 +184459,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "G. Milanovac"
+    "death_place": "G. Milanovac",
+    "other_sources": [
+      {
+        "soldier_id": "9025014298",
+        "name": "Kovanović (Kovan) Radoje",
+        "additional_info": "rođen 1921, Kragujevac. Srbin, poginuo 1944. u NOBu, Branetići",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=530",
+        "source_page": 530
+      }
+    ]
   },
   {
     "soldier_id": "0136014300",
@@ -186636,23 +186438,6 @@
     "death_place": "Tuzla"
   },
   {
-    "soldier_id": "0136033611",
-    "last_name": "Krlić",
-    "middle_name": "Hačko",
-    "first_name": "Salih",
-    "fathers_name": "Hačko",
-    "full_name": "Krlić Hačko Salih",
-    "additional_info": "rođen 1922, Čarovina (Tutin). Musliman, poginuo 1944. u NOBu, Bjeljina",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1261",
-    "source_page": 1261,
-    "birth_place": "Čarovina, Tutin",
-    "ethnicity": "Musliman",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Bjeljina"
-  },
-  {
     "soldier_id": "0136033612",
     "last_name": "Krlić",
     "middle_name": "Haćko",
@@ -186667,7 +186452,16 @@
     "ethnicity": "Musliman",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Užička Požega"
+    "death_place": "Užička Požega",
+    "other_sources": [
+      {
+        "soldier_id": "9025033611",
+        "name": "Krlić (Hačko) Salih",
+        "additional_info": "rođen 1922, Čarovina (Tutin). Musliman, poginuo 1944. u NOBu, Bjeljina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1261",
+        "source_page": 1261
+      }
+    ]
   },
   {
     "soldier_id": "0136014878",
@@ -192748,7 +192542,7 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Bareševac, Aranđ"
+    "death_place": "Bareševac, Aranđelovac"
   },
   {
     "soldier_id": "0136003332",
@@ -202478,7 +202272,16 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Pljevlja"
+    "death_place": "Pljevlja",
+    "other_sources": [
+      {
+        "soldier_id": "9023000987",
+        "name": "Lompar (Ivo) Đorđe",
+        "additional_info": "rođen 1921, Bokovo (Cetinje). Crnogorac, poginuo 1941. u NOBu, Pljevlja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Crg.pdf#page=35",
+        "source_page": 35
+      }
+    ]
   },
   {
     "soldier_id": "0136028577",
@@ -204057,24 +203860,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Bratičevci, Srem"
-  },
-  {
-    "soldier_id": "0136023559",
-    "last_name": "Lukić",
-    "middle_name": "Uroš",
-    "first_name": "Mihailo",
-    "fathers_name": "Uroš",
-    "full_name": "Lukić Uroš Mihailo",
-    "additional_info": "rođen 1923, Gunjaci (Osečina). Srbin, poginuo 1945. u NOBu, Vrbovec",
-    "birth_year": "1923",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=931",
-    "source_page": 931,
-    "birth_place": "Gunjaci, Osečina",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Vrbovec"
+    "death_place": "Bratičevci, Srem",
+    "other_sources": [
+      {
+        "soldier_id": "9025023559",
+        "name": "Lukić (Uroš) Mihailo",
+        "additional_info": "rođen 1923, Gunjaci (Osečina). Srbin, poginuo 1945. u NOBu, Vrbovec",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=931",
+        "source_page": 931
+      }
+    ]
   },
   {
     "soldier_id": "0136013589",
@@ -208299,7 +208094,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1942",
-    "death_place": "Vujanovo"
+    "death_place": "Vujanovo",
+    "other_sources": [
+      {
+        "soldier_id": "9027004566",
+        "name": "Maksimović (Blagoje) Dušan",
+        "additional_info": "rođen 1912, Pančevo. Srbin, poginuo 1942. u NOBu, Selo vujanovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=259",
+        "source_page": 259
+      }
+    ]
   },
   {
     "soldier_id": "0136009421",
@@ -210471,23 +210275,6 @@
     "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Krapina"
-  },
-  {
-    "soldier_id": "0136007781",
-    "last_name": "Mandić",
-    "middle_name": "Đura",
-    "first_name": "Jovo",
-    "fathers_name": "Đura",
-    "full_name": "Mandić Đura Jovo",
-    "additional_info": "rođen 1920, Bogovina (Boljevac). Srbin, poginuo 1945. u NOBu, Zagreb",
-    "birth_year": "1920",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=318",
-    "source_page": 318,
-    "birth_place": "Bogovina, Boljevac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Zagreb"
   },
   {
     "soldier_id": "0136013397",
@@ -220227,7 +220014,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Jastreb., Kruševac"
+    "death_place": "Jastreb., Krušev"
   },
   {
     "soldier_id": "0136038436",
@@ -225998,24 +225785,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Beograd"
-  },
-  {
-    "soldier_id": "0136015300",
-    "last_name": "Marković",
-    "middle_name": "Tone",
-    "first_name": "Stojan",
-    "fathers_name": "Tone",
-    "full_name": "Marković Tone Stojan",
-    "additional_info": "rođen 1926, Zavlaka (Krupanj). Srbin, poginuo 1944. u NOBu, Beograd",
-    "birth_year": "1926",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=633",
-    "source_page": 633,
-    "birth_place": "Zavlaka, Krupanj",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Beograd"
+    "death_place": "Beograd",
+    "other_sources": [
+      {
+        "soldier_id": "9025015300",
+        "name": "Marković (Tone) Stojan",
+        "additional_info": "rođen 1926, Zavlaka (Krupanj). Srbin, poginuo 1944. u NOBu, Beograd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=633",
+        "source_page": 633
+      }
+    ]
   },
   {
     "soldier_id": "0136038301",
@@ -234860,23 +234639,6 @@
     "death_place": "Okolina jajca"
   },
   {
-    "soldier_id": "0136014320",
-    "last_name": "Mičić",
-    "middle_name": "Ljubomir",
-    "first_name": "Živko",
-    "fathers_name": "Ljubomir",
-    "full_name": "Mičić Ljubomir Živko",
-    "additional_info": "rođen 1926, Kragujevac. Srbin, poginuo 1944. u NOBu, Gripsko-arilje",
-    "birth_year": "1926",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=534",
-    "source_page": 534,
-    "birth_place": "Kragujevac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Gripsko, Arilje"
-  },
-  {
     "soldier_id": "0136034675",
     "last_name": "Mićić",
     "middle_name": "Marko",
@@ -243513,7 +243275,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Tanda, Deli jova"
+    "death_place": "Tanda, Deli jovan"
   },
   {
     "soldier_id": "0136021689",
@@ -254025,23 +253787,6 @@
     "death_place": "Beograd, bolnica"
   },
   {
-    "soldier_id": "0136014583",
-    "last_name": "Milić",
-    "middle_name": "Milan",
-    "first_name": "Zdravko",
-    "fathers_name": "Milan",
-    "full_name": "Milić Milan Zdravko",
-    "additional_info": "rođen 1922, Čibukovac (Kraljevo). Srbin, poginuo 1944. u NOBu, Zemun Sajmište",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=566",
-    "source_page": 566,
-    "birth_place": "Čibukovac, Kraljevo",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Zemun Sajmište"
-  },
-  {
     "soldier_id": "0136013400",
     "last_name": "Milić",
     "middle_name": "Vojislav",
@@ -254617,7 +254362,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Komarice, Pavlov"
+    "death_place": "Komarice, Pavlovac"
   },
   {
     "soldier_id": "0136020902",
@@ -255706,26 +255451,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Turjane, Lebane"
-  },
-  {
-    "soldier_id": "0136020339",
-    "last_name": "Milinović",
-    "middle_name": "Živorad",
-    "first_name": "Radiša",
-    "fathers_name": "Živorad",
-    "full_name": "Milinović Živorad Radiša",
-    "additional_info": "rođen 1924, Virovac (Mionica). Srbin, poginuo 1944. u NOBu, Jajinci,beograd",
-    "birth_year": "1924",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=812",
-    "source_page": 812,
-    "birth_place": "Virovac, Mionica",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Jajinci, Beograd",
-    "manual_fields": [
-      "last_name"
-    ]
   },
   {
     "soldier_id": "0136036978",
@@ -256830,24 +256555,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Đakovo"
-  },
-  {
-    "soldier_id": "0136018605",
-    "last_name": "Milinković",
-    "middle_name": "Simo",
-    "first_name": "Vladimir",
-    "fathers_name": "Simo",
-    "full_name": "Milinković Simo Vladimir",
-    "additional_info": "rođen 1916, Lozničko Polje (Loznica). Srbin, poginuo 1945. u NOBu, Đakovo",
-    "birth_year": "1916",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=757",
-    "source_page": 757,
-    "birth_place": "Lozničko Polje, Loznica",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Đakovo"
+    "death_place": "Đakovo",
+    "other_sources": [
+      {
+        "soldier_id": "9025018605",
+        "name": "Milinković (Simo) Vladimir",
+        "additional_info": "rođen 1916, Lozničko Polje (Loznica). Srbin, poginuo 1945. u NOBu, Đakovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=757",
+        "source_page": 757
+      }
+    ]
   },
   {
     "soldier_id": "0136026556",
@@ -257034,6 +256751,26 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Orolik, Srem"
+  },
+  {
+    "soldier_id": "0136020339",
+    "last_name": "Milinović",
+    "middle_name": "Živorad",
+    "first_name": "Radiša",
+    "fathers_name": "Živorad",
+    "full_name": "Milinović Živorad Radiša",
+    "additional_info": "rođen 1924, Virovac (Mionica). Srbin, poginuo 1944. u NOBu, Jajinci,beograd",
+    "birth_year": "1924",
+    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=812",
+    "source_page": 812,
+    "birth_place": "Virovac, Mionica",
+    "ethnicity": "Srbin",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Jajinci, Beograd",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0136038110",
@@ -267257,7 +266994,7 @@
     "ethnicity": "Srbin",
     "death_type": "umro",
     "death_date": "1944",
-    "death_place": "Pirot, Vojna bolnica"
+    "death_place": "Pirot, Vojna bol"
   },
   {
     "soldier_id": "0136033348",
@@ -278908,23 +278645,6 @@
     "death_place": "Kraljevo"
   },
   {
-    "soldier_id": "0136022095",
-    "last_name": "Mirčić",
-    "middle_name": "Milan",
-    "first_name": "Milan",
-    "fathers_name": "Milan",
-    "full_name": "Mirčić Milan Milan",
-    "additional_info": "rođen 1919, Niš. Srbin, poginuo 1941. u NOBu, Krenta-knjaževa",
-    "birth_year": "1919",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=876",
-    "source_page": 876,
-    "birth_place": "Niš",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Krenta, Knjaževac"
-  },
-  {
     "soldier_id": "0136015149",
     "last_name": "Mirčić",
     "middle_name": "Vidoje",
@@ -283419,7 +283139,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Bela Voda, Kuklj"
+    "death_place": "Bela Voda, Kukljin"
   },
   {
     "soldier_id": "0136039919",
@@ -289438,7 +289158,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Vlaška Mala, Odž"
+    "death_place": "Vlaška Mala, Odžak"
   },
   {
     "soldier_id": "0136011573",
@@ -292174,24 +291894,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Kod t.užica"
-  },
-  {
-    "soldier_id": "0136032674",
-    "last_name": "Mojsilović",
-    "middle_name": "Vladimir",
-    "first_name": "Milun",
-    "fathers_name": "Vladimir",
-    "full_name": "Mojsilović Vladimir Milun",
-    "additional_info": "rođen 1918, Titovo Užice. Srbin, umro 1941. u NOBu, Sevojno",
-    "birth_year": "1918",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1232",
-    "source_page": 1232,
-    "birth_place": "Titovo Užice",
-    "ethnicity": "Srbin",
-    "death_type": "umro",
-    "death_date": "1941",
-    "death_place": "Sevojno"
+    "death_place": "Kod t.užica",
+    "other_sources": [
+      {
+        "soldier_id": "9025032674",
+        "name": "Mojsilović (Vladimir) Milun",
+        "additional_info": "rođen 1918, Titovo Užice. Srbin, umro 1941. u NOBu, Sevojno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1232",
+        "source_page": 1232
+      }
+    ]
   },
   {
     "soldier_id": "0136023257",
@@ -293889,7 +293601,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Kamenica, Niška"
+    "death_place": "Kamenica, Niška Banja"
   },
   {
     "soldier_id": "0136029127",
@@ -313515,7 +313227,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Ivanjsko, Zagorj"
+    "death_place": "Ivanjsko, Zagorje"
   },
   {
     "soldier_id": "0136013523",
@@ -319106,23 +318818,6 @@
     "death_place": "Crna Gora"
   },
   {
-    "soldier_id": "0136039186",
-    "last_name": "Opačić",
-    "middle_name": "Slavko",
-    "first_name": "Katica",
-    "fathers_name": "Slavko",
-    "full_name": "Opačić Slavko Katica",
-    "additional_info": "rođena 1922, Batanjica (Zemun). Srpkinja, poginula 1943. u NOBu, Bosna",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1415",
-    "source_page": 1415,
-    "birth_place": "Batanjica, Zemun",
-    "ethnicity": "Srpkinja",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Bosna"
-  },
-  {
     "soldier_id": "0136039187",
     "last_name": "Opačić",
     "middle_name": "Slavko",
@@ -319137,7 +318832,16 @@
     "ethnicity": "Srpkinja",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Šehovići"
+    "death_place": "Šehovići",
+    "other_sources": [
+      {
+        "soldier_id": "9025039186",
+        "name": "Opačić (Slavko) Katica",
+        "additional_info": "rođena 1922, Batanjica (Zemun). Srpkinja, poginula 1943. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1415",
+        "source_page": 1415
+      }
+    ]
   },
   {
     "soldier_id": "0136003506",
@@ -326148,24 +325852,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Berani c gora"
-  },
-  {
-    "soldier_id": "0136009322",
-    "last_name": "Pantović",
-    "middle_name": "Milija",
-    "first_name": "Milan",
-    "fathers_name": "Milija",
-    "full_name": "Pantović Milija Milan",
-    "additional_info": "rođen 1928, Čajetina. Srbin, poginuo 1944. u NOBu, Turjak kod bera",
-    "birth_year": "1928",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=374",
-    "source_page": 374,
-    "birth_place": "Čajetina",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Turjak kod bera"
+    "death_place": "Berani c gora",
+    "other_sources": [
+      {
+        "soldier_id": "9025009322",
+        "name": "Pantović (Milija) Milan",
+        "additional_info": "rođen 1928, Čajetina. Srbin, poginuo 1944. u NOBu, Turjak kod bera",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=374",
+        "source_page": 374
+      }
+    ]
   },
   {
     "soldier_id": "0136020651",
@@ -338189,7 +337885,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Retkoder, Medveđ"
+    "death_place": "Retkoder, Medveđa"
   },
   {
     "soldier_id": "0136019843",
@@ -342991,7 +342687,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "G. Milanovac, Rud"
+    "death_place": "G. Milanovac, Rudnik"
   },
   {
     "soldier_id": "0136010630",
@@ -376875,24 +376571,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Kadinjača"
-  },
-  {
-    "soldier_id": "0136029391",
-    "last_name": "Radosavljević",
-    "middle_name": "Živojin",
-    "first_name": "Branislav",
-    "fathers_name": "Živojin",
-    "full_name": "Radosavljević Živojin Branislav",
-    "additional_info": "rođen 1918, Smederevo. Srbin, poginuo 1941. u NOBu, Kadinjača",
-    "birth_year": "1918",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1142",
-    "source_page": 1142,
-    "birth_place": "Smederevo",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Kadinjača"
+    "death_place": "Kadinjača",
+    "other_sources": [
+      {
+        "soldier_id": "9025029391",
+        "name": "Radosavljević (Živojin) Branislav",
+        "additional_info": "rođen 1918, Smederevo. Srbin, poginuo 1941. u NOBu, Kadinjača",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1142",
+        "source_page": 1142
+      }
+    ]
   },
   {
     "soldier_id": "0136027218",
@@ -396816,24 +396504,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Komletinci"
-  },
-  {
-    "soldier_id": "0136013529",
-    "last_name": "Ristivojčević",
-    "middle_name": "Marinko",
-    "first_name": "Vojislav",
-    "fathers_name": "Marinko",
-    "full_name": "Ristivojčević Marinko Vojislav",
-    "additional_info": "rođen 1914, Svileuva (Koceljevo). Srbin, poginuo 1944. u NOBu, Srem",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=492",
-    "source_page": 492,
-    "birth_place": "Svileuva, Koceljevo",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Srem"
+    "death_place": "Komletinci",
+    "other_sources": [
+      {
+        "soldier_id": "9025013529",
+        "name": "Ristivojčević (Marinko) Vojislav",
+        "additional_info": "rođen 1914, Svileuva (Koceljevo). Srbin, poginuo 1944. u NOBu, Srem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=492",
+        "source_page": 492
+      }
+    ]
   },
   {
     "soldier_id": "0136003611",
@@ -401778,23 +401458,6 @@
     "death_place": "Rača Kragujevačka"
   },
   {
-    "soldier_id": "0136014768",
-    "last_name": "Sarić",
-    "middle_name": "Nikola",
-    "first_name": "Dušan",
-    "fathers_name": "Nikola",
-    "full_name": "Sarić Nikola Dušan",
-    "additional_info": "rođen 1928, Kraljevo. Srbin, poginuo 1945. u NOBu, Klokočevci",
-    "birth_year": "1928",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=603",
-    "source_page": 603,
-    "birth_place": "Kraljevo",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Klokočevci"
-  },
-  {
     "soldier_id": "0136014769",
     "last_name": "Sarić",
     "middle_name": "Nikola",
@@ -401809,7 +401472,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Srem klokočevac"
+    "death_place": "Srem klokočevac",
+    "other_sources": [
+      {
+        "soldier_id": "9025014768",
+        "name": "Sarić (Nikola) Dušan",
+        "additional_info": "rođen 1928, Kraljevo. Srbin, poginuo 1945. u NOBu, Klokočevci",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=603",
+        "source_page": 603
+      }
+    ]
   },
   {
     "soldier_id": "0136003622",
@@ -403559,24 +403231,16 @@
     "ethnicity": "Srbin",
     "death_type": "umro",
     "death_date": "1944",
-    "death_place": "Zagreb"
-  },
-  {
-    "soldier_id": "0136027746",
-    "last_name": "Savić",
-    "middle_name": "Čedo",
-    "first_name": "Kristivoje",
-    "fathers_name": "Čedo",
-    "full_name": "Savić Čedo Kristivoje",
-    "additional_info": "rođen 1921, Podgorac (Ražanj). Srbin, umro 1944. u NOBu, Zagreb",
-    "birth_year": "1921",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1083",
-    "source_page": 1083,
-    "birth_place": "Podgorac, Ražanj",
-    "ethnicity": "Srbin",
-    "death_type": "umro",
-    "death_date": "1944",
-    "death_place": "Zagreb"
+    "death_place": "Zagreb",
+    "other_sources": [
+      {
+        "soldier_id": "9025027746",
+        "name": "Savić (Čedo) Kristivoje",
+        "additional_info": "rođen 1921, Podgorac (Ražanj). Srbin, umro 1944. u NOBu, Zagreb",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1083",
+        "source_page": 1083
+      }
+    ]
   },
   {
     "soldier_id": "0136032170",
@@ -410604,7 +410268,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Retkocer, Medveđ"
+    "death_place": "Retkocer, Medveđa"
   },
   {
     "soldier_id": "0136023573",
@@ -414616,23 +414280,6 @@
     "death_place": "Šabac"
   },
   {
-    "soldier_id": "0136012431",
-    "last_name": "Sirovljević",
-    "middle_name": "Paun",
-    "first_name": "Aleksandar",
-    "fathers_name": "Paun",
-    "full_name": "Sirovljević Paun Aleksandar",
-    "additional_info": "rođen 1923, Miličinica (Kamenica). Srbin, poginuo 1945. u NOBu, Lipovac",
-    "birth_year": "1923",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=464",
-    "source_page": 464,
-    "birth_place": "Miličinica, Kamenica",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1945",
-    "death_place": "Lipovac"
-  },
-  {
     "soldier_id": "0136002880",
     "last_name": "Šišković",
     "middle_name": "Danilo",
@@ -417565,24 +417212,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1942",
-    "death_place": "Bostov, Krupanj"
-  },
-  {
-    "soldier_id": "0136005412",
-    "last_name": "Solarić",
-    "middle_name": "Mihajlo",
-    "first_name": "Branko",
-    "fathers_name": "Mihajlo",
-    "full_name": "Solarić Mihajlo Branko",
-    "additional_info": "rođen 1901, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1942. u NOBu, Bastalj",
-    "birth_year": "1901",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=216",
-    "source_page": 216,
-    "birth_place": "Beograd",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Bastalj"
+    "death_place": "Bostov, Krupanj",
+    "other_sources": [
+      {
+        "soldier_id": "9025005412",
+        "name": "Solarić (Mihajlo) Branko",
+        "additional_info": "rođen 1901, Beograd-Stari Grad (Beograd Stari Grad). Srbin, poginuo 1942. u NOBu, Bastalj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=216",
+        "source_page": 216
+      }
+    ]
   },
   {
     "soldier_id": "0136023435",
@@ -434073,40 +433712,6 @@
     "death_place": "Vlasenica"
   },
   {
-    "soldier_id": "0136015621",
-    "last_name": "Stanković",
-    "middle_name": "Radoje",
-    "first_name": "Velizar",
-    "fathers_name": "Radoje",
-    "full_name": "Stanković Radoje Velizar",
-    "additional_info": "rođen 1922, Kruševac. Srbin, poginuo 1942. u NOBu, Ribarska banja",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=645",
-    "source_page": 645,
-    "birth_place": "Kruševac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Ribarska banja"
-  },
-  {
-    "soldier_id": "0136015622",
-    "last_name": "Stanković",
-    "middle_name": "Radoje",
-    "first_name": "Velizar",
-    "fathers_name": "Radoje",
-    "full_name": "Stanković Radoje Velizar",
-    "additional_info": "rođen 1922, Kruševac. Srbin, poginuo 1942. u NOBu, Ribarska banja",
-    "birth_year": "1922",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=645",
-    "source_page": 645,
-    "birth_place": "Kruševac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Ribarska banja"
-  },
-  {
     "soldier_id": "0136038285",
     "last_name": "Stanković",
     "middle_name": "Jašo",
@@ -437777,23 +437382,6 @@
     "death_place": "Zavidovići"
   },
   {
-    "soldier_id": "0136018591",
-    "last_name": "Stanojević",
-    "middle_name": "Milinko",
-    "first_name": "Živan",
-    "fathers_name": "Milinko",
-    "full_name": "Stanojević Milinko Živan",
-    "additional_info": "rođen 1900, Loznica. Srbin, poginuo 1941. u NOBu, Bogatić",
-    "birth_year": "1900",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=756",
-    "source_page": 756,
-    "birth_place": "Loznica",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Bogatić"
-  },
-  {
     "soldier_id": "0136026503",
     "last_name": "Stanojević",
     "middle_name": "Milinko",
@@ -437808,7 +437396,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Bogatić"
+    "death_place": "Bogatić",
+    "other_sources": [
+      {
+        "soldier_id": "9025018591",
+        "name": "Stanojević (Milinko) Živan",
+        "additional_info": "rođen 1900, Loznica. Srbin, poginuo 1941. u NOBu, Bogatić",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=756",
+        "source_page": 756
+      }
+    ]
   },
   {
     "soldier_id": "0136008688",
@@ -449254,23 +448851,6 @@
     "death_place": "Beograd"
   },
   {
-    "soldier_id": "0136014415",
-    "last_name": "Stijačić",
-    "middle_name": "Obren",
-    "first_name": "Marko",
-    "fathers_name": "Obren",
-    "full_name": "Stijačić Obren Marko",
-    "additional_info": "rođen 1915, Kragujevac. Srbin, poginuo 1941. u NOBu, Okolina krag.",
-    "birth_year": "1915",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=552",
-    "source_page": 552,
-    "birth_place": "Kragujevac",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Okolina krag"
-  },
-  {
     "soldier_id": "0136002439",
     "last_name": "Stijović",
     "middle_name": "Radonja",
@@ -452679,40 +452259,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Velja glava"
-  },
-  {
-    "soldier_id": "0136019686",
-    "last_name": "Stojanović",
-    "middle_name": "Vukoje",
-    "first_name": "Božidar",
-    "fathers_name": "Vukoje",
-    "full_name": "Stojanović Vukoje Božidar",
-    "additional_info": "rođen 1914, Medveđa (Medvedja). Srbin, poginuo 1944. u NOBu, Kod kuršumlije",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=794",
-    "source_page": 794,
-    "birth_place": "Medveđa, Medvedja",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Kod kuršumlije"
-  },
-  {
-    "soldier_id": "0136019687",
-    "last_name": "Stojanović",
-    "middle_name": "Vukoje",
-    "first_name": "Božidar",
-    "fathers_name": "Vukoje",
-    "full_name": "Stojanović Vukoje Božidar",
-    "additional_info": "rođen 1914, Medveđa (Medvedja). Srbin, poginuo 1944. u NOBu, Kopaonik",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=794",
-    "source_page": 794,
-    "birth_place": "Medveđa, Medvedja",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Kopaonik"
   },
   {
     "soldier_id": "0136024131",
@@ -468566,23 +468112,6 @@
     "unit_detail": "2. brigada 2. divizija"
   },
   {
-    "soldier_id": "0136012031",
-    "last_name": "Šuluburić",
-    "middle_name": "Branisav",
-    "first_name": "Miljko",
-    "fathers_name": "Branisav",
-    "full_name": "Šuluburić Branisav Miljko",
-    "additional_info": "rođen 1925, Lisa (Ivanjica). Srbin, umro 1945. u NOBu, Beograd",
-    "birth_year": "1925",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=451",
-    "source_page": 451,
-    "birth_place": "Lisa, Ivanjica",
-    "ethnicity": "Srbin",
-    "death_type": "umro",
-    "death_date": "1945",
-    "death_place": "Beograd"
-  },
-  {
     "soldier_id": "0136012032",
     "last_name": "Šuluburić",
     "middle_name": "Branislav",
@@ -468597,7 +468126,16 @@
     "ethnicity": "Srbin",
     "death_type": "umro",
     "death_date": "1945",
-    "death_place": "Umro od Posled.rata"
+    "death_place": "Umro od Posled.rata",
+    "other_sources": [
+      {
+        "soldier_id": "9025012031",
+        "name": "Šuluburić (Branisav) Miljko",
+        "additional_info": "rođen 1925, Lisa (Ivanjica). Srbin, umro 1945. u NOBu, Beograd",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=451",
+        "source_page": 451
+      }
+    ]
   },
   {
     "soldier_id": "0136025979",
@@ -469888,23 +469426,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Spišić, Bukovica"
-  },
-  {
-    "soldier_id": "0136038998",
-    "last_name": "Tadić",
-    "middle_name": "Obren",
-    "first_name": "Arsenije",
-    "fathers_name": "Obren",
-    "full_name": "Tadić Obren Arsenije",
-    "additional_info": "rođen 1909, Vražogrnac (Zaječar). Crnogorac, poginuo 1944. u NOBu, Kraljevo",
-    "birth_year": "1909",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1409",
-    "source_page": 1409,
-    "birth_place": "Vražogrnac, Zaječar",
-    "ethnicity": "Crnogorac",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Kraljevo"
   },
   {
     "soldier_id": "0136024149",
@@ -477626,7 +477147,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "D. Stopanja, Kruševac"
+    "death_place": "D. Stopanja, Kruš"
   },
   {
     "soldier_id": "0136001149",
@@ -481162,23 +480683,6 @@
     "death_type": "poginuo",
     "death_date": "1941",
     "death_place": "Junkovac"
-  },
-  {
-    "soldier_id": "0136003718",
-    "last_name": "Tomašević",
-    "middle_name": "Rista",
-    "first_name": "Marko",
-    "fathers_name": "Rista",
-    "full_name": "Tomašević Rista Marko",
-    "additional_info": "rođen 1914, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, poginuo 1944. u NOBu, Negbina",
-    "birth_year": "1914",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=113",
-    "source_page": 113,
-    "birth_place": "Beograd",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Negbina"
   },
   {
     "soldier_id": "0136023287",
@@ -495713,7 +495217,7 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Ciganište, Grač"
+    "death_place": "Ciganište, Gračanica"
   },
   {
     "soldier_id": "0136010781",
@@ -503224,40 +502728,6 @@
     "death_place": "Petkovica"
   },
   {
-    "soldier_id": "0136032783",
-    "last_name": "Veselinović",
-    "middle_name": "Dragomir",
-    "first_name": "Emilija",
-    "fathers_name": "Dragomir",
-    "full_name": "Veselinović Dragomir Emilija",
-    "additional_info": "rođena 1926, Titovo Užice. Hrvatica, poginula 1944. u NOBu, Bumbarevo brdo",
-    "birth_year": "1926",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1236",
-    "source_page": 1236,
-    "birth_place": "Titovo Užice",
-    "ethnicity": "Hrvatica",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Bumbarevo Brdo"
-  },
-  {
-    "soldier_id": "0136032784",
-    "last_name": "Veselinović",
-    "middle_name": "Dragomir",
-    "first_name": "Emilija",
-    "fathers_name": "Dragomir",
-    "full_name": "Veselinović Dragomir Emilija",
-    "additional_info": "rođena 1926, Titovo Užice. Srpkinja, poginula 1944. u NOBu, Bumbarevo brdo",
-    "birth_year": "1926",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1236",
-    "source_page": 1236,
-    "birth_place": "Titovo Užice",
-    "ethnicity": "Srpkinja",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Bumbarevo Brdo"
-  },
-  {
     "soldier_id": "0136025017",
     "last_name": "Veselinović",
     "middle_name": "Manoje",
@@ -510363,23 +509833,6 @@
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Goražde"
-  },
-  {
-    "soldier_id": "0136003778",
-    "last_name": "Vrebalov",
-    "middle_name": "Stevan",
-    "first_name": "Boško",
-    "fathers_name": "Stevan",
-    "full_name": "Vrebalov Stevan Boško",
-    "additional_info": "rođen 1912, Beograd-Čukarica i Rakovi (Beograd Čukarica). Srbin, ubijen 1943. u NOBu, Carevac",
-    "birth_year": "1912",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=114",
-    "source_page": 114,
-    "birth_place": "Beograd",
-    "ethnicity": "Srbin",
-    "death_type": "ubijen",
-    "death_date": "1943",
-    "death_place": "Carevac"
   },
   {
     "soldier_id": "0136003776",
@@ -518409,40 +517862,6 @@
     "death_place": "Selo vrbica"
   },
   {
-    "soldier_id": "0136026351",
-    "last_name": "Vuković",
-    "middle_name": "Janko",
-    "first_name": "Vladimir",
-    "fathers_name": "Janko",
-    "full_name": "Vuković Janko Vladimir",
-    "additional_info": "rođen 1918, Slatina (Prijepolje). Crnogorac, poginuo 1941. u NOBu, Komorani",
-    "birth_year": "1918",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1032",
-    "source_page": 1032,
-    "birth_place": "Slatina, Prijepolje",
-    "ethnicity": "Crnogorac",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Komorani"
-  },
-  {
-    "soldier_id": "0136026352",
-    "last_name": "Vuković",
-    "middle_name": "Janko",
-    "first_name": "Vladimir",
-    "fathers_name": "Janko",
-    "full_name": "Vuković Janko Vladimir",
-    "additional_info": "rođen 1918, Slatina (Prijepolje). Srbin, poginuo 1941. u NOBu, Kičova",
-    "birth_year": "1918",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1032",
-    "source_page": 1032,
-    "birth_place": "Slatina, Prijepolje",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1941",
-    "death_place": "Kičova"
-  },
-  {
     "soldier_id": "0136007362",
     "last_name": "Vuković",
     "middle_name": "Tihomir",
@@ -521975,23 +521394,6 @@
     "death_place": "Gradište"
   },
   {
-    "soldier_id": "0136000233",
-    "last_name": "Zdravković",
-    "middle_name": "Đorđe",
-    "first_name": "Radmila",
-    "fathers_name": "Đorđe",
-    "full_name": "Zdravković Đorđe Radmila",
-    "additional_info": "rođena 1926, Aleksinac. Srpkinja, poginula 1944. u NOBu, Tuzla",
-    "birth_year": "1926",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=8",
-    "source_page": 8,
-    "birth_place": "Aleksinac",
-    "ethnicity": "Srpkinja",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Tuzla"
-  },
-  {
     "soldier_id": "0136027671",
     "last_name": "Zdravković",
     "middle_name": "Đorđe",
@@ -522006,7 +521408,16 @@
     "ethnicity": "Srpkinja",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Tuzla"
+    "death_place": "Tuzla",
+    "other_sources": [
+      {
+        "soldier_id": "9025000233",
+        "name": "Zdravković (Đorđe) Radmila",
+        "additional_info": "rođena 1926, Aleksinac. Srpkinja, poginula 1944. u NOBu, Tuzla",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=8",
+        "source_page": 8
+      }
+    ]
   },
   {
     "soldier_id": "0136001732",
@@ -529691,24 +529102,16 @@
     "ethnicity": "Srbin",
     "death_type": "poginuo",
     "death_date": "1942",
-    "death_place": "Ravna Dubrava"
-  },
-  {
-    "soldier_id": "0136039787",
-    "last_name": "Živković",
-    "middle_name": "Vlajko",
-    "first_name": "Jovan",
-    "fathers_name": "Vlajko",
-    "full_name": "Živković Vlajko Jovan",
-    "additional_info": "rođen 1920, Zemun. Srbin, poginuo 1942. u NOBu, Ravna dubrava",
-    "birth_year": "1920",
-    "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1445",
-    "source_page": 1445,
-    "birth_place": "Zemun",
-    "ethnicity": "Srbin",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Ravna Dubrava"
+    "death_place": "Ravna Dubrava",
+    "other_sources": [
+      {
+        "soldier_id": "9025039787",
+        "name": "Živković (Vlajko) Jovan",
+        "additional_info": "rođen 1920, Zemun. Srbin, poginuo 1942. u NOBu, Ravna dubrava",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=1445",
+        "source_page": 1445
+      }
+    ]
   },
   {
     "soldier_id": "0136039010",

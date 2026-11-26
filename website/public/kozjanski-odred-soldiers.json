@@ -243,8 +243,8 @@
       "ethnicity"
     ],
     "ethnicity": "Slovenac",
-    "death_place": "Planina pri Sevnici",
-    "birth_year": "1918"
+    "birth_year": "1918",
+    "death_place": "Planina pri Sevnici"
   },
   {
     "last_name": "Adrinek",
@@ -1414,6 +1414,14 @@
     "death_place": "Dravograd",
     "other_sources": [
       {
+        "soldier_id": "9020012560",
+        "name": "Arzensek (Anton) Stanislav",
+        "additional_info": "rođen 1921, Grobelno(del) (Šentjur Pri Celju). Slovenac, poginuo 1944. u NOBu, 13 brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=443",
+        "source_page": 443,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
         "soldier_id": "0069000030",
         "name": "Arzenšek Stanko",
         "additional_info": "* 1922, Grobelno; Rifnik, Šentjur, delavec; † 14. 12. 1944 pri Dravogradu",
@@ -1425,6 +1433,10 @@
         "pdf_y_end": 631.4,
         "unit_file": "braciceva-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "26.04.1922"
   },
@@ -1632,6 +1644,36 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164000076",
     "pdf_x_end": 487.2,
+    "other_sources": [
+      {
+        "soldier_id": "9021013399",
+        "name": "Asić (Stipe) Ante",
+        "additional_info": "rođen 1928, Lički Novi (Gospić). Hrvat, poginuo 1944. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=608",
+        "source_page": 608,
+        "ref_book": "zrtve-rata-1964-hrv"
+      },
+      {
+        "soldier_id": "9007000157",
+        "name": "Asić Stipe Ante",
+        "additional_info": "Lički Novi, općina Gospić: 1928, zanatlija, Hrvat. Stupio u NOV 1942. Član KPJ od 1943. Poginuo kao delegat voda brigade »Franjo Ogulinac — Seljo« kod Zagreba 1944.",
+        "pdf_file": "hak-20-gospic-perusic.pdf",
+        "pdf_page": 7,
+        "pdf_x": 205.9,
+        "pdf_y": 538.0,
+        "pdf_x_end": 374.8,
+        "pdf_y_end": 579.8,
+        "ref_book": "hak-20-gospic-perusic"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
     "birth_date": "14.04.1927"
   },
   {
@@ -3485,6 +3527,20 @@
     "soldier_id": "0164000168",
     "pdf_x_end": 524.9,
     "unit_detail": "1. četa, 2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0069000085",
+        "name": "Bevc Jože",
+        "additional_info": "* 1927, Žegar, o. Šentjur, kmečki sin",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 26,
+        "pdf_x": 420.8,
+        "pdf_y": 521.0,
+        "pdf_x_end": 527.8,
+        "pdf_y_end": 540.1,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "19.03.1927"
   },
   {
@@ -6957,6 +7013,20 @@
     "rank": "vodnik",
     "unit_detail": "1. bataljon",
     "death_place": "Kočevje",
+    "other_sources": [
+      {
+        "soldier_id": "9020016334",
+        "name": "Brili (Janez) Janez",
+        "additional_info": "rođen 1919, Dobrova (Videm-Krško). Slovenac, poginuo 1944. u NOBu, Kočevje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=568",
+        "source_page": 568,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "13.04.1919"
   },
   {
@@ -8170,6 +8240,22 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "rank": "kurir",
+    "other_sources": [
+      {
+        "soldier_id": "9020012607",
+        "name": "Cesar (Andrej) Jože",
+        "additional_info": "rođen 1927, Ravno (Šentjur Pri Celju). Slovenac, poginuo 1945. u NOBu, Pri kalobju",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=446",
+        "source_page": 446,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Pri kalobju",
     "birth_date": "10.03.1927"
   },
   {
@@ -14658,6 +14744,24 @@
     "pdf_x_end": 522.1,
     "death_type": "poginuo",
     "unit_detail": "1. četa, 1. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9020005396",
+        "name": "Gorišek (Jože) Janez",
+        "additional_info": "rođen 1925, Laziše (Laško). Slovenac, poginuo 1945. u NOBu, Paneče",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=189",
+        "source_page": 189,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Paneče",
     "birth_date": "24.03.1925"
   },
   {
@@ -14972,6 +15076,14 @@
     "death_date": "27.02.1945",
     "other_sources": [
       {
+        "soldier_id": "9020016306",
+        "name": "Gošek (Petar) Petar",
+        "additional_info": "rođen 1927, Brezje pri Dovškem (Videm-Krško). Slovenac, poginuo 1945. u NOBu, Savinjska dolin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=567",
+        "source_page": 567,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
         "soldier_id": "0069000409",
         "name": "Gošek Peter",
         "additional_info": "* 1927, Brezje, Senovo; † 27. 2. 1945, verjetno na pohodu proti Savi",
@@ -14983,6 +15095,10 @@
         "pdf_y_end": 726.2,
         "unit_file": "braciceva-soldiers.json"
       }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
     ],
     "birth_date": "04.08.1927"
   },
@@ -19609,6 +19725,26 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164000965",
     "pdf_x_end": 498.2,
+    "other_sources": [
+      {
+        "soldier_id": "9020008725",
+        "name": "Janežič (Marija) Jože",
+        "additional_info": "rođen 1915, Ljubno ob Savinji (Mozirje). Slovenac, poginuo 1945. u NOBu, Gornji grad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=315",
+        "source_page": 315,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Gornji grad",
     "birth_date": "17.03.1915"
   },
   {
@@ -20547,6 +20683,20 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164001010",
     "pdf_x_end": 494.2,
+    "other_sources": [
+      {
+        "soldier_id": "0068000219",
+        "name": "Jazbinšek Jože",
+        "additional_info": "zvani Joco; 1903, Budimpešta",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 2,
+        "pdf_x": 231.9,
+        "pdf_y": 408.5,
+        "pdf_x_end": 326.6,
+        "pdf_y_end": 422.9,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
     "birth_date": "19.04.1903"
   },
   {
@@ -27259,6 +27409,20 @@
     "pdf_x_end": 479.9,
     "death_type": "poginuo",
     "death_date": "12.1944",
+    "other_sources": [
+      {
+        "soldier_id": "9020000580",
+        "name": "Kostevc (Anton) Rudi",
+        "additional_info": "rođen 1924, Pavlova Vas (Brežice). Slovenac, poginuo 1944. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=24",
+        "source_page": 24,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "24.03.1924"
   },
   {
@@ -36073,6 +36237,18 @@
         "pdf_x_end": 513.8,
         "pdf_y_end": 425.8,
         "unit_file": "braciceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0069001134",
+        "name": "Mešiček Anton",
+        "additional_info": "* 1927, Dolnji Leskovec, Brestanica",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 49,
+        "pdf_x": 435.1,
+        "pdf_y": 379.1,
+        "pdf_x_end": 539.8,
+        "pdf_y_end": 398.4,
+        "unit_file": "braciceva-soldiers.json"
       }
     ],
     "death_place": "Konjiška Gora",
@@ -40642,6 +40818,18 @@
         "pdf_x_end": 479.3,
         "pdf_y_end": 702.5,
         "unit_file": "braciceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0069001291",
+        "name": "Ostrožnik Franc",
+        "additional_info": "* 1922, Zidani Most, student",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 52,
+        "pdf_x": 423.4,
+        "pdf_y": 580.2,
+        "pdf_x_end": 529.8,
+        "pdf_y_end": 599.0,
+        "unit_file": "braciceva-soldiers.json"
       }
     ],
     "death_place": "na Volušu",
@@ -40688,6 +40876,20 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164002013",
     "pdf_x_end": 494.4,
+    "other_sources": [
+      {
+        "soldier_id": "0069001293",
+        "name": "Otorepec Jože",
+        "additional_info": "* 1912, Sv. Peter, Medvedje selo, kmet",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 52,
+        "pdf_x": 423.2,
+        "pdf_y": 634.7,
+        "pdf_x_end": 531.4,
+        "pdf_y_end": 653.5,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "25.02.1912"
   },
   {
@@ -41096,6 +41298,24 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164002034",
     "pdf_x_end": 435.9,
+    "occupation": "dijak",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0069001301",
+        "name": "Pajk Stane",
+        "additional_info": "* 1927, Mrzla Planina, Sevnica, dijak",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 52,
+        "pdf_x": 424.1,
+        "pdf_y": 780.4,
+        "pdf_x_end": 524.5,
+        "pdf_y_end": 799.2,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "20.01.1927"
   },
   {
@@ -43728,6 +43948,20 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164002162",
     "pdf_x_end": 491.2,
+    "other_sources": [
+      {
+        "soldier_id": "0069001392",
+        "name": "Pišek Jože",
+        "additional_info": "* 1928, Sv. Lovrenc, Štore",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 54,
+        "pdf_x": 415.9,
+        "pdf_y": 500.3,
+        "pdf_x_end": 517.2,
+        "pdf_y_end": 519.1,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "05.03.1928"
   },
   {
@@ -47463,6 +47697,20 @@
     "soldier_id": "0164002347",
     "pdf_x_end": 442.2,
     "unit_detail": "2. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "0069001509",
+        "name": "Pustišek Ivan",
+        "additional_info": "* 1920, Zagorje, Pilštanj, delavec",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 57,
+        "pdf_x": 285.7,
+        "pdf_y": 679.8,
+        "pdf_x_end": 389.7,
+        "pdf_y_end": 698.6,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "23.08.1920"
   },
   {
@@ -50451,6 +50699,22 @@
     "pdf_x_end": 524.4,
     "death_type": "poginuo",
     "death_date": "19.11.1944",
+    "other_sources": [
+      {
+        "soldier_id": "9020012548",
+        "name": "Romih (Janez) Janez",
+        "additional_info": "rođen 1924, Dobje pri Lesičnem (Šentjur Pri Celju). Slovenac, poginuo 1944. u NOBu, Kočevje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=443",
+        "source_page": 443,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Kočevje",
     "birth_date": "12.05.1924"
   },
   {
@@ -52800,6 +53064,26 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164002604",
     "pdf_x_end": 356.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020005369",
+        "name": "Simončič (Anton) Jože",
+        "additional_info": "rođen 1923, Hotemež (Laško). Slovenac, poginuo 1945. u NOBu, Pernice",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=188",
+        "source_page": 188,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Pernice",
     "birth_date": "01.02.1923"
   },
   {
@@ -54420,6 +54704,34 @@
     "death_date": "1945",
     "unit_detail": "2. četa, 2. bataljon",
     "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "9036001394",
+        "name": "Staroveški Vilim",
+        "additional_info": "rođen u Bratkovcu—Klanjec, poginuo 18. 3. 1945. u Sloveniji kao sekretar KP bataljona.",
+        "pdf_file": "hrvatsko-zagorje-1981.pdf",
+        "pdf_page": 63,
+        "pdf_x": 24.0,
+        "pdf_y": 256.7,
+        "pdf_x_end": 378.7,
+        "pdf_y_end": 274.9,
+        "ref_book": "hrvatsko-zagorje-1981"
+      },
+      {
+        "soldier_id": "9021017982",
+        "name": "Staroveški (Martin) Vilim",
+        "additional_info": "rođen 1927, Bratkovec (Klanjec). Hrvat, poginuo 1945. u NOBu, Štore.slemena",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=878",
+        "source_page": 878,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Štore. Slemena",
     "birth_date": "11.05.1927"
   },
   {
@@ -54948,16 +55260,28 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=508",
         "source_page": 508,
         "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0069001720",
+        "name": "Strašek Ivan",
+        "additional_info": "* 1906, Drensko Rebro, Šmarje pri Jelšah, kmetubili so ga sovražniki 1945 v partizanski bolnišnici",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 19,
+        "pdf_x": 279.0,
+        "pdf_y": 349.0,
+        "pdf_x_end": 509.4,
+        "pdf_y_end": 367.3,
+        "unit_file": "braciceva-soldiers.json"
       }
     ],
-    "ethnicity": "Slovenac",
+    "death_type": "poginuo",
     "borrowed": [
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "nestao",
+    "ethnicity": "Slovenac",
     "death_date": "1945",
     "death_place": "Slovenj Gradec",
     "birth_date": "14.06.1906"
@@ -55746,6 +56070,22 @@
     "death_type": "poginuo",
     "death_date": "1945",
     "unit_detail": "3. bataljon",
+    "other_sources": [
+      {
+        "soldier_id": "9020000602",
+        "name": "Sušin (Franc) Miha",
+        "additional_info": "rođen 1927, Pišece (Brežice). Slovenac, poginuo 1945. u NOBu, Zabukovje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=25",
+        "source_page": 25,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Zabukovje",
     "birth_date": "31.08.1927"
   },
   {
@@ -58994,6 +59334,18 @@
         "pdf_y": 612.5,
         "pdf_x_end": 501.1,
         "pdf_y_end": 631.8,
+        "unit_file": "braciceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0069001844",
+        "name": "Vaserman Matija",
+        "additional_info": "* 1922, Kladje, Laško, kmečki sin",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 66,
+        "pdf_x": 426.6,
+        "pdf_y": 649.1,
+        "pdf_x_end": 534.4,
+        "pdf_y_end": 668.2,
         "unit_file": "braciceva-soldiers.json"
       }
     ],
@@ -62430,7 +62782,26 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164003083",
     "pdf_x_end": 495.4,
-    "birth_date": "10.01.1911"
+    "other_sources": [
+      {
+        "soldier_id": "0070104619",
+        "name": "Zalokar Mihael",
+        "additional_info": "* 1912 Jurklošter",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 104,
+        "pdf_x": 144.4,
+        "pdf_y": 433.9,
+        "pdf_x_end": 274.4,
+        "pdf_y_end": 441.9,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
+    "birth_date": "10.01.1911",
+    "variants": {
+      "born": [
+        "1912"
+      ]
+    }
   },
   {
     "last_name": "Založnik",
@@ -64183,6 +64554,32 @@
     "pdf_file": "kozjanski-odred.pdf",
     "soldier_id": "0164003171",
     "pdf_x_end": 508.6,
+    "other_sources": [
+      {
+        "soldier_id": "0061002706",
+        "name": "Zupančič Stane",
+        "additional_info": "zvani Iztok; 1916, Radeče",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 31,
+        "pdf_x": 302.6,
+        "pdf_y": 408.9,
+        "pdf_x_end": 403.2,
+        "pdf_y_end": 424.8,
+        "unit_file": "cankarjeva-soldiers.json"
+      },
+      {
+        "soldier_id": "0068000761",
+        "name": "Zupančič Stane",
+        "additional_info": "zvani Iztok; 1916, Radeče",
+        "pdf_file": "zapadnodolenjski-odred.pdf",
+        "pdf_page": 7,
+        "pdf_x": 243.9,
+        "pdf_y": 212.2,
+        "pdf_x_end": 334.0,
+        "pdf_y_end": 226.8,
+        "unit_file": "zapadnodolenjski-odred-soldiers.json"
+      }
+    ],
     "birth_date": "22.11.1916"
   },
   {
@@ -64610,9 +65007,9 @@
       "ethnicity"
     ],
     "ethnicity": "Slovenac",
+    "birth_year": "1906",
     "death_date": "1944",
-    "death_place": "Na dolenjskem",
-    "birth_year": "1906"
+    "death_place": "Na dolenjskem"
   },
   {
     "last_name": "Čepin",
@@ -66724,6 +67121,28 @@
     "soldier_id": "0164003294",
     "pdf_x_end": 523.0,
     "unit_detail": "2. četa, 1. bataljon",
+    "occupation": "kmet",
+    "borrowed": [
+      "death_date",
+      "death_type",
+      "occupation"
+    ],
+    "death_type": "poginuo",
+    "death_date": "28.02.1945",
+    "other_sources": [
+      {
+        "soldier_id": "0069002072",
+        "name": "Škoberne Jože",
+        "additional_info": "* 1910, Laše, Jurklošter; Dramlje, kmet; ujet pri Dramljah in ustreljen 28. 2. 1945",
+        "pdf_file": "braciceva.pdf",
+        "pdf_page": 19,
+        "pdf_x": 280.2,
+        "pdf_y": 608.4,
+        "pdf_x_end": 505.5,
+        "pdf_y_end": 627.2,
+        "unit_file": "braciceva-soldiers.json"
+      }
+    ],
     "birth_date": "31.05.1910"
   },
   {
@@ -69886,6 +70305,22 @@
     "pdf_x_end": 518.5,
     "death_type": "poginuo",
     "death_date": "1945",
+    "other_sources": [
+      {
+        "soldier_id": "9020014538",
+        "name": "Žlender (Ivan) Ivan",
+        "additional_info": "rođen 1922, Rudnica (Šmarje Pri Jelšah). Slovenac, poginuo 1945. u NOBu, Vransko",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=512",
+        "source_page": 512,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Vransko",
     "birth_date": "03.04.1922"
   },
   {

@@ -15439,9 +15439,9 @@
       "ethnicity"
     ],
     "ethnicity": "Hrvat",
+    "birth_year": "1922",
     "death_date": "1944",
-    "death_place": "Kamene, Vranjevići",
-    "birth_year": "1922"
+    "death_place": "Kamene, Vranjevići"
   },
   {
     "last_name": "Kordić",
@@ -20682,10 +20682,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1927",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Trebinje",
-    "birth_year": "1927"
+    "death_place": "Trebinje"
   },
   {
     "last_name": "Milošević",
@@ -28258,10 +28258,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1924",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Sović",
-    "birth_year": "1924"
+    "death_place": "Sović"
   },
   {
     "last_name": "Samardžić",
@@ -29446,14 +29446,39 @@
     "fathers_name": "Maksim",
     "full_name": "Skočajić Maksima Branko",
     "additional_info": "zvani Mešak",
-    "birth_year": "",
     "pdf_page": 28,
     "pdf_y": 298.9,
     "pdf_x": 24.2,
     "pdf_y_end": 306.9,
     "pdf_file": "13-hercegovacka.pdf",
     "soldier_id": "0100001492",
-    "pdf_x_end": 184.3
+    "pdf_x_end": 184.3,
+    "birth_year": "1925",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Mostar",
+    "occupation": "radnik",
+    "party": "SKOJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0125000632",
+        "name": "Skocajić M Branko",
+        "additional_info": "zvani Mesak; rođen 1925, Mostar, radnik, član SKOJ-a od 1941. i KPJ od 1944, u Bataljonu od novembra 1943, desetar.",
+        "pdf_file": "mostarski-bataljon.pdf",
+        "pdf_page": 60,
+        "pdf_x": 304.0,
+        "pdf_y": 277.8,
+        "pdf_x_end": 470.4,
+        "pdf_y_end": 337.7,
+        "unit_detail": "Mostarski bataljon u Mostarskom partizanskom odredu (juni 1943 — maj 1944)",
+        "rank": "desetar",
+        "unit_file": "mostarski-bataljon-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Skočajić",
@@ -41087,14 +41112,14 @@
     "birth_year": "1927",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=21",
     "source_page": 16,
+    "former_ids": [
+      "0122030042"
+    ],
     "birth_place": "Begović Kula, Trebinjska brda",
     "death_type": "poginuo",
     "death_date": "05.05.1945",
     "rank": "borac",
-    "unit_detail": "1. četa, 3. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030042"
-    ]
+    "unit_detail": "1. četa, 3. bataljon"
   },
   {
     "soldier_id": "0100900001",
@@ -41128,16 +41153,16 @@
     "birth_year": "1921",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=91",
     "source_page": 86,
+    "former_ids": [
+      "0122030678"
+    ],
     "birth_place": "Domaševo, Ljubomir",
     "occupation": "trgovački pomoćnik",
     "death_type": "umro",
     "death_date": "01.01.1945",
     "death_place": "Stolac",
     "rank": "borac",
-    "unit_detail": "2. četa, 3. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030678"
-    ]
+    "unit_detail": "2. četa, 3. bataljon"
   },
   {
     "soldier_id": "0100900006",
@@ -41150,15 +41175,15 @@
     "birth_year": "1903",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=23",
     "source_page": 18,
+    "former_ids": [
+      "0122030065"
+    ],
     "birth_place": "Domaševo",
     "occupation": "rudar",
     "death_type": "poginuo",
     "death_date": "06.05.1944",
     "rank": "komandir voda",
-    "unit_detail": "2. četa, 4. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030065"
-    ]
+    "unit_detail": "2. četa, 4. bataljon"
   },
   {
     "soldier_id": "0100900009",
@@ -41171,14 +41196,14 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=93",
     "source_page": 88,
+    "former_ids": [
+      "0122030705"
+    ],
     "birth_place": "Željevo",
     "death_type": "poginuo",
     "death_date": "22.07.1944",
     "rank": "mitraljezac",
-    "unit_detail": "3. četa, 4. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030705"
-    ]
+    "unit_detail": "3. četa, 4. bataljon"
   },
   {
     "soldier_id": "0100900004",
@@ -41229,14 +41254,14 @@
     "birth_year": "1913",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=188",
     "source_page": 165,
+    "former_ids": [
+      "0122030822"
+    ],
     "birth_place": "Šćepan Krst",
     "death_type": "poginuo",
     "death_date": "04.10.1944",
     "rank": "borac",
-    "unit_detail": "2. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030822"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0100900003",
@@ -41284,14 +41309,14 @@
     "birth_year": "1928",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=78",
     "source_page": 73,
+    "former_ids": [
+      "0122030562"
+    ],
     "occupation": "gimnazijalac",
     "death_type": "poginuo",
     "death_date": "19.03.1945",
     "rank": "borac",
-    "unit_detail": "2. četa, 1. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030562"
-    ]
+    "unit_detail": "2. četa, 1. bataljon"
   },
   {
     "soldier_id": "0100900011",
@@ -41304,12 +41329,12 @@
     "birth_year": "1928",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6202620-b210-4465-8bdc-5bcf4cbe8c24/00000001/00000001/00009701&pg_seq=195",
     "source_page": 172,
+    "former_ids": [
+      "0122030876"
+    ],
     "death_type": "poginuo",
     "death_date": "03.10.1944",
     "rank": "borac",
-    "unit_detail": "2. četa, 4. bataljon, 13. hercegovačka brigada",
-    "former_ids": [
-      "0122030876"
-    ]
+    "unit_detail": "2. četa, 4. bataljon"
   }
 ]

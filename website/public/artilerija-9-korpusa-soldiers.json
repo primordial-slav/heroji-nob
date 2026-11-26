@@ -3629,6 +3629,36 @@
     "pdf_file": "artilerija-9-korpusa.pdf",
     "soldier_id": "0072000190",
     "pdf_x_end": 237.3,
+    "death_type": "umro",
+    "borrowed": [
+      "death_type"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0070000774",
+        "name": "Malnarič Mirko",
+        "additional_info": "zvani Mirko; * 1921 Krupa † po osvoboditvi",
+        "pdf_file": "tomsiceva-2.pdf",
+        "pdf_page": 16,
+        "pdf_x": 140.6,
+        "pdf_y": 276.5,
+        "pdf_x_end": 299.1,
+        "pdf_y_end": 283.0,
+        "unit_file": "tomsiceva-soldiers.json"
+      },
+      {
+        "soldier_id": "0070102497",
+        "name": "Malnarič Mirko",
+        "additional_info": "zvani Mirko; * 1921 Krupa † po osvoboditvi",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 24,
+        "pdf_x": 150.5,
+        "pdf_y": 594.3,
+        "pdf_y_end": 602.3,
+        "pdf_x_end": 355.2,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
     "birth_date": "02.02.1921"
   },
   {
@@ -3802,8 +3832,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Kod trebuše",
-    "birth_year": "1908"
+    "birth_year": "1908",
+    "death_place": "Kod trebuše"
   },
   {
     "last_name": "Meglič",
@@ -4811,6 +4841,20 @@
     "pdf_file": "artilerija-9-korpusa.pdf",
     "soldier_id": "0072000252",
     "pdf_x_end": 216.9,
+    "other_sources": [
+      {
+        "soldier_id": "0064002328",
+        "name": "Peterman Jože",
+        "additional_info": "1906, Zg. Gorje",
+        "pdf_file": "gradnikova.pdf",
+        "pdf_page": 30,
+        "pdf_x": 72.7,
+        "pdf_y": 40.1,
+        "pdf_x_end": 129.1,
+        "pdf_y_end": 53.6,
+        "unit_file": "gradnikova-soldiers.json"
+      }
+    ],
     "birth_date": "18.03.1906"
   },
   {
@@ -7237,6 +7281,20 @@
     "pdf_file": "artilerija-9-korpusa.pdf",
     "soldier_id": "0072000382",
     "pdf_x_end": 208.3,
+    "other_sources": [
+      {
+        "soldier_id": "0064003415",
+        "name": "Šavli Ivan",
+        "additional_info": "1928, Lokovec",
+        "pdf_file": "gradnikova.pdf",
+        "pdf_page": 34,
+        "pdf_x": 160.3,
+        "pdf_y": 64.4,
+        "pdf_x_end": 204.6,
+        "pdf_y_end": 77.8,
+        "unit_file": "gradnikova-soldiers.json"
+      }
+    ],
     "birth_date": "29.02.1928"
   },
   {
@@ -7835,6 +7893,20 @@
     "pdf_file": "artilerija-9-korpusa.pdf",
     "soldier_id": "0072000414",
     "pdf_x_end": 294.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020000072",
+        "name": "Žvokelj (Anton) Stanislav",
+        "additional_info": "rođen 1912, Dolenje (Ajdovščina). Slovenac, poginuo 1944. u NOBu, Trnovski grad",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=3",
+        "source_page": 3,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ],
     "birth_date": "05.05.1912"
   }
 ]

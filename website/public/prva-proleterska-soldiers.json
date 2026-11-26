@@ -21729,10 +21729,10 @@
       "death_place",
       "death_type"
     ],
+    "birth_year": "1927",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Pleternica",
-    "birth_year": "1927"
+    "death_place": "Pleternica"
   },
   {
     "soldier_id": "0001000638",
@@ -42929,6 +42929,20 @@
         "pdf_y_end": 532.3,
         "pdf_x_end": 539.1,
         "pdf_x_left": 384.3
+      },
+      {
+        "soldier_id": "0074000144",
+        "name": "Brkić Ivana Milorad",
+        "additional_info": "zvani Icin; komandir čete, u Brigadi od 12. 09. 1944.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 131.8,
+        "pdf_y": 521.3,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 529.3,
+        "rank": "komandir čete",
+        "since": "1944-09-12",
+        "unit_file": "22-srpska-soldiers.json"
       },
       {
         "soldier_id": "0110000212",
@@ -132357,13 +132371,13 @@
         "ref_book": "zrtve-rata-1964-bih"
       }
     ],
-    "death_type": "poginuo",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place",
       "death_type"
     ],
+    "death_type": "poginuo",
     "death_date": "1943",
     "death_place": "Sutjeska"
   },
@@ -189297,6 +189311,20 @@
         "pdf_y_end": 464.3,
         "pdf_x_end": 205.6,
         "pdf_x_left": 51.0
+      },
+      {
+        "soldier_id": "0110000863",
+        "name": "Kovački Ise Sava",
+        "additional_info": "zvani Lala Dudoš; rođen u Botošu, živeo u selu Stajićevo, Zrenjanin, zemljoradnik. Član SKOJ-a od 1940. Član KPJ od novembra 1942. Bio borac u 6. beogradskom bataljonu 1. proleterske brigade. Poginuo januara 1943. Devetina, Laktaši, Bosna.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 66,
+        "pdf_x": 97.2,
+        "pdf_y": 185.4,
+        "pdf_x_end": 378.8,
+        "pdf_y_end": 220.8,
+        "unit_detail": "2. posavski (beogradski) bataljon",
+        "rank": "borac",
+        "unit_file": "posavski-odred-soldiers.json"
       }
     ],
     "party": "SKOJ 1940, KPJ 1942"
@@ -206168,15 +206196,7 @@
         "source_page": 1383,
         "ref_book": "zrtve-rata-1964-srb"
       }
-    ],
-    "variants": {
-      "death": [
-        {
-          "date": "1945",
-          "place": "Nemci, Srem"
-        }
-      ]
-    }
+    ]
   },
   {
     "soldier_id": "0001005960",
@@ -206545,12 +206565,24 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=434",
         "source_page": 412,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "0109000647",
+        "name": "Lekić Blagoje Danilo",
+        "additional_info": "Šabac (Pocerski srez): zvani Španac; r. 1913, Kralje (Andrijevica) filozofski fakultet, profesor, iz učiteljske porodice; član KPJ; oficir u španokoj republikanskoj vojsci; stupio 23. 8. 1941, polit. komesar Odreda, zamenik komandanta Odreda; sa grupom boraca i rukovodilaca Valjevskog i Podrinskog NOPO prešao 6. 3. 1942. u Bosnu, u druge jedinice NOV. Narodni heroj.",
+        "source_url": "https://znaci.org/00001/48_102.htm",
+        "rank": "politički komesar odreda, zamenik komandanta odreda",
+        "unit_file": "macvanski-odred-soldiers.json"
       }
     ],
     "death_type": "umro",
     "death_date": "1986",
     "death_place": "Beograd",
     "party": "KPJ 1935",
+    "occupation": "profesor",
+    "borrowed": [
+      "occupation"
+    ],
     "birth_date": "23.06.1913"
   },
   {
@@ -235309,7 +235341,7 @@
       },
       {
         "soldier_id": "0007003197",
-        "name": "Martinac Jure Mijo",
+        "name": "Martinac Mijo",
         "additional_info": "Vrgorac. Hrvat, službenik. Predratni član KPJ. U NOV od 1942. Poginuo 18. 3. 1943. kao zamjenik kom. bataljona kod Kalinovika.",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 108,
@@ -353025,11 +353057,11 @@
         "ref_book": "zrtve-rata-1964-crg"
       }
     ],
-    "death_place": "Banja Luka",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
+    "death_place": "Banja Luka",
     "variants": {
       "death": [
         {
@@ -378663,6 +378695,18 @@
         "pdf_x_end": 592.8,
         "pdf_y_end": 872.3,
         "ref_book": "imotska-krajina-pali-borci"
+      },
+      {
+        "soldier_id": "0145000338",
+        "name": "Sekulović Jovin Milan",
+        "additional_info": "zvani Mijo",
+        "pdf_file": "9-dalmatinska-divizija.pdf",
+        "pdf_page": 5,
+        "pdf_x": 128.8,
+        "pdf_y": 376.3844,
+        "pdf_x_end": 276.8,
+        "pdf_y_end": 384.8,
+        "unit_file": "9-dalmatinska-divizija-soldiers.json"
       }
     ],
     "party": "SKOJ",
@@ -447929,7 +447973,7 @@
       },
       {
         "soldier_id": "0007005445",
-        "name": "Veronika Ivana Božidar",
+        "name": "Veronika Božidar",
         "additional_info": "23. 12. 1923. Vodice, Šibenik. Hrvat, zemljoradnik. Član SKOJ-a od",
         "pdf_file": "2-dalmatinska-proleterska.pdf",
         "pdf_page": 182,
@@ -467087,13 +467131,13 @@
         "ref_book": "spomenica-crnogorskim-antifasistima"
       }
     ],
-    "death_type": "poginuo",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place",
       "death_type"
     ],
+    "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Mlini"
   },
@@ -486473,13 +486517,27 @@
         "pdf_y_end": 343.8,
         "pdf_x_end": 205.0,
         "pdf_x_left": 50.6
+      },
+      {
+        "soldier_id": "0110000496",
+        "name": "Islamović Osmana Sulejman",
+        "additional_info": "zvani Mujo; politički delegat voda, rođen 1904, Radaslije, Glamoč, tekstilni radnik u Beogradu i na Umci. Član KPJ od maja 1941. Bio borac i starešina u 6. beogradskom bataljonu 1. proleterske brigade, do avgusta 1942. kada je ostao na terenu Glamoča. Poginuo avgusta 1943. kao politički radnik u okolini Glamoča.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 61,
+        "pdf_x": 57.1,
+        "pdf_y": 117.7,
+        "pdf_x_end": 339.4,
+        "pdf_y_end": 171.3,
+        "unit_detail": "2. posavski (beogradski) bataljon",
+        "rank": "politički delegat voda",
+        "unit_file": "posavski-odred-soldiers.json"
       }
     ],
     "party": "KPJ 1941",
     "variants": {
       "death": [
         {
-          "date": "1943",
+          "date": "08.1943",
           "place": "Glamoč"
         }
       ]
@@ -488549,6 +488607,20 @@
         "pdf_y_end": 692.6,
         "pdf_x_end": 547.1,
         "pdf_x_left": 392.4
+      },
+      {
+        "soldier_id": "0110001232",
+        "name": "Milekić Nikola",
+        "additional_info": "zvani Korčagin; rođen 1926, Kruševac, učenik u knjižari u Beogradu. Član SKOJ-a od 10. 11. 1941. Član KPJ od 15. 11. 1943. Bio borac i starešina u 6. beogradskom bataljonu 1. proleterske brigade i drugim jedinicama NOVJ do kraja NOR-a. Poginuo 26. 1. 1956. kao potpukovnik JRV, pilot lovac.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 72,
+        "pdf_x": 93.0,
+        "pdf_y": 98.4,
+        "pdf_x_end": 375.3,
+        "pdf_y_end": 141.9,
+        "unit_detail": "2. posavski (beogradski) bataljon",
+        "rank": "potpukovnik",
+        "unit_file": "posavski-odred-soldiers.json"
       }
     ],
     "unit_detail": "3. četa, 6. bataljon",
@@ -509453,17 +509525,31 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=918",
         "source_page": 918,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0110000994",
+        "name": "Mandić Vladimira Borisav",
+        "additional_info": "zvani Bora Uča; rođen 1912, Konatice, Poljane, Obrenovac, učitelj. Član KPJ od 1939. Poginuo 14. 10. 1941. u borbi sa nemačkim 125. pukom, Konatice, kao politički delegat voda.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 68,
+        "pdf_x": 101.0,
+        "pdf_y": 263.4,
+        "pdf_x_end": 382.4,
+        "pdf_y_end": 289.6,
+        "unit_detail": "2. posavski (beogradski) bataljon",
+        "rank": "politički delegat voda",
+        "unit_file": "posavski-odred-soldiers.json"
       }
     ],
-    "ethnicity": "Srbin",
+    "death_type": "poginuo",
     "borrowed": [
       "death_date",
       "death_place",
       "death_type",
       "ethnicity"
     ],
-    "death_type": "poginuo",
-    "death_date": "1941",
+    "death_date": "14.10.1941",
+    "ethnicity": "Srbin",
     "death_place": "Boljevac"
   },
   {
@@ -511661,7 +511747,28 @@
     "occupation": "obalski radnik",
     "death_type": "poginuo",
     "death_date": "11.1941",
-    "pdf_x_end": 217.6
+    "pdf_x_end": 217.6,
+    "birth_place": "Lika",
+    "borrowed": [
+      "birth_place",
+      "death_place"
+    ],
+    "death_place": "Rudnik",
+    "other_sources": [
+      {
+        "soldier_id": "0110001344",
+        "name": "Mitrić Milan",
+        "additional_info": "zvani Kikan; rođen u Lici, obalski radnik u Beogradu. Poginuo 26. 11. 1941. u borbi na Rudniku.",
+        "pdf_file": "posavski-odred.pdf",
+        "pdf_page": 73,
+        "pdf_x": 58.8,
+        "pdf_y": 263.5,
+        "pdf_x_end": 340.2,
+        "pdf_y_end": 280.7,
+        "unit_detail": "2. posavski (beogradski) bataljon",
+        "unit_file": "posavski-odred-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mitrović",
@@ -525916,7 +526023,25 @@
     "pdf_file": "crnogorski-bataljon.pdf",
     "soldier_id": "0001500081",
     "birth_place": "Stara Moravica, Bačka Topola, SPV",
-    "pdf_x_end": 492.2
+    "pdf_x_end": 492.2,
+    "other_sources": [
+      {
+        "soldier_id": "9027009078",
+        "name": "Bagi (Jožef) Jožef",
+        "additional_info": "rođen 1927, Stara Moravica. ostalo, poginuo 1945. u NOBu, 16 divizija-petefi",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=483",
+        "source_page": 483,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "death_date",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945"
   },
   {
     "last_name": "Bajić",
@@ -529292,10 +529417,10 @@
       "death_place",
       "death_type"
     ],
+    "birth_year": "1922",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Bukovica",
-    "birth_year": "1922"
+    "death_place": "Bukovica"
   },
   {
     "last_name": "Hrpić",
@@ -539113,10 +539238,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1924",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Srem",
-    "birth_year": "1924"
+    "death_place": "Srem"
   },
   {
     "last_name": "Petrović",
@@ -540329,10 +540454,10 @@
       "death_place",
       "death_type"
     ],
+    "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Beograd",
-    "birth_year": "1921"
+    "death_place": "Beograd"
   },
   {
     "last_name": "Raković",
@@ -549735,12 +549860,12 @@
     "former_ids": [
       "0122958735"
     ],
-    "death_date": "04.1945",
     "birth_place": "Kovanj, Rogatica",
     "death_type": "poginuo",
     "death_place": "Sremski front",
     "rank": "poručnik",
-    "party": "SKOJ, KPJ"
+    "party": "SKOJ, KPJ",
+    "death_date": "04.1945"
   },
   {
     "soldier_id": "0001900004",
@@ -550170,7 +550295,7 @@
     "last_name": "Helering",
     "middle_name": "Silvija",
     "first_name": "Sara",
-    "fathers_name": "Silvija",
+    "fathers_name": "Silvije",
     "full_name": "Helering Silvija Sara",
     "additional_info": "Jevreji Jugoslavije, učesnici NOR: Helering Silvija Sara, domaćica iz Zavidovića, rođena 1918. U NOV od juna 1943. Bolničarka u jedinicama 1. prolet. brigade.",
     "birth_year": "1918",
@@ -550192,7 +550317,7 @@
     "last_name": "Heregin",
     "middle_name": "Silvija",
     "first_name": "Rahela",
-    "fathers_name": "Silvija",
+    "fathers_name": "Silvije",
     "full_name": "Heregin Silvija Rahela",
     "additional_info": "Jevreji Jugoslavije, učesnici NOR: Heregin Silvija Rahela, domaćica iz Zavidovića, rođena 1912. U NOV od juna 1943. Bolničarka u jedinicama 1. prolet. brigade.",
     "birth_year": "1912",
@@ -552052,12 +552177,12 @@
         "source_page": 209
       }
     ],
-    "occupation": "industrijski radnik",
-    "rank": "borac",
-    "unit_detail": "3. četa, 1. bataljon, 1. proleterska brigada",
     "former_ids": [
       "0122030548"
-    ]
+    ],
+    "occupation": "industrijski radnik",
+    "rank": "borac",
+    "unit_detail": "3. četa, 1. bataljon"
   },
   {
     "soldier_id": "0001900030",
@@ -552142,7 +552267,7 @@
     "former_ids": [
       "0122940789"
     ],
-    "birth_place": "Povrhpoljini, Donji Zagarač",
+    "birth_place": "Povrhpoljina, Donji Zagarač",
     "occupation": "učenik",
     "death_type": "poginuo",
     "death_date": "04.1944",
@@ -552964,7 +553089,7 @@
     "former_ids": [
       "0122929814"
     ],
-    "birth_place": "Zavidovicima",
+    "birth_place": "Zavidovici",
     "death_type": "poginuo",
     "death_date": "18.06.1943",
     "unit_detail": "3. četa",
@@ -553157,7 +553282,7 @@
     "last_name": "Vidović",
     "middle_name": "Tede",
     "first_name": "Bogdan",
-    "fathers_name": "Tede",
+    "fathers_name": "Tedo",
     "full_name": "Vidović Tede Bogdan",
     "additional_info": "Poginuli borci narodnooslobodilačkog rata, Ostružnja Donja: Vidović Tede Bogdan, 1927, Ostružnja Donja, Doboj, Srbin, zemljoradnik, u NOB-u od januara 1943, u 1. proleterskoj brigadi, kao borac 13. krajiške NOU brigade poginuo maja 1944. u okolini Ključa.",
     "birth_year": "1927",

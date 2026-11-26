@@ -2189,7 +2189,7 @@
       "death": [
         {
           "date": "1944",
-          "place": "Risan"
+          "place": "Crkvice"
         }
       ]
     }
@@ -3496,9 +3496,17 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1918",
     "death_date": "1944",
     "death_place": "Nikšić",
-    "birth_year": "1918"
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Crkvice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lazarević",
@@ -3756,12 +3764,12 @@
       }
     ],
     "rank": "borac",
-    "death_place": "Prijepolje",
+    "birth_year": "1905",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1905"
+    "death_place": "Prijepolje"
   },
   {
     "last_name": "Lukšič",
@@ -5458,7 +5466,15 @@
         "ref_book": "sutorina"
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Crkvice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Mračević",
@@ -6054,12 +6070,12 @@
     ],
     "rank": "borac",
     "unit_detail": "komanda pozadine",
-    "death_place": "Brod »Cetinje«",
+    "birth_year": "1897",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1897"
+    "death_place": "Brod »Cetinje«"
   },
   {
     "last_name": "Pavić",
@@ -7178,14 +7194,14 @@
       }
     ],
     "rank": "borac",
-    "death_date": "1945",
+    "birth_year": "1911",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
+    "death_date": "1945",
     "death_place": "Kosovo",
-    "birth_year": "1911",
     "variants": {
       "death": [
         {
@@ -7761,14 +7777,14 @@
       }
     ],
     "rank": "borac",
-    "death_date": "1944",
+    "birth_year": "1922",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
-    "death_place": "Korčula",
-    "birth_year": "1922"
+    "death_date": "1944",
+    "death_place": "Korčula"
   },
   {
     "last_name": "Samardžić",
@@ -8786,14 +8802,14 @@
         "ref_book": "lovcenski-odred-pali-borci"
       }
     ],
-    "death_date": "1944",
+    "birth_year": "1921",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
-    "death_place": "Danilovgrad",
-    "birth_year": "1921"
+    "death_date": "1944",
+    "death_place": "Danilovgrad"
   },
   {
     "last_name": "Vučković",
@@ -14443,10 +14459,10 @@
       "death_place",
       "death_type"
     ],
+    "birth_year": "1928",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Risan",
-    "birth_year": "1928"
+    "death_place": "Risan"
   },
   {
     "last_name": "Bošković",
@@ -29058,10 +29074,10 @@
       "ethnicity"
     ],
     "ethnicity": "Crnogorac",
+    "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Jaz, Budva",
-    "birth_year": "1921"
+    "death_place": "Jaz, Budva"
   },
   {
     "last_name": "Kurić",
@@ -40392,11 +40408,19 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1920",
+    "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Crkvice",
-    "birth_year": "1920",
-    "ethnicity": "Crnogorac"
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Krivošije"
+        }
+      ]
+    }
   },
   {
     "last_name": "Obradović",
@@ -49088,7 +49112,15 @@
     "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Crkvenica"
+    "death_place": "Crkvenica",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Crkvice"
+        }
+      ]
+    }
   },
   {
     "last_name": "Račeta",
@@ -51340,10 +51372,10 @@
       "death_type",
       "ethnicity"
     ],
+    "ethnicity": "Crnogorac",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Ledenice",
-    "ethnicity": "Crnogorac",
     "variants": {
       "born": [
         "1909"
@@ -56562,10 +56594,10 @@
       "death_place",
       "death_type"
     ],
+    "birth_year": "1922",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Kotor",
-    "birth_year": "1922"
+    "death_place": "Kotor"
   },
   {
     "last_name": "Tušup",
@@ -66857,7 +66889,7 @@
     "former_ids": [
       "0122940888"
     ],
-    "birth_place": "Gornjem Orahovcu, Kotor",
+    "birth_place": "Gornji Orahovac, Kotor",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "20.10.1944",

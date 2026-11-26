@@ -5729,6 +5729,20 @@
         "pdf_x_end": 539.1,
         "pdf_x_left": 384.3,
         "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0074000144",
+        "name": "Brkić Ivana Milorad",
+        "additional_info": "zvani Icin; komandir čete, u Brigadi od 12. 09. 1944.",
+        "pdf_file": "22-srpska.pdf",
+        "pdf_page": 30,
+        "pdf_x": 131.8,
+        "pdf_y": 521.3,
+        "pdf_x_end": 370.6,
+        "pdf_y_end": 529.3,
+        "rank": "komandir čete",
+        "since": "1944-09-12",
+        "unit_file": "22-srpska-soldiers.json"
       }
     ]
   },
@@ -10627,10 +10641,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1920",
     "death_type": "poginuo",
     "death_date": "1941",
-    "death_place": "Venčane",
-    "birth_year": "1920"
+    "death_place": "Venčane"
   },
   {
     "last_name": "Gigin",
@@ -13098,10 +13112,10 @@
   },
   {
     "last_name": "Islamović",
-    "middle_name": "",
+    "middle_name": "Osmana",
     "first_name": "Sulejman",
-    "fathers_name": "",
-    "full_name": "Islamović Sulejman",
+    "fathers_name": "Osman",
+    "full_name": "Islamović Osmana Sulejman",
     "additional_info": "zvani Mujo; politički delegat voda, rođen 1904, Radaslije, Glamoč, tekstilni radnik u Beogradu i na Umci. Član KPJ od maja 1941. Bio borac i starešina u 6. beogradskom bataljonu 1. proleterske brigade, do avgusta 1942. kada je ostao na terenu Glamoča. Poginuo avgusta 1943. kao politički radnik u okolini Glamoča.",
     "birth_year": "1904",
     "birth_place": "Radaslije, Glamoč",
@@ -13126,12 +13140,66 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=266",
         "source_page": 266,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0001100413",
+        "name": "Islamović Osmana Sulejman",
+        "additional_info": "zvani Mujo; politički delegat voda u 6. bataljonu, rođen 1904, Radoslije, Glamoč, radnik, Musliman, u NOB od 1941, član KPJ od 1941, poginuo na Sutjesci juna 1943.godine.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 32,
+        "pdf_x": 17.5,
+        "pdf_y": 112.9,
+        "pdf_x_end": 187.9,
+        "pdf_y_end": 176.7,
+        "unit_detail": "6. bataljon",
+        "rank": "politički delegat voda",
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200254",
+        "name": "Islamović Sulejman",
+        "additional_info": "zvani Mujo; borac, rođen 1904. u Radaslijama, Glamoč, SRBiH, tekstilac, član KPJ od 1941. Poginuo 1943. kod Glamoča, kao politički radnik na terenu.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 52,
+        "pdf_x": 292.8,
+        "pdf_y": 714.5,
+        "pdf_x_end": 601.2,
+        "pdf_y_end": 746.1,
+        "pdf_x_left": 268.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001300464",
+        "name": "Islamović Sulejman",
+        "additional_info": "zvani Mujo; Tekstilni radnik, rođen 1904, Radaslije, Glamoč; član KPJ od maja 1941. Poginuo 1943. u okolini Glamoča kao politički radnik.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 11,
+        "pdf_x": 52.6,
+        "pdf_y": 299.7,
+        "pdf_y_end": 343.8,
+        "pdf_x_end": 205.0,
+        "pdf_x_left": 50.6,
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Musliman",
     "borrowed": [
+      "death_place",
       "ethnicity"
-    ]
+    ],
+    "death_place": "Sutjeska",
+    "variants": {
+      "death": [
+        {
+          "date": "06.1943",
+          "place": "Sutjeska"
+        },
+        {
+          "date": "1943",
+          "place": "Glamoč"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ivanić",
@@ -15952,8 +16020,8 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1941",
-    "birth_year": "1922"
+    "birth_year": "1922",
+    "death_date": "1941"
   },
   {
     "last_name": "Jeremić",
@@ -23337,10 +23405,10 @@
   },
   {
     "last_name": "Kovački",
-    "middle_name": "",
+    "middle_name": "Ise",
     "first_name": "Sava",
-    "fathers_name": "",
-    "full_name": "Kovački Sava",
+    "fathers_name": "Iso",
+    "full_name": "Kovački Ise Sava",
     "additional_info": "zvani Lala Dudoš; rođen u Botošu, živeo u selu Stajićevo, Zrenjanin, zemljoradnik. Član SKOJ-a od 1940. Član KPJ od novembra 1942. Bio borac u 6. beogradskom bataljonu 1. proleterske brigade. Poginuo januara 1943. Devetina, Laktaši, Bosna.",
     "birth_year": "",
     "unit_detail": "2. posavski (beogradski) bataljon",
@@ -23356,7 +23424,56 @@
     "death_date": "01.1943",
     "rank": "borac",
     "pdf_x_end": 378.8,
-    "party": "SKOJ 1940, KPJ 1942"
+    "party": "SKOJ 1940, KPJ 1942",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Prnjavor, Derventa",
+    "other_sources": [
+      {
+        "soldier_id": "0001005475",
+        "name": "Kovački Ise Sava",
+        "additional_info": "zvani Lala Dudoš; Stajićevo, Botoš, Zrenjanim, Vojvodina, Srbin, zemljoradnik, član SKOJ-a od 1940, član KPJ Od 1942, u NOB od 1941, u brigadi od decembra 1941, VI bataljon, borac, poginuo 16. 01. 1943, Prnjavor, Derventa",
+        "pdf_file": "prva-proleterska-2.pdf",
+        "pdf_page": 114,
+        "pdf_x": 61.3,
+        "pdf_y": 59.8,
+        "pdf_x_end": 368.2,
+        "pdf_y_end": 100.0,
+        "unit_detail": "6. bataljon",
+        "rank": "borac",
+        "since": "1941-12",
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200415",
+        "name": "Kovački Sava",
+        "additional_info": "zvani Lala Dudoš; borac, rođen u Botošu, Zrenjanin, SRS, zemljoradnik, član SKOJ-a. Poginuo januara 1943, Devetine, Prnjavor.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 52,
+        "pdf_x": 293.1,
+        "pdf_y": 769.7,
+        "pdf_x_end": 600.9,
+        "pdf_y_end": 801.3,
+        "pdf_x_left": 268.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001300729",
+        "name": "Kovacki Ise Sava",
+        "additional_info": "zvani Lala Dudoš; Zemljoradnik, rođen u Botošu, Zrenjanin; član SKOJ-a od 1940, član KPJ od novembra 1942. Poginuo januara 1943. Devetina, Laktaši.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 11,
+        "pdf_x": 53.0,
+        "pdf_y": 402.9,
+        "pdf_y_end": 464.3,
+        "pdf_x_end": 205.6,
+        "pdf_x_left": 51.0,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Kozomernić",
@@ -26724,10 +26841,10 @@
   },
   {
     "last_name": "Mandić",
-    "middle_name": "",
+    "middle_name": "Vladimira",
     "first_name": "Borisav",
-    "fathers_name": "",
-    "full_name": "Mandić Borisav",
+    "fathers_name": "Vladimir",
+    "full_name": "Mandić Vladimira Borisav",
     "additional_info": "zvani Bora Uča; rođen 1912, Konatice, Poljane, Obrenovac, učitelj. Član KPJ od 1939. Poginuo 14. 10. 1941. u borbi sa nemačkim 125. pukom, Konatice, kao politički delegat voda.",
     "birth_year": "1912",
     "birth_place": "Konatice, Poljane",
@@ -26752,6 +26869,19 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Srb.pdf#page=918",
         "source_page": 918,
         "ref_book": "zrtve-rata-1964-srb"
+      },
+      {
+        "soldier_id": "0001300872",
+        "name": "Mandić Vladimira Borisav",
+        "additional_info": "zvani Bora; politički delegat voda; Učitelj, rođen 1912, Poljane, Obrenovac; član KPJ 1939. Pognuo 14. oktobra 1941, Konatice, Obrenovac.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 6,
+        "pdf_x": 63.8,
+        "pdf_y": 85.6,
+        "pdf_x_end": 217.0,
+        "pdf_y_end": 128.7,
+        "rank": "politički delegat voda",
+        "unit_file": "prva-proleterska-soldiers.json"
       }
     ],
     "ethnicity": "Srbin",
@@ -31754,9 +31884,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1900",
     "death_date": "1943",
-    "death_place": "Skobalj",
-    "birth_year": "1900"
+    "death_place": "Skobalj"
   },
   {
     "last_name": "Mihailović",
@@ -33166,7 +33296,53 @@
     "rank": "potpukovnik",
     "pdf_x_end": 375.3,
     "party": "SKOJ 1941, KPJ 1943",
-    "occupation": "učenik"
+    "occupation": "učenik",
+    "ethnicity": "Srbin",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0001100878",
+        "name": "Milekić Nikola",
+        "additional_info": "zvani Korčagin; kurir Štaba brigade, rođen 1926, Kruševac, šegrt, Srbin, u NOB od 1941, član SKOJ-a od novembra 1941, član KPJ od novembra 1943, krajem rata komandir eskadrile. Poginuo u avionskoj nesreći 1956. godine.",
+        "pdf_file": "borci-sutjeske-prva-proleterska.pdf",
+        "pdf_page": 58,
+        "pdf_x": 202.8,
+        "pdf_y": 33.0,
+        "pdf_x_end": 372.8,
+        "pdf_y_end": 107.0,
+        "unit_detail": "3. četa, 6. bataljon",
+        "rank": "kurir",
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001200558",
+        "name": "Milekić Nikola",
+        "additional_info": "zvani Korčagin; borac, rođen 1926. u Knuševcu, SRS, učenik u privredi, član SKOJ-a od 1941.",
+        "pdf_file": "prva-proleterska-stroj-u-rudom.pdf",
+        "pdf_page": 55,
+        "pdf_x": 258.1,
+        "pdf_y": 711.1,
+        "pdf_x_end": 567.1,
+        "pdf_y_end": 732.2,
+        "pdf_x_left": 234.1,
+        "unit_file": "prva-proleterska-soldiers.json"
+      },
+      {
+        "soldier_id": "0001301004",
+        "name": "Milekić Nikola",
+        "additional_info": "zvani Korčagin; Učenik u knjižari, rođen 1926, Kruševac; član SKOJ-a od 10. 11 1941, član KPJ od 15. 11. 1943. Poginuo 26. januara 1956. kao potpukovnik JRV, pilot lovac.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 12,
+        "pdf_x": 397.4,
+        "pdf_y": 639.9,
+        "pdf_y_end": 692.6,
+        "pdf_x_end": 547.1,
+        "pdf_x_left": 392.4,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Miletić",
@@ -36013,7 +36189,21 @@
     "death_date": "26.11.1941",
     "death_place": "Rudnik",
     "pdf_x_end": 340.2,
-    "occupation": "obalski radnik"
+    "occupation": "obalski radnik",
+    "other_sources": [
+      {
+        "soldier_id": "0001301123",
+        "name": "Mitrić Milan",
+        "additional_info": "zvani Kikan; Obalski radnik, rođen (podaci nepoznati). Poginuo novembra 1941. u borbi na pl. Rudnik.",
+        "pdf_file": "beogradski-bataljon.pdf",
+        "pdf_page": 6,
+        "pdf_x": 64.1,
+        "pdf_y": 409.4,
+        "pdf_x_end": 217.6,
+        "pdf_y_end": 445.5,
+        "unit_file": "prva-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mitrić",

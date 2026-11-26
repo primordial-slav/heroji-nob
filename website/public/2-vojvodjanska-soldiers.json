@@ -114,12 +114,12 @@
         "ref_book": "zrtve-rata-1964-voj"
       }
     ],
-    "death_place": "Bosna",
+    "birth_year": "1924",
     "borrowed": [
       "birth_year",
       "death_place"
     ],
-    "birth_year": "1924"
+    "death_place": "Bosna"
   },
   {
     "last_name": "Adnađević",
@@ -11457,6 +11457,20 @@
         "pdf_y_end": 401.7,
         "rank": "komandant bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0083010061",
+        "name": "Ješić Milan",
+        "additional_info": "zvani Ibra; Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandanta brigade.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 1,
+        "pdf_x": 108.8,
+        "pdf_y": 175.3,
+        "pdf_x_end": 191.3,
+        "pdf_y_end": 184.0,
+        "unit_detail": "štab brigade",
+        "rank": "zamenik komandanta brigade",
+        "unit_file": "6-vojvodjanska-soldiers.json"
       }
     ],
     "birth_date": "11.10.1914"
@@ -29368,6 +29382,34 @@
         "pdf_y_end": 316.4,
         "rank": "komesar bataljona",
         "unit_file": "7-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0083010142",
+        "name": "Petrović Save Petar",
+        "additional_info": "zvani Japan; Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 3. bataljona.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 331.1,
+        "pdf_y": 482.3,
+        "pdf_x_end": 351.3,
+        "pdf_y_end": 491.0,
+        "pdf_rects": [
+          [
+            331.1,
+            482.3,
+            351.3,
+            491.0
+          ],
+          [
+            70.6,
+            491.1,
+            155.6,
+            499.8
+          ]
+        ],
+        "unit_detail": "3. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "6-vojvodjanska-soldiers.json"
       }
     ]
   },
@@ -29465,15 +29507,7 @@
     "death_date": "1944",
     "borrowed": [
       "death_date"
-    ],
-    "variants": {
-      "death": [
-        {
-          "date": "1944",
-          "place": "Sandžak, Bosna"
-        }
-      ]
-    }
+    ]
   },
   {
     "last_name": "Petrović",

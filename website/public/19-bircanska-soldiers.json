@@ -12760,7 +12760,6 @@
     "fathers_name": "Boško",
     "full_name": "Jerković Boška Vukosav",
     "additional_info": "roćen 1922. godine u Raškovićima - Vlasenica, Srbin, zemljoradnik, u NOB stupio 1941. godine, a u Brigadu, 13. 10. 1943. godine, vodnik, poginuo 29. 11. 1973. godine, nosilac «Spomenice«.",
-    "birth_year": "",
     "pdf_page": 39,
     "pdf_y": 297.2,
     "pdf_x": 110.1,
@@ -12773,7 +12772,28 @@
     "death_date": "29.11.1973",
     "rank": "vodnik",
     "pdf_x_end": 265.8,
-    "birth_place": "Raškovići, Vlasenica"
+    "birth_place": "Raškovići, Vlasenica",
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_year",
+      "party"
+    ],
+    "party": "SKOJ",
+    "other_sources": [
+      {
+        "soldier_id": "0042000125",
+        "name": "Jerković Boška Vukosav",
+        "additional_info": "borac, rođen 1922, Raškovići, Vlasenica, radnik, Jugosloven u NOB od 1941, član SKOJ-a, krajem rata zamenik političkog komesara bataljona. Umro 1973.",
+        "pdf_file": "borci-sutjeske-6-istocnobosanska.pdf",
+        "pdf_page": 16,
+        "pdf_x": 16.8,
+        "pdf_y": 525.0,
+        "pdf_x_end": 183.1,
+        "pdf_y_end": 578.4,
+        "rank": "borac",
+        "unit_file": "6-istocnobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Jevremović",
@@ -45862,14 +45882,14 @@
     "pdf_x_end": 632.9,
     "pdf_y_end": 496.9,
     "pdf_x_left": 193.3,
+    "former_ids": [
+      "0122909431"
+    ],
     "birth_place": "Tuzla",
     "occupation": "zemljoradnik",
     "death_type": "ubijen",
-    "unit_detail": "2. bataljon, 19. birčanska brigada",
-    "birth_date": "01.06.1908",
-    "former_ids": [
-      "0122909431"
-    ]
+    "unit_detail": "2. bataljon",
+    "birth_date": "01.06.1908"
   },
   {
     "soldier_id": "0023900033",
@@ -46030,12 +46050,12 @@
     "pdf_x_end": 498.6,
     "pdf_y_end": 774.7,
     "pdf_x_left": 198.0,
-    "birth_place": "Tuzla",
-    "death_type": "umro",
-    "unit_detail": "1. četa, 2. bataljon, 19. birčanska brigada",
     "former_ids": [
       "0122909511"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "umro",
+    "unit_detail": "1. četa, 2. bataljon"
   },
   {
     "soldier_id": "0023900038",
@@ -46142,13 +46162,13 @@
     "pdf_x_end": 641.0,
     "pdf_y_end": 941.4,
     "pdf_x_left": 200.9,
-    "death_type": "poginuo",
-    "death_date": "krajem aprila 1944",
-    "unit_detail": "2. bataljon, 19. birčanska brigada",
-    "birth_place": "Vršani, Slavinovići, Tuzla",
     "former_ids": [
       "0122909602"
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "krajem aprila 1944",
+    "unit_detail": "2. bataljon",
+    "birth_place": "Vršani, Slavinovići, Tuzla"
   },
   {
     "soldier_id": "0023900041",
@@ -46300,15 +46320,15 @@
     "pdf_x_end": 506.7,
     "pdf_y_end": 927.7,
     "pdf_x_left": 192.2,
+    "former_ids": [
+      "0122909683"
+    ],
     "birth_place": "Tuzla",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "27.10.1944",
     "rank": "mitraljezac",
-    "unit_detail": "3. bataljon, 19. birčanska brigada",
-    "former_ids": [
-      "0122909683"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0023900050",
@@ -46326,13 +46346,13 @@
     "pdf_x_end": 639.0,
     "pdf_y_end": 369.3,
     "pdf_x_left": 199.7,
+    "former_ids": [
+      "0122909701"
+    ],
     "birth_place": "Tuzla",
     "death_type": "poginuo",
     "death_date": "polovinom novembra 1944",
-    "unit_detail": "3. bataljon, 19. birčanska brigada",
-    "former_ids": [
-      "0122909701"
-    ]
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0023900051",
@@ -46350,14 +46370,14 @@
     "pdf_x_end": 628.3,
     "pdf_y_end": 481.4,
     "pdf_x_left": 187.4,
+    "former_ids": [
+      "0122909708"
+    ],
     "birth_place": "Slavonski Brod, Republika Hrvatska",
     "death_type": "poginuo",
     "death_date": "1944",
-    "unit_detail": "3. bataljon, 19. birčanska brigada",
+    "unit_detail": "3. bataljon",
     "party": "SKOJ",
-    "birth_date": "13.06.1927",
-    "former_ids": [
-      "0122909708"
-    ]
+    "birth_date": "13.06.1927"
   }
 ]

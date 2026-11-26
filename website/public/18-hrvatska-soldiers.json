@@ -19009,15 +19009,7 @@
     "death_place": "Gornja Čađavica, Bijeljina",
     "rank": "komandant bataljona",
     "unit_detail": "3. bataljon",
-    "birth_date": "04.06.1920",
-    "variants": {
-      "death": [
-        {
-          "date": "1944",
-          "place": "Čaotoka majevic"
-        }
-      ]
-    }
+    "birth_date": "04.06.1920"
   },
   {
     "last_name": "Kerošević",
@@ -35685,15 +35677,7 @@
         "since": "1943-09-16",
         "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
-    ],
-    "variants": {
-      "death": [
-        {
-          "date": "10.08.1943",
-          "place": "Monj"
-        }
-      ]
-    }
+    ]
   },
   {
     "last_name": "Popović",
@@ -39452,7 +39436,17 @@
     "death_type": "poginuo",
     "death_date": "01.1944",
     "death_place": "Moluhe, Tuzla",
-    "rank": "borac"
+    "rank": "borac",
+    "other_sources": [
+      {
+        "soldier_id": "9022034261",
+        "name": "Sepe (Ivan) Ivan",
+        "additional_info": "rođen 1908, Tuzla. Srbin, poginuo 1944. u NOBu, Tuzla",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=2682",
+        "source_page": 2682,
+        "ref_book": "zrtve-rata-1964-bih"
+      }
+    ]
   },
   {
     "last_name": "Serhatlić",
@@ -39741,7 +39735,15 @@
         "ref_book": "tuzla-spomen-knjiga"
       }
     ],
-    "birth_date": "27.09.1924"
+    "birth_date": "27.09.1924",
+    "variants": {
+      "death": [
+        {
+          "date": "1944",
+          "place": "Trnova"
+        }
+      ]
+    }
   },
   {
     "last_name": "Simić",
@@ -44187,9 +44189,29 @@
         "pdf_y": 529.6,
         "pdf_x_end": 338.5,
         "pdf_y_end": 538.1
+      },
+      {
+        "soldier_id": "0059001711",
+        "name": "Tolpa Radovana Miloš",
+        "additional_info": "1920, Visoko, Srbin, radnik, u NOB od 1941, nosilac »Partizanske spomenice 1941«, u odredu od septembra 1943, zamjenik komesara bataljona, član KPJ, umro 30. 5. 1962.",
+        "pdf_file": "posavsko-trebavski-odred.pdf",
+        "pdf_page": 89,
+        "pdf_x": 69.0,
+        "pdf_y": 197.1,
+        "pdf_x_end": 349.6,
+        "pdf_y_end": 220.9,
+        "rank": "zamjenik komesara bataljona",
+        "unit_file": "posavsko-trebavski-odred-soldiers.json"
       }
     ],
-    "party": "KPJ 1940"
+    "party": "KPJ 1940",
+    "variants": {
+      "death": [
+        {
+          "date": "30.05.1962"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tomašević",
@@ -54112,14 +54134,14 @@
     "pdf_y": 476.7,
     "pdf_x_end": 658.8,
     "pdf_y_end": 578.9,
+    "former_ids": [
+      "0122909032"
+    ],
     "birth_place": "Tuzla",
     "death_type": "poginuo",
     "death_date": "10.03.1945",
     "death_place": "Snagovo, Zvornik",
-    "unit_detail": "2. bataljon, 18. hrvatska brigada",
-    "former_ids": [
-      "0122909032"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0052900007",
@@ -54136,14 +54158,14 @@
     "pdf_y": 392.9,
     "pdf_x_end": 640.8,
     "pdf_y_end": 508.2,
+    "former_ids": [
+      "0122909048"
+    ],
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "14.06.1944",
-    "unit_detail": "3. bataljon, 18. hrvatska brigada",
-    "birth_place": "Orašje, Tuzla",
-    "former_ids": [
-      "0122909048"
-    ]
+    "unit_detail": "3. bataljon",
+    "birth_place": "Orašje, Tuzla"
   },
   {
     "soldier_id": "0052900008",
@@ -54161,10 +54183,10 @@
     "pdf_x_end": 643.3,
     "pdf_y_end": 604.2,
     "pdf_x_left": 203.0,
-    "birth_place": "Džindić Mahala u Tuzli",
     "former_ids": [
       "0122909052"
-    ]
+    ],
+    "birth_place": "Džindić Mahala u Tuzli"
   },
   {
     "soldier_id": "0052900009",
@@ -54201,11 +54223,11 @@
         "source_page": 2672
       }
     ],
-    "unit_detail": "3. bataljon, 18. hrvatska brigada",
-    "birth_date": "24.12.1919",
     "former_ids": [
       "0122909063"
-    ]
+    ],
+    "unit_detail": "3. bataljon",
+    "birth_date": "24.12.1919"
   },
   {
     "soldier_id": "0052900010",
@@ -54223,12 +54245,12 @@
     "pdf_x_end": 644.0,
     "pdf_y_end": 932.0,
     "pdf_x_left": 204.5,
-    "birth_place": "Očevije, Vareš",
-    "death_type": "umro",
-    "rank": "borac",
     "former_ids": [
       "0122909076"
-    ]
+    ],
+    "birth_place": "Očevije, Vareš",
+    "death_type": "umro",
+    "rank": "borac"
   },
   {
     "soldier_id": "0052900011",
@@ -54246,12 +54268,12 @@
     "pdf_x_end": 653.1,
     "pdf_y_end": 744.4,
     "pdf_x_left": 213.7,
-    "birth_place": "Tuzla",
-    "death_type": "poginuo",
-    "death_date": "17.04.1945",
     "former_ids": [
       "0122909080"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "poginuo",
+    "death_date": "17.04.1945"
   },
   {
     "soldier_id": "0052900012",
@@ -54269,12 +54291,12 @@
     "pdf_x_end": 508.4,
     "pdf_y_end": 926.1,
     "pdf_x_left": 212.5,
-    "birth_place": "Banjaluka",
-    "death_type": "poginuo",
-    "death_date": "18.11.1943",
     "former_ids": [
       "0122909081"
-    ]
+    ],
+    "birth_place": "Banjaluka",
+    "death_type": "poginuo",
+    "death_date": "18.11.1943"
   },
   {
     "soldier_id": "0052900013",
@@ -54292,12 +54314,12 @@
     "pdf_x_end": 650.9,
     "pdf_y_end": 912.5,
     "pdf_x_left": 210.8,
-    "death_type": "poginuo",
-    "death_date": "06.1944",
-    "birth_place": "Kreka, Tuzla",
     "former_ids": [
       "0122909104"
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "06.1944",
+    "birth_place": "Kreka, Tuzla"
   },
   {
     "soldier_id": "0052900034",
@@ -54374,11 +54396,11 @@
     "pdf_x_end": 658.7,
     "pdf_y_end": 440.1,
     "pdf_x_left": 219.2,
-    "birth_place": "Derventa",
-    "birth_date": "28.09.1900",
     "former_ids": [
       "0122909195"
-    ]
+    ],
+    "birth_place": "Derventa",
+    "birth_date": "28.09.1900"
   },
   {
     "soldier_id": "0052900015",
@@ -54396,12 +54418,12 @@
     "pdf_x_end": 632.4,
     "pdf_y_end": 925.9,
     "pdf_x_left": 191.1,
-    "birth_place": "Gornja Tuzla",
-    "death_type": "umro",
-    "death_date": "početkom maja 1945",
     "former_ids": [
       "0122909213"
-    ]
+    ],
+    "birth_place": "Gornja Tuzla",
+    "death_type": "umro",
+    "death_date": "početkom maja 1945"
   },
   {
     "soldier_id": "0052900001",
@@ -54414,16 +54436,16 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=374",
     "source_page": 370,
+    "former_ids": [
+      "0122957591"
+    ],
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "03.1945",
     "death_place": "u Košticama, Sokolac",
     "rank": "borac",
-    "birth_place": "Bbijesnica Mala",
-    "former_ids": [
-      "0122957591"
-    ]
+    "birth_place": "Bbijesnica Mala"
   },
   {
     "soldier_id": "0052900002",
@@ -54436,14 +54458,14 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00004058&pg_seq=153",
     "source_page": 152,
+    "former_ids": [
+      "0122953787"
+    ],
     "birth_place": "Rubinići",
     "death_type": "poginuo",
     "death_date": "10.12.1944",
     "death_place": "Lisina, Zvornik",
-    "rank": "desetar",
-    "former_ids": [
-      "0122953787"
-    ]
+    "rank": "desetar"
   },
   {
     "soldier_id": "0052900004",
@@ -54456,13 +54478,13 @@
     "birth_year": "1923",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002506&pg_seq=538",
     "source_page": 540,
+    "former_ids": [
+      "0122955862"
+    ],
     "death_type": "poginuo",
     "death_date": "20.02.1945",
     "rank": "bolničarka",
-    "birth_place": "Romanije Sokolac, Sokolac",
-    "former_ids": [
-      "0122955862"
-    ]
+    "birth_place": "Romanije Sokolac, Sokolac"
   },
   {
     "soldier_id": "0052900016",
@@ -54480,14 +54502,14 @@
     "pdf_x_end": 638.2,
     "pdf_y_end": 926.3,
     "pdf_x_left": 197.8,
+    "former_ids": [
+      "0122909300"
+    ],
     "birth_place": "Priboj",
     "death_type": "umro",
     "death_date": "13.02.1945",
-    "unit_detail": "1. bataljon, 18. hrvatska brigada",
-    "party": "KPJ",
-    "former_ids": [
-      "0122909300"
-    ]
+    "unit_detail": "1. bataljon",
+    "party": "KPJ"
   },
   {
     "soldier_id": "0052900035",
@@ -54530,14 +54552,14 @@
     "pdf_x_end": 676.4,
     "pdf_y_end": 769.7,
     "pdf_x_left": 234.5,
+    "former_ids": [
+      "0122909320"
+    ],
     "birth_place": "Puračić, Lukavac",
     "death_type": "ubijen",
     "death_date": "02.01.1945",
     "rank": "borac",
-    "birth_date": "04.11.1887",
-    "former_ids": [
-      "0122909320"
-    ]
+    "birth_date": "04.11.1887"
   },
   {
     "soldier_id": "0052900018",
@@ -54594,14 +54616,14 @@
     "pdf_x_end": 633.7,
     "pdf_y_end": 358.0,
     "pdf_x_left": 194.3,
+    "former_ids": [
+      "0122909430"
+    ],
     "birth_place": "Ševari, Tuzla",
     "death_type": "poginuo",
     "death_date": "krajem decembra 1943",
-    "unit_detail": "3. bataljon, 18. hrvatska brigada",
-    "birth_date": "04.07.1913",
-    "former_ids": [
-      "0122909430"
-    ]
+    "unit_detail": "3. bataljon",
+    "birth_date": "04.07.1913"
   },
   {
     "soldier_id": "0052900020",
@@ -54619,12 +54641,12 @@
     "pdf_x_end": 636.4,
     "pdf_y_end": 425.9,
     "pdf_x_left": 195.8,
-    "birth_place": "Tuzla",
-    "death_type": "poginuo",
-    "death_date": "krajem decembra 1943",
     "former_ids": [
       "0122909462"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "poginuo",
+    "death_date": "krajem decembra 1943"
   },
   {
     "soldier_id": "0052900036",
@@ -54666,12 +54688,12 @@
     "pdf_x_end": 633.9,
     "pdf_y_end": 718.4,
     "pdf_x_left": 194.9,
-    "birth_place": "Tuzla",
-    "death_type": "poginuo",
-    "death_date": "1943",
     "former_ids": [
       "0122909469"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "poginuo",
+    "death_date": "1943"
   },
   {
     "soldier_id": "0052900005",
@@ -54707,10 +54729,10 @@
         "source_page": 1221
       }
     ],
-    "rank": "borac",
     "former_ids": [
       "0122932920"
-    ]
+    ],
+    "rank": "borac"
   },
   {
     "soldier_id": "0052900022",
@@ -54727,13 +54749,13 @@
     "pdf_y": 364.9,
     "pdf_x_end": 630.1,
     "pdf_y_end": 467.3,
-    "occupation": "radnik",
-    "death_type": "ubijen",
-    "unit_detail": "1. četa, 3. bataljon, 18. hrvatska brigada",
-    "birth_place": "Kreka, Tuzla",
     "former_ids": [
       "0122909502"
-    ]
+    ],
+    "occupation": "radnik",
+    "death_type": "ubijen",
+    "unit_detail": "1. četa, 3. bataljon",
+    "birth_place": "Kreka, Tuzla"
   },
   {
     "soldier_id": "0052900023",
@@ -54751,13 +54773,13 @@
     "pdf_x_end": 628.8,
     "pdf_y_end": 732.1,
     "pdf_x_left": 188.4,
+    "former_ids": [
+      "0122909503"
+    ],
     "death_type": "poginuo",
     "death_date": "12.1944",
     "birth_place": "Bukinje, Tuzla",
-    "birth_date": "09.1926",
-    "former_ids": [
-      "0122909503"
-    ]
+    "birth_date": "09.1926"
   },
   {
     "soldier_id": "0052900024",
@@ -54775,12 +54797,12 @@
     "pdf_x_end": 635.7,
     "pdf_y_end": 370.4,
     "pdf_x_left": 196.5,
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "birth_place": "Gage kod Smoluće, Lukavac",
     "former_ids": [
       "0122909516"
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "birth_place": "Gage kod Smoluće, Lukavac"
   },
   {
     "soldier_id": "0052900025",
@@ -54798,15 +54820,15 @@
     "pdf_x_end": 625.0,
     "pdf_y_end": 787.6,
     "pdf_x_left": 184.7,
+    "former_ids": [
+      "0122909526"
+    ],
     "birth_place": "Poljana, Tuzla",
     "occupation": "zemljoradnik",
     "death_type": "streljan",
     "death_date": "1945",
     "rank": "borac",
-    "birth_date": "28.04.1924",
-    "former_ids": [
-      "0122909526"
-    ]
+    "birth_date": "28.04.1924"
   },
   {
     "soldier_id": "0052900026",
@@ -54824,12 +54846,12 @@
     "pdf_x_end": 660.1,
     "pdf_y_end": 453.7,
     "pdf_x_left": 362.0,
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "unit_detail": "3. bataljon, 18. hrvatska brigada",
     "former_ids": [
       "0122909568"
-    ]
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "unit_detail": "3. bataljon"
   },
   {
     "soldier_id": "0052900037",
@@ -54907,7 +54929,10 @@
         "source_page": 2669
       }
     ],
-    "unit_detail": "3. bataljon, 18. hrvatska brigada",
+    "former_ids": [
+      "0122909655"
+    ],
+    "unit_detail": "3. bataljon",
     "variants": {
       "death": [
         {
@@ -54915,10 +54940,7 @@
           "place": "Na grmeču"
         }
       ]
-    },
-    "former_ids": [
-      "0122909655"
-    ]
+    }
   },
   {
     "soldier_id": "0052900027",
@@ -54936,12 +54958,12 @@
     "pdf_x_end": 655.6,
     "pdf_y_end": 634.2,
     "pdf_x_left": 215.0,
-    "birth_place": "Tuzla",
-    "death_type": "poginuo",
-    "death_date": "12.1943",
     "former_ids": [
       "0122909636"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "poginuo",
+    "death_date": "12.1943"
   },
   {
     "soldier_id": "0052900028",
@@ -54959,13 +54981,13 @@
     "pdf_x_end": 626.6,
     "pdf_y_end": 548.7,
     "pdf_x_left": 327.8,
+    "former_ids": [
+      "0122909639"
+    ],
     "birth_place": "Donja Obodnica, Tuzla",
     "death_type": "poginuo",
     "death_date": "12.1943",
-    "unit_detail": "2. bataljon, 18. hrvatska brigada",
-    "former_ids": [
-      "0122909639"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0052900030",
@@ -54982,12 +55004,12 @@
     "pdf_y": 825.3,
     "pdf_x_end": 618.5,
     "pdf_y_end": 927.5,
-    "birth_place": "Tuzla",
-    "death_type": "poginuo",
-    "death_date": "18.03.1945",
     "former_ids": [
       "0122909671"
-    ]
+    ],
+    "birth_place": "Tuzla",
+    "death_type": "poginuo",
+    "death_date": "18.03.1945"
   },
   {
     "soldier_id": "0052900031",
@@ -55023,14 +55045,14 @@
         "source_page": 2661
       }
     ],
+    "former_ids": [
+      "0122909673"
+    ],
     "variants": {
       "born": [
         "1924"
       ]
-    },
-    "former_ids": [
-      "0122909673"
-    ]
+    }
   },
   {
     "soldier_id": "0052900032",
@@ -55047,13 +55069,13 @@
     "pdf_y": 587.7,
     "pdf_x_end": 491.1,
     "pdf_y_end": 744.6,
+    "former_ids": [
+      "0122909697"
+    ],
     "birth_place": "Tuzla",
     "death_type": "poginuo",
     "death_date": "1945",
-    "unit_detail": "2. bataljon, 18. hrvatska brigada",
-    "former_ids": [
-      "0122909697"
-    ]
+    "unit_detail": "2. bataljon"
   },
   {
     "soldier_id": "0052900033",
@@ -55071,10 +55093,10 @@
     "pdf_x_end": 646.2,
     "pdf_y_end": 924.6,
     "pdf_x_left": 207.0,
-    "birth_place": "Puračić, Lukavac",
     "former_ids": [
       "0122909700"
-    ]
+    ],
+    "birth_place": "Puračić, Lukavac"
   },
   {
     "soldier_id": "0052900003",
@@ -55087,13 +55109,13 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002506&pg_seq=529",
     "source_page": 531,
+    "former_ids": [
+      "0122955776"
+    ],
     "ethnicity": "Srpkinja",
     "death_type": "poginuo",
     "death_date": "20.03.1945",
     "death_place": "u Bakije Sarajevo",
-    "birth_place": "Romanije Sokolac, Sokolac",
-    "former_ids": [
-      "0122955776"
-    ]
+    "birth_place": "Romanije Sokolac, Sokolac"
   }
 ]

@@ -18299,8 +18299,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "D. Štrbci",
-    "birth_year": "1905"
+    "birth_year": "1905",
+    "death_place": "D. Štrbci"
   },
   {
     "soldier_id": "0003000386",
@@ -24837,8 +24837,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Udbina",
     "birth_year": "1923",
+    "death_place": "Udbina",
     "variants": {
       "death": [
         {
@@ -25737,8 +25737,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Perjasica",
-    "birth_year": "1913"
+    "birth_year": "1913",
+    "death_place": "Perjasica"
   },
   {
     "soldier_id": "0003000533",
@@ -33471,7 +33471,7 @@
         },
         {
           "date": "08.04.1945",
-          "place": "Lipovac"
+          "place": "Vrbanja"
         }
       ]
     }
@@ -43257,8 +43257,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Livno, Bosna",
-    "birth_year": "1922"
+    "birth_year": "1922",
+    "death_place": "Livno, Bosna"
   },
   {
     "soldier_id": "0003000895",
@@ -62781,7 +62781,15 @@
         "unit_detail": "1. bataljon",
         "unit_file": "soldiers.json"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "04.04.1943",
+          "place": "Pađeni"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0003001293",
@@ -67762,8 +67770,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Gračac",
-    "birth_year": "1924"
+    "birth_year": "1924",
+    "death_place": "Gračac"
   },
   {
     "soldier_id": "0003001396",
@@ -192460,10 +192468,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1923",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Vašica, Srem",
-    "birth_year": "1923"
+    "death_place": "Vašica, Srem"
   },
   {
     "last_name": "Perić",
@@ -193912,8 +193920,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Mozin",
-    "birth_year": "1909"
+    "birth_year": "1909",
+    "death_place": "Mozin"
   },
   {
     "last_name": "Polovina",
@@ -196202,6 +196210,12 @@
     "variants": {
       "born": [
         "1925"
+      ],
+      "death": [
+        {
+          "date": "1945",
+          "place": "Ostrvica"
+        }
       ]
     }
   },
@@ -216456,15 +216470,7 @@
       "0122907619"
     ],
     "occupation": "seljak",
-    "rank": "borac",
-    "variants": {
-      "death": [
-        {
-          "date": "1943",
-          "place": "Bjeljevina, Lika"
-        }
-      ]
-    }
+    "rank": "borac"
   },
   {
     "soldier_id": "0003900016",

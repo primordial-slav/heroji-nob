@@ -1586,8 +1586,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Kod vrlike",
-    "birth_year": "1905"
+    "birth_year": "1905",
+    "death_place": "Kod vrlike"
   },
   {
     "last_name": "Bodić",
@@ -5732,8 +5732,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Mić",
-    "birth_year": "1923"
+    "birth_year": "1923",
+    "death_place": "Mić"
   },
   {
     "last_name": "Katič",
@@ -8947,8 +8947,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Livno",
-    "birth_year": "1922"
+    "birth_year": "1922",
+    "death_place": "Livno"
   },
   {
     "last_name": "Mišić",
@@ -14190,15 +14190,7 @@
       "birth_year",
       "ethnicity"
     ],
-    "birth_year": "1908",
-    "variants": {
-      "death": [
-        {
-          "date": "1943",
-          "place": "Studenci, Bosna"
-        }
-      ]
-    }
+    "birth_year": "1908"
   },
   {
     "last_name": "Županović",
@@ -25017,7 +25009,7 @@
     "other_sources": [
       {
         "soldier_id": "0168000737",
-        "name": "Dadić Spira Ivan",
+        "name": "Dadić Špira Ivan",
         "additional_info": "Klis, Solin",
         "pdf_file": "4-pomorski-sektor.pdf",
         "pdf_page": 11,
@@ -31091,6 +31083,20 @@
     "unit_detail": "3. bataljon",
     "other_sources": [
       {
+        "soldier_id": "0007010120",
+        "name": "Grubišić Ante Mirko",
+        "additional_info": "zvani Milan; Pregled štabova i komandi 2. dalmatinske brigade: politički komesar 2. bataljona.",
+        "pdf_file": "2-dalmatinska-stabovi.pdf",
+        "pdf_page": 6,
+        "pdf_x": 52.9,
+        "pdf_y": 330.2,
+        "pdf_x_end": 152.2,
+        "pdf_y_end": 340.2,
+        "unit_detail": "2. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "2-dalmatinska-soldiers.json"
+      },
+      {
         "soldier_id": "0041000338",
         "name": "Grubišić Ante Mirko",
         "additional_info": "politički komesar 1. čete 4. bataljona, rođen 1915, Solin, Split, radnik, Hrvat, u NOB od 1941, član KPJ od 1938, krajem rata politički komesar bataljona.",
@@ -35116,9 +35122,9 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1923",
     "death_type": "poginuo",
-    "death_date": "1943",
-    "birth_year": "1923"
+    "death_date": "1943"
   },
   {
     "last_name": "Kasum",
@@ -40245,11 +40251,10 @@
   {
     "last_name": "Lukić",
     "first_name": "Milisav",
-    "middle_name": "",
-    "fathers_name": "",
-    "full_name": "Lukić Milisav",
+    "middle_name": "Krste",
+    "fathers_name": "Krsto",
+    "full_name": "Lukić Krste Milisav",
     "additional_info": "zvani Misa; .., .., zamjenik komesara brigade",
-    "birth_year": "",
     "soldier_id": "0008001834",
     "pdf_page": 52,
     "pdf_y": 69.8,
@@ -40257,7 +40262,35 @@
     "pdf_y_end": 78.8,
     "pdf_file": "4-splitska-brigada.pdf",
     "rank": "zamjenik komesara brigade",
-    "pdf_x_end": 341.7
+    "pdf_x_end": 341.7,
+    "birth_year": "1922",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Donja Gorevnica, Cačak",
+    "ethnicity": "Srbin",
+    "occupation": "đak",
+    "party": "KPJ 1940",
+    "other_sources": [
+      {
+        "soldier_id": "0039100543",
+        "name": "Lukić Krste Milisav",
+        "additional_info": "zvani Misa; politički komesar 2. bataljona, rođen 1922, Donja Gorevnica, Cačak, đak, Srbin, u NOB od 1941, SKOJ-a od 1938, član KPJ od 1940, krajem rata zamenik političkog komesara 4. splitske omladinske brigade.",
+        "pdf_file": "borci-sutjeske-druga-proleterska.pdf",
+        "pdf_page": 35,
+        "pdf_x": 128.1,
+        "pdf_y": 342.1,
+        "pdf_x_end": 297.7,
+        "pdf_y_end": 417.5,
+        "unit_detail": "2. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "druga-proleterska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Lukin",
@@ -53086,6 +53119,13 @@
     "death_type": "umro",
     "death_date": "18.07.2006",
     "death_place": "Split",
+    "family_fields": [
+      "birth_date",
+      "birth_year",
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000092",
@@ -53094,13 +53134,6 @@
         "source_url": "porodica:9990000092",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "birth_date",
-      "birth_year",
-      "death_date",
-      "death_place",
-      "death_type"
     ]
   },
   {
@@ -63043,6 +63076,12 @@
     "unit_detail": "2. četa, 2. bataljon; 16. slavonska omladinska brigada „Joža Vlahović”",
     "rank": "borac",
     "pdf_x_end": 375.1,
+    "family_fields": [
+      "birth_year",
+      "fathers_name",
+      "middle_name",
+      "unit_detail"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000038",
@@ -63051,12 +63090,6 @@
         "source_url": "porodica:9990000038",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "birth_year",
-      "fathers_name",
-      "middle_name",
-      "unit_detail"
     ]
   },
   {

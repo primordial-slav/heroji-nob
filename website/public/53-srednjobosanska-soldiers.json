@@ -2281,9 +2281,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1911",
     "death_date": "1943",
-    "death_place": "Šiprage, K. Varoš",
-    "birth_year": "1911"
+    "death_place": "Šiprage, K. Varoš"
   },
   {
     "last_name": "Budak",
@@ -11417,8 +11417,8 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1943",
-    "birth_year": "1925"
+    "birth_year": "1925",
+    "death_date": "1943"
   },
   {
     "last_name": "Marić",
@@ -12520,8 +12520,8 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_place": "Topola, Banja Luka",
-    "birth_year": "1924"
+    "birth_year": "1924",
+    "death_place": "Topola, Banja Luka"
   },
   {
     "last_name": "Milaković",
@@ -13444,7 +13444,23 @@
     "death_date": "26.10.1944",
     "death_place": "Vel. Prnjavor",
     "pdf_x_end": 652.8,
-    "unit_detail": "1. bataljon, 14. brigada"
+    "unit_detail": "1. bataljon, 14. brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0056001369",
+        "name": "Mrćela I Anton",
+        "additional_info": "rođen 1912, Privlaka, Vinkovci, borac 1. bat. poginuo 26. oktobra 1944. god. Veliki Prnjavor, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 17,
+        "pdf_x": 134.6,
+        "pdf_y": 380.1,
+        "pdf_x_end": 493.5,
+        "pdf_y_end": 400.6,
+        "unit_detail": "1. bataljon",
+        "rank": "borac",
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Muhić",
@@ -14991,7 +15007,21 @@
     "death_date": "15.04.1945",
     "death_place": "Teslić",
     "pdf_x_end": 778.8,
-    "unit_detail": "19. brigada"
+    "unit_detail": "19. brigada",
+    "other_sources": [
+      {
+        "soldier_id": "9021006342",
+        "name": "Pilski (Franjo) Stjepan",
+        "additional_info": "rođen 1923, Pila (Donja Stubica). Hrvat, poginuo 1945. u NOBu, Bosna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=287",
+        "source_page": 287,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Pirog",
@@ -20359,7 +20389,29 @@
     "death_date": "08.04.1945",
     "death_place": "Ritešić",
     "pdf_x_end": 518.2,
-    "unit_detail": "14. brigada"
+    "unit_detail": "14. brigada",
+    "other_sources": [
+      {
+        "soldier_id": "0056002174",
+        "name": "Tomić S Antun",
+        "additional_info": "rođen 1912, Kukujevci, Sid, borac tehn. čete brigade, poginuo 8. marta 1945. 1945. god. Ritešić, Doboj.",
+        "pdf_file": "14-srednjobosanska.pdf",
+        "pdf_page": 26,
+        "pdf_x": 96.6,
+        "pdf_y": 328.2,
+        "pdf_x_end": 454.8,
+        "pdf_y_end": 349.7,
+        "rank": "borac",
+        "unit_file": "14-srednjobosanska-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "08.03.1945"
+        }
+      ]
+    }
   },
   {
     "last_name": "Tomić",
@@ -23589,9 +23641,9 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1890",
     "death_date": "1945",
-    "death_place": "Korićani, Travnik",
-    "birth_year": "1890"
+    "death_place": "Korićani, Travnik"
   },
   {
     "last_name": "Dimić",

@@ -42321,7 +42321,15 @@
     "ethnicity": "Musliman",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Kostajnica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Ljubijankić",
@@ -52398,7 +52406,15 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1943",
+          "place": "Drenovača, Lika"
+        }
+      ]
+    }
   },
   {
     "last_name": "Miljević",
@@ -107013,6 +107029,19 @@
         "additional_info": "rođen 1923, Marindol (Črnomelj). Srbin, poginuo 1944. u NOBu, 8 brigada",
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=63",
         "source_page": 63
+      },
+      {
+        "soldier_id": "0004000327",
+        "name": "Bunjevac Petra Peter",
+        "additional_info": "1923, Marindol, Adlešiči",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 401,
+        "pdf_x": 135.1,
+        "pdf_y": 553.3,
+        "pdf_x_end": 265.3,
+        "pdf_y_end": 569.1,
+        "pdf_x_left": 137.1,
+        "unit_file": "ljubljanska-soldiers.json"
       }
     ],
     "former_ids": [
@@ -112011,15 +112040,7 @@
       "0122908347"
     ],
     "occupation": "seljak",
-    "rank": "borac",
-    "variants": {
-      "death": [
-        {
-          "date": "1945",
-          "place": "Karlovac"
-        }
-      ]
-    }
+    "rank": "borac"
   },
   {
     "soldier_id": "0060900183",
@@ -113748,7 +113769,7 @@
     "last_name": "Prodanović",
     "middle_name": "Deve",
     "first_name": "Dužan",
-    "fathers_name": "Deve",
+    "fathers_name": "Deva",
     "full_name": "Prodanović Deve Dužan",
     "additional_info": "Trojvrh, općina Josipdol: 1923, seljak. Srbin, stupio u NOV 1941, borac 3. brig. 8. div., poginuo 30. 4. 1944. kod Babina Potoka",
     "birth_year": "1923",
@@ -114239,16 +114260,48 @@
     "pdf_y": 283.6,
     "pdf_x_end": 471.7,
     "pdf_y_end": 318.8,
-    "former_ids": [
-      "0122907637"
-    ],
-    "birth_place": "Ruševica",
+    "birth_place": "Ruševica, Slunj",
     "ethnicity": "Srbin",
-    "occupation": "seljak",
     "death_type": "poginuo",
     "death_date": "27.04.1943",
     "death_place": "Plaški",
-    "rank": "komandir voda"
+    "from_columns": [
+      "death_type",
+      "death_date",
+      "death_place"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "9021044016",
+        "name": "Ribić (Mile) Dušan",
+        "additional_info": "rođen 1919, Ruševica (Slunj). Srbin, poginuo 1943. u NOBu, Siča- kordun",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2147",
+        "source_page": 2147
+      },
+      {
+        "soldier_id": "9021044015",
+        "name": "Ribić (Mile) Dušan",
+        "additional_info": "rođen 1919, Ruševica (Slunj). Srbin, poginuo 1943. u NOBu, Ploski",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2147",
+        "source_page": 2147
+      }
+    ],
+    "former_ids": [
+      "0122907637"
+    ],
+    "occupation": "seljak",
+    "rank": "komandir voda",
+    "variants": {
+      "born": [
+        "1919"
+      ],
+      "death": [
+        {
+          "date": "1943",
+          "place": "Siča, Kordun"
+        }
+      ]
+    }
   },
   {
     "soldier_id": "0060900355",

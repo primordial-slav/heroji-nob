@@ -302,7 +302,23 @@
     "soldier_id": "0078000010",
     "death_date": "07.02.1945",
     "death_place": "Aleksandrovac",
-    "pdf_x_end": 329.6
+    "pdf_x_end": 329.6,
+    "other_sources": [
+      {
+        "soldier_id": "0111010026",
+        "name": "Antunović Jakov",
+        "additional_info": "1925, Subotica, borac, poginuo 7. 2. 1945. u Suhopolju.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 24,
+        "pdf_x": 96.6,
+        "pdf_y": 243.9,
+        "pdf_x_end": 369.1,
+        "pdf_y_end": 260.9,
+        "unit_detail": "8. vojvođanska brigada",
+        "rank": "borac",
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Antunović",
@@ -5125,7 +5141,21 @@
     "soldier_id": "0078000182",
     "death_date": "20.11.1944",
     "death_place": "na Dunavu kod Kazuka",
-    "pdf_x_end": 343.2
+    "pdf_x_end": 343.2,
+    "other_sources": [
+      {
+        "soldier_id": "0111000101",
+        "name": "Dekanj Anton",
+        "additional_info": "rođ. 1923, Tavankut (Subotica), pog. 20. 11. 1944, Kazuk.",
+        "pdf_file": "51-divizija.pdf",
+        "pdf_page": 4,
+        "pdf_x": 298.2,
+        "pdf_y": 826.8,
+        "pdf_x_end": 570.9,
+        "pdf_y_end": 845.8,
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dekanović",
@@ -6702,8 +6732,8 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_place": "Saševo, Batočina",
-    "birth_year": "1922"
+    "birth_year": "1922",
+    "death_place": "Saševo, Batočina"
   },
   {
     "last_name": "Gala",
@@ -7079,10 +7109,10 @@
   },
   {
     "last_name": "Glogić",
-    "middle_name": "",
+    "middle_name": "P",
     "first_name": "Anton",
-    "fathers_name": "",
-    "full_name": "Glogić Anton",
+    "fathers_name": "P",
+    "full_name": "Glogić P Anton",
     "additional_info": "rođ. 1923, Slavonski Brod, vodnik, poginuo u Baranjskom Petrovom Selu 10. III 1945.",
     "birth_year": "1923",
     "birth_place": "Slavonski Brod",
@@ -7096,7 +7126,23 @@
     "death_date": "10.03.1945",
     "death_place": "Baranjsko Petrovo Selo",
     "rank": "vodnik",
-    "pdf_x_end": 341.3
+    "pdf_x_end": 341.3,
+    "other_sources": [
+      {
+        "soldier_id": "0111010367",
+        "name": "Glogić P Antun",
+        "additional_info": "1923, SI. Brod, vodnik, poginuo 10. 3. 1945. kod mesta Bar. Petrovo Selo.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 28,
+        "pdf_x": 75.5,
+        "pdf_y": 409.5,
+        "pdf_x_end": 356.1,
+        "pdf_y_end": 426.6,
+        "unit_detail": "8. vojvođanska brigada",
+        "rank": "vodnik",
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Glumac",
@@ -14873,7 +14919,29 @@
     "soldier_id": "0078000509",
     "death_date": "08.05.1945",
     "death_place": "Ptuj",
-    "pdf_x_end": 348.4
+    "pdf_x_end": 348.4,
+    "other_sources": [
+      {
+        "soldier_id": "9027009785",
+        "name": "Lerinc (Mihalj) Jožef",
+        "additional_info": "rođen 1925, Palić (Subotica). Mađar, poginuo 1945. u NOBu, Varaždin",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=504",
+        "source_page": 504,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "Mađar",
+    "borrowed": [
+      "ethnicity"
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Varaždin"
+        }
+      ]
+    }
   },
   {
     "last_name": "Lerinc",

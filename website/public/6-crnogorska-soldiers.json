@@ -2448,9 +2448,9 @@
       "death_place",
       "ethnicity"
     ],
+    "ethnicity": "Crnogorac",
     "death_date": "1944",
-    "death_place": "Danilovgrad",
-    "ethnicity": "Crnogorac"
+    "death_place": "Danilovgrad"
   },
   {
     "last_name": "Jovović",
@@ -2842,12 +2842,12 @@
         "ref_book": "niksicki-odred-pali-borci"
       }
     ],
-    "death_date": "1944",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place"
     ],
+    "death_date": "1944",
     "death_place": "Brezovik"
   },
   {
@@ -8866,16 +8866,16 @@
         "ref_book": "niksicki-odred-pali-borci"
       }
     ],
-    "death_date": "1944",
+    "birth_year": "1890",
     "borrowed": [
       "birth_year",
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Zagarač",
-    "birth_year": "1890",
-    "ethnicity": "Crnogorac"
+    "ethnicity": "Crnogorac",
+    "death_date": "1944",
+    "death_place": "Zagarač"
   },
   {
     "last_name": "Vuletić",
@@ -9941,7 +9941,15 @@
         "pdf_x_left": 179.3,
         "ref_book": "lovcenski-odred-pali-borci"
       }
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Štitarica"
+        }
+      ]
+    }
   },
   {
     "last_name": "Šaletić",

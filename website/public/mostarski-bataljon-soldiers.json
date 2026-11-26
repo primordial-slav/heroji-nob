@@ -1482,8 +1482,22 @@
         "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=6b106046-9636-495b-a1d2-ee797e7c60e3/00000001/00000001/00001279&pg_seq=63",
         "source_page": 41,
         "ref_book": "zbornik-heroja-1957"
+      },
+      {
+        "soldier_id": "9022023044",
+        "name": "Batko (Valentin) Karlo",
+        "additional_info": "rođen 1907, Mostar. Crnogorac, poginuo 1943. u NOBu, Ostrožac",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1852",
+        "source_page": 1852,
+        "ref_book": "zrtve-rata-1964-bih"
       }
     ],
+    "ethnicity": "Crnogorac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Ostrožac",
     "birth_date": "17.05.1907"
   },
   {
@@ -19300,7 +19314,21 @@
     "occupation": "radnik",
     "rank": "desetar",
     "pdf_x_end": 470.4,
-    "party": "SKOJ 1941"
+    "party": "SKOJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0100001492",
+        "name": "Skočajić Maksima Branko",
+        "additional_info": "zvani Mešak",
+        "pdf_file": "13-hercegovacka.pdf",
+        "pdf_page": 28,
+        "pdf_x": 24.2,
+        "pdf_y": 298.9,
+        "pdf_x_end": 184.3,
+        "pdf_y_end": 306.9,
+        "unit_file": "13-hercegovacka-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Skopljak",

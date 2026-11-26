@@ -5543,13 +5543,13 @@
         "ref_book": "zrtve-rata-1964-voj"
       }
     ],
-    "death_date": "1943",
+    "ethnicity": "Srbin",
     "borrowed": [
       "death_date",
       "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
+    "death_date": "1943",
     "death_place": "Glamoč"
   },
   {
@@ -18945,8 +18945,8 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_date": "1945",
-    "birth_year": "1926"
+    "birth_year": "1926",
+    "death_date": "1945"
   },
   {
     "last_name": "Knežević",
@@ -32988,12 +32988,6 @@
     "variants": {
       "born": [
         "1910"
-      ],
-      "death": [
-        {
-          "date": "1943",
-          "place": "Bos. Milanovac"
-        }
       ]
     }
   },
@@ -43428,8 +43422,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Donji Agići",
-    "birth_year": "1916"
+    "birth_year": "1916",
+    "death_place": "Donji Agići"
   },
   {
     "last_name": "Serdar",
@@ -48663,8 +48657,8 @@
       "death_place",
       "ethnicity"
     ],
-    "death_place": "Ljubija",
-    "birth_year": "1923"
+    "birth_year": "1923",
+    "death_place": "Ljubija"
   },
   {
     "last_name": "Tubin",
@@ -63471,6 +63465,11 @@
     "soldier_id": "0013010199",
     "pdf_x_end": 197.6,
     "birth_place": "Bihać",
+    "family_fields": [
+      "birth_place",
+      "birth_year",
+      "fathers_name"
+    ],
     "other_sources": [
       {
         "soldier_id": "9990000101",
@@ -63479,11 +63478,6 @@
         "source_url": "porodica:9990000101",
         "ref_book": "porodicna-arhiva"
       }
-    ],
-    "family_fields": [
-      "birth_place",
-      "birth_year",
-      "fathers_name"
     ]
   },
   {
@@ -89833,7 +89827,6 @@
     "fathers_name": "Milan",
     "full_name": "Vojvodić Milana Vid",
     "additional_info": "zvani Vico",
-    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 283.5,
     "pdf_x": 106.0,
@@ -89852,8 +89845,33 @@
         "pdf_y": 543.5,
         "pdf_x_end": 364.6,
         "pdf_y_end": 553.2
+      },
+      {
+        "soldier_id": "0117000604",
+        "name": "Vojvodić Milana Vid",
+        "additional_info": "zvani Vico; borac zaštitne čete Centralne bolnice, rođen 1909, Tuk Bobija, Sanski Most, šumski radnik, Srbin, u NOB od 1941, član KPJ od 1943. godine",
+        "pdf_file": "borci-sutjeske-centralna-bolnica.pdf",
+        "pdf_page": 39,
+        "pdf_x": 49.1,
+        "pdf_y": 168.2,
+        "pdf_x_end": 220.2,
+        "pdf_y_end": 222.1,
+        "rank": "borac",
+        "unit_file": "centralna-bolnica-soldiers.json"
       }
-    ]
+    ],
+    "birth_year": "1909",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "ethnicity",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Tuk Bobija, Sanski Most",
+    "ethnicity": "Srbin",
+    "occupation": "šumski radnik",
+    "party": "KPJ 1943"
   },
   {
     "last_name": "Vorća",
@@ -101697,14 +101715,14 @@
     "pdf_x_end": 375.8,
     "pdf_y_end": 277.1,
     "pdf_x_left": 17.5,
+    "former_ids": [
+      "0122939283"
+    ],
     "birth_place": "Reljinci",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "04.1945",
-    "rank": "borac",
-    "former_ids": [
-      "0122939283"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900107",
@@ -101722,15 +101740,15 @@
     "pdf_x_end": 418.3,
     "pdf_y_end": 473.8,
     "pdf_x_left": 61.5,
+    "former_ids": [
+      "0122906267"
+    ],
     "birth_place": "Cerovo",
     "occupation": "krojač",
     "death_type": "umro",
     "death_date": "12.07.1948",
     "death_place": "Cerovo",
-    "rank": "borac",
-    "former_ids": [
-      "0122906267"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900101",
@@ -101811,15 +101829,15 @@
     "pdf_x_end": 369.3,
     "pdf_y_end": 451.5,
     "pdf_x_left": 12.0,
+    "former_ids": [
+      "0122905601"
+    ],
     "birth_place": "Bresnica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "25.02.1945",
     "death_place": "Sremski front",
-    "rank": "borac",
-    "former_ids": [
-      "0122905601"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900010",
@@ -102571,11 +102589,11 @@
         "source_page": 828
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "former_ids": [
       "0122905604"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900040",
@@ -102747,14 +102765,14 @@
     "pdf_x_end": 428.9,
     "pdf_y_end": 348.4,
     "pdf_x_left": 71.3,
+    "former_ids": [
+      "0122905605"
+    ],
     "birth_place": "Bresnica",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "24.02.1946",
-    "rank": "borac",
-    "former_ids": [
-      "0122905605"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900007",
@@ -103544,15 +103562,15 @@
     "pdf_x_end": 415.6,
     "pdf_y_end": 202.8,
     "pdf_x_left": 58.3,
+    "former_ids": [
+      "0122906234"
+    ],
     "birth_place": "Svračkovci",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Gradačac",
-    "rank": "borac",
-    "former_ids": [
-      "0122906234"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0013900075",

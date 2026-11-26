@@ -68,9 +68,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1922",
     "death_date": "1943",
-    "death_place": "Baška grapa",
-    "birth_year": "1922"
+    "death_place": "Baška grapa"
   },
   {
     "last_name": "Abunar",
@@ -762,6 +762,14 @@
         "ref_book": "xxxi-divizija-stabi"
       },
       {
+        "soldier_id": "9020015539",
+        "name": "Avsec (Franc) Jože",
+        "additional_info": "rođen 1922, Bistrica pri Mokronogu (Trebnje). Slovenac, poginuo 1944. u NOBu, Cerkno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=541",
+        "source_page": 541,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
         "soldier_id": "0068000018",
         "name": "Avsec Jože",
         "additional_info": "zvani Čapajev; Bistrica, 1922-1944",
@@ -801,7 +809,11 @@
     "unit_detail": "štab brigade",
     "death_type": "umro",
     "death_date": "08.02.1944",
-    "death_place": "Cerkljanski vrh"
+    "death_place": "Cerkljanski vrh",
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Avsenik",
@@ -1419,9 +1431,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1922",
     "death_date": "1943",
-    "death_place": "Ravne pri žireh",
-    "birth_year": "1922"
+    "death_place": "Ravne pri žireh"
   },
   {
     "last_name": "Bandi",
@@ -2151,7 +2163,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000116",
     "birth_place": "Robi, Levpa",
-    "pdf_x_end": 213.9
+    "pdf_x_end": 213.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020009412",
+        "name": "Bavdaž (Ivan) Stanko",
+        "additional_info": "rođen 1912, Levpa (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Gorenja-trebuša",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=342",
+        "source_page": 342,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Gorenja Trebuša"
   },
   {
     "last_name": "Bavdaž",
@@ -2169,7 +2199,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000117",
     "birth_place": "Zavrh, Levpa",
-    "pdf_x_end": 207.9
+    "pdf_x_end": 207.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020009411",
+        "name": "Bavdaž (Andrej) Stanislav",
+        "additional_info": "rođen 1926, Levpa (Nova Gorica). Slovenac, poginuo 1944. u NOBu, Cerkno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=342",
+        "source_page": 342,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Cerkno"
   },
   {
     "last_name": "Bavdek",
@@ -2450,7 +2498,21 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000129",
     "birth_place": "Grudnica, Idrija pri Bači",
-    "pdf_x_end": 199.8
+    "pdf_x_end": 199.8,
+    "other_sources": [
+      {
+        "soldier_id": "0062000101",
+        "name": "Bačar Jože",
+        "additional_info": "1901, Grudnica",
+        "pdf_file": "gubceva.pdf",
+        "pdf_page": 2,
+        "pdf_x": 16.3,
+        "pdf_y": 43.6,
+        "pdf_x_end": 124.3,
+        "pdf_y_end": 52.1,
+        "unit_file": "gubceva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Bačar",
@@ -4102,7 +4164,27 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000224",
     "birth_place": "Kanomlje",
-    "pdf_x_end": 91.6
+    "pdf_x_end": 91.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020002915",
+        "name": "Bizjak (Franc) Janez",
+        "additional_info": "rođen 1922, Gorenja Kanomlja (Idrija). Slovenac, poginuo 1943. u NOBu, Col",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=108",
+        "source_page": 108,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Col"
   },
   {
     "last_name": "Bizjak",
@@ -7956,10 +8038,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1894",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Voglarji",
-    "birth_year": "1894"
+    "death_place": "Voglarji"
   },
   {
     "last_name": "Cej",
@@ -9230,7 +9312,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000501",
     "birth_place": "Koritnica",
-    "pdf_x_end": 94.6
+    "pdf_x_end": 94.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020014837",
+        "name": "Cvek (Ivan) Jožef",
+        "additional_info": "rođen 1923, Koritnica (Tolmin). Slovenac, poginuo 1943. u NOBu, Cerkno",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=522",
+        "source_page": 522,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Cerkno"
   },
   {
     "last_name": "Cvek",
@@ -11550,7 +11650,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000627",
     "birth_place": "Vipava",
-    "pdf_x_end": 302.0
+    "pdf_x_end": 302.0,
+    "other_sources": [
+      {
+        "soldier_id": "9020000410",
+        "name": "Ferjančić (Ivan) Ivan",
+        "additional_info": "rođen 1906, Vipava (Ajdovščina). Slovenac, poginuo od ustaša 1943. u NOBu, Vipava",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=11",
+        "source_page": 11,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Vipava"
   },
   {
     "last_name": "Ferjančič",
@@ -11705,9 +11823,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1928",
     "death_date": "1945",
-    "death_place": "Jesenica, Borcu",
-    "birth_year": "1928"
+    "death_place": "Jesenica, Borcu"
   },
   {
     "last_name": "Ferletič",
@@ -12783,9 +12901,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1920",
     "death_date": "1944",
-    "death_place": "Črni vrh",
-    "birth_year": "1920"
+    "death_place": "Črni vrh"
   },
   {
     "last_name": "Frelih",
@@ -13625,7 +13743,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000735",
     "birth_place": "Bovec",
-    "pdf_x_end": 300.8
+    "pdf_x_end": 300.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020014625",
+        "name": "Gašperčič (Jožef) Jožef",
+        "additional_info": "rođen 1920, Bovec (Tolmin). Slovenac, poginuo 1943. u NOBu, Čersoča",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=517",
+        "source_page": 517,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Čersoča"
   },
   {
     "last_name": "Gašperšič",
@@ -13643,7 +13779,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000736",
     "birth_place": "Bovec",
-    "pdf_x_end": 121.0
+    "pdf_x_end": 121.0,
+    "other_sources": [
+      {
+        "soldier_id": "9020014627",
+        "name": "Gasperšič (Matija) Karel",
+        "additional_info": "rođen 1917, Bovec (Tolmin). Slovenac, poginuo 1943. u NOBu, Nanos",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=517",
+        "source_page": 517,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Nanos"
   },
   {
     "last_name": "Gašperšič",
@@ -15448,7 +15602,30 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064000833",
     "birth_place": "Prvačina",
-    "pdf_x_end": 136.1
+    "pdf_x_end": 136.1,
+    "other_sources": [
+      {
+        "soldier_id": "9020009741",
+        "name": "Gregorič (Henerik) Karol",
+        "additional_info": "rođen 1926, Prvačina (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Prvačina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=351",
+        "source_page": 351,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Prvačina",
+    "variants": {
+      "born": [
+        "1926"
+      ]
+    }
   },
   {
     "last_name": "Gregorič",
@@ -16051,9 +16228,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1908",
     "death_date": "1945",
-    "death_place": "Trnovo",
-    "birth_year": "1908"
+    "death_place": "Trnovo"
   },
   {
     "last_name": "Gruden",
@@ -18737,7 +18914,23 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001005",
     "birth_place": "Banjšice",
-    "pdf_x_end": 203.2
+    "pdf_x_end": 203.2,
+    "other_sources": [
+      {
+        "soldier_id": "9020009024",
+        "name": "Ipavec (Jožef) Jožef",
+        "additional_info": "rođen 1921, Banjšice (Nova Gorica). Slovenac, nestao 1945. u NOBu, Vojkova brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=332",
+        "source_page": 332,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1945"
   },
   {
     "last_name": "Ipavec",
@@ -20203,9 +20396,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1910",
     "death_date": "1943",
-    "death_place": "Kanal lom",
-    "birth_year": "1910"
+    "death_place": "Kanal lom"
   },
   {
     "last_name": "Jež",
@@ -20919,9 +21112,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1901",
     "death_date": "1943",
-    "death_place": "Pri gorici",
-    "birth_year": "1901"
+    "death_place": "Pri gorici"
   },
   {
     "last_name": "Kancler",
@@ -21228,7 +21421,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001135",
     "birth_place": "Trenta",
-    "pdf_x_end": 294.6
+    "pdf_x_end": 294.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020015129",
+        "name": "Kavs (Jožef) Jožef",
+        "additional_info": "rođen 1920, Trenta (Tolmin). Slovenac, poginuo 1944. u NOBu, Ž.vrh na Položa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=531",
+        "source_page": 531,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Ž. Vrh na Položa"
   },
   {
     "last_name": "Kavs",
@@ -21485,7 +21696,27 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001150",
     "birth_place": "Senožeče",
-    "pdf_x_end": 294.8
+    "pdf_x_end": 294.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020013304",
+        "name": "Kavčič (Franc) Jožef",
+        "additional_info": "rođen 1915, Senožeče (Sežana). Slovenac, poginuo 1944. u NOBu, Podkraj vipava",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=471",
+        "source_page": 471,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Podkraj vipava"
   },
   {
     "last_name": "Kavčič",
@@ -22829,7 +23060,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001223",
     "birth_place": "Prapetno",
-    "pdf_x_end": 111.6
+    "pdf_x_end": 111.6,
+    "other_sources": [
+      {
+        "soldier_id": "9020015023",
+        "name": "Klobučar (Ivan) Ivan",
+        "additional_info": "rođen 1920, Prapetno (Tolmin). Slovenac, poginuo 1945. u NOBu, Sajevče Pri Pos",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=527",
+        "source_page": 527,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Sajevče pri Pos"
   },
   {
     "last_name": "Klun",
@@ -23070,7 +23319,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001237",
     "birth_place": "Zgornje Gorje",
-    "pdf_x_end": 83.3
+    "pdf_x_end": 83.3,
+    "other_sources": [
+      {
+        "soldier_id": "9020012096",
+        "name": "Kobal (Alojz) Lojze",
+        "additional_info": "rođen 1915, Zgornje Gorje (Radovljica). Slovenac, poginuo 1945. u NOBu, Postojna",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=426",
+        "source_page": 426,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Postojna"
   },
   {
     "last_name": "Kobal",
@@ -23698,9 +23965,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1902",
     "death_date": "1943",
-    "death_place": "Sp. Idrija",
-    "birth_year": "1902"
+    "death_place": "Sp. Idrija"
   },
   {
     "last_name": "Kodrič",
@@ -23818,7 +24085,23 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001273",
     "birth_place": "Čepovan",
-    "pdf_x_end": 86.4
+    "pdf_x_end": 86.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020009121",
+        "name": "Kofol (Alojz) Alojz",
+        "additional_info": "rođen 1912, Čepovan (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Gradnikova brigada",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=335",
+        "source_page": 335,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "ethnicity"
+    ],
+    "death_date": "1943"
   },
   {
     "last_name": "Kofol",
@@ -23836,7 +24119,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001274",
     "birth_place": "Čepovan",
-    "pdf_x_end": 86.4
+    "pdf_x_end": 86.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020009122",
+        "name": "Kofol (Janez) Alojz",
+        "additional_info": "rođen 1914, Čepovan (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Ošmi vrh",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=335",
+        "source_page": 335,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Ošmi vrh"
   },
   {
     "last_name": "Kofol",
@@ -25309,10 +25610,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Javornik, C. Vrh",
-    "birth_year": "1921"
+    "death_place": "Javornik, C. Vrh"
   },
   {
     "last_name": "Konstantini",
@@ -26108,7 +26409,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001394",
     "birth_place": "Logaršče",
-    "pdf_x_end": 186.0
+    "pdf_x_end": 186.0,
+    "other_sources": [
+      {
+        "soldier_id": "9020014909",
+        "name": "Kovačič (Neža) Ivan",
+        "additional_info": "rođen 1904, Logaršče (Tolmin). Slovenac, poginuo 1943. u NOBu, Drezniški Plani",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=524",
+        "source_page": 524,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Drezniški Plani"
   },
   {
     "last_name": "Kovačič",
@@ -26347,9 +26666,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1923",
     "death_date": "1943",
-    "death_place": "Primorsko",
-    "birth_year": "1923"
+    "death_place": "Primorsko"
   },
   {
     "last_name": "Košir",
@@ -28144,7 +28463,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001507",
     "birth_place": "Prvačina",
-    "pdf_x_end": 177.3
+    "pdf_x_end": 177.3,
+    "other_sources": [
+      {
+        "soldier_id": "9020009752",
+        "name": "Krpan (Franc) Jožef",
+        "additional_info": "rođen 1921, Prvačina (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Žiri",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=351",
+        "source_page": 351,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Žiri"
   },
   {
     "last_name": "Krpan",
@@ -29237,7 +29574,30 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064001567",
     "birth_place": "Kal nad Kanalom",
-    "pdf_x_end": 282.0
+    "pdf_x_end": 282.0,
+    "other_sources": [
+      {
+        "soldier_id": "9020009308",
+        "name": "Lango (Andrej) Stanislav",
+        "additional_info": "rođen 1908, Kal Nad Kanalom (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Koroškem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=339",
+        "source_page": 339,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Koroškem",
+    "variants": {
+      "born": [
+        "1908"
+      ]
+    }
   },
   {
     "last_name": "Langus",
@@ -32367,10 +32727,26 @@
         "pdf_y": 156.5,
         "pdf_y_end": 170.0,
         "pdf_x_end": 195.6
+      },
+      {
+        "soldier_id": "9020009785",
+        "name": "Lukežič (Anton) Stanislav",
+        "additional_info": "rođen 1907, Renče (Nova Gorica). Slovenac, poginuo 1944. u NOBu, Ravne Pri cerkn",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=352",
+        "source_page": 352,
+        "ref_book": "zrtve-rata-1964-slo"
       }
     ],
     "birth_place": "Renče",
     "pdf_x_end": 117.6,
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Ravne pri Cerknem",
     "variants": {
       "born": [
         "1908"
@@ -34560,9 +34936,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1906",
     "death_date": "1943",
-    "death_place": "Planina",
-    "birth_year": "1906"
+    "death_place": "Planina"
   },
   {
     "last_name": "Maver",
@@ -40478,7 +40854,27 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002162",
     "birth_place": "Dane",
-    "pdf_x_end": 308.6
+    "pdf_x_end": 308.6,
+    "other_sources": [
+      {
+        "soldier_id": "9021002497",
+        "name": "Orlić (Jura) Josip",
+        "additional_info": "rođen 1925, Dane (Buzet). Hrvat, poginuo 1944. u NOBu, Joševci Petrinj",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=89",
+        "source_page": 89,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Joševci Petrinj"
   },
   {
     "last_name": "Ortar",
@@ -41241,7 +41637,21 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002203",
     "birth_place": "Golo",
-    "pdf_x_end": 111.8
+    "pdf_x_end": 111.8,
+    "other_sources": [
+      {
+        "soldier_id": "0004001968",
+        "name": "Pangerc Stanko",
+        "additional_info": "1924, Golo, Ig",
+        "pdf_file": "ljubljanska-brigada.pdf",
+        "pdf_page": 427,
+        "pdf_x": 311.0,
+        "pdf_y": 580.8,
+        "pdf_x_end": 432.2,
+        "pdf_y_end": 588.8,
+        "unit_file": "ljubljanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Panherc",
@@ -41877,9 +42287,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1915",
     "death_date": "1944",
-    "death_place": "Predmeja",
-    "birth_year": "1915"
+    "death_place": "Predmeja"
   },
   {
     "last_name": "Pavlin",
@@ -43108,7 +43518,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002302",
     "birth_place": "Kal nad Kanalom",
-    "pdf_x_end": 192.8
+    "pdf_x_end": 192.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020009317",
+        "name": "Pertovt (Anton) Stanislav",
+        "additional_info": "rođen 1911, Kal Nad Kanalom (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Javornik",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=339",
+        "source_page": 339,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Javornik"
   },
   {
     "last_name": "Pervanja",
@@ -43646,7 +44074,22 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002328",
     "birth_place": "Zg. Gorje",
-    "pdf_x_end": 129.1
+    "pdf_x_end": 129.1,
+    "other_sources": [
+      {
+        "soldier_id": "0072000252",
+        "name": "Peterman Jožef",
+        "additional_info": "18. 3. 1906, Zg. Gorje-Bled",
+        "pdf_file": "artilerija-9-korpusa.pdf",
+        "pdf_page": 5,
+        "pdf_x": 49.7,
+        "pdf_y": 467.5,
+        "pdf_x_end": 216.9,
+        "pdf_y_end": 476.5,
+        "unit_file": "artilerija-9-korpusa-soldiers.json"
+      }
+    ],
+    "birth_date": "18.03.1906"
   },
   {
     "last_name": "Peternel",
@@ -44274,9 +44717,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1927",
     "death_date": "1945",
-    "death_place": "Šmarje, Ipova",
-    "birth_year": "1927"
+    "death_place": "Šmarje, Ipova"
   },
   {
     "last_name": "Pirc",
@@ -44982,7 +45425,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002402",
     "birth_place": "Trnovo",
-    "pdf_x_end": 191.4
+    "pdf_x_end": 191.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020009941",
+        "name": "Plesničar (Jožef) Jožef",
+        "additional_info": "rođen 1912, Trnovo (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Kuk,trnovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=356",
+        "source_page": 356,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Kuk, Trnovo"
   },
   {
     "last_name": "Plesničar",
@@ -46803,9 +47264,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1920",
     "death_date": "1945",
-    "death_place": "Cerkno",
-    "birth_year": "1920"
+    "death_place": "Cerkno"
   },
   {
     "last_name": "Prelaz",
@@ -48578,7 +49039,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002595",
     "birth_place": "Vitovlje",
-    "pdf_x_end": 296.8
+    "pdf_x_end": 296.8,
+    "other_sources": [
+      {
+        "soldier_id": "9020009980",
+        "name": "Remec (Jožef) Jožef",
+        "additional_info": "rođen 1926, Vitovlje (Nova Gorica). Slovenac, poginuo 1944. u NOBu, Lokve",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=357",
+        "source_page": 357,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Lokve"
   },
   {
     "last_name": "Remec",
@@ -50744,7 +51223,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002712",
     "birth_place": "Žabče",
-    "pdf_x_end": 118.9
+    "pdf_x_end": 118.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020015175",
+        "name": "Rutar (Miho) Miha",
+        "additional_info": "rođen 1925, Žabče (Tolmin). Slovenac, poginuo 1943. u NOBu, Golobarja",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=532",
+        "source_page": 532,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Golobarja"
   },
   {
     "last_name": "Rutar",
@@ -51704,7 +52201,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002757",
     "birth_place": "Hrašče pri Postojni",
-    "pdf_x_end": 125.5
+    "pdf_x_end": 125.5,
+    "other_sources": [
+      {
+        "soldier_id": "9020011007",
+        "name": "Sever (Andrija) Petar",
+        "additional_info": "rođen 1908, Hrašče (Postonja). Slovenac, poginuo 1945. u NOBu, Otlica",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=393",
+        "source_page": 393,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Otlica"
   },
   {
     "last_name": "Sibilja",
@@ -52170,9 +52685,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1921",
     "death_date": "1944",
-    "death_place": "Selška Planina",
-    "birth_year": "1921"
+    "death_place": "Selška Planina"
   },
   {
     "last_name": "Skok",
@@ -52414,9 +52929,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1925",
     "death_date": "1945",
-    "death_place": "Vojska",
-    "birth_year": "1925"
+    "death_place": "Vojska"
   },
   {
     "last_name": "Skrt",
@@ -52434,7 +52949,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002794",
     "birth_place": "Levpa",
-    "pdf_x_end": 108.5
+    "pdf_x_end": 108.5,
+    "other_sources": [
+      {
+        "soldier_id": "9020009431",
+        "name": "Skrt (Velentin) Peter",
+        "additional_info": "rođen 1906, Levpa (Nova Gorica). Slovenac, poginuo 1943. u NOBu, Levpa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=342",
+        "source_page": 342,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Levpa"
   },
   {
     "last_name": "Skrt",
@@ -53198,7 +53731,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002838",
     "birth_place": "Kranj, SDA",
-    "pdf_x_end": 211.3
+    "pdf_x_end": 211.3,
+    "other_sources": [
+      {
+        "soldier_id": "9020005050",
+        "name": "Stanič (August) Rudolf",
+        "additional_info": "rođen 1905, Kranj. Slovenac, poginuo 1944. u NOBu, Suha krajina",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=179",
+        "source_page": 179,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Suha krajina"
   },
   {
     "last_name": "Stante",
@@ -53520,7 +54071,27 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064002856",
     "birth_place": "Slap",
-    "pdf_x_end": 112.7
+    "pdf_x_end": 112.7,
+    "other_sources": [
+      {
+        "soldier_id": "9020000377",
+        "name": "Stopar (Jožef) Jožef",
+        "additional_info": "rođen 1923, Slap (Ajdovščina). Slovenac, poginuo 1944. u NOBu, Crni vrh",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=10",
+        "source_page": 10,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Crni vrh"
   },
   {
     "last_name": "Stopar",
@@ -59686,7 +60257,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003198",
     "birth_place": "Ajševica",
-    "pdf_x_end": 188.4
+    "pdf_x_end": 188.4,
+    "other_sources": [
+      {
+        "soldier_id": "9020008985",
+        "name": "Volk (Franc) Jožef",
+        "additional_info": "rođen 1926, Ajševica (Nova Gorica). Slovenac, poginuo 1944. u NOBu, Baška grapa",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=330",
+        "source_page": 330,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1944",
+    "death_place": "Baška grapa"
   },
   {
     "last_name": "Volk",
@@ -60013,7 +60602,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003215",
     "birth_place": "Lokovec",
-    "pdf_x_end": 199.9
+    "pdf_x_end": 199.9,
+    "other_sources": [
+      {
+        "soldier_id": "9020009486",
+        "name": "Vončina (Jakob) Peter",
+        "additional_info": "rođen 1914, Lokovec (Nova Gorica). Slovenac, poginuo 1945. u NOBu, Sveta ana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=344",
+        "source_page": 344,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1945",
+    "death_place": "Sveta ana"
   },
   {
     "last_name": "Vončina",
@@ -61314,7 +61921,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003287",
     "birth_place": "Hrašče pri Postojni",
-    "pdf_x_end": 302.5
+    "pdf_x_end": 302.5,
+    "other_sources": [
+      {
+        "soldier_id": "9020011010",
+        "name": "Zorman (Andrej) Marjan",
+        "additional_info": "rođen 1923, Hrašče (Postonja). Slovenac, poginuo 1943. u NOBu, Begunje",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=393",
+        "source_page": 393,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Begunje"
   },
   {
     "last_name": "Zorn",
@@ -61451,7 +62076,21 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003295",
     "birth_place": "Ljubljana",
-    "pdf_x_end": 301.5
+    "pdf_x_end": 301.5,
+    "other_sources": [
+      {
+        "soldier_id": "0061002667",
+        "name": "Zupan Jože",
+        "additional_info": "zvani Slobodin; 1920, Ljubljana",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 31,
+        "pdf_x": 159.7,
+        "pdf_y": 473.7,
+        "pdf_x_end": 259.6,
+        "pdf_y_end": 490.1,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Zupan",
@@ -62142,7 +62781,30 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003335",
     "birth_place": "Bilje",
-    "pdf_x_end": 183.9
+    "pdf_x_end": 183.9,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "17.04.1944",
+    "death_place": "Novaki",
+    "other_sources": [
+      {
+        "soldier_id": "0142000066",
+        "name": "Cerne Jože",
+        "additional_info": "rojen 9. februarja 1921, Bilje, padel 17. aprila 1944, Novaki",
+        "pdf_file": "kosovelova.pdf",
+        "pdf_page": 4,
+        "pdf_x": 161.7,
+        "pdf_y": 375.9,
+        "pdf_x_end": 285.1,
+        "pdf_y_end": 401.0,
+        "unit_file": "kosovelova-soldiers.json"
+      }
+    ],
+    "birth_date": "09.02.1921"
   },
   {
     "last_name": "Černe",
@@ -62582,9 +63244,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1907",
     "death_date": "1943",
-    "death_place": "Kolov, Venecija, Italija",
-    "birth_year": "1907"
+    "death_place": "Kolov, Venecija, Italija"
   },
   {
     "last_name": "Čibej",
@@ -63393,7 +64055,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003402",
     "birth_place": "Rakitnik pri Postojni",
-    "pdf_x_end": 226.3
+    "pdf_x_end": 226.3,
+    "other_sources": [
+      {
+        "soldier_id": "9020011142",
+        "name": "Šabec (Ivan) Anton",
+        "additional_info": "rođen 1925, Rakitnik (Postonja). Slovenac, poginuo 1943. u NOBu, Idrija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=397",
+        "source_page": 397,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Idrija"
   },
   {
     "last_name": "Šantelj",
@@ -63636,7 +64316,22 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003415",
     "birth_place": "Lokovec",
-    "pdf_x_end": 204.6
+    "pdf_x_end": 204.6,
+    "other_sources": [
+      {
+        "soldier_id": "0072000382",
+        "name": "Šavli Janez",
+        "additional_info": "29. 2. 1928, Zgornji Lokovec",
+        "pdf_file": "artilerija-9-korpusa.pdf",
+        "pdf_page": 7,
+        "pdf_x": 51.3,
+        "pdf_y": 180.7,
+        "pdf_x_end": 208.3,
+        "pdf_y_end": 189.7,
+        "unit_file": "artilerija-9-korpusa-soldiers.json"
+      }
+    ],
+    "birth_date": "29.02.1928"
   },
   {
     "last_name": "Šavli",
@@ -64066,7 +64761,25 @@
     "pdf_file": "gradnikova.pdf",
     "soldier_id": "0064003440",
     "birth_place": "Bukovje, Postojna",
-    "pdf_x_end": 316.3
+    "pdf_x_end": 316.3,
+    "other_sources": [
+      {
+        "soldier_id": "9020010976",
+        "name": "Širca (Ivan) Ivan",
+        "additional_info": "rođen 1911, Bukovje (Postonja). Slovenac, poginuo 1943. u NOBu, Ledine Pri idri",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=392",
+        "source_page": 392,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "ethnicity"
+    ],
+    "death_date": "1943",
+    "death_place": "Ledine pri idri"
   },
   {
     "last_name": "Širok",

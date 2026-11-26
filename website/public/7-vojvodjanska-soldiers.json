@@ -13971,10 +13971,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1926",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Bezdan",
-    "birth_year": "1926"
+    "death_place": "Bezdan"
   },
   {
     "last_name": "Erdeljan",
@@ -21419,8 +21419,8 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1945",
-    "birth_year": "1928"
+    "birth_year": "1928",
+    "death_date": "1945"
   },
   {
     "last_name": "Izotov",
@@ -23430,6 +23430,20 @@
         "pdf_x_left": 88.5,
         "rank": "komandant bataljona",
         "unit_file": "2-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0083010061",
+        "name": "Ješić Milan",
+        "additional_info": "zvani Ibra; Spisak štabova i komandi 6. vojvođanske brigade: zamenik komandanta brigade.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 1,
+        "pdf_x": 108.8,
+        "pdf_y": 175.3,
+        "pdf_x_end": 191.3,
+        "pdf_y_end": 184.0,
+        "unit_detail": "štab brigade",
+        "rank": "zamenik komandanta brigade",
+        "unit_file": "6-vojvodjanska-soldiers.json"
       }
     ],
     "birth_place": "Petrovci",
@@ -33748,10 +33762,10 @@
       "ethnicity"
     ],
     "ethnicity": "ostalo",
+    "birth_year": "1925",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Batina",
-    "birth_year": "1925"
+    "death_place": "Batina"
   },
   {
     "last_name": "Lazarević",
@@ -41559,9 +41573,9 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1927",
     "death_type": "poginuo",
-    "death_date": "1944",
-    "birth_year": "1927"
+    "death_date": "1944"
   },
   {
     "last_name": "Mirić",
@@ -42416,7 +42430,31 @@
     "soldier_id": "0022001985",
     "birth_place": "Bački Petrovac",
     "rank": "borac",
-    "pdf_x_end": 352.2
+    "pdf_x_end": 352.2,
+    "death_type": "poginuo",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type"
+    ],
+    "death_date": "17.04.1945",
+    "death_place": "u s. Kućanac",
+    "other_sources": [
+      {
+        "soldier_id": "0111010932",
+        "name": "Mocko Andrija",
+        "additional_info": "1912, Petrovac, Novi Sad, borac, poginuo 17. 4. 1945. u s. Kućanac.",
+        "pdf_file": "51-divizija-savic.pdf",
+        "pdf_page": 13,
+        "pdf_x": 72.0,
+        "pdf_y": 320.1,
+        "pdf_x_end": 352.9,
+        "pdf_y_end": 337.2,
+        "unit_detail": "7. vojvođanska brigada",
+        "rank": "borac",
+        "unit_file": "51-divizija-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mogac",
@@ -47293,10 +47331,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1929",
     "death_type": "poginuo",
     "death_date": "1944",
-    "death_place": "Nadalj",
-    "birth_year": "1929"
+    "death_place": "Nadalj"
   },
   {
     "last_name": "Pančić",
@@ -48878,6 +48916,14 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/BiH.pdf#page=1133",
         "source_page": 1133,
         "ref_book": "zrtve-rata-1964-bih"
+      },
+      {
+        "soldier_id": "9027003984",
+        "name": "Pažin (Miho) Vinko",
+        "additional_info": "rođen 1925, Novi Sad. Hrvat, poginuo 1945. u NOBu, Dolmati",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=217",
+        "source_page": 217,
+        "ref_book": "zrtve-rata-1964-voj"
       }
     ],
     "ethnicity": "Hrvat",
@@ -50227,6 +50273,34 @@
         "pdf_x_left": 90.1,
         "rank": "komesar bataljona",
         "unit_file": "2-vojvodjanska-soldiers.json"
+      },
+      {
+        "soldier_id": "0083010142",
+        "name": "Petrović Save Petar",
+        "additional_info": "zvani Japan; Spisak štabova i komandi 6. vojvođanske brigade: politički komesar 3. bataljona.",
+        "pdf_file": "6-vojvodjanska-stabovi.pdf",
+        "pdf_page": 2,
+        "pdf_x": 331.1,
+        "pdf_y": 482.3,
+        "pdf_x_end": 351.3,
+        "pdf_y_end": 491.0,
+        "pdf_rects": [
+          [
+            331.1,
+            482.3,
+            351.3,
+            491.0
+          ],
+          [
+            70.6,
+            491.1,
+            155.6,
+            499.8
+          ]
+        ],
+        "unit_detail": "3. bataljon",
+        "rank": "politički komesar",
+        "unit_file": "6-vojvodjanska-soldiers.json"
       }
     ]
   },
@@ -54183,9 +54257,9 @@
       "death_place",
       "ethnicity"
     ],
+    "birth_year": "1919",
     "death_date": "1944",
-    "death_place": "Batina",
-    "birth_year": "1919"
+    "death_place": "Batina"
   },
   {
     "last_name": "Radovanov",
@@ -69627,10 +69701,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1921",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Virovitica",
-    "birth_year": "1921"
+    "death_place": "Virovitica"
   },
   {
     "last_name": "Vukadinović",

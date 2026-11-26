@@ -3830,10 +3830,10 @@
       "ethnicity"
     ],
     "ethnicity": "Srpkinja",
+    "birth_year": "1928",
     "death_type": "poginuo",
     "death_date": "1945",
-    "death_place": "Gračanica",
-    "birth_year": "1928"
+    "death_place": "Gračanica"
   },
   {
     "last_name": "Milošević",
@@ -7781,14 +7781,73 @@
     "fathers_name": "",
     "full_name": "Đurović Vasilije",
     "additional_info": "komandant (Štab 9. brigade); zvani Žarki; 11.3.44.-20.5. 44. 22.5. 44. -15. 5. 45.",
-    "birth_year": "",
     "pdf_page": 8,
     "pdf_y": 101.35400000000004,
     "pdf_x": 125.0,
     "pdf_y_end": 110.3,
     "pdf_file": "9-srpska.pdf",
     "soldier_id": "0165000451",
-    "pdf_x_end": 384.1
+    "pdf_x_end": 384.1,
+    "birth_year": "1920",
+    "borrowed": [
+      "birth_place",
+      "birth_year",
+      "death_date",
+      "death_type",
+      "occupation",
+      "party"
+    ],
+    "birth_place": "Grlić, Danilovgrad",
+    "occupation": "svršeni maturant",
+    "death_type": "poginuo",
+    "death_date": "05.1944",
+    "party": "SKOJ 1940, KPJ 1941",
+    "other_sources": [
+      {
+        "soldier_id": "0093000294",
+        "name": "Đurović Vasilije",
+        "additional_info": "zvani Žarki; rođen 1920. godine u Grliću, Danilovgrad, svršeni maturant. Član SKOJ-a od 1940, a KPJ 1941. godine. Bio je među osnivačima Topličkog NOP odreda. U Odredu je bio borac, desetar, komandir i komesar čete. Kasnije je bio komandant Ozrensko-timočkog NOP odreda i komandant 9. srpske udarne brigade. Poginuo je maja 1944. godine. Za narodnog heroja Jugoslavije proglašen je 6. jula 1953. godine.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 32,
+        "pdf_x": 56.4,
+        "pdf_y": 345.8,
+        "pdf_x_end": 235.1,
+        "pdf_y_end": 479.3,
+        "rank": "desetar, komesar čete",
+        "unit_file": "toplicki-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0093000293",
+        "name": "Đurović Vasilije",
+        "additional_info": "zvani Žarki; narodni heroj Jugoslavije.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 10,
+        "pdf_x": 60.2,
+        "pdf_y": 369.7,
+        "pdf_y_end": 379.2,
+        "pdf_x_end": 340.6,
+        "unit_file": "toplicki-odred-soldiers.json"
+      },
+      {
+        "soldier_id": "0093000292",
+        "name": "Đurović Vasilije",
+        "additional_info": "zvani Žarki; rođen 1920. u Danilovgradu, svršeni maturant. Bio komandir i politički komesar čete u Topličkom NOP odredu. Poginuo kao komandant brigade, marta 1944. godine. Zanarodnog heroja Jugoslavije proglašen 1953. godine.",
+        "pdf_file": "toplicki-odred.pdf",
+        "pdf_page": 1,
+        "pdf_x": 76.6,
+        "pdf_y": 255.2,
+        "pdf_y_end": 294.9,
+        "pdf_x_end": 383.4,
+        "unit_file": "toplicki-odred-soldiers.json"
+      }
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "03.1944"
+        }
+      ]
+    }
   },
   {
     "last_name": "Đurđenović",
@@ -8807,7 +8866,7 @@
     "former_ids": [
       "0122927147"
     ],
-    "birth_place": "Pričevcu",
+    "birth_place": "Pričevac",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "04.1945",
@@ -11574,7 +11633,7 @@
     "last_name": "Stanisavljević",
     "middle_name": "Svete",
     "first_name": "Miodrag",
-    "fathers_name": "Svete",
+    "fathers_name": "Sveto",
     "full_name": "Stanisavljević Svete Miodrag",
     "additional_info": "Bučj E: rođen 1922. u Bučju. zemljoradnik. U NOVJ OD 1944. godine. Poginuo kao pripadnik 9. brigade 23. divizije, decembra 1944. godine. u borbi protiv Nemaca kod Zvornika.",
     "birth_year": "1922",

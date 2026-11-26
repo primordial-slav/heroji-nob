@@ -3658,7 +3658,21 @@
     "pdf_y_end": 845.8,
     "pdf_file": "51-divizija.pdf",
     "soldier_id": "0111000101",
-    "pdf_x_end": 570.9
+    "pdf_x_end": 570.9,
+    "other_sources": [
+      {
+        "soldier_id": "0078000182",
+        "name": "Dekanj Antun",
+        "additional_info": "rođ. 1923, Tavankut, poginuo na Dunavu kod Kazuka 20. XI 1944.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 9,
+        "pdf_x": 50.4,
+        "pdf_y": 342.4,
+        "pdf_x_end": 343.2,
+        "pdf_y_end": 361.5,
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Demonja",
@@ -17666,9 +17680,9 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
+    "birth_year": "1925",
     "death_date": "1944",
-    "death_place": "Batina",
-    "birth_year": "1925"
+    "death_place": "Batina"
   },
   {
     "last_name": "Stefanović",
@@ -18102,8 +18116,8 @@
       "death_date",
       "ethnicity"
     ],
-    "death_date": "1944",
-    "birth_year": "1923"
+    "birth_year": "1923",
+    "death_date": "1944"
   },
   {
     "last_name": "Suknović",
@@ -23333,6 +23347,18 @@
         "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=506",
         "source_page": 506,
         "ref_book": "zrtve-rata-1964-voj"
+      },
+      {
+        "soldier_id": "0078000010",
+        "name": "Antunović Jakob",
+        "additional_info": "rođ. 1925, Subotica, poginuo u s. Aleksandrovac 7. II 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 1,
+        "pdf_x": 36.4,
+        "pdf_y": 378.2,
+        "pdf_x_end": 329.6,
+        "pdf_y_end": 398.1,
+        "unit_file": "8-vojvodjanska-soldiers.json"
       }
     ],
     "ethnicity": "Hrvat",
@@ -33208,7 +33234,22 @@
     "death_date": "10.03.1945",
     "rank": "vodnik",
     "pdf_x_end": 356.1,
-    "death_place": "Bar. Petrovo Selo"
+    "death_place": "Bar. Petrovo Selo",
+    "other_sources": [
+      {
+        "soldier_id": "0078000252",
+        "name": "Glogić P Anton",
+        "additional_info": "rođ. 1923, Slavonski Brod, vodnik, poginuo u Baranjskom Petrovom Selu 10. III 1945.",
+        "pdf_file": "8-vojvodjanska.pdf",
+        "pdf_page": 13,
+        "pdf_x": 48.7,
+        "pdf_y": 175.4,
+        "pdf_x_end": 341.3,
+        "pdf_y_end": 194.5,
+        "rank": "vodnik",
+        "unit_file": "8-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Glušac",
@@ -43528,7 +43569,15 @@
     "ethnicity": "Slovak",
     "borrowed": [
       "ethnicity"
-    ]
+    ],
+    "variants": {
+      "death": [
+        {
+          "date": "1945",
+          "place": "Novaci, Slavonija"
+        }
+      ]
+    }
   },
   {
     "last_name": "Kristić",
@@ -50337,7 +50386,22 @@
     "death_date": "17.04.1945",
     "death_place": "u s. Kućanac",
     "rank": "borac",
-    "pdf_x_end": 352.9
+    "pdf_x_end": 352.9,
+    "other_sources": [
+      {
+        "soldier_id": "0022001985",
+        "name": "Mocko Andrej",
+        "additional_info": "1912, Bački Petrovac, borac, pog. 17.04.1945, Kučanci.",
+        "pdf_file": "7-vojvodjanska.pdf",
+        "pdf_page": 89,
+        "pdf_x": 69.6,
+        "pdf_y": 289.8,
+        "pdf_x_end": 352.2,
+        "pdf_y_end": 308.8,
+        "rank": "borac",
+        "unit_file": "7-vojvodjanska-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Mojzes",
@@ -58129,7 +58193,21 @@
     "death_type": "poginuo",
     "death_date": "07.02.1945",
     "death_place": "Petrovo Selo",
-    "pdf_x_end": 356.1
+    "pdf_x_end": 356.1,
+    "other_sources": [
+      {
+        "soldier_id": "9027009115",
+        "name": "Rižanji (Jožef) Jožef",
+        "additional_info": "rođen 1926, Stara Moravica. ostalo, poginuo 1945. u NOBu, Petrovo selo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Voj.pdf#page=484",
+        "source_page": 484,
+        "ref_book": "zrtve-rata-1964-voj"
+      }
+    ],
+    "ethnicity": "ostalo",
+    "borrowed": [
+      "ethnicity"
+    ]
   },
   {
     "last_name": "Rodić",
@@ -71616,16 +71694,16 @@
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=400",
     "source_page": 396,
+    "former_ids": [
+      "0122957881"
+    ],
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "16.04.1945",
     "death_place": "Putnikovo Brdo",
     "rank": "borac",
-    "birth_place": "Matuzići",
-    "former_ids": [
-      "0122957881"
-    ]
+    "birth_place": "Matuzići"
   },
   {
     "soldier_id": "0111900004",
@@ -71638,16 +71716,16 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=380",
     "source_page": 376,
+    "former_ids": [
+      "0122957661"
+    ],
     "ethnicity": "Musliman",
     "occupation": "brijački radnik",
     "death_type": "poginuo",
     "death_date": "10.1944",
     "death_place": "Klupe, Teslić",
     "rank": "komandir voda",
-    "birth_place": "Doboj",
-    "former_ids": [
-      "0122957661"
-    ]
+    "birth_place": "Doboj"
   },
   {
     "soldier_id": "0111900003",
@@ -71660,16 +71738,16 @@
     "birth_year": "1929",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=374",
     "source_page": 370,
+    "former_ids": [
+      "0122957596"
+    ],
     "ethnicity": "Musliman",
     "occupation": "đak",
     "death_type": "poginuo",
     "death_date": "29.04.1945",
     "death_place": "Kotor-Varoš",
     "rank": "borac",
-    "birth_place": "Bukovica Mala",
-    "former_ids": [
-      "0122957596"
-    ]
+    "birth_place": "Bukovica Mala"
   },
   {
     "soldier_id": "0111900005",
@@ -71701,11 +71779,11 @@
         "source_page": 1240
       }
     ],
-    "occupation": "radnik",
-    "rank": "borac",
     "former_ids": [
       "0122957669"
-    ]
+    ],
+    "occupation": "radnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0111900018",
@@ -71718,14 +71796,14 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=333",
     "source_page": 333,
+    "former_ids": [
+      "0122955239"
+    ],
     "birth_place": "Grabovica",
     "death_type": "poginuo",
     "death_date": "1945",
     "death_place": "Teslić",
-    "rank": "borac",
-    "former_ids": [
-      "0122955239"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0111900011",
@@ -71738,16 +71816,16 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=402",
     "source_page": 398,
+    "former_ids": [
+      "0122957895"
+    ],
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "01.1945",
     "death_place": "Matuzići, Doboj",
     "rank": "borac",
-    "birth_place": "Mravići",
-    "former_ids": [
-      "0122957895"
-    ]
+    "birth_place": "Mravići"
   },
   {
     "soldier_id": "0111900020",
@@ -71801,11 +71879,11 @@
         "source_page": 1257
       }
     ],
-    "occupation": "trgovac",
-    "rank": "komesar čete",
     "former_ids": [
       "0122958076"
-    ]
+    ],
+    "occupation": "trgovac",
+    "rank": "komesar čete"
   },
   {
     "soldier_id": "0111900002",
@@ -71867,16 +71945,16 @@
     "birth_year": "1920",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=398",
     "source_page": 394,
+    "former_ids": [
+      "0122957863"
+    ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "10.1944",
     "death_place": "Kotor-Varoš",
     "rank": "borac",
-    "birth_place": "Ljeb",
-    "former_ids": [
-      "0122957863"
-    ]
+    "birth_place": "Ljeb"
   },
   {
     "soldier_id": "0111900021",
@@ -71935,16 +72013,16 @@
     "birth_year": "1922",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=415",
     "source_page": 411,
+    "former_ids": [
+      "0122958035"
+    ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "09.1944",
     "death_place": "Trn, Banjaluka",
     "rank": "delegat voda",
-    "birth_place": "Raškovci",
-    "former_ids": [
-      "0122958035"
-    ]
+    "birth_place": "Raškovci"
   },
   {
     "soldier_id": "0111900006",
@@ -71957,16 +72035,16 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=381",
     "source_page": 377,
+    "former_ids": [
+      "0122957678"
+    ],
     "ethnicity": "Musliman",
     "occupation": "brijački radnik",
     "death_type": "umro",
     "death_date": "12.1944",
     "death_place": "Teslić",
     "rank": "borac",
-    "birth_place": "Doboj",
-    "former_ids": [
-      "0122957678"
-    ]
+    "birth_place": "Doboj"
   },
   {
     "soldier_id": "0111900023",
@@ -72047,16 +72125,16 @@
     "birth_year": "1925",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=398",
     "source_page": 394,
+    "former_ids": [
+      "0122957864"
+    ],
     "ethnicity": "Srbin",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "10.10.1944",
     "death_place": "Sivša, Tešanj",
     "rank": "borac",
-    "birth_place": "Ljeskove Vode",
-    "former_ids": [
-      "0122957864"
-    ]
+    "birth_place": "Ljeskove Vode"
   },
   {
     "soldier_id": "0111900017",
@@ -72088,6 +72166,9 @@
         "source_page": 1257
       }
     ],
+    "former_ids": [
+      "0122958083"
+    ],
     "occupation": "zemljoradnik",
     "rank": "borac",
     "variants": {
@@ -72097,10 +72178,7 @@
           "place": "Teslić"
         }
       ]
-    },
-    "former_ids": [
-      "0122958083"
-    ]
+    }
   },
   {
     "soldier_id": "0111900001",
@@ -72167,14 +72245,14 @@
     "birth_year": "1928",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=a6066c5f-b991-4ae6-a91a-8680f563062a/00000001/00000001/00002720&pg_seq=343",
     "source_page": 343,
+    "former_ids": [
+      "0122955359"
+    ],
     "birth_place": "Dabovci",
     "death_type": "poginuo",
     "death_date": "1944",
     "death_place": "Prnjavor",
-    "rank": "borac",
-    "former_ids": [
-      "0122955359"
-    ]
+    "rank": "borac"
   },
   {
     "soldier_id": "0111900012",
@@ -72187,16 +72265,16 @@
     "birth_year": "1917",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=402",
     "source_page": 398,
+    "former_ids": [
+      "0122957897"
+    ],
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "03.1945",
     "death_place": "Travnik",
     "rank": "borac",
-    "birth_place": "Mravići",
-    "former_ids": [
-      "0122957897"
-    ]
+    "birth_place": "Mravići"
   },
   {
     "soldier_id": "0111900015",
@@ -72228,11 +72306,11 @@
         "source_page": 1256
       }
     ],
-    "occupation": "zemljoradnik",
-    "rank": "borac",
     "former_ids": [
       "0122958063"
-    ]
+    ],
+    "occupation": "zemljoradnik",
+    "rank": "borac"
   },
   {
     "soldier_id": "0111900013",
@@ -72245,16 +72323,16 @@
     "birth_year": "1926",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=402",
     "source_page": 398,
+    "former_ids": [
+      "0122957898"
+    ],
     "ethnicity": "Musliman",
     "occupation": "zemljoradnik",
     "death_type": "poginuo",
     "death_date": "04.1945",
     "death_place": "Putnikovo Brdo",
     "rank": "borac",
-    "birth_place": "Mravići",
-    "former_ids": [
-      "0122957898"
-    ]
+    "birth_place": "Mravići"
   },
   {
     "soldier_id": "0111900007",
@@ -72267,15 +72345,15 @@
     "birth_year": "1924",
     "source_url": "https://biblioteka.poreklo.rs/ResCarta/jsp/RcWebImageViewer.jsp?doc_id=b6ed63f4-83a8-458b-80d7-1d3dff4a056f/00000001/00000001/00006946&pg_seq=383",
     "source_page": 379,
+    "former_ids": [
+      "0122957700"
+    ],
     "ethnicity": "Musliman",
     "occupation": "radnik",
     "death_type": "poginuo",
     "death_date": "11.1944",
     "death_place": "Novi Seher, Maglaj",
     "rank": "borac",
-    "birth_place": "Doboj",
-    "former_ids": [
-      "0122957700"
-    ]
+    "birth_place": "Doboj"
   }
 ]

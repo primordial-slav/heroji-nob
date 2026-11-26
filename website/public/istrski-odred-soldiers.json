@@ -1041,7 +1041,32 @@
     "pdf_x_end": 163.1,
     "birth_place": "Koštabona, Koper",
     "death_type": "umro",
-    "birth_date": "08.12.1921"
+    "occupation": "avio-mehaničar",
+    "borrowed": [
+      "occupation"
+    ],
+    "other_sources": [
+      {
+        "soldier_id": "0139000009",
+        "name": "Baruca Josip",
+        "additional_info": "791326, desetar , avio-mehaničar, rođen 1922. u Koštabani kod Kopra, došao sa Bliskog istoka 1944",
+        "pdf_file": "eskadrile-novj.pdf",
+        "pdf_page": 1,
+        "pdf_x": 224.0,
+        "pdf_y": 116.0,
+        "pdf_x_end": 383.3,
+        "pdf_y_end": 156.6,
+        "unit_detail": "1. eskadrila NOVJ (352. skvadron)",
+        "rank": "desetar",
+        "unit_file": "eskadrile-novj-soldiers.json"
+      }
+    ],
+    "birth_date": "08.12.1921",
+    "variants": {
+      "born": [
+        "1922"
+      ]
+    }
   },
   {
     "last_name": "Barut",
@@ -1456,6 +1481,26 @@
     "soldier_id": "0067000075",
     "pdf_x_end": 307.1,
     "birth_place": "Loče",
+    "other_sources": [
+      {
+        "soldier_id": "9020013446",
+        "name": "Benulič (Franc) Karlo",
+        "additional_info": "rođen 1914, Velike Loče (Sežana). Slovenac, poginuo 1944. u NOBu, Dolenjska",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=475",
+        "source_page": 475,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Dolenjska",
     "birth_date": "27.01.1914"
   },
   {
@@ -2400,6 +2445,22 @@
     "pdf_x_end": 172.0,
     "death_date": "07.05.1944",
     "death_place": "Rakek",
+    "other_sources": [
+      {
+        "soldier_id": "9020003479",
+        "name": "Božić (Josip) Pavao",
+        "additional_info": "rođen 1916, Sabonje (Ilirska Bistrica). Slovenac, poginuo 1944. u NOBu, Nepoznato",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=125",
+        "source_page": 125,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "birth_place": "Sabonje, Ilirska Bistrica",
+    "borrowed": [
+      "birth_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
     "birth_date": "09.10.1916"
   },
   {
@@ -3669,6 +3730,20 @@
     "soldier_id": "0067000187",
     "pdf_x_end": 145.6,
     "birth_place": "Škofije, Divača",
+    "other_sources": [
+      {
+        "soldier_id": "0061000320",
+        "name": "Colja Stanko",
+        "additional_info": "1912, Škofije",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 4,
+        "pdf_x": 186.1,
+        "pdf_y": 585.4,
+        "pdf_x_end": 285.9,
+        "pdf_y_end": 593.4,
+        "unit_file": "cankarjeva-soldiers.json"
+      }
+    ],
     "birth_date": "29.04.1912"
   },
   {
@@ -7173,6 +7248,45 @@
         "pdf_y": 319.0,
         "pdf_x_end": 94.0,
         "pdf_y_end": 327.0
+      },
+      {
+        "soldier_id": "0061000678",
+        "name": "Hren Alojz",
+        "additional_info": "1924, Potov vrh",
+        "pdf_file": "cankarjeva.pdf",
+        "pdf_page": 8,
+        "pdf_x": 326.4,
+        "pdf_y": 584.1,
+        "pdf_x_end": 428.7,
+        "pdf_y_end": 592.1,
+        "unit_detail": "štab brigade",
+        "unit_file": "cankarjeva-soldiers.json"
+      },
+      {
+        "soldier_id": "0061010026",
+        "name": "Hren Alojz",
+        "additional_info": "Poveljniški kader Cankarjeve brigade: Namestniki političnega komisarja brigade, od 27. 9. 1944 do 20. 11. 1944; Namestniki političnega komisarja brigade, od 15. 1. 1945 do 15. 5. 1945.",
+        "pdf_file": "cankarjeva-kader.pdf",
+        "pdf_page": 2,
+        "pdf_x": 173.9,
+        "pdf_y": 408.5,
+        "pdf_x_end": 209.2,
+        "pdf_y_end": 416.5,
+        "pdf_rects": [
+          [
+            173.9,
+            408.5,
+            209.2,
+            416.5
+          ],
+          [
+            173.6,
+            427.1,
+            208.9,
+            435.1
+          ]
+        ],
+        "unit_file": "cankarjeva-soldiers.json"
       }
     ],
     "unit_detail": "3. bataljon",
@@ -10878,6 +10992,26 @@
     "soldier_id": "0067000553",
     "pdf_x_end": 325.9,
     "birth_place": "Podgorje",
+    "other_sources": [
+      {
+        "soldier_id": "9020013236",
+        "name": "Koren (Jožef) Jožef",
+        "additional_info": "rođen 1924, Podgorje (Sežana). Slovenac, poginuo 1944. u NOBu, Rabrovo",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=469",
+        "source_page": 469,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Rabrovo",
     "birth_date": "14.01.1924"
   },
   {
@@ -12053,6 +12187,31 @@
         "pdf_y": 472.6,
         "pdf_x_end": 142.5,
         "pdf_y_end": 480.6
+      },
+      {
+        "soldier_id": "0167001001",
+        "name": "Kuntarič Franc",
+        "additional_info": "zvani Sandi; 1913, Boršt, Brežice",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 9,
+        "pdf_x": 244.8,
+        "pdf_y": 490.2,
+        "pdf_x_end": 313.2,
+        "pdf_y_end": 502.4,
+        "unit_detail": "3. bataljon",
+        "unit_file": "deveta-soldiers.json"
+      },
+      {
+        "soldier_id": "0167010035",
+        "name": "Kuntarič Franc",
+        "additional_info": "zvani Sandi; Poveljniški kader Devete brigade: politični komisarji 3. bataljona, septembra 1944; politični komisarji 4. bataljona, od 3. oktobra 1944 do 27. januarja 1945.",
+        "pdf_file": "deveta-kader.pdf",
+        "pdf_page": 3,
+        "pdf_x": 36.2,
+        "pdf_y": 472.5,
+        "pdf_x_end": 129.8,
+        "pdf_y_end": 482.1,
+        "unit_file": "deveta-soldiers.json"
       }
     ],
     "unit_detail": "4. bataljon 9. in 18. brigade",
@@ -12152,15 +12311,7 @@
     "borrowed": [
       "ethnicity"
     ],
-    "birth_date": "03.11.1923",
-    "variants": {
-      "death": [
-        {
-          "date": "1945",
-          "place": "Maribor"
-        }
-      ]
-    }
+    "birth_date": "03.11.1923"
   },
   {
     "last_name": "Kvaternik",
@@ -12437,10 +12588,10 @@
       "death_type",
       "ethnicity"
     ],
+    "birth_year": "1919",
     "death_type": "poginuo",
     "death_date": "1943",
-    "death_place": "Brkine",
-    "birth_year": "1919"
+    "death_place": "Brkine"
   },
   {
     "last_name": "Lazar",
@@ -12763,6 +12914,26 @@
     "soldier_id": "0067000643",
     "pdf_x_end": 142.5,
     "birth_place": "Markovščina",
+    "other_sources": [
+      {
+        "soldier_id": "9020013156",
+        "name": "Ljubič (Ivan) Alojz",
+        "additional_info": "rođen 1909, Markovščina (Sežana). Slovenac, poginuo 1944. u NOBu, Prem",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=466",
+        "source_page": 466,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Prem",
     "birth_date": "19.12.1909"
   },
   {
@@ -12854,6 +13025,24 @@
     "soldier_id": "0067000647",
     "pdf_x_end": 312.5,
     "death_date": "1944",
+    "other_sources": [
+      {
+        "soldier_id": "9020010971",
+        "name": "Logar (Franc) Alojzij",
+        "additional_info": "rođen 1912, Buje (Postonja). Slovenac, poginuo 1944. u NOBu, Materija",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=392",
+        "source_page": 392,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "birth_place": "Buje, Postonja",
+    "borrowed": [
+      "birth_place",
+      "death_place",
+      "ethnicity"
+    ],
+    "ethnicity": "Slovenac",
+    "death_place": "Materija",
     "birth_date": "03.06.1912"
   },
   {
@@ -12872,6 +13061,20 @@
     "soldier_id": "0067000648",
     "pdf_x_end": 166.3,
     "birth_place": "Planina",
+    "other_sources": [
+      {
+        "soldier_id": "0070102378",
+        "name": "Logar Stanislav",
+        "additional_info": "* 1922 Planina pri Ilirski Bistrici",
+        "pdf_file": "tomsiceva-4.pdf",
+        "pdf_page": 23,
+        "pdf_x": 133.1,
+        "pdf_y": 429.0,
+        "pdf_x_end": 323.2,
+        "pdf_y_end": 437.0,
+        "unit_file": "tomsiceva-soldiers.json"
+      }
+    ],
     "birth_date": "18.07.1922"
   },
   {
@@ -19087,6 +19290,26 @@
     "soldier_id": "0067000943",
     "pdf_x_end": 183.8,
     "birth_place": "Vis, Dalmacija",
+    "other_sources": [
+      {
+        "soldier_id": "9021051699",
+        "name": "Rastović (Šimo) Ante",
+        "additional_info": "rođen 1918, Vis. Hrvat, poginuo 1945. u NOBu, Kod trsta",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Hrv.pdf#page=2487",
+        "source_page": 2487,
+        "ref_book": "zrtve-rata-1964-hrv"
+      }
+    ],
+    "ethnicity": "Hrvat",
+    "borrowed": [
+      "death_date",
+      "death_place",
+      "death_type",
+      "ethnicity"
+    ],
+    "death_type": "poginuo",
+    "death_date": "1945",
+    "death_place": "Kod trsta",
     "birth_date": "15.08.1917"
   },
   {

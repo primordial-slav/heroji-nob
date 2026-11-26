@@ -346,7 +346,6 @@
     "fathers_name": "",
     "full_name": "Cerne Anton",
     "additional_info": "zvani Zvone; komandant štaba brigade",
-    "birth_year": "",
     "pdf_page": 3,
     "pdf_y": 361.5,
     "pdf_x": 176.5,
@@ -354,7 +353,40 @@
     "pdf_file": "4-prekomorska.pdf",
     "soldier_id": "0166000020",
     "pdf_x_end": 280.0,
-    "rank": "komandant štaba"
+    "rank": "komandant štaba",
+    "birth_year": "1919",
+    "borrowed": [
+      "birth_place",
+      "birth_year"
+    ],
+    "birth_place": "Ljubljana",
+    "other_sources": [
+      {
+        "soldier_id": "0167002159",
+        "name": "Černe Anton",
+        "additional_info": "zvani Zvone; 1919, Ljubljana",
+        "pdf_file": "deveta.pdf",
+        "pdf_page": 3,
+        "pdf_x": 144.0,
+        "pdf_y": 398.7,
+        "pdf_x_end": 209.5,
+        "pdf_y_end": 410.9,
+        "unit_detail": "štab brigade",
+        "unit_file": "deveta-soldiers.json"
+      },
+      {
+        "soldier_id": "0167010068",
+        "name": "Černe Anton",
+        "additional_info": "zvani Zvone; Poveljniški kader Devete brigade: komandanti brigade, od 22. januarja do 30. aprila 1944.",
+        "pdf_file": "deveta-kader.pdf",
+        "pdf_page": 1,
+        "pdf_x": 36.7,
+        "pdf_y": 190.9,
+        "pdf_x_end": 125.4,
+        "pdf_y_end": 200.6,
+        "unit_file": "deveta-soldiers.json"
+      }
+    ]
   },
   {
     "last_name": "Dolscak",
@@ -1401,6 +1433,22 @@
     "soldier_id": "0166000079",
     "pdf_x_end": 429.9,
     "birth_place": "Lom pri Tolminu",
+    "other_sources": [
+      {
+        "soldier_id": "9020014811",
+        "name": "Pregelj (Valentin) Stanko",
+        "additional_info": "rođen 1924, Kanalski Lom (Tolmin). Slovenac, poginuo 1944. u NOBu, Crnogorska obal",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=521",
+        "source_page": 521,
+        "ref_book": "zrtve-rata-1964-slo"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Crnogorska obal",
     "birth_date": "04.08.1924"
   },
   {
@@ -1525,7 +1573,35 @@
     "pdf_file": "4-prekomorska.pdf",
     "soldier_id": "0166000086",
     "pdf_x_end": 390.8,
-    "birth_place": "Vrbica, Ilirska Bistrica"
+    "birth_place": "Vrbica, Ilirska Bistrica",
+    "other_sources": [
+      {
+        "soldier_id": "9020003528",
+        "name": "Rojc (Ivan) Jože",
+        "additional_info": "rođen 1917, Vrbica (Ilirska Bistrica). Slovenac, poginuo 1945. u NOBu, Hrvat.klana",
+        "source_url": "https://www.muzejgenocida.rs/wp-content/uploads/2024/03/Slo.pdf#page=127",
+        "source_page": 127,
+        "ref_book": "zrtve-rata-1964-slo"
+      },
+      {
+        "soldier_id": "0144000324",
+        "name": "Rojc Jože",
+        "additional_info": "r. 1917 (Vrbica—II. Bistrica), p. maja 1945 neznano kje",
+        "pdf_file": "1-2-prekomorska.pdf",
+        "pdf_page": 7,
+        "pdf_x": 142.4,
+        "pdf_y": 258.2,
+        "pdf_x_end": 375.8,
+        "pdf_y_end": 265.2,
+        "unit_file": "1-2-prekomorska-soldiers.json"
+      }
+    ],
+    "ethnicity": "Slovenac",
+    "borrowed": [
+      "death_place",
+      "ethnicity"
+    ],
+    "death_place": "Hrvat. Klana"
   },
   {
     "last_name": "Rosa",
