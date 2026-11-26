@@ -555,7 +555,8 @@ DEATH_PLACE_READS = {
     '0122070770': 'Drenovača, Kamensko',            # Novković Mane Dušan: "na Drenovači kod Kamenskog"
     '0122913246': 'Užice',                          # Novović Nikov Jovo: "u Užicama", not the census's "T.užice"
     '0122923870': 'Broćanac',                       # Pejović Lazarev Nikola: "kod Broćanca", the Spomenica's "Braćanac"
-    '0122070102': 'Pećani, Udbina',                 # Radaković Đure Dmitar: "u s. Pećani", the census's "Pećani kod udbi"
+    '0122070102': 'Pećane, Udbina',                 # Radaković Đure Dmitar: "u s. Pećani", the census's "Pećani kod udbi"
+    #                                                 (the village is Pećane: the census's "Jamani-pećane", 00-TEAM LEAD)
     '0122924036': 'Trnovo, Sarajevo',               # Radulović Joka Savo: "kod Trnova, blizu Sarajeva"
     '0122915951': 'Sajmište, Beograd',              # Simonović Milovana Manojle: "na Sajmištu u Beogradu"
     '0122010963': 'Brajkovac',                      # Spasojević Jevrema Luka: "u Brajkovcu", not "Selo brajkovac"
