@@ -801,17 +801,21 @@ def offered(units, decisions, review, auto) -> list[dict]:
     return out
 
 
-def held_back(auto, review, units, kinds, codes):
+def held_back(auto, review, units, kinds, codes, also=None):
     """--kinds and --units: the pairs to write, and the review queue with the pairs of the other kinds that the rules
     take, for a person (2026-11-26: the Slovene units' merges inside a unit are the user's to answer). A pair that
-    touches none of the units is left for a later run, neither written nor queued."""
+    touches none of the units is left for a later run, neither written nor queued, unless --also lists it (a file of
+    [kind, a, b, book]: 2026-11-26, the pairs elsewhere that the Slovene run's new rules added, while the older ones
+    wait for the user)."""
     kinds = set(kinds.split(',')) if kinds else {'merge', 'link', 'reference'}
     codes = {f'{int(c):04d}' for c in codes.split(',')} if codes else None
+    extra = {key(*x) for x in json.loads(Path(also).read_text(encoding='utf-8'))} if also else set()
     recs = {s['soldier_id']: s for soldiers in units.values() for s in soldiers}
     keep, held = [], Counter()
     for x in auto:
-        kind, a, b, _, why, agree, _ = x
-        if codes is not None and a[:4] not in codes and (kind == 'reference' or b[:4] not in codes):
+        kind, a, b, book, why, agree, _ = x
+        if (codes is not None and a[:4] not in codes and (kind == 'reference' or b[:4] not in codes)
+                and key(kind, a, b, book) not in extra):
             held['other units'] += 1
         elif kind in kinds:
             keep.append(x)
@@ -839,6 +843,7 @@ def main():
                                     "the rules take go to the review queue, for a person (merges inside a unit: the user's)")
     ap.add_argument('--units', help='with --write, write only the pairs that touch a record of these units (codes, '
                                     'comma-separated); the rest wait for a later run')
+    ap.add_argument('--also', help='with --units, a JSON file of [kind, a, b, book] pairs to write besides')
     args = ap.parse_args()
     if args.answer:
         k, answer = args.answer
@@ -859,7 +864,7 @@ def main():
     auto, review, stale = find_pairs(units, corr, decisions)
     every = auto                                       # auto.json keeps them all
     if args.kinds or args.units:
-        auto, review = held_back(auto, review, units, args.kinds, args.units)
+        auto, review = held_back(auto, review, units, args.kinds, args.units, args.also)
     review += offered(units, decisions, review, auto)
     review.sort(key=lambda x: (-x['score'], x['kind'], x['key']))
     checks = spot_checks(units, corr, decisions)
