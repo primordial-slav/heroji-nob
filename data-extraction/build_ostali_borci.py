@@ -376,6 +376,10 @@ MERGED_IDS = {
     # Radinović Ostoje Đurađ of Koprivna: his 1983 entry and the Spomenica's meet in the Spomenica's record (05's chain, 2026-11-23)
     '0122953273': '0122935348', '0122953272': '0122935348', '0122953564': '0122953284', '0122953570': '0122953101', '0122953571': '0122953107',
     '0122953232': '0013010286', '0122953249': '0013011788',
+    # Bulajić Jovana Desanka of the Nikšić list (b. 1925, Viluse), joined to the Spomenica's record of her (b. 1927, Trebinje)
+    # through Trebinje's book, once the census's two entries of her (9022033299, 9022033300) were one woman (census_twice,
+    # 2026-11-26); joined before redirects_122 read the registry as it was, so by hand
+    '0122941038': '0122930327',
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
@@ -1009,6 +1013,28 @@ def census_redirects(old_ids: set[str], new_ids: set[str], previous: dict[str, s
     return out
 
 
+def redirects_122(old_ids: set[str], new_ids: set[str], previous: dict[str, str], ids_before: dict[str, str],
+                  holder_of) -> dict[str, str]:
+    """Old record of 122 -> the record that holds the man's entry now, for each record of 122 that has left it and is
+    neither moved to a unit nor joined by hand (MERGED_IDS): its entry taken by a unit's record (a reference), or
+    joined to another record. Those on disk less those written now, and the 122 IDs the redirects had before (followed
+    to the entry's record of today; dropped where the record is back or no record holds an entry of it). 2026-11-26:
+    the Slovene run's references took 41 records of 122 (Belehar Janko, 0122957334, to the Jeseniško-bohinjski odred's
+    0171010007), whose addresses had gone nowhere; until then such records were redirected by hand in MERGED_IDS."""
+    code = f'{CODE:04d}'
+    entries_of = defaultdict(list)
+    for e, rid in ids_before.items():
+        entries_of[rid].append(e)
+    out = {}
+    for rid in sorted((old_ids - new_ids) | {k for k in previous if k[:4] == code}):
+        if rid in new_ids or rid in MERGED_IDS:
+            continue
+        to = next((t for e in sorted(entries_of.get(rid, ())) for t in [holder_of(e)] if t and t != rid), None)
+        if to:
+            out[rid] = to
+    return out
+
+
 def load_overrides() -> dict[str, dict]:
     """The fixes by hand, by entry (OVERRIDES)"""
     return json.loads(OVERRIDES.read_text(encoding='utf-8')) if OVERRIDES.exists() else {}
@@ -1189,6 +1215,7 @@ def main():
         clusters[find(e['soldier_id'])].append(e)
 
     ids = registry()
+    ids_before = dict(ids)        # as read: a record of 122 that leaves is found by its entries (redirects_122)
     chosen = chosen_fathers()
     next_number = max([int(v[4:]) for v in ids.values() if int(v[4:]) >= FIRST_NEW], default=FIRST_NEW - 1) + 1
     used = set()
@@ -1458,6 +1485,10 @@ def main():
         # a reference whose record a merge took away or a delete removed would send the address nowhere: only the
         # records on the site count (the units' files as on disk, as scripts/backfill_census_redirects.py reads them)
         live = unit_ids_on_disk() | moved_now
+        # the record of 122 or of a census part written now that holds the entry among its others: a census entry
+        # printed twice joins the other's record (census_twice; 2026-11-26, 229 census records had gone nowhere)
+        in_parts = {o['soldier_id']: r['soldier_id'] for code in [CODE, *CENSUS_VOLUMES.values()]
+                    for r in parts.get(code, []) for o in r.get('other_sources') or () if o.get('soldier_id')}
 
         def holder_of(e: str) -> str | None:
             held = sorted(r for r in holders.get(e, ()) if r in live)
@@ -1467,6 +1498,8 @@ def main():
                 return unit_ids[e]
             if ids.get(e) in present:
                 return ids[e]
+            if e in in_parts:
+                return in_parts[e]
             held = sorted(r for w in with_of.get(e, ()) for r in holders.get(w, ()) if r in live)
             return held[0] if held else None
         census_moved = census_redirects(
@@ -1476,6 +1509,12 @@ def main():
             census_entry={f"{CENSUS_VOLUMES[m['_vol']]:04d}{m['soldier_id'][4:]}": m['soldier_id'] for m in entries if m['_vol']},
             holder_of=holder_of)
         print(f'{len(census_moved)} census records that left their part redirect to the record holding the man')
+        moved_122 = redirects_122(
+            old_ids=set(re.findall(r'"soldier_id": "(\d{10})"', OUT.read_text(encoding='utf-8'))) if OUT.exists() else set(),
+            new_ids=present | moved_now,
+            previous=json.loads(MOVED.read_text(encoding='utf-8')) if MOVED.exists() else {},
+            ids_before=ids_before, holder_of=holder_of)
+        print(f'{len(moved_122)} records of {CODE} that left it redirect to the record holding the man')
         for code in [CODE, *CENSUS_VOLUMES.values()]:
             path = ROOT / 'website' / 'public' / BRIGADE_CONFIGS[code]['json_file']
             write_text(path, json.dumps(parts.get(code, []), ensure_ascii=False, indent=2))
@@ -1493,7 +1532,8 @@ def main():
         print('Written', UNIT_IDS)
         # his old address still finds him: old 122 or census ID -> his record's (website/scripts/prepare-data.ts writes
         # each into the where-files of the part that had it, and /borac/<old> answers with the new one)
-        moved = {**census_moved, **MERGED_IDS, **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}}
+        moved = {**moved_122, **census_moved, **MERGED_IDS,
+                 **{r['former_ids'][0]: r['soldier_id'] for recs in to_units.values() for r in recs}}
         # an old ID goes straight to the man's record of today: a chain (old -> an ID that moved on -> today's) is followed
         # to its end, and an entry that would lead back to itself is dropped (2026-11-25, the lead's check of the live site)
         def follow(k):
