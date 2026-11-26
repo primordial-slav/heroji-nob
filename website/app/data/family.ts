@@ -1517,6 +1517,28 @@ export const familyContributions: FamilyContribution[] = [
     from: 'V. Roca Šestanović, kći',
     date: '2026-11',
   },
+  {
+    soldierId: '0104001691', // Vujnovac Mate Josif of Habjanovci, Osječka udarna brigada: his grandson's form of 2026-11-26 12:05 with his
+    // photo and two pages of his military booklet (text, photos and name allowed; Porodična arhiva 9990000108; rows by 318549). The
+    // booklet and the family write Josip; the book prints Josif, which stays
+    photo: '0104001691-1.jpg',
+    photoCaption: 'Fotografija iz vojne knjižice',
+    pieces: [
+      {
+        kind: 'document',
+        file: '0104001691-2.jpg',
+        pages: ['0104001691-3.jpg'],
+        caption: 'Vojna knjižica',
+        transcripts: [
+          '[Pečat: Vojni otsek Osijek] I. PODACI IDENTITETA. Lični opis: stas: srednji; kosa: crna; lice: okruglo; oči: smeđe[?]; nos: pravilan[?]; usta: [...]; osobeni znaci: nema. Ime: porodično (očevo rođeno) i rođeno: Vujnovac (Mate) Josip.',
+          'III. SLUŽBA U STALNOM KADRU J. A. Kada je stupio: 12. IX. 1944. Ispisan: 20. XI. 1945. Rod vojske: intendantska služba. Jedinice u kojima je služio: Osječkoj ud. brigadi. [...]',
+        ],
+      },
+    ],
+    text: 'Rođen je 14. 4. 1919. u selu Habjanovci kod Osijeka. Bio je pripadnik Osječke udarne brigade i sudionik Bolmanske bitke.',
+    from: 'J. Vujnovac, unuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
