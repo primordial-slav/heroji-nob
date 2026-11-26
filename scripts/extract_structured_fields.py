@@ -2130,11 +2130,13 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     where it says more and the map knows it ("Mokronoge, Priboj" for Priboj, "Jadovnik, Sjenica"), or mends a column
     the map can't place ("Preboj": Prijeboj, "Bos krupa"); else the column's, in the census's one form and on the map
     ("Šumane, Pljevlja", not "Pljevlja"; "Luštica", not "Luštici"; "Kanjski Most", not "na Kanjskom mostu"). His
-    entries' where they name a village before the column's town (record_sources.names_more: "na Biću kod Priboja" for
-    the Spomenica's "Priboj na Limu", "na Crkvima kod Kolašina" for Kolašin), and where his place is that of the book that
-    gives the day (day, read_all's) and the map knows neither form, unless his is in a case after a preposition
-    (board 36's order; board 67: Jovanović Steva Novak's "u Kučima" of 15. 10. 1944, not the Spomenica's "Koći Kuči")"""
-    from record_sources import (REGIONS, fold, names_more, place_words, points_of,          # (it imports this
+    entries' too where his place is that of the book that gives the day (day, read_all's) and the map knows neither
+    form, unless his is in a case after a preposition (board 36's order; board 67: Jovanović Steva Novak's "u Kučima" of
+    15. 10. 1944, not the Spomenica's "Koći Kuči"). (A village his entries name before the column's town was taken for
+    a while too, record_sources.names_more, while the census's place off the map gave way to a column book's town in
+    Borci drugih jedinica; once it no longer did, board 67's second answer, that only swapped 281 clean places for his
+    entries' phrases, some of them garbled, "na Leperiću Lješanskoj pahiji", and was taken out.)"""
+    from record_sources import (REGIONS, fold, place_words, points_of,                      # (it imports this
                                 region as loose_region, words_match)                       # module: not at the top)
 
     def forms(x):                   # a region's word in its cases: "Srijemu", "sremskom frontu", "Crnoj Gori", "Lici"
@@ -2150,8 +2152,6 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     if (region(own) and not loose_region(place_words(column))) or SCAN_GARBLE_RE.search(own):
         return False
     if words_match(place_words(own), place_words(column)):
-        if names_more(own, column):
-            return True
         def named(v):
             return [w for w in re.findall(r'[a-z]+', fold(v)) if w not in PLACE_PREPS]
         mine, theirs = bool(points_of(own, unit)), bool(points_of(column, unit))
