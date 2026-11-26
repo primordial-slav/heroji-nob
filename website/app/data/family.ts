@@ -1577,8 +1577,8 @@ export const familyContributions: FamilyContribution[] = [
     date: '2026-11',
   },
   {
-    soldierId: '9990000113', // Volf Antuna Bogdan of Tršće (census Croatia, 0132002962): his mother's brother; keyed by his family's
-    // entry (the Spomenica), which the next chain joins to the census's (ONE_MAN), so the photo follows the record's new ID
+    soldierId: '0132002962', // Volf Antun Bogdan of Tršće (census Croatia): his mother's brother; his family's entry (9990000113, the
+    // Spomenica) joins this record at the next chain (ONE_MAN), which gives it a new 0122 ID: re-key this item to it then
     photo: '9990000113-1.jpg',
     from: 'S. Brozović, nećak',
     date: '2026-11',
