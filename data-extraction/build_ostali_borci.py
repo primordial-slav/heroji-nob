@@ -1388,6 +1388,7 @@ def main():
                     if k in DEATH_KEYS and k not in rec:
                         rec[k] = v
                         filled.append(k)
+            census_place = ''
             if census:
                 c = census_fields(census[0])
                 if exact and c.get('death_date') and c['death_date'] != exact['death_date'][:4]:
@@ -1397,6 +1398,22 @@ def main():
                     if k not in rec and not (k == 'unit_detail' and len(census) < len(g)):
                         rec[k] = v                           # the census's columns, where a list gave no death
                         filled.append(k)
+                        census_place = v if k == 'death_place' else census_place
+            # the census's place gives way where it says less, to a column book's of the year alone, as in a unit's record
+            # (record_sources.census_gives_way, board 36's rules; board 67): off the map ("Kučaevica": the Spomenica's
+            # Kučajevica), a region alone ("Dolenjsko": Iskra in plamen's Krvava peč), one place in a form that says
+            # less ("Plevlja": Pljevlja); not where his place was read by hand (DEATH_PLACE_READS)
+            if census_place and rec.get('death_place') == census_place and rid not in DEATH_PLACE_READS:
+                import record_sources
+                from standardize_fields import place_form       # (compared as the site writes them: "Trnovo-sarajevo"
+                site = lambda v: place_form(v) or v             # is Trnovo, Sarajevo, which the map puts)
+                year_alone = [dict(f, death_place=site(f['death_place'])) for f in
+                              (column_fields(m) for m in columns if not EXACT_DAY.fullmatch(m.get('death_date') or ''))
+                              if f.get('death_place')]
+                spot = record_sources.census_gives_way(site(census_place), rec.get('death_date'), year_alone, OUT.name)
+                if spot:
+                    rec['death_place'] = spot
+                    counts['census place gives way (board 67)'] += 1
             if columns:
                 for k, v in column_fields(columns[0]).items():
                     if k not in rec and not (k == 'unit_detail' and len(columns) + len(census) < len(g)):

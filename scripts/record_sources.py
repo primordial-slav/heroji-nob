@@ -187,27 +187,121 @@ def fill_death(s: dict, refs: list, fixed: set = frozenset()) -> list[str]:
             borrow(s, 'death_type', kind)
     src = lent.get('death_place')
     if src and src[0].startswith(CENSUS_BOOK):
-        # and 00-TEAM LEAD's two of 2026-11-26, in the same spirit (the census's place gives way where it says less):
-        # - a census's place that names a region alone ("Dolenjsko", "Srem", "Lika") gives way to a column book's
-        #   settlement of the same year (Strah Franc of the Cankarjeva: Brezovica); the census lends its region only
-        #   where no book gives a place;
-        # - where the census's place and a column book's of the same year are one place (one_spot: "Bos Petrovac" and
-        #   "Bos. Petrovac", "Konjica" and Konjic, "Crnomelj" and Črnomelj), the book's printed form shows
-        place, unit = s['death_place'], unit_file(s)
-        off_map, wide = not points_of(place, unit), region_only(place)
-        year = re.search(r'1[89]\d\d', s.get('death_date') or '')
-        for book, e in refs:
-            if fill_rank(book, e) != 2 or not ob.is_column(book, e):
-                continue
-            vals = column_values(book, e)
-            other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
-            spot = vals.get('death_place')
-            if not (spot and year and other and year.group(0) == other.group(0)):
-                continue
-            if off_map or (wide and settlement(spot, unit)) or (spot != place and not wide and one_spot(place, spot, unit)):
-                borrow(s, 'death_place', spot)
-                break
+        books = [column_values(book, e) for book, e in refs if fill_rank(book, e) == 2 and ob.is_column(book, e)]
+        spot = census_gives_way(s['death_place'], s.get('death_date'), books, unit_file(s))
+        if spot:
+            borrow(s, 'death_place', spot)
     return taken
+
+
+def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -> str:
+    """The place of a column book of the year alone that shows over the census's place (place, of the year in date), or
+    '': books, the fields of each such book's entry in their order, the first that a rule takes decides. Lent where the
+    census's place says less (board 36; build_ostali_borci.py gives Borci drugih jedinica the same, board 67):
+    - the census's place the map can't put ("Krivašije", "Kod Podgoricaa", its column cut at 15 letters and misspelt)
+      gives way to such a book's place of the same year, whether or not the map can put it (00-TEAM LEAD's rule of
+      2026-11-24, after Obilović V Božo of the 1. bokeljska: "Crkvice"); the census's then shows after "ili" where it
+      says otherwise (variants);
+    - a census's place that names a region alone ("Dolenjsko", "Srem", "Lika") gives way to such a book's settlement
+      (00-TEAM LEAD, 2026-11-26: Strah Franc of the Cankarjeva, Brezovica); the census lends its region only where no
+      book gives a place;
+    - where the two are one place (one_spot: "Bos Petrovac" and "Bos. Petrovac", "Konjica" and Konjic) the form that
+      says more shows ("Bosanska Dubica" over "Bos. Dubica", "Radosavac, Pljevalja" over "Radosavac": says_more), and
+      where neither does, the book's printed form (00-TEAM LEAD, 2026-11-26).
+    Never a region or a land alone for a place ("Gornje badežišt" is no Hercegovina), nor a form the scan split
+    ("Kamni ška Bistrica" for the census's "Kamniš bistrica": scan_split), nor a town for the village the census names
+    before it ("Plana kod bileć" is no Bileća: names_more; board 67)"""
+    year = re.search(r'1[89]\d\d', date or '')
+    if not (place and year):
+        return ''
+    off_map, wide = not points_of(place, unit), region_only(place)
+    for vals in books:
+        other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
+        spot = vals.get('death_place')
+        if not (spot and other and year.group(0) == other.group(0)) or region_only(spot) or scan_split(spot, place):
+            continue
+        if off_map:
+            return '' if spot == place or names_more(place, spot) else spot
+        if (wide and settlement(spot, unit)) or (spot != place and not wide and one_spot(place, spot, unit)
+                                                 and not says_more(place, spot, unit)):
+            return spot
+    return ''
+
+
+# the small words of a place that name no part of it, in telling which of two forms of one place says more
+FORM_FILLER = {'kod', 'u', 'v', 'na', 'pri', 'iz', 'selo', 'selu', 'sela', 'blizu', 'kraj', 'okolini', 'okolina',
+               'okolici', 'podrucju', 'mesto', 'mjesto', 'mestu', 'mjestu', 'grad', 'gradu'}
+
+
+def _form_words(v: str) -> list[tuple[str, str]]:
+    return [(fold(w), dot) for w, dot in re.findall(r'(\w+)(\.?)', v or '') if fold(w) not in FORM_FILLER]
+
+
+def _fits(short: list, long: list) -> bool:
+    """Each word of short is, in order, a word of long or its abbreviation (with a dot, or of three letters: "D." Donji,
+    "Bos" Bosanska)"""
+    i = 0
+    for w, dot in short:
+        while i < len(long) and not (long[i][0] == w or (len(w) < len(long[i][0]) and long[i][0].startswith(w)
+                                                         and (dot or len(w) <= 3))):
+            i += 1
+        if i == len(long):
+            return False
+        i += 1
+    return True
+
+
+def says_more(a: str, b: str, unit: str = '') -> bool:
+    """Of two forms of one place, a says more than b (board 67, 00-TEAM LEAD's "the one that says more"): b's words are
+    a's or their abbreviations and a has more ("Donji Vakuf" for "D. Vakuf", "Radosavac, Pljevalja" for "Radosavac");
+    the same letters in fewer words, b's having a word the scan split ("Žužemberk" for "Žužem berk"); or a spelling the
+    map knows where only a mark differs ("Cerkno" for the census's "Čerkno", "Konjic" for "Konjić"). Neither says more
+    of "Bos Petrovac" and "Bos. Petrovac", or "Plevlja" and "Pljevlja\""""
+    wa, wb = _form_words(a), _form_words(b)
+    fa, fb = _fits(wb, wa), _fits(wa, wb)
+    if fa != fb:
+        return fa
+    la, lb = (''.join(w for w, _ in x) for x in (wa, wb))
+    if la == lb and len(wa) != len(wb):
+        return len(wa) < len(wb)
+    if fold(a) == fold(b) and a.lower() != b.lower():
+        # (the map folds the marks away: the spelling the units' books print more often among the places it resolved)
+        n = _spellings()
+        return n[a.strip().lower()] > n[b.strip().lower()]
+    return False
+
+
+@lru_cache(maxsize=1)
+def _spellings():
+    """How many units print each place, as written (lower case), among the places the map resolved"""
+    import resolved_places
+    from collections import Counter
+    n = Counter()
+    for fields in resolved_places.load()['units'].values():
+        for field in ('death_place', 'birth_place'):
+            n.update(text.strip().lower() for text in fields.get(field, {}))
+    return n
+
+
+def names_more(a: str, b: str) -> bool:
+    """a names a place before the one both name, which b gives alone: the census's village before its municipality
+    ("Plana kod bileć" for Bileća, "Roda g. vakuf" for Gornji Vakuf, "Žuma nikšić" for Nikšić), not the village b
+    names in a's form ("Lubnice-ivangra" for Lubnice)"""
+    wa, wb = [w for w, _ in _form_words(a)], [w for w, _ in _form_words(b)]
+
+    def match(x, y):
+        return same_word(x, y) or (min(len(x), len(y)) <= 3 and (x.startswith(y) or y.startswith(x)))
+    hits = [i for i, x in enumerate(wa) if any(match(x, y) for y in wb)]
+    return bool(hits) and 0 not in hits and all(any(match(x, y) for x in wa) for y in wb)
+
+
+def scan_split(v: str, other: str) -> bool:
+    """v prints a word of other cut in two by the scan ("Kamni ška Bistrica" for "Kamniš bistrica", "Žužem berk" for
+    "Zužemberg")"""
+    ws, wo = re.findall(r'[a-z]+', fold(v)), re.findall(r'[a-z]+', fold(other))
+    return any(same_word(ws[i] + ws[i + 1], o) and abs(len(ws[i] + ws[i + 1]) - len(o)) <= 2
+               and len(ws[i]) < len(o) and len(ws[i + 1]) < len(o)
+               for i in range(len(ws) - 1) for o in wo if o not in (ws[i], ws[i + 1]))
 
 
 # the regions a census's place may name alone, for fill_death: REGIONS with the Slovene lands' other forms

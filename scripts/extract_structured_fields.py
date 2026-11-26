@@ -2180,6 +2180,7 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
     (other_sources) give."""
     unit_code, code = code, read_code(s, code)
     got, village, orgs = {}, '', {}
+    day_place = {}          # a death's day -> the place the first entry that gives that day gives, unspoilt by the scan
     # another unit's entries: its own fields; a book across units (a hero's portrait): read by no rule here
     entries = [s] + [o for o in s.get('other_sources', ()) if not o.get('unit_file') and not o.get('ref_book')]
     for e in entries:
@@ -2210,10 +2211,20 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
                 got[k] = v          # the day another book gives in the year the first one gives alone
                 continue
             got.setdefault(k, v)
+        day, spot = fields.get('death_date') or '', fields.get('death_place') or ''
+        if (spot and (date_rank(day) or (0, 0, 0))[2] == 3 and day not in day_place
+                and PARTIZANKE not in (e.get('source_url') or '') and e.get('pdf_file') not in NAME_LISTS | ROSTERS):
+            tidy = tidy_death_place(fix_place(tidy_death_place(spot) or spot))
+            if tidy and not SCAN_GARBLE_RE.search(tidy) and not re.search(r'\s,', tidy):    # ("na Neretvi (Konjic) , u")
+                day_place[day] = spot
         if e.get('pdf_file') in ROSTERS:
             head = re.match(r'([^:;]{3,40}):', info)          # the unit the roster lists him under
             if head and not head.group(1).startswith('Ne zna se'):
                 got.setdefault('unit_detail', head.group(1).strip())
+    if got.get('death_date') in day_place:
+        # the book that gives the day gives the place too (board 36's order; board 67): Bulajić Jovanova Desanka's
+        # "23. maja 1942. ... u Šipačno, Nikšić" (Vilusi's book), not the Nikšić list's "poginuo 1942, Šibenik" beside it
+        got['death_place'] = day_place[got['death_date']]
     if village and not got.get('birth_place'):
         got['birth_place'] = village
     if s.get('born_in') and not got.get('birth_place'):
