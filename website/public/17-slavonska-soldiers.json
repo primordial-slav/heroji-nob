@@ -2025,7 +2025,7 @@
     "soldier_id": "0016000111",
     "birth_place": "V. Pisanica",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "death_place": "Ludbreg",
     "pdf_x_end": 204.0,
     "other_sources": [
@@ -2053,6 +2053,7 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
+      "death_date",
       "ethnicity"
     ]
   },
@@ -21649,7 +21650,7 @@
     "soldier_id": "0016001121",
     "birth_place": "Miljanovac",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "pdf_x_end": 346.3,
     "other_sources": [
       {
@@ -21676,6 +21677,7 @@
     ],
     "ethnicity": "Srbin",
     "borrowed": [
+      "death_date",
       "ethnicity"
     ],
     "variants": {
@@ -28126,7 +28128,7 @@
     "soldier_id": "0016001458",
     "birth_place": "Turčević Polje",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "pdf_x_end": 207.2,
     "other_sources": [
       {
@@ -28142,6 +28144,9 @@
         "source_page": 84,
         "ref_book": "ludbreg-poginuli"
       }
+    ],
+    "borrowed": [
+      "death_date"
     ]
   },
   {
@@ -34106,7 +34111,7 @@
     "soldier_id": "0016001767",
     "birth_place": "Sekulinci",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "death_place": "Ludbreg",
     "pdf_x_end": 355.3,
     "birth_year": "1908",
@@ -34136,6 +34141,7 @@
     "ethnicity": "Srbin",
     "borrowed": [
       "birth_year",
+      "death_date",
       "ethnicity"
     ],
     "variants": {
@@ -52172,7 +52178,7 @@
     "soldier_id": "0016002691",
     "birth_place": "D. Vrijeska",
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "06.07.1944",
     "pdf_x_end": 347.4,
     "other_sources": [
       {
@@ -52191,6 +52197,7 @@
     ],
     "death_place": "Ludbreg",
     "borrowed": [
+      "death_date",
       "death_place"
     ]
   },
@@ -53567,9 +53574,9 @@
       "ethnicity"
     ],
     "ethnicity": "Srbin",
-    "death_date": "1944",
-    "death_place": "Ludberg",
-    "birth_year": "1922"
+    "birth_year": "1922",
+    "death_date": "06.07.1944",
+    "death_place": "Ludbreg"
   },
   {
     "last_name": "Skorupan",
@@ -53823,7 +53830,7 @@
     "soldier_id": "0016002773",
     "birth_place": "Bačkovica",
     "death_type": "poginuo",
-    "death_date": "1944",
+    "death_date": "06.07.1944",
     "pdf_x_end": 201.1,
     "other_sources": [
       {
@@ -53848,12 +53855,13 @@
         "ref_book": "zrtve-rata-1964-hrv"
       }
     ],
-    "death_place": "Ludbreg",
+    "ethnicity": "Srbin",
     "borrowed": [
+      "death_date",
       "death_place",
       "ethnicity"
     ],
-    "ethnicity": "Srbin",
+    "death_place": "Ludbreg",
     "variants": {
       "death": [
         {
@@ -70290,11 +70298,11 @@
     "pdf_y": 522.5,
     "pdf_x_end": 386.2,
     "pdf_y_end": 539.9,
+    "death_type": "poginuo",
+    "death_date": "06.07.1944",
+    "death_place": "Ludbreg",
     "birth_place": "Šagudovec, Donja Stubica",
     "ethnicity": "Hrvat",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Ludbreg",
     "from_columns": [
       "death_type",
       "death_date",

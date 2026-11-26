@@ -35457,7 +35457,7 @@
     "pdf_x_end": 468.0,
     "birth_place": "Struga, Ludbreg",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "rank": "delegat voda",
     "ethnicity": "Hrvat",
     "occupation": "učenik",
@@ -35492,6 +35492,7 @@
     "party": "SKOJ, KPJ",
     "death_place": "Šemovec",
     "borrowed": [
+      "death_date",
       "death_place"
     ]
   },
@@ -64693,7 +64694,7 @@
     "pdf_x_end": 467.0,
     "ethnicity": "Srbin",
     "occupation": "poljoprivrednik",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "other_sources": [
       {
         "soldier_id": "9021022929",
@@ -64745,7 +64746,10 @@
     "party": "KPJ",
     "birth_place": "Bolfan, Ludbreg",
     "death_type": "poginuo",
-    "death_place": "Semovac, Varaždin"
+    "death_place": "Semovac, Varaždin",
+    "borrowed": [
+      "death_date"
+    ]
   },
   {
     "last_name": "Severović",
@@ -67689,7 +67693,7 @@
     "pdf_x_end": 459.0,
     "birth_place": "Mokrice, Donja Stubica",
     "death_type": "poginuo",
-    "death_date": "1943",
+    "death_date": "03.10.1943",
     "rank": "borac",
     "ethnicity": "Hrvat",
     "occupation": "poljoprivrednik",
@@ -67754,8 +67758,9 @@
       }
     ],
     "party": "SKOJ",
-    "death_place": "Šenovac",
+    "death_place": "Šemovec",
     "borrowed": [
+      "death_date",
       "death_place"
     ],
     "birth_date": "21.10.1921"
