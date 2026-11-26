@@ -48,7 +48,8 @@ A new rule the user gives goes here, with its date and the user's words.
   "make it josip and idk how that isnt a rule yet specifically for a common name like Josip, and another book naming it
   that way"). The entry stays as printed; links and merges naming the record are renamed with it ("A rename and its
   links", `corrections.md`). `check_form_fields.py` lists a card whose family entry gives a given name or surname the card
-  doesn't hold ("name form").
+  doesn't hold ("name form"). Another book's form is applied card by card, never in bulk across links and references, until
+  the pairs (Jože/Josip/Jožef, Tone/Anton, Jovo/Jovan, ...) are counted and the user decides (the lead, 2026-11-26).
 - **The Spomenica** a family mentions goes on the card.
 - **Photos.** A family's photo of the man himself is his portrait, cut from a group or family photo; a postwar photo, other
   people, graves and documents go in the album. The portrait is head and shoulders; the album's whole photo is trimmed of
