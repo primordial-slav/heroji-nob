@@ -204,7 +204,9 @@ def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -
       says otherwise (variants);
     - a census's place that names a region alone ("Dolenjsko", "Srem", "Lika") gives way to such a book's settlement
       (00-TEAM LEAD, 2026-11-26: Strah Franc of the Cankarjeva, Brezovica); the census lends its region only where no
-      book gives a place;
+      book gives a place, and keeps it where the map puts the book's settlement far outside it (FAR_KM: Backović
+      Mitrov Vaso's "Lika", not the Spomenica's Smederevo) or the book's place is a form of the region ("Sremski
+      font": in_words);
     - where the two are one place (one_spot: "Bos Petrovac" and "Bos. Petrovac", "Konjica" and Konjic) the form that
       says more shows ("Bosanska Dubica" over "Bos. Dubica", "Radosavac, Pljevalja" over "Radosavac": says_more), and
       where neither does, the book's printed form (00-TEAM LEAD, 2026-11-26).
@@ -222,10 +224,18 @@ def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -
             continue
         if off_map:
             return '' if spot == place or names_more(place, spot) else spot
-        if (wide and settlement(spot, unit)) or (spot != place and not wide and one_spot(place, spot, unit)
-                                                 and not says_more(place, spot, unit)):
+        if (wide and settlement(spot, unit) and not in_words(spot, place) and (beyond(place, spot, unit) or 0) <= FAR_KM) or (
+                spot != place and not wide and one_spot(place, spot, unit) and not says_more(place, spot, unit)):
             return spot
     return ''
+
+
+FAR_KM = 100        # a settlement this far beyond a region's ground is another place, not a finer one ("Lika", Smederevo)
+
+
+def in_words(spot: str, region_name: str) -> bool:
+    """spot is a form of the region itself, no settlement in it (the census's "Sremski font" for Srem)"""
+    return any(same_word(x, y) for x in place_words(spot) for y in place_words(region_name))
 
 
 # the small words of a place that name no part of it, in telling which of two forms of one place says more
