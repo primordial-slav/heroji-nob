@@ -2136,7 +2136,7 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
     a while too, record_sources.names_more, while the census's place off the map gave way to a column book's town in
     Borci drugih jedinica; once it no longer did, board 67's second answer, that only swapped 281 clean places for his
     entries' phrases, some of them garbled, "na Leperiću Lješanskoj pahiji", and was taken out.)"""
-    from record_sources import (REGIONS, fold, place_words, points_of,                      # (it imports this
+    from record_sources import (REGIONS, fold, place_words, points_of, says_more,           # (it imports this
                                 region as loose_region, words_match)                       # module: not at the top)
 
     def forms(x):                   # a region's word in its cases: "Srijemu", "sremskom frontu", "Crnoj Gori", "Lici"
@@ -2155,9 +2155,12 @@ def own_place_first(own: str, column: str, date: str, own_date: str, unit: str =
         def named(v):
             return [w for w in re.findall(r'[a-z]+', fold(v)) if w not in PLACE_PREPS]
         mine, theirs = bool(points_of(own, unit)), bool(points_of(column, unit))
-        def prep(v):
-            return bool(set(re.findall(r'[a-z]+', fold(v))) & {'u', 'v', 'na', 'kod', 'pri', 'blizu', 'kraj', 'izmedu'})
-        if day and not mine and not theirs and not prep(own):
+        def prep(v):            # ("y": the scan's Latin y for у)
+            return bool(set(re.findall(r'[a-z]+', fold(v))) & {'u', 'v', 'y', 'na', 'kod', 'pri', 'blizu', 'kraj', 'izmedu'})
+        # the day's book's place, but not where the column's form says more of the same place ("Brčeli Virpazar",
+        # "Jakopovac, Bilogora": a municipality added), nor a phrase of his bio taken for a place ("Protiv muslimanske
+        # ustaške milicije y Koritima")
+        if day and not mine and not theirs and not prep(own) and len(own.split()) <= 4 and not says_more(column, own):
             return True
         a, b = named(own), named(column)
         # (as many words: the fuller spelling, "Bosanska Krupa" for "Bos krupa", "Donja Kupčina" for the census's cut
