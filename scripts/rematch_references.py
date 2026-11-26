@@ -399,8 +399,9 @@ def same_man(a: dict, b: dict) -> str | None:
     given (identity_decisions.json, 2026-11-01, after the user found the queue "way too obvious"; the counts are answers
     same/different/unsure). Another father, another fate or a death two years off part them, and a birth year off by
     more than three unless the father, the village and the death agree; the rest stay for a person. Another Slovene
-    form of the given name (Jože, Jožef) is not one name here: such a pair needs the strict grade."""
-    if M.slovene_form_only(a, b):
+    form of the given name (Jože, Jožef) is not one name here: such a pair needs the strict grade. A moved man's own
+    entry (match_references.held_entry) is no one's to take."""
+    if M.slovene_form_only(a, b) or M.held_entry(a.get('soldier_id')) or M.held_entry(b.get('soldier_id')):
         return None
     for x, y in ((a, b), (b, a)):
         since = ROSTER_FROM.get(x.get('pdf_file'))
@@ -610,6 +611,8 @@ def rematch(index: dict, recs: dict, corr: list[dict], out: Path, blocked=frozen
                 review.append({**f, 'book': book, 'clash': [], 'note': 'likely' + ('' if alone else ', other pairings too')
                                + rivals(rec, ref, found, holders[(book, ref)], recs)})
         log(f'{book:40} new {took:4}  {dict(why_not)}')
+    # an entry a moved man's record holds as its own lead entry is never anyone's reference (match_references.held_entry)
+    new, left, review = ([p for p in ps if not M.held_entry(p['ref'])] for ps in (new, left, review))
     return new, left, review
 
 

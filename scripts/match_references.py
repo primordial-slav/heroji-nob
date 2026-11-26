@@ -82,6 +82,20 @@ for _group in NAME_VARIANT_GROUPS + [list(g) for g in F.GIVEN_FORMS]:
 NAME_VARIANTS = dict(NAME_VARIANTS)
 
 
+_moved: dict = {}
+
+
+def held_entry(entry_id: str) -> str | None:
+    """The record that holds this entry as its own lead entry: a moved man of Borci drugih jedinica, now a record of his
+    unit (data-extraction/unit_record_ids.json, entry -> record). Such an entry is never a reference, to his record or
+    anyone's: the builder would count it taken and drop his record (2026-11-26: 6,880 of the 7,729 references the
+    identity pass's rules took were moved men's own entries; Kolić Asima Bebin 0144900001; Vukalović, 2026-11-22)"""
+    if not _moved:
+        path = ROOT / 'data-extraction' / 'unit_record_ids.json'
+        _moved.update(json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'': ''})
+    return _moved.get(entry_id or '') or None
+
+
 def slovene_form_only(a: dict, b: dict) -> bool:
     """Two given names that are one name only by the Slovene forms (GIVEN_FORMS), not the books' forms above: such a
     pair is taken by the strict grade alone, never by rematch_references.same_man's rules, which were measured on
@@ -333,6 +347,10 @@ def main():
             sys.exit(f'--only: no record and entry of the same name for {missing}')
         chosen += [dict(every[p], grade=every[p]['grade'] or 'reviewed') for p in sorted(pairs)
                    if not any((f['record'], f['ref']) == p for f in chosen)]
+    held = [f for f in chosen if held_entry(f['ref'])]
+    if held:
+        print(f'{len(held)} left out: the entry is a moved man\'s own (held_entry)')
+        chosen = [f for f in chosen if not held_entry(f['ref'])]
     if chosen:
         corr = json.loads(CORRECTIONS.read_text(encoding='utf-8'))
         have = {(c['soldier_id'], c.get('ref_id')) for c in corr if c['action'] == 'reference'}
