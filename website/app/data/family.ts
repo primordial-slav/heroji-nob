@@ -1597,6 +1597,17 @@ export const familyContributions: FamilyContribution[] = [
     from: 'S. Brozović, nećak',
     date: '2026-11',
   },
+  {
+    soldierId: '0003013480', // Solać Stevana Rade of Meljnovac, Druga lička: his grandson's form of 2026-11-26 20:52 (text, photos and
+    // name allowed; he writes "Solac", without the marks); of his three photos the first and third came: him in uniform (the
+    // portrait) and him with his family (the album); life after the war stays in the note, the book's death (1977) stands
+    photo: '0003013480-1.jpg',
+    photoCaption: 'U uniformi',
+    pieces: [{ kind: 'photo', file: '0003013480-2.jpg', caption: 'Sa porodicom' }],
+    text: 'Posle rata živeo je u Apatinu. Sahranjen je 1977. u Apatinu.',
+    from: 'R. Solać, unuk',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
