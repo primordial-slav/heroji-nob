@@ -184,6 +184,8 @@ export const familyContributions: FamilyContribution[] = [
       pages: ['0122959608-3.jpg', '0122959608-4.jpg', '0122959608-5.jpg', '0122959608-6.jpg'],
       caption: 'Njegova ratna sećanja: „Postao sam proleterski borac” (u zborniku Bosanski Petrovac u NOB, knj. V, 1974) i „Na pragu Srbije”',
     }],
+    // her second form of 2026-11-26 15:14: his father, his day of birth and his village's municipality (318555)
+    text: 'Otac mu se zvao Mile. Rođen je 16. 6. 1920. u Risovcu, Bosanski Petrovac.',
     from: 'iz porodične arhive', // the sender did not allow a name: no name, no relation (the user's rule, 2026-11-23)
     date: '2026-11',
   },
@@ -1537,6 +1539,25 @@ export const familyContributions: FamilyContribution[] = [
     ],
     text: 'Rođen je 14. 4. 1919. u selu Habjanovci kod Osijeka. Bio je pripadnik Osječke udarne brigade i sudionik Bolmanske bitke.',
     from: 'J. Vujnovac, unuk',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0018001234', // Pavlović Steva (the book prints Света, 318554), 2. vojvođanska: his relative's form of 2026-11-26 13:27
+    // (text, photos and name allowed; Porodična arhiva 9990000110); of her two photos only the second came: him in uniform,
+    // his face cut as the portrait, the whole photo in the album
+    photo: '0018001234-1.jpg',
+    pieces: [{ kind: 'photo', file: '0018001234-2.jpg', caption: 'U uniformi' }],
+    text: 'Bio je politički komesar Druge fruškogorske brigade. Živeo je u Bukovcu kod Novog Sada, pre i posle rata. Bio je oženjen i imao dve ćerke. Ubio se jer nije mogao da savlada ratne posledice. Sahranjen je u Bukovcu.',
+    from: 'M. Milošević, rođaka',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0010101432', // Ćurgus Đure Ljubiša, 3. krajiška: his sister's granddaughter's form of 2026-11-26 15:49 (text and
+    // photos allowed, name not; Porodična arhiva 9990000109); of her two photos only the second came, his portrait. Her text
+    // is long (his career after the war too): the war and his death kept, in her words
+    photo: '0010101432-1.jpg',
+    text: 'Bio je jedan od organizatora ustanka u petrovačkom kraju 1941. Najveći dio rata proveo je u Trećoj krajiškoj brigadi, gde je bio zamjenik političkog komesara, a potom politički komesar Četvrtog bataljona. Učesnik je Bitke na Sutjesci. Godine 1943. upućen je u Prvu vazduhoplovnu bazu NOVJ u Bariju, gde se obučavao za pilota i dobio čin kapetana; krajem rata bio je politički komesar 11. vazduhoplovne lovačke divizije. Posle rata general-potpukovnik JNA. Nosilac Partizanske spomenice 1941, Ordena ratne zastave i Ordena zasluga za narod. Umro je u Beogradu 19. jula 1988.',
+    from: 'iz porodične arhive',
     date: '2026-11',
   },
 ]

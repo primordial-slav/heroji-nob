@@ -2055183,5 +2055183,54 @@
       "first_name": "Josip"
     },
     "reason": "Form 2026-11-26 12:05, family (J. Vujnovac, unuk): \"Josipa (Mate) Vujnovca\", and his military booklet \"Vujnovac (Mate) Josip\": the given name is Josip, the form the family and the paper give (the user, 2026-11-26: \"make it josip\"); the book's entry stays as printed (Josif)"
+  },
+  {
+    "id": 318551,
+    "action": "reference",
+    "soldier_id": "0010101432",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000109",
+    "ref_name": "Ćurgus Đure Ljubiša",
+    "reason": "Form 2026-11-26 15:49, family (his sister's granddaughter; text and photos allowed, name not), with his portrait: in the NOB from 27. 7. 1941, organizer of the rising around Petrovac, 3. krajiška (deputy commissar, then commissar of the 4. bataljon), Sutjeska, 1943 the air base at Bari, at the war's end commissar of the 11. fighter air division; Partizanska spomenica 1941; died in Belgrade 19. 7. 1988"
+  },
+  {
+    "id": 318552,
+    "action": "edit",
+    "soldier_id": "0010101432",
+    "fields": {
+      "death_date": "19.07.1988",
+      "rank": "politički komesar"
+    },
+    "reason": "Form 2026-11-26 15:49, family (his sister's granddaughter): \"Umro je u Beogradu 19. jula 1988\" (the book: 1988, Beograd); \"zamjenik političkog komesara, a potom i politički komesar Četvrtog bataljona\" (the book's duty was the first)"
+  },
+  {
+    "id": 318553,
+    "action": "reference",
+    "soldier_id": "0018001234",
+    "ref_book": "porodicna-arhiva",
+    "ref_id": "9990000110",
+    "ref_name": "Pavlović Steva",
+    "reason": "Form 2026-11-26 13:27, family (M. Milošević, rođaka; text, photos and name allowed), with his photo in uniform (1 of 2 attachments came): Steva, political commissar of the 2. (Fruška gora) brigade, lived in Bukovac by Novi Sad, took his own life, buried at Bukovac (the book: \"Света*, рођен 1923, умро 1962\")"
+  },
+  {
+    "id": 318554,
+    "action": "edit",
+    "soldier_id": "0018001234",
+    "fields": {
+      "first_name": "Steva",
+      "rank": "politički komesar brigade"
+    },
+    "reason": "Form 2026-11-26 13:27, family (M. Milošević, rođaka): \"Pavlović Steva bio je politički komesar Druge Fruškogorski brigade\": the family's name wins on the card (docs/claude/feedback-rules.md, \"The family's form of his name\"; the book's entry stays as printed, Света); no link or merge names the record"
+  },
+  {
+    "id": 318555,
+    "action": "edit",
+    "soldier_id": "0010900056",
+    "fields": {
+      "fathers_name": "Mile",
+      "birth_date": "16.06.1920",
+      "birth_place": "Risovac, Bosanski Petrovac"
+    },
+    "reason": "Form 2026-11-26 15:14, family (his granddaughter, as on 2026-11-20; text allowed, name not): \"Ime oca: Mile; Rodjen: 16.06.1920; Mesto: Risovac, Bosanski Petrovac\""
   }
 ]
