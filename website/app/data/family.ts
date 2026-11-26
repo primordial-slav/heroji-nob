@@ -1561,6 +1561,34 @@ export const familyContributions: FamilyContribution[] = [
     from: 'iz porodične arhive',
     date: '2026-11',
   },
+  // forms of 2026-11-26 evening by S. Brozović (text, photos and name allowed), his father's side and his mother's brothers
+  {
+    soldierId: '0122938109', // Brozović Jurja Katarina of Selce (the Selce list's "Katica"; name, village and death by override): his
+    // aunt, his father's sister; the census's record of her (0132003892) joins this one at the next chain (ONE_MAN)
+    photo: '0122938109-1.jpg',
+    from: 'S. Brozović, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0122938129', // Brozović Jurja Zvonimir of Selce (the list's "Zvonko"; name and death by override): his father
+    photo: '0122938129-1.jpg',
+    text: 'Penzionisan je u činu pukovnika. Umro je u Beogradu 2013, gde je i sahranjen.',
+    from: 'S. Brozović, sin',
+    date: '2026-11',
+  },
+  {
+    soldierId: '9990000113', // Volf Antuna Bogdan of Tršće (census Croatia, 0132002962): his mother's brother; keyed by his family's
+    // entry (the Spomenica), which the next chain joins to the census's (ONE_MAN), so the photo follows the record's new ID
+    photo: '9990000113-1.jpg',
+    from: 'S. Brozović, nećak',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0095000644', // Volf Antuna Branko of Tršće, 14. primorsko-goranska: his mother's brother (the Spomenica, 318557)
+    photo: '0095000644-1.jpg',
+    from: 'S. Brozović, nećak',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {

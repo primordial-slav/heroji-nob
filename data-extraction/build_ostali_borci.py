@@ -325,6 +325,11 @@ ONE_MAN = [
     ('9018000893', '9990000075', 'Mrkonjić Jovana Ilija of Gaćeša Selo, killed by accident 10. 4. 1942 near Plaški'),
     ('9021003534', '9990000076', 'Stipeč Ljudevita Ivan of Bribir, b. 1924, fell 1942 (Otočac): his niece (the Spomenica)'),
     ('9021003535', '9990000077', 'Stipeč Ljudevita Mihovil of Bribir, b. 1925, fell 1943 (Drežnica): his niece (the Spomenica)'),
+    # forms of 2026-11-26 evening, S. Brozović (05): his aunt Brozović Jurja Katica of the Selce list is the census's
+    # Katarina ("Pravo ime Katarina, nalazi se pod tim imenom u spisku"; b. 1925, Selce, killed there 4. 1. 1944); his
+    # uncle Volf Antun Bogdan of Tršće (census Croatia) held the Spomenica, by his family's entry
+    ('9052000013', '9021003892', 'Brozović Jurja Katarina of Selce, b. 1925, killed 4. 1. 1944 at Selce: her nephew\'s form'),
+    ('9021002962', '9990000113', 'Volf Antuna Bogdan of Tršće, b. 1917, fell 1941: his nephew\'s form (the Spomenica)'),
 ]
 ONE_MAN_PAIRS = {frozenset(p[:2]) for p in ONE_MAN}
 # the IDs two records of 122 had before ONE_MAN joined them: the one that went still opens the man's card (old 122 ID
@@ -380,6 +385,7 @@ MERGED_IDS = {
     # through Trebinje's book, once the census's two entries of her (9022033299, 9022033300) were one woman (census_twice,
     # 2026-11-26); joined before redirects_122 read the registry as it was, so by hand
     '0122941038': '0122930327',
+    '0132003892': '0122938109',   # Brozović Jurja Katarina: the census's record, joined to the Selce list's (2026-11-26)
 }
 # entries checked by hand to be two men, where the rules would join them (a hero and an entry that names no father,
 # of one name and birth year)
