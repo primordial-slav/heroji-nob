@@ -8561,9 +8561,9 @@
     "soldier_id": "0122070917",
     "last_name": "Ajduković",
     "middle_name": "Nikole",
-    "first_name": "Spiro",
+    "first_name": "Špiro",
     "fathers_name": "Nikola",
-    "full_name": "Ajduković Nikole Spiro",
+    "full_name": "Ajduković Nikole Špiro",
     "additional_info": "Raduč, općina Medak: 1921, seljak, Srbin. Stupio u NOB 1941, borac terenske čete. Poginuo u Otočcu 1944.",
     "birth_year": "1921",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -8599,7 +8599,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122927290",
@@ -49191,11 +49194,11 @@
   },
   {
     "soldier_id": "0122908556",
-    "last_name": "Balcin",
+    "last_name": "Balčin",
     "middle_name": "Milivoja",
     "first_name": "Dragić",
     "fathers_name": "Milivoje",
-    "full_name": "Balcin Milivoja Dragić",
+    "full_name": "Balčin Milivoja Dragić",
     "additional_info": "Svinica, općina Krstinja: 1924, seljak, Srbin. Stupio u NOV 5. 8. 1941. Borac odreda »Široka Rijeka«. Poginuo u Svinici 15. 8. 1941.",
     "birth_year": "1924",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -49224,7 +49227,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122932633",
@@ -64546,6 +64552,25 @@
     "birth_place": "Lipovo Polje"
   },
   {
+    "soldier_id": "0122937642",
+    "last_name": "Basta",
+    "middle_name": "Nikole",
+    "first_name": "Ljubiša",
+    "fathers_name": "Nikola",
+    "full_name": "Basta Nikole Ljubiša",
+    "additional_info": "Borci NOB 15. maja 1945. godine, Gornja Tramosnja: BASTA Nikole UUBIŠA, rođen 1920, zemljoradnik, nepismen, stupio u NOB 6. 7. 1943. godine, borac",
+    "birth_year": "1920",
+    "pdf_file": "sanski-most-borci.pdf",
+    "pdf_page": 302,
+    "pdf_x": 138.8,
+    "pdf_y": 239.4,
+    "pdf_x_end": 471.1,
+    "pdf_y_end": 259.2,
+    "occupation": "zemljoradnik",
+    "rank": "borac",
+    "birth_place": "Gornja Tramosnja"
+  },
+  {
     "soldier_id": "0122937611",
     "last_name": "Basta",
     "middle_name": "Rade",
@@ -64883,25 +64908,6 @@
         }
       ]
     }
-  },
-  {
-    "soldier_id": "0122937642",
-    "last_name": "Basta",
-    "middle_name": "Nikole",
-    "first_name": "Ljubiša",
-    "fathers_name": "Nikola",
-    "full_name": "Basta Nikole Ljubiša",
-    "additional_info": "Borci NOB 15. maja 1945. godine, Gornja Tramosnja: BASTA Nikole UUBIŠA, rođen 1920, zemljoradnik, nepismen, stupio u NOB 6. 7. 1943. godine, borac",
-    "birth_year": "1920",
-    "pdf_file": "sanski-most-borci.pdf",
-    "pdf_page": 302,
-    "pdf_x": 138.8,
-    "pdf_y": 239.4,
-    "pdf_x_end": 471.1,
-    "pdf_y_end": 259.2,
-    "occupation": "zemljoradnik",
-    "rank": "borac",
-    "birth_place": "Gornja Tramosnja"
   },
   {
     "soldier_id": "0122937644",
@@ -100787,9 +100793,9 @@
     "soldier_id": "0122906896",
     "last_name": "Boca",
     "middle_name": "Stevana",
-    "first_name": "Zivko",
+    "first_name": "Živko",
     "fathers_name": "Stevan",
-    "full_name": "Boca Stevana Zivko",
+    "full_name": "Boca Stevana Živko",
     "additional_info": "Brezno, općina Drežnica: 1921, radnik, Srbin. Stupio u NOB 1942, borac bat. »Marko Trbović«, komandir voda 1. brig. 13. div. Poginuo kod Stubice 2. 7. 1944.",
     "birth_year": "1921",
     "pdf_file": "hak-12-dreznica.pdf",
@@ -100819,6 +100825,9 @@
     ],
     "occupation": "radnik",
     "rank": "komandir voda",
+    "manual_fields": [
+      "first_name"
+    ],
     "variants": {
       "born": [
         "1920"
@@ -146302,9 +146311,9 @@
     "soldier_id": "0122952091",
     "last_name": "Bukurica",
     "middle_name": "Đure",
-    "first_name": "Duda",
+    "first_name": "Đuđa",
     "fathers_name": "Đuro",
-    "full_name": "Bukurica Đure Duda",
+    "full_name": "Bukurica Đure Đuđa",
     "additional_info": "Borci NOB 15. maja 1945. godine, Miljevci: BUKURICA Đure ĐUĐA, rođen 1907, radnik, 4 raz. osnovne škole, stupio u NOB 1942. godine, predsjednik NOO",
     "birth_year": "1907",
     "pdf_file": "sanski-most-borci.pdf",
@@ -146315,7 +146324,10 @@
     "pdf_y_end": 240.8,
     "role": "activist",
     "occupation": "radnik",
-    "birth_place": "Miljevci"
+    "birth_place": "Miljevci",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122957055",
@@ -180776,11 +180788,11 @@
   },
   {
     "soldier_id": "0122907429",
-    "last_name": "Cimesa",
+    "last_name": "Cimeša",
     "middle_name": "Mojsije",
     "first_name": "Bogić",
     "fathers_name": "Mojsije",
-    "full_name": "Cimesa Mojsije Bogić",
+    "full_name": "Cimeša Mojsije Bogić",
     "additional_info": "općina Perjasica: 1903, seljak, Srbin. Stupio u NOV 19. 1. 1943, borac 2. bat. 1. KPO, Umro od tifusa u bolnici na Petrovoj gori 13. 4. 1943.",
     "birth_year": "1903",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -180810,6 +180822,9 @@
     ],
     "occupation": "seljak",
     "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "death": [
         {
@@ -180821,11 +180836,11 @@
   },
   {
     "soldier_id": "0122907428",
-    "last_name": "Cimesa",
+    "last_name": "Cimeša",
     "middle_name": "Nikole",
     "first_name": "Branko",
     "fathers_name": "Nikola",
-    "full_name": "Cimesa Nikole Branko",
+    "full_name": "Cimeša Nikole Branko",
     "additional_info": "općina Perjasica: 1923, sesjak, Srbin. Stupio u NOV 10. 8. 1942, borac 2. bat. 1. KPO. Poginuo kod Tušilovića 7. 2. 1944.",
     "birth_year": "1923",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -180853,15 +180868,18 @@
         "source_page": 400
       }
     ],
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122907430",
-    "last_name": "Cimesa",
+    "last_name": "Cimeša",
     "middle_name": "Petra",
     "first_name": "Đuro",
     "fathers_name": "Petar",
-    "full_name": "Cimesa Petra Đuro",
+    "full_name": "Cimeša Petra Đuro",
     "additional_info": "općina Perjasica: 1910, seljak, Srbin. Stupio u NOV 7. 9. 1942, borac Komande 1. kondunaškog područja. Umro od tifusa u Perjasici 4. 9. 1943.",
     "birth_year": "1910",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -180891,6 +180909,9 @@
     ],
     "occupation": "seljak",
     "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "born": [
         "1909"
@@ -180948,11 +180969,11 @@
   },
   {
     "soldier_id": "0122907431",
-    "last_name": "Cimesa",
+    "last_name": "Cimeša",
     "middle_name": "Đure",
     "first_name": "Milica",
     "fathers_name": "Đuro",
-    "full_name": "Cimesa Đure Milica",
+    "full_name": "Cimeša Đure Milica",
     "additional_info": "općina Perjasica: 1925, seljanka, Srpkinja. Stupila u NOB u jesen 1942. Član SKOJ-a od 10. 1. 1942. Umrla od tifusa u Perjasici 1. 9. 1943.",
     "birth_year": "1925",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -180981,7 +181002,10 @@
       }
     ],
     "occupation": "seljanka",
-    "party": "SKOJ 1942"
+    "party": "SKOJ 1942",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122931016",
@@ -218368,11 +218392,11 @@
   },
   {
     "soldier_id": "0122908525",
-    "last_name": "Dakovič",
+    "last_name": "Đaković",
     "middle_name": "Stevana",
     "first_name": "Vojislav",
     "fathers_name": "Stevan",
-    "full_name": "Dakovič Stevana Vojislav",
+    "full_name": "Đaković Stevana Vojislav",
     "additional_info": "Mracelj, općina Krstinja: 1925, seljak, Srbin. Stupio u NOV 10. 1. 1942. Borac 2. KPO. Ranjen 18. 3. 1942. u Đaković Potoku i od posljedica umro u Stakorovici 20. 3. 1942.",
     "birth_year": "1925",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -218387,7 +218411,10 @@
     "death_type": "umro",
     "death_date": "20.03.1942",
     "death_place": "Stakorovica",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122912986",
@@ -225638,11 +225665,11 @@
   },
   {
     "soldier_id": "0122951692",
-    "last_name": "Dašić",
+    "last_name": "Đašić",
     "middle_name": "Trive",
     "first_name": "Mara",
     "fathers_name": "Trivo",
-    "full_name": "Dašić Trive Mara",
+    "full_name": "Đašić Trive Mara",
     "additional_info": "Borci NOB 15. maja 1945. godine, Krkojevci: ĐAŠIĆ Trive MARA, rođena 1917, domaćica, 4 raz. osnovne škole, stupila u NOB 1943. godine, odbornica AFŽ",
     "birth_year": "1917",
     "pdf_file": "sanski-most-borci.pdf",
@@ -225653,7 +225680,10 @@
     "pdf_y_end": 472.1,
     "role": "activist",
     "occupation": "domaćica",
-    "birth_place": "Krkojevci"
+    "birth_place": "Krkojevci",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122934451",
@@ -229359,11 +229389,11 @@
   },
   {
     "soldier_id": "0122936195",
-    "last_name": "Davidović",
+    "last_name": "Đavidović",
     "middle_name": "Sime",
     "first_name": "Vaso",
     "fathers_name": "Simo",
-    "full_name": "Davidović Sime Vaso",
+    "full_name": "Đavidović Sime Vaso",
     "additional_info": "Borci NOB 15. maja 1945. godine, Donja Majkić Japra: ĐAVIDOVIĆ Sime VASO, rođen 1914, zemljoradnik, 4 raz. osnovne škole, stupio u NOB 1941. godine, borac",
     "birth_year": "1914",
     "pdf_file": "sanski-most-borci.pdf",
@@ -229374,7 +229404,10 @@
     "pdf_y_end": 173.9,
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "birth_place": "Donja Majkić Japra"
+    "birth_place": "Donja Majkić Japra",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122951999",
@@ -298945,6 +298978,26 @@
     "death_place": "Pag"
   },
   {
+    "soldier_id": "0122923421",
+    "last_name": "Đurišić",
+    "middle_name": "",
+    "first_name": "",
+    "fathers_name": "",
+    "full_name": "Đurišić",
+    "additional_info": "zvani Vukale; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1879; mjesto rođenja Parci JB. nahija; godina smrti 1944; mjesto pogibije Bešin uba",
+    "birth_year": "1879",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 343,
+    "pdf_x": 96.5,
+    "pdf_y": 225.4,
+    "pdf_x_end": 502.0,
+    "pdf_y_end": 235.6,
+    "birth_place": "Parci JB. nahija, Podgorica",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Bešin uba"
+  },
+  {
     "soldier_id": "0122912273",
     "last_name": "Đurišić",
     "middle_name": "Mićov",
@@ -299759,26 +299812,6 @@
       }
     ],
     "occupation": "student prava"
-  },
-  {
-    "soldier_id": "0122923421",
-    "last_name": "Đurišić",
-    "middle_name": "",
-    "first_name": "",
-    "fathers_name": "",
-    "full_name": "Đurišić",
-    "additional_info": "zvani Vukale; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1879; mjesto rođenja Parci JB. nahija; godina smrti 1944; mjesto pogibije Bešin uba",
-    "birth_year": "1879",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 343,
-    "pdf_x": 96.5,
-    "pdf_y": 225.4,
-    "pdf_x_end": 502.0,
-    "pdf_y_end": 235.6,
-    "birth_place": "Parci JB. nahija, Podgorica",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Bešin uba"
   },
   {
     "soldier_id": "0122914142",
@@ -301118,6 +301151,46 @@
     "death_place": "Gacko"
   },
   {
+    "soldier_id": "0122923440",
+    "last_name": "Đurović",
+    "middle_name": "I",
+    "first_name": "",
+    "fathers_name": "I",
+    "full_name": "Đurović I",
+    "additional_info": "zvani Todor; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1899; mjesto rođenja Orasi Lj. nahija; godina smrti 1943; mjesto pogibije Kapino Polje",
+    "birth_year": "1899",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 343,
+    "pdf_x": 97.7,
+    "pdf_y": 558.0,
+    "pdf_x_end": 517.7,
+    "pdf_y_end": 568.0,
+    "birth_place": "Orasi Lj. nahija, Podgorica",
+    "death_type": "poginuo",
+    "death_date": "1943",
+    "death_place": "Kapino Polje"
+  },
+  {
+    "soldier_id": "0122923435",
+    "last_name": "Đurović",
+    "middle_name": "J",
+    "first_name": "",
+    "fathers_name": "J",
+    "full_name": "Đurović J",
+    "additional_info": "zvani Mihailo; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1919; mjesto rođenja Orasi Lj. nahija; godina smrti 1944; mjesto pogibije Piperi",
+    "birth_year": "1919",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 343,
+    "pdf_x": 97.4,
+    "pdf_y": 494.2,
+    "pdf_x_end": 489.8,
+    "pdf_y_end": 504.1,
+    "birth_place": "Orasi Lj. nahija, Podgorica",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Piperi"
+  },
+  {
     "soldier_id": "0122906164",
     "last_name": "Đurović",
     "middle_name": "Previslataa",
@@ -302285,26 +302358,6 @@
     "death_place": "Grižica"
   },
   {
-    "soldier_id": "0122923435",
-    "last_name": "Đurović",
-    "middle_name": "J",
-    "first_name": "",
-    "fathers_name": "J",
-    "full_name": "Đurović J",
-    "additional_info": "zvani Mihailo; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1919; mjesto rođenja Orasi Lj. nahija; godina smrti 1944; mjesto pogibije Piperi",
-    "birth_year": "1919",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 343,
-    "pdf_x": 97.4,
-    "pdf_y": 494.2,
-    "pdf_x_end": 489.8,
-    "pdf_y_end": 504.1,
-    "birth_place": "Orasi Lj. nahija, Podgorica",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Piperi"
-  },
-  {
     "soldier_id": "0122958343",
     "last_name": "Đurović",
     "middle_name": "Radojev",
@@ -303315,26 +303368,6 @@
     ],
     "occupation": "zemljoradnik",
     "rank": "borac"
-  },
-  {
-    "soldier_id": "0122923440",
-    "last_name": "Đurović",
-    "middle_name": "I",
-    "first_name": "",
-    "fathers_name": "I",
-    "full_name": "Đurović I",
-    "additional_info": "zvani Todor; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1899; mjesto rođenja Orasi Lj. nahija; godina smrti 1943; mjesto pogibije Kapino Polje",
-    "birth_year": "1899",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 343,
-    "pdf_x": 97.7,
-    "pdf_y": 558.0,
-    "pdf_x_end": 517.7,
-    "pdf_y_end": 568.0,
-    "birth_place": "Orasi Lj. nahija, Podgorica",
-    "death_type": "poginuo",
-    "death_date": "1943",
-    "death_place": "Kapino Polje"
   },
   {
     "soldier_id": "0122924909",
@@ -369871,9 +369904,9 @@
     "soldier_id": "0122070745",
     "last_name": "Grubić",
     "middle_name": "Save",
-    "first_name": "Bozo",
+    "first_name": "Božo",
     "fathers_name": "Sava",
-    "full_name": "Grubić Save Bozo",
+    "full_name": "Grubić Save Božo",
     "additional_info": "Pavlovac—Vrebac—Zavode, općina Medak: 1921, Vrebac, podoficir, Srbin. Stupio u NOB 1. 8. 1941. u bat. »Velebit«. Poginuo kao sekretar Općinskog komiteta Pazarište na Ivčević Kosi kod Perušića 20. 3. 1944.",
     "birth_year": "1921",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -369916,6 +369949,9 @@
       }
     ],
     "occupation": "podoficir",
+    "manual_fields": [
+      "first_name"
+    ],
     "variants": {
       "death": [
         {
@@ -376199,6 +376235,28 @@
     "birth_place": "Usorci"
   },
   {
+    "soldier_id": "0122937830",
+    "last_name": "Gvozden",
+    "middle_name": "Ilije",
+    "first_name": "Ljuboje",
+    "fathers_name": "Ilija",
+    "full_name": "Gvozden Ilije Ljuboje",
+    "additional_info": "Borci poginuli u NOB, Usorci: GVOZDEN Ilije UUBOJE, rođen 1922, zemljoradnik, samouk, stupio u NOB 1942, poginuo 1944. godine u Sandžaku, borac",
+    "birth_year": "1922",
+    "pdf_file": "sanski-most-borci.pdf",
+    "pdf_page": 315,
+    "pdf_x": 95.3,
+    "pdf_y": 475.6,
+    "pdf_x_end": 428.9,
+    "pdf_y_end": 495.1,
+    "occupation": "zemljoradnik",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Sandžak",
+    "rank": "borac",
+    "birth_place": "Usorci"
+  },
+  {
     "soldier_id": "0122953518",
     "last_name": "Gvozden",
     "middle_name": "Blagoje",
@@ -376336,28 +376394,6 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "rank": "borac",
-    "birth_place": "Usorci"
-  },
-  {
-    "soldier_id": "0122937830",
-    "last_name": "Gvozden",
-    "middle_name": "Ilije",
-    "first_name": "Ljuboje",
-    "fathers_name": "Ilija",
-    "full_name": "Gvozden Ilije Ljuboje",
-    "additional_info": "Borci poginuli u NOB, Usorci: GVOZDEN Ilije UUBOJE, rođen 1922, zemljoradnik, samouk, stupio u NOB 1942, poginuo 1944. godine u Sandžaku, borac",
-    "birth_year": "1922",
-    "pdf_file": "sanski-most-borci.pdf",
-    "pdf_page": 315,
-    "pdf_x": 95.3,
-    "pdf_y": 475.6,
-    "pdf_x_end": 428.9,
-    "pdf_y_end": 495.1,
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Sandžak",
     "rank": "borac",
     "birth_place": "Usorci"
   },
@@ -410109,11 +410145,11 @@
   },
   {
     "soldier_id": "0122070846",
-    "last_name": "Ivancević",
+    "last_name": "Ivančević",
     "middle_name": "Dmitra",
     "first_name": "Branko",
     "fathers_name": "Dmitar",
-    "full_name": "Ivancević Dmitra Branko",
+    "full_name": "Ivančević Dmitra Branko",
     "additional_info": "Počitelj, općina Medak: 1921, seljak, Srbin. Stupio u NOV 1942, borac Omladinske čete 2. bat. Poginuo u Ploči 1942.",
     "birth_year": "1921",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -410150,6 +410186,9 @@
     ],
     "occupation": "seljak",
     "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "death": [
         {
@@ -410710,11 +410749,11 @@
   },
   {
     "soldier_id": "0122070849",
-    "last_name": "Ivancević",
+    "last_name": "Ivančević",
     "middle_name": "Dmitra",
     "first_name": "Mile",
     "fathers_name": "Dmitar",
-    "full_name": "Ivancević Dmitra Mile",
+    "full_name": "Ivančević Dmitra Mile",
     "additional_info": "Počitelj, općina Medak: 1918, seljak, Srbin. Stupio u NOV 1942, borac Omladinske čete. Umro u Italiji 1944.",
     "birth_year": "1918",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -410751,6 +410790,9 @@
     ],
     "occupation": "seljak",
     "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "death": [
         {
@@ -418383,11 +418425,11 @@
   },
   {
     "soldier_id": "0122908696",
-    "last_name": "Ivosevič",
+    "last_name": "Ivošević",
     "middle_name": "Marka",
     "first_name": "Dušan",
     "fathers_name": "Marko",
-    "full_name": "Ivosevič Marka Dušan",
+    "full_name": "Ivošević Marka Dušan",
     "additional_info": "Ivosevič Selo, općina Utinja: 1923, fotograf, Srbin. Stupio u NOV 1943. Borac krajiške brigade. Ubijen kod Doboja u jesen 1943.",
     "birth_year": "1923",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -418416,7 +418458,10 @@
       }
     ],
     "occupation": "fotograf",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122906938",
@@ -418653,11 +418698,11 @@
   },
   {
     "soldier_id": "0122908697",
-    "last_name": "Ivosevič",
+    "last_name": "Ivošević",
     "middle_name": "Milića",
     "first_name": "Miloš",
     "fathers_name": "Milić",
-    "full_name": "Ivosevič Milića Miloš",
+    "full_name": "Ivošević Milića Miloš",
     "additional_info": "Ivosevič Selo, općina Utinja: 1920, seljak, Srbin. Stupio u NOV 20. 3. 1942. Borac 1. brig. NOV Hrvatske. Poginuo kod Jezerana 9. 8. 1942.",
     "birth_year": "1920",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -418686,7 +418731,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122906964",
@@ -426051,11 +426099,11 @@
   },
   {
     "soldier_id": "0122907230",
-    "last_name": "Jancić",
+    "last_name": "Jančić",
     "middle_name": "Đure",
     "first_name": "Milan",
     "fathers_name": "Đuro",
-    "full_name": "Jancić Đure Milan",
+    "full_name": "Jančić Đure Milan",
     "additional_info": "općina Duga Resa: 1925, đak, Srbin. Stupio u NOB 22. 5. 1942. Poginuo kao desetar 1. kordunaške brigade kod Čememice 14. 12. 1942.",
     "birth_year": "1925",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -426085,6 +426133,9 @@
     ],
     "occupation": "đak",
     "rank": "desetar",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "born": [
         "1926"
@@ -480006,9 +480057,9 @@
     "soldier_id": "0122070948",
     "last_name": "Kalinić",
     "middle_name": "Jove",
-    "first_name": "Spiro",
+    "first_name": "Špiro",
     "fathers_name": "Jovo",
-    "full_name": "Kalinić Jove Spiro",
+    "full_name": "Kalinić Jove Špiro",
     "additional_info": "Raduč, općina Medak: 1921, seljak, Srbin. Stupio u NOB 1941, borac terenske čete. Poginuo 1944.",
     "birth_year": "1921",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -480031,7 +480082,10 @@
     "occupation": "seljak",
     "death_type": "poginuo",
     "death_date": "1944",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122921489",
@@ -551455,11 +551509,11 @@
   },
   {
     "soldier_id": "0122907286",
-    "last_name": "Kosturić",
+    "last_name": "Košturić",
     "middle_name": "Petra",
     "first_name": "Franca",
     "fathers_name": "Petar",
-    "full_name": "Kosturić Petra Franca",
+    "full_name": "Košturić Petra Franca",
     "additional_info": "Mrežnički Novaki, općina Duga Resa: 1912, radnica, Hrvatica. Stupila u NOV 10. 6. 1943, borac 1. karlovačkog PO. Poginula kod Generalskog Stola 27. 2. 1944.",
     "birth_year": "1912",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -551488,7 +551542,10 @@
       }
     ],
     "occupation": "radnica",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122133589",
@@ -647490,11 +647547,11 @@
   },
   {
     "soldier_id": "0122908839",
-    "last_name": "Mačesic",
+    "last_name": "Maćešić",
     "middle_name": "Mojsije",
     "first_name": "Branko",
     "fathers_name": "Mojsije",
-    "full_name": "Mačesic Mojsije Branko",
+    "full_name": "Maćešić Mojsije Branko",
     "additional_info": "Loskunja, općina Vojnić: 1924, seljak, Srbin. Stupio u NOV 15. 9. 1941. Borac 2. čete 1. bat. 1. KPO. Poginuo u selu Međeđak 10. 3. 1942.",
     "birth_year": "1924",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -647523,7 +647580,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122908819",
@@ -653467,9 +653527,9 @@
     "soldier_id": "0122935644",
     "last_name": "Majkić",
     "middle_name": "Stevana",
-    "first_name": "Duda",
+    "first_name": "Đuđa",
     "fathers_name": "Stevan",
-    "full_name": "Majkić Stevana Duda",
+    "full_name": "Majkić Stevana Đuđa",
     "additional_info": "Borci NOB 15. maja 1945. godine, Kozin: MAJKIĆ Stevana ĐUĐA, rođen 1920, zemljoradnik, nepismen, stupio u NOB 1942. godine, borac",
     "birth_year": "1920",
     "pdf_file": "sanski-most-borci.pdf",
@@ -653480,7 +653540,10 @@
     "pdf_y_end": 654.5,
     "occupation": "zemljoradnik",
     "rank": "borac",
-    "birth_place": "Kozin"
+    "birth_place": "Kozin",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122952897",
@@ -670814,11 +670877,11 @@
   },
   {
     "soldier_id": "0122908730",
-    "last_name": "Manjerovic",
+    "last_name": "Manjerović",
     "middle_name": "Janka",
     "first_name": "Nikola",
     "fathers_name": "Janko",
-    "full_name": "Manjerovic Janka Nikola",
+    "full_name": "Manjerović Janka Nikola",
     "additional_info": "Manjerovic, općina Utinja: 1911, seljak, Hrvat. Stupio u NOV 1. 9. 1944. Borac Radnog bat. komande prvog kord. područja. Umro od prehlade u partizanskoj bolnici na otoku Hvaru aprila 1945.",
     "birth_year": "1911",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -670847,7 +670910,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122134982",
@@ -672271,6 +672337,46 @@
     "death_type": "poginuo"
   },
   {
+    "soldier_id": "0122923626",
+    "last_name": "Maraš",
+    "middle_name": "Nešov",
+    "first_name": "",
+    "fathers_name": "Nešo",
+    "full_name": "Maraš Nešov",
+    "additional_info": "zvani Marko; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1906; mjesto rođenja Bijelo Polje Zeta; godina smrti 1944; mjesto pogibije Rsojevići",
+    "birth_year": "1906",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 349,
+    "pdf_x": 103.0,
+    "pdf_y": 197.7,
+    "pdf_x_end": 505.5,
+    "pdf_y_end": 207.6,
+    "birth_place": "Bijelo Polje Zeta, Podgorica",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Rsojevići"
+  },
+  {
+    "soldier_id": "0122923627",
+    "last_name": "Maraš",
+    "middle_name": "Petrov",
+    "first_name": "",
+    "fathers_name": "Petar",
+    "full_name": "Maraš Petrov",
+    "additional_info": "zvani Milo; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1919; mjesto rođenja Bijelo Polje Zeta; godina smrti 1942; mjesto pogibije Vrela Ribnička",
+    "birth_year": "1919",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 349,
+    "pdf_x": 103.0,
+    "pdf_y": 210.1,
+    "pdf_x_end": 532.1,
+    "pdf_y_end": 220.3,
+    "birth_place": "Bijelo Polje Zeta, Podgorica",
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Vrela Ribnička"
+  },
+  {
     "soldier_id": "0122938006",
     "last_name": "Maras",
     "middle_name": "",
@@ -672383,26 +672489,6 @@
     "rank": "borac"
   },
   {
-    "soldier_id": "0122923626",
-    "last_name": "Maraš",
-    "middle_name": "Nešov",
-    "first_name": "",
-    "fathers_name": "Nešo",
-    "full_name": "Maraš Nešov",
-    "additional_info": "zvani Marko; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1906; mjesto rođenja Bijelo Polje Zeta; godina smrti 1944; mjesto pogibije Rsojevići",
-    "birth_year": "1906",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 349,
-    "pdf_x": 103.0,
-    "pdf_y": 197.7,
-    "pdf_x_end": 505.5,
-    "pdf_y_end": 207.6,
-    "birth_place": "Bijelo Polje Zeta, Podgorica",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Rsojevići"
-  },
-  {
     "soldier_id": "0122945296",
     "last_name": "Maras",
     "middle_name": "Mile",
@@ -672497,26 +672583,6 @@
     "death_type": "poginuo",
     "death_date": "1942",
     "death_place": "Rijeka Morača"
-  },
-  {
-    "soldier_id": "0122923627",
-    "last_name": "Maraš",
-    "middle_name": "Petrov",
-    "first_name": "",
-    "fathers_name": "Petar",
-    "full_name": "Maraš Petrov",
-    "additional_info": "zvani Milo; Spomenica crnogorskim antifašistima 1941-1945, Podgorica: godina rođenja 1919; mjesto rođenja Bijelo Polje Zeta; godina smrti 1942; mjesto pogibije Vrela Ribnička",
-    "birth_year": "1919",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 349,
-    "pdf_x": 103.0,
-    "pdf_y": 210.1,
-    "pdf_x_end": 532.1,
-    "pdf_y_end": 220.3,
-    "birth_place": "Bijelo Polje Zeta, Podgorica",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Vrela Ribnička"
   },
   {
     "soldier_id": "0122923629",
@@ -710908,7 +710974,7 @@
     "last_name": "Matijević",
     "middle_name": "Zivka",
     "first_name": "Branko",
-    "fathers_name": "Zivko",
+    "fathers_name": "Živko",
     "full_name": "Matijević Zivka Branko",
     "additional_info": "Mandić Selo, općina Utinja: 1918, seljak, Srbin. Stupio u NOV 1. 6. 1942. Borac 6. čete PPK bat. Poginuo u Furjanu 12. 6. 1944.",
     "birth_year": "1918",
@@ -710939,6 +711005,9 @@
     ],
     "occupation": "seljak",
     "rank": "borac",
+    "manual_fields": [
+      "fathers_name"
+    ],
     "variants": {
       "death": [
         {
@@ -737088,9 +737157,9 @@
     "soldier_id": "0122935630",
     "last_name": "Mikić",
     "middle_name": "Mile",
-    "first_name": "Duda",
+    "first_name": "Đuđa",
     "fathers_name": "Mile",
-    "full_name": "Mikić Mile Duda",
+    "full_name": "Mikić Mile Đuđa",
     "additional_info": "Nosioci Partizanske spomenice 1941. godine, Kozin: MIKIĆ Mile ĐUĐA, rođen 1916. godine, zemljoradnik, nepismen, sekretar Opštinskog komiteta KPJ Teslić",
     "birth_year": "1916",
     "pdf_file": "sanski-most-borci.pdf",
@@ -737101,7 +737170,10 @@
     "pdf_y_end": 629.1,
     "occupation": "zemljoradnik",
     "birth_place": "Kozin",
-    "party": "KPJ"
+    "party": "KPJ",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122904559",
@@ -746734,6 +746806,27 @@
     "unit_detail": "3. bataljon, Banijski odred"
   },
   {
+    "soldier_id": "0122947425",
+    "last_name": "Milić",
+    "middle_name": "",
+    "first_name": "'dragutin",
+    "fathers_name": "",
+    "full_name": "Milić 'dragutin",
+    "additional_info": "rođen 25. 6. 1923. u Kupljenovu, poginuo 1944. kod Hrašćina Trgovišća kao diverzant Zagorskog odreda.",
+    "birth_year": "1923",
+    "pdf_file": "hrvatsko-zagorje-1981.pdf",
+    "pdf_page": 47,
+    "pdf_x": 24.5,
+    "pdf_y": 406.7,
+    "pdf_x_end": 379.2,
+    "pdf_y_end": 424.6,
+    "birth_place": "Kupljenovo",
+    "death_type": "poginuo",
+    "death_date": "1944",
+    "death_place": "Hrašćina Trgovišće",
+    "birth_date": "25.06.1923"
+  },
+  {
     "soldier_id": "0122902231",
     "last_name": "Milić",
     "middle_name": "",
@@ -748090,27 +748183,6 @@
     "pdf_y_end": 459.7,
     "death_type": "poginuo",
     "death_place": "Lovaš"
-  },
-  {
-    "soldier_id": "0122947425",
-    "last_name": "Milić",
-    "middle_name": "",
-    "first_name": "'dragutin",
-    "fathers_name": "",
-    "full_name": "Milić 'dragutin",
-    "additional_info": "rođen 25. 6. 1923. u Kupljenovu, poginuo 1944. kod Hrašćina Trgovišća kao diverzant Zagorskog odreda.",
-    "birth_year": "1923",
-    "pdf_file": "hrvatsko-zagorje-1981.pdf",
-    "pdf_page": 47,
-    "pdf_x": 24.5,
-    "pdf_y": 406.7,
-    "pdf_x_end": 379.2,
-    "pdf_y_end": 424.6,
-    "birth_place": "Kupljenovo",
-    "death_type": "poginuo",
-    "death_date": "1944",
-    "death_place": "Hrašćina Trgovišće",
-    "birth_date": "25.06.1923"
   },
   {
     "soldier_id": "0122923700",
@@ -764249,11 +764321,11 @@
   },
   {
     "soldier_id": "0122071836",
-    "last_name": "Milosevic",
+    "last_name": "Milošević",
     "middle_name": "Milana",
     "first_name": "Janja",
     "fathers_name": "Milan",
-    "full_name": "Milosevic Milana Janja",
+    "full_name": "Milošević Milana Janja",
     "additional_info": "Nosioci partizanske spomenice 1941. godine, Poćitelj, općina Medak: 1920, seljanka, Srpkinja.",
     "birth_year": "1920",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -764273,7 +764345,10 @@
     ],
     "ethnicity": "Srpkinja",
     "occupation": "seljanka",
-    "birth_place": "Poćitelj"
+    "birth_place": "Poćitelj",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122905858",
@@ -779207,11 +779282,11 @@
   },
   {
     "soldier_id": "0122071866",
-    "last_name": "Mišcević",
+    "last_name": "Miščević",
     "middle_name": "Jove",
     "first_name": "Đuro",
     "fathers_name": "Jovo",
-    "full_name": "Mišcević Jove Đuro",
+    "full_name": "Miščević Jove Đuro",
     "additional_info": "Nosioci partizanske spomenice 1941. godine, Raduč, općina Medak: seljak, Srbin.",
     "birth_year": "",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -779231,7 +779306,10 @@
     ],
     "ethnicity": "Srbin",
     "occupation": "seljak",
-    "birth_place": "Raduč"
+    "birth_place": "Raduč",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122945539",
@@ -832711,9 +832789,9 @@
     "soldier_id": "0122952139",
     "last_name": "Novaković",
     "middle_name": "Jove",
-    "first_name": "Duda",
+    "first_name": "Đuđa",
     "fathers_name": "Jovo",
-    "full_name": "Novaković Jove Duda",
+    "full_name": "Novaković Jove Đuđa",
     "additional_info": "Borci NOB 15. maja 1945. godine, Miljevci: NOVAKOVIĆ Jove ĐUĐA, rođen 1927, zemljoradnik, 4 raz. osnovne škole, stupio u NOB 1943. godine, član SKOJ-a",
     "birth_year": "1927",
     "pdf_file": "sanski-most-borci.pdf",
@@ -832725,7 +832803,10 @@
     "role": "activist",
     "occupation": "zemljoradnik",
     "birth_place": "Miljevci",
-    "party": "SKOJ"
+    "party": "SKOJ",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122954768",
@@ -856448,11 +856529,11 @@
   },
   {
     "soldier_id": "0122942480",
-    "last_name": "Osivcić",
+    "last_name": "Osivčić",
     "middle_name": "Tahira",
     "first_name": "Zaim",
     "fathers_name": "Tahir",
-    "full_name": "Osivcić Tahira Zaim",
+    "full_name": "Osivčić Tahira Zaim",
     "additional_info": "Spisak poginulih i umrlih boraca narodnooslobodilačkog rata opštine Teslić: r. 1927, Ružević, Teslić, Musliman, zemljoradnik, borac 14. SBUB od 15. 9. 1944, poginuo u novembru 1944",
     "birth_year": "1927",
     "pdf_file": "teslic-u-nob-borci.pdf",
@@ -856482,7 +856563,10 @@
       }
     ],
     "occupation": "zemljoradnik",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122931657",
@@ -992413,11 +992497,11 @@
   },
   {
     "soldier_id": "0122070550",
-    "last_name": "Radosević",
+    "last_name": "Radošević",
     "middle_name": "Mile",
     "first_name": "Dmitar",
     "fathers_name": "Mile",
-    "full_name": "Radosević Mile Dmitar",
+    "full_name": "Radošević Mile Dmitar",
     "additional_info": "općina Medak: 1920, seljak, Srbin. Stupio u NOB 1941, borac jurišne čete. Član SKOJ-a. Poginuo kao borac bat. »P. Vuksan« u Ličkom Novom 1. 9. 1942.",
     "birth_year": "1920",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -992455,6 +992539,9 @@
     "occupation": "seljak",
     "rank": "borac",
     "party": "SKOJ",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "born": [
         "1921"
@@ -992959,11 +993046,11 @@
   },
   {
     "soldier_id": "0122070551",
-    "last_name": "Radosević",
+    "last_name": "Radošević",
     "middle_name": "Mile",
     "first_name": "Tomo",
     "fathers_name": "Mile",
-    "full_name": "Radosević Mile Tomo",
+    "full_name": "Radošević Mile Tomo",
     "additional_info": "općina Medak: 1914, strojobravar. Srbin. Stupio u NOB 1941, borac jurišne čete. Poginuo u Sadilovcu 20. 6. 1942.",
     "birth_year": "1914",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -992987,7 +993074,10 @@
     "death_date": "20.06.1942",
     "death_place": "Sadilovac",
     "rank": "borac",
-    "birth_place": "Medak"
+    "birth_place": "Medak",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122918383",
@@ -1012900,11 +1012990,11 @@
   },
   {
     "soldier_id": "0122070110",
-    "last_name": "Rajcević",
+    "last_name": "Rajčević",
     "middle_name": "Marka",
     "first_name": "Milan",
     "fathers_name": "Marko",
-    "full_name": "Rajcević Marka Milan",
+    "full_name": "Rajčević Marka Milan",
     "additional_info": "Divoselo, općina Gospić: 1920, trgovački pomoćnik, Srbin. Stupio u NOB 1942, borac Područnog bat. Poginuo na Kruškovačama augusta 1943.",
     "birth_year": "1920",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -1012928,7 +1013018,10 @@
     "death_type": "poginuo",
     "death_date": "08.1943",
     "death_place": "na Kruškovačama",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122070020",
@@ -1036415,6 +1036508,25 @@
     "death_place": "Njemačka"
   },
   {
+    "soldier_id": "0122120135",
+    "last_name": "Ristić",
+    "middle_name": "Vladimir",
+    "first_name": "",
+    "fathers_name": "Vladimir",
+    "full_name": "Ristić Vladimir",
+    "additional_info": "zvani 1920. godine u Projerskom-Lebane; 3. Srpska brigada: poginuo oktobra 1944. godine u Župi.",
+    "birth_year": "",
+    "pdf_file": "krusevac-1944-poginuli.pdf",
+    "pdf_page": 8,
+    "pdf_x": 40.4,
+    "pdf_y": 408.7,
+    "pdf_x_end": 372.9,
+    "pdf_y_end": 430.4,
+    "death_type": "poginuo",
+    "death_date": "10.1944",
+    "death_place": "Župa"
+  },
+  {
     "soldier_id": "0122060124",
     "last_name": "Ristić",
     "middle_name": "",
@@ -1037116,25 +1037228,6 @@
     "death_place": "Cerkezi . u Stanarima",
     "birth_place": "Stanari",
     "party": "SKOJ"
-  },
-  {
-    "soldier_id": "0122120135",
-    "last_name": "Ristić",
-    "middle_name": "Vladimir",
-    "first_name": "",
-    "fathers_name": "Vladimir",
-    "full_name": "Ristić Vladimir",
-    "additional_info": "zvani 1920. godine u Projerskom-Lebane; 3. Srpska brigada: poginuo oktobra 1944. godine u Župi.",
-    "birth_year": "",
-    "pdf_file": "krusevac-1944-poginuli.pdf",
-    "pdf_page": 8,
-    "pdf_x": 40.4,
-    "pdf_y": 408.7,
-    "pdf_x_end": 372.9,
-    "pdf_y_end": 430.4,
-    "death_type": "poginuo",
-    "death_date": "10.1944",
-    "death_place": "Župa"
   },
   {
     "soldier_id": "0122942247",
@@ -1060380,6 +1060473,26 @@
     "death_date": "1976"
   },
   {
+    "soldier_id": "0122926593",
+    "last_name": "Samarcić",
+    "middle_name": "Lazareva",
+    "first_name": "",
+    "fathers_name": "Lazar",
+    "full_name": "Samarcić Lazareva",
+    "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Šavnik: godina rođenja 1939; mjesto rođenja Rijeka Crnojevića; godina smrti 1942; mjesto pogibije Albanija",
+    "birth_year": "1939",
+    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
+    "pdf_page": 434,
+    "pdf_x": 91.4,
+    "pdf_y": 523.5,
+    "pdf_x_end": 489.2,
+    "pdf_y_end": 533.7,
+    "birth_place": "Rijeka Crnojevića, Šavnik",
+    "death_type": "poginuo",
+    "death_date": "1942",
+    "death_place": "Albanija"
+  },
+  {
     "soldier_id": "0122902324",
     "last_name": "Samarcić",
     "middle_name": "",
@@ -1060415,26 +1060528,6 @@
     "death_type": "poginuo",
     "death_date": "1941",
     "death_place": "Zagreb"
-  },
-  {
-    "soldier_id": "0122926593",
-    "last_name": "Samarcić",
-    "middle_name": "Lazareva",
-    "first_name": "",
-    "fathers_name": "Lazar",
-    "full_name": "Samarcić Lazareva",
-    "additional_info": "Spomenica crnogorskim antifašistima 1941-1945, Šavnik: godina rođenja 1939; mjesto rođenja Rijeka Crnojevića; godina smrti 1942; mjesto pogibije Albanija",
-    "birth_year": "1939",
-    "pdf_file": "spomenica-crnogorskim-antifasistima.pdf",
-    "pdf_page": 434,
-    "pdf_x": 91.4,
-    "pdf_y": 523.5,
-    "pdf_x_end": 489.2,
-    "pdf_y_end": 533.7,
-    "birth_place": "Rijeka Crnojevića, Šavnik",
-    "death_type": "poginuo",
-    "death_date": "1942",
-    "death_place": "Albanija"
   },
   {
     "soldier_id": "0122900428",
@@ -1117815,11 +1117908,11 @@
   },
   {
     "soldier_id": "0122908250",
-    "last_name": "Solić",
+    "last_name": "Šolić",
     "middle_name": "Marka",
     "first_name": "Simo",
     "fathers_name": "Marko",
-    "full_name": "Solić Marka Simo",
+    "full_name": "Šolić Marka Simo",
     "additional_info": "Donji Budački, općina Krnjak: 1911, seljak, Srbin. Član seoskog NOO od 1. 10. 1941. Umro od prehlade u selu 28. 3. 1942.",
     "birth_year": "1911",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -1117847,7 +1117940,10 @@
         "source_page": 820
       }
     ],
-    "occupation": "seljak"
+    "occupation": "seljak",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122908251",
@@ -1173821,11 +1173917,11 @@
   },
   {
     "soldier_id": "0122907351",
-    "last_name": "Subašić",
+    "last_name": "Šubašić",
     "middle_name": "Franje",
     "first_name": "Janko",
     "fathers_name": "Franjo",
-    "full_name": "Subašić Franje Janko",
+    "full_name": "Šubašić Franje Janko",
     "additional_info": "Vukova Gorica, općina Netretić: 1924, seljak, Hrvat. Stupio u NOV 1. 8. 1942, stražar Komande vojnog područja za Kordun. Poginuo kod Krnjačkog Grabovca 21. 1. 1943.",
     "birth_year": "1924",
     "pdf_file": "hak-15-duga-resa.pdf",
@@ -1173853,7 +1173949,10 @@
         "source_page": 408
       }
     ],
-    "occupation": "seljak"
+    "occupation": "seljak",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122130423",
@@ -1175759,9 +1175858,9 @@
     "soldier_id": "0122908451",
     "last_name": "Sudar",
     "middle_name": "Sime",
-    "first_name": "Bozo",
+    "first_name": "Božo",
     "fathers_name": "Simo",
-    "full_name": "Sudar Sime Bozo",
+    "full_name": "Sudar Sime Božo",
     "additional_info": "Klokoč, općina Krstinja: 1925, seljak, Srbin. Stupio u NOV 1941. Borac 6. ličke div. Poginuo kod Drvara aprila 1943.",
     "birth_year": "1925",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -1175790,7 +1175889,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122940449",
@@ -1180520,11 +1180622,11 @@
   },
   {
     "soldier_id": "0122070998",
-    "last_name": "Super",
+    "last_name": "Šuper",
     "middle_name": "Nikole",
     "first_name": "Milan",
     "fathers_name": "Nikola",
-    "full_name": "Super Nikole Milan",
+    "full_name": "Šuper Nikole Milan",
     "additional_info": "Rizvanuša, općina Smiljan: 1923, seljak, Hrvat. Stupio u NOV septembra 1942, borac 1. čete, 2. bat. 3. lič. brig, kasnije 6. div. Poginuo kao komandir voda u Drvaru 25. 5. 1944.",
     "birth_year": "1923",
     "pdf_file": "hak-20-gospic-perusic.pdf",
@@ -1180555,6 +1180657,9 @@
     "occupation": "seljak",
     "rank": "komandir voda",
     "unit_detail": "1. četa, 2. bataljon, 3. lič brigada",
+    "manual_fields": [
+      "last_name"
+    ],
     "variants": {
       "death": [
         {
@@ -1193318,9 +1193423,9 @@
     "soldier_id": "0122907055",
     "last_name": "Tatalović",
     "middle_name": "Mile",
-    "first_name": "Zivko",
+    "first_name": "Živko",
     "fathers_name": "Mile",
-    "full_name": "Tatalović Mile Zivko",
+    "full_name": "Tatalović Mile Živko",
     "additional_info": "Radloviči, općina Drežnica: 1922, šumski radnik, Srbin. Stupio u NOB 20. 10. 1941, borac logora Tomić. Poginuo kao komandir čete 1. bat. 1. brig. 13. div. kod Delnica aprila 1944.",
     "birth_year": "1922",
     "pdf_file": "hak-12-dreznica.pdf",
@@ -1193349,7 +1193454,10 @@
     "occupation": "šumski radnik",
     "death_place": "Delnice",
     "rank": "komandir čete",
-    "unit_detail": "1. bataljon, 1. brigada 13. divizije"
+    "unit_detail": "1. bataljon, 1. brigada 13. divizije",
+    "manual_fields": [
+      "first_name"
+    ]
   },
   {
     "soldier_id": "0122926696",
@@ -1235766,11 +1235874,11 @@
   },
   {
     "soldier_id": "0122959541",
-    "last_name": "Uncević-Kantar",
+    "last_name": "Unčević-Kantar",
     "middle_name": "Jovana",
     "first_name": "Mileva",
     "fathers_name": "Jovan",
-    "full_name": "Uncević-Kantar Jovana Mileva",
+    "full_name": "Unčević-Kantar Jovana Mileva",
     "additional_info": "Nosioci Partizanske spomenice 1941. godine, Gornji Lipnik: UNČEVIĆ-Kantar Jovana MILEVA, rođena 1926. godine, domaćica, 4 raz. osnovne škole, borac",
     "birth_year": "1926",
     "pdf_file": "sanski-most-borci.pdf",
@@ -1235781,7 +1235889,10 @@
     "pdf_y_end": 502.0,
     "occupation": "domaćica",
     "rank": "borac",
-    "birth_place": "Gornji Lipnik"
+    "birth_place": "Gornji Lipnik",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122929884",
@@ -1259693,11 +1259804,11 @@
   },
   {
     "soldier_id": "0122908513",
-    "last_name": "Vidic",
+    "last_name": "Vidić",
     "middle_name": "Laze",
     "first_name": "Savo",
     "fathers_name": "Lazo",
-    "full_name": "Vidic Laze Savo",
+    "full_name": "Vidić Laze Savo",
     "additional_info": "Miholjsko, općina Krstinja: 1928, seljak, Srbin. Stupio u NOV 1. 9. 1944. Borac 1. div. KNOJ-a. Poginuo u borbi protiv ustaša i terorista poslije oslobođenja na Velebitu 1945.",
     "birth_year": "1928",
     "pdf_file": "hak-19-vojnic.pdf",
@@ -1259726,7 +1259837,10 @@
       }
     ],
     "occupation": "seljak",
-    "rank": "borac"
+    "rank": "borac",
+    "manual_fields": [
+      "last_name"
+    ]
   },
   {
     "soldier_id": "0122906849",
