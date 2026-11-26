@@ -2223,8 +2223,13 @@ def read_all(ex: Extractor, s: dict, code: int) -> dict:
                 got.setdefault('unit_detail', head.group(1).strip())
     if got.get('death_date') in day_place:
         # the book that gives the day gives the place too (board 36's order; board 67): Bulajić Jovanova Desanka's
-        # "23. maja 1942. ... u Šipačno, Nikšić" (Vilusi's book), not the Nikšić list's "poginuo 1942, Šibenik" beside it
-        got['death_place'] = day_place[got['death_date']]
+        # "23. maja 1942. ... u Šipačno, Nikšić" (Vilusi's book), not the Nikšić list's "poginuo 1942, Šibenik" beside it;
+        # where the two name one place, the form that says more ("Ostrvica, Dimića kraj" for "Ostrvica"; Bogdanović
+        # Stevana Dušan's own "u Trnovcu kod Gospića", not the other book's "Trnavac")
+        from record_sources import place_words, says_more, words_match       # (it imports this module)
+        spot, here = day_place[got['death_date']], got.get('death_place') or ''
+        if not (here and words_match(place_words(here), place_words(spot)) and not says_more(spot, here)):
+            got['death_place'] = spot
     if village and not got.get('birth_place'):
         got['birth_place'] = village
     if s.get('born_in') and not got.get('birth_place'):

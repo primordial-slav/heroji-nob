@@ -297,7 +297,9 @@ def names_more(a: str, b: str) -> bool:
     """a names a place before the one both name, which b gives alone: the census's village before its municipality
     ("Plana kod bileć" for Bileća, "Roda g. vakuf" for Gornji Vakuf, "Žuma nikšić" for Nikšić), not the village b
     names in a's form ("Lubnice-ivangra" for Lubnice)"""
-    wa, wb = [w for w, _ in _form_words(a)], [w for w, _ in _form_words(b)]
+    # (b's "Donji", "Gornji", "Novi" say which of two places of the name, not that it is another: "Doljani kod lap"
+    # for Donji Lapac)
+    wa, wb = [w for w, _ in _form_words(a)], [w for w, _ in _form_words(b) if w not in PLACE_FILLER]
 
     def match(x, y):
         return same_word(x, y) or (min(len(x), len(y)) <= 3 and (x.startswith(y) or y.startswith(x)))
