@@ -194,7 +194,7 @@ def fill_death(s: dict, refs: list, fixed: set = frozenset()) -> list[str]:
     return taken
 
 
-def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -> str:
+def census_gives_way(place: str, date: str, books: list[dict], unit: str = '', strict: bool = False) -> str:
     """The place of a column book of the year alone that shows over the census's place (place, of the year in date), or
     '': books, the fields of each such book's entry in their order, the first that a rule takes decides. Lent where the
     census's place says less (board 36; build_ostali_borci.py gives Borci drugih jedinica the same, board 67):
@@ -212,7 +212,15 @@ def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -
       where neither does, the book's printed form (00-TEAM LEAD, 2026-11-26).
     Never a region or a land alone for a place ("Gornje badežišt" is no Hercegovina), nor a form the scan split
     ("Kamni ška Bistrica" for the census's "Kamniš bistrica": scan_split), nor a town for the village the census names
-    before it ("Plana kod bileć" is no Bileća: names_more; board 67)"""
+    before it ("Plana kod bileć" is no Bileća: names_more; board 67).
+    strict (Borci drugih jedinica, 00-TEAM LEAD's answer on board 67, 2026-11-26): there the map knows few places
+    (Njeguši, Žabljak, Mokrine are off it), so off the map is no sign of a garble, and the census's place off the map
+    gives way only where it is shown to be worse: to the same place in another form (same_words: "Kučaevica",
+    Kučajevica), the form chosen as above, but never a form with letters no name has (odd_letters: the Spomenica's
+    "Lubvnice" for the census's "Lubnice-ivangra"), and nothing after "ili". Elsewhere the census's place stays first
+    ("Mokrine", not "X. Novi"; "Zagorač", not Danilovgrad) and the book's shows after "ili" (variants); so does a
+    mountain or a river ("Ivan sedlo", not Bitovnja), a region ("Srbija", not "Sremski front"), and a column cut at 15
+    letters, which clips what follows a whole village ("Tvrdinići, Saraj", not Jahorina; "Tović kod nikši", not Lukovo)"""
     year = re.search(r'1[89]\d\d', date or '')
     if not (place and year):
         return ''
@@ -221,6 +229,13 @@ def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -
         other = re.search(r'1[89]\d\d', vals.get('death_date') or '')
         spot = vals.get('death_place')
         if not (spot and other and year.group(0) == other.group(0)) or region_only(spot) or scan_split(spot, place):
+            continue
+        if off_map and strict:
+            if same_words(place, spot):
+                if (spot == place or says_more(place, spot, unit) or names_more(place, spot)
+                        or (odd_letters(spot) and not odd_letters(place))):
+                    return ''
+                return spot
             continue
         if off_map:
             return '' if spot == place or names_more(place, spot) else spot
@@ -231,6 +246,30 @@ def census_gives_way(place: str, date: str, books: list[dict], unit: str = '') -
 
 
 FAR_KM = 100        # a settlement this far beyond a region's ground is another place, not a finer one ("Lika", Smederevo)
+
+
+def same_words(a: str, b: str) -> bool:
+    """One place in two forms, by its words: each word of one is a word of the other ("Lubnice-ivangra" and Lubnice,
+    "Kučaevica" and Kučajevica, "Murovica" and "Murovica nad Dolskim"; same_word allows the scan's slips), beginning
+    with the same letter (Srbica is no Vrbica, nor "Lješanska Nahija" the scan's "JBešanska nahija")"""
+    wa, wb = place_words(a), place_words(b)
+
+    def has(x, ys):
+        return any(same_word(x, y) and x[0] == y[0] for y in ys)
+    return bool(wa and wb) and (all(has(x, wa) for x in wb) or all(has(x, wb) for x in wa))
+
+
+def odd_letters(v: str) -> bool:
+    """v has three letters in a row that no place the map resolved has in its name: the scan's ("Lubvnice", "bvn")"""
+    known = _trigrams()
+    return any(w[i:i + 3] not in known for w in re.findall(r'[a-z]+', fold(v)) for i in range(len(w) - 2))
+
+
+@lru_cache(maxsize=1)
+def _trigrams() -> frozenset:
+    """Every three letters in a row in the names of the places the map resolved (folded)"""
+    return frozenset(w[i:i + 3] for text in _spellings() for w in re.findall(r'[a-z]+', fold(text))
+                     for i in range(len(w) - 2))
 
 
 def in_words(spot: str, region_name: str) -> bool:

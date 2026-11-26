@@ -2110,8 +2110,12 @@ def finer_same_year(a: str, b: str) -> bool:
 # end ("u Starom Baru. ži"), a stray apostrophe ("u Hezepu kod ' Osnabrika")
 SCAN_GARBLE_RE = re.compile(r'[^\w\s,.()\'’\-–—/]|\s\.|\b\w*[a-zčćžšđ][A-ZČĆŽŠĐ]\w*|\b[A-ZČĆŽŠĐ]{2,}\b|\d|'
                             r'\b[A-ZČĆŽŠĐ][a-zčćžšđ]?\s[a-zčćžšđ]{3,}|\.\s*\w{1,2}$|\s[\'’]\s')
+# the scan's garble, told narrowly, in the place of the book that gives the day (read_all's day_place; 00-TEAM LEAD on
+# board 67, 2026-11-26: "Don't throw out an odd but possible name"): a figure inside a word ("1Pipačnu kod Nikšića"), a
+# sign no word has ("Or^h - Piva", "u Tuzli&"), a capital after a small letter ("kod NikIha")
+DAY_GARBLE_RE = re.compile(r'\d[^\W\d_]|[^\W\d_]\d|[^\w\s,.()\'’\-–—/]|[a-zčćžšđ][A-ZČĆŽŠĐ]')
 # the small words of a place that name no part of it, in counting which of two forms of one place says more
-PLACE_PREPS = {'u', 'v', 'na', 'kod', 'pri', 'iz', 'od', 'do', 's', 'selo', 'selu', 'sela', 'blizu', 'kraj', 'izmedu',
+PLACE_PREPS ={'u', 'v', 'na', 'kod', 'pri', 'iz', 'od', 'do', 's', 'selo', 'selu', 'sela', 'blizu', 'kraj', 'izmedu',
                'okolini', 'okolina', 'podrucju', 'i'}
 
 
@@ -2225,8 +2229,8 @@ def read_all(ex: Extractor, s: dict, code: int, told: dict | None = None) -> dic
         if (spot and (date_rank(day) or (0, 0, 0))[2] == 3 and day not in day_place
                 and PARTIZANKE not in (e.get('source_url') or '') and e.get('pdf_file') not in NAME_LISTS | ROSTERS):
             tidy = tidy_death_place(fix_place(tidy_death_place(spot) or spot))
-            if tidy and not SCAN_GARBLE_RE.search(tidy) and not re.search(r'\s,', tidy):    # ("na Neretvi (Konjic) , u")
-                day_place[day] = spot
+            if tidy and not DAY_GARBLE_RE.search(tidy) and not re.search(r'\s,', tidy):    # (a reading cut short:
+                day_place[day] = spot                                                       # "na Neretvi (Konjic) , u")
         if e.get('pdf_file') in ROSTERS:
             head = re.match(r'([^:;]{3,40}):', info)          # the unit the roster lists him under
             if head and not head.group(1).startswith('Ne zna se'):

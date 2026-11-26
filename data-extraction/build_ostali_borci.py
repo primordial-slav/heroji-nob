@@ -1410,7 +1410,9 @@ def main():
                 year_alone = [dict(f, death_place=site(f['death_place'])) for f in
                               (column_fields(m) for m in columns if not EXACT_DAY.fullmatch(m.get('death_date') or ''))
                               if f.get('death_place')]
-                spot = record_sources.census_gives_way(site(census_place), rec.get('death_date'), year_alone, OUT.name)
+                # (strict: here the map knows too few places for off the map to tell a garble)
+                spot = record_sources.census_gives_way(site(census_place), rec.get('death_date'), year_alone, OUT.name,
+                                                       strict=True)
                 if spot:
                     rec['death_place'] = spot
                     counts['census place gives way (board 67)'] += 1
