@@ -535,6 +535,7 @@ DEATH_PLACE_READS = {
     '0122955697': 'Bubanj, Niš',                    # Tomić Lazara Nadežda: "Bubnja" is a case form
     '0122947464': 'Podgorje Bistričko',             # Papić Petra Pavao: the census's "Pogorje bistrič" (by Marija Bistrica)
     '0122910081': 'Novoselec, Križ',                # Gašparinčić Stjepana Stjepan: "Novoselec Križ"
+    '0122905701': 'Babski Novak, Šid',              # Topalović Miodraga Miloljub: the census's "Babek novac, Šid"
     # ... and where the place the rules gave says less than main's (a municipality dropped, a region for a village)
     # or garbles it: main's place stands
     '0122911489': 'Trnovo, Sarajevo', '0122911957': 'Trnovo, Sarajevo',          # not "Trnovo, Bosna"
