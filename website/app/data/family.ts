@@ -732,7 +732,7 @@ export const familyContributions: FamilyContribution[] = [
     // 15:41 with his wartime photo (the death by override); Ljuban (0132011863) is his son; the burial from her mail of 2026-11-27 14:49
     photo: '0132011862-1.jpg',
     photoCaption: 'U partizanskoj uniformi',
-    text: 'Iz NOB-a se vratio. S obitelji se preselio s Banije u Šidske Banovce, gdje je ubrzo umro od posljedica ranjavanja. Iza sebe je ostavio ženu Evicu, sina Milana i kćeri Anku i Jelenu. Sahranjen je u Banovcima u Srijemu, to su tada bili Šidski Banovci.',
+    text: 'Iz NOB-a se vratio. S obitelji se preselio s Banije u Šidske Banovce, gdje je ubrzo umro od posljedica ranjavanja. Iza sebe je ostavio ženu i troje djece. Sahranjen je u Banovcima u Srijemu, to su tada bili Šidski Banovci.',
     from: 'D. Dvanajščak, praunuka',
     date: '2026-11',
   },
