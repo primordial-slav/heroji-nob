@@ -409,7 +409,8 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122961304', // Macut Miloša Petar "Pero" of Pješčanica, not in any book: the same sender's missing-fighter
     // form of 2026-11-21 20:53 (Porodična arhiva 9990000009); of his death only "unclear circumstances" (the user,
-    // 2026-11-21), not the investigation the family heard of
+    // 2026-11-21), not the investigation the family heard of; his photo from the same sender's mail of 2026-11-27 12:35
+    photo: '0122961304-1.jpg',
     text: 'Porodica njegove sestričine pamti da je od oslobođenja Rume, 27. oktobra 1944, bio u OZN-i. Borio se na Sremskom frontu i ranjavan je više puta. Poginuo je verovatno 1945. ili 1946, pod nerazjašnjenim okolnostima.',
     from: 'D. Dimitrijević, pranećak',
     date: '2026-11',
@@ -1063,7 +1064,8 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0108000481', // Lapčević Stevo of Bišćanovo (Glina), 3. banijska brigada: his grandson's plain mail of 2026-11-24 10:18
-    // (the form wouldn't send; no permission lines: no name) with four photos (Porodična arhiva 9990000058; rows by 317188)
+    // (the form wouldn't send) with four photos (Porodična arhiva 9990000058; rows by 317188); his name allowed in his reply
+    // of 2026-11-27 12:46 ("Slobodno možete staviti ko je poslao podatke")
     photo: '0108000481-1.jpg',
     photoCaption: 'U partizanskoj uniformi',
     pieces: [
@@ -1074,7 +1076,7 @@ export const familyContributions: FamilyContribution[] = [
       { kind: 'photo', file: '0108000481-4.jpg', caption: 'U oficirskoj uniformi' },
     ],
     text: 'Rođen je 1925. u Bišćanovu kod Gline. Posle rata završio je školu KOV i KNOJ u Kragujevcu i službovao po Srbiji; penzionisan je krajem pedesetih kao kapetan. Umro je 2008. u Sremskoj Mitrovici, gde je i sahranjen.',
-    from: 'iz porodične arhive',
+    from: 'S. Lapčević, unuk',
     date: '2026-11',
   },
   {
