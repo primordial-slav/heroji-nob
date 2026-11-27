@@ -1048,10 +1048,10 @@ export const familyContributions: FamilyContribution[] = [
   {
     soldierId: '0122961393', // Race Franca Boris "Žarko" of Hrpelje: his great-nephew's missing-fighter form of 2026-11-24 10:05 with his photo
     // (text and name allowed; Porodična arhiva 9990000056, role activist: an illegal worker, no unit); the dates from the lexicon
-    // Obrazi slovenskih pokrajin the sender gave
+    // Obrazi slovenskih pokrajin the sender gave; the ilegalac and the bust from his reply of 2026-11-27 13:43
     photo: '0122961393-1.jpg',
     photoCaption: 'U kasnijim godinama',
-    text: 'Vodio je ilegalnu štampariju i bio nosilac Partizanske spomenice 1941. Prema leksikonu „Obrazi slovenskih pokrajin”: od decembra 1941. bio je u tehnici (ilegalnoj štampariji) CK KP Slovenije, od avgusta 1942. do aprila 1943. vodio je tehniku Petrač; uhapšen je i u junu 1943. osuđen na 30 godina, a iz zatvora u Parmi pušten je u decembru 1943. Od januara 1944. bio je partizanski učitelj u Hrpeljama, zatim je vodio tehniku Slavnik u Brkinima. Posle rata bio je građevinski preduzetnik u Trstu i od 1964. do 1987. predsednik Slovenske kulturno-gospodarske zveze. Umro je u Trstu 26. aprila 1995.',
+    text: 'Vodio je ilegalnu štampariju i bio nosilac Partizanske spomenice 1941. Prema leksikonu „Obrazi slovenskih pokrajin”: od decembra 1941. bio je u tehnici (ilegalnoj štampariji) CK KP Slovenije, od avgusta 1942. do aprila 1943. vodio je tehniku Petrač; uhapšen je i u junu 1943. osuđen na 30 godina, a iz zatvora u Parmi pušten je u decembru 1943. Od januara 1944. bio je partizanski učitelj u Hrpeljama, zatim je vodio tehniku Slavnik u Brkinima. Posle rata bio je građevinski preduzetnik u Trstu i od 1964. do 1987. predsednik Slovenske kulturno-gospodarske zveze. Umro je u Trstu 26. aprila 1995. Bio je ilegalac, pa ga verovatno nema na tipičnim spiskovima partizanskih boraca; u rodnom selu ima i bistu.',
     from: 'A. Race, pranećak',
     date: '2026-11',
   },
@@ -1459,8 +1459,8 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0122961418', // Samardžić Šimuna Stipan of Grab (Trilj), 10. dalmatinska: his grandson's missing-fighter form of 2026-11-25
-    // 09:46 (text yes, name no; Porodična arhiva 9990000093)
-    text: 'U rujnu 1946. otišao je s obitelji na kolonizaciju u Vojvodinu i trajno se nastanio u Stanišiću kraj Sombora, gdje je odgojio petoro djece. Umro je 6. ožujka 1978. i pokopan u Stanišiću.',
+    // 09:46 (text yes, name no; Porodična arhiva 9990000093); the NOO and 1943 from his reply of 2026-11-27 13:49
+    text: 'Do 1943. bio je predsjednik NOO-a Grab, a kada su ga otkrili, otišao je u partizane, jer je već tada imao 39 godina. U rujnu 1946. otišao je s obitelji na kolonizaciju u Vojvodinu i trajno se nastanio u Stanišiću kraj Sombora, gdje je odgojio petoro djece. Umro je 6. ožujka 1978. i pokopan u Stanišiću.',
     from: 'iz porodične arhive',
     date: '2026-11',
   },
@@ -1512,6 +1512,15 @@ export const familyContributions: FamilyContribution[] = [
     // (text yes, name no; Porodična arhiva 9990000097, moved to the brigade from 0122961422)
     text: 'Od 1942. bio je u NOB-u i član KPJ. Obnašao je dužnosti borca i političkog komesara čete i bataljona. Nakon rata bio je na vojnim dužnostima, a JNA je napustio 1960. u činu pukovnika.',
     from: 'iz porodične arhive',
+    date: '2026-11',
+  },
+  {
+    soldierId: '0132038426', // Roca Marka Ive of Vodice, census part Hrvatska (fell 1943, "Sutjeska"): his granddaughter's form of
+    // 2026-11-27 13:47 with a printed photo (text and name allowed); she is Mile's daughter (0122961423), Ive his father.
+    // Odred, vod, day and place patched (family over the census)
+    photo: '0132038426-1.jpg',
+    text: 'Roca Ive bio je borac Šibenskog partizanskog odreda. Bio je vodnik jednog voda 1. čete 1. bataljona tog odreda. Poginuo je 23. 5. 1943. kod sela Rastičeva za vrijeme 5. ofenzive.',
+    from: 'V. Roca, unuka',
     date: '2026-11',
   },
   {
