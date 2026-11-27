@@ -1612,7 +1612,7 @@ export const familyContributions: FamilyContribution[] = [
     soldierId: '0122947310', // Jureković Ignaca Jakob of Klokovec (Hrvatsko zagorje u revoluciji): his grandson's two forms of
     // 2026-11-27 04:53 and 05:01 (text and name allowed); how he died and where he is buried; the two small children's
     // names left out (they may be living)
-    text: 'Ranjen je na kućnom pragu, pred ženom i dvoje male dece. Odvezen je u bolnicu, gde je bio mučen; potom se bacio sa drugog sprata da ne oda prijatelje iz pokreta otpora Zagorja i Zagreba, odakle je došao, ili su ga bacili domaći izdajnici fašisti. Sahranjen je na groblju u Krapinskim Toplicama.',
+    text: 'Stradao je ranjen na kućnom pragu, pred ženom i dvoje male djece. Odvezen je do bolnice, gdje je bio mučen; nakon toga bacio se s drugog kata da ne oda prijatelje iz pokreta otpora Zagorja i Zagreba, odakle je došao, ili su ga bacili domaći izdajice fašisti. Pokopan je na groblju u Krapinskim Toplicama.',
     from: 'R. Jureković, unuk',
     date: '2026-11',
   },
