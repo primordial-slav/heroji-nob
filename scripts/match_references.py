@@ -119,6 +119,82 @@ def stem(word: str) -> str:
     return w[:5] if len(w) >= 5 else w
 
 
+# The place a man fell, compared whole word with whole word (board 74, 2026-11-27). The first five folded letters of its
+# last word as a prefix of any word of the record made "Borač" agree with "borac", in every fighter's bio (Ljubinje's
+# fallen of 13. IV 1942), and "Vukovar" with the surname "Vuković". Now the place's most telling word (not "Mala",
+# "Gornji", "Sremska", "polje", "front", "salaš"; an adjective only where nothing else is left) must be a word of the
+# record in another case or the same one, and of two places a dash joins ("Radoško Brdo — Neštin") either; the words a
+# place's name shares with the bios ("Borci", a village by Konjic, and "borci"; "Borač", folded) count only in the
+# record's own place of death. The letters stay folded: the census and the OCR'd books often drop the diacritics
+# ("Lovas", "Cakovci"), and a place in two names, an abbreviation, an adjective's case or a vowel that drops ("Novak
+# Bapska", "Sr. Mitrovica", "kod Plitvičkih jezera", "u Lipovcu", "na Grčićevom salašu") still agrees. Measured over
+# main's 13,095 references that cited the place: docs/claude/books-across-units.md, "Re-matching"
+PLACE_GENERIC = {'kod', 'blizu', 'selo', 'selu', 'sela', 'grad', 'gradu', 'okolini', 'okolina', 'rejonu', 'polje', 'polju',
+                 'salas', 'salasu', 'salasa', 'pustara', 'pustari', 'pustare',
+                 'planina', 'planini', 'brdo', 'brdu', 'reka', 'rijeka', 'front', 'frontu', 'fronta', 'most', 'mostu',
+                 'mala', 'mali', 'malo', 'male', 'velika', 'veliki', 'veliko', 'velike', 'gornja', 'gornji', 'gornje',
+                 'donja', 'donji', 'donje', 'stara', 'stari', 'staro', 'nova', 'novi', 'novo', 'srednja', 'srednji',
+                 'sveti', 'sveta', 'bosanska', 'bosanski', 'sremska', 'sremski', 'srpska', 'srpski', 'crna', 'crni',
+                 'bela', 'beli', 'bijela', 'bijeli', 'slovenija', 'hrvatska', 'bosna', 'srbija', 'italija', 'austrija'}
+BIO_WORDS = {'borac', 'borca', 'borci', 'boraca', 'borce', 'borcima', 'borbi', 'borbe', 'borbu', 'ceta', 'cete', 'ceti',
+             'brigada', 'brigade', 'brigadi', 'odred', 'odreda', 'odredu', 'bolnica', 'bolnici', 'logor', 'logoru',
+             'bataljon', 'bataljona', 'bataljonu', 'divizija', 'divizije', 'diviziji'}
+
+
+def place_stem(word: str) -> str:
+    """a place's word without its case ending: Bileća and Bileće, Nevesinje and Nevesinja, Tjentište and Tjentištu,
+    Plitvička and Plitvičkih; and without a possessive's -ov, -ev (Kozjakov salaš, Grčićevom salašu). dropped_a: the a
+    that drops before an ending (Lipovac and Lipovcu, Laćarak and Laćarku, Čakovci and Čakovaca)"""
+    for end in ('ima', 'ama', 'ih', 'im', 'og', 'om', 'em', 'oj', 'a', 'e', 'i', 'o', 'u'):
+        if len(word) - len(end) >= 4 and word.endswith(end):
+            word = word[:-len(end)]
+            break
+    if len(word) >= 6 and word[-2:] in ('ov', 'ev'):                  # the possessive: Kozjakov, Kozjakovom salašu
+        word = word[:-2]
+    return word
+
+
+def dropped_a(stem: str) -> str:
+    return stem[:-2] + stem[-1] if len(stem) >= 5 and stem[-2:] in ('ac', 'ak') else stem
+
+
+def place_key(words: list[str]) -> str | None:
+    """the most telling of a place's words: the longest, an adjective before its noun ("Posavski", "Plitvička") only if
+    nothing else (but a village of the same ending last, "Novak Bapska")"""
+    plain = [w for i, w in enumerate(words)                                     # (folded: -ški, -čka as -ski, -cka)
+             if not (i < len(words) - 1 and re.search(r'(?:sk|ck)[aioe]$', w))]
+    return max(plain or words, key=len) if words else None
+
+
+def same_place_word(a: str, b: str) -> bool:
+    """one word of a place's name in two cases (folded): the same stem, or the same first six letters where a consonant
+    changes or a vowel drops before the ending (Sutjeska and Sutjesci, Kragujevac and Kragujevca)"""
+    sa, sb = place_stem(a), place_stem(b)
+    return sa == sb or dropped_a(sa) == dropped_a(sb) or (
+        min(len(sa), len(sb)) >= 6 and sa[:6] == sb[:6] and abs(len(sa) - len(sb)) <= 1)
+
+
+def place_in(place: str, own: str, texts: list[str]) -> bool:
+    """the place's most telling word (of either place a dash joins) in the record's own place of death or, outside the
+    bios' words, in its texts"""
+    keys = [place_key([w for w in fold(re.sub(r'[^\w ]', ' ', part)).split() if len(w) >= 4 and w not in PLACE_GENERIC])
+            for part in re.split(r'\s[—–-]\s', place or '')]
+    keys = [k for k in keys if k]
+    if not keys:
+        return False
+    # the census cuts its place at 15 letters ("Bosanski Petrov", "Busovača travni"): a last word so cut is the start of one
+    words = fold(re.sub(r'[^\w ]', ' ', place or '')).split()
+    cut = words[-1] if len((place or '').strip()) == 15 and words and words[-1] in keys else None
+
+    def joined(ws):                                     # and two words written as one ("Banjaluke", "Banja Luka")
+        return ws + [a + b for a, b in zip(ws, ws[1:])]
+    own_words = joined(fold(re.sub(r'[^\w ]', ' ', own or '')).split())
+    text_words = [w for t in texts for w in joined([x for x in fold(re.sub(r'[^\w ]', ' ', t or '')).split()
+                                                    if x not in BIO_WORDS])]
+    return any(same_place_word(k, w) for k in keys for w in own_words + text_words) or bool(
+        cut and any(w.startswith(cut) for w in own_words + text_words))
+
+
 def same_father(a: str, b: str) -> bool:
     """Two spellings of one father's name in different cases or forms: "Jurja" and "Juraj", "Petra" and "Petar",
     "Pavla" and "Pavao", "Mile" and "Mileta", "Jove" and "Jovana"; not "Mile" and "Miloša" (folded, lower case)"""
@@ -221,13 +297,10 @@ def evidence(ref: dict, s: dict) -> tuple[list[str], list[str]]:
             agree.append('death day')
     # a book that names only where he fell (U rovovima Srema: the villages of the Srem front under each brigade) gives
     # that place, and the years its fighting lasted: a record that has him fall in another year is another man
-    if ref.get('death_place'):
-        place = ref['death_place'].split()
-        p = stem(place[-1] if len(place) > 1 and len(place[-1]) > 3 else place[0])
-        died = fold(' '.join([s.get('death_place') or '', s.get('additional_info') or ''] +
-                             [o.get('additional_info') or '' for o in s.get('other_sources', ())])).split()
-        if len(p) >= 4 and any(w.startswith(p) for w in died):
-            agree.append('death place')
+    if ref.get('death_place') and place_in(ref['death_place'], s.get('death_place') or '',
+                                           [s.get('additional_info') or ''] +
+                                           [o.get('additional_info') or '' for o in s.get('other_sources', ())]):
+        agree.append('death place')
     if ref.get('death_years') and record_death and record_death.group(0) not in ref['death_years']:
         clash.append('death year')
     return agree, clash
