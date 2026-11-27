@@ -42,6 +42,9 @@ from PIL import Image, ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import portrait_tone  # noqa: E402  (each new portrait's gentle tone correction, in save())
+
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / 'website' / 'public'
 OUT = PUBLIC / 'portreti'
@@ -3144,9 +3147,13 @@ OLD: dict = {}   # with --new: the index as it stands, whose prints are kept rat
 
 
 def save(im: Image.Image, sid: str, credit: str) -> dict:
-    """The print (HEIGHT high) and, where the source is much bigger, the large photo (up to LARGE high)."""
+    """The print (HEIGHT high) and, where the source is much bigger, the large photo (up to LARGE high), both tone-corrected
+    (portrait_tone: dots, flat tones, a very dark face, a hard print; the user's yes of 2026-11-27) but Commons' and
+    Wikipedia's photos, whose licences ask that a change be noted."""
     if OLD.get(sid, {}).get('c') == credit and (OUT / OLD[sid]['f']).exists():      # --new: made before
         return {k: OLD[sid][k] for k in ('f', 'v') if k in OLD[sid]}
+    if not portrait_tone.untouched(credit):
+        im, _steps = portrait_tone.correct(im)
     small = im.resize((round(im.width * HEIGHT / im.height), HEIGHT), Image.LANCZOS)
     small.save(OUT / f'{sid}.jpg', quality=80, optimize=True, progressive=True)
     if im.height < 1.5 * HEIGHT:                         # a book's small print: the print is all there is
