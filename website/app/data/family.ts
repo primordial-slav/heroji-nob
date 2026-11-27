@@ -657,7 +657,8 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0001013150', // Vihtner (the book: Vihner) Rudolfa Gordana, Prva proleterska: her son's forms of 2026-11-23 15:00 and
-    // 15:41 with four photos (the surname, nationality and day of birth by correction 317157); the school photo her portrait
+    // 15:41 with four photos (the surname, nationality and day of birth by correction 317157); the school photo her portrait;
+    // her death and burial from his mail of 2026-11-27 14:23 (318568)
     photo: '0001013150-1.jpg',
     photoCaption: 'Đačka fotografija',
     pieces: [
@@ -665,7 +666,7 @@ export const familyContributions: FamilyContribution[] = [
       { kind: 'photo', file: '0001013150-3.jpg', caption: 'Posle rata' },
       { kind: 'photo', file: '0001013150-4.jpg', caption: 'Sa sinom' },
     ],
-    text: 'Rođena je 30. marta 1927. u Beogradu, od oca Rudolfa Vihtnera i majke Miroslave, rođene Predojević. Posle rata udala se za Slovenca Bojana Belingara, takođe partizana. Do penzionisanja radila je u Nuklearnom institutu u Vinči.',
+    text: 'Rođena je 30. marta 1927. u Beogradu, od oca Rudolfa Vihtnera i majke Miroslave, rođene Predojević. Posle rata udala se za Slovenca Bojana Belingara, takođe partizana. Do penzionisanja radila je u Nuklearnom institutu u Vinči. Umrla je 17. marta 1982. i sahranjena je na Novom groblju u Beogradu.',
     from: 'B. Belingar, sin',
     date: '2026-11',
   },
@@ -728,10 +729,10 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0132011862', // Sarapa Rade Ilija of Donji Klasnić, census part Hrvatska: his great-granddaughter's form of 2026-11-23
-    // 15:41 with his wartime photo (the death by override); Ljuban (0132011863) is his son
+    // 15:41 with his wartime photo (the death by override); Ljuban (0132011863) is his son; the burial from her mail of 2026-11-27 14:49
     photo: '0132011862-1.jpg',
     photoCaption: 'U partizanskoj uniformi',
-    text: 'Iz NOB-a se vratio. S obitelji se preselio s Banije u Šidske Banovce, gdje je ubrzo umro od posljedica ranjavanja. Iza sebe je ostavio ženu Evicu, sina Milana i kćeri Anku i Jelenu.',
+    text: 'Iz NOB-a se vratio. S obitelji se preselio s Banije u Šidske Banovce, gdje je ubrzo umro od posljedica ranjavanja. Iza sebe je ostavio ženu Evicu, sina Milana i kćeri Anku i Jelenu. Sahranjen je u Banovcima u Srijemu, to su tada bili Šidski Banovci.',
     from: 'D. Dvanajščak, praunuka',
     date: '2026-11',
   },
@@ -782,7 +783,8 @@ export const familyContributions: FamilyContribution[] = [
   },
   {
     soldierId: '0004000147', // Belingar Bojan of Ljubljana, Ljubljanska brigada: his son's form of 2026-11-23 16:02 with three files
-    // (Porodična arhiva 9990000043 referenced; rows by 317169); his wife is Vihtner Gordana (0001013150)
+    // (Porodična arhiva 9990000043 referenced; rows by 317169); his wife is Vihtner Gordana (0001013150); the day of birth 31, not 30,
+    // by his mail of 2026-11-27 14:23 (318569)
     photo: '0004000147-1.jpg',
     photoCaption: 'U uniformi',
     pieces: [
@@ -794,7 +796,7 @@ export const familyContributions: FamilyContribution[] = [
       },
       { kind: 'photo', file: '0004000147-3.jpg', caption: 'Na susretu boraca, u kasnijim godinama' },
     ],
-    text: 'Rođen je 30. jula 1927. u Ljubljani, od oca Petera i majke Zinke, rođene Kolar. Ceo radni vek, do penzionisanja 1976, proveo je u Saveznom sekretarijatu za unutrašnje poslove u Beogradu. Supruga mu je bila Gordana, rođena Vihtner, takođe partizanka. Umro je 5. avgusta 2011.',
+    text: 'Rođen je 31. jula 1927. u Ljubljani, od oca Petera i majke Zinke, rođene Kolar. Ceo radni vek, do penzionisanja 1976, proveo je u Saveznom sekretarijatu za unutrašnje poslove u Beogradu. Supruga mu je bila Gordana, rođena Vihtner, takođe partizanka. Umro je 5. avgusta 2011.',
     from: 'B. Belingar, sin',
     date: '2026-11',
   },
