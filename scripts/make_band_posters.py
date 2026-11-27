@@ -27,7 +27,8 @@ BAND_HEIGHT = 400  # the band's, likewise
 BAND = ['zena-u-borbi', 'miting-zena', 'ni-zrno', 'narod', 'zima', 'bratstvom', 'u-borbu', 'slovenske-zene', 'zgrabimo', 'svi-u-borbu', 'srbija',
         'svi-na-front', 'osmi-mart', 'za-zadnji-udar', 'gradi-zemunice', 'dalmatinka', 'partizanka', 'ja-se-borim', 'zena-kroz-borbu',
         'svi-u-partizane', 'titova-armada', 'ranjenici', 'nov-izdajalce', 'ujedinjeni', 'smrt-fasizmu', 'za-slobodu-hrvatske', 'vse-za-vojsko', 'daruj-zbiraj',
-        'ustanak-crna-gora', 'hocemo-trst', 'po-cici-i-zimi', 'slovenska-zena', 'vstaja', 'na-bunker', 'domovi-sume', 'kroz-sumu', 'uz-prugu', 'kolona-v-snegu']
+        'ustanak-crna-gora', 'hocemo-trst', 'po-cici-i-zimi', 'slovenska-zena', 'vstaja', 'na-bunker', 'domovi-sume', 'kroz-sumu', 'uz-prugu', 'kolona-v-snegu',
+        'makedonka']
 BRIGHTER = {'domovi-sume'}  # the user's wish: this linocut's blacks lifted a little
 NOVI = PLAKATI / 'novi' / 'thumbs'  # the small copies of 2026-11-05 (500 px wide): enough for a print 400 px high
 
@@ -79,6 +80,10 @@ POSTERS = {
     'kroz-sumu': (NOVI / '38.img', None, '', False, 'Kroz šumu', 'Branko Šotra', '1943'),
     'uz-prugu': (NOVI / '34.img', None, '', False, 'Uz prugu', 'Nande Vidmar', '1943'),
     'kolona-v-snegu': (NOVI / '36.img', None, '', False, 'Kolona v snegu', 'France Mihelič', '1944'),
+    # the cover of Makedonka no. 1 (AFŽ Makedonije, November 1944), the band's Macedonian piece (the user's yes of 2026-11-27):
+    # the National Library of Serbia's scan by way of the People's Graphic Design Archive (item 18100); the strip at the
+    # top with the library's shelf mark and stamp cut off; its rights unstated, like the others'
+    'makedonka': (PLAKATI / 'makedonka-1944.png', (0, .055, 1, 1), 'mk', True, 'Македонка', '', '1944'),
 }
 
 # Details cut from the posters: id, poster, [left, top, right, bottom]: the lettering in each language, and figures
