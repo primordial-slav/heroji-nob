@@ -104793,6 +104793,17 @@
         "name": "Ćurguz Dušana Milan",
         "additional_info": "1. četa 3. bataljona: borac, rođen 1923. Vođenica, Bos. Petrovac, Srbin, zemljoradnik, u NOB od 1942, član KPJ od 1943, poginuo jula 1943. na planini Devetak.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010101433",
+        "name": "Ćurgus Dušana Milan",
+        "additional_info": "borac 1. čete 3. bataljona, rođen 1923, Vodenica, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1942, član KPJ od 1943, poginuo kod Malog Polja, Vlasenica, 27. juna 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 8.4,
+        "pdf_y": 194.5,
+        "pdf_x_end": 179.0,
+        "pdf_y_end": 257.7
       }
     ],
     "unit_detail": "1. četa, 3. bataljon",
@@ -104848,11 +104859,28 @@
         "name": "Ćurguz Jove Rade",
         "additional_info": "1. četa 3. bataljona: puškomitraljezac, rođen 1916, Vođenica, Bos. Petrovac, Srbin, radnik, u NOB od 1941, kandidat za člana KPJ od 1942. u napadu na Teslić januara 1943. na bunkeru teško ranjen, ostao bez oka i obe ruke iznad šaka; kao težak ranjenik nastradao u Centralnoj bolnici na Sutjesci.",
         "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010101239",
+        "name": "Ćurgus Jove Rade",
+        "additional_info": "puškomitraljezac 1. čete 3. bataljona, rođen 1917, Vodenica, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. godine kao teški ranjenik u Centralnoj bolnici.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 13.4,
+        "pdf_y": 324.1,
+        "pdf_x_end": 180.3,
+        "pdf_y_end": 398.1
       }
     ],
     "rank": "puškomitraljezac",
     "unit_detail": "1. četa, 3. bataljon",
-    "death_place": "Tjentište"
+    "death_place": "Tjentište",
+    "party": "KPJ",
+    "variants": {
+      "born": [
+        "1917"
+      ]
+    }
   },
   {
     "last_name": "Ćurguz",
@@ -104888,9 +104916,27 @@
         "pdf_x_end": 351.9,
         "pdf_y_end": 288.2,
         "pdf_x_left": 69.0
+      },
+      {
+        "soldier_id": "0010301230",
+        "name": "Ćurgus Marka Rade",
+        "additional_info": "1. četa 4. bataljona: rođen 1920, Vrtoče, Bos. Petrovac, Srbin, radnik, u NOB od 1941, član KPJ od 1943, poginuo 1943. na Zečjem brdu kao puškomitraljezac i desetar.",
+        "source_url": "https://znaci.org/00001/31_263.htm"
+      },
+      {
+        "soldier_id": "0010101362",
+        "name": "Ćurgus Marka Rade",
+        "additional_info": "komandir voda u 1. četi 4. bataljona, rođen 1920, Vrtoče, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Zečjem Brdu, južno od Foče, 24. maja 1943. godine.",
+        "pdf_file": "borci-sutjeske-3-krajiska.pdf",
+        "pdf_page": 14,
+        "pdf_x": 13.4,
+        "pdf_y": 399.7,
+        "pdf_x_end": 179.9,
+        "pdf_y_end": 462.9
       }
     ],
-    "party": "KPJ 1943"
+    "party": "KPJ 1943",
+    "unit_detail": "1. četa, 4. bataljon"
   },
   {
     "last_name": "Ćuzović",
@@ -144417,31 +144463,6 @@
     "pdf_x_end": 362.9
   },
   {
-    "last_name": "Ćurgus",
-    "middle_name": "Jove",
-    "first_name": "Rade",
-    "fathers_name": "Jovo",
-    "full_name": "Ćurgus Jove Rade",
-    "additional_info": "puškomitraljezac 1. čete 3. bataljona, rođen 1917, Vodenica, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Sutjesci, kod Tjentišta, 13. juna 1943. godine kao teški ranjenik u Centralnoj bolnici.",
-    "birth_year": "1917",
-    "pdf_page": 14,
-    "pdf_y": 324.1,
-    "pdf_x": 13.4,
-    "pdf_y_end": 398.1,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101239",
-    "birth_place": "Vodenica, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "13.06.1943",
-    "death_place": "Sutjeska, Tjentište",
-    "rank": "puškomitraljezac",
-    "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 180.3,
-    "party": "KPJ"
-  },
-  {
     "last_name": "Tlipović",
     "middle_name": "Sime",
     "first_name": "Mile",
@@ -147507,39 +147528,6 @@
     ]
   },
   {
-    "last_name": "Ćurgus",
-    "middle_name": "Marka",
-    "first_name": "Rade",
-    "fathers_name": "Marko",
-    "full_name": "Ćurgus Marka Rade",
-    "additional_info": "komandir voda u 1. četi 4. bataljona, rođen 1920, Vrtoče, Bosanski Petrovac, radnik, Srbin, u NOB od 1941, član KPJ, poginuo na Zečjem Brdu, južno od Foče, 24. maja 1943. godine.",
-    "birth_year": "1920",
-    "pdf_page": 14,
-    "pdf_y": 399.7,
-    "pdf_x": 13.4,
-    "pdf_y_end": 462.9,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101362",
-    "birth_place": "Vrtoče, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "radnik",
-    "death_type": "poginuo",
-    "death_date": "24.05.1943",
-    "death_place": "na Zečjem Brdu, južno od Foče",
-    "rank": "komandir voda",
-    "unit_detail": "1. četa, 4. bataljon",
-    "pdf_x_end": 179.9,
-    "party": "KPJ",
-    "other_sources": [
-      {
-        "soldier_id": "0010301230",
-        "name": "Ćurgus Marka Rade",
-        "additional_info": "1. četa 4. bataljona: rođen 1920, Vrtoče, Bos. Petrovac, Srbin, radnik, u NOB od 1941, član KPJ od 1943, poginuo 1943. na Zečjem brdu kao puškomitraljezac i desetar.",
-        "source_url": "https://znaci.org/00001/31_263.htm"
-      }
-    ]
-  },
-  {
     "last_name": "Zavisa",
     "middle_name": "Boška",
     "first_name": "Milkan",
@@ -149165,7 +149153,21 @@
     "rank": "borac",
     "unit_detail": "1. četa, 3. bataljon",
     "pdf_x_end": 179.4,
-    "party": "KPJ 1942"
+    "party": "KPJ 1942",
+    "other_sources": [
+      {
+        "soldier_id": "0010200744",
+        "name": "Curguz Todora Koviljka",
+        "additional_info": "rođ. 1917, Zalin, B. Krupa, domaćica, Srpkinja, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od maja 1943, član KPJ od 1942. borac.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 67,
+        "pdf_x": 42.6,
+        "pdf_y": 509.6,
+        "pdf_x_end": 307.6,
+        "pdf_y_end": 536.4,
+        "pdf_x_left": 25.3
+      }
+    ]
   },
   {
     "last_name": "Ćurgus",
@@ -149197,6 +149199,18 @@
         "source_url": "https://znaci.org/00001/31_263.htm"
       },
       {
+        "soldier_id": "0010200745",
+        "name": "Curguz Đure Ljubiša",
+        "additional_info": "rod. 1919, Risovac, B. Petrovac, podoficir, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 1944, Clan KPJ od 1942, komesar vazd. divizije.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 68,
+        "pdf_x": 87.5,
+        "pdf_y": 133.6,
+        "pdf_x_end": 353.0,
+        "pdf_y_end": 169.0,
+        "pdf_x_left": 70.4
+      },
+      {
         "soldier_id": "9076000034",
         "name": "Čurgus Ljubiša",
         "additional_info": "Vodilni kader letalcev prekomorcev: kapetan; Letalski detašman NOVJ v Alžiriji, Maison Blanche, namestnik komandanta od 2. 6. do 15. 11. 1944.",
@@ -149221,32 +149235,8 @@
     "family_fields": [
       "death_date",
       "rank"
-    ]
-  },
-  {
-    "last_name": "Ćurgus",
-    "middle_name": "Dušana",
-    "first_name": "Milan",
-    "fathers_name": "Dušan",
-    "full_name": "Ćurgus Dušana Milan",
-    "additional_info": "borac 1. čete 3. bataljona, rođen 1923, Vodenica, Bosanski Petrovac, zemljoradnik, Srbin, u NOB od 1942, član KPJ od 1943, poginuo kod Malog Polja, Vlasenica, 27. juna 1943. godine.",
-    "birth_year": "1923",
-    "pdf_page": 14,
-    "pdf_y": 194.5,
-    "pdf_x": 8.4,
-    "pdf_y_end": 257.7,
-    "pdf_file": "borci-sutjeske-3-krajiska.pdf",
-    "soldier_id": "0010101433",
-    "birth_place": "Vodenica, Bosanski Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "zemljoradnik",
-    "death_type": "poginuo",
-    "death_date": "27.06.1943",
-    "death_place": "Malo Polje, Vlasenica",
-    "rank": "borac",
-    "unit_detail": "1. četa, 3. bataljon",
-    "pdf_x_end": 179.0,
-    "party": "KPJ 1943"
+    ],
+    "occupation": "podoficir"
   },
   {
     "last_name": "Ćurgus-Čužić",
@@ -149268,7 +149258,21 @@
     "rank": "bolničarka",
     "unit_detail": "3. četa, 3. bataljon",
     "pdf_x_end": 179.7,
-    "party": "SKOJ 1942, KPJ 1944"
+    "party": "SKOJ 1942, KPJ 1944",
+    "other_sources": [
+      {
+        "soldier_id": "0010205811",
+        "name": "Ćuzić-Ćurgus Milka",
+        "additional_info": "rođ. 1928, Vodenica, Bos. Petrovac, domaćica, Srpkinja, u NOB od 1942, bolničarka.",
+        "pdf_file": "3-krajiska-spisak-boraca.pdf",
+        "pdf_page": 480,
+        "pdf_x": 96.0,
+        "pdf_y": 128.2,
+        "pdf_x_end": 350.4,
+        "pdf_y_end": 145.5,
+        "pdf_x_left": 70.0
+      }
+    ]
   },
   {
     "last_name": "Čavić-Tuco",
@@ -161599,49 +161603,6 @@
     "pdf_x_end": 306.7,
     "pdf_x_left": 24.6,
     "party": "KPJ 1945"
-  },
-  {
-    "last_name": "Curguz",
-    "middle_name": "Todora",
-    "first_name": "Koviljka",
-    "fathers_name": "Todor",
-    "full_name": "Curguz Todora Koviljka",
-    "additional_info": "rođ. 1917, Zalin, B. Krupa, domaćica, Srpkinja, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od maja 1943, član KPJ od 1942. borac.",
-    "birth_year": "1917",
-    "pdf_page": 67,
-    "pdf_y": 509.6,
-    "pdf_x": 42.6,
-    "pdf_y_end": 536.4,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200744",
-    "birth_place": "Zalin, B. Krupa",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "rank": "borac",
-    "pdf_x_end": 307.6,
-    "pdf_x_left": 25.3,
-    "party": "KPJ 1942"
-  },
-  {
-    "last_name": "Curguz",
-    "middle_name": "Đure",
-    "first_name": "Ljubiša",
-    "fathers_name": "Đuro",
-    "full_name": "Curguz Đure Ljubiša",
-    "additional_info": "rod. 1919, Risovac, B. Petrovac, podoficir, Srbin, u NOB od 27. 7. 1941, nosilac »Partizanske spomenice 1941«, u brigadi od 22. 8. 1942. do 1944, Clan KPJ od 1942, komesar vazd. divizije.",
-    "birth_year": "1919",
-    "pdf_page": 68,
-    "pdf_y": 133.6,
-    "pdf_x": 87.5,
-    "pdf_y_end": 169.0,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010200745",
-    "birth_place": "Risovac, B. Petrovac",
-    "ethnicity": "Srbin",
-    "occupation": "podoficir",
-    "pdf_x_end": 353.0,
-    "pdf_x_left": 70.4,
-    "party": "KPJ 1942"
   },
   {
     "last_name": "Curti",
@@ -231522,27 +231483,6 @@
     "pdf_x_end": 344.1,
     "pdf_x_left": 61.8,
     "party": "KPJ 1944"
-  },
-  {
-    "last_name": "Ćuzić-Ćurgus",
-    "middle_name": "",
-    "first_name": "Milka",
-    "fathers_name": "",
-    "full_name": "Ćuzić-Ćurgus Milka",
-    "additional_info": "rođ. 1928, Vodenica, Bos. Petrovac, domaćica, Srpkinja, u NOB od 1942, bolničarka.",
-    "birth_year": "1928",
-    "pdf_page": 480,
-    "pdf_y": 128.2,
-    "pdf_x": 96.0,
-    "pdf_y_end": 145.5,
-    "pdf_file": "3-krajiska-spisak-boraca.pdf",
-    "soldier_id": "0010205811",
-    "birth_place": "Vodenica, Bos. Petrovac",
-    "ethnicity": "Srpkinja",
-    "occupation": "domaćica",
-    "rank": "bolničarka",
-    "pdf_x_end": 350.4,
-    "pdf_x_left": 70.0
   },
   {
     "last_name": "Čavić",
