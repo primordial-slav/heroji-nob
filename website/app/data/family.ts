@@ -1616,6 +1616,13 @@ export const familyContributions: FamilyContribution[] = [
     from: 'R. Jureković, unuk',
     date: '2026-11',
   },
+  {
+    soldierId: '0132000243', // Ristić Milan Nikola of Benkovačko Selo (census, Croatia: fell 1945 at Rijeka): his granddaughter's form
+    // of 2026-11-27 10:08 (text and name allowed); her words as written; the day she gives with "možda", so the card keeps 1945
+    text: 'Pamtim da je poginuo na dan oslobođenja Rijeke dok je pio vode na nekoj česmi, raznela ga bomba. Možda je to bilo baš 3. 5. 1945. Sahranjen je u zajedničkoj grobnici, ne znamo gde.',
+    from: 'N. Vojvodić Parojčić, unuka',
+    date: '2026-11',
+  },
 ]
 
 export function contributionsFor(soldierId: string, otherIds: (string | undefined)[] = []): FamilyContribution[] {
